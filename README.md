@@ -8,4 +8,4 @@ A Chinese version of QA wiki for personal learning.
 
 ## A
 
-- [A/B Testing](Sections/A/A-B-Testing.md)
+- [A/B 测试](Sections/A/A-B-Testing.md)
