@@ -13,3 +13,4 @@ English project link：<https://ray.run/wiki>
 - [ATDD 验收测试驱动开发](Sections/A/acceptance-test-driven-development.md)
 - [Acceptance Testing 验收测试](Sections/A/acceptance-testing.md)
 - [Accessibility Testing 无障碍测试](Sections/A/accessibility-testing.md)
+- [Actual Result 实际结果](Sections/A/actual-result.md)
