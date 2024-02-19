@@ -9,7 +9,7 @@ English project link：<https://ray.run/wiki>
 
 ## A
 
-- [A/B 测试](Sections/A/a-b-testing.md)
+- [A/B 测试](Sections/A/A-B-Testing.md)
 - [ATDD 验收测试驱动开发](Sections/A/acceptance-test-driven-development.md)
 - [Acceptance Testing 验收测试](Sections/A/acceptance-testing.md)
 - [Accessibility Testing 无障碍测试](Sections/A/accessibility-testing.md)
