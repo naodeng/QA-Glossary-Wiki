@@ -14,4 +14,4 @@ English project link：<https://ray.run/wiki>
 - [Acceptance Testing 验收测试](Sections/A/acceptance-testing.md)
 - [Accessibility Testing 无障碍测试](Sections/A/accessibility-testing.md)
 - [Actual Result 实际结果](Sections/A/actual-result.md)
-- [Ad Hoc Testing 临时测试](Sections/A/ad-hoc-testing.md)
+- [Ad Hoc Testing 随机测试](Sections/A/ad-hoc-testing.md)
