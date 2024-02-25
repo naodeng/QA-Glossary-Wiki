@@ -15,3 +15,4 @@ English project link：<https://ray.run/wiki>
 - [Accessibility Testing 无障碍测试](Sections/A/accessibility-testing.md)
 - [Actual Result 实际结果](Sections/A/actual-result.md)
 - [Ad Hoc Testing 随机测试](Sections/A/ad-hoc-testing.md)
+- [Agile Development 敏捷开发](Sections/A/agile-development.md)
