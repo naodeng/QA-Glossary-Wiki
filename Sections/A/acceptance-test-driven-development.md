@@ -35,7 +35,7 @@
 - [TDD 测试驱动开发](../T/test-driven-development.md)
 - [UAT 用户验收测试](../U/user-acceptance-testing.md)
 
-更多信息也可以看看：
+也可以看看：
 [Wikipedia](https://en.wikipedia.org/wiki/Acceptance_test-driven_development)
 
 > wikipedia 只有英文版本，没有中文版本。

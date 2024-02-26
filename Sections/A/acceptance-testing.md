@@ -35,7 +35,7 @@
 - [UAT 用户验收测试](../U/user-acceptance-testing.md)
 - [FAT 工厂验收测试](https://www.dxpe.com/what-is-factory-acceptance-test-protocol-purpose/)
 
-更多信息也可以看看：
+也可以看看：
 [Wikipedia](https://zh.wikipedia.org/wiki/%E9%AA%8C%E6%94%B6%E6%B5%8B%E8%AF%95)
 
 # 关于验收测试的问题
