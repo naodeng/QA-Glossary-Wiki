@@ -17,3 +17,4 @@ English project link：<https://ray.run/wiki>
 - [Ad Hoc Testing 随机测试](Sections/A/ad-hoc-testing.md)
 - [Agile Development 敏捷开发](Sections/A/agile-development.md)
 - [Agile Testing 敏捷测试](Sections/A/agile-testing.md)
+- [Alpha Testing 敏捷测试](Sections/A/alpha-testing.md)
