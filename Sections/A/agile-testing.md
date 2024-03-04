@@ -124,7 +124,7 @@
 - **测试设计**：一旦用户故事被定义，测试人员开始设计测试。他们创建[测试用例](../T/test-case.md)并确定必要的[测试数据](../T/test-data.md)。
 
 ```typescript
-// 示例：[测试用例](../wiki/test-case) 伪代码，用于登录功能 
+// 示例：[测试用例](../wiki/test-case.md) 伪代码，用于登录功能 
 describe("登录功能", () => { it("应使用有效凭据对用户进行身份验证", () => 
 { 
 expect(authenticate('validUser', 'validPass')).toBeTruthy(); }); 
