@@ -23,3 +23,4 @@ English project link：<https://ray.run/wiki>
 - [ASTQB 美国软件测试资格委员会](Sections/A/astqb.md)
 - [Automated Testing 自动化测试](Sections/A/automated-testing.md)
 - [Analytical Test Strategy 分析性测试策略](Sections/A/analytical-test-strategy.md)
+- [Availability Testing 可用性测试](Sections/A/availability-testing.md)
