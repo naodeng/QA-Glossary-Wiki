@@ -28,3 +28,4 @@ English project link：<https://ray.run/wiki>
 ## B
 
 - [Back-to-Back Testing 背靠背测试](Sections/B/back-to-back-testing.md)
+- [Backward Compatibility 向后兼容性](Sections/B/backward-compatibility.md)
