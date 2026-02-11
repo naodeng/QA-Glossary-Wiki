@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+.env
+
+# OS
+.DS_Store
+
+# Temporary files
+dest_files.txt
+dest_files_v2.txt
+source_files.txt
+source_files_v2.txt
+*.log
+
+# Editor
+.vscode/
+.idea/

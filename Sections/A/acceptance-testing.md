@@ -1,181 +1,199 @@
-<!-- markdownlint-disable MD041 -->
-- [Acceptance Testing 验收测试](#acceptance-testing-验收测试)
-- [关于验收测试的问题](#关于验收测试的问题)
-  - [基础知识和重要性](#基础知识和重要性)
-    - [什么是验收测试？](#什么是验收测试)
-    - [为什么验收测试很重要？](#为什么验收测试很重要)
-    - [验收测试有哪些不同类型？](#验收测试有哪些不同类型)
-    - [验收测试如何融入软件开发生命周期？](#验收测试如何融入软件开发生命周期)
-    - [验收测试与其他类型的测试有什么区别？](#验收测试与其他类型的测试有什么区别)
-  - [技术和策略](#技术和策略)
-    - [验收测试中有哪些常用技术？](#验收测试中有哪些常用技术)
-    - [如何制定验收测试策略？](#如何制定验收测试策略)
-    - [自动化在验收测试中的作用是什么？](#自动化在验收测试中的作用是什么)
-    - [验收测试有哪些挑战，如何克服？](#验收测试有哪些挑战如何克服)
-    - [如何将验收测试集成到持续交付流水线中？](#如何将验收测试集成到持续交付流水线中)
-  - [工具和技术](#工具和技术)
-    - [验收测试常用的工具有哪些？](#验收测试常用的工具有哪些)
-    - [这些工具如何帮助验收测试？](#这些工具如何帮助验收测试)
-    - [不同验收测试工具有哪些优缺点？](#不同验收测试工具有哪些优缺点)
-    - [API 在验收测试中的作用是什么？](#api-在验收测试中的作用是什么)
-    - [如何在验收测试中利用云技术？](#如何在验收测试中利用云技术)
-  - [最佳实践](#最佳实践)
-    - [验收测试有哪些最佳实践？](#验收测试有哪些最佳实践)
-    - [如何维护和更新验收测试？](#如何维护和更新验收测试)
-    - [文档在验收测试中的作用是什么？](#文档在验收测试中的作用是什么)
-    - [如何提高验收测试的效率？](#如何提高验收测试的效率)
-    - [如何有效传达验收测试的结果？](#如何有效传达验收测试的结果)
+# Acceptance Testing
+[Acceptance Testing](#acceptance-testing)[Acceptance testing](/wiki/acceptance-testing)
+### Related Terms:
+- User Acceptance Testing
+- FAT (Factory Acceptance Testing)
+[User Acceptance Testing](/glossary/user-acceptance-testing)[FAT (Factory Acceptance Testing)](/glossary/fat-factory-acceptance-testing)
+### See also:
+- Wikipedia
+[Wikipedia](https://en.wikipedia.org/wiki/Acceptance_testing)
+## Questions aboutAcceptance Testing?
 
-# Acceptance Testing 验收测试
+#### Basics and Importance
+- What is acceptance testing?Acceptance testingis the phase wheresystem functionalityandbusiness requirementsare verified against predefined criteria, ensuring the software is ready for production. It's typically thefinal stepbefore the product is delivered to the customer or made available to end-users. This form of testing focuses onuser experienceandoverall system behaviorrather than individual components, often involvingreal-world scenariosandend-to-end workflows.To conductacceptance testingeffectively, consider the following:Define clear acceptance criteria: These should be agreed upon by stakeholders and form the basis of your test cases.Prioritizetest cases: Focus on critical business features and user journeys that deliver the most value.Leverage user feedback: Incorporate insights from beta testers or real users to refine tests.Automate where appropriate: While automation can increase efficiency, some tests may require a manual, human touch to assess usability and aesthetics.Review and adapt: Use results to make informed decisions about the product's readiness and identify areas for improvement.Remember,acceptance testingis not just about finding defects but ensuring the product meets business needs and provides a positive user experience. Keep communication channels open with stakeholders to align expectations and results.
+- Why is acceptance testing important?Acceptance testingis crucial as it serves as thefinalverificationbefore a product is released to the market or handed off to the customer. It ensures that the software meetsbusiness requirementsand is capable of providing thedesired user experience. By simulating real-world usage, it validates the end-to-end business flow, not just individual components or features.This form of testing is often thelast line of defenseagainstbugsand issues that could significantly impact customer satisfaction and commercial success. It helps to identify any discrepancies between theuser expectationsand the actual product, allowing teams to address issues before they affect the end-user.Moreover,acceptance testingprovides a clearmetric for product acceptance, setting a definitive standard for what is considered a "finished" product. It also offers alegal compliance check, ensuring that the software adheres to regulations and standards relevant to the industry or market.In essence,acceptance testingis aboutbuilding confidencein the product's quality and its readiness for deployment. It's an opportunity to review not just the functionality, but also theusability, accessibility, and overall performanceof the application, which are critical for user acceptance. Without this phase, teams risk releasing products that may not fully satisfy the needs or expectations of their customers, leading to increased support costs, damaged reputation, and potentially, product failure in the market.
+- What are the different types of acceptance testing?Acceptance testingcan be categorized into several types, each with a specific focus and purpose:User Acceptance Testing(UAT): Conducted to ensure the software meets user requirements and is ready for real-world use. Users or stakeholders perform these tests to validate the end-to-end business flow.BusinessAcceptance Testing(BAT): Focuses on verifying the business objectives of the software. It's similar to UAT but with a more strategic perspective, often involving high-level business stakeholders.Alpha Testing: Performed by internal staff before the software is released to external users, to catch any major issues early on.Beta Testing: Conducted by a select group of external users in a real-world environment to identify any problems from the user's perspective.ContractAcceptance Testing: Ensures the software meets contractual requirements, often performed against a checklist of criteria agreed upon by both the vendor and the customer.RegulationAcceptance Testing(RAT): Verifies that the software complies with industry regulations and standards, which is critical in fields like finance, healthcare, and aviation.OperationalAcceptance Testing(OAT): Also known as ProductionAcceptance Testing, it checks the operational aspects such as backup, recovery, and maintenance procedures.Each type ofacceptance testingserves to validate different aspects of the software's readiness for deployment and use, ensuring that all stakeholder expectations are met.
+- How does acceptance testing fit into the software development lifecycle?Acceptance testingis a critical phase in thesoftware development lifecycle (SDLC), typically performed aftersystem testingand before the product goes live, known as thepre-releasephase. It serves as a finalverificationto ensure the software meets business requirements and is ready for operational use.Inagile methodologies,acceptance testingis integrated intoiterations, allowing for continuous validation of user stories. It's a collaborative effort involvingdevelopers,testers, andstakeholdersto confirm the product's functionality aligns with the business needs.Forwaterfall projects,acceptance testingis a distinct phase that follows a more linear progression after extensivesystem testing. It acts as a gatekeeper before the software is handed over to the customer or made available to end-users.In both cases, the focus is on validating theend-to-end business flowsrather than individual components, ensuring the software behaves as expected in a production-like environment. Acceptance tests are based onpre-defined criteriaagreed upon by all parties involved.The results ofacceptance testingare crucial for thego/no-go decision. A successful pass indicates the software is consideredfit for purpose, while any significant issues must be addressed before launch. This phase is also an opportunity to verifyregulatory and compliance requirements, if applicable.Incorporatingacceptance testinginto the SDLC ensures that the final product not only works technically but also delivers the intended value to the business and its users.
+- What is the difference between acceptance testing and other types of testing?Acceptance testingdiffers from other testing types primarily in itsscopeandstakeholders. Whileunit testingfocuses on individual components andintegration testingensures that different parts of the system work together,acceptance testingevaluates the system's compliance with business requirements and assesses whether it's ready for deployment.Functional testingchecks specific functionality of the code, whereasacceptance testingis concerned with thebehavior of the entire applicationfrom an end-user perspective. It's a form of black-box testing where the internal workings of the application are not the focus.Performance testing, on the other hand, gauges the system's responsiveness and stability under a particular workload, which is not typically the main goal ofacceptance testing.Usability testingis about the user experience, but it's generally more subjective and less formal thanacceptance testing, which has specific criteria to be met.Acceptance testingis often the final step before the software goes live, involvingreal-world scenariosandvalidation against user requirements. It's typically executed by stakeholders or business representatives who are not as deeply involved in the development process as the QA or development teams. This external perspective is crucial for ensuring that the software meets the needs and expectations of its intended users.In summary,acceptance testingis distinct in its focus on validating the product's readiness for production from the user's point of view, rather than just verifying technical correctness or performance benchmarks.
 
-验收测试是由潜在的最终用户或客户进行的，其目的是判断软件是否符合必要的规格并且是否适用于其预定的用途。
+Acceptance testingis the phase wheresystem functionalityandbusiness requirementsare verified against predefined criteria, ensuring the software is ready for production. It's typically thefinal stepbefore the product is delivered to the customer or made available to end-users. This form of testing focuses onuser experienceandoverall system behaviorrather than individual components, often involvingreal-world scenariosandend-to-end workflows.
+[Acceptance testing](/wiki/acceptance-testing)**system functionality****business requirements****final step****user experience****overall system behavior****real-world scenarios****end-to-end workflows**
+To conductacceptance testingeffectively, consider the following:
+[acceptance testing](/wiki/acceptance-testing)- Define clear acceptance criteria: These should be agreed upon by stakeholders and form the basis of your test cases.
+- Prioritizetest cases: Focus on critical business features and user journeys that deliver the most value.
+- Leverage user feedback: Incorporate insights from beta testers or real users to refine tests.
+- Automate where appropriate: While automation can increase efficiency, some tests may require a manual, human touch to assess usability and aesthetics.
+- Review and adapt: Use results to make informed decisions about the product's readiness and identify areas for improvement.
+**Define clear acceptance criteria****Prioritizetest cases**[test cases](/wiki/test-case)**Leverage user feedback****Automate where appropriate****Review and adapt**
+Remember,acceptance testingis not just about finding defects but ensuring the product meets business needs and provides a positive user experience. Keep communication channels open with stakeholders to align expectations and results.
+[acceptance testing](/wiki/acceptance-testing)
+Acceptance testingis crucial as it serves as thefinalverificationbefore a product is released to the market or handed off to the customer. It ensures that the software meetsbusiness requirementsand is capable of providing thedesired user experience. By simulating real-world usage, it validates the end-to-end business flow, not just individual components or features.
+[Acceptance testing](/wiki/acceptance-testing)**finalverification**[verification](/wiki/verification)**business requirements****desired user experience**
+This form of testing is often thelast line of defenseagainstbugsand issues that could significantly impact customer satisfaction and commercial success. It helps to identify any discrepancies between theuser expectationsand the actual product, allowing teams to address issues before they affect the end-user.
+**last line of defense**[bugs](/wiki/bug)**user expectations**
+Moreover,acceptance testingprovides a clearmetric for product acceptance, setting a definitive standard for what is considered a "finished" product. It also offers alegal compliance check, ensuring that the software adheres to regulations and standards relevant to the industry or market.
+[acceptance testing](/wiki/acceptance-testing)**metric for product acceptance****legal compliance check**
+In essence,acceptance testingis aboutbuilding confidencein the product's quality and its readiness for deployment. It's an opportunity to review not just the functionality, but also theusability, accessibility, and overall performanceof the application, which are critical for user acceptance. Without this phase, teams risk releasing products that may not fully satisfy the needs or expectations of their customers, leading to increased support costs, damaged reputation, and potentially, product failure in the market.
+[acceptance testing](/wiki/acceptance-testing)**building confidence****usability, accessibility, and overall performance**
+Acceptance testingcan be categorized into several types, each with a specific focus and purpose:
+[Acceptance testing](/wiki/acceptance-testing)- User Acceptance Testing(UAT): Conducted to ensure the software meets user requirements and is ready for real-world use. Users or stakeholders perform these tests to validate the end-to-end business flow.
+- BusinessAcceptance Testing(BAT): Focuses on verifying the business objectives of the software. It's similar to UAT but with a more strategic perspective, often involving high-level business stakeholders.
+- Alpha Testing: Performed by internal staff before the software is released to external users, to catch any major issues early on.
+- Beta Testing: Conducted by a select group of external users in a real-world environment to identify any problems from the user's perspective.
+- ContractAcceptance Testing: Ensures the software meets contractual requirements, often performed against a checklist of criteria agreed upon by both the vendor and the customer.
+- RegulationAcceptance Testing(RAT): Verifies that the software complies with industry regulations and standards, which is critical in fields like finance, healthcare, and aviation.
+- OperationalAcceptance Testing(OAT): Also known as ProductionAcceptance Testing, it checks the operational aspects such as backup, recovery, and maintenance procedures.
 
-相关术语：
+User Acceptance Testing(UAT): Conducted to ensure the software meets user requirements and is ready for real-world use. Users or stakeholders perform these tests to validate the end-to-end business flow.
+**User Acceptance Testing(UAT)**[User Acceptance Testing](/wiki/user-acceptance-testing)
+BusinessAcceptance Testing(BAT): Focuses on verifying the business objectives of the software. It's similar to UAT but with a more strategic perspective, often involving high-level business stakeholders.
+**BusinessAcceptance Testing(BAT)**[Acceptance Testing](/wiki/acceptance-testing)
+Alpha Testing: Performed by internal staff before the software is released to external users, to catch any major issues early on.
+**Alpha Testing**[Alpha Testing](/wiki/alpha-testing)
+Beta Testing: Conducted by a select group of external users in a real-world environment to identify any problems from the user's perspective.
+**Beta Testing**[Beta Testing](/wiki/beta-testing)
+ContractAcceptance Testing: Ensures the software meets contractual requirements, often performed against a checklist of criteria agreed upon by both the vendor and the customer.
+**ContractAcceptance Testing**[Acceptance Testing](/wiki/acceptance-testing)
+RegulationAcceptance Testing(RAT): Verifies that the software complies with industry regulations and standards, which is critical in fields like finance, healthcare, and aviation.
+**RegulationAcceptance Testing(RAT)**[Acceptance Testing](/wiki/acceptance-testing)
+OperationalAcceptance Testing(OAT): Also known as ProductionAcceptance Testing, it checks the operational aspects such as backup, recovery, and maintenance procedures.
+**OperationalAcceptance Testing(OAT)**[Acceptance Testing](/wiki/acceptance-testing)[Acceptance Testing](/wiki/acceptance-testing)
+Each type ofacceptance testingserves to validate different aspects of the software's readiness for deployment and use, ensuring that all stakeholder expectations are met.
+[acceptance testing](/wiki/acceptance-testing)
+Acceptance testingis a critical phase in thesoftware development lifecycle (SDLC), typically performed aftersystem testingand before the product goes live, known as thepre-releasephase. It serves as a finalverificationto ensure the software meets business requirements and is ready for operational use.
+[Acceptance testing](/wiki/acceptance-testing)**software development lifecycle (SDLC)****system testing**[system testing](/wiki/system-testing)**pre-release**[verification](/wiki/verification)
+Inagile methodologies,acceptance testingis integrated intoiterations, allowing for continuous validation of user stories. It's a collaborative effort involvingdevelopers,testers, andstakeholdersto confirm the product's functionality aligns with the business needs.
+**agile methodologies**[acceptance testing](/wiki/acceptance-testing)[iterations](/wiki/iteration)**developers****testers****stakeholders**
+Forwaterfall projects,acceptance testingis a distinct phase that follows a more linear progression after extensivesystem testing. It acts as a gatekeeper before the software is handed over to the customer or made available to end-users.
+**waterfall projects**[acceptance testing](/wiki/acceptance-testing)[system testing](/wiki/system-testing)
+In both cases, the focus is on validating theend-to-end business flowsrather than individual components, ensuring the software behaves as expected in a production-like environment. Acceptance tests are based onpre-defined criteriaagreed upon by all parties involved.
+**end-to-end business flows****pre-defined criteria**
+The results ofacceptance testingare crucial for thego/no-go decision. A successful pass indicates the software is consideredfit for purpose, while any significant issues must be addressed before launch. This phase is also an opportunity to verifyregulatory and compliance requirements, if applicable.
+[acceptance testing](/wiki/acceptance-testing)**go/no-go decision****fit for purpose****regulatory and compliance requirements**
+Incorporatingacceptance testinginto the SDLC ensures that the final product not only works technically but also delivers the intended value to the business and its users.
+[acceptance testing](/wiki/acceptance-testing)
+Acceptance testingdiffers from other testing types primarily in itsscopeandstakeholders. Whileunit testingfocuses on individual components andintegration testingensures that different parts of the system work together,acceptance testingevaluates the system's compliance with business requirements and assesses whether it's ready for deployment.
+[Acceptance testing](/wiki/acceptance-testing)**scope****stakeholders**[unit testing](/wiki/unit-testing)[integration testing](/wiki/integration-testing)[acceptance testing](/wiki/acceptance-testing)
+Functional testingchecks specific functionality of the code, whereasacceptance testingis concerned with thebehavior of the entire applicationfrom an end-user perspective. It's a form of black-box testing where the internal workings of the application are not the focus.
+**Functional testing**[Functional testing](/wiki/functional-testing)[acceptance testing](/wiki/acceptance-testing)**behavior of the entire application**
+Performance testing, on the other hand, gauges the system's responsiveness and stability under a particular workload, which is not typically the main goal ofacceptance testing.
+**Performance testing**[Performance testing](/wiki/performance-testing)[acceptance testing](/wiki/acceptance-testing)
+Usability testingis about the user experience, but it's generally more subjective and less formal thanacceptance testing, which has specific criteria to be met.
+**Usability testing**[Usability testing](/wiki/usability-testing)[acceptance testing](/wiki/acceptance-testing)
+Acceptance testingis often the final step before the software goes live, involvingreal-world scenariosandvalidation against user requirements. It's typically executed by stakeholders or business representatives who are not as deeply involved in the development process as the QA or development teams. This external perspective is crucial for ensuring that the software meets the needs and expectations of its intended users.
+[Acceptance testing](/wiki/acceptance-testing)**real-world scenarios****validation against user requirements**
+In summary,acceptance testingis distinct in its focus on validating the product's readiness for production from the user's point of view, rather than just verifying technical correctness or performance benchmarks.
+[acceptance testing](/wiki/acceptance-testing)
+#### Techniques and Strategies
+- What are some common techniques used in acceptance testing?Common techniques used inacceptance testinginclude:Behavior-Driven Development (BDD): Utilizing frameworks like Cucumber, SpecFlow, or Behat to write tests in a natural language that stakeholders can understand. Tests are based on user stories to ensure the software behaves as expected.Feature: User login
+  Scenario: Successful login with valid credentials
+    Given the login page is displayed
+    When the user enters valid credentials
+    Then the user is redirected to the dashboardUser Acceptance Testing(UAT): Real users test the software in an environment that simulates production to validate the end-to-end business flow.Exploratory Testing: Testers explore the software without predefinedtest casesto uncover unexpected behavior orbugs.Session-Based Testing: Structuredexploratory testingsessions with a specific focus or goal, and a set time frame.Checklist-Based Testing: Using a list of features or requirements as a guide to ensure all functionality is verified.Alpha/Beta Testing: Releasing the software to a limited audience outside the organization (alpha) or to actual users (beta) to gather feedback.AutomatedRegression Testing: Running automated tests to confirm that recent changes have not adversely affected existing functionality.Performance Testing: Assessing the system's performance under load to ensure it meets acceptance criteria for speed and responsiveness.Compliance Testing: Verifying that the software adheres to industry standards, regulations, or contractual agreements.These techniques help ensure that the software meets business requirements, provides a good user experience, and is free from critical issues before release.
+- How do you develop an acceptance testing strategy?Developing anacceptance testingstrategyinvolves several key steps:Define Acceptance Criteria: Collaborate with stakeholders to establish clear and measurable acceptance criteria for each feature or user story.PrioritizeTest Cases: Identify critical business flows and prioritizetest casesaccordingly. Focus on user experience and business requirements.Select Testing Techniques: Choose appropriate testing techniques such asBDD(Behavior-Driven Development) or Specification by Example to create understandable and executable specifications.PlanTest DataManagement: Ensure the availability of relevanttest datafor different scenarios, considering data privacy and compliance requirements.DesignTest Environment: Set up a stabletest environmentthat mimics production as closely as possible to uncover environment-specific issues.Automate Wisely: Automate regression and high-prioritytest casesto save time and resources. Keepmanual testingfor exploratory, usability, and ad-hoc scenarios.Integrate with CI/CD: Embed acceptance tests into the CI/CD pipeline to enable early and frequent validation of the application.Monitor and Measure: Implement monitoring to tracktest coverage, pass/fail rates, and defect density. Use these metrics to refine the testing process.Review and Adapt: Regularly review thetest strategywith the team to adapt to changes in the application or business priorities.Stakeholder Communication: Keep stakeholders informed with clear, concise reports and dashboards that provide insight into the testing progress and outcomes.By following these steps, you can create a robustacceptance testingstrategy that aligns with business objectives and ensures a high-quality product.
+- What is the role of automation in acceptance testing?Automation plays acrucial roleinacceptance testingbystreamliningthe validation process of software against business requirements. It enables repetitive and consistent execution oftest cases, ensuring that new features or changes do not break existing functionality. Automation inacceptance testing:Increases efficiencyby reducing the time required to run tests, especially for regression testing.Enhances accuracyby minimizing human error in repetitive tasks.Facilitates scalabilityof test efforts to cover more features and scenarios without a proportional increase in time or resources.Supports continuous integration/continuous deployment (CI/CD)by allowing automated acceptance tests to be part of the deployment pipeline, providing immediate feedback on the production readiness of the application.Enables faster feedback cyclesto developers and stakeholders, accelerating the development process and improving product quality.Improves resource allocationby freeing up human testers to focus on exploratory testing and other areas where human judgment is crucial.Automated acceptance tests are typically written in high-level languages or through frameworks that allow for behavior-driven development (BDD) or domain-specific languages (DSLs), making themunderstandable to non-technical stakeholdersand ensuring that tests align with business language and user expectations.// Example of an automated acceptance test using a BDD framework
+Feature: User login
+  Scenario: Successful login with valid credentials
+    Given the login page is displayed
+    When the user enters valid credentials
+    And the user submits the login form
+    Then the user is redirected to the dashboardBy integrating automatedacceptance testinginto the development workflow, teams cancontinuously validatethe software's adherence to business requirements,reduce risk, andshorten the time to market.
+- What are some challenges in acceptance testing and how can they be overcome?Acceptance testingfaces several challenges, includingrequirements ambiguity,environment mismatches, andstakeholder communication. To overcome these:Clarify requirements: Work closely with stakeholders to ensure requirements are clear and testable. Use techniques likeBehavior-Driven Development (BDD)to create shared understanding through examples.Replicate production environment: Ensure the testing environment closely mirrors production to avoid discrepancies. Useinfrastructure as code (IaC)to automate environmentsetupand maintain consistency.Improve stakeholder communication: Regularly update stakeholders on testing progress and involve them in the decision-making process. Implementdemo sessionsandfeedback loopsto ensure their expectations are met.Managetest data: Create strategies for managing and generatingtest datathat accurately reflects production scenarios. Utilizedata anonymizationandsynthetic data generationtools to maintain data integrity and privacy.Automate judiciously: Focus automation efforts on tests that provide the most value and are prone to human error. Maintain a balance between manual and automated tests to ensure comprehensive coverage.Handle flakiness: Implementretry mechanismsandroot cause analysisforflaky teststo ensure reliability. Usecontainerizationto provide stable and consistenttest environments.Monitor and act on feedback: Set upmonitoring toolsto track test results and performance. Use this data to continuously refine and improve theacceptance testingprocess.
+- How can acceptance testing be integrated into a continuous delivery pipeline?Integratingacceptance testinginto acontinuous delivery (CD) pipelineensures that new features meet business requirements and are ready for production release. To achieve this, follow these steps:Automate Acceptance Tests: Write automated acceptance tests that align with user stories or requirements. Use a Behavior-Driven Development (BDD) framework like Cucumber to create readable scenarios.Version Control: Store acceptance tests in a version control system alongside application code to maintain synchronization betweentest casesand the features they cover.Continuous Integration Server: Configure your CI server (e.g., Jenkins, CircleCI) to trigger acceptance tests as part of the pipeline. This should occur after unit and integration tests pass to ensure only quality code progresses.Test Environment: Set up a dedicatedtest environmentthat mimics production. Use infrastructure as code (IaC) tools like Terraform or Ansible for consistency and repeatability.Parallel Execution: Run tests in parallel to reduce execution time. Containerization with Docker or Kubernetes can help manage and scaletest environments.Gatekeeping: Implement a gatekeeper mechanism in the pipeline. Only allow changes to proceed to the next stage if acceptance tests pass, ensuring that failing code doesn't reach production.Feedback Loop: Provide immediate feedback to developers when tests fail. Integratetest reportswith communication tools like Slack or email.Continuous Monitoring: Continuously monitor thetest suite's health. Removeflaky testsand update tests to reflect changes in user requirements.Deployment Decisions: Use test results to make informed decisions about deployments. Automate the deployment of code that passes acceptance criteria.By embeddingacceptance testinginto the CD pipeline, you ensure that every change is evaluated against the expected business functionality before it reaches the end-users, maintaining high-quality standards and reducing the risk of production issues.
 
-- [UAT 用户验收测试](../U/user-acceptance-testing.md)
-- [FAT 工厂验收测试](https://www.dxpe.com/what-is-factory-acceptance-test-protocol-purpose/)
+Common techniques used inacceptance testinginclude:
+[acceptance testing](/wiki/acceptance-testing)- Behavior-Driven Development (BDD): Utilizing frameworks like Cucumber, SpecFlow, or Behat to write tests in a natural language that stakeholders can understand. Tests are based on user stories to ensure the software behaves as expected.Feature: User login
+  Scenario: Successful login with valid credentials
+    Given the login page is displayed
+    When the user enters valid credentials
+    Then the user is redirected to the dashboard
+- User Acceptance Testing(UAT): Real users test the software in an environment that simulates production to validate the end-to-end business flow.
+- Exploratory Testing: Testers explore the software without predefinedtest casesto uncover unexpected behavior orbugs.
+- Session-Based Testing: Structuredexploratory testingsessions with a specific focus or goal, and a set time frame.
+- Checklist-Based Testing: Using a list of features or requirements as a guide to ensure all functionality is verified.
+- Alpha/Beta Testing: Releasing the software to a limited audience outside the organization (alpha) or to actual users (beta) to gather feedback.
+- AutomatedRegression Testing: Running automated tests to confirm that recent changes have not adversely affected existing functionality.
+- Performance Testing: Assessing the system's performance under load to ensure it meets acceptance criteria for speed and responsiveness.
+- Compliance Testing: Verifying that the software adheres to industry standards, regulations, or contractual agreements.
 
-也可以看看：
-[Wikipedia](https://zh.wikipedia.org/wiki/%E9%AA%8C%E6%94%B6%E6%B5%8B%E8%AF%95)
-
-# 关于验收测试的问题
-
-## 基础知识和重要性
-
-### 什么是验收测试？
-
-**验收测试**是系统开发生命周期中的一个阶段，主要用于验证**系统功能**和**业务需求**是否符合预定的标准，以确保软件已经达到投入生产的标准。通常，这是产品交付给客户或向最终用户提供之前的**最后一道关卡**。这种测试注重于**用户体验**和**整体系统行为**，而非单个组件，通常涉及**真实场景**和**端到端的工作流程**。
-
-要有效进行**验收测试**，需要考虑以下几点：
-
-- **明确定义验收标准**：这些标准应由相关利益方共同商定，并构成测试用例的基础。
-- **优先考虑[测试用例](../T/test-case.md)**：集中关注对业务和用户体验至关重要的功能和用户流程，以提供最大价值。
-- **充分利用用户反馈**：整合来自测试用户或实际用户的见解，以完善测试。
-- **在适当的情况下进行自动化**：尽管自动化可以提高效率，但某些测试可能需要手动进行，以评估可用性和外观。
-- **审查和调整**：根据测试结果做出明智的决策，评估产品的准备就绪程度，并找出需要改进的方面。
-
-请谨记，**验收测试**不仅仅是为了发现缺陷，更是为了确保产品满足业务需求并提供积极的用户体验。保持与相关利益方的沟通渠道畅通，以确保期望与结果一致。 
-
-### 为什么验收测试很重要？
-
-验收测试的重要性不可忽视，它充当产品发布市场或交付客户之前的**最终[验证](../V/verification.md)**环节。这确保软件符合**业务需求**，能够提供**期望的用户体验**。通过模拟真实的使用场景，验收测试验证了端到端的业务流程，而不仅仅是单个组件或功能。
-
-这种测试通常是对[缺陷](../B/bug.md)和可能严重影响客户满意度和商业成功的问题的**最后一道防线**。它有助于发现**用户期望**与实际产品之间的任何差异，使团队能够在对最终用户产生影响之前解决这些问题。
-
-此外，验收测试为产品验收提供了明确的**接受标准的度量标准**，确立了“完成”产品的明确标准。它还提供了**法律合规性检查**，以确保软件符合与行业或市场相关的法规和标准。
-
-实质上，验收测试是关于**增强对产品质量的信心**，以及对部署准备就绪的信心。这是审查应用程序的**功能、可用性、可访问性和整体性能**的机会，这对用户验收至关重要。如果没有这个阶段，团队可能会面临发布产品的风险，这些产品未能完全满足客户的需求或期望，从而导致支持成本增加、声誉受损，甚至可能在市场上失败。
-
-### 验收测试有哪些不同类型？
-
-验收测试可以分为多个类型，每一种都专注于特定的方面和目标：
-
-- **[用户验收测试](../U/user-acceptance-testing.md) (UAT)**: 用于确保软件满足用户需求，准备投入实际使用。由用户或利益相关者执行，验证端到端的业务流程。
-- **业务验收测试 (BAT)**: 专注于验证软件的业务目标。类似于 UAT，但更具战略性，通常涉及高层业务利益相关者。
-- **[Alpha 测试](../A/Alpha-testing.md)**: 在软件面向外部用户之前由内部人员执行，旨在尽早发现任何重大问题。
-- **[Beta 测试](../B/beta-testing.md)**: 由一组外部用户在实际环境中执行，从用户角度识别问题。
-- **合同验收测试**: 确保软件符合合同要求，通常根据供应商和客户共同同意的检查清单执行。
-- **法规验收测试 (RAT)**: 验证软件是否符合行业法规和标准，在金融、医疗保健和航空等领域尤为重要。
-- **运营验收测试 (OAT)**: 也称为生产验收测试，检查运营方面的事项，如备份、恢复和维护程序。
-
-每种验收测试类型都旨在验证软件在部署和使用方面的准备情况，确保满足所有利益相关者的期望。
-
-### 验收测试如何融入软件开发生命周期？
-
-验收测试在**软件开发生命周期（SDLC）**中扮演着至关重要的角色，通常在**[系统测试](../S/system-testing.md)**之后、产品上线之前的**发布前**阶段进行。它作为最终的[验证](../V/verification.md)环节，确保软件满足业务需求，并已准备好投入运营。
-
-在**敏捷方法**中，验收测试被整合到[迭代](../I/iteration.md)中，实现对用户故事的持续验证。这是一个协作的过程，涉及**开发人员**、**测试人员**和**利益相关者**，以确认产品的功能符合业务需求。
-
-而对于**瀑布项目**，验收测试则是一个独立的阶段，跟随着详尽的[系统测试](../S/system-testing.md)而呈线性发展。它充当着在软件交付给客户或提供给最终用户之前的关键关卡。
-
-在这两种情况下，焦点都是验证**端到端的业务流程**而非个别组件，以确保软件在类似生产环境中的行为符合预期。验收测试是基于所有相关方共同商定的**预定义标准**。
-
-验收测试的结果对于**启动/暂停决策**至关重要。成功通过意味着软件被认为**达到预期目标**，而任何重大问题都必须在正式启动之前解决。此阶段还是验证**法规和合规要求**的良机，如果适用的话。
-
-将验收测试融入 SDLC 确保最终产品不仅在技术层面正常运作，而且能够为业务及其用户提供预期的价值。
-
-### 验收测试与其他类型的测试有什么区别？
-
-验收测试与其他测试类型主要在其**范围**和**涉及的利益相关者**方面存在明显差异。而[单元测试](../U/unit-testing.md)聚焦于个别组件，[集成测试](../I/integration-testing.md)确保系统不同部分的协同工作，验收测试则评估系统对业务需求的符合度，以及是否准备好投入使用。
-
-**[功能测试](../F/functional-testing.md)**检查代码的具体功能，而验收测试关注的是**整个应用程序从最终用户角度的行为**。这是一种黑盒测试，内部工作原理不是关注的焦点。
-
-另一方面，**[性能测试](../P/performance-testing.md)**则评估系统在特定工作负载下的响应性和稳定性，这通常不是验收测试的主要目标。
-
-**[可用性测试](../U/usability-testing.md)**关注用户体验，但通常比验收测试更主观，也不太正式，而验收测试则有要满足的具体标准。
-
-验收测试通常是软件上线前的最后一步，涉及**真实场景**和**与用户需求的验证**。通常由与开发或 QA 团队不太深度参与开发流程的利益相关者或业务代表执行。这种外部视角对确保软件满足预期用户的需求和期望至关重要。
-
-总之，验收测试在其专注于从用户角度验证产品是否准备好投入生产的方面上具有独特性，而不仅仅是验证技术的正确性或性能基准。
-
-## 技术和策略
-
-### 验收测试中有哪些常用技术？
-
-在验收测试中常用的技术包括：
-
-- **行为驱动开发（[BDD](../B/bdd.md)）**：使用 Cucumber、SpecFlow 或 Behat 等框架，以利益相关者理解的自然语言编写测试。测试基于用户故事，确保软件的行为符合预期。
-
-```typescript
-Feature: 用户登录
-  Scenario: 使用有效凭据成功登录
-    Given 登录页面已显示
-    When 用户输入有效凭据
-    Then 用户被重定向到仪表板
+Behavior-Driven Development (BDD): Utilizing frameworks like Cucumber, SpecFlow, or Behat to write tests in a natural language that stakeholders can understand. Tests are based on user stories to ensure the software behaves as expected.
+**Behavior-Driven Development (BDD)**[BDD](/wiki/bdd)
 ```
+Feature: User login
+  Scenario: Successful login with valid credentials
+    Given the login page is displayed
+    When the user enters valid credentials
+    Then the user is redirected to the dashboard
+```
+`Feature: User login
+  Scenario: Successful login with valid credentials
+    Given the login page is displayed
+    When the user enters valid credentials
+    Then the user is redirected to the dashboard`
+User Acceptance Testing(UAT): Real users test the software in an environment that simulates production to validate the end-to-end business flow.
+**User Acceptance Testing(UAT)**[User Acceptance Testing](/wiki/user-acceptance-testing)
+Exploratory Testing: Testers explore the software without predefinedtest casesto uncover unexpected behavior orbugs.
+**Exploratory Testing**[Exploratory Testing](/wiki/exploratory-testing)[test cases](/wiki/test-case)[bugs](/wiki/bug)
+Session-Based Testing: Structuredexploratory testingsessions with a specific focus or goal, and a set time frame.
+**Session-Based Testing**[Session-Based Testing](/wiki/session-based-testing)[exploratory testing](/wiki/exploratory-testing)
+Checklist-Based Testing: Using a list of features or requirements as a guide to ensure all functionality is verified.
+**Checklist-Based Testing**
+Alpha/Beta Testing: Releasing the software to a limited audience outside the organization (alpha) or to actual users (beta) to gather feedback.
+**Alpha/Beta Testing**[Beta Testing](/wiki/beta-testing)
+AutomatedRegression Testing: Running automated tests to confirm that recent changes have not adversely affected existing functionality.
+**AutomatedRegression Testing**[Regression Testing](/wiki/regression-testing)
+Performance Testing: Assessing the system's performance under load to ensure it meets acceptance criteria for speed and responsiveness.
+**Performance Testing**[Performance Testing](/wiki/performance-testing)
+Compliance Testing: Verifying that the software adheres to industry standards, regulations, or contractual agreements.
+**Compliance Testing**
+These techniques help ensure that the software meets business requirements, provides a good user experience, and is free from critical issues before release.
 
-- **[用户验收测试](../U/user-acceptance-testing.md)（UAT）**：真实用户在模拟生产环境中测试软件，验证端到端的业务流程。
-- **[探索性测试](../E/exploratory-testing.md)**：测试人员在没有预定义[测试用例](../T/test-case.md)的情况下探索软件，发现意外行为或[缺陷](../B/bug.md)。
-- **基于会话的测试**：具有特定重点或目标以及设定时间框架的结构化[探索性测试](../E/exploratory-testing.md)会话。
-- **基于清单的测试**：使用功能或需求列表作为指南，确保验证所有功能。
-- **Alpha/[Beta 测试](../UB/beta-testing.md)**：将软件释放给组织外的有限受众（Alpha）或实际用户（beta）以收集反馈。
-- **自动化[回归测试](../R/regression-testing.md)**：运行自动化测试，确认最近的更改没有对现有功能产生不良影响。
-- **[性能测试](../P/performance-testing.md)**：评估系统在负载下的性能，确保其满足速度和响应性的验收标准。
-- **合规性测试**：验证软件是否符合行业标准、法规或合同协议。
+Developing anacceptance testingstrategyinvolves several key steps:
+**acceptance testingstrategy**[acceptance testing](/wiki/acceptance-testing)1. Define Acceptance Criteria: Collaborate with stakeholders to establish clear and measurable acceptance criteria for each feature or user story.
+2. PrioritizeTest Cases: Identify critical business flows and prioritizetest casesaccordingly. Focus on user experience and business requirements.
+3. Select Testing Techniques: Choose appropriate testing techniques such asBDD(Behavior-Driven Development) or Specification by Example to create understandable and executable specifications.
+4. PlanTest DataManagement: Ensure the availability of relevanttest datafor different scenarios, considering data privacy and compliance requirements.
+5. DesignTest Environment: Set up a stabletest environmentthat mimics production as closely as possible to uncover environment-specific issues.
+6. Automate Wisely: Automate regression and high-prioritytest casesto save time and resources. Keepmanual testingfor exploratory, usability, and ad-hoc scenarios.
+7. Integrate with CI/CD: Embed acceptance tests into the CI/CD pipeline to enable early and frequent validation of the application.
+8. Monitor and Measure: Implement monitoring to tracktest coverage, pass/fail rates, and defect density. Use these metrics to refine the testing process.
+9. Review and Adapt: Regularly review thetest strategywith the team to adapt to changes in the application or business priorities.
+10. Stakeholder Communication: Keep stakeholders informed with clear, concise reports and dashboards that provide insight into the testing progress and outcomes.
 
-这些技术有助于确保软件在发布前符合业务需求，提供良好的用户体验，并且在关键问题方面没有问题。
-
-### 如何制定验收测试策略？
-
-制定一个**验收测试策略**包括以下几个关键步骤：
-
-1. **定义验收标准**：与利益相关者合作，为每个功能或用户故事建立清晰且可衡量的验收标准。
-
-2. **优先考虑[测试用例](../T/test-case.md)**：识别关键业务流程，并相应地优先考虑[测试用例](../T/test-case.md)。注重用户体验和业务需求。
-
-3. **选择测试技术**：选择适当的测试技术，如[行为驱动开发（BDD）](../B/bdd.md)或实例规约，以创建可理解且可执行的规范。
-
-4. **规划[测试数据](../T/test-data.md)管理**：确保不同场景的相关[测试数据](../T/test-data.md)可用，考虑数据隐私和合规性要求。
-
-5. **设计[测试环境](../T/test-environment.md)**：建立一个尽可能模拟生产环境的稳定[测试环境](../T/test-environment.md)，以发现特定于环境的问题。
-
-6. **明智地自动化**：自动化回归和高-[优先级](../P/priority.md)的[测试用例](../T/test-case.md)，以节省时间和资源。将[手动测试](../M/manual-testing.md)保留给探索性、可用性和临时场景。
-
-7. **与 CI/CD 集成**：将验收测试嵌入 CI/CD 流程，以实现对应用程序进行早期和频繁验证。
-
-8. **监控和度量**：实施监控以跟踪[测试覆盖率](../T/test-coverage.md)、通过/失败率和缺陷密度。利用这些指标来完善测试流程。
-
-9. **审查和调整**：定期与团队审查[测试策略](../T/test-strategy.md)，以适应应用程序或业务优先级的变化。
-
-10. **利益相关者沟通**：通过提供清晰、简洁的报告和仪表板，及时向利益相关者传达测试进展和结果。
-
-通过遵循这些步骤，您可以创建一个与业务目标一致并确保产品高质量的强大验收测试策略。
-
-### 自动化在验收测试中的作用是什么？
-
-自动化在验收测试中扮演着至关重要的角色，它通过**简化**软件对业务需求的验证过程，实现了[测试用例](../T/test-case.md)的重复和一致执行，以确保新功能或更改不会破坏现有功能。验收测试中的自动化具有以下优势：
-
-- 通过减少运行测试所需的时间，特别是对于回归测试，**提高了效率**。
-- 通过在重复性任务中减少人为错误，**增强了准确性**。
-- 通过在不成比例增加时间或资源的情况下，**促进了测试工作的可扩展性**，以覆盖更多的功能和场景。
-- 通过允许自动化验收测试成为部署流水线的一部分，**支持了持续集成/持续部署（CI/CD）**，提供了有关应用程序是否准备好投入生产的即时反馈。
-- 向开发人员和利益相关者提供更快的反馈周期，**加速了开发过程**，提高了产品质量。
-- 通过使人工测试人员专注于探索性测试和其他需要人类判断的领域，**改善了资源分配**。
-
-自动化验收测试通常是用高级语言编写的，或者通过允许行为驱动开发（[BDD](../B/bdd.md)）或领域特定语言（DSL）的框架编写，使它们易于理解，适合非技术利益相关者，并确保测试与业务语言和用户期望保持一致。
-
-```typescript
-// 使用 BDD 框架的自动化验收测试示例
+Define Acceptance Criteria: Collaborate with stakeholders to establish clear and measurable acceptance criteria for each feature or user story.
+**Define Acceptance Criteria**
+PrioritizeTest Cases: Identify critical business flows and prioritizetest casesaccordingly. Focus on user experience and business requirements.
+**PrioritizeTest Cases**[Test Cases](/wiki/test-case)[test cases](/wiki/test-case)
+Select Testing Techniques: Choose appropriate testing techniques such asBDD(Behavior-Driven Development) or Specification by Example to create understandable and executable specifications.
+**Select Testing Techniques**[BDD](/wiki/bdd)
+PlanTest DataManagement: Ensure the availability of relevanttest datafor different scenarios, considering data privacy and compliance requirements.
+**PlanTest DataManagement**[Test Data](/wiki/test-data)[test data](/wiki/test-data)
+DesignTest Environment: Set up a stabletest environmentthat mimics production as closely as possible to uncover environment-specific issues.
+**DesignTest Environment**[Test Environment](/wiki/test-environment)[test environment](/wiki/test-environment)
+Automate Wisely: Automate regression and high-prioritytest casesto save time and resources. Keepmanual testingfor exploratory, usability, and ad-hoc scenarios.
+**Automate Wisely**[priority](/wiki/priority)[test cases](/wiki/test-case)[manual testing](/wiki/manual-testing)
+Integrate with CI/CD: Embed acceptance tests into the CI/CD pipeline to enable early and frequent validation of the application.
+**Integrate with CI/CD**
+Monitor and Measure: Implement monitoring to tracktest coverage, pass/fail rates, and defect density. Use these metrics to refine the testing process.
+**Monitor and Measure**[test coverage](/wiki/test-coverage)
+Review and Adapt: Regularly review thetest strategywith the team to adapt to changes in the application or business priorities.
+**Review and Adapt**[test strategy](/wiki/test-strategy)
+Stakeholder Communication: Keep stakeholders informed with clear, concise reports and dashboards that provide insight into the testing progress and outcomes.
+**Stakeholder Communication**
+By following these steps, you can create a robustacceptance testingstrategy that aligns with business objectives and ensures a high-quality product.
+[acceptance testing](/wiki/acceptance-testing)
+Automation plays acrucial roleinacceptance testingbystreamliningthe validation process of software against business requirements. It enables repetitive and consistent execution oftest cases, ensuring that new features or changes do not break existing functionality. Automation inacceptance testing:
+**crucial role**[acceptance testing](/wiki/acceptance-testing)**streamlining**[test cases](/wiki/test-case)[acceptance testing](/wiki/acceptance-testing)- Increases efficiencyby reducing the time required to run tests, especially for regression testing.
+- Enhances accuracyby minimizing human error in repetitive tasks.
+- Facilitates scalabilityof test efforts to cover more features and scenarios without a proportional increase in time or resources.
+- Supports continuous integration/continuous deployment (CI/CD)by allowing automated acceptance tests to be part of the deployment pipeline, providing immediate feedback on the production readiness of the application.
+- Enables faster feedback cyclesto developers and stakeholders, accelerating the development process and improving product quality.
+- Improves resource allocationby freeing up human testers to focus on exploratory testing and other areas where human judgment is crucial.
+**Increases efficiency****Enhances accuracy****Facilitates scalability****Supports continuous integration/continuous deployment (CI/CD)****Enables faster feedback cycles****Improves resource allocation**
+Automated acceptance tests are typically written in high-level languages or through frameworks that allow for behavior-driven development (BDD) or domain-specific languages (DSLs), making themunderstandable to non-technical stakeholdersand ensuring that tests align with business language and user expectations.
+[BDD](/wiki/bdd)**understandable to non-technical stakeholders**
+```
+// Example of an automated acceptance test using a BDD framework
 Feature: User login
   Scenario: Successful login with valid credentials
     Given the login page is displayed
@@ -183,248 +201,292 @@ Feature: User login
     And the user submits the login form
     Then the user is redirected to the dashboard
 ```
+`// Example of an automated acceptance test using a BDD framework
+Feature: User login
+  Scenario: Successful login with valid credentials
+    Given the login page is displayed
+    When the user enters valid credentials
+    And the user submits the login form
+    Then the user is redirected to the dashboard`
+By integrating automatedacceptance testinginto the development workflow, teams cancontinuously validatethe software's adherence to business requirements,reduce risk, andshorten the time to market.
+[acceptance testing](/wiki/acceptance-testing)**continuously validate****reduce risk****shorten the time to market**
+Acceptance testingfaces several challenges, includingrequirements ambiguity,environment mismatches, andstakeholder communication. To overcome these:
+[Acceptance testing](/wiki/acceptance-testing)**requirements ambiguity****environment mismatches****stakeholder communication**- Clarify requirements: Work closely with stakeholders to ensure requirements are clear and testable. Use techniques likeBehavior-Driven Development (BDD)to create shared understanding through examples.
+- Replicate production environment: Ensure the testing environment closely mirrors production to avoid discrepancies. Useinfrastructure as code (IaC)to automate environmentsetupand maintain consistency.
+- Improve stakeholder communication: Regularly update stakeholders on testing progress and involve them in the decision-making process. Implementdemo sessionsandfeedback loopsto ensure their expectations are met.
+- Managetest data: Create strategies for managing and generatingtest datathat accurately reflects production scenarios. Utilizedata anonymizationandsynthetic data generationtools to maintain data integrity and privacy.
+- Automate judiciously: Focus automation efforts on tests that provide the most value and are prone to human error. Maintain a balance between manual and automated tests to ensure comprehensive coverage.
+- Handle flakiness: Implementretry mechanismsandroot cause analysisforflaky teststo ensure reliability. Usecontainerizationto provide stable and consistenttest environments.
+- Monitor and act on feedback: Set upmonitoring toolsto track test results and performance. Use this data to continuously refine and improve theacceptance testingprocess.
 
-通过将自动化验收测试整合到开发工作流中，团队可以**持续验证**软件对业务需求的遵循，**降低风险**，并**缩短上市时间**。
+Clarify requirements: Work closely with stakeholders to ensure requirements are clear and testable. Use techniques likeBehavior-Driven Development (BDD)to create shared understanding through examples.
+**Clarify requirements****Behavior-Driven Development (BDD)**[BDD](/wiki/bdd)
+Replicate production environment: Ensure the testing environment closely mirrors production to avoid discrepancies. Useinfrastructure as code (IaC)to automate environmentsetupand maintain consistency.
+**Replicate production environment****infrastructure as code (IaC)**[setup](/wiki/setup)
+Improve stakeholder communication: Regularly update stakeholders on testing progress and involve them in the decision-making process. Implementdemo sessionsandfeedback loopsto ensure their expectations are met.
+**Improve stakeholder communication****demo sessions****feedback loops**
+Managetest data: Create strategies for managing and generatingtest datathat accurately reflects production scenarios. Utilizedata anonymizationandsynthetic data generationtools to maintain data integrity and privacy.
+**Managetest data**[test data](/wiki/test-data)[test data](/wiki/test-data)**data anonymization****synthetic data generation**
+Automate judiciously: Focus automation efforts on tests that provide the most value and are prone to human error. Maintain a balance between manual and automated tests to ensure comprehensive coverage.
+**Automate judiciously**
+Handle flakiness: Implementretry mechanismsandroot cause analysisforflaky teststo ensure reliability. Usecontainerizationto provide stable and consistenttest environments.
+**Handle flakiness****retry mechanisms****root cause analysis**[flaky tests](/wiki/flaky-test)**containerization**[test environments](/wiki/test-environment)
+Monitor and act on feedback: Set upmonitoring toolsto track test results and performance. Use this data to continuously refine and improve theacceptance testingprocess.
+**Monitor and act on feedback****monitoring tools**[acceptance testing](/wiki/acceptance-testing)
+Integratingacceptance testinginto acontinuous delivery (CD) pipelineensures that new features meet business requirements and are ready for production release. To achieve this, follow these steps:
+[acceptance testing](/wiki/acceptance-testing)**continuous delivery (CD) pipeline**1. Automate Acceptance Tests: Write automated acceptance tests that align with user stories or requirements. Use a Behavior-Driven Development (BDD) framework like Cucumber to create readable scenarios.
+2. Version Control: Store acceptance tests in a version control system alongside application code to maintain synchronization betweentest casesand the features they cover.
+3. Continuous Integration Server: Configure your CI server (e.g., Jenkins, CircleCI) to trigger acceptance tests as part of the pipeline. This should occur after unit and integration tests pass to ensure only quality code progresses.
+4. Test Environment: Set up a dedicatedtest environmentthat mimics production. Use infrastructure as code (IaC) tools like Terraform or Ansible for consistency and repeatability.
+5. Parallel Execution: Run tests in parallel to reduce execution time. Containerization with Docker or Kubernetes can help manage and scaletest environments.
+6. Gatekeeping: Implement a gatekeeper mechanism in the pipeline. Only allow changes to proceed to the next stage if acceptance tests pass, ensuring that failing code doesn't reach production.
+7. Feedback Loop: Provide immediate feedback to developers when tests fail. Integratetest reportswith communication tools like Slack or email.
+8. Continuous Monitoring: Continuously monitor thetest suite's health. Removeflaky testsand update tests to reflect changes in user requirements.
+9. Deployment Decisions: Use test results to make informed decisions about deployments. Automate the deployment of code that passes acceptance criteria.
 
-### 验收测试有哪些挑战，如何克服？
+Automate Acceptance Tests: Write automated acceptance tests that align with user stories or requirements. Use a Behavior-Driven Development (BDD) framework like Cucumber to create readable scenarios.
+**Automate Acceptance Tests**[BDD](/wiki/bdd)
+Version Control: Store acceptance tests in a version control system alongside application code to maintain synchronization betweentest casesand the features they cover.
+**Version Control**[test cases](/wiki/test-case)
+Continuous Integration Server: Configure your CI server (e.g., Jenkins, CircleCI) to trigger acceptance tests as part of the pipeline. This should occur after unit and integration tests pass to ensure only quality code progresses.
+**Continuous Integration Server**
+Test Environment: Set up a dedicatedtest environmentthat mimics production. Use infrastructure as code (IaC) tools like Terraform or Ansible for consistency and repeatability.
+**Test Environment**[Test Environment](/wiki/test-environment)[test environment](/wiki/test-environment)
+Parallel Execution: Run tests in parallel to reduce execution time. Containerization with Docker or Kubernetes can help manage and scaletest environments.
+**Parallel Execution**[test environments](/wiki/test-environment)
+Gatekeeping: Implement a gatekeeper mechanism in the pipeline. Only allow changes to proceed to the next stage if acceptance tests pass, ensuring that failing code doesn't reach production.
+**Gatekeeping**
+Feedback Loop: Provide immediate feedback to developers when tests fail. Integratetest reportswith communication tools like Slack or email.
+**Feedback Loop**[test reports](/wiki/test-report)
+Continuous Monitoring: Continuously monitor thetest suite's health. Removeflaky testsand update tests to reflect changes in user requirements.
+**Continuous Monitoring**[test suite](/wiki/test-suite)[flaky tests](/wiki/flaky-test)
+Deployment Decisions: Use test results to make informed decisions about deployments. Automate the deployment of code that passes acceptance criteria.
+**Deployment Decisions**
+By embeddingacceptance testinginto the CD pipeline, you ensure that every change is evaluated against the expected business functionality before it reaches the end-users, maintaining high-quality standards and reducing the risk of production issues.
+[acceptance testing](/wiki/acceptance-testing)
+#### Tools and Technologies
+- What tools are commonly used for acceptance testing?Common tools foracceptance testinginclude:Cucumber: Supports Behavior-Driven Development (BDD) with plain language specifications.Selenium: Automates browsers, enabling web application testing.SpecFlow: Bridges the communication gap between domain experts and developers by binding business readable behavior specifications to the underlying implementation.FitNesse: A wiki-based framework that allows users to define tests in tables and executable specifications.Robot Framework: A keyword-driven approach to acceptance testing, which is easy to use for non-programmers.JBehave: A framework for BDD that allows writing stories as part of the documentation.TestComplete: Provides a comprehensive set of features for web, mobile, and desktop testing.UFT (UnifiedFunctional Testing): A widely used tool for functional and regression testing, supporting keyword and scripting interfaces.Postman: Simplifies API testing, allowing users to create and share test suites.SoapUI: A tool for testing SOAP and REST web services.These tools facilitate the validation of software against business requirements, often through automatedtest casesthat simulate user behavior orAPIcalls to ensure the system meets the agreed-upon criteria. They can be integrated into CI/CD pipelines for continuous validation and support various programming languages and platforms. Each tool has its unique features and may be more suitable for certain scenarios or types of applications. Selecting the right tool depends on the specific needs of the project, such as the complexity of thetest cases, the technology stack, and the team's expertise.
+- How do these tools help in the process of acceptance testing?Test automationtools streamline theacceptance testingprocess by enabling the execution oftest casesthat validate the software against business requirements. These toolsreduce the time and effortrequired for repetitivemanual testing, ensuring that acceptance criteria are consistently met.By automatingtest cases, teams can quickly identify regressions and defects, allowing forrapid feedbackand correction. This is particularly beneficial in Agile and DevOps environments where frequentiterationsand deployments are common. Automated acceptance tests can be triggered by continuous integration (CI) pipelines, ensuring that new changes are vetted for user acceptance criteria before deployment.Moreover, automation tools supportdata-driven testing, allowing testers to easily input a variety of data sets to validate application behavior under different scenarios. This enhances thetest coverageand reliability ofacceptance testing.Automated tests also provideclear documentationof what has been tested, serving as a living artifact of the acceptance criteria. This transparency helps maintain alignment between stakeholders, developers, and testers.In addition, these tools often come withreporting featuresthat offer insights into the test results, making it easier to communicate the state of the product to all interested parties.To sum up,test automationtools aid inacceptance testingby ensuring consistent execution oftest cases, providing quick feedback on the quality of the software, enhancingtest coverage, and offering clear documentation and reporting of the test results.
+- What are the pros and cons of different acceptance testing tools?Acceptance testingtools vary in functionality, ease of use, and integration capabilities. Here's a concise comparison of their pros and cons:Cucumber:Pros: Promotes Behavior-Driven Development (BDD), uses plain language (Gherkin), integrates well with various frameworks.Cons: Requires good understanding of BDD, may need additional setup for complex test scenarios.Selenium:Pros: Supports multiple browsers and languages, has a large user community, and is highly flexible.Cons: Can be complex to set up, slower execution due to browser automation, may require additional tools for API testing.FitNesse:Pros: Combines wiki for documentation and test execution, good for collaboration between stakeholders.Cons: Steep learning curve, UI is not as modern, may not scale well for large projects.SpecFlow:Pros: Integrates with .NET, supports BDD, allows tests to be written in natural language.Cons: Primarily for .NET projects, requires understanding of BDD principles.Robot Framework:Pros: Keyword-driven, supports BDD, has many libraries for different applications.Cons: Syntax may be less intuitive for developers, may require additional Python knowledge.TestCafe:Pros: No need for WebDriver, tests run on all popular browsers, easy to set up.Cons: Less mature compared to Selenium, may have fewer integrations.UFT (UnifiedFunctional Testing):Pros: Supports a wide range of applications, includes a powerful IDE, extensive object recognition.Cons: Expensive, less suited for agile and continuous integration environments.Each tool has its strengths and weaknesses, and the best choice depends on project requirements, team expertise, and the specific technologies in use.
+- What is the role of APIs in acceptance testing?APIsplay acrucial roleinacceptance testingby serving as theinterfaceto the application logic. They allow testers tovalidatethe system's behavior under test without the need for a user interface. This is particularly useful forbackend serviceswhere the UI may not be available or fully developed.UsingAPIs, acceptance tests canverifythat:The systemresponds correctlyto a given input.Business rulesare adhered to.Integrationswith other services function as expected.The systemperformancemeets the required benchmarks.APIsenable the creation ofautomated acceptance teststhat arereliable,repeatable, and can be executed quickly. They facilitateearly testingin the development cycle, often as part of acontinuous integration/continuous delivery (CI/CD)pipeline.Moreover,APIsprovide a level ofabstractionthat allows for testing the system without relying on the UI, which may be subject to frequent changes. This leads tomore stableandmaintainableacceptance tests.// Example of an API-based acceptance test in pseudo-code
+const response = await apiClient.createOrder(orderDetails);
+assert(response.status, 201);
+assert(response.data.orderId, expectedOrderId);In summary,APIsare integral toacceptance testing, enablingefficient,early, andfocusedvalidation of the system's functionality and performance.
+- How can cloud technologies be leveraged in acceptance testing?Leveragingcloud technologiesinacceptance testingoffers several advantages. Cloud platforms providescalable resourceson-demand, allowing teams to simulate real-world traffic and usage patterns by dynamically provisioning the necessary infrastructure. This is particularly useful forperformance andload testingaspects ofacceptance testing.Using cloud services,test environmentscan bereplicated quickly and consistently, ensuring that acceptance tests run in a stable and controlled setting. This is crucial for maintaining the integrity of theacceptance testingprocess. Cloud-based tools often come withbuilt-in analytics and monitoring, which can be used to gain insights into application performance and user experience during the acceptance tests.Continuous Integration/Continuous Deployment (CI/CD) pipelinescan be enhanced with cloud services to automatically deploy and run acceptance tests in various environments, including production-like staging areas. This integration ensures thatacceptance testingis a seamless part of the delivery process.Moreover, cloud platforms often offerglobal data centers, which means acceptance tests can be executed closer to the end-users' location, providing more accurate results in terms of latency and user experience.Teams can also benefit fromcost savingsas cloud services typically follow a pay-as-you-go model, which means you only pay for the resources you use during the testing phase.In summary, cloud technologies facilitate a moreefficient, scalable, and realisticacceptance testingprocess, which can lead to a more reliable and user-centric final product.
 
-验收测试在面对**需求模糊性**、**环境不匹配**和**利益相关者沟通**等挑战时，需要采取一些对策：
+Common tools foracceptance testinginclude:
+[acceptance testing](/wiki/acceptance-testing)- Cucumber: Supports Behavior-Driven Development (BDD) with plain language specifications.
+- Selenium: Automates browsers, enabling web application testing.
+- SpecFlow: Bridges the communication gap between domain experts and developers by binding business readable behavior specifications to the underlying implementation.
+- FitNesse: A wiki-based framework that allows users to define tests in tables and executable specifications.
+- Robot Framework: A keyword-driven approach to acceptance testing, which is easy to use for non-programmers.
+- JBehave: A framework for BDD that allows writing stories as part of the documentation.
+- TestComplete: Provides a comprehensive set of features for web, mobile, and desktop testing.
+- UFT (UnifiedFunctional Testing): A widely used tool for functional and regression testing, supporting keyword and scripting interfaces.
+- Postman: Simplifies API testing, allowing users to create and share test suites.
+- SoapUI: A tool for testing SOAP and REST web services.
+**Cucumber****Selenium**[Selenium](/wiki/selenium)**SpecFlow****FitNesse****Robot Framework****JBehave****TestComplete****UFT (UnifiedFunctional Testing)**[Functional Testing](/wiki/functional-testing)**Postman**[Postman](/wiki/postman)**SoapUI**
+These tools facilitate the validation of software against business requirements, often through automatedtest casesthat simulate user behavior orAPIcalls to ensure the system meets the agreed-upon criteria. They can be integrated into CI/CD pipelines for continuous validation and support various programming languages and platforms. Each tool has its unique features and may be more suitable for certain scenarios or types of applications. Selecting the right tool depends on the specific needs of the project, such as the complexity of thetest cases, the technology stack, and the team's expertise.
+[test cases](/wiki/test-case)[API](/wiki/api)[test cases](/wiki/test-case)
+Test automationtools streamline theacceptance testingprocess by enabling the execution oftest casesthat validate the software against business requirements. These toolsreduce the time and effortrequired for repetitivemanual testing, ensuring that acceptance criteria are consistently met.
+[Test automation](/wiki/test-automation)[acceptance testing](/wiki/acceptance-testing)[test cases](/wiki/test-case)**reduce the time and effort**[manual testing](/wiki/manual-testing)
+By automatingtest cases, teams can quickly identify regressions and defects, allowing forrapid feedbackand correction. This is particularly beneficial in Agile and DevOps environments where frequentiterationsand deployments are common. Automated acceptance tests can be triggered by continuous integration (CI) pipelines, ensuring that new changes are vetted for user acceptance criteria before deployment.
+[test cases](/wiki/test-case)**rapid feedback**[iterations](/wiki/iteration)
+Moreover, automation tools supportdata-driven testing, allowing testers to easily input a variety of data sets to validate application behavior under different scenarios. This enhances thetest coverageand reliability ofacceptance testing.
+**data-driven testing**[test coverage](/wiki/test-coverage)[acceptance testing](/wiki/acceptance-testing)
+Automated tests also provideclear documentationof what has been tested, serving as a living artifact of the acceptance criteria. This transparency helps maintain alignment between stakeholders, developers, and testers.
+**clear documentation**
+In addition, these tools often come withreporting featuresthat offer insights into the test results, making it easier to communicate the state of the product to all interested parties.
+**reporting features**
+To sum up,test automationtools aid inacceptance testingby ensuring consistent execution oftest cases, providing quick feedback on the quality of the software, enhancingtest coverage, and offering clear documentation and reporting of the test results.
+[test automation](/wiki/test-automation)[acceptance testing](/wiki/acceptance-testing)[test cases](/wiki/test-case)[test coverage](/wiki/test-coverage)
+Acceptance testingtools vary in functionality, ease of use, and integration capabilities. Here's a concise comparison of their pros and cons:
+[Acceptance testing](/wiki/acceptance-testing)
+Cucumber:
+**Cucumber**- Pros: Promotes Behavior-Driven Development (BDD), uses plain language (Gherkin), integrates well with various frameworks.
+- Cons: Requires good understanding of BDD, may need additional setup for complex test scenarios.
+**Pros****Cons**
+Selenium:
+**Selenium**[Selenium](/wiki/selenium)- Pros: Supports multiple browsers and languages, has a large user community, and is highly flexible.
+- Cons: Can be complex to set up, slower execution due to browser automation, may require additional tools for API testing.
+**Pros****Cons**
+FitNesse:
+**FitNesse**- Pros: Combines wiki for documentation and test execution, good for collaboration between stakeholders.
+- Cons: Steep learning curve, UI is not as modern, may not scale well for large projects.
+**Pros****Cons**
+SpecFlow:
+**SpecFlow**- Pros: Integrates with .NET, supports BDD, allows tests to be written in natural language.
+- Cons: Primarily for .NET projects, requires understanding of BDD principles.
+**Pros****Cons**
+Robot Framework:
+**Robot Framework**- Pros: Keyword-driven, supports BDD, has many libraries for different applications.
+- Cons: Syntax may be less intuitive for developers, may require additional Python knowledge.
+**Pros****Cons**
+TestCafe:
+**TestCafe**- Pros: No need for WebDriver, tests run on all popular browsers, easy to set up.
+- Cons: Less mature compared to Selenium, may have fewer integrations.
+**Pros****Cons**
+UFT (UnifiedFunctional Testing):
+**UFT (UnifiedFunctional Testing)**[Functional Testing](/wiki/functional-testing)- Pros: Supports a wide range of applications, includes a powerful IDE, extensive object recognition.
+- Cons: Expensive, less suited for agile and continuous integration environments.
+**Pros****Cons**
+Each tool has its strengths and weaknesses, and the best choice depends on project requirements, team expertise, and the specific technologies in use.
 
-- **澄清需求**：与利益相关者紧密合作，确保需求清晰且可测试。利用**行为驱动开发（[BDD](../B/bdd.md)）**等技术，通过实例创建共享理解。
-- **复制生产环境**：确保测试环境与生产环境紧密匹配，以避免差异。采用**基础设施即代码（IaC）**自动化环境[设置](../S/setup.md)并保持一致性。
-- **改善利益相关者沟通**：定期向利益相关者更新测试进展，并让他们参与决策过程。实施**演示会话**和**反馈循环**以确保满足他们的期望。
-- **管理[测试数据](../T/test-data.md)**：制定管理和生成[测试数据](../T/test-data.md)的策略，以准确反映生产场景。利用**数据匿名化**和**合成数据生成**工具来维护数据的完整性和隐私性。
-- **明智自动化**：将自动化工作重点放在提供最大价值且容易出错的测试上。保持手动测试和自动化测试的平衡，以确保全面覆盖。
-- **处理不稳定性**：实施**重试机制**和**根本原因分析**以处理[不稳定的测试](../F/flaky-test.md)以确保可靠性。使用**容器化**提供稳定一致的[测试环境](../T/test-environment.md)。
-- **监控并采取行动**：设置**监控工具**以跟踪测试结果和性能。利用这些数据不断完善和改进验收测试流程。
-
-### 如何将验收测试集成到持续交付流水线中？
-
-将验收测试整合到**持续交付（CD）流水线**中，确保新功能符合业务需求且准备好投入生产。为实现这一目标，请按照以下步骤操作：
-
-1. **自动化验收测试**：编写与用户故事或需求相符的自动化验收测试。使用行为驱动开发（[BDD](../B/bdd.md)）框架如 Cucumber 创建可读的场景。
-
-2. **版本控制**：将验收测试与应用代码一起存储在版本控制系统中，以保持[测试用例](../T/test-case.md)与其覆盖的功能之间的同步。
-
-3. **持续集成服务器**：配置 CI 服务器（例如 Jenkins、CircleCI），在流水线的一部分触发验收测试。这应该在单元测试和集成测试通过后进行，以确保只有质量良好的代码继续进行。
-
-4. **[测试环境](../T/test-environment.md)**：建立一个专用的[测试环境](../T/test-environment.md)，模拟生产环境。使用基础设施即代码（IaC）工具如 Terraform 或 Ansible 保持一致性和可重复性。
-
-5. **并行执行**：并行运行测试以减少执行时间。使用 Docker 或 Kubernetes 进行容器化可以帮助管理和扩展[测试环境](../T/test-environment.md)。
-
-6. **门控机制**：在流水线中实施门控机制。只有当验收测试通过时，才允许更改进入下一阶段，确保失败的代码不会到达生产环境。
-
-7. **反馈循环**：在测试失败时立即向开发人员提供反馈。将[测试报告](../T/test-report.md)与 Slack 或电子邮件等通信工具集成。
-
-8. **持续监控**：持续监控[测试套件](../T/test-suite.md)的健康状况。移除[不稳定的测试](../F/flaky-test.md)并更新测试以反映用户需求的变化。
-
-9. **部署决策**：使用测试结果做出关于部署的明智决策。自动部署符合验收标准的代码。
-
-通过将验收测试嵌入到 CD 流水线中，确保每次更改在达到最终用户之前都会根据预期的业务功能进行评估，保持高质量标准，降低生产问题的风险。
-
-## 工具和技术
-
-### 验收测试常用的工具有哪些？
-
-这些是常用于验收测试的工具：
-
-- **Cucumber**：支持以简单语言规范的方式进行行为驱动开发（BDD）。
-- **[Selenium](../S/selenium.md)**：自动化浏览器，用于进行 Web 应用程序测试。
-- **SpecFlow**：通过将可读的业务行为规范与底层实现绑定，弥合领域专家和开发人员之间的沟通鸿沟。
-- **FitNesse**：基于 Wiki 的框架，允许用户在表格和可执行规范中定义测试。
-- **Robot Framework**：关键字驱动的验收测试方法，非程序员也易于使用。
-- **JBehave**：支持 BDD 的框架，允许将故事写入文档的一部分。
-- **TestComplete**：提供全面功能的 Web、移动和桌面测试工具。
-- **UFT（Unified [Functional Testing](../F/functional-testing.md)）**：广泛用于功能和回归测试，支持关键字和脚本接口。
-- **[Postman](../P/postman.md)**：简化 API 测试，允许用户创建和共享测试套件。
-- **SoapUI**：用于测试 SOAP 和 REST Web 服务的工具。
-
-这些工具通过自动化[测试用例](../T/test-case.md)进行软件验证，这些测试用例模拟用户行为或[API](../A/api.md)调用，以确保系统满足协商一致的标准。它们可以集成到 CI/CD 流水线中，用于持续验证，并支持各种编程语言和平台。每个工具都有其独特的功能，并且选择合适的工具取决于项目的具体需求，例如[测试用例](../T/test-case.md)的复杂性、技术堆栈和团队的专业知识。
-
-### 这些工具如何帮助验收测试？
-
-[测试自动化](../T/test-automation.md)工具简化了验收测试过程，通过执行[测试用例](../T/test-case.md)验证软件是否符合业务需求。这些工具不仅**减少了进行繁琐的[手动测试](../M/manual-testing.md)所需的时间和精力**，还确保了验收标准的一致性。
-
-通过自动化[测试用例](../T/test-case.md)，团队能够快速发现回归和缺陷，实现**及时反馈**和纠正。这在敏捷和 DevOps 环境中尤为重要，因为这些环境通常需要频繁的[迭代](../I/iteration.md)和部署。自动验收测试可以通过持续集成（CI）流水线触发，确保新的更改在部署之前经过用户验收标准的审查。
-
-此外，自动化工具支持**数据驱动测试**，允许测试人员使用各种数据集验证应用程序在不同情景下的行为。这提高了[测试覆盖率](../T/test-coverage.md)和验收测试的可靠性。
-
-自动化测试还提供了关于已测试内容的**清晰文档**，充当验收标准的实时记录。这种透明性有助于保持利益相关方、开发人员和测试人员之间的一致性。
-
-此外，这些工具通常配备**报告功能**，提供对测试结果的深入了解，更容易向所有相关方传达产品的状态。
-
-总的来说，[测试自动化](../T/test-automation.md)工具通过确保[测试用例](../T/test-case.md)的一致执行，提供软件质量的快速反馈，增强[测试覆盖率](../T/test-coverage.md)，并提供清晰的文档和测试结果报告，为验收测试提供了有力支持。
-
-### 不同验收测试工具有哪些优缺点？
-
-验收测试工具在功能、易用性和集成能力上各有千秋。以下是它们的优缺点的简要比较：
-
-**Cucumber**：
-
-- **优势**：推动行为驱动开发（BDD），采用简单语言（Gherkin），与多种框架良好整合。
-- **劣势**：需要对 BDD 有深入理解，对于复杂测试场景可能需要额外设置。
-
-**[Selenium](../S/selenium.md)**：
-
-- **优势**：支持多种浏览器和语言，拥有庞大用户社区，高度灵活。
-- **劣势**：设置较为繁琐，由于浏览器自动化导致执行速度较慢，可能需要额外工具进行 API 测试。
-
-**FitNesse**：
-
-- **优势**：结合维基进行文档编制和测试执行，有利于利益相关方协作。
-- **劣势**：学习曲线较陡，用户界面相对陈旧，可能在大型项目中扩展性较差。
-
-**SpecFlow**：
-
-- **优势**：与.NET 集成，支持 BDD，允许使用自然语言编写测试。
-- **劣势**：主要用于.NET 项目，需要理解 BDD 原则。
-
-**Robot Framework**：
-
-- **优势**：基于关键词驱动，支持 BDD，拥有多个面向不同应用的库。
-- **劣势**：语法可能对开发人员不够直观，可能需要额外的 Python 知识。
-
-**TestCafe**：
-
-- **优势**：无需 WebDriver，测试支持所有流行的浏览器，易于设置。
-- **劣势**：相较于 Selenium，成熟度较低，可能集成较少。
-
-**UFT (Unified [Functional Testing](../F/functional-testing.md))**：
-
-- **优势**：支持多种应用，内置强大的 IDE，具备广泛的对象识别功能。
-- **劣势**：昂贵，不太适用于敏捷和持续集成环境。
-
-每个工具都有其长处和不足，最佳选择取决于项目需求、团队专业知识和具体使用的技术。
-
-### API 在验收测试中的作用是什么？
-
-[APIs](../A/api.md)在验收测试中扮演着至关重要的角色，充当着与应用逻辑进行交互的**接口**。它们使测试人员能够在无需用户界面的情况下**验证**系统在测试中的行为，特别是在**后端服务**中，用户界面可能不可用或尚未完全开发。
-
-通过使用[APIs](../A/api.md)，验收测试能够**验证**：
-
-- 系统是否对给定输入**正确响应**。
-- 是否遵循**业务规则**。
-- 与其他服务的**集成**是否按预期运行。
-- 系统的**性能**是否符合所需的基准。
-
-[APIs](../A/api.md)支持创建**可靠**、**可重复**且可以快速执行的**自动验收测试**。它们有助于在开发周期的**早期**进行测试，通常作为**持续集成/持续交付（CI/CD）**流程的一部分。
-
-此外，[APIs](../A/api.md)提供了一层**抽象**，允许在没有依赖 UI 的情况下测试系统，因为 UI 可能会频繁更改。这导致了更**稳定**和**可维护**的验收测试。
-
-```typescript
-// 伪代码中基于 API 的验收测试示例
+APIsplay acrucial roleinacceptance testingby serving as theinterfaceto the application logic. They allow testers tovalidatethe system's behavior under test without the need for a user interface. This is particularly useful forbackend serviceswhere the UI may not be available or fully developed.
+[APIs](/wiki/api)**crucial role**[acceptance testing](/wiki/acceptance-testing)**interface****validate****backend services**
+UsingAPIs, acceptance tests canverifythat:
+[APIs](/wiki/api)**verify**- The systemresponds correctlyto a given input.
+- Business rulesare adhered to.
+- Integrationswith other services function as expected.
+- The systemperformancemeets the required benchmarks.
+**responds correctly****Business rules****Integrations****performance**
+APIsenable the creation ofautomated acceptance teststhat arereliable,repeatable, and can be executed quickly. They facilitateearly testingin the development cycle, often as part of acontinuous integration/continuous delivery (CI/CD)pipeline.
+[APIs](/wiki/api)**automated acceptance tests****reliable****repeatable****early testing****continuous integration/continuous delivery (CI/CD)**
+Moreover,APIsprovide a level ofabstractionthat allows for testing the system without relying on the UI, which may be subject to frequent changes. This leads tomore stableandmaintainableacceptance tests.
+[APIs](/wiki/api)**abstraction****more stable****maintainable**
+```
+// Example of an API-based acceptance test in pseudo-code
 const response = await apiClient.createOrder(orderDetails);
 assert(response.status, 201);
 assert(response.data.orderId, expectedOrderId);
 ```
+`// Example of an API-based acceptance test in pseudo-code
+const response = await apiClient.createOrder(orderDetails);
+assert(response.status, 201);
+assert(response.data.orderId, expectedOrderId);`
+In summary,APIsare integral toacceptance testing, enablingefficient,early, andfocusedvalidation of the system's functionality and performance.
+[APIs](/wiki/api)[acceptance testing](/wiki/acceptance-testing)**efficient****early****focused**
+Leveragingcloud technologiesinacceptance testingoffers several advantages. Cloud platforms providescalable resourceson-demand, allowing teams to simulate real-world traffic and usage patterns by dynamically provisioning the necessary infrastructure. This is particularly useful forperformance andload testingaspects ofacceptance testing.
+**cloud technologies**[acceptance testing](/wiki/acceptance-testing)**scalable resources****performance andload testing**[load testing](/wiki/load-testing)[acceptance testing](/wiki/acceptance-testing)
+Using cloud services,test environmentscan bereplicated quickly and consistently, ensuring that acceptance tests run in a stable and controlled setting. This is crucial for maintaining the integrity of theacceptance testingprocess. Cloud-based tools often come withbuilt-in analytics and monitoring, which can be used to gain insights into application performance and user experience during the acceptance tests.
+[test environments](/wiki/test-environment)**replicated quickly and consistently**[acceptance testing](/wiki/acceptance-testing)**built-in analytics and monitoring**
+Continuous Integration/Continuous Deployment (CI/CD) pipelinescan be enhanced with cloud services to automatically deploy and run acceptance tests in various environments, including production-like staging areas. This integration ensures thatacceptance testingis a seamless part of the delivery process.
+**Continuous Integration/Continuous Deployment (CI/CD) pipelines**[acceptance testing](/wiki/acceptance-testing)
+Moreover, cloud platforms often offerglobal data centers, which means acceptance tests can be executed closer to the end-users' location, providing more accurate results in terms of latency and user experience.
+**global data centers**
+Teams can also benefit fromcost savingsas cloud services typically follow a pay-as-you-go model, which means you only pay for the resources you use during the testing phase.
+**cost savings**
+In summary, cloud technologies facilitate a moreefficient, scalable, and realisticacceptance testingprocess, which can lead to a more reliable and user-centric final product.
+**efficient, scalable, and realistic**[acceptance testing](/wiki/acceptance-testing)
+#### Best Practices
+- What are some best practices for acceptance testing?Best practices foracceptance testinginclude:Define clear acceptance criteria: Work with stakeholders to establish unambiguous, measurable criteria that a feature must meet to be accepted.Collaborate with cross-functional teams: Ensure developers, testers, and business analysts work together to understand requirements and outcomes.Prioritize user experience: Focus on real-world usage scenarios to validate the end-to-end workflow and user satisfaction.Keep tests maintainable: Write tests that are easy to understand and update as the application evolves.Automate where appropriate: Use automation to perform repetitive, time-consuming tests, but remember that some exploratory testing may require a manual approach.Test with production-like data: Use data that closely mimics production to ensure tests are realistic and cover edge cases.Performregression testing: Ensure new changes do not break existing functionality by including regression tests in your acceptance suite.Monitor performance and security: Include performance and security checks as part of your acceptance criteria.Use version control for test artifacts: Store test cases, scripts, and data in a version control system to track changes and collaborate effectively.Continuously refine the process: Regularly review and adapt your testing process to address inefficiencies and incorporate new best practices.By adhering to these practices, you can ensure thatacceptance testingis effective, efficient, and aligned with the expectations of stakeholders and end-users.
+- How can acceptance tests be maintained and updated over time?Maintaining and updating acceptance tests over time requires astructured approachto ensure they remain relevant and effective:Regularly ReviewTest Cases: Schedule periodic reviews of acceptance tests to align them with new features, requirements, and changes in the application.Refactor Tests: Keep the test codebase clean by refactoring tests for readability, efficiency, andmaintainability. Remove redundancy and ensure tests are modular.Version Control: Use version control systems to track changes intest scripts, enabling rollback to previous versions if necessary.Test DataManagement: Managetest dataeffectively, ensuring it is up-to-date and representative of production data.Automate Where Possible: Automate the update process for tests that are affected by repetitive changes, using scripts or tools that can modifytest casesor data.Collaborate with Stakeholders: Work closely with developers, business analysts, and product owners to understand changes and their impact on acceptance criteria.Continuous Integration: Integrate acceptance tests into a CI/CD pipeline to ensure they are executed with every build, catching issues early.Monitoring and Alerts: Implement monitoring for thetest suiteto detect flakiness or failures due to application changes, with alerts for immediate action.Documentation: Keeptest casedocumentation up-to-date to reflect the current state of the application and tests.Feedback Loop: Establish a feedback loop with the team to discuss the effectiveness of acceptance tests and potential improvements.By adhering to these practices, acceptance tests can be effectively maintained and updated, ensuring they continue to provide value and meet the evolving needs of the software development lifecycle.
+- What is the role of documentation in acceptance testing?Documentation plays acrucial roleinacceptance testing, serving as the foundation for understanding, executing, and evaluating the test criteria. It includes theAcceptanceTest Plan(ATP),test cases, andtest scenariosthat outline the conditions under which a system is considered acceptable by the end user or client.Test casesare derived fromrequirements documentationand are essential for ensuring that all functional and non-functional aspects of the application are verified. They provide a step-by-step description of the test conditions,expected results, and acceptance criteria.Traceability matriceslink requirements to their corresponding tests, ensuring coverage and helping to identify any gaps in the testing process. This is vital for maintaining the integrity of theacceptance testingphase.Test reportsdocument the outcomes of the acceptance tests, including any defects or issues found. These reports are critical for stakeholders to make informed decisions regarding the software's readiness for production.In summary, documentation inacceptance testingensures:Clarity of what is to be tested and what constitutes success.Consistency in test execution.Accountability through traceability of tests to requirements.Effective communication of test results and findings to stakeholders.Proper documentation is indispensable for a transparent, efficient, and successfulacceptance testingprocess.
+- How can acceptance testing be made more efficient?To enhance the efficiency ofacceptance testing:Prioritizetest casesbased on risk and business impact. Focus on critical functionalities that directly affect the user experience.Implementtest datamanagementpractices to ensure relevant and high-quality data is available for testing scenarios.UtilizeBehavior-Driven Development (BDD)frameworks like Cucumber to create readable specifications that double as automated tests.Parallelize teststo reduce execution time. Tools like Selenium Grid can run multiple tests simultaneously across different environments.Reuse test componentsand follow DRY (Don't Repeat Yourself) principles to minimize maintenance and improve consistency.Mock external dependenciesto isolate the system under test and reduce the unpredictability of external systems.Optimizetest environmentsetupwith containerization tools like Docker to quickly spin up consistent testing environments.Review and refactor tests regularlyto remove redundancies and ensure they remain aligned with current requirements.Monitor and analyze test resultsusing dashboards and reporting tools to quickly identify and address failures.Collaborate closely with stakeholdersto ensure acceptance criteria are clear and to gather feedback on test coverage and outcomes.By implementing these practices, you can streamlineacceptance testingprocesses, reduce execution time, and maintain high-qualitytest suitesthat provide valuable feedback for the development lifecycle.
+- How can the results of acceptance testing be communicated effectively?Communicating the results ofacceptance testingeffectively involves clear, concise, and actionable reporting. Usedashboardsto provide real-time status updates, highlightingpass/fail rates,test coverage, anddefects. Employvisual aidslike charts and graphs for quick comprehension.Incorporateautomated reportsgenerated post-execution, ensuring they contain essential details such astest casedescriptions,expected outcomes,actual results, andevidence oftest execution(screenshots, logs). Tailor reports to different stakeholders—summary reports for management and detailed logs for developers.Leveragenotification systemsto alert teams immediately when tests fail. Integrate these notifications into tools already in use, like Slack or email.For transparency and collaboration, useissue tracking systemslikeJIRAto log defects, linking them directly to the failed acceptance tests. This facilitates traceability and prioritization.Ensuretest results are accessibleto all relevant parties, possibly through a shared repository or a web-based platform. Regularlyreview test resultsin team meetings to discuss failures,flaky tests, and the next steps.Lastly, maintain aliving documentor wiki that evolves with the project, capturing insights and decisions from acceptance tests. This serves as a historical record and a knowledge base for future reference.- **Dashboards** for real-time updates
+- **Automated reports** with essential details
+- **Visual aids** like charts and graphs
+- **Notification systems** for immediate alerts
+- **Issue tracking systems** for defect management
+- **Accessible test results** for all stakeholders
+- **Regular reviews** in team meetings
+- **Living document** for historical insights
 
-总的来说，[APIs](../A/api.md)对于验收测试至关重要，通过**高效**、**早期**和**有针对性**的验证实现了系统功能和性能的检验。
+Best practices foracceptance testinginclude:
+[acceptance testing](/wiki/acceptance-testing)- Define clear acceptance criteria: Work with stakeholders to establish unambiguous, measurable criteria that a feature must meet to be accepted.
+- Collaborate with cross-functional teams: Ensure developers, testers, and business analysts work together to understand requirements and outcomes.
+- Prioritize user experience: Focus on real-world usage scenarios to validate the end-to-end workflow and user satisfaction.
+- Keep tests maintainable: Write tests that are easy to understand and update as the application evolves.
+- Automate where appropriate: Use automation to perform repetitive, time-consuming tests, but remember that some exploratory testing may require a manual approach.
+- Test with production-like data: Use data that closely mimics production to ensure tests are realistic and cover edge cases.
+- Performregression testing: Ensure new changes do not break existing functionality by including regression tests in your acceptance suite.
+- Monitor performance and security: Include performance and security checks as part of your acceptance criteria.
+- Use version control for test artifacts: Store test cases, scripts, and data in a version control system to track changes and collaborate effectively.
+- Continuously refine the process: Regularly review and adapt your testing process to address inefficiencies and incorporate new best practices.
+**Define clear acceptance criteria****Collaborate with cross-functional teams****Prioritize user experience****Keep tests maintainable****Automate where appropriate****Test with production-like data****Performregression testing**[regression testing](/wiki/regression-testing)**Monitor performance and security****Use version control for test artifacts****Continuously refine the process**
+By adhering to these practices, you can ensure thatacceptance testingis effective, efficient, and aligned with the expectations of stakeholders and end-users.
+[acceptance testing](/wiki/acceptance-testing)
+Maintaining and updating acceptance tests over time requires astructured approachto ensure they remain relevant and effective:
+**structured approach**- Regularly ReviewTest Cases: Schedule periodic reviews of acceptance tests to align them with new features, requirements, and changes in the application.
+- Refactor Tests: Keep the test codebase clean by refactoring tests for readability, efficiency, andmaintainability. Remove redundancy and ensure tests are modular.
+- Version Control: Use version control systems to track changes intest scripts, enabling rollback to previous versions if necessary.
+- Test DataManagement: Managetest dataeffectively, ensuring it is up-to-date and representative of production data.
+- Automate Where Possible: Automate the update process for tests that are affected by repetitive changes, using scripts or tools that can modifytest casesor data.
+- Collaborate with Stakeholders: Work closely with developers, business analysts, and product owners to understand changes and their impact on acceptance criteria.
+- Continuous Integration: Integrate acceptance tests into a CI/CD pipeline to ensure they are executed with every build, catching issues early.
+- Monitoring and Alerts: Implement monitoring for thetest suiteto detect flakiness or failures due to application changes, with alerts for immediate action.
+- Documentation: Keeptest casedocumentation up-to-date to reflect the current state of the application and tests.
+- Feedback Loop: Establish a feedback loop with the team to discuss the effectiveness of acceptance tests and potential improvements.
 
-### 如何在验收测试中利用云技术？
+Regularly ReviewTest Cases: Schedule periodic reviews of acceptance tests to align them with new features, requirements, and changes in the application.
+**Regularly ReviewTest Cases**[Test Cases](/wiki/test-case)
+Refactor Tests: Keep the test codebase clean by refactoring tests for readability, efficiency, andmaintainability. Remove redundancy and ensure tests are modular.
+**Refactor Tests**[maintainability](/wiki/maintainability)
+Version Control: Use version control systems to track changes intest scripts, enabling rollback to previous versions if necessary.
+**Version Control**[test scripts](/wiki/test-script)
+Test DataManagement: Managetest dataeffectively, ensuring it is up-to-date and representative of production data.
+**Test DataManagement**[Test Data](/wiki/test-data)[test data](/wiki/test-data)
+Automate Where Possible: Automate the update process for tests that are affected by repetitive changes, using scripts or tools that can modifytest casesor data.
+**Automate Where Possible**[test cases](/wiki/test-case)
+Collaborate with Stakeholders: Work closely with developers, business analysts, and product owners to understand changes and their impact on acceptance criteria.
+**Collaborate with Stakeholders**
+Continuous Integration: Integrate acceptance tests into a CI/CD pipeline to ensure they are executed with every build, catching issues early.
+**Continuous Integration**
+Monitoring and Alerts: Implement monitoring for thetest suiteto detect flakiness or failures due to application changes, with alerts for immediate action.
+**Monitoring and Alerts**[test suite](/wiki/test-suite)
+Documentation: Keeptest casedocumentation up-to-date to reflect the current state of the application and tests.
+**Documentation**[test case](/wiki/test-case)
+Feedback Loop: Establish a feedback loop with the team to discuss the effectiveness of acceptance tests and potential improvements.
+**Feedback Loop**
+By adhering to these practices, acceptance tests can be effectively maintained and updated, ensuring they continue to provide value and meet the evolving needs of the software development lifecycle.
 
-在验收测试中充分利用**云技术**带来了多个优势。云平台提供按需的**可扩展资源**，使团队能够通过动态提供必要的基础架构来模拟真实世界的流量和使用模式。这对于验收测试的**性能和[负载测试](../L/load-testing.md)**方面特别有用。
+Documentation plays acrucial roleinacceptance testing, serving as the foundation for understanding, executing, and evaluating the test criteria. It includes theAcceptanceTest Plan(ATP),test cases, andtest scenariosthat outline the conditions under which a system is considered acceptable by the end user or client.
+**crucial role**[acceptance testing](/wiki/acceptance-testing)**AcceptanceTest Plan(ATP)**[Test Plan](/wiki/test-plan)**test cases**[test cases](/wiki/test-case)**test scenarios**[test scenarios](/wiki/test-scenario)
+Test casesare derived fromrequirements documentationand are essential for ensuring that all functional and non-functional aspects of the application are verified. They provide a step-by-step description of the test conditions,expected results, and acceptance criteria.
+**Test cases**[Test cases](/wiki/test-case)**requirements documentation**[expected results](/wiki/expected-result)
+Traceability matriceslink requirements to their corresponding tests, ensuring coverage and helping to identify any gaps in the testing process. This is vital for maintaining the integrity of theacceptance testingphase.
+**Traceability matrices**[acceptance testing](/wiki/acceptance-testing)
+Test reportsdocument the outcomes of the acceptance tests, including any defects or issues found. These reports are critical for stakeholders to make informed decisions regarding the software's readiness for production.
+**Test reports**[Test reports](/wiki/test-report)
+In summary, documentation inacceptance testingensures:
+[acceptance testing](/wiki/acceptance-testing)- Clarity of what is to be tested and what constitutes success.
+- Consistency in test execution.
+- Accountability through traceability of tests to requirements.
+- Effective communication of test results and findings to stakeholders.
 
-利用云服务，可以快速、一致地**复制[测试环境](../T/test-environment.md)**，确保验收测试在稳定和可控的环境中运行。这对于保持验收测试过程的完整性至关重要。基于云的工具通常具有**内置的分析和监控**功能，可用于在验收测试期间获取有关应用性能和用户体验的洞察。
-
-**持续集成/持续部署（CI/CD）流水线**可以通过云服务实现增强，以自动部署和运行验收测试在各种环境中，包括类似生产的暂存区域。这种集成确保验收测试是交付过程中无缝的一部分。
-
-此外，云平台通常提供**全球数据中心**，这意味着验收测试可以更接近最终用户的位置执行，从而在延迟和用户体验方面提供更准确的结果。
-
-团队还可以从**成本节约**中受益，因为云服务通常采用按使用量计费的模式，这意味着在测试阶段仅需为所使用的资源付费。
-
-总的来说，云技术有助于实现更**高效、可扩展和真实**的验收测试过程，从而可能实现更可靠和用户中心的最终产品。
-
-## 最佳实践
-
-### 验收测试有哪些最佳实践？
-
-验收测试的最佳实践包括：
-
-- **明确定义验收标准**：与利益相关者合作，建立明确、可衡量的标准，以便特性能够被接受。
-- **与跨职能团队合作**：确保开发人员、测试人员和业务分析师共同努力，理解需求和期望结果。
-- **优先考虑用户体验**：关注真实的使用场景，验证端到端的工作流程和用户满意度。
-- **保持测试可维护性**：编写易于理解且在应用程序演变时容易更新的测试。
-- **在适当的情况下自动化**：使用自动化执行重复且耗时的测试，但请记住，一些探索性测试可能需要手动方法。
-- **使用类似生产的数据进行测试**：使用与生产环境紧密模拟的数据，以确保测试是现实的并涵盖边缘情况。
-- **执行[回归测试](../R/regression-testing.md)**：通过在验收套件中包含回归测试，确保新变更不会破坏现有功能。
-- **监控性能和安全性**：将性能和安全性检查作为验收标准的一部分。
-- **为测试工件使用版本控制**：将测试用例、脚本和数据存储在版本控制系统中，以跟踪更改并有效地协作。
-- **持续改进流程**：定期审查和调整您的测试过程，以解决低效问题并纳入新的最佳实践。
-
-通过遵循这些实践，可以确保验收测试是有效、高效的，并且与利益相关者和最终用户的期望保持一致。
-
-### 如何维护和更新验收测试？
-
-随着时间的推移，保持和更新验收测试需要采取一种**有结构的方法**，以确保它们保持相关性和有效性：
-
-- **定期审查[测试用例](../T/test-case.md)**：定期审查验收测试，使其与新功能、需求和应用程序的变化保持一致。
-- **重构测试**：通过对测试进行重构，提高可读性、效率和[可维护性](../M/maintainability.md)，保持测试代码库的清晰性。去除冗余，确保测试是模块化的。
-- **版本控制**：使用版本控制系统跟踪[测试脚本](../T/test-script.md)的变化，以便在必要时回滚到先前的版本。
-- **[测试数据](../T/test-data.md)管理**：有效管理[测试数据](../T/test-data.md)，确保其保持最新并代表生产数据。
-- **在可能的情况下自动化**：对于受到重复更改影响的测试，使用脚本或工具自动化更新过程，以修改[测试用例](../T/test-case.md)或数据。
-- **与利益相关者合作**：与开发人员、业务分析师和产品所有者密切合作，了解变更及其对验收标准的影响。
-- **持续集成**：将验收测试集成到 CI/CD 流水线中，以确保它们在每次构建时都得到执行，及早捕获问题。
-- **监控和警报**：为[测试套件](../T/test-suite.md)实施监控，检测由于应用程序更改而导致的不稳定性或失败，并设置警报以进行即时处理。
-- **文档撰写**：保持[测试用例](../T/test-case.md)文档的更新，以反映应用程序和测试的当前状态。
-- **反馈循环**：与团队建立反馈循环，讨论验收测试的有效性和潜在改进。
-
-通过遵循这些实践，可以有效地保持和更新验收测试，确保它们继续提供价值并满足软件开发生命周期的不断发展需求。
-
-### 文档在验收测试中的作用是什么？
-
-文档在验收测试中扮演着至关重要的角色，作为理解、执行和评估测试标准的基础。这包括**验收[测试计划](../T/test-plan.md)（ATP）**、**[测试用例](../T/test-case.md)**和**[测试场景](../T/test-scenario.md)**，它们勾勒了系统被最终用户或客户视为可接受的条件。
-
-**[测试用例](../T/test-case.md)**源自**需求文档**，对确保应用程序的所有功能和非功能方面得到验证至关重要。它们提供了测试条件、[期望结果](../E/expected-result.md)和验收标准的逐步描述。
-
-**追踪矩阵**将需求与相应的测试联系起来，确保覆盖并有助于识别测试过程中的任何差距。这对于维护验收测试阶段的完整性至关重要。
-
-**[测试报告](../T/test-report.md)**记录了验收测试的结果，包括发现的任何缺陷或问题。这些报告对于利益相关者做出关于软件是否准备好投入生产的明智决策至关重要。
-
-总之，验收测试中的文档确保：
-
-- 测试内容和成功标准的清晰性。
-- 测试执行的一致性。
-- 通过将测试与需求进行追踪来确保责任。
-- 将测试结果和发现有效地传达给利益相关者。
-
-适当的文档对于透明、高效和成功的验收测试过程至关重要。
-
-### 如何提高验收测试的效率？
-
-为了提高验收测试的效率：
-
-- 根据风险和业务影响，**优先考虑[测试用例](../T/test-case.md)**。集中精力测试直接影响用户体验的关键功能。
-- 实施**[测试数据](../T/test-data.md)管理**实践，确保测试场景可以使用相关且高质量的数据。
-- 利用**行为驱动开发 ([BDD](../B/bdd.md))** 框架，如 Cucumber，创建可读的规范，同时作为自动化测试。
-- **并行化测试**以减少执行时间。像 Selenium Grid 这样的工具可以在不同环境中同时运行多个测试。
-- **重复使用测试组件**并遵循 DRY（不重复自己）原则以减少维护工作量并提高一致性。
-- **模拟外部依赖**以隔离被测试系统并减少外部系统的不可预测性。
-- 使用像 Docker 这样的容器化工具，**优化[测试环境](../T/test-environment.md) [设置](../S/setup.md)**，以快速启动一致的测试环境。
-- 定期**审查和重构测试**，去除冗余并确保其与当前需求保持一致。
-- 利用仪表板和报告工具**监控和分析测试结果**，以快速识别并解决失败。
-- 与**利益相关者密切合作**，确保验收标准清晰，并收集有关测试覆盖率和结果的反馈。
-
-通过实施这些实践，您可以简化验收测试流程，减少执行时间，并维护高质量的[测试套件](../T/test-suite.md)，为开发生命周期提供有价值的反馈。
-
-### 如何有效传达验收测试的结果？
-
-有效传达验收测试结果涉及清晰、简洁和可操作的报告。使用**仪表板**提供实时状态更新，突出显示**通过/失败率**，**[测试覆盖率](../T/test-coverage.md)**和**缺陷**。利用**视觉辅助工具**，如图表和图形，以便快速理解。
-
-整合**自动生成的报告**，确保其包含必要的细节，如**[测试用例](../T/test-case.md)描述**，**预期结果**，**[实际结果](../A/actual-result.md)**和**[测试执行](../T/test-execution.md)**的证据（截图、日志）。根据不同的利益相关者定制报告——为管理层提供摘要报告，为开发人员提供详细日志。
-
-利用**通知系统**在测试失败时立即通知团队。将这些通知整合到已在使用中的工具中，如 Slack 或电子邮件。
-
-为了透明度和协作，使用像[JIRA](../J/jira.md)这样的**问题跟踪系统**记录缺陷，并将其直接链接到失败的验收测试。这有助于追溯和优先级排序。
-
-确保**测试结果对所有相关方可访问**，可能通过共享存储库或基于网络的平台。在团队会议上**定期审查测试结果**，讨论失败、[不稳定的测试](../F/flaky-test.md)和下一步计划。
-
-最后，保持**一个动态的文档**或维基，随着项目的发展而不断更新，记录验收测试的见解和决策。这是一个历史记录和未来参考的知识库。
-
-- 实时更新的**仪表板**
-- 包含必要细节的**自动化报告**
-- 像图表和图形这样的**视觉辅助工具**
-- 用于即时提醒的**通知系统**
-- 用于缺陷管理的**问题跟踪系统**
-- 所有利益相关方都可以访问的**可达的测试结果**
-- 团队会议中的**定期审查**
-- 用于历史见解的**实时文档**
+Proper documentation is indispensable for a transparent, efficient, and successfulacceptance testingprocess.
+[acceptance testing](/wiki/acceptance-testing)
+To enhance the efficiency ofacceptance testing:
+[acceptance testing](/wiki/acceptance-testing)- Prioritizetest casesbased on risk and business impact. Focus on critical functionalities that directly affect the user experience.
+- Implementtest datamanagementpractices to ensure relevant and high-quality data is available for testing scenarios.
+- UtilizeBehavior-Driven Development (BDD)frameworks like Cucumber to create readable specifications that double as automated tests.
+- Parallelize teststo reduce execution time. Tools like Selenium Grid can run multiple tests simultaneously across different environments.
+- Reuse test componentsand follow DRY (Don't Repeat Yourself) principles to minimize maintenance and improve consistency.
+- Mock external dependenciesto isolate the system under test and reduce the unpredictability of external systems.
+- Optimizetest environmentsetupwith containerization tools like Docker to quickly spin up consistent testing environments.
+- Review and refactor tests regularlyto remove redundancies and ensure they remain aligned with current requirements.
+- Monitor and analyze test resultsusing dashboards and reporting tools to quickly identify and address failures.
+- Collaborate closely with stakeholdersto ensure acceptance criteria are clear and to gather feedback on test coverage and outcomes.
+**Prioritizetest cases**[test cases](/wiki/test-case)**test datamanagement**[test data](/wiki/test-data)**Behavior-Driven Development (BDD)**[BDD](/wiki/bdd)**Parallelize tests****Reuse test components****Mock external dependencies****Optimizetest environmentsetup**[test environment](/wiki/test-environment)[setup](/wiki/setup)**Review and refactor tests regularly****Monitor and analyze test results****Collaborate closely with stakeholders**
+By implementing these practices, you can streamlineacceptance testingprocesses, reduce execution time, and maintain high-qualitytest suitesthat provide valuable feedback for the development lifecycle.
+[acceptance testing](/wiki/acceptance-testing)[test suites](/wiki/test-suite)
+Communicating the results ofacceptance testingeffectively involves clear, concise, and actionable reporting. Usedashboardsto provide real-time status updates, highlightingpass/fail rates,test coverage, anddefects. Employvisual aidslike charts and graphs for quick comprehension.
+[acceptance testing](/wiki/acceptance-testing)**dashboards****pass/fail rates****test coverage**[test coverage](/wiki/test-coverage)**defects****visual aids**
+Incorporateautomated reportsgenerated post-execution, ensuring they contain essential details such astest casedescriptions,expected outcomes,actual results, andevidence oftest execution(screenshots, logs). Tailor reports to different stakeholders—summary reports for management and detailed logs for developers.
+**automated reports****test casedescriptions**[test case](/wiki/test-case)**expected outcomes****actual results**[actual results](/wiki/actual-result)**evidence oftest execution**[test execution](/wiki/test-execution)
+Leveragenotification systemsto alert teams immediately when tests fail. Integrate these notifications into tools already in use, like Slack or email.
+**notification systems**
+For transparency and collaboration, useissue tracking systemslikeJIRAto log defects, linking them directly to the failed acceptance tests. This facilitates traceability and prioritization.
+**issue tracking systems**[JIRA](/wiki/jira)
+Ensuretest results are accessibleto all relevant parties, possibly through a shared repository or a web-based platform. Regularlyreview test resultsin team meetings to discuss failures,flaky tests, and the next steps.
+**test results are accessible****review test results**[flaky tests](/wiki/flaky-test)
+Lastly, maintain aliving documentor wiki that evolves with the project, capturing insights and decisions from acceptance tests. This serves as a historical record and a knowledge base for future reference.
+**living document**
+```
+- **Dashboards** for real-time updates
+- **Automated reports** with essential details
+- **Visual aids** like charts and graphs
+- **Notification systems** for immediate alerts
+- **Issue tracking systems** for defect management
+- **Accessible test results** for all stakeholders
+- **Regular reviews** in team meetings
+- **Living document** for historical insights
+```
+`- **Dashboards** for real-time updates
+- **Automated reports** with essential details
+- **Visual aids** like charts and graphs
+- **Notification systems** for immediate alerts
+- **Issue tracking systems** for defect management
+- **Accessible test results** for all stakeholders
+- **Regular reviews** in team meetings
+- **Living document** for historical insights`

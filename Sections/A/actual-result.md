@@ -1,225 +1,255 @@
-<!-- markdownlint-disable MD041 -->
-- [Actual Result 实际结果](#actual-result-实际结果)
-- [关于实际结果的问题](#关于实际结果的问题)
-  - [基础知识和重要性](#基础知识和重要性)
-    - [在软件测试中“实际结果”的定义是什么？](#在软件测试中实际结果的定义是什么)
-    - [为什么在 e2e 测试中确定 "实际结果 "很重要？](#为什么在-e2e-测试中确定-实际结果-很重要)
-    - [“实际结果”对整个测试过程有何贡献？](#实际结果对整个测试过程有何贡献)
-  - [比较与对比](#比较与对比)
-    - [“预期结果”和“实际结果”有什么区别？](#预期结果和实际结果有什么区别)
-    - [“实际结果”与“测试用例”有何关系？](#实际结果与测试用例有何关系)
-    - [在什么情况下“实际结果”可能与“预期结果”不同？](#在什么情况下实际结果可能与预期结果不同)
-  - [实际应用](#实际应用)
-    - [测试过程中如何记录“实际结果”？](#测试过程中如何记录实际结果)
-    - [有哪些常用工具或方法可用于获取 "实际结果"？](#有哪些常用工具或方法可用于获取-实际结果)
-    - [如何使用 "实际结果 "来识别和诊断软件缺陷或问题？](#如何使用-实际结果-来识别和诊断软件缺陷或问题)
-  - [深层理解](#深层理解)
-    - [“实际结果”如何影响回归测试？](#实际结果如何影响回归测试)
-    - [“实际结果”在自动化测试中扮演什么角色？](#实际结果在自动化测试中扮演什么角色)
-    - [“实际结果”差异如何有助于软件优化和改进？](#实际结果差异如何有助于软件优化和改进)
+# Actual Result
+[Actual Result](#actual-result)[actual result](/wiki/actual-result)[actual result](/wiki/actual-result)[test case](/wiki/test-case)
+## Questions aboutActual Result?
 
-# Actual Result 实际结果
+#### Basics and Importance
+- What is the definition of 'Actual Result' in software testing?Insoftware testing, theActual Resultis the behavior that is observed when a test is executed. It is the output, response, or state of the application after the test steps have been performed. This result is then compared against theExpected Resultto determine if the test has passed or failed.Actual Resultsare critical for identifying discrepancies that may indicate defects or areas for improvement in the software.// Example of capturing Actual Result in an automated test script
+const actualResult = await page.title();
+expect(actualResult).toEqual(expectedTitle);Actual Resultsare typically recorded withintest managementtools or directly in the code of automated tests. They serve as evidence of thetest executionand are essential for traceability and accountability in the testing process. WhenActual Resultsdeviate fromExpected Results, they trigger investigations that can lead tobugfixes and enhancements, ensuring the software meets its requirements and functions as intended.
+- Why is determining the 'Actual Result' important in e2e testing?Determining theActual Resultin end-to-end (e2e) testing is crucial for validating theintegrity of the entire application flow. It ensures that each integrated component functions as expected when operated in sequence, from start to finish. By comparing theActual Resultwith theExpected Result, testers can confirm whether the system behaves as designed under various conditions, includinguser interactions, data processing, and connectivity.In e2e testing, theActual Resultis theoutcome of thetest execution. It provides aconcrete basisfor assessing the system's compliance with business requirements and user needs. When discrepancies arise, they highlightpotential issuesthat could impact the user experience or system reliability, prompting further investigation and refinement.Moreover, theActual Resultis instrumental inmaintaining test credibility. It offers tangible evidence for stakeholders regarding the system's current state and the effectiveness of the testing strategy. This transparency is essential forbuilding confidencein the software's quality and for making informed decisions about releases and deployments.Inautomated testing, capturing theActual Resultis typically handled by the automation framework, which records the outcomes for subsequent analysis. Thisautomated capturenot only streamlines the testing process but alsoreduces human error, ensuring that results are reported consistently and accurately.// Example of capturing Actual Result in an automated test
+const actualResult = await performTestAction();
+assert.equal(actualResult, expectedResult, 'The actual result does not match the expected result.');By focusing on theActual Result,test automationengineers candirectly influencethe software's development cycle, ensuring that each release meets the quality standards necessary for a successful product.
+- How does the 'Actual Result' contribute to the overall testing process?TheActual Resultis pivotal in the testing process as it serves as a direct indicator of the system's current behavior under test conditions. By comparing theActual Resultwith theExpected Result, testers can immediately discern whether atest casehas passed or failed. This comparison is essential for validating the software's functionality and ensuring that it meets the specified requirements.Inautomated testing, theActual Resultis often captured and logged by thetest scripts, which then automatically compare it to theExpected Result. This facilitates a rapid feedback loop, allowing for quick identification of failures and enabling continuous integration and delivery pipelines to proceed or halt based on test outcomes.When discrepancies arise, theActual Resultis the starting point for debugging. It helps pinpoint the exact nature of a defect, guiding developers towards the underlying cause. Moreover, analyzing patterns inActual Resultsacross multiple test runs can reveal larger issues such as performance degradation or instability in certain areas of the application.In summary, theActual Resultis crucial for:Verifyingsoftware behavior against expectations.Automatingpass/fail decisions in test scripts.Debuggingby providing concrete evidence of system behavior.Analyzingtrends and patterns to inform future development and testing efforts.By leveraging theActual Resulteffectively, teams can maintain highsoftware qualityand accelerate the development lifecycle.
 
->实际结果（又称为测试结果）
-
-实际结果是在进行测试后获得的结果。在测试阶段，实际结果会与测试用例一起记录。在所有测试结束后，它将与预期结果进行比较，注意任何差异。
-
-# 关于实际结果的问题
-
-## 基础知识和重要性
-
-### 在软件测试中“实际结果”的定义是什么？
-
-在[软件测试](../S/software-testing.md)中，**实际结果**指的是执行测试时观察到的系统行为。它是测试步骤执行后应用程序的输出、响应或状态。然后，将这个结果与**[预期结果](../E/expected-result.md)**进行比较，以确定测试是通过还是失败。实际结果对于发现可能存在缺陷或需要改进的地方至关重要。
-
-实际结果通常记录在[测试管理](../T/test-management.md)工具中或直接在自动化测试代码中。它们作为测试执行的证据，对于测试过程中的可追溯性和责任制非常重要。当实际结果与[预期结果](../E/expected-result.md)不一致时，会引发调查，可能导致[缺陷](../B/bug.md)修复和功能增强，以确保软件符合其要求并能够按照预期运行。
-
-### 为什么在 e2e 测试中确定 "实际结果 "很重要？
-
-在端对端（e2e）测试中，确定**实际结果**对于验证**整个应用程序流程的完整性**至关重要。这确保了每个集成组件在按顺序操作时（从开始到结束）都能按预期运行。通过将实际结果与[预期结果](../E/expected-result.md)进行比较，测试人员可以确认系统在各种条件下，包括**用户交互、数据处理和连接性**时是否按照设计行为。
-
-在 e2e 测试中，实际结果是[测试执行](../T/test-execution.md)的**结果**。它为评估系统是否符合业务需求和用户需求提供了**具体的依据**。当存在不一致时，它们突显了可能影响用户体验或系统可靠性的**潜在问题**，促使进一步的调查和改进。
-
-此外，实际结果在**保持测试可信度**方面起着重要作用。它为利益相关方提供了关于系统当前状态和测试策略有效性的有形证据。这种透明性对于**建立对软件质量的信心**以及对发布和部署做出明智决策至关重要。
-
-在[自动化测试](../A/automated-testing.md)中，捕获实际结果通常由自动化框架处理，该框架记录结果以供后续分析。这种**自动化捕获**不仅简化了测试过程，还**减少了人为错误**，确保结果能够一致和准确地报告。
-
-通过专注于实际结果，[测试自动化](../T/test-automation.md)工程师可以**直接影响**软件的开发周期，确保每个发布都符合成功产品所需的质量标准。  
-
-### “实际结果”对整个测试过程有何贡献？
-
-在测试过程中，**实际结果**是至关重要的，因为它直接反映了系统在测试条件下的当前行为。通过将实际结果与[预期结果](../E/expected-result.md)进行比较，测试人员可以立即判断[测试用例](../T/test-case.md)是否通过或失败。这种比较对于验证软件的功能并确保其满足指定要求至关重要。
-
-在[自动化测试](../A/automated-testing.md)中，实际结果通常由[测试脚本](../T/test-script.md)捕获和记录，然后自动将其与[预期结果](../E/expected-result.md)进行比较。这有助于形成快速的反馈循环，快速识别失败，并根据测试结果决定是否继续或中止持续集成和交付流程。
-
-当出现差异时，实际结果是调试的起点。它有助于准确定位缺陷的确切性质，引导开发人员找到根本原因。此外，分析跨多次测试运行的实际结果中的模式可以揭示出诸如性能下降或应用程序特定区域的不稳定性等更大问题。
-
-总之，实际结果对于：
-
-- **验证**软件行为是否符合期望。
-- 在测试脚本中进行**自动化**通过/失败决策。
-- 通过提供系统行为的具体证据进行**调试**。
-- 分析**趋势和模式**以指导未来的开发和测试工作。
-
-通过有效利用实际结果，团队可以保持较高的[软件质量](../S/software-quality.md)并加速开发生命周期。
-
-## 比较与对比
-
-### “预期结果”和“实际结果”有什么区别？
-
-在软件[测试自动化](../T/test-automation.md)中，**[预期结果](../E/expected-result.md)**是基于需求或设计规范的[测试用例](../T/test-case.md)的预定义结果。它代表了系统在特定条件下应该表现出的行为。
-
-另一方面，**实际结果**是系统在执行[测试用例](../T/test-case.md)时实际表现出的行为。它是从被测试系统中获得的实时结果。
-
-预期结果和实际结果之间的比较对于确定[测试用例](../T/test-case.md)的成功或失败至关重要。匹配表示系统表现如预期，而不匹配可能揭示缺陷或与预期行为的偏差。这种比较通常在[测试脚本](../T/test-script.md)中自动化进行，其中使用断言或检查点来验证实际结果是否与[预期结果](../E/expected-result.md)一致。
-
-这些结果之间的差异会触发进一步的调查，以了解根本原因并纠正任何问题，确保软件符合其质量标准。
-
-### “实际结果”与“测试用例”有何关系？
-
-在**[测试用例](../T/test-case.md)**的情境下，**实际结果**是测试执行时所观察到的结果。它直接与**[预期结果](../E/expected-result.md)**进行比较，以确定测试是否通过或失败。这种比较对于验证被测试软件的行为至关重要。
-
-对于自动化测试，**实际结果**通常由[测试脚本](../T/test-script.md)本身捕获。例如，在基于[Selenium](../S/selenium.md)的测试中，脚本可能包含如下断言：
-
-```javascript
-assert.equal(element.getText(), "Expected Text");
+Insoftware testing, theActual Resultis the behavior that is observed when a test is executed. It is the output, response, or state of the application after the test steps have been performed. This result is then compared against theExpected Resultto determine if the test has passed or failed.Actual Resultsare critical for identifying discrepancies that may indicate defects or areas for improvement in the software.
+[software testing](/wiki/software-testing)**Actual Result**[Actual Result](/wiki/actual-result)**Expected Result**[Expected Result](/wiki/expected-result)[Actual Results](/wiki/actual-result)
 ```
-
-这里，`element.getText()`是与预期文本进行比较的**实际结果**。如果它们匹配，测试通过；否则，测试失败。
-
-**实际结果**对于准确定位**[测试用例](../T/test-case.md)**中故障发生的确切步骤至关重要。在复杂的场景中，它有助于将缺陷隔离到特定的模块或功能。此外，当测试失败时，**实际结果**可以深入了解[缺陷](../B/bug.md)的性质，有助于调试和解决问题。
-
-在持续集成环境中，**实际结果**通常被记录并作为[测试报告](../T/test-report.md)的一部分。这对于利益相关者了解软件的当前状态以及开发人员在发布软件之前解决任何问题非常有价值。
-
-### 在什么情况下“实际结果”可能与“预期结果”不同？
-
-**实际结果**与**[预期结果](../E/expected-result.md)**之间可能存在差异的原因有很多：
-
-- **代码缺陷**：应用代码中的错误可能导致意外行为。
-- **环境问题**：测试环境的差异，如配置、数据库或网络条件的不同。
-- **[测试数据](../T/test-data.md)的变化性**：不一致或不正确的测试数据可能导致不同的结果。
-- **[不稳定的测试](../F/flaky-test.md)**：表现出非确定性行为的测试通常会间歇性地失败。
-- **错误的期望**：预期结果可能基于过时或被误解的需求。
-- **并发问题**：仅在多个进程或用户同时与系统交互时才显现的问题。
-- **集成依赖**：应用程序依赖的外部服务或组件的故障。
-- **时间问题**：影响应用程序行为的竞态条件或超时。
-- **平台特定行为**：不同操作系统、浏览器或设备处理某些操作的方式的差异。
-- **[测试脚本](../T/test-script.md)错误**：自动化脚本本身中的错误，如不正确的断言或同步问题。
-
-识别差异的原因对于解决问题和提高[软件质量](../S/software-quality.md)至关重要。
-
-## 实际应用
-
-### 测试过程中如何记录“实际结果”？
-
-在测试过程中记录**实际结果**通常包括对测试执行后系统行为的清晰而简明的描述。它记录在[测试管理](../T/test-management.md)工具或[测试用例](../T/test-case.md)文档中，通常与相应的**[测试用例](../T/test-case.md)**和**[预期结果](../T/expected-result.md)**一起，以便进行轻松比较。
-
-以下是一般的方法：
-
-1. **执行[测试用例](../T/test-case.md)**：按照规定的步骤运行测试。
-2. **观察**：仔细观察系统的行为或输出。
-3. **记录**：立即记录观察到的行为。使用清晰的语言描述发生了什么，包括任何错误消息、系统响应或结果。
-4. **截图/日志**：如果截图、日志文件或视频能够清晰地说明问题，特别是对于界面问题或复杂错误，请附加它们。
-5. **时间戳**：记录测试的时间和日期，因为这对于调试可能是至关重要的。
-6. **环境详细信息**：包括有关测试环境的详细信息，如浏览器版本、设备或系统配置。
-7. **可重现性**：指示结果在重新测试时是否一致。
-8. **链接缺陷**：如果结果表示存在缺陷，请创建缺陷报告并将其链接到测试用例，以实现可追溯性。
-
-确保**实际结果**足够详细，以使开发人员能够清楚地理解问题，避免歧义，促进更快的解决和[重新测试](../R/retesting.md)。
-
-### 有哪些常用工具或方法可用于获取 "实际结果"？
-
-在[测试自动化](../T/test-automation.md)中捕获**实际结果**通常涉及多种工具和方法：
-
-- **自动化[测试脚本](../T/test-script.md)**：在诸如**[Selenium](../S/selenium)**、**[Cypress](../C/cypress.md)**或**Appium**等框架中编写的脚本在[测试执行](../T/test-execution.md)期间自动捕获输出。例如：
-
-```javascript
-// 示例：使用 Selenium 进行文本验证
-String actualText = driver.findElement(By.id("elementId")).getText();
+// Example of capturing Actual Result in an automated test script
+const actualResult = await page.title();
+expect(actualResult).toEqual(expectedTitle);
 ```
-
-- **日志记录**：通常，自动化测试被设计为记录结果和错误。诸如 Java 的**Log4j**或[Node.js](../N/node-js.md)的**Winston**之类的工具可用于记录实际结果。
-
-- **截图**：诸如**[Selenium](../S/selenium.md)**之类的工具可以在执行测试步骤时捕获应用程序状态的截图，这对于 UI 测试很有用。
-
-- **视频录制**：一些测试框架，如**TestCafe**或云服务如**Sauce Labs**，提供视频录制功能以捕获[测试执行](../T/test-execution.md)。
-
-- **[API](../A/api.md)响应**：对于[API 测试](../A/api-testing.md)，诸如**[Postman](../P/postman.md)**或**RestAssured**之类的工具捕获 HTTP 响应数据，这代表了实际结果。
-
-- **性能数据**：诸如**[JMeter](../J/jmeter.md)**或**Gatling**之类的工具捕获时间和吞吐量数据作为实际结果进行[性能测试](../P/performance-testing.md)。
-
-- **[测试报告](../T/test-report.md)**：诸如**JUnit**、**TestNG**或**Mocha**之类的框架生成包含实际结果的报告。这些报告可以进一步与**Jenkins**或**GitLab CI**等 CI/CD 工具集成，以进行全面的报告。
-
-- **自定义处理程序**：在测试代码中实现自定义事件处理程序或回调，以捕获特定的数据点或应用程序状态。
-
-- **[数据库](../D/database.md)验证**：使用[SQL](../S/sql.md)或 NoSQL 命令直接查询[数据库](../D/database.md)以捕获数据更改。
-
-- **文件输出**：将结果写入文件，如 CSV 或 JSON
-
-，以便以后解析和分析。
-
-每种方法的选择基于需要捕获的内容的**上下文**和正在执行的测试的**类型**。
-
-### 如何使用 "实际结果 "来识别和诊断软件缺陷或问题？
-
-**实际结果**在识别和排除软件[缺陷](../B/bug.md)方面充当着至关重要的诊断工具。当[测试用例](../T/test-case.md)执行产生一个与[期望结果](../E/expected-result.md)不符的实际结果时，这种差异标志着软件中可能存在缺陷。
-
-为了诊断问题，工程师会在[测试环境](../T/test-environment.md)和输入数据的背景下分析实际结果。他们可能会查找在不同[测试用例](../T/test-case.md)或条件下结果的模式或不一致性。例如，如果某个功能在一个输入集下按预期工作，而在另一个输入集下却没有，这可能表明存在边界情况问题或数据处理[缺陷](../B/bug.md)。
-
-工程师还使用实际结果来准确定位故障发生的确切步骤。通过检查应用程序在此时的状态，包括日志、堆栈跟踪或[数据库](../D/database.md)状态，他们可以确定故障的根本原因。
-
-在实际结果表明存在性能问题（例如响应时间较慢或资源瓶颈）的情况下，工程师可以使用性能分析工具深入挖掘系统在测试时的行为。
-
-[自动化测试](../A/automated-testing.md)框架通常提供捕获和报告详细实际结果的功能，包括[测试执行](../T/test-execution.md)的截图或视频录制，这对于诊断 UI 问题非常有价值。
-
-通过系统地分析实际结果，工程师可以提出关于[缺陷](../B/bug.md)来源的假设，然后进行
-
-测试和验证，从而实现更高效的[缺陷](../B/bug.md)修复流程。
-
-## 深层理解
-
-### “实际结果”如何影响回归测试？
-
-在[回归测试](../R/regression-testing.md)中，**实际结果**对于验证最近的代码更改是否对现有功能产生不良影响至关重要。它是在软件被修改后[测试用例](../T/test-case.md)的结果。通过将**实际结果**与**[期望结果](../E/expected-result.md)**进行比较，测试人员可以确定是否发生了回归错误。
-
-对于自动化回归测试，**实际结果**通常由[测试脚本](../T/test-script.md)捕获，并与**[期望结果](../E/expected-result.md)**进行程序化比较。差异会触发测试失败，提醒工程师可能存在回归。这种比较通常通过测试代码中的断言完成。
-
-```typescript
+`// Example of capturing Actual Result in an automated test script
+const actualResult = await page.title();
+expect(actualResult).toEqual(expectedTitle);`
+Actual Resultsare typically recorded withintest managementtools or directly in the code of automated tests. They serve as evidence of thetest executionand are essential for traceability and accountability in the testing process. WhenActual Resultsdeviate fromExpected Results, they trigger investigations that can lead tobugfixes and enhancements, ensuring the software meets its requirements and functions as intended.
+[Actual Results](/wiki/actual-result)[test management](/wiki/test-management)[test execution](/wiki/test-execution)[Actual Results](/wiki/actual-result)[Expected Results](/wiki/expected-result)[bug](/wiki/bug)
+Determining theActual Resultin end-to-end (e2e) testing is crucial for validating theintegrity of the entire application flow. It ensures that each integrated component functions as expected when operated in sequence, from start to finish. By comparing theActual Resultwith theExpected Result, testers can confirm whether the system behaves as designed under various conditions, includinguser interactions, data processing, and connectivity.
+**Actual Result**[Actual Result](/wiki/actual-result)**integrity of the entire application flow**[Actual Result](/wiki/actual-result)[Expected Result](/wiki/expected-result)**user interactions, data processing, and connectivity**
+In e2e testing, theActual Resultis theoutcome of thetest execution. It provides aconcrete basisfor assessing the system's compliance with business requirements and user needs. When discrepancies arise, they highlightpotential issuesthat could impact the user experience or system reliability, prompting further investigation and refinement.
+[Actual Result](/wiki/actual-result)**outcome of thetest execution**[test execution](/wiki/test-execution)**concrete basis****potential issues**
+Moreover, theActual Resultis instrumental inmaintaining test credibility. It offers tangible evidence for stakeholders regarding the system's current state and the effectiveness of the testing strategy. This transparency is essential forbuilding confidencein the software's quality and for making informed decisions about releases and deployments.
+[Actual Result](/wiki/actual-result)**maintaining test credibility****building confidence**
+Inautomated testing, capturing theActual Resultis typically handled by the automation framework, which records the outcomes for subsequent analysis. Thisautomated capturenot only streamlines the testing process but alsoreduces human error, ensuring that results are reported consistently and accurately.
+[automated testing](/wiki/automated-testing)[Actual Result](/wiki/actual-result)**automated capture****reduces human error**
+```
+// Example of capturing Actual Result in an automated test
+const actualResult = await performTestAction();
 assert.equal(actualResult, expectedResult, 'The actual result does not match the expected result.');
 ```
+`// Example of capturing Actual Result in an automated test
+const actualResult = await performTestAction();
+assert.equal(actualResult, expectedResult, 'The actual result does not match the expected result.');`
+By focusing on theActual Result,test automationengineers candirectly influencethe software's development cycle, ensuring that each release meets the quality standards necessary for a successful product.
+[Actual Result](/wiki/actual-result)[test automation](/wiki/test-automation)**directly influence**
+TheActual Resultis pivotal in the testing process as it serves as a direct indicator of the system's current behavior under test conditions. By comparing theActual Resultwith theExpected Result, testers can immediately discern whether atest casehas passed or failed. This comparison is essential for validating the software's functionality and ensuring that it meets the specified requirements.
+**Actual Result**[Actual Result](/wiki/actual-result)[Actual Result](/wiki/actual-result)[Expected Result](/wiki/expected-result)[test case](/wiki/test-case)
+Inautomated testing, theActual Resultis often captured and logged by thetest scripts, which then automatically compare it to theExpected Result. This facilitates a rapid feedback loop, allowing for quick identification of failures and enabling continuous integration and delivery pipelines to proceed or halt based on test outcomes.
+[automated testing](/wiki/automated-testing)[Actual Result](/wiki/actual-result)[test scripts](/wiki/test-script)[Expected Result](/wiki/expected-result)
+When discrepancies arise, theActual Resultis the starting point for debugging. It helps pinpoint the exact nature of a defect, guiding developers towards the underlying cause. Moreover, analyzing patterns inActual Resultsacross multiple test runs can reveal larger issues such as performance degradation or instability in certain areas of the application.
+[Actual Result](/wiki/actual-result)[Actual Results](/wiki/actual-result)
+In summary, theActual Resultis crucial for:
+[Actual Result](/wiki/actual-result)- Verifyingsoftware behavior against expectations.
+- Automatingpass/fail decisions in test scripts.
+- Debuggingby providing concrete evidence of system behavior.
+- Analyzingtrends and patterns to inform future development and testing efforts.
+**Verifying****Automating****Debugging****Analyzing**
+By leveraging theActual Resulteffectively, teams can maintain highsoftware qualityand accelerate the development lifecycle.
+[Actual Result](/wiki/actual-result)[software quality](/wiki/software-quality)
+#### Comparison and Contrast
+- What is the difference between 'Expected Result' and 'Actual Result'?In softwaretest automation,Expected Resultis the predefined outcome of atest case, based on the requirements or design specifications. It represents the behavior that the system should exhibit under certain conditions.Actual Result, on the other hand, is the behavior that the system actually exhibits when thetest caseis executed. It is the real-time outcome obtained from the system under test.The comparison between Expected andActual Resultsis crucial for determining the success or failure of atest case. A match indicates that the system behaves as intended, while a mismatch may reveal a defect or a deviation from the expected behavior. This comparison is often automated intest scripts, where assertions or checkpoints are used to validate that theActual Resultaligns with theExpected Result.// Example of an assertion in a test script
+assert.equal(actualResult, expectedResult, 'The actual result does not match the expected result');Discrepancies between these results trigger further investigation to understand the root cause and to rectify any issues, ensuring that the software meets its quality standards.
+- How does the 'Actual Result' relate to the 'Test Case'?In the context of aTest Case, theActual Resultis the outcome observed when the test is executed. It is directly compared against theExpected Resultto determine if the test has passed or failed. This comparison is crucial for validating the behavior of the software under test.For automated tests, theActual Resultis typically captured by thetest scriptitself. For instance, in aSelenium-based test, the script might include assertions like:assertEquals("Expected text", element.getText());Here,element.getText()is theActual Resultthat is compared to the expected text. If they match, the test passes; otherwise, it fails.TheActual Resultis essential for pinpointing the exact step where a failure occurs within aTest Case. In complex scenarios, it helps in isolating the defect to a specific module or functionality. Moreover, when a test fails, theActual Resultcan provide insights into the nature of thebug, which aids in debugging and fixing the issue.In continuous integration environments, theActual Resultis often logged and made part of thetest reports. This information is valuable for stakeholders to understand the current state of the software and for developers to address any issues before the software is released.
+- In what scenarios might the 'Actual Result' differ from the 'Expected Result'?Actual Resultmay differ fromExpected Resultdue to various reasons:Code Defects: Bugs in the application code can lead to unexpected behavior.Environment Issues: Discrepancies in test environments, such as differences in configurations, databases, or network conditions.Test DataVariability: Inconsistent or incorrect test data can yield different outcomes.Flaky Tests: Tests that exhibit non-deterministic behavior often fail intermittently.Incorrect Expectations: The expected result might be based on outdated or misunderstood requirements.Concurrency Issues: Problems that only manifest when multiple processes or users are interacting with the system simultaneously.Integration Dependencies: Failures in external services or components that the application relies on.Timing Issues: Race conditions or timeouts that affect the application's behavior.Platform-Specific Behavior: Variations in how different operating systems, browsers, or devices handle certain operations.Test ScriptErrors: Mistakes in the automation scripts themselves, such as incorrect assertions or synchronization issues.Identifying the cause of the discrepancy is crucial for resolving issues and improving thesoftware quality.
 
-当**实际结果**与**[期望结果](../E/expected-result.md)**匹配时，表明应用程序的行为与其先前状态保持一致。相反，不匹配可能表示最近的更改引入了一个缺陷，需要进一步调查和潜在的代码修复。
-
-在持续集成环境中，**实际结果**是反馈循环的一部分，通知开发团队关于每次代码提交后其应用程序稳定性的情况。这种即时反馈对于保持[软件质量](../S/software-quality.md)和加速开发周期至关重要。
-
-具有清晰**实际结果**的自动化回归测试可以快速确定已经发生回归的具体功能，简化调试过程，并确保软件发布符合质量标准。
-
-### “实际结果”在自动化测试中扮演什么角色？
-
-在[自动化测试](../A/automated-testing.md)中，**实际结果**作为验证软件行为是否符合预期结果的关键数据点起着重要作用。这是由[测试脚本](../T/test-script.md)执行时产生的输出。然后，此结果会自动与**[期望结果](../E/expected-result.md)**进行比较，以确定测试是否通过或失败。
-
-```typescript
-// 捕获自动化测试中的实际结果的示例
-const actualResult = performAction();
-assert.equal(actualResult, expectedResult, '测试失败：实际结果与期望结果不匹配。');
+In softwaretest automation,Expected Resultis the predefined outcome of atest case, based on the requirements or design specifications. It represents the behavior that the system should exhibit under certain conditions.
+[test automation](/wiki/test-automation)**Expected Result**[Expected Result](/wiki/expected-result)[test case](/wiki/test-case)
+Actual Result, on the other hand, is the behavior that the system actually exhibits when thetest caseis executed. It is the real-time outcome obtained from the system under test.
+**Actual Result**[Actual Result](/wiki/actual-result)[test case](/wiki/test-case)
+The comparison between Expected andActual Resultsis crucial for determining the success or failure of atest case. A match indicates that the system behaves as intended, while a mismatch may reveal a defect or a deviation from the expected behavior. This comparison is often automated intest scripts, where assertions or checkpoints are used to validate that theActual Resultaligns with theExpected Result.
+[Actual Results](/wiki/actual-result)[test case](/wiki/test-case)[test scripts](/wiki/test-script)[Actual Result](/wiki/actual-result)[Expected Result](/wiki/expected-result)
 ```
+// Example of an assertion in a test script
+assert.equal(actualResult, expectedResult, 'The actual result does not match the expected result');
+```
+`// Example of an assertion in a test script
+assert.equal(actualResult, expectedResult, 'The actual result does not match the expected result');`
+Discrepancies between these results trigger further investigation to understand the root cause and to rectify any issues, ensuring that the software meets its quality standards.
 
-在自动化[测试场景](../T/test-scenario.md)尤其是复杂场景中，**实际结果**对于确定差异发生的确切步骤至关重要。当测试失败时，**实际结果**立即提供有关失败性质的反馈，使工程师能够在无需手动干预的情况下启动调试和根本原因分析。
+In the context of aTest Case, theActual Resultis the outcome observed when the test is executed. It is directly compared against theExpected Resultto determine if the test has passed or failed. This comparison is crucial for validating the behavior of the software under test.
+**Test Case**[Test Case](/wiki/test-case)**Actual Result**[Actual Result](/wiki/actual-result)**Expected Result**[Expected Result](/wiki/expected-result)
+For automated tests, theActual Resultis typically captured by thetest scriptitself. For instance, in aSelenium-based test, the script might include assertions like:
+**Actual Result**[Actual Result](/wiki/actual-result)[test script](/wiki/test-script)[Selenium](/wiki/selenium)
+```
+assertEquals("Expected text", element.getText());
+```
+`assertEquals("Expected text", element.getText());`
+Here,element.getText()is theActual Resultthat is compared to the expected text. If they match, the test passes; otherwise, it fails.
+`element.getText()`**Actual Result**[Actual Result](/wiki/actual-result)
+TheActual Resultis essential for pinpointing the exact step where a failure occurs within aTest Case. In complex scenarios, it helps in isolating the defect to a specific module or functionality. Moreover, when a test fails, theActual Resultcan provide insights into the nature of thebug, which aids in debugging and fixing the issue.
+**Actual Result**[Actual Result](/wiki/actual-result)**Test Case**[Test Case](/wiki/test-case)**Actual Result**[Actual Result](/wiki/actual-result)[bug](/wiki/bug)
+In continuous integration environments, theActual Resultis often logged and made part of thetest reports. This information is valuable for stakeholders to understand the current state of the software and for developers to address any issues before the software is released.
+**Actual Result**[Actual Result](/wiki/actual-result)[test reports](/wiki/test-report)
+Actual Resultmay differ fromExpected Resultdue to various reasons:
+**Actual Result**[Actual Result](/wiki/actual-result)**Expected Result**[Expected Result](/wiki/expected-result)- Code Defects: Bugs in the application code can lead to unexpected behavior.
+- Environment Issues: Discrepancies in test environments, such as differences in configurations, databases, or network conditions.
+- Test DataVariability: Inconsistent or incorrect test data can yield different outcomes.
+- Flaky Tests: Tests that exhibit non-deterministic behavior often fail intermittently.
+- Incorrect Expectations: The expected result might be based on outdated or misunderstood requirements.
+- Concurrency Issues: Problems that only manifest when multiple processes or users are interacting with the system simultaneously.
+- Integration Dependencies: Failures in external services or components that the application relies on.
+- Timing Issues: Race conditions or timeouts that affect the application's behavior.
+- Platform-Specific Behavior: Variations in how different operating systems, browsers, or devices handle certain operations.
+- Test ScriptErrors: Mistakes in the automation scripts themselves, such as incorrect assertions or synchronization issues.
+**Code Defects****Environment Issues****Test DataVariability**[Test Data](/wiki/test-data)**Flaky Tests**[Flaky Tests](/wiki/flaky-test)**Incorrect Expectations****Concurrency Issues****Integration Dependencies****Timing Issues****Platform-Specific Behavior****Test ScriptErrors**[Test Script](/wiki/test-script)
+Identifying the cause of the discrepancy is crucial for resolving issues and improving thesoftware quality.
+[software quality](/wiki/software-quality)
+#### Practical Application
+- How is the 'Actual Result' documented during the testing process?Documenting theActual Resultduring the testing process typically involves a clear and concise description of the system's behavior aftertest execution. It's recorded in atest managementtool or atest casedocument, often alongside the correspondingTest CaseandExpected Resultfor easy comparison.Here's a general approach:Execute theTest Case: Run the test as per the steps outlined.Observe: Carefully observe the system's behavior or output.Record: Immediately document the observed behavior. Use clear language to describe what happened, including any error messages, system responses, or outcomes.Screenshots/Logs: Attach screenshots, log files, or videos if they add clarity, especially for UI issues or complex errors.Timestamp: Note the time and date of the test, as this can be crucial for debugging.Environment Details: Include specifics about the test environment, such as browser version, device, or system configuration.Reproducibility: Indicate if the result is consistent upon retesting.Link Defects: If the result indicates a defect, create a bug report and link it to the test case for traceability.// Example of documenting an Actual Result in a test case template:
+{
+  Test Case ID: TC_101,
+  Test Steps: "Enter 'admin' in the username field and 'password123' in the password field. Click 'Login'.",
+  Expected Result: "User is directed to the dashboard.",
+  Actual Result: "Error message 'Invalid credentials' displayed. User not logged in.",
+  Timestamp: "2023-04-01 10:30 UTC",
+  Environment: "Chrome 89 on Windows 10",
+  Reproducible: "Yes",
+  Defect ID: "BUG_204"
+}Ensure that theActual Resultis detailed enough to enable developers to understand the issue without ambiguity, facilitating quicker resolution andretesting.
+- What are some common tools or methods used to capture the 'Actual Result'?Capturing theActual Resultintest automationtypically involves several tools and methods:AutomatedTest Scripts: Scripts written in frameworks likeSelenium,Cypress, orAppiumautomatically capture output duringtest execution. For example:let actualResult = element.getText();Logging: Automated tests are often designed to log results and errors. Tools likeLog4jfor Java orWinstonforNode.jscan be used to log actual outcomes.Screenshots: Tools likeSeleniumcan take screenshots of the application state when a test step is performed, which is useful for UI tests.Video Recording: Some test frameworks, likeTestCafeor cloud services likeSauce Labs, offer video recording features to capture thetest execution.APIResponses: ForAPI testing, tools likePostmanorRestAssuredcapture the HTTP response data, which represents theactual result.Performance Data: Tools likeJMeterorGatlingcapture timing and throughput data asactual resultsforperformance testing.Test Reports: Frameworks likeJUnit,TestNG, orMochagenerate reports that includeactual results. These can be further integrated with CI/CD tools likeJenkinsorGitLab CIfor comprehensive reporting.Custom Handlers: Implementing custom event handlers or callbacks within the test code to capture specific data points or states of the application.DatabaseValidation: Directly querying thedatabaseusingSQLor NoSQL commands to capture data changes.File Output: Writing results to a file, such as CSV or JSON, which can be parsed and analyzed later.Each method is chosen based on thecontextof what needs to be captured and thetypeof test being executed.
+- How can the 'Actual Result' be used to identify and diagnose software bugs or issues?TheActual Resultserves as a critical diagnostic tool in identifying and troubleshooting softwarebugs. When atest caseexecution yields anActual Resultthat deviates from theExpected Result, this discrepancy flags a potential defect in the software.To diagnose issues, engineers analyze theActual Resultin the context of thetest environmentand input data. They may look for patterns or inconsistencies in the results across differenttest casesor conditions. For instance, if a feature works as expected under one set of inputs but not another, this could indicate a boundary case issue or a data handlingbug.Engineers also use theActual Resultto pinpoint the exact step where the failure occurred. By examining the state of the application at this point, including logs, stack traces, ordatabasestates, they can identify the underlying cause of the failure.In cases where theActual Resultindicates a performance issue, such as slower response times or resource bottlenecks, engineers can use profiling tools to drill down into the system's behavior at the time of the test.Automated testingframeworks often provide features to capture and report detailedActual Results, including screenshots or video recordings of thetest execution, which can be invaluable for diagnosing UI issues.By methodically analyzing theActual Result, engineers can formulate hypotheses about the source of thebug, which can then be tested and verified, leading to a more efficientbug-fixing process.
 
-自动化测试通常将**实际结果**记录到报告或仪表板中，提供[测试执行](../T/test-execution.md)的历史记录。这有助于趋势分析，并有助于了解软件随时间的稳定性。
+Documenting theActual Resultduring the testing process typically involves a clear and concise description of the system's behavior aftertest execution. It's recorded in atest managementtool or atest casedocument, often alongside the correspondingTest CaseandExpected Resultfor easy comparison.
+**Actual Result**[Actual Result](/wiki/actual-result)[test execution](/wiki/test-execution)[test management](/wiki/test-management)[test case](/wiki/test-case)**Test Case**[Test Case](/wiki/test-case)**Expected Result**[Expected Result](/wiki/expected-result)
+Here's a general approach:
+1. Execute theTest Case: Run the test as per the steps outlined.
+2. Observe: Carefully observe the system's behavior or output.
+3. Record: Immediately document the observed behavior. Use clear language to describe what happened, including any error messages, system responses, or outcomes.
+4. Screenshots/Logs: Attach screenshots, log files, or videos if they add clarity, especially for UI issues or complex errors.
+5. Timestamp: Note the time and date of the test, as this can be crucial for debugging.
+6. Environment Details: Include specifics about the test environment, such as browser version, device, or system configuration.
+7. Reproducibility: Indicate if the result is consistent upon retesting.
+8. Link Defects: If the result indicates a defect, create a bug report and link it to the test case for traceability.
+**Execute theTest Case**[Test Case](/wiki/test-case)**Observe****Record****Screenshots/Logs****Timestamp****Environment Details****Reproducibility****Link Defects**
+```
+// Example of documenting an Actual Result in a test case template:
+{
+  Test Case ID: TC_101,
+  Test Steps: "Enter 'admin' in the username field and 'password123' in the password field. Click 'Login'.",
+  Expected Result: "User is directed to the dashboard.",
+  Actual Result: "Error message 'Invalid credentials' displayed. User not logged in.",
+  Timestamp: "2023-04-01 10:30 UTC",
+  Environment: "Chrome 89 on Windows 10",
+  Reproducible: "Yes",
+  Defect ID: "BUG_204"
+}
+```
+`// Example of documenting an Actual Result in a test case template:
+{
+  Test Case ID: TC_101,
+  Test Steps: "Enter 'admin' in the username field and 'password123' in the password field. Click 'Login'.",
+  Expected Result: "User is directed to the dashboard.",
+  Actual Result: "Error message 'Invalid credentials' displayed. User not logged in.",
+  Timestamp: "2023-04-01 10:30 UTC",
+  Environment: "Chrome 89 on Windows 10",
+  Reproducible: "Yes",
+  Defect ID: "BUG_204"
+}`
+Ensure that theActual Resultis detailed enough to enable developers to understand the issue without ambiguity, facilitating quicker resolution andretesting.
+**Actual Result**[Actual Result](/wiki/actual-result)[retesting](/wiki/retesting)
+Capturing theActual Resultintest automationtypically involves several tools and methods:
+**Actual Result**[Actual Result](/wiki/actual-result)[test automation](/wiki/test-automation)- AutomatedTest Scripts: Scripts written in frameworks likeSelenium,Cypress, orAppiumautomatically capture output duringtest execution. For example:let actualResult = element.getText();
+- Logging: Automated tests are often designed to log results and errors. Tools likeLog4jfor Java orWinstonforNode.jscan be used to log actual outcomes.
+- Screenshots: Tools likeSeleniumcan take screenshots of the application state when a test step is performed, which is useful for UI tests.
+- Video Recording: Some test frameworks, likeTestCafeor cloud services likeSauce Labs, offer video recording features to capture thetest execution.
+- APIResponses: ForAPI testing, tools likePostmanorRestAssuredcapture the HTTP response data, which represents theactual result.
+- Performance Data: Tools likeJMeterorGatlingcapture timing and throughput data asactual resultsforperformance testing.
+- Test Reports: Frameworks likeJUnit,TestNG, orMochagenerate reports that includeactual results. These can be further integrated with CI/CD tools likeJenkinsorGitLab CIfor comprehensive reporting.
+- Custom Handlers: Implementing custom event handlers or callbacks within the test code to capture specific data points or states of the application.
+- DatabaseValidation: Directly querying thedatabaseusingSQLor NoSQL commands to capture data changes.
+- File Output: Writing results to a file, such as CSV or JSON, which can be parsed and analyzed later.
 
-在持续集成和部署（CI/CD）管道中，**实际结果**可以触发工作流，如通知、回滚或根据[测试用例](../T/test-case.md)的成功或失败而执行其他[测试套件](../T/test-suite.md)。
+AutomatedTest Scripts: Scripts written in frameworks likeSelenium,Cypress, orAppiumautomatically capture output duringtest execution. For example:
+**AutomatedTest Scripts**[Test Scripts](/wiki/test-script)**Selenium**[Selenium](/wiki/selenium)**Cypress**[Cypress](/wiki/cypress)**Appium**[test execution](/wiki/test-execution)
+```
+let actualResult = element.getText();
+```
+`let actualResult = element.getText();`
+Logging: Automated tests are often designed to log results and errors. Tools likeLog4jfor Java orWinstonforNode.jscan be used to log actual outcomes.
+**Logging****Log4j****Winston**[Node.js](/wiki/node-js)
+Screenshots: Tools likeSeleniumcan take screenshots of the application state when a test step is performed, which is useful for UI tests.
+**Screenshots****Selenium**[Selenium](/wiki/selenium)
+Video Recording: Some test frameworks, likeTestCafeor cloud services likeSauce Labs, offer video recording features to capture thetest execution.
+**Video Recording****TestCafe****Sauce Labs**[test execution](/wiki/test-execution)
+APIResponses: ForAPI testing, tools likePostmanorRestAssuredcapture the HTTP response data, which represents theactual result.
+**APIResponses**[API](/wiki/api)[API testing](/wiki/api-testing)**Postman**[Postman](/wiki/postman)**RestAssured**[actual result](/wiki/actual-result)
+Performance Data: Tools likeJMeterorGatlingcapture timing and throughput data asactual resultsforperformance testing.
+**Performance Data****JMeter**[JMeter](/wiki/jmeter)**Gatling**[actual results](/wiki/actual-result)[performance testing](/wiki/performance-testing)
+Test Reports: Frameworks likeJUnit,TestNG, orMochagenerate reports that includeactual results. These can be further integrated with CI/CD tools likeJenkinsorGitLab CIfor comprehensive reporting.
+**Test Reports**[Test Reports](/wiki/test-report)**JUnit****TestNG****Mocha**[actual results](/wiki/actual-result)**Jenkins****GitLab CI**
+Custom Handlers: Implementing custom event handlers or callbacks within the test code to capture specific data points or states of the application.
+**Custom Handlers**
+DatabaseValidation: Directly querying thedatabaseusingSQLor NoSQL commands to capture data changes.
+**DatabaseValidation**[Database](/wiki/database)[database](/wiki/database)[SQL](/wiki/sql)
+File Output: Writing results to a file, such as CSV or JSON, which can be parsed and analyzed later.
+**File Output**
+Each method is chosen based on thecontextof what needs to be captured and thetypeof test being executed.
+**context****type**
+TheActual Resultserves as a critical diagnostic tool in identifying and troubleshooting softwarebugs. When atest caseexecution yields anActual Resultthat deviates from theExpected Result, this discrepancy flags a potential defect in the software.
+**Actual Result**[Actual Result](/wiki/actual-result)[bugs](/wiki/bug)[test case](/wiki/test-case)[Actual Result](/wiki/actual-result)[Expected Result](/wiki/expected-result)
+To diagnose issues, engineers analyze theActual Resultin the context of thetest environmentand input data. They may look for patterns or inconsistencies in the results across differenttest casesor conditions. For instance, if a feature works as expected under one set of inputs but not another, this could indicate a boundary case issue or a data handlingbug.
+[Actual Result](/wiki/actual-result)[test environment](/wiki/test-environment)[test cases](/wiki/test-case)[bug](/wiki/bug)
+Engineers also use theActual Resultto pinpoint the exact step where the failure occurred. By examining the state of the application at this point, including logs, stack traces, ordatabasestates, they can identify the underlying cause of the failure.
+[Actual Result](/wiki/actual-result)[database](/wiki/database)
+In cases where theActual Resultindicates a performance issue, such as slower response times or resource bottlenecks, engineers can use profiling tools to drill down into the system's behavior at the time of the test.
+[Actual Result](/wiki/actual-result)
+Automated testingframeworks often provide features to capture and report detailedActual Results, including screenshots or video recordings of thetest execution, which can be invaluable for diagnosing UI issues.
+[Automated testing](/wiki/automated-testing)[Actual Results](/wiki/actual-result)[test execution](/wiki/test-execution)
+By methodically analyzing theActual Result, engineers can formulate hypotheses about the source of thebug, which can then be tested and verified, leading to a more efficientbug-fixing process.
+[Actual Result](/wiki/actual-result)[bug](/wiki/bug)[bug](/wiki/bug)
+#### Advanced Concepts
+- How does the 'Actual Result' factor into regression testing?Inregression testing, theActual Resultis crucial for verifying that recent code changes have not adversely affected existing functionality. It serves as the outcome of atest caseafter the software has been modified. By comparing theActual Resultwith theExpected Result, testers can determine whether a regression error has occurred.For automated regression tests, theActual Resultis typically captured by thetest scriptsand compared against theExpected Resultprogrammatically. Discrepancies trigger test failures, alerting engineers to potential regressions. This comparison is often done through assertions in the test code:assert.equal(actualResult, expectedResult, 'The actual result does not match the expected result.');When theActual Resultmatches theExpected Result, it indicates that the application's behavior remains consistent with its previous state. Conversely, a mismatch may signal a defect introduced by recent changes, necessitating further investigation and potential code fixes.In continuous integration environments, theActual Resultis part of the feedback loop, informing development teams about the stability of their application after each code commit. This immediate feedback is essential for maintainingsoftware qualityand accelerating the development cycle.Automated regression tests with clearActual Resultsenable quick identification of the specific functionality that has regressed, streamlining the debugging process and ensuring that software releases meet quality standards.
+- What role does the 'Actual Result' play in automated testing?Inautomated testing, theActual Resultserves as a critical data point for validating software behavior against expected outcomes. It is the output produced by thetest scriptwhen it is executed. This result is then automatically compared to theExpected Resultto determine if the test has passed or failed.// Example of capturing Actual Result in an automated test
+const actualResult = performAction();
+assert.equal(actualResult, expectedResult, 'Test failed: Actual result does not match expected result.');TheActual Resultis essential for pinpointing the exact step where a discrepancy occurs, especially in complextest scenarios. When a test fails, theActual Resultprovides immediate feedback on the nature of the failure, allowing engineers to initiate debugging and root cause analysis without manual intervention.Automated tests often log theActual Resultto a report or dashboard, providing a historical record oftest executions. This facilitates trend analysis and helps in understanding the stability of the software over time.In continuous integration and deployment (CI/CD) pipelines, theActual Resultcan trigger workflows such as notifications, rollbacks, or additionaltest suites, depending on the success or failure of thetest cases.Overall, theActual Resultis a cornerstone oftest automation, enabling efficient and accurate validation of software functionality, and drivingquality assuranceprocesses in a systematic and scalable manner.
+- How can 'Actual Result' discrepancies contribute to software optimization and improvement?Discrepancies betweenActual ResultsandExpected Resultsare critical for software optimization and improvement. When the actual outcome of atest casedeviates from what was anticipated, it signals a potential flaw or area for enhancement. These discrepancies can lead to:Refinement of requirements: Inconsistencies may reveal misunderstandings or gaps in the requirements, prompting clearer and more precise specifications.Code optimization: Performance issues or unexpected behaviors exposed during testing can guide developers to optimize algorithms and refactor code.Enhanced user experience: Actual results that differ in the user interface or workflows can highlight usability issues, leading to improvements that make the software more intuitive and user-friendly.Better error handling: Encountering errors or exceptions not accounted for in expected results can improve the robustness of the software by enhancing error handling and messaging.Increasedtest coverage: Discrepancies often reveal untested paths or edge cases, expanding the test suite for more comprehensive coverage.By analyzing these discrepancies, teams can iteratively refine their software, leading to a more reliable, performant, and user-centric product. It's essential to document and track these findings to ensure they are addressed in future development cycles.
 
-总体而言，**实际结果**是[自动化测试](../T/test-automation.md)的基石，以系统化和可扩展的方式推动[质量保证](../Q/quality-assurance.md)流程，从而高效而准确地验证软件功能。
-
-### “实际结果”差异如何有助于软件优化和改进？
-
-**实际结果**与**[期望结果](../E/expected-result.md)**之间的差异对于软件的优化和改进至关重要。当[测试用例](../T/test-case.md)的实际结果偏离预期时，这表明存在潜在的缺陷或需要改进的领域。这些差异可能导致：
-
-- **需求的完善**：不一致性可能揭示需求理解不足或存在漏洞，促使更清晰和精确的规范。
-- **代码优化**：在测试中暴露的性能问题或意外行为可以引导开发人员优化算法和重构代码。
-- **增强用户体验**：在用户界面或工作流中出现差异的实际结果可能突显出可用性问题，从而引导改进，使软件更直观和用户友好。
-- **更好的错误处理**：遇到未在期望结果中考虑的错误或异常可以通过改进错误处理和消息传递来提高软件的健壮性。
-- **增加[测试覆盖率](../T/test-coverage.md)**：差异通常揭示了未经测试的路径或边缘情况，扩展了测试套件，实现更全面的覆盖。
-
-通过分析这些差异，团队可以迭代地完善他们的软件，从而打造更可靠、高性能和用户中心的产品。记录和跟踪这些发现是确保它们在未来的开发周期中得到解决的关键。
+Inregression testing, theActual Resultis crucial for verifying that recent code changes have not adversely affected existing functionality. It serves as the outcome of atest caseafter the software has been modified. By comparing theActual Resultwith theExpected Result, testers can determine whether a regression error has occurred.
+[regression testing](/wiki/regression-testing)**Actual Result**[Actual Result](/wiki/actual-result)[test case](/wiki/test-case)**Actual Result**[Actual Result](/wiki/actual-result)**Expected Result**[Expected Result](/wiki/expected-result)
+For automated regression tests, theActual Resultis typically captured by thetest scriptsand compared against theExpected Resultprogrammatically. Discrepancies trigger test failures, alerting engineers to potential regressions. This comparison is often done through assertions in the test code:
+**Actual Result**[Actual Result](/wiki/actual-result)[test scripts](/wiki/test-script)**Expected Result**[Expected Result](/wiki/expected-result)
+```
+assert.equal(actualResult, expectedResult, 'The actual result does not match the expected result.');
+```
+`assert.equal(actualResult, expectedResult, 'The actual result does not match the expected result.');`
+When theActual Resultmatches theExpected Result, it indicates that the application's behavior remains consistent with its previous state. Conversely, a mismatch may signal a defect introduced by recent changes, necessitating further investigation and potential code fixes.
+**Actual Result**[Actual Result](/wiki/actual-result)**Expected Result**[Expected Result](/wiki/expected-result)
+In continuous integration environments, theActual Resultis part of the feedback loop, informing development teams about the stability of their application after each code commit. This immediate feedback is essential for maintainingsoftware qualityand accelerating the development cycle.
+**Actual Result**[Actual Result](/wiki/actual-result)[software quality](/wiki/software-quality)
+Automated regression tests with clearActual Resultsenable quick identification of the specific functionality that has regressed, streamlining the debugging process and ensuring that software releases meet quality standards.
+**Actual Results**[Actual Results](/wiki/actual-result)
+Inautomated testing, theActual Resultserves as a critical data point for validating software behavior against expected outcomes. It is the output produced by thetest scriptwhen it is executed. This result is then automatically compared to theExpected Resultto determine if the test has passed or failed.
+[automated testing](/wiki/automated-testing)**Actual Result**[Actual Result](/wiki/actual-result)[test script](/wiki/test-script)**Expected Result**[Expected Result](/wiki/expected-result)
+```
+// Example of capturing Actual Result in an automated test
+const actualResult = performAction();
+assert.equal(actualResult, expectedResult, 'Test failed: Actual result does not match expected result.');
+```
+`// Example of capturing Actual Result in an automated test
+const actualResult = performAction();
+assert.equal(actualResult, expectedResult, 'Test failed: Actual result does not match expected result.');`
+TheActual Resultis essential for pinpointing the exact step where a discrepancy occurs, especially in complextest scenarios. When a test fails, theActual Resultprovides immediate feedback on the nature of the failure, allowing engineers to initiate debugging and root cause analysis without manual intervention.
+**Actual Result**[Actual Result](/wiki/actual-result)[test scenarios](/wiki/test-scenario)**Actual Result**[Actual Result](/wiki/actual-result)
+Automated tests often log theActual Resultto a report or dashboard, providing a historical record oftest executions. This facilitates trend analysis and helps in understanding the stability of the software over time.
+**Actual Result**[Actual Result](/wiki/actual-result)[test executions](/wiki/test-execution)
+In continuous integration and deployment (CI/CD) pipelines, theActual Resultcan trigger workflows such as notifications, rollbacks, or additionaltest suites, depending on the success or failure of thetest cases.
+**Actual Result**[Actual Result](/wiki/actual-result)[test suites](/wiki/test-suite)[test cases](/wiki/test-case)
+Overall, theActual Resultis a cornerstone oftest automation, enabling efficient and accurate validation of software functionality, and drivingquality assuranceprocesses in a systematic and scalable manner.
+**Actual Result**[Actual Result](/wiki/actual-result)[test automation](/wiki/test-automation)[quality assurance](/wiki/quality-assurance)
+Discrepancies betweenActual ResultsandExpected Resultsare critical for software optimization and improvement. When the actual outcome of atest casedeviates from what was anticipated, it signals a potential flaw or area for enhancement. These discrepancies can lead to:
+**Actual Results**[Actual Results](/wiki/actual-result)**Expected Results**[Expected Results](/wiki/expected-result)[test case](/wiki/test-case)- Refinement of requirements: Inconsistencies may reveal misunderstandings or gaps in the requirements, prompting clearer and more precise specifications.
+- Code optimization: Performance issues or unexpected behaviors exposed during testing can guide developers to optimize algorithms and refactor code.
+- Enhanced user experience: Actual results that differ in the user interface or workflows can highlight usability issues, leading to improvements that make the software more intuitive and user-friendly.
+- Better error handling: Encountering errors or exceptions not accounted for in expected results can improve the robustness of the software by enhancing error handling and messaging.
+- Increasedtest coverage: Discrepancies often reveal untested paths or edge cases, expanding the test suite for more comprehensive coverage.
+**Refinement of requirements****Code optimization****Enhanced user experience****Better error handling****Increasedtest coverage**[test coverage](/wiki/test-coverage)
+By analyzing these discrepancies, teams can iteratively refine their software, leading to a more reliable, performant, and user-centric product. It's essential to document and track these findings to ensure they are addressed in future development cycles.

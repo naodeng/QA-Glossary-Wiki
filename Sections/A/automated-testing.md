@@ -1,64 +1,44 @@
-<!-- markdownlint-disable MD041 -->
-- [Automated Testing 自动化测试](#automated-testing-自动化测试)
-- [关于自动化测试的问题](#关于自动化测试的问题)
-  - [基础知识和重要性](#基础知识和重要性)
-    - [什么是自动化测试？](#什么是自动化测试)
-    - [为什么自动化测试很重要？](#为什么自动化测试很重要)
-    - [自动化测试的优点和缺点是什么？](#自动化测试的优点和缺点是什么)
-    - [自动化测试如何融入软件开发生命周期？](#自动化测试如何融入软件开发生命周期)
-    - [手动测试和自动化测试有什么区别？](#手动测试和自动化测试有什么区别)
-  - [工具和技术](#工具和技术)
-    - [自动化测试常用的工具有哪些？](#自动化测试常用的工具有哪些)
-    - [这些工具之间有什么区别？](#这些工具之间有什么区别)
-    - [如何为特定的测试任务选择正确的工具？](#如何为特定的测试任务选择正确的工具)
-    - [自动化测试中常用的技术有哪些？](#自动化测试中常用的技术有哪些)
-    - [如何将自动化测试工具集成到 CI/CD 流水线中？](#如何将自动化测试工具集成到-cicd-流水线中)
-  - [测试用例和脚本](#测试用例和脚本)
-    - [如何开发自动化测试的测试用例？](#如何开发自动化测试的测试用例)
-    - [自动化测试中的测试脚本是什么？](#自动化测试中的测试脚本是什么)
-    - [如何确保您的测试用例涵盖所有可能的场景？](#如何确保您的测试用例涵盖所有可能的场景)
-    - [编写测试脚本的最佳实践有哪些？](#编写测试脚本的最佳实践有哪些)
-    - [随着时间的推移，您如何管理和维护测试用例和脚本？](#随着时间的推移您如何管理和维护测试用例和脚本)
-  - [自动化测试的类型](#自动化测试的类型)
-    - [什么是单元测试？](#什么是单元测试)
-    - [什么是集成测试？](#什么是集成测试)
-    - [什么是系统测试？](#什么是系统测试)
-    - [什么是回归测试？](#什么是回归测试)
-    - [黑盒测试和白盒测试有什么区别？](#黑盒测试和白盒测试有什么区别)
-    - [什么是端到端 (e2e) 测试以及为什么它很重要？](#什么是端到端-e2e-测试以及为什么它很重要)
-  - [深层理解](#深层理解)
-    - [什么是测试驱动开发 (TDD) 以及它与自动化测试有何关系？](#什么是测试驱动开发-tdd-以及它与自动化测试有何关系)
-    - [什么是行为驱动开发 (BDD) 以及它与自动化测试有何关系？](#什么是行为驱动开发-bdd-以及它与自动化测试有何关系)
-    - [什么是数据驱动测试？](#什么是数据驱动测试)
-    - [什么是关键字驱动测试？](#什么是关键字驱动测试)
-    - [人工智能和机器学习在自动化测试中的作用是什么？](#人工智能和机器学习在自动化测试中的作用是什么)
+# Automated Testing
+[Automated Testing](#automated-testing)[Automated testing](/wiki/automated-testing)[test coverage](/wiki/test-coverage)[software testing](/wiki/software-testing)
+### Related Terms:
+- Manual Testing
+- Test Automation
+[Manual Testing](/glossary/manual-testing)[Test Automation](/glossary/test-automation)
+### See also:
+- Wikipedia
+[Wikipedia](https://en.wikipedia.org/wiki/Test_automation)
+## Questions aboutAutomated Testing?
 
-# Automated Testing 自动化测试
+#### Basics and Importance
+- What is automated testing?Automated testingis the process of executing pre-writtentest scriptsby a software tool to validate the functionality, performance, and reliability of a software application. Unlikemanual testing, which requires human intervention at every step, automated tests run with minimal human oversight once they are set up and can be executed repeatedly.Tests are typically written in the same or a different language than the application code and are designed to be reusable and maintainable. They can range from simple unit tests that verify individual components to complex end-to-end tests that validate entire workflows within the application.Automated tests are triggered as part of a continuous integration/continuous deployment (CI/CD) pipeline, ensuring that new code changes do not introduce regressions. This is crucial for maintainingsoftware qualityin fast-paced development environments.// Example of a simple automated test script in TypeScript
+import { expect } from 'chai';
+import { Calculator } from './Calculator';
 
-自动化测试使用脚本来执行重复性任务，提高软件性能和测试效率。它提高了[测试覆盖率](../T/test-coverage.md)和执行速度，使[软件测试](../S/software-testing.md)过程更加有效。
+describe('Calculator', () => {
+  it('should add two numbers correctly', () => {
+    const calculator = new Calculator();
+    expect(calculator.add(2, 3)).to.equal(5);
+  });
+});Effectiveautomated testingrelies on selecting appropriate tools and frameworks, developing robusttest cases, and maintaining them as the application evolves. It is also essential to ensure comprehensivetest coverageto catch as many issues as possible before deployment. With advancements in AI and machine learning,automated testingis becoming more intelligent, capable of predicting and adapting to changes in the software with less manual input.
+- Why is automated testing important?Automated testingis crucial forensuringsoftware qualityat a speed and scale thatmanual testingcannot match. It enables teams to execute more tests in less time, providingrapid feedbackon code changes. This is essential in modern development practices like Agile and DevOps, where continuous integration and delivery are key. Automation supports these methodologies by allowing for frequent and consistent testing, leading to early detection of defects, which reduces the cost and effort of fixingbugs.Moreover, automated tests can be runrepeatedlywith little additional cost, ensuring that previously developed features still work after new changes (regression testing). They also allow forparallel executionacross various environments and devices, increasingtest coverageand efficiency. Automated tests producereliable resultswith less human error and provide detailed logs that help in debugging.In essence,automated testingis a cornerstone of aquality assurancestrategythat aims to deliver robust software in a timely manner. It complementsmanual testingefforts by handling repetitive, time-consuming tasks, allowing human testers to focus on more complex andexploratory testingscenarios.
+- What are the benefits and drawbacks of automated testing?Benefits ofAutomated Testing:Speed and Efficiency: Automated tests run faster than manual testing, allowing for more tests in less time.Reusability: Test scripts can be reused across different versions of the application, saving time in test preparation.Consistency: Ensures tests are performed identically every time, removing human error.Coverage: Enables thorough testing that might be impractical manually, including complex scenarios and large datasets.Continuous Integration: Facilitates CI/CD by allowing tests to run automatically whenever changes are made.EarlyBugDetection: Bugs can be identified quickly during the development process, reducing the cost of fixing them.Non-functional Testing: Ideal for performance, load, and stress testing which are difficult to perform manually.Drawbacks ofAutomated Testing:Initial Investment: High upfront costs for tools and setting up the test environment.Maintenance: Test scripts require regular updates to cope with changes in the application.Learning Curve: Teams need time to learn the tools and develop effective tests.Limited Scope: Cannot handle visual references or UX assessments as well as a human can.False Positives/Negatives: Automated tests may report failures that aren't bugs (false positives) or miss bugs (false negatives).ComplexSetup: Some test scenarios are complex to automate and may not be worth the effort.Tool Limitations: Tools may not support every technology or application type, limiting their use.
+- How does automated testing fit into the software development lifecycle?Automated testingseamlessly integrates into various stages of the software development lifecycle (SDLC), enhancing efficiency and reliability. During therequirements phase, automated tests are planned, aligning with acceptance criteria. In thedesign and development phases, automated unit tests are implemented, often following TDD practices. As features are completed, automated integration tests verify component interactions.In thetesting phase, automated regression tests ensure new changes don't break existing functionality, while automated system tests validate the software as a whole. Automated e2e tests mimic user behavior, covering the full application flow. Fordeployment, automated tests are crucial in a CI/CD pipeline, providing immediate feedback on the build's health.Post-deployment, automated tests continue to support themaintenance phase, quickly identifying issues introduced by patches or updates. Throughout the SDLC, automated tests are maintained and refined to adapt to evolving application requirements and to cover new scenarios.Automated testing's role is iterative and continuous, aligning with Agile and DevOps methodologies to support rapid development cycles and frequent releases. It ensures quality is baked into the product from the start and maintained throughout its lifecycle.// Example of a simple automated unit test in TypeScript
+import { add } from './math';
 
-相关术语：
+describe('add function', () => {
+  it('should add two numbers correctly', () => {
+    expect(add(2, 3)).toBe(5);
+  });
+});
+- What is the difference between manual testing and automated testing?Manual testinginvolves human testers executingtest caseswithout the assistance of tools or scripts.Automated testing, on the other hand, uses software tools to run tests automatically, managing both the execution of tests and the comparison of actual outcomes with predicted outcomes.The key differences are:Execution: Manual tests require human intervention for each step, while automated tests are executed by software.Speed: Automated testing is significantly faster once tests are developed.Consistency: Automated tests can be run repeatedly with the same conditions, ensuring consistency. Manual testing may be subject to human error.Initial Cost: Setting up automated tests requires more time and resources upfront compared to manual testing.Maintenance: Automated tests require maintenance to keep them effective as the application changes, while manual tests are more adaptable to changes without additional setup.Scalability: Automated testing can handle a large number of tests and is scalable, which is challenging with manual testing.Complexity: Some complex user interactions can be difficult to automate and might be better evaluated manually.Feedback: Manual testing can provide immediate qualitative feedback, which automated testing cannot.Use Cases: Manual testing is often more suitable for exploratory, usability, and ad-hoc testing. Automated testing is ideal for regression, load, and performance testing, among others.In practice, a balanced approach that leverages the strengths of both methods is often the most effective strategy.
 
-- [手工测试](../M/manual-testing.md)
-- [测试自动化](../T/test-automation.md)
+Automated testingis the process of executing pre-writtentest scriptsby a software tool to validate the functionality, performance, and reliability of a software application. Unlikemanual testing, which requires human intervention at every step, automated tests run with minimal human oversight once they are set up and can be executed repeatedly.
+[Automated testing](/wiki/automated-testing)[test scripts](/wiki/test-script)[manual testing](/wiki/manual-testing)
+Tests are typically written in the same or a different language than the application code and are designed to be reusable and maintainable. They can range from simple unit tests that verify individual components to complex end-to-end tests that validate entire workflows within the application.
 
-也可以看看：
-
-- [维基百科](https://zh.wikipedia.org/wiki/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95)
-
-# 关于自动化测试的问题
-
-## 基础知识和重要性
-
-### 什么是自动化测试？
-
-自动化测试是使用软件工具执行预先编写的[测试脚本](../wiki/test-script.md)来验证软件应用功能、性能和可靠性的过程。与[手动测试](../wiki/manual-testing.md)不同，自动化测试一旦设置完成，就可以在最小的人工监督下重复执行。
-
-这些测试通常使用与应用代码相同或不同的语言编写，旨在具有可重用性和可维护性。测试的范围可以从验证各个组件的简单单元测试到验证应用程序内整个工作流程的复杂端到端测试。
-
-自动化测试是持续集成/持续部署（CI/CD）流水线的一部分，确保新的代码更改不会引入回归问题。这在快节奏的开发环境中保持[软件质量](../wiki/software-quality.md)至关重要。
-
-```javascript
+Automated tests are triggered as part of a continuous integration/continuous deployment (CI/CD) pipeline, ensuring that new code changes do not introduce regressions. This is crucial for maintainingsoftware qualityin fast-paced development environments.
+[software quality](/wiki/software-quality)
+```
 // Example of a simple automated test script in TypeScript
 import { expect } from 'chai';
 import { Calculator } from './Calculator';
@@ -70,50 +50,51 @@ describe('Calculator', () => {
   });
 });
 ```
+`// Example of a simple automated test script in TypeScript
+import { expect } from 'chai';
+import { Calculator } from './Calculator';
 
-有效的自动化测试取决于选择适当的工具和框架、开发健壮的[测试用例](../wiki/test-case.md)并随着应用程序演变进行维护。同时，必须确保全面的[测试覆盖](../wiki/test-coverage.md)，以在部署之前捕获尽可能多的问题。随着人工智能和机器学习的进步，自动化测试变得更加智能，能够以更少的手动输入预测和适应软件的变化。
-
-### 为什么自动化测试很重要？
-
-自动化测试对于以无法匹敌的速度和规模**确保[软件质量](../wiki/software-quality.md)**至关重要。它使团队能够在较短的时间内执行更多的测试，对代码变更提供**快速反馈**。这在现代开发实践中至关重要，例如敏捷和 DevOps，其中持续集成和交付是关键。自动化通过允许频繁而一致的测试来支持这些方法，从而早期发现缺陷，降低了修复[缺陷](../wiki/bug.md)的成本和工作量。
-
-此外，自动化测试可以**重复运行**，几乎没有额外成本，确保在新变更后之前开发的功能仍然可用（[回归测试](../wiki/regression-testing.md)）。它们还允许在各种环境和设备上进行**并行执行**，提高了[测试覆盖](../wiki/test-coverage.md)和效率。自动化测试以较少的人为错误生成**可靠的结果**，并提供详细的日志，有助于调试。
-
-实质上，自动化测试是**[质量保证](../wiki/quality-assurance.md)战略**的基石，旨在及时交付健壮的软件。它通过处理重复且耗时的任务来补充[手动测试](../wiki/manual-testing.md)工作，使人工测试人员能够专注于更复杂和[探索性测试](../wiki/exploratory-testing.md)场景。
-
-### 自动化测试的优点和缺点是什么？
-
-自动化测试的优势：
-
-- **速度和效率**：相比手动测试，自动化测试可以更快地执行更多的测试，提供对代码变更的快速反馈。
-- **可重用性**：测试脚本可以在应用程序的不同版本之间重复使用，节省了测试准备的时间。
-- **一致性**：确保每次执行测试时都是相同的，消除了人为错误。
-- **覆盖范围**：能够执行手动情况下难以实现的全面测试，包括复杂的场景和大型数据集。
-- **持续集成**：通过允许在进行更改时自动运行测试，有助于 CI/CD，是现代开发实践的关键。
-- **早期[缺陷](../wiki/bug.md)检测**：能够在开发过程中迅速识别问题，降低修复成本。
-- **[非功能性测试](../wiki/non-functional-testing.md)**：非常适合性能、负载和压力测试，这些测试在手动情况下难以执行。
-
-自动化测试的劣势：
-
-- **初期投资**：在工具和测试环境的设置方面有较高的初始成本。
-- **维护**：测试脚本需要定期更新以适应应用程序的变化。
-- **学习曲线**：团队需要时间学习工具并开发有效的测试。
-- **有限范围**：无法像人类一样处理视觉参考或 UX 评估。
-- **[误报](../wiki/false-positive.md)/漏报**：自动化测试可能报告不是缺陷的失败（误报）或错过缺陷（漏报）。
-- **复杂的[设置](../wiki/setup.md)**：有些测试场景很难自动化，可能不值得付出努力。
-- **工具限制**：工具可能不支持每种技术或应用程序类型，限制了它们的使用。
-
-### 自动化测试如何融入软件开发生命周期？
-
-自动化测试被无缝地融入到软件开发生命周期（SDLC）的各个阶段，以提高效率和可靠性。在**需求阶段**，我们计划了自动化测试，以确保其与验收标准一致。在**设计和开发阶段**，我们实施了自动化单元测试，通常遵循测试驱动开发（TDD）的实践。随着特性的完成，自动化集成测试用于验证组件之间的交互。
-
-在**测试阶段**，自动化回归测试确保新的更改不会破坏现有功能，而自动化系统测试则验证整个软件系统。自动化端到端测试模拟用户行为，覆盖整个应用程序的工作流程。对于**部署**而言，在 CI/CD 流水线中，自动化测试对构建的健康状态提供了即时反馈。
-
-在部署后，自动化测试继续支持**维护阶段**，快速发现由于补丁或更新引入的问题。在整个 SDLC 期间，我们会对自动化测试进行维护和完善，以适应应用程序要求的不断发展和覆盖新场景的需要。
-
-自动化测试的角色是迭代的和持续的，与敏捷开发和 DevOps 方法论相一致，支持快速的开发周期和频繁的发布。这确保了质量从一开始就被内嵌到产品中，并在整个生命周期中得以保持。
-
-```javascript
+describe('Calculator', () => {
+  it('should add two numbers correctly', () => {
+    const calculator = new Calculator();
+    expect(calculator.add(2, 3)).to.equal(5);
+  });
+});`
+Effectiveautomated testingrelies on selecting appropriate tools and frameworks, developing robusttest cases, and maintaining them as the application evolves. It is also essential to ensure comprehensivetest coverageto catch as many issues as possible before deployment. With advancements in AI and machine learning,automated testingis becoming more intelligent, capable of predicting and adapting to changes in the software with less manual input.
+[automated testing](/wiki/automated-testing)[test cases](/wiki/test-case)[test coverage](/wiki/test-coverage)[automated testing](/wiki/automated-testing)
+Automated testingis crucial forensuringsoftware qualityat a speed and scale thatmanual testingcannot match. It enables teams to execute more tests in less time, providingrapid feedbackon code changes. This is essential in modern development practices like Agile and DevOps, where continuous integration and delivery are key. Automation supports these methodologies by allowing for frequent and consistent testing, leading to early detection of defects, which reduces the cost and effort of fixingbugs.
+[Automated testing](/wiki/automated-testing)**ensuringsoftware quality**[software quality](/wiki/software-quality)[manual testing](/wiki/manual-testing)**rapid feedback**[bugs](/wiki/bug)
+Moreover, automated tests can be runrepeatedlywith little additional cost, ensuring that previously developed features still work after new changes (regression testing). They also allow forparallel executionacross various environments and devices, increasingtest coverageand efficiency. Automated tests producereliable resultswith less human error and provide detailed logs that help in debugging.
+**repeatedly**[regression testing](/wiki/regression-testing)**parallel execution**[test coverage](/wiki/test-coverage)**reliable results**
+In essence,automated testingis a cornerstone of aquality assurancestrategythat aims to deliver robust software in a timely manner. It complementsmanual testingefforts by handling repetitive, time-consuming tasks, allowing human testers to focus on more complex andexploratory testingscenarios.
+[automated testing](/wiki/automated-testing)**quality assurancestrategy**[quality assurance](/wiki/quality-assurance)[manual testing](/wiki/manual-testing)[exploratory testing](/wiki/exploratory-testing)
+Benefits ofAutomated Testing:
+[Automated Testing](/wiki/automated-testing)- Speed and Efficiency: Automated tests run faster than manual testing, allowing for more tests in less time.
+- Reusability: Test scripts can be reused across different versions of the application, saving time in test preparation.
+- Consistency: Ensures tests are performed identically every time, removing human error.
+- Coverage: Enables thorough testing that might be impractical manually, including complex scenarios and large datasets.
+- Continuous Integration: Facilitates CI/CD by allowing tests to run automatically whenever changes are made.
+- EarlyBugDetection: Bugs can be identified quickly during the development process, reducing the cost of fixing them.
+- Non-functional Testing: Ideal for performance, load, and stress testing which are difficult to perform manually.
+**Speed and Efficiency****Reusability****Consistency****Coverage****Continuous Integration****EarlyBugDetection**[Bug](/wiki/bug)**Non-functional Testing**[Non-functional Testing](/wiki/non-functional-testing)
+Drawbacks ofAutomated Testing:
+[Automated Testing](/wiki/automated-testing)- Initial Investment: High upfront costs for tools and setting up the test environment.
+- Maintenance: Test scripts require regular updates to cope with changes in the application.
+- Learning Curve: Teams need time to learn the tools and develop effective tests.
+- Limited Scope: Cannot handle visual references or UX assessments as well as a human can.
+- False Positives/Negatives: Automated tests may report failures that aren't bugs (false positives) or miss bugs (false negatives).
+- ComplexSetup: Some test scenarios are complex to automate and may not be worth the effort.
+- Tool Limitations: Tools may not support every technology or application type, limiting their use.
+**Initial Investment****Maintenance****Learning Curve****Limited Scope****False Positives/Negatives**[False Positives](/wiki/false-positive)**ComplexSetup**[Setup](/wiki/setup)**Tool Limitations**
+Automated testingseamlessly integrates into various stages of the software development lifecycle (SDLC), enhancing efficiency and reliability. During therequirements phase, automated tests are planned, aligning with acceptance criteria. In thedesign and development phases, automated unit tests are implemented, often following TDD practices. As features are completed, automated integration tests verify component interactions.
+[Automated testing](/wiki/automated-testing)**requirements phase****design and development phases**
+In thetesting phase, automated regression tests ensure new changes don't break existing functionality, while automated system tests validate the software as a whole. Automated e2e tests mimic user behavior, covering the full application flow. Fordeployment, automated tests are crucial in a CI/CD pipeline, providing immediate feedback on the build's health.
+**testing phase****deployment**
+Post-deployment, automated tests continue to support themaintenance phase, quickly identifying issues introduced by patches or updates. Throughout the SDLC, automated tests are maintained and refined to adapt to evolving application requirements and to cover new scenarios.
+**maintenance phase**
+Automated testing's role is iterative and continuous, aligning with Agile and DevOps methodologies to support rapid development cycles and frequent releases. It ensures quality is baked into the product from the start and maintained throughout its lifecycle.
+[Automated testing](/wiki/automated-testing)
+```
 // Example of a simple automated unit test in TypeScript
 import { add } from './math';
 
@@ -123,68 +104,134 @@ describe('add function', () => {
   });
 });
 ```
+`// Example of a simple automated unit test in TypeScript
+import { add } from './math';
 
-### 手动测试和自动化测试有什么区别？
+describe('add function', () => {
+  it('should add two numbers correctly', () => {
+    expect(add(2, 3)).toBe(5);
+  });
+});`
+Manual testinginvolves human testers executingtest caseswithout the assistance of tools or scripts.Automated testing, on the other hand, uses software tools to run tests automatically, managing both the execution of tests and the comparison of actual outcomes with predicted outcomes.
+[Manual testing](/wiki/manual-testing)[test cases](/wiki/test-case)[Automated testing](/wiki/automated-testing)
+The key differences are:
+- Execution: Manual tests require human intervention for each step, while automated tests are executed by software.
+- Speed: Automated testing is significantly faster once tests are developed.
+- Consistency: Automated tests can be run repeatedly with the same conditions, ensuring consistency. Manual testing may be subject to human error.
+- Initial Cost: Setting up automated tests requires more time and resources upfront compared to manual testing.
+- Maintenance: Automated tests require maintenance to keep them effective as the application changes, while manual tests are more adaptable to changes without additional setup.
+- Scalability: Automated testing can handle a large number of tests and is scalable, which is challenging with manual testing.
+- Complexity: Some complex user interactions can be difficult to automate and might be better evaluated manually.
+- Feedback: Manual testing can provide immediate qualitative feedback, which automated testing cannot.
+- Use Cases: Manual testing is often more suitable for exploratory, usability, and ad-hoc testing. Automated testing is ideal for regression, load, and performance testing, among others.
+**Execution****Speed****Consistency****Initial Cost****Maintenance****Scalability****Complexity****Feedback****Use Cases**[Use Cases](/wiki/use-case)
+In practice, a balanced approach that leverages the strengths of both methods is often the most effective strategy.
 
-[手动测试](../wiki/manual-testing.md)涉及到测试人员在没有工具或脚本的帮助下执行[测试用例](../wiki/test-case.md)。相反，自动化测试使用软件工具自动运行测试，同时管理测试的执行和实际结果与预期结果的比较。
+#### Tools and Techniques
+- What are some common tools used for automated testing?Common tools forautomated testinginclude:Selenium: An open-source framework for web application testing across various browsers and platforms. It supports multiple programming languages like Java, C#, and Python.WebDriver driver = new ChromeDriver();
+driver.get("http://www.example.com");Appium: An open-source tool for automating mobile applications on iOS and Android platforms. It uses the WebDriver protocol.DesiredCapabilities caps = new DesiredCapabilities();
+caps.setCapability("platformName", "iOS");
+caps.setCapability("deviceName", "iPhone Simulator");JUnitandTestNG: Frameworks for unit testing in Java, providing annotations and assertions to help structure and run tests.@Test
+public void testMethod() {
+  assertEquals(1, 1);
+}Cypress: A JavaScript-based end-to-end testing framework that runs in the browser, enabling fast, easy, and reliable testing for anything that runs in a browser.describe('My First Test', () => {
+  it('Visits the Kitchen Sink', () => {
+    cy.visit('https://example.cypress.io')
+  })
+})Robot Framework: A keyword-driven test automation framework for acceptance testing and acceptance test-driven development (ATDD).*** Test Cases ***
+Valid Login
+    Open Browser To Login Page
+    Input Username    demo
+    Input Password    mode
+    Submit CredentialsPostman: A tool for API testing, allowing users to send HTTP requests and analyze responses, create automated tests, and integrate with CI/CD pipelines.{
+  "id": "f2955b9f-da77-4f80-8f1c-9f8b0d8f2b7d",
+  "name": "API Test",
+  "request": {
+    "method": "GET",
+    "url": "https://api.example.com/v1/users"
+  }
+}Cucumber: Supports behavior-driven development (BDD), allowing the specification of application behavior in plain language.Feature: Login functionality
+  Scenario: Successful login with valid credentials
+    Given the user is on the login page
+    When the user enters valid credentials
+    Then the user is redirected to the homepageThese tools offer various capabilities for different testing needs, from unit andintegration testingto end-to-end andAPI testing.
+- What are the differences between these tools?Differentautomated testingtools have unique features, capabilities, anduse cases. Here's a brief comparison:Selenium: An open-source tool for web application testing across different browsers and platforms. It supports multiple programming languages and integrates with various frameworks.WebDriver driver = new ChromeDriver();
+driver.get("http://www.example.com");QTP/UFT (UnifiedFunctional Testing): A commercial tool from Micro Focus for functional and regression testing with a focus on desktop and web applications. It uses VBScript and is known for its record-and-playback feature.Browser("Example").Page("Home").Link("Login").ClickTestComplete: Another commercial tool that supports desktop, mobile, and web applications. It offers both script-based and keyword-driven testing and supports various scripting languages.Sys.Browser("*").Page("http://www.example.com").Link("Login").Click();Cypress: A JavaScript-based end-to-end testing framework designed for modern web applications. It runs tests in the same run-loop as the application, providing real-time feedback and faster test execution.cy.visit('http://www.example.com');
+cy.contains('Login').click();Jest: A JavaScript testing framework with a focus on simplicity, supporting unit and integration tests. It works well with React and other modern JavaScript libraries.test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});Appium: An open-source tool for automated testing of mobile applications. It supports native, hybrid, and mobile web apps and works with any testing framework.driver.findElement(By.id("com.example:id/login")).click();Robot Framework: A keyword-driven test automation framework that uses tabular test data syntax. It's easy to learn for those not familiar with programming and integrates with Selenium for web testing.*** Test Cases ***
+Login Test
+    Open Browser    http://www.example.com    Chrome
+    Click Link    LoginEach tool has its strengths, and the choice often depends on the application under test, the preferred programming language, and the specific requirements of the testing process.
+- How do you choose the right tool for a specific testing task?Choosing the right tool for a specific testing task involves several considerations:Compatibility: Ensure the tool supports the technology stack of your application (e.g., web, mobile, desktop).Usability: Look for tools that align with your team's skillset. A tool with a steep learning curve might not be the best choice if it impedes productivity.Integration: The tool should integrate seamlessly with your existing tools and workflows, such as version control, CI/CD pipelines, and issue tracking systems.Scalability: Consider whether the tool can handle the size and complexity of your application as it grows.Flexibility: The ability to write custom functions or integrate with other tools can be crucial for complex test scenarios.Reporting: Detailed reports and analytics can help identify trends and pinpoint issues quickly.Support and Community: A strong community and vendor support can be invaluable for troubleshooting and keeping the tool up-to-date.Cost: Evaluate the tool's cost against your budget, including licensing, maintenance, and potential training costs.Performance: The tool should execute tests quickly and efficiently to keep pace with rapid development cycles.Reliability: Choose tools with a proven track record of stability to avoid flaky tests and inconsistent results.By weighing these factors against the specific needs of your testing task, you can select a tool that enhances your testing efficiency and effectiveness. Remember to periodically reassess your choice as both your requirements and the tools themselves evolve.
+- What are some common techniques used in automated testing?Common techniques inautomated testinginclude:Page Object Model(POM): Encapsulates page elements and interactions in classes, promoting code reuse andmaintainability.Modular Testing: Breaks tests into smaller, manageable modules with independenttest scripts, enhancingmaintainabilityand scalability.Hybrid Testing Framework: Combines various testing approaches, such as keyword-driven and data-driven, to leverage their strengths.Behavior-Driven Development (BDD): Uses natural language descriptions to define the behavior of applications, facilitating communication between stakeholders.Test-Driven Development(TDD): Involves writingtest casesbefore the actual code, ensuring the software is built with testing in mind.Data-Driven Testing: Uses external data sources to input multiple datasets intotest cases, increasing coverage and efficiency.Keyword-Driven Testing: Defines tests with keywords representing actions and data, making tests easier to understand and maintain.Continuous Testing: Integrates testing into the continuous integration and delivery pipeline, providing immediate feedback on the build's health.Parallel Testing: Executes multiple tests simultaneously across different environments, reducing the time required fortest execution.API Testing: Focuses on directly testingAPIsfor functionality, reliability, performance, and security, often at a lower level than UI tests.Mocking and Stubbing: Uses mock objects and stubs to simulate the behavior of real components, allowing for isolated testing of parts of the system.Visual Regression Testing: Detects unintended visual changes by comparing current screenshots with baseline images.Load andPerformance Testing: Simulates user load on software to check performance and scalability under different conditions.Security Testing: Automated scripts that probe the application for vulnerabilities, ensuring that the software is protected against potential attacks.These techniques can be combined and tailored to fit specific project requirements, ensuring a robust and efficientautomated testingprocess.
+- How can automated testing tools be integrated into a CI/CD pipeline?Integratingautomated testingtools into a CI/CD pipeline involves several steps:Select appropriate toolsthat integrate seamlessly with your CI/CD server (e.g., Jenkins, GitLab CI, CircleCI).Configure the CI/CD serverto trigger automated tests. This is typically done by defining jobs or stages in your pipeline configuration file.Set uptest environmentswhere the automated tests will run. This could be a dedicated testing server, a containerized environment, or a cloud-based service.Writetest scriptsthat are compatible with the CI/CD environment and can be executed without manual intervention.Storetest scriptsin a version control system, alongside the application code, to maintain versioning and change tracking.Define triggersfor the automated tests, such as on every commit, nightly builds, or on-demand.Execute testsas part of the pipeline and ensure that test results are reported back to the CI/CD server.Handle test resultsby setting up notifications, dashboards, or integrating with other tools for result analysis.Managetest dataand dependencies to ensure consistency across test runs.Automate deploymentof the application to the test environment before running tests.Example pipeline configuration snippet for a Jenkinsfile:pipeline {
+    agent any
+    stages {
+        stage('Test') {
+            steps {
+                // Checkout code
+                checkout scm
+                // Run tests
+                script {
+                    // Execute test command
+                    sh 'npm test'
+                }
+            }
+            post {
+                always {
+                    // Publish test results
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                }
+            }
+        }
+    }
+}Ensure that the pipeline is designed tostop deploymentif tests fail, maintaining the quality of the release. Regularlyreview and updatetest casesand scripts to adapt to changes in the application.
 
-主要区别包括：
-
-- **执行**：手动测试需要人类在每个步骤进行干预，而自动化测试则由软件执行。
-- **速度**：一旦测试被开发，自动化测试的速度明显更快。
-- **一致性**：自动化测试可以在相同条件下重复运行，确保一致性。而手动测试可能会受到人为错误的影响。
-- **初始成本**：设置自动化测试需要比手动测试更多的时间和资源。
-- **维护**：随着应用程序的变化，自动化测试需要进行维护以保持其有效性，而手动测试则更易于适应变化而无需额外设置。
-- **可扩展性**：自动化测试能够处理大量测试并具有可扩展性，而手动测试在这方面具有挑战性。
-- **复杂性**：一些复杂的用户交互可能难以自动化，手动评估可能更为合适。
-- **反馈**：手动测试能够提供即时的定性反馈，而自动化测试则无法做到这一点。
-- **[用例](../wiki/use-case.md)**：手动测试通常更适用于探索性、可用性和临时测试。而自动化测试则非常适用于回归、负载和性能测试等场景。
-
-在实践中，通常采用平衡的方法，充分发挥两种方法的优势，是最有效的策略。
-
-## 工具和技术
-
-### 自动化测试常用的工具有哪些？
-
-一些常见的自动化测试工具包括：
-
-- **[Selenium](../S/selenium.md)**：一个用于在不同浏览器和平台上进行网页应用测试的开源框架。它支持多种编程语言，如Java、C#和Python。
-
-```Typescript
+Common tools forautomated testinginclude:
+[automated testing](/wiki/automated-testing)- Selenium: An open-source framework for web application testing across various browsers and platforms. It supports multiple programming languages like Java, C#, and Python.
+**Selenium**[Selenium](/wiki/selenium)
+```
 WebDriver driver = new ChromeDriver();
 driver.get("http://www.example.com");
 ```
-
-- **Appium**：一个用于在 iOS 和 Android 平台上自动化移动应用的开源工具。它使用 WebDriver 协议。
-
-```Typescript
+`WebDriver driver = new ChromeDriver();
+driver.get("http://www.example.com");`- Appium: An open-source tool for automating mobile applications on iOS and Android platforms. It uses the WebDriver protocol.
+**Appium**
+```
 DesiredCapabilities caps = new DesiredCapabilities();
 caps.setCapability("platformName", "iOS");
 caps.setCapability("deviceName", "iPhone Simulator");
 ```
-
-- **JUnit**和**TestNG**：Java 单元测试的框架，提供注解和断言以帮助组织和运行测试。
-
-```Typescript
+`DesiredCapabilities caps = new DesiredCapabilities();
+caps.setCapability("platformName", "iOS");
+caps.setCapability("deviceName", "iPhone Simulator");`- JUnitandTestNG: Frameworks for unit testing in Java, providing annotations and assertions to help structure and run tests.
+**JUnit****TestNG**
+```
 @Test
 public void testMethod() {
   assertEquals(1, 1);
 }
 ```
-
-- **[Cypress](../wiki/cypress.md)**：一个基于 JavaScript 的端到端测试框架，可在浏览器中运行，实现对在浏览器中运行的任何内容的快速、简便和可靠的测试。
-
-```Typescript
+`@Test
+public void testMethod() {
+  assertEquals(1, 1);
+}`- Cypress: A JavaScript-based end-to-end testing framework that runs in the browser, enabling fast, easy, and reliable testing for anything that runs in a browser.
+**Cypress**[Cypress](/wiki/cypress)
+```
 describe('My First Test', () => {
   it('Visits the Kitchen Sink', () => {
     cy.visit('https://example.cypress.io')
   })
 })
 ```
-
-- **Robot Framework**：一个关键字驱动的测试自动化框架，用于验收测试和验收测试驱动开发（ATDD）。
-
-```Typescript
+`describe('My First Test', () => {
+  it('Visits the Kitchen Sink', () => {
+    cy.visit('https://example.cypress.io')
+  })
+})`- Robot Framework: A keyword-driven test automation framework for acceptance testing and acceptance test-driven development (ATDD).
+**Robot Framework**
+```
 *** Test Cases ***
 Valid Login
     Open Browser To Login Page
@@ -192,10 +239,14 @@ Valid Login
     Input Password    mode
     Submit Credentials
 ```
-
-- **[Postman](../wiki/postman.md)**：一个用于 API 测试的工具，允许用户发送 HTTP 请求和分析响应，创建自动化测试，并与 CI/CD 流水线集成。
-
-```Typescript
+`*** Test Cases ***
+Valid Login
+    Open Browser To Login Page
+    Input Username    demo
+    Input Password    mode
+    Submit Credentials`- Postman: A tool for API testing, allowing users to send HTTP requests and analyze responses, create automated tests, and integrate with CI/CD pipelines.
+**Postman**[Postman](/wiki/postman)
+```
 {
   "id": "f2955b9f-da77-4f80-8f1c-9f8b0d8f2b7d",
   "name": "API Test",
@@ -205,143 +256,157 @@ Valid Login
   }
 }
 ```
-
-- **Cucumber**：支持行为驱动开发（BDD），允许使用普通语言规定应用程序行为。
-
-```Typescript
+`{
+  "id": "f2955b9f-da77-4f80-8f1c-9f8b0d8f2b7d",
+  "name": "API Test",
+  "request": {
+    "method": "GET",
+    "url": "https://api.example.com/v1/users"
+  }
+}`- Cucumber: Supports behavior-driven development (BDD), allowing the specification of application behavior in plain language.
+**Cucumber**
+```
 Feature: Login functionality
   Scenario: Successful login with valid credentials
     Given the user is on the login page
     When the user enters valid credentials
     Then the user is redirected to the homepage
 ```
-
-这些工具提供了各种不同测试需求的能力，从单元测试和[集成测试](../I/integration-testing.md)到端到端和[API 测试](../A/api-testing.md)。
-
-### 这些工具之间有什么区别？
-
-不同的自动化测试工具具有独特的特性、功能和[用例](../U/use-case.md)。以下是简要的比较：
-
-- **[Selenium](../S/selenium.md)**：用于在不同浏览器和平台上测试 Web 应用程序的开源工具。支持多种编程语言，并与各种框架集成。
-
-```Typescript
+`Feature: Login functionality
+  Scenario: Successful login with valid credentials
+    Given the user is on the login page
+    When the user enters valid credentials
+    Then the user is redirected to the homepage`
+These tools offer various capabilities for different testing needs, from unit andintegration testingto end-to-end andAPI testing.
+[integration testing](/wiki/integration-testing)[API testing](/wiki/api-testing)
+Differentautomated testingtools have unique features, capabilities, anduse cases. Here's a brief comparison:
+[automated testing](/wiki/automated-testing)[use cases](/wiki/use-case)- Selenium: An open-source tool for web application testing across different browsers and platforms. It supports multiple programming languages and integrates with various frameworks.
+**Selenium**[Selenium](/wiki/selenium)
+```
 WebDriver driver = new ChromeDriver();
 driver.get("http://www.example.com");
 ```
-
-- **QTP/UFT (统一的 [功能测试](../F/functional-testing.md))**：Micro Focus 提供的商业工具，用于功能和回归测试，主要针对桌面和 Web 应用程序。它使用 VBScript，并以其录制和回放功能而闻名。
-
-```Typescript
+`WebDriver driver = new ChromeDriver();
+driver.get("http://www.example.com");`- QTP/UFT (UnifiedFunctional Testing): A commercial tool from Micro Focus for functional and regression testing with a focus on desktop and web applications. It uses VBScript and is known for its record-and-playback feature.
+**QTP/UFT (UnifiedFunctional Testing)**[Functional Testing](/wiki/functional-testing)
+```
 Browser("Example").Page("Home").Link("Login").Click
 ```
-
-- **TestComplete**：另一款商业工具，支持桌面、移动和 Web 应用程序。它提供基于脚本和关键字驱动的测试，并支持各种脚本语言。
-
-```Typescript
+`Browser("Example").Page("Home").Link("Login").Click`- TestComplete: Another commercial tool that supports desktop, mobile, and web applications. It offers both script-based and keyword-driven testing and supports various scripting languages.
+**TestComplete**
+```
 Sys.Browser("*").Page("http://www.example.com").Link("Login").Click();
 ```
-
-- **[Cypress](../C/cypress.md)**：专为现代 Web 应用程序设计的基于 JavaScript 的端到端测试框架。它在相同的运行循环中运行测试，提供实时反馈和更快的测试执行。
-
-```Typescript
+`Sys.Browser("*").Page("http://www.example.com").Link("Login").Click();`- Cypress: A JavaScript-based end-to-end testing framework designed for modern web applications. It runs tests in the same run-loop as the application, providing real-time feedback and faster test execution.
+**Cypress**[Cypress](/wiki/cypress)
+```
 cy.visit('http://www.example.com');
 cy.contains('Login').click();
 ```
-
-- **[Jest](../J/jest.md)**：一个专注于简单性的 JavaScript 测试框架，支持单元和集成测试。它与 React 和其他现代 JavaScript 库兼容。
-
-```Typescript
+`cy.visit('http://www.example.com');
+cy.contains('Login').click();`- Jest: A JavaScript testing framework with a focus on simplicity, supporting unit and integration tests. It works well with React and other modern JavaScript libraries.
+**Jest**[Jest](/wiki/jest)
+```
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
 });
 ```
-
-- **Appium**：一个用于自动化测试移动应用程序的开源工具。支持原生、混合和移动 Web 应用程序，并与任何测试框架一起使用。
-
-```Typescript
+`test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});`- Appium: An open-source tool for automated testing of mobile applications. It supports native, hybrid, and mobile web apps and works with any testing framework.
+**Appium**
+```
 driver.findElement(By.id("com.example:id/login")).click();
 ```
-
-- **Robot Framework**：一个使用表格测试数据语法的关键字驱动测试自动化框架。对于不熟悉编程的人来说，学习起来很容易，并与 Selenium 进行 Web 测试集成。
-
-```Typescript
+`driver.findElement(By.id("com.example:id/login")).click();`- Robot Framework: A keyword-driven test automation framework that uses tabular test data syntax. It's easy to learn for those not familiar with programming and integrates with Selenium for web testing.
+**Robot Framework**
+```
 *** Test Cases ***
 Login Test
     Open Browser    http://www.example.com    Chrome
     Click Link    Login
 ```
+`*** Test Cases ***
+Login Test
+    Open Browser    http://www.example.com    Chrome
+    Click Link    Login`
+Each tool has its strengths, and the choice often depends on the application under test, the preferred programming language, and the specific requirements of the testing process.
 
-每个工具都有其优势，选择通常取决于被测试应用程序、首选的编程语言以及测试过程的具体要求。
+Choosing the right tool for a specific testing task involves several considerations:
+- Compatibility: Ensure the tool supports the technology stack of your application (e.g., web, mobile, desktop).
+- Usability: Look for tools that align with your team's skillset. A tool with a steep learning curve might not be the best choice if it impedes productivity.
+- Integration: The tool should integrate seamlessly with your existing tools and workflows, such as version control, CI/CD pipelines, and issue tracking systems.
+- Scalability: Consider whether the tool can handle the size and complexity of your application as it grows.
+- Flexibility: The ability to write custom functions or integrate with other tools can be crucial for complex test scenarios.
+- Reporting: Detailed reports and analytics can help identify trends and pinpoint issues quickly.
+- Support and Community: A strong community and vendor support can be invaluable for troubleshooting and keeping the tool up-to-date.
+- Cost: Evaluate the tool's cost against your budget, including licensing, maintenance, and potential training costs.
+- Performance: The tool should execute tests quickly and efficiently to keep pace with rapid development cycles.
+- Reliability: Choose tools with a proven track record of stability to avoid flaky tests and inconsistent results.
+**Compatibility****Usability****Integration****Scalability****Flexibility****Reporting****Support and Community****Cost****Performance****Reliability**
+By weighing these factors against the specific needs of your testing task, you can select a tool that enhances your testing efficiency and effectiveness. Remember to periodically reassess your choice as both your requirements and the tools themselves evolve.
 
-### 如何为特定的测试任务选择正确的工具？
+Common techniques inautomated testinginclude:
+[automated testing](/wiki/automated-testing)- Page Object Model(POM): Encapsulates page elements and interactions in classes, promoting code reuse andmaintainability.
+- Modular Testing: Breaks tests into smaller, manageable modules with independenttest scripts, enhancingmaintainabilityand scalability.
+- Hybrid Testing Framework: Combines various testing approaches, such as keyword-driven and data-driven, to leverage their strengths.
+- Behavior-Driven Development (BDD): Uses natural language descriptions to define the behavior of applications, facilitating communication between stakeholders.
+- Test-Driven Development(TDD): Involves writingtest casesbefore the actual code, ensuring the software is built with testing in mind.
+- Data-Driven Testing: Uses external data sources to input multiple datasets intotest cases, increasing coverage and efficiency.
+- Keyword-Driven Testing: Defines tests with keywords representing actions and data, making tests easier to understand and maintain.
+- Continuous Testing: Integrates testing into the continuous integration and delivery pipeline, providing immediate feedback on the build's health.
+- Parallel Testing: Executes multiple tests simultaneously across different environments, reducing the time required fortest execution.
+- API Testing: Focuses on directly testingAPIsfor functionality, reliability, performance, and security, often at a lower level than UI tests.
+- Mocking and Stubbing: Uses mock objects and stubs to simulate the behavior of real components, allowing for isolated testing of parts of the system.
+- Visual Regression Testing: Detects unintended visual changes by comparing current screenshots with baseline images.
+- Load andPerformance Testing: Simulates user load on software to check performance and scalability under different conditions.
+- Security Testing: Automated scripts that probe the application for vulnerabilities, ensuring that the software is protected against potential attacks.
 
-在选择适用于特定测试任务的正确工具时，需要考虑多个因素：
+Page Object Model(POM): Encapsulates page elements and interactions in classes, promoting code reuse andmaintainability.
+**Page Object Model(POM)**[Page Object Model](/wiki/page-object-model)[maintainability](/wiki/maintainability)
+Modular Testing: Breaks tests into smaller, manageable modules with independenttest scripts, enhancingmaintainabilityand scalability.
+**Modular Testing**[test scripts](/wiki/test-script)[maintainability](/wiki/maintainability)
+Hybrid Testing Framework: Combines various testing approaches, such as keyword-driven and data-driven, to leverage their strengths.
+**Hybrid Testing Framework**
+Behavior-Driven Development (BDD): Uses natural language descriptions to define the behavior of applications, facilitating communication between stakeholders.
+**Behavior-Driven Development (BDD)**[BDD](/wiki/bdd)
+Test-Driven Development(TDD): Involves writingtest casesbefore the actual code, ensuring the software is built with testing in mind.
+**Test-Driven Development(TDD)**[Test-Driven Development](/wiki/test-driven-development)[test cases](/wiki/test-case)
+Data-Driven Testing: Uses external data sources to input multiple datasets intotest cases, increasing coverage and efficiency.
+**Data-Driven Testing**[test cases](/wiki/test-case)
+Keyword-Driven Testing: Defines tests with keywords representing actions and data, making tests easier to understand and maintain.
+**Keyword-Driven Testing**
+Continuous Testing: Integrates testing into the continuous integration and delivery pipeline, providing immediate feedback on the build's health.
+**Continuous Testing**
+Parallel Testing: Executes multiple tests simultaneously across different environments, reducing the time required fortest execution.
+**Parallel Testing**[test execution](/wiki/test-execution)
+API Testing: Focuses on directly testingAPIsfor functionality, reliability, performance, and security, often at a lower level than UI tests.
+**API Testing**[API Testing](/wiki/api-testing)[APIs](/wiki/api)
+Mocking and Stubbing: Uses mock objects and stubs to simulate the behavior of real components, allowing for isolated testing of parts of the system.
+**Mocking and Stubbing**
+Visual Regression Testing: Detects unintended visual changes by comparing current screenshots with baseline images.
+**Visual Regression Testing**[Visual Regression Testing](/wiki/visual-regression-testing)
+Load andPerformance Testing: Simulates user load on software to check performance and scalability under different conditions.
+**Load andPerformance Testing**[Performance Testing](/wiki/performance-testing)
+Security Testing: Automated scripts that probe the application for vulnerabilities, ensuring that the software is protected against potential attacks.
+**Security Testing**[Security Testing](/wiki/security-testing)
+These techniques can be combined and tailored to fit specific project requirements, ensuring a robust and efficientautomated testingprocess.
+[automated testing](/wiki/automated-testing)
+Integratingautomated testingtools into a CI/CD pipeline involves several steps:
+[automated testing](/wiki/automated-testing)1. Select appropriate toolsthat integrate seamlessly with your CI/CD server (e.g., Jenkins, GitLab CI, CircleCI).
+2. Configure the CI/CD serverto trigger automated tests. This is typically done by defining jobs or stages in your pipeline configuration file.
+3. Set uptest environmentswhere the automated tests will run. This could be a dedicated testing server, a containerized environment, or a cloud-based service.
+4. Writetest scriptsthat are compatible with the CI/CD environment and can be executed without manual intervention.
+5. Storetest scriptsin a version control system, alongside the application code, to maintain versioning and change tracking.
+6. Define triggersfor the automated tests, such as on every commit, nightly builds, or on-demand.
+7. Execute testsas part of the pipeline and ensure that test results are reported back to the CI/CD server.
+8. Handle test resultsby setting up notifications, dashboards, or integrating with other tools for result analysis.
+9. Managetest dataand dependencies to ensure consistency across test runs.
+10. Automate deploymentof the application to the test environment before running tests.
+**Select appropriate tools****Configure the CI/CD server****Set uptest environments**[test environments](/wiki/test-environment)**Writetest scripts**[test scripts](/wiki/test-script)**Storetest scripts**[test scripts](/wiki/test-script)**Define triggers****Execute tests****Handle test results****Managetest data**[test data](/wiki/test-data)**Automate deployment**
+Example pipeline configuration snippet for a Jenkinsfile:
 
-- **兼容性**：确保工具支持您应用的技术栈，如 Web、移动或桌面。
-- **可用性**：选择符合团队技能的工具。如果学习曲线陡峭，可能会妨碍生产力。
-- **集成性**：工具应能够与已有工具和工作流（如版本控制、CI/CD 流水线和问题跟踪系统）无缝集成。
-- **可扩展性**：考虑工具是否能够应对应用规模和复杂性的增长。
-- **灵活性**：具备编写自定义功能或与其他工具集成的能力，这对于处理复杂的测试场景至关重要。
-- **报告功能**：详细的报告和分析有助于迅速发现趋势并准确定位问题。
-- **支持与社区**：强大的社区和良好的供应商支持对于解决问题和保持工具更新至关重要。
-- **成本**：评估工具的总体成本，包括许可、维护和培训成本，以确保符合预算。
-- **性能**：工具应能够快速高效地执行测试，以适应迅速的开发周期。
-- **可靠性**：选择具有稳定记录的工具，以避免测试失败或结果不一致。
-
-通过在这些因素和测试任务的具体需求之间进行权衡，您可以选择一个提高测试效率和效果的工具。请记得定期重新评估您的选择，因为需求和工具本身都在不断发展。
-
-### 自动化测试中常用的技术有哪些？
-
-自动化测试 中的一些常见技术包括：
-
-- **[页面对象模型](../wiki/page-object-model) (POM)**：在类中封装页面元素和交互，以促进代码重用和[可维护性](../wiki/maintainability)。
-
-- **模块化测试**：将测试分解成较小、可管理的模块，具有独立的[测试脚本](../wiki/test-script.md)，增强[可维护性](../wiki/maintainability)和可扩展性。
-
-- **混合测试框架**：结合各种测试方法，如关键字驱动和数据驱动，以发挥它们的优势。
-
-- **行为驱动开发 ([BDD](../wiki/bdd))**：使用自然语言描述定义应用程序的行为，促进各方之间的沟通。
-
-- **[测试驱动开发](../wiki/test-driven-development) (TDD)**：在实际编码之前编写[测试用例](../wiki/test-case.md)，确保软件在测试方面构建。
-
-- **数据驱动测试**：使用外部数据源将多个数据集输入到[测试用例](../wiki/test-case.md)中，提高覆盖范围和效率。
-
-- **关键字驱动测试**：使用代表操作和数据的关键字定义测试，使测试更易于理解和维护。
-
-- **持续测试**：将测试集成到持续集成和交付流水线中，实时提供有关构建健康状况的反馈。
-
-- **并行测试**：在不同环境中同时执行多个测试，减少[测试执行](../wiki/test-execution)所需的时间。
-
-- **[API 测试](../wiki/api-testing)**：专注于直接测试[API](../wiki/api.md)的功能、可靠性、性能和安全性，通常比 UI 测试更低级别。
-
-- **模拟和插桩**：使用模拟对象和插桩来模拟真实组件的行为，允许对系统的部分进行隔离测试。
-
-- **[视觉回归测试](../wiki/visual-regression-testing)**：通过将当前屏幕截图与基准图像进行比较，检测意外的视觉变化。
-
-- **负载和[性能测试](../wiki/performance-testing)**：模拟用户对软件的负载，检查在不同条件下的性能和可扩展性。
-
-- **[安全测试](../wiki/security-testing)**：用于探测应用程序漏洞的自动化脚本，确保软件受到潜在攻击的保护。
-
-这些技术可以结合和定制以满足特定项目要求，确保自动化测试过程的稳健和高效。
-
-### 如何将自动化测试工具集成到 CI/CD 流水线中？
-
-将自动化测试工具集成到 CI/CD 流水线中涉及以下几个步骤：
-
-1. **选择适当的工具**，确保能够与您的 CI/CD 服务器（例如 Jenkins、GitLab CI、CircleCI）无缝集成。
-2. **配置 CI/CD 服务器**以触发自动化测试。通常通过在流水线配置文件中定义作业或阶段来完成。
-3. **设置[测试环境](../T/test-environment.md)**，用于运行自动化测试。这可以是专用的测试服务器、容器化环境或基于云的服务。
-4. **编写[测试脚本](../T/test-script.md)**，确保与 CI/CD 环境兼容，可以在无需手动干预的情况下执行。
-5. 将[测试脚本](../T/test-script.md)**存储在版本控制系统中，与应用程序代码一起，以保持版本控制和更改跟踪。
-6. 为自动化测试定义触发器，例如在每次提交时、每夜构建时或按需触发。
-7. 作为流水线的一部分执行测试，并确保将测试结果报告回 CI/CD 服务器。
-8. 通过设置通知、仪表板或与其他工具集成进行结果分析来处理测试结果。
-9. 管理[测试数据](../T/test-data.md)**和依赖项，以确保在测试运行之间保持一致性。
-10. 在运行测试之前自动化应用程序的部署到测试环境。
-
-Jenkinsfile 的示例流水线配置片段：
-
-```shell
+```
 pipeline {
     agent any
     stages {
@@ -365,48 +430,92 @@ pipeline {
     }
 }
 ```
+`pipeline {
+    agent any
+    stages {
+        stage('Test') {
+            steps {
+                // Checkout code
+                checkout scm
+                // Run tests
+                script {
+                    // Execute test command
+                    sh 'npm test'
+                }
+            }
+            post {
+                always {
+                    // Publish test results
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                }
+            }
+        }
+    }
+}`
+Ensure that the pipeline is designed tostop deploymentif tests fail, maintaining the quality of the release. Regularlyreview and updatetest casesand scripts to adapt to changes in the application.
+**stop deployment****review and update**[test cases](/wiki/test-case)
+#### Test Cases and Scripts
+- How are test cases developed for automated testing?Developingtest casesforautomated testinginvolves several steps:Identify Test Requirements: Analyze the application under test (AUT) to determine testing needs. Focus on features, functions, and areas with high risk or frequent changes.Define Test Objectives: Clearly state what eachtest caseshould verify. Objectives should be specific, measurable, and aligned with user stories or requirements.DesignTest Cases: Create detailedtest casesthat include preconditions,test data, actions to be performed, andexpected results. Ensure they are reusable and maintainable.Parameterize Tests: Use parameters to maketest casesdata-driven, allowing multiple datasets to be tested with the same script.Create Assertions: Implement assertions to check the AUT's response against expected outcomes. Assertions are critical for determining the pass/fail status of a test.DevelopTest Scripts: Write scripts using an automation tool or framework. Follow best practices for coding, such as usingpage object modelsfor UI tests to separate test logic from page-specific code.Set UpTest Environment: Configure the necessary environment where tests will run, including browsers,databases, and any other dependencies.ImplementTest ExecutionLogic: Define how tests will be executed, including order, dependencies, and handling of pre/post-test steps.Review and Refine: Peer reviews or walkthroughs can help catch issues early. Refactor as needed for clarity, efficiency, andmaintainability.Version Control: Storetest casesand scripts in a version control system to track changes and collaborate with team members.Integrate with CI/CD: Automatetest caseexecution as part of the CI/CD pipeline to ensure continuous validation of the AUT with each build or release.By following these steps,test automationengineers can create robust, reliable, and effective automatedtest casesthat contribute to the overall quality of the software product.
+- What is a test script in the context of automated testing?Inautomated testing, atest scriptis a set of instructions executed by an automation tool to validate the functionality of a software application. It's essentially a program that automates the steps of a manualtest case.Test scriptsinteract with the application under test (AUT), inputting data, and comparing expected outcomes with actual outcomes. They are written in a programming or scripting language supported by the automation tool being used, such as JavaScript, Python, or Ruby.Here's a simplified example of atest scriptwritten in JavaScript using a hypothetical testing framework:describe('Login Page Tests', function() {
+  it('should allow a user to log in', function() {
+    goToLoginPage();
+    enterUsername('testUser');
+    enterPassword('password123');
+    submitLoginForm();
+    expect(isLoggedIn()).toBe(true);
+  });
+});This script describes atest casefor a login page, where it navigates to the login page, enters credentials, submits the form, and checks if the login was successful.Effectivetest scriptsare:Reusable: Functions likegoToLoginPage()can be used in multiple test cases.Maintainable: They should be easy to update when the AUT changes.Readable: Clear and concise so that other engineers can understand and modify them.Reliable: They produce consistent results and handle exceptions gracefully.Scripts are often organized intotest suitesfor better manageability and can be run individually or as part of a larger test run. They are crucial for continuous integration and delivery pipelines, allowing for frequent and automated validation of software builds.
+- How do you ensure that your test cases cover all possible scenarios?To ensuretest casescover all possible scenarios, follow these strategies:Equivalence Partitioning: Divide inputs into logical groups where behavior should be the same, testing one value from each partition.Boundary Value Analysis: Focus on edge cases at the boundaries of input ranges.Decision Table Testing: Create a table to explore different combinations of inputs and corresponding actions.State Transition Testing: Model scenarios as states of the system, identifying transitions and conditions for thorough coverage.Use Case Testing: Derive test cases from real-world use cases to ensure user journeys are covered.Combinatorial Testing: Apply tools like pairwise testing to examine interactions between parameters.Risk-Based Testing: Prioritize testing based on the potential risk of failure and its impact.Exploratory Testing: Supplement automated tests with manual exploratory sessions to uncover unexpected behaviors.Model-Based Testing: Generate test cases from system models that represent desired behavior.Code CoverageAnalysis: Use tools to measure the extent of code executed by tests, aiming for high coverage metrics like statement, branch, and path coverage.Incorporate these strategies into your test design process to create a comprehensivetest suite. Regularly review and updatetest casesto adapt to changes in the application and its usage patterns.
+- What are some best practices for writing test scripts?Best practices for writingtest scriptsinclude:Maintainability: Write clear, understandable code with comments explaining complex logic. Use page objects or similar patterns to separate test logic from UI structure, making scripts easier to update.Reusability: Create reusable functions or methods for common actions. This reduces duplication and simplifies updates.Modularity: Break down tests into smaller, independent modules that can be combined to form larger tests. This enhances readability and debuggability.Data Separation: Keeptest dataseparate from scripts. Use external data sources like JSON, XML, or CSV files for input data, which allows for easy updates and data-driven testing.Version Control: Storetest scriptsin a version control system to track changes, collaborate with others, and revert to previous versions if necessary.Naming Conventions: Use descriptive names fortest casesand functions to convey their purpose at a glance.Error Handling: Implement robust error handling to manage unexpected events. Tests should fail gracefully, providing clear error messages.Assertions: Use clear and specific assertions to ensure tests accurately validate the expected outcomes.Parallel Execution: Design tests to run in parallel where possible to speed up execution time.Clean Up: Always clean uptest dataand restore the system to its original state to avoid impacting subsequent tests.Reporting: Generate detailed logs and reports to provide insight into test results and facilitate troubleshooting.Continuous Integration: Integratetest scriptsinto a CI/CD pipeline to ensure they are executed regularly and provide immediate feedback on the code changes.// Example of a reusable function in TypeScript
+function login(username: string, password: string) {
+  // Code to perform login action
+}Adhering to these practices will lead to robust, reliable, and efficienttest automationscripts.
+- How can you manage and maintain test cases and scripts over time?Managing and maintainingtest casesand scripts over time requires a combination ofgood practices,organization, andtooling. Here are some strategies:Version Control: Use version control systems like Git to track changes, collaborate with team members, and rollback if necessary.Modular Design: Write tests in a modular fashion, with reusable components, to minimize maintenance and facilitate updates.Documentation: Document test cases and scripts clearly, including purpose, inputs, expected outcomes, and change history.Refactoring: Regularly refactor tests to improve clarity, efficiency, and maintainability, removing redundancy and improving structure.Code Reviews: Conduct peer reviews of test scripts to ensure quality and adherence to standards.Automated Checks: Implement automated linting and code analysis tools to enforce coding standards and detect issues early.Test DataManagement: Use strategies like data factories or fixtures to manage test data effectively, ensuring it remains relevant and accurate.Continuous Integration: Integrate test scripts into CI/CD pipelines to ensure they are executed regularly and remain compatible with the codebase.Monitoring: Monitor test execution results to quickly identify and address flakiness or failures.Prioritization: Prioritize maintenance tasks based on the criticality of tests, focusing on high-impact areas of the application.Deprecation Strategy: Have a clear strategy for deprecating and removing obsolete tests to avoid clutter and confusion.By applying these strategies,test automationengineers can ensure that theirtest suitesremain robust, relevant, and reliable over time, providing ongoing value in the software development lifecycle.
 
-确保流水线设计为在测试失败时**停止部署**，以保持发布的质量。定期**审查和更新**[测试用例](../T/test-case.md)和脚本，以适应应用程序的变化。
+Developingtest casesforautomated testinginvolves several steps:
+[test cases](/wiki/test-case)[automated testing](/wiki/automated-testing)1. Identify Test Requirements: Analyze the application under test (AUT) to determine testing needs. Focus on features, functions, and areas with high risk or frequent changes.
+2. Define Test Objectives: Clearly state what eachtest caseshould verify. Objectives should be specific, measurable, and aligned with user stories or requirements.
+3. DesignTest Cases: Create detailedtest casesthat include preconditions,test data, actions to be performed, andexpected results. Ensure they are reusable and maintainable.
+4. Parameterize Tests: Use parameters to maketest casesdata-driven, allowing multiple datasets to be tested with the same script.
+5. Create Assertions: Implement assertions to check the AUT's response against expected outcomes. Assertions are critical for determining the pass/fail status of a test.
+6. DevelopTest Scripts: Write scripts using an automation tool or framework. Follow best practices for coding, such as usingpage object modelsfor UI tests to separate test logic from page-specific code.
+7. Set UpTest Environment: Configure the necessary environment where tests will run, including browsers,databases, and any other dependencies.
+8. ImplementTest ExecutionLogic: Define how tests will be executed, including order, dependencies, and handling of pre/post-test steps.
+9. Review and Refine: Peer reviews or walkthroughs can help catch issues early. Refactor as needed for clarity, efficiency, andmaintainability.
+10. Version Control: Storetest casesand scripts in a version control system to track changes and collaborate with team members.
+11. Integrate with CI/CD: Automatetest caseexecution as part of the CI/CD pipeline to ensure continuous validation of the AUT with each build or release.
 
-## 测试用例和脚本
-
-### 如何开发自动化测试的测试用例？
-
-为自动化测试制定[测试用例](../T/test-case.md)涉及以下几个步骤：
-
-1. **确定测试需求**：分析待测试的应用程序（AUT），确定测试需求。集中关注高风险或频繁更改的功能、功能和区域。
-
-2. **明确测试目标**：清晰地说明每个[测试用例](../T/test-case.md)应验证的内容。目标应具体、可测量，并与用户故事或需求对齐。
-
-3. **设计[测试用例](../T/test-case.md)**：创建详细的[测试用例](../T/test-case.md)，包括前提条件、[测试数据](../T/test-data.md)、执行的操作和[预期结果](../E/expected-result.md)。确保它们具有可重用性和可维护性。
-
-4. **使用参数进行测试**：使用参数使[测试用例](../T/test-case.md)支持数据驱动，以便使用相同脚本测试多个数据集。
-
-5. **制定断言**：实施断言来检查 AUT 的响应是否符合预期结果。断言对于确定测试的通过/失败状态至关重要。
-
-6. **编写[测试脚本](../T/test-script.md)**：使用自动化工具或框架编写脚本。遵循编码的最佳实践，例如使用[页面对象模型](../P/page-object-model.md)分离 UI 测试的测试逻辑和页面特定代码。
-
-7. **设置[测试环境](../T/test-environment.md)**：配置测试运行的必要环境，包括浏览器、[数据库](../D/database.md)和其他任何依赖项。
-
-8. **实施[测试执行](../T/test-execution.md)逻辑**：定义测试的执行方式，包括顺序、依赖关系以及前/后测试步骤的处理。
-
-9. **审查和改进**：同行审查或演练可帮助及早发现问题。根据需要进行重构，以提高清晰度、效率和[可维护性](../M/maintainability.md)。
-
-10. **版本控制**：将[测试用例](../T/test-case.md)和脚本存储在版本控制系统中，以跟踪更改并与团队成员合作。
-
-11. **与 CI/CD 集成**：将[测试用例](../T/test-case.md)的自动化执行作为 CI/CD 流水线的一部分，以确保在每次构建或发布时对 AUT 进行持续验证。
-
-通过遵循这些步骤，[测试自动化](../T/test-automation.md)工程师可以创建健壮、可靠且有效的自动化[测试用例](../T/test-case.md)，从而提高软件产品的整体质量。
-
-### 自动化测试中的测试脚本是什么？
-
-在自动化测试中，**[测试脚本](../T/test-script.md)**是由自动化工具执行的一组指令，用于验证软件应用程序的功能。它本质上是一个自动执行手动[测试用例](../T/test-case.md)步骤的程序。
-
-[测试脚本](../T/test-script.md)与被测试的应用程序（AUT）进行交互，输入数据，并将预期结果与实际结果进行比较。它们是用自动化工具支持的编程或脚本语言编写的，如 JavaScript、Python 或 Ruby。
-
-以下是使用假设的测试框架，用 JavaScript 编写的[测试脚本](../T/test-script.md)的简化示例：
-
-```javascript
+Identify Test Requirements: Analyze the application under test (AUT) to determine testing needs. Focus on features, functions, and areas with high risk or frequent changes.
+**Identify Test Requirements**
+Define Test Objectives: Clearly state what eachtest caseshould verify. Objectives should be specific, measurable, and aligned with user stories or requirements.
+**Define Test Objectives**[test case](/wiki/test-case)
+DesignTest Cases: Create detailedtest casesthat include preconditions,test data, actions to be performed, andexpected results. Ensure they are reusable and maintainable.
+**DesignTest Cases**[Test Cases](/wiki/test-case)[test cases](/wiki/test-case)[test data](/wiki/test-data)[expected results](/wiki/expected-result)
+Parameterize Tests: Use parameters to maketest casesdata-driven, allowing multiple datasets to be tested with the same script.
+**Parameterize Tests**[test cases](/wiki/test-case)
+Create Assertions: Implement assertions to check the AUT's response against expected outcomes. Assertions are critical for determining the pass/fail status of a test.
+**Create Assertions**
+DevelopTest Scripts: Write scripts using an automation tool or framework. Follow best practices for coding, such as usingpage object modelsfor UI tests to separate test logic from page-specific code.
+**DevelopTest Scripts**[Test Scripts](/wiki/test-script)[page object models](/wiki/page-object-model)
+Set UpTest Environment: Configure the necessary environment where tests will run, including browsers,databases, and any other dependencies.
+**Set UpTest Environment**[Test Environment](/wiki/test-environment)[databases](/wiki/database)
+ImplementTest ExecutionLogic: Define how tests will be executed, including order, dependencies, and handling of pre/post-test steps.
+**ImplementTest ExecutionLogic**[Test Execution](/wiki/test-execution)
+Review and Refine: Peer reviews or walkthroughs can help catch issues early. Refactor as needed for clarity, efficiency, andmaintainability.
+**Review and Refine**[maintainability](/wiki/maintainability)
+Version Control: Storetest casesand scripts in a version control system to track changes and collaborate with team members.
+**Version Control**[test cases](/wiki/test-case)
+Integrate with CI/CD: Automatetest caseexecution as part of the CI/CD pipeline to ensure continuous validation of the AUT with each build or release.
+**Integrate with CI/CD**[test case](/wiki/test-case)
+By following these steps,test automationengineers can create robust, reliable, and effective automatedtest casesthat contribute to the overall quality of the software product.
+[test automation](/wiki/test-automation)[test cases](/wiki/test-case)
+Inautomated testing, atest scriptis a set of instructions executed by an automation tool to validate the functionality of a software application. It's essentially a program that automates the steps of a manualtest case.
+[automated testing](/wiki/automated-testing)**test script**[test script](/wiki/test-script)[test case](/wiki/test-case)
+Test scriptsinteract with the application under test (AUT), inputting data, and comparing expected outcomes with actual outcomes. They are written in a programming or scripting language supported by the automation tool being used, such as JavaScript, Python, or Ruby.
+[Test scripts](/wiki/test-script)
+Here's a simplified example of atest scriptwritten in JavaScript using a hypothetical testing framework:
+[test script](/wiki/test-script)
+```
 describe('Login Page Tests', function() {
   it('should allow a user to log in', function() {
     goToLoginPage();
@@ -417,123 +526,163 @@ describe('Login Page Tests', function() {
   });
 });
 ```
+`describe('Login Page Tests', function() {
+  it('should allow a user to log in', function() {
+    goToLoginPage();
+    enterUsername('testUser');
+    enterPassword('password123');
+    submitLoginForm();
+    expect(isLoggedIn()).toBe(true);
+  });
+});`
+This script describes atest casefor a login page, where it navigates to the login page, enters credentials, submits the form, and checks if the login was successful.
+[test case](/wiki/test-case)
+Effectivetest scriptsare:
+[test scripts](/wiki/test-script)- Reusable: Functions likegoToLoginPage()can be used in multiple test cases.
+- Maintainable: They should be easy to update when the AUT changes.
+- Readable: Clear and concise so that other engineers can understand and modify them.
+- Reliable: They produce consistent results and handle exceptions gracefully.
+**Reusable**`goToLoginPage()`**Maintainable****Readable****Reliable**
+Scripts are often organized intotest suitesfor better manageability and can be run individually or as part of a larger test run. They are crucial for continuous integration and delivery pipelines, allowing for frequent and automated validation of software builds.
+[test suites](/wiki/test-suite)
+To ensuretest casescover all possible scenarios, follow these strategies:
+[test cases](/wiki/test-case)- Equivalence Partitioning: Divide inputs into logical groups where behavior should be the same, testing one value from each partition.
+- Boundary Value Analysis: Focus on edge cases at the boundaries of input ranges.
+- Decision Table Testing: Create a table to explore different combinations of inputs and corresponding actions.
+- State Transition Testing: Model scenarios as states of the system, identifying transitions and conditions for thorough coverage.
+- Use Case Testing: Derive test cases from real-world use cases to ensure user journeys are covered.
+- Combinatorial Testing: Apply tools like pairwise testing to examine interactions between parameters.
+- Risk-Based Testing: Prioritize testing based on the potential risk of failure and its impact.
+- Exploratory Testing: Supplement automated tests with manual exploratory sessions to uncover unexpected behaviors.
+- Model-Based Testing: Generate test cases from system models that represent desired behavior.
+- Code CoverageAnalysis: Use tools to measure the extent of code executed by tests, aiming for high coverage metrics like statement, branch, and path coverage.
+**Equivalence Partitioning**[Equivalence Partitioning](/wiki/equivalence-partitioning)**Boundary Value Analysis****Decision Table Testing**[Decision Table Testing](/wiki/decision-table-testing)**State Transition Testing**[State Transition Testing](/wiki/state-transition-testing)**Use Case Testing**[Use Case Testing](/wiki/use-case-testing)**Combinatorial Testing****Risk-Based Testing**[Risk-Based Testing](/wiki/risk-based-testing)**Exploratory Testing**[Exploratory Testing](/wiki/exploratory-testing)**Model-Based Testing****Code CoverageAnalysis**[Code Coverage](/wiki/code-coverage)
+Incorporate these strategies into your test design process to create a comprehensivetest suite. Regularly review and updatetest casesto adapt to changes in the application and its usage patterns.
+[test suite](/wiki/test-suite)[test cases](/wiki/test-case)
+Best practices for writingtest scriptsinclude:
+[test scripts](/wiki/test-script)- Maintainability: Write clear, understandable code with comments explaining complex logic. Use page objects or similar patterns to separate test logic from UI structure, making scripts easier to update.
+- Reusability: Create reusable functions or methods for common actions. This reduces duplication and simplifies updates.
+- Modularity: Break down tests into smaller, independent modules that can be combined to form larger tests. This enhances readability and debuggability.
+- Data Separation: Keeptest dataseparate from scripts. Use external data sources like JSON, XML, or CSV files for input data, which allows for easy updates and data-driven testing.
+- Version Control: Storetest scriptsin a version control system to track changes, collaborate with others, and revert to previous versions if necessary.
+- Naming Conventions: Use descriptive names fortest casesand functions to convey their purpose at a glance.
+- Error Handling: Implement robust error handling to manage unexpected events. Tests should fail gracefully, providing clear error messages.
+- Assertions: Use clear and specific assertions to ensure tests accurately validate the expected outcomes.
+- Parallel Execution: Design tests to run in parallel where possible to speed up execution time.
+- Clean Up: Always clean uptest dataand restore the system to its original state to avoid impacting subsequent tests.
+- Reporting: Generate detailed logs and reports to provide insight into test results and facilitate troubleshooting.
+- Continuous Integration: Integratetest scriptsinto a CI/CD pipeline to ensure they are executed regularly and provide immediate feedback on the code changes.
 
-该脚本描述了一个登录页面的[测试用例](../T/test-case.md)，其中导航到登录页面，输入凭据，提交表单，并检查登录是否成功。
-
-有效的[测试脚本](../T/test-script.md)应具备以下特点：
-
-- **可重用性**：像 `goToLoginPage()` 这样的函数可以在多个测试用例中使用。
-- **可维护性**：在 AUT 更改时应易于更新。
-- **可读性**：清晰而简洁，以便其他工程师能够理解和修改。
-- **可靠性**：它们产生一致的结果，并能够优雅地处理异常情况。
-
-脚本通常组织成[测试套件](../T/test-suite.md)以便更好地进行管理，并可以作为独立运行或作为更大测试运行的一部分。它们对于持续集成和交付流水线至关重要，允许对软件构建进行频繁和自动化的验证。
-
-### 如何确保您的测试用例涵盖所有可能的场景？
-
-为确保[测试用例](../T/test-case.md)涵盖所有可能的情景，请采取以下策略：
-
-- **[等价分区](../E/equivalence-partitioning.md)**：将输入划分为逻辑组，其中相同行为的测试仅针对每个分区中的一个值进行。
-- **边界值分析**：专注于输入范围边界的极端情况。
-- **[决策表测试](../D/decision-table-testing.md)**：创建表格以探讨不同输入组合及其对应操作。
-- **[状态转换测试](../S/state-transition-testing.md)**：将场景建模为系统的各种状态，识别变换和全面覆盖的条件。
-- **[用例测试](../U/use-case-testing.md)**：从真实用例中衍生测试用例，以确保覆盖用户的各种路径。
-- **组合测试**：应用成对测试等工具，检查参数之间的相互作用。
-- **[基于风险的测试](../R/risk-based-testing.md)**：根据潜在故障的风险及其影响对测试进行优先排序。
-- **[探索性测试](../E/exploratory-testing.md)**：通过手动的探索性会话补充自动化测试，以揭示未预料到的行为。
-- **基于模型的测试**：从表示期望行为的系统模型生成测试用例。
-- **[代码覆盖](../C/code-coverage.md)分析**：使用工具衡量测试执行的代码覆盖范围，力求获得高覆盖率指标，包括语句、分支和路径覆盖。
-
-将这些策略融入测试设计过程中，打造一个全面的[测试套件](../T/test-suite.md)。定期审查和更新[测试用例](../T/test-case.md)，以适应应用程序及其使用模式的变化。
-
-### 编写测试脚本的最佳实践有哪些？
-
-编写[测试脚本](../T/test-script.md)的最佳实践包括：
-
-- **[可维护性](../M/maintainability.md)**：使用注释解释复杂逻辑，编写清晰易懂的代码。使用页面对象或类似的模式将测试逻辑与 UI 结构分离，使脚本更易更新。
-
-- **可重用性**：为常见操作创建可重用的函数或方法。这减少了重复，简化了更新。
-
-- **模块化**：将测试拆分为较小的独立模块，可以组合成更大的测试。这提高了可读性和可调试性。
-
-- **数据分离**：将[测试数据](../T/test-data.md)与脚本分开。使用外部数据源，如 JSON、XML 或 CSV 文件作为输入数据，这有助于轻松更新和进行数据驱动测试。
-
-- **版本控制**：将[测试脚本](../T/test-script.md)存储在版本控制系统中，以跟踪更改，与他人协作，并在必要时恢复到先前的版本。
-
-- **命名约定**：对[测试用例](../T/test-case.md)和函数使用描述性名称，以便一目了然地传达其目的。
-
-- **错误处理**：实施健壮的错误处理来处理意外事件。测试应该以清晰的错误消息优雅地失败。
-
-- **断言**：使用清晰具体的断言来确保测试准确验证预期结果。
-
-- **并行执行**：设计测试在可能的情况下并行运行，以加快执行时间。
-
-- **清理**：始终清理[测试数据](../T/test-data.md)并将系统恢复到其原始状态，以避免影响后续测试。
-
-- **报告**：生成详细的日志和报告，以深入了解测试结果并便于故障排除。
-
-- **持续集成**：将[测试脚本](../T/test-script.md)集成到 CI/CD 流水线中，以确保它们定期执行并提供有关代码更改的即时反馈。
-
-```javascript
+Maintainability: Write clear, understandable code with comments explaining complex logic. Use page objects or similar patterns to separate test logic from UI structure, making scripts easier to update.
+**Maintainability**[Maintainability](/wiki/maintainability)
+Reusability: Create reusable functions or methods for common actions. This reduces duplication and simplifies updates.
+**Reusability**
+Modularity: Break down tests into smaller, independent modules that can be combined to form larger tests. This enhances readability and debuggability.
+**Modularity**
+Data Separation: Keeptest dataseparate from scripts. Use external data sources like JSON, XML, or CSV files for input data, which allows for easy updates and data-driven testing.
+**Data Separation**[test data](/wiki/test-data)
+Version Control: Storetest scriptsin a version control system to track changes, collaborate with others, and revert to previous versions if necessary.
+**Version Control**[test scripts](/wiki/test-script)
+Naming Conventions: Use descriptive names fortest casesand functions to convey their purpose at a glance.
+**Naming Conventions**[test cases](/wiki/test-case)
+Error Handling: Implement robust error handling to manage unexpected events. Tests should fail gracefully, providing clear error messages.
+**Error Handling**
+Assertions: Use clear and specific assertions to ensure tests accurately validate the expected outcomes.
+**Assertions**
+Parallel Execution: Design tests to run in parallel where possible to speed up execution time.
+**Parallel Execution**
+Clean Up: Always clean uptest dataand restore the system to its original state to avoid impacting subsequent tests.
+**Clean Up**[test data](/wiki/test-data)
+Reporting: Generate detailed logs and reports to provide insight into test results and facilitate troubleshooting.
+**Reporting**
+Continuous Integration: Integratetest scriptsinto a CI/CD pipeline to ensure they are executed regularly and provide immediate feedback on the code changes.
+**Continuous Integration**[test scripts](/wiki/test-script)
+```
 // Example of a reusable function in TypeScript
 function login(username: string, password: string) {
   // Code to perform login action
 }
 ```
+`// Example of a reusable function in TypeScript
+function login(username: string, password: string) {
+  // Code to perform login action
+}`
+Adhering to these practices will lead to robust, reliable, and efficienttest automationscripts.
+[test automation](/wiki/test-automation)
+Managing and maintainingtest casesand scripts over time requires a combination ofgood practices,organization, andtooling. Here are some strategies:
+[test cases](/wiki/test-case)**good practices****organization****tooling**- Version Control: Use version control systems like Git to track changes, collaborate with team members, and rollback if necessary.
+- Modular Design: Write tests in a modular fashion, with reusable components, to minimize maintenance and facilitate updates.
+- Documentation: Document test cases and scripts clearly, including purpose, inputs, expected outcomes, and change history.
+- Refactoring: Regularly refactor tests to improve clarity, efficiency, and maintainability, removing redundancy and improving structure.
+- Code Reviews: Conduct peer reviews of test scripts to ensure quality and adherence to standards.
+- Automated Checks: Implement automated linting and code analysis tools to enforce coding standards and detect issues early.
+- Test DataManagement: Use strategies like data factories or fixtures to manage test data effectively, ensuring it remains relevant and accurate.
+- Continuous Integration: Integrate test scripts into CI/CD pipelines to ensure they are executed regularly and remain compatible with the codebase.
+- Monitoring: Monitor test execution results to quickly identify and address flakiness or failures.
+- Prioritization: Prioritize maintenance tasks based on the criticality of tests, focusing on high-impact areas of the application.
+- Deprecation Strategy: Have a clear strategy for deprecating and removing obsolete tests to avoid clutter and confusion.
+**Version Control****Modular Design****Documentation****Refactoring****Code Reviews****Automated Checks****Test DataManagement**[Test Data](/wiki/test-data)**Continuous Integration****Monitoring****Prioritization****Deprecation Strategy**
+By applying these strategies,test automationengineers can ensure that theirtest suitesremain robust, relevant, and reliable over time, providing ongoing value in the software development lifecycle.
+[test automation](/wiki/test-automation)[test suites](/wiki/test-suite)
+#### Types of Automated Testing
+- What is unit testing?Unit testingis the practice of testing the smallest testable parts of an application, typically functions or methods, in isolation from the rest of the system. This ensures that each component operates as expected. Unit tests are typically written and run by developers as they work on the code, allowing for immediate feedback on their changes.In the context ofautomated testing, unit tests are executed automatically, often as part of a build process or via acontinuous integration(CI) system. They are crucial for identifying problems early in the development cycle, which can reduce the cost and time to fixbugs.Unit tests are characterized by their scope (narrow, focusing on a single "unit" of code) and their speed (fast to execute). They are written using aunit testingframework, such as JUnit for Java,NUnitfor .NET, orJestfor JavaScript. These frameworks provide a structure for writing tests and include assertions to verify the code behaves as expected.Here's an example of a simple unit test in TypeScript usingJest:import { add } from './math';
 
-遵循这些实践将带来健壮、可靠且高效的[测试自动化](../T/test-automation.md)脚本。
+test('adds 1 + 2 to equal 3', () => {
+  expect(add(1, 2)).toBe(3);
+});Unit tests should bemaintainableandreliable, with no dependencies on external systems or states. They are a fundamental part of a robustautomated testingstrategy, contributing to the overall health and quality of the software.
+- What is integration testing?Integration testingis a level of thesoftware testingprocess where individual units or components of a software application are combined and tested as a group. The primary goal is to verify the functional, performance, and reliability between the modules that are integrated.Inautomated testing, integration tests are scripted and often incorporated into the build process to ensure that new changes do not break the interaction between components. These tests can be more complex than unit tests as they require the configuration of the environment where multiple components interact.Automated integration tests are typically written using the same or similar tools as unit tests, but they focus on the points of interaction between components to ensure data flow,APIcontracts, and user interfaces work as expected when combined. They can be executed in a continuous integration environment to provide feedback on the integration health of the application after each commit or on a scheduled basis.Example of an automated integration test in TypeScript:import { expect } from 'chai';
+import { fetchData, processInput } from './integrationComponents';
 
-### 随着时间的推移，您如何管理和维护测试用例和脚本？
+describe('Integration Test', () => {
+  it('should process input and return expected data', async () => {
+    const input = 'test input';
+    const processedData = await processInput(input);
+    const fetchedData = await fetchData(processedData);
 
-如何随着时间的推移管理和维护[测试用例](../T/test-case.md)和脚本需要结合**良好实践**、**组织**和**工具**。以下是一些策略：
+    expect(fetchedData).to.be.an('object');
+    expect(fetchedData).to.have.property('key', 'expected value');
+  });
+});This example demonstrates a simple integration test whereprocessInputandfetchDataare two separate components that need to work together correctly. The test ensures that the data processed by one component is suitable for the other component to fetch theexpected result.
+- What is system testing?System testingis ahigh-leveltesting phase that evaluates the complete and integrated software system to verify that it meets specified requirements. It is conducted afterintegration testingand beforeacceptance testing, and it focuses on behaviors and outputs under a variety of conditions.Duringsystem testing, the application is tested in an environment that closely resembles production, includingdatabaseinteractions,network communication, andserver interaction. The goal is to identify defects that could only surface when components are integrated and interacting in a system-wide context.Key aspects ofsystem testinginclude:Functionality Testing: Ensuring the software behaves as expected.Performance Testing: Checking the system's response times, throughput, and stability under load.Security Testing: Verifying that security features protect data and maintain functionality as intended.Usability Testing: Assessing the user interface and user experience.Compatibility Testing: Confirming the software works across different devices, browsers, and operating systems.Automatedsystem testingcan significantlyreduce the timerequired to perform repetitive but necessary checks, allowing for more frequent and thorough testing cycles. It is particularly useful forregression testingto ensure new changes haven't adversely affected existing functionality. However, it may not fully replacemanual testing, especially for exploratory, usability, and ad-hoc testing scenarios.
+- What is regression testing?Regression testingis the process of verifying that previously developed and tested software still performs correctly after changes such as enhancements, patches, or configuration changes. It ensures that new code changes have not adversely affected existing functionality. In the context ofautomated testing, regression tests are typically executed as part of atest suitethat is run frequently, often during a CI/CD pipeline, to provide quick feedback on the impact of code modifications.Automated regression tests are crucial for maintaining the stability of the software over time, especially as the codebase grows and evolves. They allow for consistent and repeatable validation of software behavior, which is more efficient than manualregression testing. Automated tests can be run on various environments and configurations to ensure broad coverage.Here's an example of how a simple automated regression test might look in a JavaScript testing framework likeJest:describe('Calculator', () => {
+  test('should add two numbers correctly', () => {
+    expect(add(1, 2)).toBe(3);
+  });
+});In this example, theaddfunction is part of the software that has been previously tested. The regression test will ensure that after changes to the codebase, theaddfunction continues to produce theexpected result.Effectiveregression testingtypically involves selecting relevanttest casesthat cover critical features, frequently running these tests, and updating them as the software evolves. This helps to identify defects early and reduces the risk of introducingbugsinto production.
+- What is the difference between black box and white box testing?Black box testingandwhite box testingare two distinct approaches to evaluating software functionality and integrity.Black box testingtreats the software as an opaque entity, focusing on inputs and outputs without considering internal code structure. Testers verify functionality against specifications, ensuring the system behaves as expected under various conditions. This method is oblivious to the internal workings, hence the term "black box."White box testing, in contrast, requires knowledge of the internal logic. Testers examine the codebase to ensure proper operation and structure, often looking for specific conditions such as loop execution, branch coverage, and path coverage. This approach is also known as clear, open, or transparent testing due to the visibility of the internal code.While both methods can be automated, black box tests are typically higher-level, such as userinterface testing, whereas white box tests are lower-level, like unit tests. Black box automation scripts simulate user interactions, while white box scripts interact directly with the application code.In practice, combining both approaches provides a comprehensive testing strategy, withblack box testingvalidating user-facing features andwhite box testingensuring the robustness of the underlying codebase.
+- What is end-to-end (e2e) testing and why is it important?End-to-end (E2E) testing is a technique where the entire application is tested in a scenario closely mimicking real-world use, such as interacting with adatabase, network, hardware, and other applications. The goal is to validate the system's integration and data integrity from start to finish, ensuring that all components of the application behave as expected under various scenarios.E2E testingis crucial because it verifies the system's overall health, as opposed to unit or integration tests that focus on individual components or interactions. It helps catch issues that occur when different parts of a system work together, which might not be evident in isolation. This type of testing is particularly important for critical workflows that directly impact the user experience or the business's bottom line.By simulating real user scenarios, E2E testing ensures that the application meets the business requirements and functions correctly in the production environment. It can uncover unexpected behaviors resulting from the combination of various subsystems, which is invaluable for preventing issues in live settings.In the context oftest automation, E2E tests are often executed as part of a CI/CD pipeline to ensure that new changes do not break key functionalities. While they can be more complex and time-consuming to run than other types of tests, their importance in confirming the viability of a software product cannot be overstated.
 
-- **版本控制**：使用像 Git 这样的版本控制系统跟踪更改，与团队成员合作，并在必要时回滚。
-- **模块化设计**：以可重用的组件方式编写测试，以最小化维护工作并促进更新。
-- **文档**：清晰地记录测试用例和脚本，包括目的、输入、预期结果和更改历史。
-- **重构**：定期对测试进行重构，以提高清晰度、效率和可维护性，减少冗余并改善结构。
-- **代码审查**：对测试脚本进行同行审查，确保质量并符合标准。
-- **自动化检查**：实施自动化的清理和代码分析工具，以执行编码标准并及早检测问题。
-- **[测试数据](../T/test-data.md)管理**：使用数据工厂或固定装置等策略有效地管理测试数据，确保其保持相关性和准确性。
-- **持续集成**：将测试脚本集成到 CI/CD 管道中，以确保它们定期执行并与代码库兼容。
-- **监控**：监控测试执行结果，迅速识别和解决不稳定性或失败。
-- **优先级**：根据测试的关键性，优先处理维护任务，重点关注应用程序的高影响区域。
-- **淘汰策略**：明确制定淘汰和删除过时测试的策略，以避免混乱和困扰。
-
-通过采用这些策略，[测试自动化](../T/test-automation.md)工程师可以确保他们的[测试套件](../T/test-suite.md)随着时间的推移保持强大、相关和可靠，为软件开发生命周期提供持续的价值。
-
-## 自动化测试的类型
-
-### 什么是单元测试？
-
-[单元测试](../U/unit-testing.md)是一种实践，用于测试应用程序中最小可测试的部分，通常是函数或方法，而这些部分与系统的其余部分隔离开来。这确保每个组件都按照预期的方式运行。通常，开发人员在编写代码时编写并运行单元测试，以便及时获得对其更改的反馈。
-
-在**自动化测试**的背景下，单元测试通常会自动执行，通常作为构建过程的一部分或通过**持续集成**（CI）系统执行。它们对于在开发周期的早期识别问题非常重要，这有助于减少修复[缺陷](../B/bug.md)的成本和时间。
-
-单元测试的特点是其范围（狭窄，专注于代码的单一“单元”）和速度（执行速度快）。它们使用[单元测试](../U/unit-testing.md)框架编写，例如 Java 的 JUnit，.NET 的[NUnit](../N/nunit.md)，或 JavaScript 的[Jest](../J/jest.md)。这些框架提供了编写测试的结构，并包含断言以验证代码的行为是否符合预期。
-
-以下是使用[Jest](../J/jest.md)在 TypeScript 中编写的简单单元测试示例：
-
-```typescript
+Unit testingis the practice of testing the smallest testable parts of an application, typically functions or methods, in isolation from the rest of the system. This ensures that each component operates as expected. Unit tests are typically written and run by developers as they work on the code, allowing for immediate feedback on their changes.
+[Unit testing](/wiki/unit-testing)
+In the context ofautomated testing, unit tests are executed automatically, often as part of a build process or via acontinuous integration(CI) system. They are crucial for identifying problems early in the development cycle, which can reduce the cost and time to fixbugs.
+**automated testing**[automated testing](/wiki/automated-testing)**continuous integration**[bugs](/wiki/bug)
+Unit tests are characterized by their scope (narrow, focusing on a single "unit" of code) and their speed (fast to execute). They are written using aunit testingframework, such as JUnit for Java,NUnitfor .NET, orJestfor JavaScript. These frameworks provide a structure for writing tests and include assertions to verify the code behaves as expected.
+[unit testing](/wiki/unit-testing)[NUnit](/wiki/nunit)[Jest](/wiki/jest)
+Here's an example of a simple unit test in TypeScript usingJest:
+[Jest](/wiki/jest)
+```
 import { add } from './math';
 
 test('adds 1 + 2 to equal 3', () => {
   expect(add(1, 2)).toBe(3);
 });
 ```
+`import { add } from './math';
 
-单元测试应该是**可维护**和**可靠**的，不依赖于外部系统或状态。它们是健壮的自动化测试策略的基本组成部分，有助于提高软件的整体健康和质量。
-
-### 什么是集成测试？
-
-[集成测试](../I/integration-testing.md)是[软件测试](../S/software-testing.md)流程中的一环，它将软件应用程序的个体单元或组件组合在一起，作为一个组进行测试。其主要目标是验证集成的模块之间的功能、性能和可靠性。
-
-在自动化测试中，集成测试是经过脚本编写的，通常并入构建过程，以确保新的更改不会破坏组件之间的交互。这些测试可能比单元测试更复杂，因为它们需要配置环境，让多个组件进行交互。
-
-通常使用与单元测试相同或类似的工具编写自动化集成测试，但它们侧重于组件之间的交互点，以确保在组合时数据流、[API](../A/api.md)合同和用户界面能够按预期工作。它们可以在持续集成环境中执行，以在每次提交后或定期提供关于应用程序集成状态的反馈。
-
-**在 TypeScript 中的自动化集成测试示例：**
-
-```typescript
+test('adds 1 + 2 to equal 3', () => {
+  expect(add(1, 2)).toBe(3);
+});`
+Unit tests should bemaintainableandreliable, with no dependencies on external systems or states. They are a fundamental part of a robustautomated testingstrategy, contributing to the overall health and quality of the software.
+**maintainable****reliable**[automated testing](/wiki/automated-testing)
+Integration testingis a level of thesoftware testingprocess where individual units or components of a software application are combined and tested as a group. The primary goal is to verify the functional, performance, and reliability between the modules that are integrated.
+[Integration testing](/wiki/integration-testing)[software testing](/wiki/software-testing)
+Inautomated testing, integration tests are scripted and often incorporated into the build process to ensure that new changes do not break the interaction between components. These tests can be more complex than unit tests as they require the configuration of the environment where multiple components interact.
+[automated testing](/wiki/automated-testing)
+Automated integration tests are typically written using the same or similar tools as unit tests, but they focus on the points of interaction between components to ensure data flow,APIcontracts, and user interfaces work as expected when combined. They can be executed in a continuous integration environment to provide feedback on the integration health of the application after each commit or on a scheduled basis.
+[API](/wiki/api)
+Example of an automated integration test in TypeScript:
+**Example of an automated integration test in TypeScript:**
+```
 import { expect } from 'chai';
 import { fetchData, processInput } from './integrationComponents';
 
@@ -548,130 +697,152 @@ describe('Integration Test', () => {
   });
 });
 ```
+`import { expect } from 'chai';
+import { fetchData, processInput } from './integrationComponents';
 
-该示例演示了一个简单的集成测试，其中`processInput`和`fetchData`是两个需要正确协同工作的单独组件。该测试确保一个组件处理的数据适用于另一个组件获取[期望的结果](../E/expected-result.md)。
+describe('Integration Test', () => {
+  it('should process input and return expected data', async () => {
+    const input = 'test input';
+    const processedData = await processInput(input);
+    const fetchedData = await fetchData(processedData);
 
-### 什么是系统测试？
-
-[系统测试](../S/system-testing.md)是一个**高层次**的测试阶段，对完整的、集成的软件系统进行评估，以验证其是否符合指定的要求。它在**[集成测试](../I/integration-testing.md)**之后和**[验收测试](../A/acceptance-testing.md)**之前进行，主要关注各种条件下的系统行为和输出。
-
-在[系统测试](../S/system-testing.md)期间，应用程序在一个与生产环境非常相似的环境中进行测试，包括**[数据库](../D/database.md)交互**、**网络通信**和**服务器交互**。其目标是识别仅在组件集成和在系统范围上下文中交互时才会出现的缺陷。
-
-[系统测试](../S/system-testing.md)的关键方面包括：
-
-- **功能性测试**: 确保软件的行为符合预期。
-- **[性能测试](../P/performance-testing.md)**: 检查系统在负载下的响应时间、吞吐量和稳定性。
-- **[安全测试](../S/security-testing.md)**: 验证安全功能是否保护数据并按预期维护功能。
-- **[可用性测试](../U/usability-testing.md)**: 评估用户界面和用户体验。
-- **[兼容性测试](../C/compatibility-testing.md)**: 确认软件在不同设备、浏览器和操作系统上的工作。
-
-自动化[系统测试](../S/system-testing.md)可以显著**减少执行重复但必要检查所需的时间**，从而实现更频繁和彻底的测试周期。它特别适用于**[回归测试](../R/regression-testing.md)**，以确保新更改没有对现有功能产生不良影响。然而，它可能无法完全替代[手工测试](../M/manual-testing.md)，特别是对于探索性、可用性和临时测试场景。  
-
-### 什么是回归测试？
-
-[回归测试](../R/regression-testing.md)是在进行增强、补丁或配置更改等变更后，验证先前开发和测试的软件仍然在正确执行的过程。它确保新的代码更改没有对现有功能产生不良影响。在**自动化测试**的背景下，回归测试通常作为经常运行的[测试套件](../T/test-suite.md)的一部分执行，通常在 CI/CD 流水线中运行，以提供有关代码修改影响的快速反馈。
-
-自动化回归测试对于随着代码库的增长和演变而保持软件稳定性至关重要。它允许对软件行为进行一致和可重复的验证，这比手动[回归测试](../R/regression-testing.md)更为高效。可以在各种环境和配置上运行自动化测试，以确保广泛的覆盖范围。
-
-以下是一个简单的 JavaScript 测试框架（如[Jest](../J/jest.md)）中的自动化回归测试的示例：
-
-```javascript
+    expect(fetchedData).to.be.an('object');
+    expect(fetchedData).to.have.property('key', 'expected value');
+  });
+});`
+This example demonstrates a simple integration test whereprocessInputandfetchDataare two separate components that need to work together correctly. The test ensures that the data processed by one component is suitable for the other component to fetch theexpected result.
+`processInput``fetchData`[expected result](/wiki/expected-result)
+System testingis ahigh-leveltesting phase that evaluates the complete and integrated software system to verify that it meets specified requirements. It is conducted afterintegration testingand beforeacceptance testing, and it focuses on behaviors and outputs under a variety of conditions.
+[System testing](/wiki/system-testing)**high-level****integration testing**[integration testing](/wiki/integration-testing)**acceptance testing**[acceptance testing](/wiki/acceptance-testing)
+Duringsystem testing, the application is tested in an environment that closely resembles production, includingdatabaseinteractions,network communication, andserver interaction. The goal is to identify defects that could only surface when components are integrated and interacting in a system-wide context.
+[system testing](/wiki/system-testing)**databaseinteractions**[database](/wiki/database)**network communication****server interaction**
+Key aspects ofsystem testinginclude:
+[system testing](/wiki/system-testing)- Functionality Testing: Ensuring the software behaves as expected.
+- Performance Testing: Checking the system's response times, throughput, and stability under load.
+- Security Testing: Verifying that security features protect data and maintain functionality as intended.
+- Usability Testing: Assessing the user interface and user experience.
+- Compatibility Testing: Confirming the software works across different devices, browsers, and operating systems.
+**Functionality Testing****Performance Testing**[Performance Testing](/wiki/performance-testing)**Security Testing**[Security Testing](/wiki/security-testing)**Usability Testing**[Usability Testing](/wiki/usability-testing)**Compatibility Testing**[Compatibility Testing](/wiki/compatibility-testing)
+Automatedsystem testingcan significantlyreduce the timerequired to perform repetitive but necessary checks, allowing for more frequent and thorough testing cycles. It is particularly useful forregression testingto ensure new changes haven't adversely affected existing functionality. However, it may not fully replacemanual testing, especially for exploratory, usability, and ad-hoc testing scenarios.
+[system testing](/wiki/system-testing)**reduce the time****regression testing**[regression testing](/wiki/regression-testing)[manual testing](/wiki/manual-testing)
+Regression testingis the process of verifying that previously developed and tested software still performs correctly after changes such as enhancements, patches, or configuration changes. It ensures that new code changes have not adversely affected existing functionality. In the context ofautomated testing, regression tests are typically executed as part of atest suitethat is run frequently, often during a CI/CD pipeline, to provide quick feedback on the impact of code modifications.
+[Regression testing](/wiki/regression-testing)**automated testing**[automated testing](/wiki/automated-testing)[test suite](/wiki/test-suite)
+Automated regression tests are crucial for maintaining the stability of the software over time, especially as the codebase grows and evolves. They allow for consistent and repeatable validation of software behavior, which is more efficient than manualregression testing. Automated tests can be run on various environments and configurations to ensure broad coverage.
+[regression testing](/wiki/regression-testing)
+Here's an example of how a simple automated regression test might look in a JavaScript testing framework likeJest:
+[Jest](/wiki/jest)
+```
 describe('Calculator', () => {
   test('should add two numbers correctly', () => {
     expect(add(1, 2)).toBe(3);
   });
 });
 ```
+`describe('Calculator', () => {
+  test('should add two numbers correctly', () => {
+    expect(add(1, 2)).toBe(3);
+  });
+});`
+In this example, theaddfunction is part of the software that has been previously tested. The regression test will ensure that after changes to the codebase, theaddfunction continues to produce theexpected result.
+`add``add`[expected result](/wiki/expected-result)
+Effectiveregression testingtypically involves selecting relevanttest casesthat cover critical features, frequently running these tests, and updating them as the software evolves. This helps to identify defects early and reduces the risk of introducingbugsinto production.
+[regression testing](/wiki/regression-testing)[test cases](/wiki/test-case)[bugs](/wiki/bug)
+Black box testingandwhite box testingare two distinct approaches to evaluating software functionality and integrity.
+[Black box testing](/wiki/black-box-testing)[white box testing](/wiki/white-box-testing)
+Black box testingtreats the software as an opaque entity, focusing on inputs and outputs without considering internal code structure. Testers verify functionality against specifications, ensuring the system behaves as expected under various conditions. This method is oblivious to the internal workings, hence the term "black box."
+**Black box testing**[Black box testing](/wiki/black-box-testing)
+White box testing, in contrast, requires knowledge of the internal logic. Testers examine the codebase to ensure proper operation and structure, often looking for specific conditions such as loop execution, branch coverage, and path coverage. This approach is also known as clear, open, or transparent testing due to the visibility of the internal code.
+**White box testing**[White box testing](/wiki/white-box-testing)
+While both methods can be automated, black box tests are typically higher-level, such as userinterface testing, whereas white box tests are lower-level, like unit tests. Black box automation scripts simulate user interactions, while white box scripts interact directly with the application code.
+[interface testing](/wiki/interface-testing)
+In practice, combining both approaches provides a comprehensive testing strategy, withblack box testingvalidating user-facing features andwhite box testingensuring the robustness of the underlying codebase.
+[black box testing](/wiki/black-box-testing)[white box testing](/wiki/white-box-testing)
+End-to-end (E2E) testing is a technique where the entire application is tested in a scenario closely mimicking real-world use, such as interacting with adatabase, network, hardware, and other applications. The goal is to validate the system's integration and data integrity from start to finish, ensuring that all components of the application behave as expected under various scenarios.
+[database](/wiki/database)
+E2E testingis crucial because it verifies the system's overall health, as opposed to unit or integration tests that focus on individual components or interactions. It helps catch issues that occur when different parts of a system work together, which might not be evident in isolation. This type of testing is particularly important for critical workflows that directly impact the user experience or the business's bottom line.
+**E2E testing**
+By simulating real user scenarios, E2E testing ensures that the application meets the business requirements and functions correctly in the production environment. It can uncover unexpected behaviors resulting from the combination of various subsystems, which is invaluable for preventing issues in live settings.
 
-在这个例子中，`add`函数是先前经过测试的软件的一部分。回归测试将确保在对代码库进行更改后，`add`函数仍然产生[期望的结果](../E/expected-result.md)。
+In the context oftest automation, E2E tests are often executed as part of a CI/CD pipeline to ensure that new changes do not break key functionalities. While they can be more complex and time-consuming to run than other types of tests, their importance in confirming the viability of a software product cannot be overstated.
+**test automation**[test automation](/wiki/test-automation)
+#### Advanced Concepts
+- What is test-driven development (TDD) and how does it relate to automated testing?Test-Driven Development(TDD) is a software development approach where tests are written before the code that needs to pass them. It follows a simple cycle:write a test,run the test(it should fail initially),write the minimal codeto pass the test, and thenrefactorthe code while ensuring tests continue to pass.TDD relates toautomated testingin that it inherently relies on the creation of automated tests for software features before they are implemented. These tests are typicallyunit testswhich are quick to run and can be easily automated. The TDD cycle ensures that every new feature starts with a correspondingtest case, which helps in building a suite of automated tests over time.This approach has several implications fortest automation:Continuous feedback: Automated tests provide immediate feedback on code changes.Regression safety: As the codebase grows, the test suite helps prevent regressions.Design influence: Writing tests first can drive better software design and architecture.Refactoring confidence: Automated tests allow developers to refactor code with assurance that existing functionality remains intact.TDD complements otherautomated testingstrategies by ensuring that tests are considered from the very beginning of the development process, rather than as an afterthought. It encourages a discipline of testing that can lead to higher quality software and fits well within Agile and Continuous Integration/Continuous Deployment (CI/CD) workflows.
+- What is behavior-driven development (BDD) and how does it relate to automated testing?Behavior-Driven Development (BDD) is an agile software development process that encourages collaboration among developers, QA, and non-technical or business participants in a software project.BDDfocuses on obtaining a clear understanding of desired software behavior through discussion with stakeholders. It extendsTest-Driven Development(TDD) by writingtest casesin a natural language that non-programmers can read.BDDrelates toautomated testingby providing a framework for writing tests. Tests are written in aDomain Specific Language (DSL), often using a language likeGherkin, allowing for human-readable descriptions of software behaviors. These descriptions can then be automated by tools like Cucumber or SpecFlow.Feature: User login
+  Scenario: Successful login with valid credentials
+    Given the user is on the login page
+    When the user enters valid credentials
+    Then the user is redirected to the homepageInBDD, scenarios are defined before the development starts and serve as the basis fortest cases. This ensures that automated tests are aligned with the expected behavior from a user's perspective. As development progresses, these scenarios are turned into automated tests, which are continuously executed to verify the application's behavior against the expected outcomes.BDD's emphasis on shared understanding and clear communication makes it particularly useful for ensuring that automated tests are relevant, understandable, and maintainable. It helps bridge the gap between technical and non-technical team members, ensuring that automated tests accurately reflect business requirements and user needs.
+- What is data-driven testing?Data-driven testing (DDT) is atest automationstrategy that involves executing a set of test steps with multiple sets of input data. This approach enhancestest coverageby validating application behavior across a wide range of input values without writing multipletest scriptsfor each data set.In DDT, test logic is separated from thetest data, typically stored in external data sources like CSV files, Excel spreadsheets, XML, ordatabases. Duringtest execution, the automation framework reads the data and feeds it into thetest cases.Here's a simplified example in pseudocode:for each data_row in data_source:
+    input_values = read_data(data_row)
+    execute_test(input_values)
+    verify_results()DDT is particularly useful for scenarios where application behavior is consistent across different data inputs, and it's essential for ensuring that edge cases and boundary conditions are tested. It also simplifies the process of updating tests since changes intest datado not require alterations in thetest scripts.However, it's crucial to design DDT carefully to avoid creating a maintenance burden, as the volume and complexity oftest datacan grow significantly. Proper management oftest datais key to the success of data-driven testing.
+- What is keyword-driven testing?Keyword-driven testing, also known as table-driven testing or action word based testing, is a methodology used inautomated testingwheretest casesare written using a set of predefined keywords. These keywords represent actions that can be performed on the application under test (AUT). Each keyword corresponds to a function or method that executes a specific operation, such as clicking a button, entering text, or verifying a result.In keyword-driven testing,test scriptsare not written in a programming language. Instead, they are composed of a sequence of keywords, which are easy to read and understand. This abstraction allows individuals without programming expertise to design and execute tests, promoting collaboration between different stakeholders.Here's a simplified example of how a keyword-driventest casemight look:| Keyword       | Parameter 1    | Parameter 2       |
+|---------------|----------------|-------------------|
+| OpenBrowser   | Chrome         |                   |
+| NavigateTo    | https://example.com |             |
+| ClickButton   | Submit         |                   |
+| VerifyText    | Thank you for submitting! |        |Thetest automationframework interprets these keywords and translates them into actions on the AUT. The separation oftest casedesign fromtest scriptimplementation allows for easier maintenance and scalability oftest cases. When the underlying implementation of a keyword changes, only the associated function or method needs to be updated, leaving thetest casesthemselves untouched.
+- What is the role of AI and machine learning in automated testing?AI and machine learning (ML) are transformingautomated testingby enhancing its capabilities and efficiency.AI-driventest automationcananalyze application datato predict and prioritizetest cases, detect dependencies, and identify areas with a higher likelihood of defects. This predictive analysis helps in optimizingtest suites, reducing redundancy, and focusing on high-risk areas.Machine learning algorithmscan learn from pasttest executionstorecognize patternsandanticipate future failures. By analyzing results over time, ML can improve test accuracy and adapt to changes in the application without requiring manual intervention for test maintenance.Self-healing testsleverage AI to automatically updatetest scriptswhen changes are detected in the application's UI orAPI, significantly reducing the maintenance burden. This capability ensures that tests remain robust and reliable over time, even as the application evolves.AI-enhanced tools can also providevisual testing capabilities, comparing visual aspects of an application to detect UI discrepancies that might not be caught by traditional automated tests. This is particularly useful for ensuring cross-device and cross-browser consistency.Furthermore, AI can assist intest generation, creating meaningfultest casesby analyzing user behavior and application usage patterns. This can lead to more comprehensivetest coveragethat includes real-world scenarios.In summary, AI and ML inautomated testingbring about smarter test planning, maintenance, execution, and analysis, leading to more efficient and effective testing processes.
 
-有效的[回归测试](../R/regression-testing.md)通常涉及选择涵盖关键功能的相关[测试用例](../T/test-case.md)，频繁运行这些测试，并随着软件演进而更新它们。这有助于及早识别缺陷，降低引入[错误](../B/bug.md)到生产环境的风险。
-
-### 黑盒测试和白盒测试有什么区别？
-
-[黑盒测试](../B/black-box-testing.md)和[白盒测试](../W/white-box-testing.md)是两种评估软件功能和完整性的不同方法。
-
-**[黑盒测试](../B/black-box-testing.md)**将软件视为不透明的实体，主要关注输入和输出，而不考虑内部代码结构。测试人员根据规范验证功能，确保系统在各种条件下表现如预期。这种方法对内部工作毫不知情，因此被称为“黑盒”。
-
-相反，**[白盒测试](../W/white-box-testing.md)**要求了解内部逻辑。测试人员检查代码库以确保其正常运作和结构，通常寻找特定条件，如循环执行、分支覆盖和路径覆盖。这种方法也被称为清晰、开放或透明测试，因为内部代码是可见的。
-
-虽然这两种方法都可以自动化，但黑盒测试通常是更高层次的，例如用户[界面测试](../I/interface-testing.md)，而白盒测试则更注重底层，如单元测试。黑盒自动化脚本模拟用户交互，而白盒脚本则直接与应用程序代码交互。
-
-在实践中，结合这两种方法提供了全面的测试策略，[黑盒测试](../B/black-box-testing.md)验证面向用户的功能，而[白盒测试](../W/white-box-testing.md)确保底层代码库的健壮性。
-
-### 什么是端到端 (e2e) 测试以及为什么它很重要？
-
-端到端（E2E）测试是一种在仿真真实使用场景的情况下对整个应用程序进行测试的技术，包括与[数据库](../D/database.md)、网络、硬件和其他应用程序的交互。其目的在于验证系统从头到尾的集成和数据完整性，确保应用程序在各种情境下的所有组件都表现正常。
-
-**E2E 测试**至关重要，因为它验证系统的整体健康状况，而不同于侧重于单个组件或交互的单元测试或集成测试。它有助于捕捉在系统不同部分协同工作时可能出现的问题，这在孤立情况下可能不明显。这种测试对于直接影响用户体验或业务底线的关键工作流程尤为重要。
-
-通过模拟真实用户场景，E2E 测试确保应用程序满足业务需求，并在生产环境中正确运行。它可以揭示由于各个子系统组合而导致的意外行为，这对于在实际环境中防止问题非常宝贵。
-
-在**[测试自动化](../T/test-automation.md)**的背景下，E2E 测试通常作为 CI/CD 流水线的一部分执行，以确保新变更不会破坏关键功能。尽管相较于其他类型的测试，它们可能更为复杂且耗时，但在确认软件产品的可行性方面它们的重要性不可低估。
-
-## 深层理解
-
-### 什么是测试驱动开发 (TDD) 以及它与自动化测试有何关系？
-
-**测试驱动开发**（TDD）是一种软件开发方法，它要求在编写代码之前先编写需要通过的测试。这一简单的循环包括：**编写测试**，**运行测试**（最初测试应该失败），**编写最少量的代码**以通过测试，然后在确保测试继续通过的同时**重构**代码。
-
-TDD 与**自动化测试**密切相关，因为它本质上依赖于在实现软件功能之前创建自动化测试。这些测试通常是**单元测试**，可以迅速运行并且易于自动化。TDD 循环确保每个新功能都始于相应的[测试用例](../T/test-case.md)，这有助于随着时间的推移构建一套自动化测试。
-
-这种方法对[测试自动化](../T/test-automation.md)产生了几个影响：
-
-- **持续反馈**：自动化测试为代码变更提供即时反馈。
-- **回归安全性**：随着代码库的增长，测试套件有助于防止回归问题。
-- **设计影响**：首先编写测试可以推动更好的软件设计和架构。
-- **重构信心**：自动化测试使开发人员能够在重构代码时确保现有功能仍然完好。
-
-TDD 通过确保测试从开发过程的一开始就被考虑，而不是事后的事项，来补充其他自动化测试策略。它鼓励一种测试纪律，有助于构建更高质量的软件，并且与敏捷和持续集成/持续部署（CI/CD）工作流紧密配合。
-
-### 什么是行为驱动开发 (BDD) 以及它与自动化测试有何关系？
-
-行为驱动开发（[BDD](../B/bdd.md)）是一种敏捷软件开发过程，鼓励开发人员、质量保障（QA）以及非技术或业务参与者在软件项目中进行协作。[BDD](../B/bdd.md)通过与利益相关者进行讨论，专注于获得对期望的软件行为的清晰理解。它通过使用非程序员可以阅读的自然语言编写[测试用例](../T/test-case.md)来扩展[测试驱动开发](../T/test-driven-development.md)（TDD）。
-
-[BDD](../B/bdd.md)与自动化测试相关联，提供了编写测试的框架。测试用例使用**特定领域语言（DSL）**编写，通常使用类似[Gherkin](../G/gherkin.md)的语言，允许以人类可读的方式描述软件行为。这些描述随后可以由 Cucumber 或 SpecFlow 等工具自动化。
-
-```javascript
+Test-Driven Development(TDD) is a software development approach where tests are written before the code that needs to pass them. It follows a simple cycle:write a test,run the test(it should fail initially),write the minimal codeto pass the test, and thenrefactorthe code while ensuring tests continue to pass.
+[Test-Driven Development](/wiki/test-driven-development)**write a test****run the test****write the minimal code****refactor**
+TDD relates toautomated testingin that it inherently relies on the creation of automated tests for software features before they are implemented. These tests are typicallyunit testswhich are quick to run and can be easily automated. The TDD cycle ensures that every new feature starts with a correspondingtest case, which helps in building a suite of automated tests over time.
+[automated testing](/wiki/automated-testing)**unit tests**[test case](/wiki/test-case)
+This approach has several implications fortest automation:
+[test automation](/wiki/test-automation)- Continuous feedback: Automated tests provide immediate feedback on code changes.
+- Regression safety: As the codebase grows, the test suite helps prevent regressions.
+- Design influence: Writing tests first can drive better software design and architecture.
+- Refactoring confidence: Automated tests allow developers to refactor code with assurance that existing functionality remains intact.
+**Continuous feedback****Regression safety****Design influence****Refactoring confidence**
+TDD complements otherautomated testingstrategies by ensuring that tests are considered from the very beginning of the development process, rather than as an afterthought. It encourages a discipline of testing that can lead to higher quality software and fits well within Agile and Continuous Integration/Continuous Deployment (CI/CD) workflows.
+[automated testing](/wiki/automated-testing)
+Behavior-Driven Development (BDD) is an agile software development process that encourages collaboration among developers, QA, and non-technical or business participants in a software project.BDDfocuses on obtaining a clear understanding of desired software behavior through discussion with stakeholders. It extendsTest-Driven Development(TDD) by writingtest casesin a natural language that non-programmers can read.
+[BDD](/wiki/bdd)[BDD](/wiki/bdd)[Test-Driven Development](/wiki/test-driven-development)[test cases](/wiki/test-case)
+BDDrelates toautomated testingby providing a framework for writing tests. Tests are written in aDomain Specific Language (DSL), often using a language likeGherkin, allowing for human-readable descriptions of software behaviors. These descriptions can then be automated by tools like Cucumber or SpecFlow.
+[BDD](/wiki/bdd)[automated testing](/wiki/automated-testing)**Domain Specific Language (DSL)**[Gherkin](/wiki/gherkin)
+```
 Feature: User login
   Scenario: Successful login with valid credentials
     Given the user is on the login page
     When the user enters valid credentials
     Then the user is redirected to the homepage
 ```
+`Feature: User login
+  Scenario: Successful login with valid credentials
+    Given the user is on the login page
+    When the user enters valid credentials
+    Then the user is redirected to the homepage`
+InBDD, scenarios are defined before the development starts and serve as the basis fortest cases. This ensures that automated tests are aligned with the expected behavior from a user's perspective. As development progresses, these scenarios are turned into automated tests, which are continuously executed to verify the application's behavior against the expected outcomes.
+[BDD](/wiki/bdd)[test cases](/wiki/test-case)
+BDD's emphasis on shared understanding and clear communication makes it particularly useful for ensuring that automated tests are relevant, understandable, and maintainable. It helps bridge the gap between technical and non-technical team members, ensuring that automated tests accurately reflect business requirements and user needs.
+[BDD](/wiki/bdd)
+Data-driven testing (DDT) is atest automationstrategy that involves executing a set of test steps with multiple sets of input data. This approach enhancestest coverageby validating application behavior across a wide range of input values without writing multipletest scriptsfor each data set.
+**test automation**[test automation](/wiki/test-automation)[test coverage](/wiki/test-coverage)[test scripts](/wiki/test-script)
+In DDT, test logic is separated from thetest data, typically stored in external data sources like CSV files, Excel spreadsheets, XML, ordatabases. Duringtest execution, the automation framework reads the data and feeds it into thetest cases.
+[test data](/wiki/test-data)[databases](/wiki/database)[test execution](/wiki/test-execution)[test cases](/wiki/test-case)
+Here's a simplified example in pseudocode:
 
-在[BDD](../B/bdd.md)中，场景在开发开始之前被定义，并作为[测试用例](../T/test-case.md)的基础。这确保了自动化测试与用户的预期行为保持一致。随着开发的进行，这些场景被转化为自动化测试，并持续执行以验证应用程序的行为是否符合预期结果。
-
-[BDD](../B/bdd.md)对共享理解和清晰沟通的强调使其特别有用，以确保自动化测试是相关的、可理解的和易于维护的。它有助于弥合技术和非技术团队成员之间的差距，确保自动化测试准确反映业务需求和用户需求。
-
-### 什么是数据驱动测试？
-
-数据驱动测试（DDT）是一种**[测试自动化](../T/test-automation.md)**策略，其核心是使用多组输入数据执行一系列测试步骤。这一方法通过验证应用程序在广泛的输入值范围内的行为，而无需为每个数据集编写多个[测试脚本](../T/test-script.md)，从而提高了[测试覆盖率](../T/test-coverage.md)。
-
-在 DDT 中，测试逻辑与[测试数据](../T/test-data.md)分离，通常存储在外部数据源中，如 CSV 文件、Excel 电子表格、XML 或[数据库](../D/database.md)。在[测试执行](../T/test-execution.md)过程中，自动化框架读取数据并将其输入[测试用例](../T/test-case.md)。
-
-下面是一个简化的伪代码示例：
-
-```Typescript
+```
 for each data_row in data_source:
     input_values = read_data(data_row)
     execute_test(input_values)
     verify_results()
 ```
-
-DDT 特别适用于应用程序行为在不同数据输入下保持一致的情况，并且对于确保测试涵盖边缘情况和边界条件非常重要。此外，它还简化了更新测试的过程，因为[测试数据](../T/test-data.md)的更改不需要修改[测试脚本](../T/test-script.md)。
-
-然而，需要谨慎设计 DDT，以避免产生维护负担，因为[测试数据](../T/test-data.md)的数量和复杂性可能会显著增长。妥善管理[测试数据](../T/test-data.md)是数据驱动测试成功的关键。
-
-### 什么是关键字驱动测试？
-
-关键字驱动测试，又称表驱动测试或基于动作关键字的测试，是一种在自动化测试中采用的方法，其中使用一组预定义的关键字编写[测试用例](../T/test-case.md)。这些关键字代表了可以在被测试的应用程序（AUT）上执行的操作。每个关键字都对应执行特定操作的函数或方法，例如点击按钮、输入文本或验证结果。
-
-在关键字驱动测试中，[测试脚本](../T/test-script.md)不是用编程语言编写的。相反，它们由一系列关键字组成，易于阅读和理解。这种抽象使得没有编程专业知识的个人能够设计和执行测试，促进了不同利益相关者之间的协作。
-
-以下是关键字驱动[测试用例](../T/test-case.md)可能的简化示例：
-
-```Typescript
+`for each data_row in data_source:
+    input_values = read_data(data_row)
+    execute_test(input_values)
+    verify_results()`
+DDT is particularly useful for scenarios where application behavior is consistent across different data inputs, and it's essential for ensuring that edge cases and boundary conditions are tested. It also simplifies the process of updating tests since changes intest datado not require alterations in thetest scripts.
+[test data](/wiki/test-data)[test scripts](/wiki/test-script)
+However, it's crucial to design DDT carefully to avoid creating a maintenance burden, as the volume and complexity oftest datacan grow significantly. Proper management oftest datais key to the success of data-driven testing.
+[test data](/wiki/test-data)[test data](/wiki/test-data)
+Keyword-driven testing, also known as table-driven testing or action word based testing, is a methodology used inautomated testingwheretest casesare written using a set of predefined keywords. These keywords represent actions that can be performed on the application under test (AUT). Each keyword corresponds to a function or method that executes a specific operation, such as clicking a button, entering text, or verifying a result.
+[automated testing](/wiki/automated-testing)[test cases](/wiki/test-case)
+In keyword-driven testing,test scriptsare not written in a programming language. Instead, they are composed of a sequence of keywords, which are easy to read and understand. This abstraction allows individuals without programming expertise to design and execute tests, promoting collaboration between different stakeholders.
+[test scripts](/wiki/test-script)
+Here's a simplified example of how a keyword-driventest casemight look:
+[test case](/wiki/test-case)
+```
 | Keyword       | Parameter 1    | Parameter 2       |
 |---------------|----------------|-------------------|
 | OpenBrowser   | Chrome         |                   |
@@ -679,19 +850,23 @@ DDT 特别适用于应用程序行为在不同数据输入下保持一致的情�
 | ClickButton   | Submit         |                   |
 | VerifyText    | Thank you for submitting! |        |
 ```
-
-[测试自动化](../T/test-automation.md)框架解释这些关键字并将它们转换为对 AUT 的操作。[测试用例](../T/test-case.md)的设计与[测试脚本](../T/test-script.md)的实施分离，使得[测试用例](../T/test-case.md)更容易维护和扩展。当关键字的底层实现发生变化时，只需更新相关的函数或方法，而不必触及[测试用例](../T/test-case.md)本身。
-
-### 人工智能和机器学习在自动化测试中的作用是什么？
-
-人工智能（AI）和机器学习（ML）正在改变**自动化测试**，提升了其能力和效率。**基于 AI 的[测试自动化](../T/test-automation.md)**可以**分析应用程序数据**以预测和优先考虑[测试用例](../T/test-case.md)，检测依赖关系，并识别存在更高缺陷可能性的区域。这种预测性分析有助于优化[测试套件](../T/test-suite.md)，减少冗余，并聚焦于高风险区域。
-
-**机器学习算法**可以从过去的[测试执行](../T/test-execution.md)中**学习模式**并**预测未来的故障**。通过随着时间的推移分析结果，ML 可以提高测试的准确性，并适应应用程序的变化，而无需手动干预进行测试维护。
-
-**自愈测试**利用 AI 在检测到应用程序的 UI 或[API](../A/api.md)发生变化时自动更新[测试脚本](../T/test-script.md)，极大减轻了维护负担。这种能力确保测试随着应用程序的演进而保持稳健和可靠。
-
-增强 AI 的工具还可以提供**视觉测试功能**，比较应用程序的视觉方面，检测传统自动化测试可能未能捕捉到的 UI 差异。这对于确保跨设备和跨浏览器的一致性尤为有用。
-
-此外，AI 可以协助**测试生成**，通过分析用户行为和应用程序使用模式创建有意义的[测试用例](../T/test-case.md)。这可以实现包括真实场景的更全面的[测试覆盖](../T/test-coverage.md)。
-
-总的来说，AI 和 ML 在自动化测试中带来更智能的测试规划、维护、执行和分析，从而实现更高效和有效的测试流程。  
+`| Keyword       | Parameter 1    | Parameter 2       |
+|---------------|----------------|-------------------|
+| OpenBrowser   | Chrome         |                   |
+| NavigateTo    | https://example.com |             |
+| ClickButton   | Submit         |                   |
+| VerifyText    | Thank you for submitting! |        |`
+Thetest automationframework interprets these keywords and translates them into actions on the AUT. The separation oftest casedesign fromtest scriptimplementation allows for easier maintenance and scalability oftest cases. When the underlying implementation of a keyword changes, only the associated function or method needs to be updated, leaving thetest casesthemselves untouched.
+[test automation](/wiki/test-automation)[test case](/wiki/test-case)[test script](/wiki/test-script)[test cases](/wiki/test-case)[test cases](/wiki/test-case)
+AI and machine learning (ML) are transformingautomated testingby enhancing its capabilities and efficiency.AI-driventest automationcananalyze application datato predict and prioritizetest cases, detect dependencies, and identify areas with a higher likelihood of defects. This predictive analysis helps in optimizingtest suites, reducing redundancy, and focusing on high-risk areas.
+[automated testing](/wiki/automated-testing)**AI-driventest automation**[test automation](/wiki/test-automation)**analyze application data**[test cases](/wiki/test-case)[test suites](/wiki/test-suite)
+Machine learning algorithmscan learn from pasttest executionstorecognize patternsandanticipate future failures. By analyzing results over time, ML can improve test accuracy and adapt to changes in the application without requiring manual intervention for test maintenance.
+**Machine learning algorithms**[test executions](/wiki/test-execution)**recognize patterns****anticipate future failures**
+Self-healing testsleverage AI to automatically updatetest scriptswhen changes are detected in the application's UI orAPI, significantly reducing the maintenance burden. This capability ensures that tests remain robust and reliable over time, even as the application evolves.
+**Self-healing tests**[test scripts](/wiki/test-script)[API](/wiki/api)
+AI-enhanced tools can also providevisual testing capabilities, comparing visual aspects of an application to detect UI discrepancies that might not be caught by traditional automated tests. This is particularly useful for ensuring cross-device and cross-browser consistency.
+**visual testing capabilities**
+Furthermore, AI can assist intest generation, creating meaningfultest casesby analyzing user behavior and application usage patterns. This can lead to more comprehensivetest coveragethat includes real-world scenarios.
+**test generation**[test cases](/wiki/test-case)[test coverage](/wiki/test-coverage)
+In summary, AI and ML inautomated testingbring about smarter test planning, maintenance, execution, and analysis, leading to more efficient and effective testing processes.
+[automated testing](/wiki/automated-testing)

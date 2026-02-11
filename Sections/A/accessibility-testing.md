@@ -1,258 +1,245 @@
-<!-- markdownlint-disable MD041 -->
-- [Accessibility Testing 无障碍测试](#accessibility-testing-无障碍测试)
-- [关于无障碍测试的问题](#关于无障碍测试的问题)
-  - [基础知识和重要性](#基础知识和重要性)
-    - [什么是无障碍测试？](#什么是无障碍测试)
-    - [为什么无障碍测试很重要？](#为什么无障碍测试很重要)
-    - [无障碍测试的目标是什么？](#无障碍测试的目标是什么)
-    - [无障碍测试如何让用户受益？](#无障碍测试如何让用户受益)
-    - [不进行无障碍测试会有什么影响？](#不进行无障碍测试会有什么影响)
-  - [标准和指引](#标准和指引)
-    - [无障碍测试的关键标准和指南是什么？](#无障碍测试的关键标准和指南是什么)
-    - [什么是 WCAG？为什么它很重要？](#什么是-wcag为什么它很重要)
-    - [WCAG 合规性有哪些不同级别？](#wcag-合规性有哪些不同级别)
-    - [什么是第 508 条以及它与无障碍性测试有何关系？](#什么是第-508-条以及它与无障碍性测试有何关系)
-    - [ARIA 角色是什么以及它们如何在无障碍性测试中使用？](#aria-角色是什么以及它们如何在无障碍性测试中使用)
-  - [工具和技术](#工具和技术)
-    - [无障碍性测试常用哪些工具？](#无障碍性测试常用哪些工具)
-    - [有哪些无障碍测试的人工技术？](#有哪些无障碍测试的人工技术)
-    - [如何在无障碍测试中使用自动化工具？](#如何在无障碍测试中使用自动化工具)
-    - [自动无障碍测试工具有哪些局限性？](#自动无障碍测试工具有哪些局限性)
-    - [如何测试不同类型的残障？](#如何测试不同类型的残障)
-  - [实施与最佳实践](#实施与最佳实践)
-    - [实施无障碍测试有哪些最佳做法](#实施无障碍测试有哪些最佳做法)
-    - [如何将无障碍测试纳入软件开发生命周期？](#如何将无障碍测试纳入软件开发生命周期)
-    - [如何确保持续符合无障碍要求？](#如何确保持续符合无障碍要求)
-    - [需要注意哪些常见的无障碍问题？](#需要注意哪些常见的无障碍问题)
-    - [如何让网站更容易访问？](#如何让网站更容易访问)
+# Accessibility Testing
+[Accessibility Testing](#accessibility-testing)[Accessibility testing](/wiki/accessibility-testing)
+### Related Terms:
+- Usability Testing
+[Usability Testing](/glossary/usability-testing)
+## Questions aboutAccessibility Testing?
 
-# Accessibility Testing 无障碍测试
+#### Basics and Importance
+- What is accessibility testing?Accessibility testingis the process of ensuring that software and web applications are usable by people with a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities. This form of testing checks that the application can be effectively operated and understood by individuals using assistive technologies such as screen readers, braille terminals, and alternative input devices.Key aspectsofaccessibility testinginclude:Navigability: Can users navigate through the application using a keyboard or assistive devices?Readability: Is the content readable and understandable for users with visual impairments?Compatibility: Does the application work with various assistive technologies?Semantic HTML: Are HTML elements used to convey meaning and structure?Dynamic Content: Is dynamic content accessible through screen readers?Visual Design: Is there sufficient contrast between text and background for users with low vision?Multimedia: Are video and audio contents accessible with captions and transcripts?Techniquesinvolve both automated andmanual testingmethods. Automated tools can scan for certain types of issues, like missing alt text or incorrect ARIA roles, whilemanual testingmight include using the application with a screen reader or navigating via keyboard only.Code examplefor checking image alt text with an automated tool:it('should have alt text for all images', () => {
+  cy.get('img').each(($img) => {
+    expect($img.attr('alt')).to.be.a('string').and.not.be.empty;
+  });
+});In summary,accessibility testingis a critical component ofsoftware quality assurancethat ensures inclusivity and legal compliance.
+- Why is accessibility testing important?Accessibility testingis crucial because it ensures thatall users, including those with disabilities, can access and use software products effectively. By identifying and addressing accessibility barriers, it promotesinclusive designand enhances theuser experiencefor a diverse audience. This type of testing is not just a matter of ethical responsibility and user advocacy but also a legal requirement in many jurisdictions, helping organizations to comply with laws and avoid potentiallegal repercussions.Moreover,accessibility testingcan lead toimproved SEO, as search engines favor accessible websites, potentially increasing the site's visibility and reach. It also encouragesbest coding practices, resulting in cleaner, more maintainable code. By integrating accessibility considerations early in the development process, companies can reduce the cost and effort required to retrofit accessibility features later on.In summary,accessibility testingis important because it:Promotes inclusivityby ensuring that software is usable by people with a wide range of abilities.Fulfills legal obligations, helping organizations to comply with accessibility standards and avoid legal issues.Enhances SEO, potentially increasing the visibility and reach of the software.Encourages better coding practices, leading to more maintainable and robust software.Ignoringaccessibility testingcan lead to anarrower user base, potentiallegal challenges, and missed opportunities forproduct improvement.
+- What is the goal of accessibility testing?The goal ofaccessibility testingis toensurethat software products areusableby people with a wide range ofabilities and disabilities. This includes verifying that the productconformstoaccessibility standardsandguidelines, such as the Web Content Accessibility Guidelines (WCAG) and Section 508. By doing so, it aims to provide aninclusive user experiencewhere individuals with impairments, such as visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities, cannavigate,interact with, andaccess contenteffectively.Accessibility testingalso seeks toidentify and eliminate barriersthat may prevent people with disabilities from using the product, ensuring that all users haveequal accessto information and functionality. It involves a combination ofautomated toolsandmanual techniquesto cover various aspects that might not be captured by automation alone.Ultimately, the goal is touphold legal and ethical standards,avoid discrimination, andexpand market reachby making products accessible to a broader audience. It's not just about compliance; it's aboutembracing diversityandenhancing user satisfaction.
+- How does accessibility testing benefit users?Accessibility testingbenefits users by ensuring that software products are usable by people with a wide range of abilities and disabilities. This inclusivity allows for abroader audienceto interact with applications, websites, or tools effectively, regardless of their physical or cognitive challenges. By accommodatingassistive technologiessuch as screen readers, braille terminals, and voice recognition software,accessibility testinghelps in creating a moreequitable user experience.For users with disabilities,accessibility testingcan mean the difference between being able to perform essential tasks online and facing significant barriers. It enablesindependent navigationand interaction, which is crucial for personal autonomy and dignity. Moreover, it canreduce frustrationandincrease efficiencyfor users, as they can access and use features and information without unnecessary hindrance.In addition to direct user benefits,accessibility testingcan also lead toimproved usabilityfor all users. Many accessibility features, such as clear navigation and readable fonts, enhance the overall user experience. By focusing on accessibility, developers can inadvertently improve the design and functionality for a wider user base, leading to a moreintuitive and user-friendly product.Lastly,accessibility testingcan help inavoiding legal repercussionsthat may arise from non-compliance with accessibility laws and regulations, ensuring that the software is not only inclusive but also legally compliant.
+- What is the impact of not conducting accessibility testing?Not conductingaccessibility testingcan have significant impacts:Excludes users: Without accessibility testing, software may not be usable by people with disabilities, effectively excluding them from accessing the product or service.Legal repercussions: Failing to comply with legal standards like the Americans with Disabilities Act (ADA) or Section 508 can lead to lawsuits and financial penalties.Brand damage: Inaccessibility can harm a company's reputation, as it suggests a lack of consideration for all users.Reduced market reach: Ignoring accessibility testing limits the potential user base, as people with disabilities represent a substantial market segment.Poor user experience: Accessibility issues can lead to a frustrating user experience, not just for users with disabilities but also for those in temporary or situational limitations.Increased costs: Identifying and fixing accessibility issues late in development or post-release is often more expensive than addressing them during the regular testing cycle.In summary, neglectingaccessibility testingcan have ethical, legal, financial, and reputational consequences, while also compromising the overall quality and usability of the software.
 
-无障碍测试旨在确保移动和 Web 应用对每个人都是可用的，包括那些具有视觉或听觉障碍，以及其他身体或认知挑战的个体
-
-相关术语：
-[Usability Testing 易用性测试](../U/usability-testing.md)
-
-# 关于无障碍测试的问题
-
-## 基础知识和重要性
-
-### 什么是无障碍测试？
-
-无障碍测试是一种确保软件和 Web 应用能够被广泛残障人群使用的过程，包括视觉、听觉、身体、语音、认知、语言、学习和神经方面的障碍。这种测试方式旨在验证应用是否能够被使用辅助技术，如屏幕阅读器、盲文终端和替代输入设备的个体有效操作和理解。
-
-**无障碍测试** 的关键方面包括：
-
-- **导航性**：用户是否可以使用键盘或辅助设备浏览应用？
-- **可读性**：内容是否对视觉障碍用户可读且易理解？
-- **兼容性**：应用是否与各种辅助技术协同工作？
-- **语义化 HTML**：HTML 元素是否用于传达含义和结构？
-- **动态内容**：动态内容是否可通过屏幕阅读器访问？
-- **视觉设计**：文本和背景之间是否有足够的对比度，以满足视力较差用户的需求？
-- **多媒体**：视频和音频内容是否提供字幕和文本稿？
-
-**测试技巧** 既包括自动化，也包括[手工测试](../M/manual-testing.md)方法。自动化工具可扫描特定类型的问题，如缺失的 alt 文本或错误的 ARIA 角色，而[手工测试](../M/manual-testing.md)可能涉及使用屏幕阅读器或仅通过键盘浏览应用。
-
-**代码示例** 用于使用自动化工具检查图像 alt 文本：
-
-```typescript
-it('应对所有图像提供 alt 文本', () => {
+Accessibility testingis the process of ensuring that software and web applications are usable by people with a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities. This form of testing checks that the application can be effectively operated and understood by individuals using assistive technologies such as screen readers, braille terminals, and alternative input devices.
+[Accessibility testing](/wiki/accessibility-testing)
+Key aspectsofaccessibility testinginclude:
+**Key aspects**[accessibility testing](/wiki/accessibility-testing)- Navigability: Can users navigate through the application using a keyboard or assistive devices?
+- Readability: Is the content readable and understandable for users with visual impairments?
+- Compatibility: Does the application work with various assistive technologies?
+- Semantic HTML: Are HTML elements used to convey meaning and structure?
+- Dynamic Content: Is dynamic content accessible through screen readers?
+- Visual Design: Is there sufficient contrast between text and background for users with low vision?
+- Multimedia: Are video and audio contents accessible with captions and transcripts?
+**Navigability****Readability****Compatibility****Semantic HTML****Dynamic Content****Visual Design****Multimedia**
+Techniquesinvolve both automated andmanual testingmethods. Automated tools can scan for certain types of issues, like missing alt text or incorrect ARIA roles, whilemanual testingmight include using the application with a screen reader or navigating via keyboard only.
+**Techniques**[manual testing](/wiki/manual-testing)[manual testing](/wiki/manual-testing)
+Code examplefor checking image alt text with an automated tool:
+**Code example**
+```
+it('should have alt text for all images', () => {
   cy.get('img').each(($img) => {
     expect($img.attr('alt')).to.be.a('string').and.not.be.empty;
   });
 });
 ```
+`it('should have alt text for all images', () => {
+  cy.get('img').each(($img) => {
+    expect($img.attr('alt')).to.be.a('string').and.not.be.empty;
+  });
+});`
+In summary,accessibility testingis a critical component ofsoftware quality assurancethat ensures inclusivity and legal compliance.
+[accessibility testing](/wiki/accessibility-testing)
+Accessibility testingis crucial because it ensures thatall users, including those with disabilities, can access and use software products effectively. By identifying and addressing accessibility barriers, it promotesinclusive designand enhances theuser experiencefor a diverse audience. This type of testing is not just a matter of ethical responsibility and user advocacy but also a legal requirement in many jurisdictions, helping organizations to comply with laws and avoid potentiallegal repercussions.
+[Accessibility testing](/wiki/accessibility-testing)**all users****inclusive design****user experience****legal repercussions**
+Moreover,accessibility testingcan lead toimproved SEO, as search engines favor accessible websites, potentially increasing the site's visibility and reach. It also encouragesbest coding practices, resulting in cleaner, more maintainable code. By integrating accessibility considerations early in the development process, companies can reduce the cost and effort required to retrofit accessibility features later on.
+[accessibility testing](/wiki/accessibility-testing)**improved SEO****best coding practices**
+In summary,accessibility testingis important because it:
+[accessibility testing](/wiki/accessibility-testing)- Promotes inclusivityby ensuring that software is usable by people with a wide range of abilities.
+- Fulfills legal obligations, helping organizations to comply with accessibility standards and avoid legal issues.
+- Enhances SEO, potentially increasing the visibility and reach of the software.
+- Encourages better coding practices, leading to more maintainable and robust software.
+**Promotes inclusivity****Fulfills legal obligations****Enhances SEO****Encourages better coding practices**
+Ignoringaccessibility testingcan lead to anarrower user base, potentiallegal challenges, and missed opportunities forproduct improvement.
+[accessibility testing](/wiki/accessibility-testing)**narrower user base****legal challenges****product improvement**
+The goal ofaccessibility testingis toensurethat software products areusableby people with a wide range ofabilities and disabilities. This includes verifying that the productconformstoaccessibility standardsandguidelines, such as the Web Content Accessibility Guidelines (WCAG) and Section 508. By doing so, it aims to provide aninclusive user experiencewhere individuals with impairments, such as visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities, cannavigate,interact with, andaccess contenteffectively.
+[accessibility testing](/wiki/accessibility-testing)**ensure****usable****abilities and disabilities****conforms****accessibility standards****guidelines****inclusive user experience****navigate****interact with****access content**
+Accessibility testingalso seeks toidentify and eliminate barriersthat may prevent people with disabilities from using the product, ensuring that all users haveequal accessto information and functionality. It involves a combination ofautomated toolsandmanual techniquesto cover various aspects that might not be captured by automation alone.
+[Accessibility testing](/wiki/accessibility-testing)**identify and eliminate barriers****equal access****automated tools****manual techniques**
+Ultimately, the goal is touphold legal and ethical standards,avoid discrimination, andexpand market reachby making products accessible to a broader audience. It's not just about compliance; it's aboutembracing diversityandenhancing user satisfaction.
+**uphold legal and ethical standards****avoid discrimination****expand market reach****embracing diversity****enhancing user satisfaction**
+Accessibility testingbenefits users by ensuring that software products are usable by people with a wide range of abilities and disabilities. This inclusivity allows for abroader audienceto interact with applications, websites, or tools effectively, regardless of their physical or cognitive challenges. By accommodatingassistive technologiessuch as screen readers, braille terminals, and voice recognition software,accessibility testinghelps in creating a moreequitable user experience.
+[Accessibility testing](/wiki/accessibility-testing)**broader audience****assistive technologies**[accessibility testing](/wiki/accessibility-testing)**equitable user experience**
+For users with disabilities,accessibility testingcan mean the difference between being able to perform essential tasks online and facing significant barriers. It enablesindependent navigationand interaction, which is crucial for personal autonomy and dignity. Moreover, it canreduce frustrationandincrease efficiencyfor users, as they can access and use features and information without unnecessary hindrance.
+[accessibility testing](/wiki/accessibility-testing)**independent navigation****reduce frustration****increase efficiency**
+In addition to direct user benefits,accessibility testingcan also lead toimproved usabilityfor all users. Many accessibility features, such as clear navigation and readable fonts, enhance the overall user experience. By focusing on accessibility, developers can inadvertently improve the design and functionality for a wider user base, leading to a moreintuitive and user-friendly product.
+[accessibility testing](/wiki/accessibility-testing)**improved usability****intuitive and user-friendly product**
+Lastly,accessibility testingcan help inavoiding legal repercussionsthat may arise from non-compliance with accessibility laws and regulations, ensuring that the software is not only inclusive but also legally compliant.
+[accessibility testing](/wiki/accessibility-testing)**avoiding legal repercussions**
+Not conductingaccessibility testingcan have significant impacts:
+[accessibility testing](/wiki/accessibility-testing)- Excludes users: Without accessibility testing, software may not be usable by people with disabilities, effectively excluding them from accessing the product or service.
+- Legal repercussions: Failing to comply with legal standards like the Americans with Disabilities Act (ADA) or Section 508 can lead to lawsuits and financial penalties.
+- Brand damage: Inaccessibility can harm a company's reputation, as it suggests a lack of consideration for all users.
+- Reduced market reach: Ignoring accessibility testing limits the potential user base, as people with disabilities represent a substantial market segment.
+- Poor user experience: Accessibility issues can lead to a frustrating user experience, not just for users with disabilities but also for those in temporary or situational limitations.
+- Increased costs: Identifying and fixing accessibility issues late in development or post-release is often more expensive than addressing them during the regular testing cycle.
+**Excludes users****Legal repercussions****Brand damage****Reduced market reach****Poor user experience****Increased costs**
+In summary, neglectingaccessibility testingcan have ethical, legal, financial, and reputational consequences, while also compromising the overall quality and usability of the software.
+[accessibility testing](/wiki/accessibility-testing)
+#### Standards and Guidelines
+- What are the key standards and guidelines for accessibility testing?Key standards and guidelines foraccessibility testinginclude:Web Content Accessibility Guidelines (WCAG): The primary international standards for web accessibility, detailing how to make web content more accessible to people with disabilities. Follow the latest version, currently WCAG 2.1, and aim for at least AA level compliance.Accessible Rich Internet Applications (ARIA): Defines a way to make web content and web applications more accessible to people with disabilities. Use ARIA roles and properties to enhance the accessibility of dynamic content and complex user interface components.Section 508: U.S. federal law requiring all electronic and information technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities. Ensure your software meets these standards if it will be used by federal agencies or contractors.EN 301 549: European standard for digital accessibility, specifying requirements for ICT products and services to ensure they are more accessible to people with disabilities.ISO/IEC 40500: International standard identical to WCAG 2.0, providing a stable, referenceable technical standard.When conductingaccessibility testing, adhere to these guidelines:Automate what you can: Use automated tools to catch easy-to-detect issues, but remember they can't catch everything.Manual testing: Complementautomated testingwith manual checks, especially for subjective criteria like ease of navigation and understanding.User testing: Involve real users with disabilities in testing to get authentic feedback on accessibility.Continuous compliance: Integrateaccessibility testinginto your continuous integration/continuous deployment (CI/CD) pipeline to ensure ongoing compliance.Stay updated: Keep abreast of updates to accessibility standards and guidelines, as they evolve over time.
+- What is WCAG and why is it important?WCAG, or theWeb Content Accessibility Guidelines, is a set of recommendations for making web content more accessible to people with disabilities. It's developed through the W3C process in cooperation with individuals and organizations around the world, aiming to provide a single shared standard for web content accessibility that meets the needs of individuals, organizations, and governments internationally.WCAG is important because it serves as aglobal benchmarkfor web accessibility, ensuring that websites, applications, and digital tools are usable by everyone, including those with auditory, cognitive, neurological, physical, speech, and visual disabilities. Compliance with WCAG helps in removing barriers that prevent interaction with, or access to websites, by people with disabilities. When sites are correctly designed, developed, and edited, all users have equal access to information and functionality.Following WCAG guidelines is not only a matter ofethical responsibilityandinclusivitybut also a legal requirement in many jurisdictions. Non-compliance can lead to legal repercussions and damage to an organization's reputation. Moreover, adhering to WCAG can improve the overall user experience and potentially increase the audience reach, as accessible sites tend to be more SEO-friendly and have better usability for all users, not just those with disabilities.
+- What are the different levels of WCAG compliance?WCAG compliance is categorized into three levels of conformance:Level A: The most basic web accessibility features. Websites must satisfy this level in order not to exclude groups of people with disabilities. It includes things like providing text alternatives for non-text content and ensuring that navigation is possible using a keyboard.Level AA: Deals with the biggest and most common barriers for disabled users. This level introduces standards such as providing captions for audio content and ensuring that text is readable and understandable. Meeting this level is often a legal requirement in many organizations and governments.Level AAA: The highest and most stringent level of WCAG compliance. This level includes a wider range of criteria to improve accessibility for different types of disabilities. It encompasses all Level A and AA requirements and adds more, such as providing sign language interpretation for audio content and ensuring that live audio content has a lower background noise level. However, it is not always possible to satisfy all Level AAA success criteria for some content, so it is not a strict requirement for full compliance.Each level builds on the previous one, with AAA including all criteria from AA and A. When aiming for compliance, it's important to note that Level AA is typically the target standard for most websites, as it provides a balance between improving accessibility and being realistically achievable.
+- What is Section 508 and how does it relate to accessibility testing?Section 508 is a part of the Rehabilitation Act of 1973 which requires federal agencies to make their electronic and information technology (EIT) accessible to people with disabilities. In the context of softwaretest automation, Section 508 compliance means ensuring that applications and websites are usable by individuals with a range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.To comply with Section 508, automated tests should include checks for:Keyboard navigability: Ensure all functions can be operated via keyboard commands without requiring a mouse.Screen reader compatibility: Verify that content is structured in a way that screen readers can interpret and vocalize it correctly.Color contrast: Test for sufficient contrast between text and background to aid users with visual impairments.Alternative text for images: Check that all images have descriptive alt text for users who cannot see them.Captioning and audio descriptions: Ensure multimedia content has captions and descriptions for users with hearing or visual impairments.Automated tools can assist in identifying some Section 508 compliance issues, butmanual testingis also necessary to fully ensure accessibility.Test automationengineers should integrate both automated and manual accessibility checks into their testing strategy to cover the broad spectrum of requirements outlined in Section 508. This integration helps in creating an inclusive user experience and mitigates legal and reputational risks associated with non-compliance.
+- What are ARIA roles and how are they used in accessibility testing?ARIA roles are part of the Accessible Rich Internet Applications specification, which defines ways to make web content and web applications more accessible to people with disabilities. ARIA roles provide semantic information about features, structures, and behaviors, allowing assistive technologies to convey appropriate information to users.Inaccessibility testing, ARIA roles are used to:Identify UI elementsto assistive technologies, such as screen readers, by defining roles likebutton,dialog,menu, andprogressbar.Communicate the stateof UI elements with roles likearia-expandedfor collapsible content oraria-checkedfor checkboxes.Define the structureof web content with roles such asnavigation,main,complementary, andcontentinfo.To test ARIA roles:Verify correct implementationof roles and properties using automated tools or manual inspection.Ensure roles matchthe function of the element (e.g.,role="button"for clickable elements).Check for dynamic changesin ARIA states and properties with user interaction.Use screen readersto confirm that roles and states are announced correctly.Example of a button with ARIA role:<button role="button" aria-pressed="false">Toggle</button>In this example, therole="button"communicates the element's function, andaria-pressedindicates the toggle state.Test automationengineersshould integrate ARIA role validation into their testing suites to ensure web applications are accessible and provide the necessary context to assistive technologies.
 
-总体而言，无障碍测试是软件质量保证的关键组成部分，确保包容性和法律合规性。
+Key standards and guidelines foraccessibility testinginclude:
+[accessibility testing](/wiki/accessibility-testing)- Web Content Accessibility Guidelines (WCAG): The primary international standards for web accessibility, detailing how to make web content more accessible to people with disabilities. Follow the latest version, currently WCAG 2.1, and aim for at least AA level compliance.
+- Accessible Rich Internet Applications (ARIA): Defines a way to make web content and web applications more accessible to people with disabilities. Use ARIA roles and properties to enhance the accessibility of dynamic content and complex user interface components.
+- Section 508: U.S. federal law requiring all electronic and information technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities. Ensure your software meets these standards if it will be used by federal agencies or contractors.
+- EN 301 549: European standard for digital accessibility, specifying requirements for ICT products and services to ensure they are more accessible to people with disabilities.
+- ISO/IEC 40500: International standard identical to WCAG 2.0, providing a stable, referenceable technical standard.
 
-### 为什么无障碍测试很重要？
+Web Content Accessibility Guidelines (WCAG): The primary international standards for web accessibility, detailing how to make web content more accessible to people with disabilities. Follow the latest version, currently WCAG 2.1, and aim for at least AA level compliance.
+**Web Content Accessibility Guidelines (WCAG)**
+Accessible Rich Internet Applications (ARIA): Defines a way to make web content and web applications more accessible to people with disabilities. Use ARIA roles and properties to enhance the accessibility of dynamic content and complex user interface components.
+**Accessible Rich Internet Applications (ARIA)**
+Section 508: U.S. federal law requiring all electronic and information technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities. Ensure your software meets these standards if it will be used by federal agencies or contractors.
+**Section 508**
+EN 301 549: European standard for digital accessibility, specifying requirements for ICT products and services to ensure they are more accessible to people with disabilities.
+**EN 301 549**
+ISO/IEC 40500: International standard identical to WCAG 2.0, providing a stable, referenceable technical standard.
+**ISO/IEC 40500**
+When conductingaccessibility testing, adhere to these guidelines:
+[accessibility testing](/wiki/accessibility-testing)- Automate what you can: Use automated tools to catch easy-to-detect issues, but remember they can't catch everything.
+- Manual testing: Complementautomated testingwith manual checks, especially for subjective criteria like ease of navigation and understanding.
+- User testing: Involve real users with disabilities in testing to get authentic feedback on accessibility.
+- Continuous compliance: Integrateaccessibility testinginto your continuous integration/continuous deployment (CI/CD) pipeline to ensure ongoing compliance.
+- Stay updated: Keep abreast of updates to accessibility standards and guidelines, as they evolve over time.
 
-无障碍测试的重要性在于确保**所有用户**，包括残障人士，都能有效地访问和使用软件产品。通过识别和解决无障碍障碍，它推动了**包容性设计**，提升了各种用户的**用户体验**。这种测试不仅涉及到道德责任和用户倡导，还在许多地区是法律要求，帮助组织遵守法规，避免潜在的**法律风险**。
+Automate what you can: Use automated tools to catch easy-to-detect issues, but remember they can't catch everything.
+**Automate what you can**
+Manual testing: Complementautomated testingwith manual checks, especially for subjective criteria like ease of navigation and understanding.
+**Manual testing**[Manual testing](/wiki/manual-testing)[automated testing](/wiki/automated-testing)
+User testing: Involve real users with disabilities in testing to get authentic feedback on accessibility.
+**User testing**
+Continuous compliance: Integrateaccessibility testinginto your continuous integration/continuous deployment (CI/CD) pipeline to ensure ongoing compliance.
+**Continuous compliance**[accessibility testing](/wiki/accessibility-testing)
+Stay updated: Keep abreast of updates to accessibility standards and guidelines, as they evolve over time.
+**Stay updated**
+WCAG, or theWeb Content Accessibility Guidelines, is a set of recommendations for making web content more accessible to people with disabilities. It's developed through the W3C process in cooperation with individuals and organizations around the world, aiming to provide a single shared standard for web content accessibility that meets the needs of individuals, organizations, and governments internationally.
+**Web Content Accessibility Guidelines**
+WCAG is important because it serves as aglobal benchmarkfor web accessibility, ensuring that websites, applications, and digital tools are usable by everyone, including those with auditory, cognitive, neurological, physical, speech, and visual disabilities. Compliance with WCAG helps in removing barriers that prevent interaction with, or access to websites, by people with disabilities. When sites are correctly designed, developed, and edited, all users have equal access to information and functionality.
+**global benchmark**
+Following WCAG guidelines is not only a matter ofethical responsibilityandinclusivitybut also a legal requirement in many jurisdictions. Non-compliance can lead to legal repercussions and damage to an organization's reputation. Moreover, adhering to WCAG can improve the overall user experience and potentially increase the audience reach, as accessible sites tend to be more SEO-friendly and have better usability for all users, not just those with disabilities.
+**ethical responsibility****inclusivity**
+WCAG compliance is categorized into three levels of conformance:
+- Level A: The most basic web accessibility features. Websites must satisfy this level in order not to exclude groups of people with disabilities. It includes things like providing text alternatives for non-text content and ensuring that navigation is possible using a keyboard.
+- Level AA: Deals with the biggest and most common barriers for disabled users. This level introduces standards such as providing captions for audio content and ensuring that text is readable and understandable. Meeting this level is often a legal requirement in many organizations and governments.
+- Level AAA: The highest and most stringent level of WCAG compliance. This level includes a wider range of criteria to improve accessibility for different types of disabilities. It encompasses all Level A and AA requirements and adds more, such as providing sign language interpretation for audio content and ensuring that live audio content has a lower background noise level. However, it is not always possible to satisfy all Level AAA success criteria for some content, so it is not a strict requirement for full compliance.
 
-此外，无障碍测试还可能带来**SEO 改善**，因为搜索引擎更青睐无障碍网站，可能提高网站的可见性和覆盖范围。它还鼓励采用**最佳编码实践**，产生更干净、更易维护的代码。通过在开发过程的早期融入无障碍考虑，公司可以降低在后期追加无障碍功能所需的成本和工作量。
+Level A: The most basic web accessibility features. Websites must satisfy this level in order not to exclude groups of people with disabilities. It includes things like providing text alternatives for non-text content and ensuring that navigation is possible using a keyboard.
+**Level A**
+Level AA: Deals with the biggest and most common barriers for disabled users. This level introduces standards such as providing captions for audio content and ensuring that text is readable and understandable. Meeting this level is often a legal requirement in many organizations and governments.
+**Level AA**
+Level AAA: The highest and most stringent level of WCAG compliance. This level includes a wider range of criteria to improve accessibility for different types of disabilities. It encompasses all Level A and AA requirements and adds more, such as providing sign language interpretation for audio content and ensuring that live audio content has a lower background noise level. However, it is not always possible to satisfy all Level AAA success criteria for some content, so it is not a strict requirement for full compliance.
+**Level AAA**
+Each level builds on the previous one, with AAA including all criteria from AA and A. When aiming for compliance, it's important to note that Level AA is typically the target standard for most websites, as it provides a balance between improving accessibility and being realistically achievable.
 
-简而言之，无障碍测试之所以重要，原因如下：
+Section 508 is a part of the Rehabilitation Act of 1973 which requires federal agencies to make their electronic and information technology (EIT) accessible to people with disabilities. In the context of softwaretest automation, Section 508 compliance means ensuring that applications and websites are usable by individuals with a range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.
+[test automation](/wiki/test-automation)
+To comply with Section 508, automated tests should include checks for:
+- Keyboard navigability: Ensure all functions can be operated via keyboard commands without requiring a mouse.
+- Screen reader compatibility: Verify that content is structured in a way that screen readers can interpret and vocalize it correctly.
+- Color contrast: Test for sufficient contrast between text and background to aid users with visual impairments.
+- Alternative text for images: Check that all images have descriptive alt text for users who cannot see them.
+- Captioning and audio descriptions: Ensure multimedia content has captions and descriptions for users with hearing or visual impairments.
+**Keyboard navigability****Screen reader compatibility****Color contrast****Alternative text for images****Captioning and audio descriptions**
+Automated tools can assist in identifying some Section 508 compliance issues, butmanual testingis also necessary to fully ensure accessibility.Test automationengineers should integrate both automated and manual accessibility checks into their testing strategy to cover the broad spectrum of requirements outlined in Section 508. This integration helps in creating an inclusive user experience and mitigates legal and reputational risks associated with non-compliance.
+[manual testing](/wiki/manual-testing)[Test automation](/wiki/test-automation)
+ARIA roles are part of the Accessible Rich Internet Applications specification, which defines ways to make web content and web applications more accessible to people with disabilities. ARIA roles provide semantic information about features, structures, and behaviors, allowing assistive technologies to convey appropriate information to users.
 
-- **促进包容性**，确保软件能够被各种能力的人使用。
-- **履行法律义务**，帮助组织遵守无障碍标准，避免法律问题。
-- **提升 SEO**，可能增加软件的可见性和覆盖范围。
-- **鼓励更好的编码实践**，产生更易维护、更健壮的软件。
+Inaccessibility testing, ARIA roles are used to:
+**accessibility testing**[accessibility testing](/wiki/accessibility-testing)- Identify UI elementsto assistive technologies, such as screen readers, by defining roles likebutton,dialog,menu, andprogressbar.
+- Communicate the stateof UI elements with roles likearia-expandedfor collapsible content oraria-checkedfor checkboxes.
+- Define the structureof web content with roles such asnavigation,main,complementary, andcontentinfo.
+**Identify UI elements**`button``dialog``menu``progressbar`**Communicate the state**`aria-expanded``aria-checked`**Define the structure**`navigation``main``complementary``contentinfo`
+To test ARIA roles:
+1. Verify correct implementationof roles and properties using automated tools or manual inspection.
+2. Ensure roles matchthe function of the element (e.g.,role="button"for clickable elements).
+3. Check for dynamic changesin ARIA states and properties with user interaction.
+4. Use screen readersto confirm that roles and states are announced correctly.
+**Verify correct implementation****Ensure roles match**`role="button"`**Check for dynamic changes****Use screen readers**
+Example of a button with ARIA role:
 
-忽视无障碍测试可能导致**较小的用户群**、潜在的**法律挑战**，以及**产品改进的遗憾机会**。
-
-### 无障碍测试的目标是什么？
-
-无障碍测试的目标在于确保软件产品对具有各种**能力和障碍**的人都是**可用的**。这包括验证产品是否**符合**无障碍标准和指南，如 Web 内容无障碍指南（WCAG）和第 508 条。通过这一过程，旨在提供一种**包容性用户体验**，使具有视觉、听觉、身体、语音、认知、语言、学习和神经障碍等障碍的个体能够**有效地导航**、**与之交互**和**访问内容**。
-
-无障碍测试还寻求**识别和消除**可能阻碍残障人士使用产品的障碍，确保所有用户对信息和功能都有**平等的访问权**。为此，它采用了**自动化工具**和**手动技术**的组合，以涵盖自动化本身可能无法捕捉的各个方面。
-
-最终目标是**维护法律和伦理标准**，**避免歧视**，通过使产品面向更广泛的受众，**拓展市场覆盖范围**。这不仅仅是合规性问题；更关涉到**接纳多样性**和**提高用户满意度**。
-
-### 无障碍测试如何让用户受益？
-
-无障碍测试通过确保软件产品可供具有各种能力和残疾的人使用，使更广泛的用户能够有效地与应用程序、网站或工具进行互动，而不受身体或认知挑战的影响。通过适应屏幕阅读器、盲文终端和语音识别软件等辅助技术，无障碍测试有助于打造更加公正的用户体验。
-
-对于残障用户，无障碍测试可能意味着能否在网上执行基本任务与面临重大障碍之间的区别。它实现了独立导航和交互，这对于个人的自主权和尊严至关重要。此外，对于用户来说，它可以减少挫折感，提高效率，因为他们可以在不受不必要阻碍的情况下访问和使用功能和信息。
-
-除了直接惠及用户外，无障碍测试还可能导致对所有用户的可用性的提升。许多无障碍功能，如清晰的导航和易读的字体，都会提升整体用户体验。通过专注于无障碍性，开发人员可能会无意中改善更广泛用户群体的设计和功能，从而实现更直观和用户友好的产品。
-
-最后，无障碍测试还可以帮助避免由于不遵守无障碍法律法规而可能产生的法律后果，确保软件不仅具有包容性，而且在法律上合规。
-
-### 不进行无障碍测试会有什么影响？
-
-不进行无障碍测试可能带来严重的影响：
-
-- **排斥用户**：没有进行无障碍测试，可能导致残障人士无法使用软件，从而有效地将他们排除在访问产品或服务的范围之外。
-- **法律责任**：未遵守《美国残疾人法案》（ADA）或第 508 条等法律标准可能引发诉讼和财务处罚。
-- **品牌受损**：不可访问性可能损害公司的声誉，表明公司对所有用户的考虑不足。
-- **市场覆盖减少**：忽视无障碍测试限制了潜在用户群，因为残障人士代表了一个重要的市场部分。
-- **用户体验差**：无障碍问题可能导致用户体验令人沮丧，不仅对残障用户如此，对于那些暂时或特定限制的用户也是如此。
-- **成本增加**：在开发后期或发布后识别和修复无障碍问题通常比在常规测试周期内解决它们更为昂贵。
-
-总之，忽视无障碍测试可能会在道德、法律、财务和声誉方面产生后果，同时也损害软件的整体质量和可用性。
-
-## 标准和指引
-
-### 无障碍测试的关键标准和指南是什么？
-
-无障碍测试的关键标准和指南包括：
-
-- **Web Content Accessibility Guidelines (WCAG)**：这是网络无障碍的主要国际标准，详细说明了如何使网络内容对残障人士更加无障碍。请遵循最新版本，目前是 WCAG 2.1，并力争至少达到 AA 级的合规标准。
-- **Accessible Rich Internet Applications (ARIA)**：ARIA 定义了一种使网络内容和网络应用对残障人士更加无障碍的方式。使用 ARIA 角色和属性来增强动态内容和复杂用户界面组件的可访问性。
-- **Section 508**：这是美国的联邦法律，要求联邦政府开发、采购、维护或使用的所有电子和信息技术都应对残障人士具备可访问性。如果软件将被联邦机构或承包商使用，请确保符合这些标准。
-- **EN 301 549**：这是欧洲数字可访问性的标准，规定了信息通信技术产品和服务的要求，以确保它们对残障人士更加可访问。
-- **ISO/IEC 40500**：这是与 WCAG 2.0 相同的国际标准，提供一个稳定的、可引用的技术标准。
-
-在进行无障碍测试时，请遵循以下准则：
-
-- **尽量自动化**：使用自动化工具来捕捉易于检测的问题，但请记住它们无法捕捉所有问题。
-- **[手工测试](../M/manual-testing.md)**：结合[自动化测试](../A/automated-testing.md)进行手动检查，特别是对于主观标准，如导航和理解的便利性。
-- **用户测试**：让真实的残障用户参与测试，以获取有关可访问性的真实反馈。
-- **持续合规性**：将无障碍测试整合到您的持续集成/持续部署（CI/CD）管道中，以确保持续合规。
-- **保持更新**：随时关注无障碍标准和指南的更新，因为它们会随时间而演变。
-
-### 什么是 WCAG？为什么它很重要？
-
-WCAG，或**Web Content Accessibility Guidelines**（网络内容可访问性指南），是一系列旨在使网络内容对残障人士更加无障碍的建议。这一标准是通过与世界各地的个人和组织合作，在 W3C 的流程中制定的，其目标是提供一个全球共享的网络内容可访问性标准，以满足全球个人、组织和政府的需求。
-
-WCAG 的重要性在于它作为**全球可访问性的基准**，确保网站、应用程序和数字工具对所有人都可用，包括那些具有听觉、认知、神经、肢体、言语和视觉障碍的人。遵循 WCAG 有助于消除阻碍残障人士与网站进行交互或访问的障碍。当网站经过正确的设计、开发和编辑时，所有用户都能平等地访问信息和功能。
-
-遵循 WCAG 的指南不仅是一种**道德责任**和**包容性**，在许多司法辖区中也是法律要求。不遵守可能导致法律后果，并损害组织的声誉。此外，遵守 WCAG 可以改善整体用户体验，潜在地扩大受众范围，因为无障碍站点往往更符合 SEO 标准，并对所有用户，而不仅仅是残障用户，具有更好的可用性。
-
-### WCAG 合规性有哪些不同级别？
-
-WCAG 合规性被划分为三个符合级别：
-
-- **A 级**：最基本的网络可访问性功能。为了不排除残障人士群体，网站必须满足此级别。这包括提供非文本内容的文本替代以及确保可以使用键盘进行导航等功能。
-- **AA 级**：解决残障用户面临的最大和最常见的障碍。此级别引入了一些标准，例如为音频内容提供字幕，并确保文本可读且可理解。在许多组织和政府中，满足此级别通常是法律要求。
-- **AAA 级**：WCAG 合规性的最高和最严格级别。此级别包括更广泛的标准，以提高不同类型残障人士的可访问性。它涵盖了所有 A 级和 AA 级的要求，并增加了更多内容，例如为音频内容提供手语翻译，确保实时音频内容的背景噪音水平较低。然而，并非总是可能满足所有 AAA 级成功标准，因此这不是完全合规的严格要求。
-
-每个级别都是在前一个级别的基础上构建的，AAA 级包含 AA 和 A 的所有标准。在追求合规性时，重要的是要注意，AA 级通常是大多数网站的目标标准，因为它在提高可访问性和实际可实现性之间取得了平衡。
-
-### 什么是第 508 条以及它与无障碍性测试有何关系？
-
-Section 508 是 1973 年康复法案的一部分，要求联邦机构使其电子和信息技术（EIT）对残障人士可访问。在软件[测试自动化](../T/test-automation.md)的情境中，Section 508 合规性意味着确保应用程序和网站可供具有各种残障的个体使用，包括视觉、听觉、身体、言语、认知、语言、学习和神经系统残障。
-
-为了遵守 Section 508，自动化测试应包括以下检查：
-
-- **键盘导航性**：确保所有功能都可以通过键盘命令操作，而无需鼠标。
-- **屏幕阅读器兼容性**：验证内容是否以屏幕阅读器能够正确解释和朗读的方式结构化。
-- **颜色对比度**：测试文本与背景之间是否有足够的对比，以帮助视觉障碍用户。
-- **图像的替代文本**：检查所有图像是否为不能看到它们的用户提供了描述性的替代文本。
-- **字幕和音频描述**：确保多媒体内容对于听力或视觉障碍的用户具有字幕和描述。
-
-自动化工具可以帮助识别一些 Section 508 合规性问题，但[手工测试](../M/manual-testing.md)也是必要的，以确保完全的可访问性。[测试自动化](../T/test-automation.md)工程师应将自动和手动的可访问性检查集成到其测试策略中，以涵盖 Section 508 中概述的广泛要求。这种集成有助于创建一个包容性的用户体验，并减轻与不合规相关的法律和声誉风险。
-
-### ARIA 角色是什么以及它们如何在无障碍性测试中使用？
-
-ARIA 角色是可访问丰富互联网应用规范的一部分，该规范旨在定义使网络内容和网络应用对残障人士更具可访问性的方法。ARIA 角色提供了关于功能、结构和行为的语义信息，使辅助技术能够向用户传达适当的信息。
-
-在**无障碍测试**中，ARIA 角色用于：
-
-- 通过定义`button`、`dialog`、`menu`和`progressbar`等角色，向辅助技术（如屏幕阅读器）**识别 UI 元素**。
-- 通过使用`aria-expanded`（用于可折叠内容）或`aria-checked`（用于复选框）等角色，**传达 UI 元素的状态**。
-- 利用`navigation`、`main`、`complementary`和`contentinfo`等角色，**定义 Web 内容的结构**。
-
-为测试 ARIA 角色：
-
-1. 使用自动化工具或手动检查，**验证角色和属性的正确实现**。
-2. **确保角色与元素的功能匹配**（例如，对于可点击元素，使用`role="button"`）。
-3. 随用户交互**检查 ARIA 状态和属性的动态变化**。
-4. 使用屏幕阅读器**确认角色和状态是否被正确宣读**。
-
-ARIA 角色示例：
-
-```javascript
+```
 <button role="button" aria-pressed="false">Toggle</button>
 ```
+`<button role="button" aria-pressed="false">Toggle</button>`
+In this example, therole="button"communicates the element's function, andaria-pressedindicates the toggle state.
+`role="button"``aria-pressed`
+Test automationengineersshould integrate ARIA role validation into their testing suites to ensure web applications are accessible and provide the necessary context to assistive technologies.
+**Test automationengineers**[Test automation](/wiki/test-automation)
+#### Tools and Techniques
+- What tools are commonly used for accessibility testing?Commonly used tools foraccessibility testinginclude:Axe: An open-source library that can be integrated into testing frameworks. It's available as a browser extension and as a CLI tool.npm install axe-core --save-devWAVE (Web Accessibility Evaluation Tool): A suite of evaluation tools that help authors make their web content more accessible. It includes a browser extension and online service.Lighthouse: An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, and more.lighthouse https://example.com --only-categories=accessibilityJAWS (Job Access With Speech): A screen reader for Windows that allows visually impaired users to read the screen either with a text-to-speech output or by a Braille display.NVDA (NonVisual Desktop Access): A free and open-source screen reader for Windows.VoiceOver: A screen reader built into Apple Inc.'s macOS and iOS operating systems.Color Contrast Analyzers: Tools like the Colour Contrast Analyser (CCA) help you determine the legibility of text and the contrast of visual elements.Tenon.io: An API-first, automated accessibility testing tool that can be integrated into development pipelines.Pa11y: An automated accessibility testing tool that runs HTML CodeSniffer from the command line for programmatic accessibility reporting.pa11y http://example.comAccessibility Insights: A tool that provides guidance and solutions for accessibility testing, available as a browser extension and Windows application.These tools help automate the detection of accessibility issues, which can then be addressed to ensure that software products are usable by people with a wide range of disabilities.
+- What are some manual techniques for accessibility testing?Manual techniques foraccessibility testinginvolve a combination ofuser simulations,assistive technology usage, andcheckliststo ensure that software can be used by people with various disabilities. Here are some techniques:Keyboard Navigation: Navigate the application using only the keyboard to ensure that all interactive elements are reachable and usable without a mouse.Screen Reader Testing: Use screen readers like NVDA or JAWS to experience the application as a visually impaired user would. Check for proper reading of elements, order, and context.Color Contrast Analysis: Manually check color combinations using tools like the Colour Contrast Analyser to ensure sufficient contrast for users with color vision deficiencies.Manual CodeInspection: Review HTML/CSS code for semantic structure, proper use of headings, labels, and roles that assistive technologies rely on.Zoom and Magnification: Test the application under different levels of zoom and magnification to ensure that the content remains readable and functional.Content Readability: Evaluate the content for readability, ensuring that language is clear and simple, which benefits users with cognitive disabilities.Focus Management: Ensure that the focus order is logical and visible, which is crucial for users who navigate via keyboard or assistive technologies.User Testing with Disabled Participants: Engage users with disabilities in the testing process to get direct feedback on the accessibility of the application.These manual methods complementautomated testingby covering aspects that require human judgment and perspective, which are often missed by automated tools.
+- How can automated tools be used in accessibility testing?Automated tools streamlineaccessibility testingby rapidly scanning web pages and applications for common accessibility issues. They can be integrated into CI/CD pipelines to ensurecontinuous compliancewith accessibility standards. Tools likeaxe-core,WAVE, orLighthouseofferAPIsand plugins for integration with test frameworks such asSelenium,Jest, orCypress.Use automated tools to:Detect code-level issues: Identify problems like missing alt text, improper use of ARIA roles, and color contrast deficiencies.Run regression tests: Ensure new code doesn't introduce accessibility regressions.Generate reports: Create detailed reports for technical and non-technical stakeholders.Prioritize fixes: Highlight critical issues that impact users the most.Example of integrating anaccessibility testingtool with a test framework:const axe = require('axe-core');
+const { browser, by, element } = require('protractor');
 
-在此示例中，`role="button"`传达了元素的功能，而`aria-pressed`指示了切换状态。
+describe('Accessibility checks', () => {
+  it('should analyze the page', async () => {
+    await browser.get('https://example.com');
+    const results = await axe.run();
+    expect(results.violations.length).toBe(0, 'Accessibility violations found');
+  });
+});Automated tools are not a replacement formanual testingor user testing with people with disabilities, but they are avaluable first stepin identifying and mitigating accessibility barriers. They help maintain a baseline of accessibility and reduce the number of issues that require manual review.
+- What are the limitations of automated accessibility testing tools?Automatedaccessibility testingtools have several limitations:False Positives/Negatives: Tools may report issues that aren't actual barriers (false positives) or miss real issues (false negatives).Contextual Understanding: They lack the ability to understand context and meaning, which can be critical for certain accessibility checks.User Experience: Automated tools can't fully assess user experience, including ease of navigation and comprehension for users with disabilities.Dynamic Content: They often struggle with dynamic content that changes in response to user actions or with complex JavaScript interactions.Visual Design and Readability: Tools may not accurately judge visual design elements, such as contrast and readability, especially in graphical content.Keyboard Navigation: While some tools can simulate keyboard navigation, they may not effectively identify all issues encountered by keyboard-only users.Screen Reader Compatibility: Testing with actual screen readers is necessary, as tools can't replicate the experience of a screen reader user.Assistive Technology Variance: There's a wide range of assistive technologies, and automated tools can't test compatibility with all of them.Comprehensive Testing: No single tool can cover all accessibility guidelines; multiple tools and manual testing are often required for thorough testing.To mitigate these limitations, combineautomated testingwithmanual testinganduser testingwith people who have disabilities. This approach provides a more accurate and holistic assessment of accessibility.
+- How can you test for different types of disabilities?Testing for different types of disabilities involves simulating the user experience of individuals with various impairments. This includes visual, auditory, motor, and cognitive disabilities. Here are some strategies:Visual Impairments: Use screen readers like NVDA or JAWS to navigate your application. Ensure that all content is readable and that navigation is possible without visual cues. Test with different contrast settings and font sizes to accommodate users with low vision.Auditory Impairments: Verify that all audio content has text alternatives, such as captions or transcripts. Test that the application is usable without sound and that no essential information is conveyed through audio alone.Motor Impairments: Test keyboard navigation by using only the tab key, enter, space, and arrow keys. Ensure that all interactive elements are reachable and operable with the keyboard. Consider the needs of users who cannot use a mouse or have limited fine motor control.Cognitive Impairments: Simplify and structure content to support users with cognitive disabilities. Test for consistent navigation and predictable interactions. Use clear language and provide the ability to extend time limits where applicable.Incorporateassistive technologiesanduser preferencesin your testing environment to simulate different disability scenarios. This includes voice control software, alternative input devices, and browser extensions that modify display settings.Remember, while automated tools can catch many accessibility issues, they cannot detect all nuances of user experience for people with disabilities.Manual testingwith real users or experts in accessibility is crucial for comprehensive evaluation.
 
-**[测试自动化](../T/test-automation.md)工程师**应将 ARIA 角色验证整合到其测试套件中，以确保 Web 应用具有可访问性并为辅助技术提供必要的上下文。
-
-## 工具和技术
-
-### 无障碍性测试常用哪些工具？
-
-常用的无障碍测试工具有：
-
-- **Axe**：这是一个开源库，可集成到测试框架中，可以作为浏览器扩展和 CLI 工具使用。
-
-```shell
-    npm install axe-core --save-dev
+Commonly used tools foraccessibility testinginclude:
+[accessibility testing](/wiki/accessibility-testing)- Axe: An open-source library that can be integrated into testing frameworks. It's available as a browser extension and as a CLI tool.npm install axe-core --save-dev
+- WAVE (Web Accessibility Evaluation Tool): A suite of evaluation tools that help authors make their web content more accessible. It includes a browser extension and online service.
+- Lighthouse: An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, and more.lighthouse https://example.com --only-categories=accessibility
+- JAWS (Job Access With Speech): A screen reader for Windows that allows visually impaired users to read the screen either with a text-to-speech output or by a Braille display.
+- NVDA (NonVisual Desktop Access): A free and open-source screen reader for Windows.
+- VoiceOver: A screen reader built into Apple Inc.'s macOS and iOS operating systems.
+- Color Contrast Analyzers: Tools like the Colour Contrast Analyser (CCA) help you determine the legibility of text and the contrast of visual elements.
+- Tenon.io: An API-first, automated accessibility testing tool that can be integrated into development pipelines.
+- Pa11y: An automated accessibility testing tool that runs HTML CodeSniffer from the command line for programmatic accessibility reporting.pa11y http://example.com
+- Accessibility Insights: A tool that provides guidance and solutions for accessibility testing, available as a browser extension and Windows application.
+**Axe**
 ```
-
-- **WAVE（Web Accessibility Evaluation Tool）**：WAVE 是一套评估工具，帮助作者使他们的网络内容更具可访问性，包括浏览器扩展和在线服务。
-- **[Lighthouse](../L/lighthouse.md)**：Lighthouse 是一个用于提高网页质量的开源自动化工具，它有性能、可访问性、渐进式 Web 应用等审核。
-
-    ```shell
-    lighthouse https://example.com --only-categories=accessibility
-    ```
-
-- **JAWS（Job Access With Speech）**：这是 Windows 上的一个屏幕阅读器，允许视力受损的用户通过文本转语音输出或使用盲文显示屏读取屏幕。
-- **NVDA（NonVisual Desktop Access）**：这是 Windows 上的一个免费开源屏幕阅读器。
-- **VoiceOver**：这是内置在 Apple Inc.的 macOS 和 iOS 操作系统中的屏幕阅读器。
-- **颜色对比分析工具**：比如颜色对比分析仪（CCA），它可以帮助您确定文本的可读性以及视觉元素的对比度。
-- **Tenon.io**：这是一个以 API 为先的自动化无障碍测试工具，可以集成到开发流程中。
-- **Pa11y**：这是一个运行 HTML CodeSniffer 的命令行工具，用于编程化的无障碍报告。
-
-```shell
-    pa11y http://example.com
+npm install axe-core --save-dev
 ```
+`npm install axe-core --save-dev`**WAVE (Web Accessibility Evaluation Tool)****Lighthouse**[Lighthouse](/wiki/lighthouse)
+```
+lighthouse https://example.com --only-categories=accessibility
+```
+`lighthouse https://example.com --only-categories=accessibility`**JAWS (Job Access With Speech)****NVDA (NonVisual Desktop Access)****VoiceOver****Color Contrast Analyzers****Tenon.io****Pa11y**
+```
+pa11y http://example.com
+```
+`pa11y http://example.com`**Accessibility Insights**
+These tools help automate the detection of accessibility issues, which can then be addressed to ensure that software products are usable by people with a wide range of disabilities.
 
-- **Accessibility Insights**：这是一个提供无障碍测试指导和解决方案的工具，可以作为浏览器扩展和 Windows 应用程序使用。
-
-这些工具有助于自动检测无障碍问题，从而可以解决确保软件产品对具有各种残障的人可用。
-
-### 有哪些无障碍测试的人工技术？
-
-人工进行无障碍测试的技术包括**用户模拟**、**辅助技术使用**和**检查表**的综合应用，以确保软件能够被具有不同残障的人使用。以下是一些手动技巧：
-
-- **键盘导航**：使用键盘浏览应用程序，确保所有交互元素都可以在没有鼠标的情况下轻松访问和使用。
-- **屏幕阅读器测试**：使用屏幕阅读器如 NVDA 或 JAWS，模拟视觉受损用户的体验。检查元素的正确阅读、顺序和上下文的呈现。
-- **颜色对比度分析**：使用工具如颜色对比度分析器手动检查颜色组合，确保对于有色觉缺陷的用户有足够的对比度。
-- **手动代码[检查](../I/inspection.md)**：审查 HTML/CSS 代码，检查语义结构、标题、标签和辅助技术所依赖的角色的正确使用。
-- **缩放和放大**：在不同的缩放和放大级别下测试应用程序，确保内容仍然可读且功能正常。
-- **内容可读性**：评估内容的可读性，确保语言清晰简单，符合认知障碍用户的需求。
-- **焦点管理**：确保焦点顺序合理可见，这对通过键盘或辅助技术导航的用户至关重要。
-- **残障参与者的用户测试**：让残障用户参与测试过程，直接获取应用程序可访问性的反馈。
-
-这些手动技巧与[自动化测试](../A/automated-testing.md)相辅相成，弥补了需要人类判断和视角的方面，这些方面通常被自动化工具所遗漏。
-
-### 如何在无障碍测试中使用自动化工具？
-
-自动化工具通过迅速扫描网页和应用程序，寻找常见的可访问性问题，从而简化了无障碍测试。它们可以集成到 CI/CD 流程中，以确保与可访问性标准的**持续合规**。像**axe-core**、**WAVE**或**[Lighthouse](../L/lighthouse.md)**这样的工具提供了[APIs](../A/api.md)和插件，可与测试框架（如[Selenium](../S/selenium.md)、[Jest](../J/jest.md)或[Cypress](../C/cypress.md)）集成。
-
-使用自动化工具可以：
-
-- **检测代码级问题**：识别问题，如缺少 alt 文本、错误使用 ARIA 角色和颜色对比度不足。
-- **运行回归测试**：确保新代码不引入可访问性退化。
-- **生成报告**：为技术和非技术干系人创建详细报告。
-- **优先处理修复**：突出显示影响最大的关键问题。
-
-集成无障碍测试工具与测试框架的示例：
-
-```typescript
+Manual techniques foraccessibility testinginvolve a combination ofuser simulations,assistive technology usage, andcheckliststo ensure that software can be used by people with various disabilities. Here are some techniques:
+[accessibility testing](/wiki/accessibility-testing)**user simulations****assistive technology usage****checklists**- Keyboard Navigation: Navigate the application using only the keyboard to ensure that all interactive elements are reachable and usable without a mouse.
+- Screen Reader Testing: Use screen readers like NVDA or JAWS to experience the application as a visually impaired user would. Check for proper reading of elements, order, and context.
+- Color Contrast Analysis: Manually check color combinations using tools like the Colour Contrast Analyser to ensure sufficient contrast for users with color vision deficiencies.
+- Manual CodeInspection: Review HTML/CSS code for semantic structure, proper use of headings, labels, and roles that assistive technologies rely on.
+- Zoom and Magnification: Test the application under different levels of zoom and magnification to ensure that the content remains readable and functional.
+- Content Readability: Evaluate the content for readability, ensuring that language is clear and simple, which benefits users with cognitive disabilities.
+- Focus Management: Ensure that the focus order is logical and visible, which is crucial for users who navigate via keyboard or assistive technologies.
+- User Testing with Disabled Participants: Engage users with disabilities in the testing process to get direct feedback on the accessibility of the application.
+**Keyboard Navigation****Screen Reader Testing****Color Contrast Analysis****Manual CodeInspection**[Inspection](/wiki/inspection)**Zoom and Magnification****Content Readability****Focus Management****User Testing with Disabled Participants**
+These manual methods complementautomated testingby covering aspects that require human judgment and perspective, which are often missed by automated tools.
+[automated testing](/wiki/automated-testing)
+Automated tools streamlineaccessibility testingby rapidly scanning web pages and applications for common accessibility issues. They can be integrated into CI/CD pipelines to ensurecontinuous compliancewith accessibility standards. Tools likeaxe-core,WAVE, orLighthouseofferAPIsand plugins for integration with test frameworks such asSelenium,Jest, orCypress.
+[accessibility testing](/wiki/accessibility-testing)**continuous compliance****axe-core****WAVE****Lighthouse**[Lighthouse](/wiki/lighthouse)[APIs](/wiki/api)[Selenium](/wiki/selenium)[Jest](/wiki/jest)[Cypress](/wiki/cypress)
+Use automated tools to:
+- Detect code-level issues: Identify problems like missing alt text, improper use of ARIA roles, and color contrast deficiencies.
+- Run regression tests: Ensure new code doesn't introduce accessibility regressions.
+- Generate reports: Create detailed reports for technical and non-technical stakeholders.
+- Prioritize fixes: Highlight critical issues that impact users the most.
+**Detect code-level issues****Run regression tests****Generate reports****Prioritize fixes**
+Example of integrating anaccessibility testingtool with a test framework:
+[accessibility testing](/wiki/accessibility-testing)
+```
 const axe = require('axe-core');
 const { browser, by, element } = require('protractor');
 
@@ -264,149 +251,189 @@ describe('Accessibility checks', () => {
   });
 });
 ```
+`const axe = require('axe-core');
+const { browser, by, element } = require('protractor');
 
-自动化工具不能取代[手工测试](../M/manual-testing.md)或与残障人士进行用户测试，但它们是识别和缓解可访问性障碍的**有价值的第一步**。它们有助于保持可访问性的基线水平，并减少需要手动审查的问题数量。
+describe('Accessibility checks', () => {
+  it('should analyze the page', async () => {
+    await browser.get('https://example.com');
+    const results = await axe.run();
+    expect(results.violations.length).toBe(0, 'Accessibility violations found');
+  });
+});`
+Automated tools are not a replacement formanual testingor user testing with people with disabilities, but they are avaluable first stepin identifying and mitigating accessibility barriers. They help maintain a baseline of accessibility and reduce the number of issues that require manual review.
+[manual testing](/wiki/manual-testing)**valuable first step**
+Automatedaccessibility testingtools have several limitations:
+[accessibility testing](/wiki/accessibility-testing)- False Positives/Negatives: Tools may report issues that aren't actual barriers (false positives) or miss real issues (false negatives).
+- Contextual Understanding: They lack the ability to understand context and meaning, which can be critical for certain accessibility checks.
+- User Experience: Automated tools can't fully assess user experience, including ease of navigation and comprehension for users with disabilities.
+- Dynamic Content: They often struggle with dynamic content that changes in response to user actions or with complex JavaScript interactions.
+- Visual Design and Readability: Tools may not accurately judge visual design elements, such as contrast and readability, especially in graphical content.
+- Keyboard Navigation: While some tools can simulate keyboard navigation, they may not effectively identify all issues encountered by keyboard-only users.
+- Screen Reader Compatibility: Testing with actual screen readers is necessary, as tools can't replicate the experience of a screen reader user.
+- Assistive Technology Variance: There's a wide range of assistive technologies, and automated tools can't test compatibility with all of them.
+- Comprehensive Testing: No single tool can cover all accessibility guidelines; multiple tools and manual testing are often required for thorough testing.
+**False Positives/Negatives**[False Positives](/wiki/false-positive)**Contextual Understanding****User Experience****Dynamic Content****Visual Design and Readability****Keyboard Navigation****Screen Reader Compatibility****Assistive Technology Variance****Comprehensive Testing**
+To mitigate these limitations, combineautomated testingwithmanual testinganduser testingwith people who have disabilities. This approach provides a more accurate and holistic assessment of accessibility.
+[automated testing](/wiki/automated-testing)**manual testing**[manual testing](/wiki/manual-testing)**user testing**
+Testing for different types of disabilities involves simulating the user experience of individuals with various impairments. This includes visual, auditory, motor, and cognitive disabilities. Here are some strategies:
+- Visual Impairments: Use screen readers like NVDA or JAWS to navigate your application. Ensure that all content is readable and that navigation is possible without visual cues. Test with different contrast settings and font sizes to accommodate users with low vision.
+- Auditory Impairments: Verify that all audio content has text alternatives, such as captions or transcripts. Test that the application is usable without sound and that no essential information is conveyed through audio alone.
+- Motor Impairments: Test keyboard navigation by using only the tab key, enter, space, and arrow keys. Ensure that all interactive elements are reachable and operable with the keyboard. Consider the needs of users who cannot use a mouse or have limited fine motor control.
+- Cognitive Impairments: Simplify and structure content to support users with cognitive disabilities. Test for consistent navigation and predictable interactions. Use clear language and provide the ability to extend time limits where applicable.
 
-### 自动无障碍测试工具有哪些局限性？
+Visual Impairments: Use screen readers like NVDA or JAWS to navigate your application. Ensure that all content is readable and that navigation is possible without visual cues. Test with different contrast settings and font sizes to accommodate users with low vision.
+**Visual Impairments**
+Auditory Impairments: Verify that all audio content has text alternatives, such as captions or transcripts. Test that the application is usable without sound and that no essential information is conveyed through audio alone.
+**Auditory Impairments**
+Motor Impairments: Test keyboard navigation by using only the tab key, enter, space, and arrow keys. Ensure that all interactive elements are reachable and operable with the keyboard. Consider the needs of users who cannot use a mouse or have limited fine motor control.
+**Motor Impairments**
+Cognitive Impairments: Simplify and structure content to support users with cognitive disabilities. Test for consistent navigation and predictable interactions. Use clear language and provide the ability to extend time limits where applicable.
+**Cognitive Impairments**
+Incorporateassistive technologiesanduser preferencesin your testing environment to simulate different disability scenarios. This includes voice control software, alternative input devices, and browser extensions that modify display settings.
+**assistive technologies****user preferences**
+Remember, while automated tools can catch many accessibility issues, they cannot detect all nuances of user experience for people with disabilities.Manual testingwith real users or experts in accessibility is crucial for comprehensive evaluation.
+**Manual testing**[Manual testing](/wiki/manual-testing)
+#### Implementation and Best Practices
+- What are some best practices for implementing accessibility testing?Best practices for implementingaccessibility testinginclude:Integrateaccessibility testingearlyin the development process to identify and fix issues when they are less costly to resolve.Educate your teamon accessibility principles and the importance of inclusive design.Create a checklistbased on WCAG guidelines to ensure all accessibility requirements are met.Use a combination of automated andmanual testingto cover the breadth and depth of accessibility issues.Automate repetitive taskssuch as color contrast checks and keyboard navigation to save time and resources.Conduct user testingwith people who have disabilities to get real-world feedback on the accessibility of your product.Regularly review and update your accessibility teststo keep up with new standards and technologies.Document accessibility issueswith clear descriptions, screenshots, or videos to help developers understand and fix the problems.Prioritize issuesbased on their impact on users and the complexity of the fix.Includeaccessibility testingin your definition of doneto ensure features are not considered complete until they are accessible.Leverage browser developer toolsand accessibility plugins to quickly identify issues during development.Stay updated with legal requirementsand industry standards to ensure compliance and avoid potential legal consequences.By following these practices, you can create a more inclusive product and improve the overall user experience for individuals with disabilities.
+- How can you incorporate accessibility testing into the software development lifecycle?Incorporatingaccessibility testinginto the software development lifecycle (SDLC) involves integrating it into each phase to ensure that accessibility is considered from the outset and throughout the process.During the requirements gathering phase, define accessibility criteria based on standards like WCAG and Section 508. Specify the required compliance level and include user stories that address the needs of people with disabilities.In the design phase, use wireframes and prototypes to evaluate accessibility considerations, such as color contrast and navigation order. Tools like color contrast analyzers can be employed early to avoid design reworks later.In the development phase, implement semantic HTML and ARIA roles to enhance accessibility. Developers should use automated tools to run preliminary checks and address issues as they code. For example:// Example of an automated test using Axe-core
+const { AxePuppeteer } = require('axe-puppeteer');
+async function checkAccessibility(page) {
+  const results = await new AxePuppeteer(page).analyze();
+  console.log(results);
+}During the testing phase, include accessibility in yourtest casesand execute both automated and manual tests. Automated tests can catch a range of issues, butmanual testingis crucial for assessing usability from a human perspective.In the deployment phase, perform a final accessibility review and validation to ensure that no new issues have been introduced.Post-deployment, establish a feedback loop with users to catch any accessibility issues that might have been missed and to remain responsive to user needs. Regularly update yourtest suitesand tools to adapt to evolving standards and technologies.By embedding accessibility into the SDLC, you ensure it is an ongoing consideration, reducing the risk of costly rework and ensuring a more inclusive product.
+- How can you ensure ongoing accessibility compliance?To ensure ongoing accessibility compliance in softwaretest automation:Integrate accessibility checksinto your regular test suites. Use tools like Axe or Wave to automate these checks.Implement continuous integration(CI) processes that include accessibility tests, ensuring they are run with every build.jobs:
+accessibility_test:
+runs-on: ubuntu-latest
+steps:
+- name: Run accessibility checks
+run: npm run test:accessibility- **Adopt a shift-left approach**, incorporating accessibility testing early in the development cycle to catch issues sooner.
+- **Update your test cases** regularly to cover new accessibility standards and guidelines as they evolve.
+- **Educate your team** on accessibility importance, encouraging developers to write accessible code from the start.
+- **Conduct periodic manual audits** to catch issues that automated tools might miss.
+- **Use real user metrics** (RUM) to monitor how actual users interact with your application, which can help identify accessibility barriers.
+- **Engage with users with disabilities** for feedback and incorporate their insights into your testing strategy.
+- **Stay informed** about legal requirements and industry best practices to ensure compliance with the latest standards.
 
-自动化无障碍测试工具存在一些限制：
+By embedding these practices into your development and testing workflows, you can maintain a high level of accessibility compliance over time.
+- What are some common accessibility issues to look for?Common accessibility issues to look for during testing include:Text alternatives: Missingalttext for images, which is crucial for screen reader users.Keyboard navigation: Inability to navigate the site using a keyboard alone, which affects users with motor disabilities.Color contrast: Insufficient contrast between text and background, making content hard to read for users with visual impairments.Focus indicators: Lack of visible focus indicators, which are essential for users who rely on keyboard navigation.Form labels: Unlabeled forms that are difficult for screen reader users to interpret.ARIA misusage: Incorrect or missing ARIA attributes that lead to poor screen reader experiences.Time-based media: Absence of captions or transcripts for audio and video content.Resizable text: Text that cannot be resized or zoomed without loss of content or functionality.Language identification: Missing language attributes that inform screen readers about the language of the text.Error identification: Inadequate error messaging that fails to guide users through correcting mistakes.Consistent navigation: Inconsistent navigation order or naming, causing confusion for users who rely on patterns.Dynamic content updates: Lack of alerts for screen readers when dynamic content updates occur.These issues can be identified through a combination of automated tools andmanual testingto ensure a comprehensive accessibility evaluation.
+- How can you make a website more accessible?To enhance website accessibility:Use semantic HTMLto structure content, ensuring elements like headings (<h1>to<h6>), lists (<ul>,<ol>), and buttons (<button>) are used correctly.Provide text alternatives(altattributes) for non-text content like images.Ensure sufficient contrastbetween text and background colors.Make all functionality available from a keyboardby using focusable elements and managing focus order.Create labelsfor interactive elements using the<label>element oraria-labelandaria-labelledby.Avoid or provide alternatives to content that causes seizures, such as flashing lights.Provide clear and consistent navigation.Include skip navigation linksto allow users to bypass repetitive content.Ensure that forms are accessible, with clear labels and error messages.Use ARIA landmarksto define regions of the page (<nav>,<main>,<aside>, etc.).Test with screen readersand other assistive technologies to identify issues.Offer options to control or stop animations, videos, and audio.Design responsive layoutsthat work on various devices and screen sizes.Use accessible color palettesand consider color blindness.Provide captions and transcriptsfor audio and video content.Ensure dynamic content updates are communicated to assistive technologiesusing ARIA live regions.Test with real userswith disabilities to get feedback on the accessibility of your site.Remember, accessibility is an ongoing commitment and should be integrated into regular development and testing cycles.
 
-- **[误报](../F/false-positive.md)或漏报**：工具可能报告并非真正存在的问题（误报），或者漏掉真实的问题（漏报）。
-- **上下文理解**：它们缺乏理解上下文和含义的能力，这对某些无障碍检查来说可能至关重要。
-- **用户体验**：自动化工具无法全面评估用户体验，包括残疾用户的导航和理解是否方便。
-- **动态内容**：它们常常难以处理根据用户操作而变化的动态内容或复杂的 JavaScript 交互。
-- **视觉设计和可读性**：工具可能无法准确评估视觉设计元素，尤其是在图形内容中，比如对比度和可读性。
-- **键盘导航**：尽管一些工具可以模拟键盘导航，但它们可能无法有效地识别仅使用键盘的用户所遇到的所有问题。
-- **屏幕阅读器兼容性**：真实屏幕阅读器的测试是必要的，因为工具无法复制屏幕阅读器用户的体验。
-- **辅助技术差异**：存在各种辅助技术，自动化工具无法测试与所有这些技术的兼容性。
-- **全面测试**：没有单一工具能够涵盖所有无障碍准则；通常需要多个工具和手动测试以进行全面的测试。
+Best practices for implementingaccessibility testinginclude:
+[accessibility testing](/wiki/accessibility-testing)- Integrateaccessibility testingearlyin the development process to identify and fix issues when they are less costly to resolve.
+- Educate your teamon accessibility principles and the importance of inclusive design.
+- Create a checklistbased on WCAG guidelines to ensure all accessibility requirements are met.
+- Use a combination of automated andmanual testingto cover the breadth and depth of accessibility issues.
+- Automate repetitive taskssuch as color contrast checks and keyboard navigation to save time and resources.
+- Conduct user testingwith people who have disabilities to get real-world feedback on the accessibility of your product.
+- Regularly review and update your accessibility teststo keep up with new standards and technologies.
+- Document accessibility issueswith clear descriptions, screenshots, or videos to help developers understand and fix the problems.
+- Prioritize issuesbased on their impact on users and the complexity of the fix.
+- Includeaccessibility testingin your definition of doneto ensure features are not considered complete until they are accessible.
+- Leverage browser developer toolsand accessibility plugins to quickly identify issues during development.
+- Stay updated with legal requirementsand industry standards to ensure compliance and avoid potential legal consequences.
+**Integrateaccessibility testingearly**[accessibility testing](/wiki/accessibility-testing)**Educate your team****Create a checklist****Use a combination of automated andmanual testing**[manual testing](/wiki/manual-testing)**Automate repetitive tasks****Conduct user testing****Regularly review and update your accessibility tests****Document accessibility issues****Prioritize issues****Includeaccessibility testingin your definition of done**[accessibility testing](/wiki/accessibility-testing)**Leverage browser developer tools****Stay updated with legal requirements**
+By following these practices, you can create a more inclusive product and improve the overall user experience for individuals with disabilities.
 
-为了缓解这些限制，应将[自动化测试](../A/automated-testing.md)与**[手工测试](../M/manual-testing.md)**和与残疾人士的**用户测试**相结合。这种方法提供了更准确、全面的可访问性评估。
-
-### 如何测试不同类型的残障？
-
-测试不同类型的残障涉及模拟具有各种障碍的个体的用户体验。这包括视觉、听觉、运动和认知残障。以下是一些策略：
-
-- **视觉障碍**：使用屏幕阅读器，如 NVDA 或 JAWS，浏览您的应用程序。确保所有内容都是可读的，可以在没有视觉提示的情况下进行导航。测试不同的对比度设置和字体大小，以适应视力较差的用户。
-
-- **听觉障碍**：验证所有音频内容是否具有文本替代，例如字幕或文字转录。测试应用程序在没有声音的情况下是否可用，并且没有基本信息仅通过音频传达。
-
-- **运动障碍**：通过仅使用 tab 键、enter 键、空格键和箭头键测试键盘导航。确保所有交互元素都可以通过键盘到达和操作。考虑不能使用鼠标或运动控制有限的用户的需求。
-
-- **认知障碍**：简化和结构化内容，以支持认知障碍的用户。测试一致的导航和可预测的交互。使用清晰的语言，并在适用的情况下提供延长时间限制的能力。
-
-在测试环境中结合**辅助技术**和**用户偏好**，模拟不同的残障场景。这包括语音控制软件、替代输入设备和修改显示设置的浏览器扩展。
-
-请记住，尽管自动化工具可以捕捉许多可访问性问题，但它们无法检测到所有残障人士的用户体验的微妙之处。与真实用户或无障碍专家进行的**[手工测试](../M/manual-testing.md)**对于全面评估至关重要。
-
-## 实施与最佳实践
-
-### 实施无障碍测试有哪些最佳做法
-
-无障碍测试通过确保软件产品适用于各种能力和残疾的人使用，使用户受益匪浅。这种包容性设计使更广泛的受众能够有效地与应用程序、网站或工具进行交互，无论他们的身体或认知挑战如何。通过适应辅助技术，如屏幕阅读器、盲文终端和语音识别软件，无障碍测试有助于创造一个更加平等的用户体验。
-
-对于残疾用户而言，无障碍测试可能意味着能否在网上执行基本任务与面临重大障碍之间的区别。它实现了**独立导航**和互动，对于个人自主性和尊严至关重要。此外，它可以**减少沮丧**并**提高效率**，因为用户可以在没有不必要障碍的情况下访问和使用功能和信息。
-
-除了直接的用户益处外，无障碍测试还可能导致所有用户的**改进的可用性**。许多无障碍功能，如清晰的导航和易读的字体，提高了整体用户体验。通过专注于无障碍性，开发人员可能会在不经意间改进更广泛用户群体的设计和功能，从而创建更直观和用户友好的产品。
-
-最后，无障碍测试还有助于**避免法律后果**，这可能是由于不符合无障碍法律和法规而引起的，确保软件不仅是包容的，而且还符合法律要求。
-
-### 如何将无障碍测试纳入软件开发生命周期？
-
-将无障碍测试纳入软件开发生命周期 (SDLC) 需要在每个阶段进行集成，以确保从一开始就考虑到了无障碍性，并在整个过程中贯穿无障碍考虑。具体操作如下：
-
-**在需求收集阶段**，基于 WCAG 和 Section 508 等标准定义无障碍性准则。明确合规级别，并包括着眼于残障人士需求的用户故事。
-
-**在设计阶段**，使用线框图和原型来评估无障碍性考虑因素，如颜色对比和导航顺序。可以提前使用颜色对比分析工具，以避免后续的设计修改。
-
-**在开发阶段**，实施语义化的 HTML 和 ARIA 角色以增强无障碍性。开发人员应使用自动化工具来运行初步检查，并在编写代码时解决问题。例如：
-
-```typescript
-// 使用 Axe-core 进行自动化测试的示例
+Incorporatingaccessibility testinginto the software development lifecycle (SDLC) involves integrating it into each phase to ensure that accessibility is considered from the outset and throughout the process.
+[accessibility testing](/wiki/accessibility-testing)
+During the requirements gathering phase, define accessibility criteria based on standards like WCAG and Section 508. Specify the required compliance level and include user stories that address the needs of people with disabilities.
+**During the requirements gathering phase**
+In the design phase, use wireframes and prototypes to evaluate accessibility considerations, such as color contrast and navigation order. Tools like color contrast analyzers can be employed early to avoid design reworks later.
+**In the design phase**
+In the development phase, implement semantic HTML and ARIA roles to enhance accessibility. Developers should use automated tools to run preliminary checks and address issues as they code. For example:
+**In the development phase**
+```
+// Example of an automated test using Axe-core
 const { AxePuppeteer } = require('axe-puppeteer');
 async function checkAccessibility(page) {
   const results = await new AxePuppeteer(page).analyze();
   console.log(results);
 }
 ```
+`// Example of an automated test using Axe-core
+const { AxePuppeteer } = require('axe-puppeteer');
+async function checkAccessibility(page) {
+  const results = await new AxePuppeteer(page).analyze();
+  console.log(results);
+}`
+During the testing phase, include accessibility in yourtest casesand execute both automated and manual tests. Automated tests can catch a range of issues, butmanual testingis crucial for assessing usability from a human perspective.
+**During the testing phase**[test cases](/wiki/test-case)[manual testing](/wiki/manual-testing)
+In the deployment phase, perform a final accessibility review and validation to ensure that no new issues have been introduced.
+**In the deployment phase**
+Post-deployment, establish a feedback loop with users to catch any accessibility issues that might have been missed and to remain responsive to user needs. Regularly update yourtest suitesand tools to adapt to evolving standards and technologies.
+**Post-deployment**[test suites](/wiki/test-suite)
+By embedding accessibility into the SDLC, you ensure it is an ongoing consideration, reducing the risk of costly rework and ensuring a more inclusive product.
 
-**在测试阶段**，将无障碍性纳入[测试用例](../T/test-case.md)中，并执行自动化和手动测试。自动化测试可以捕获各种问题，但[手工测试](../M/manual-testing.md)对于从人的角度评估可用性至关重要。
-
-**在部署阶段**，执行最终的无障碍性审查和验证，以确保没有引入新问题。
-
-**在部署后**，建立与用户的反馈循环，以捕获可能被忽略的无障碍问题，并对用户需求做出响应。定期更新[测试套件](../T/test-suite.md)和工具，以
-
-适应不断发展的标准和技术。
-
-通过将无障碍性融入 SDLC，确保它是一个持续考虑的因素，降低昂贵的重做风险，并确保产品更具包容性。
-
-### 如何确保持续符合无障碍要求？
-
-为了在软件[测试自动化](../T/test-automation.md)中确保持续的无障碍性合规性：
-
-- **将无障碍性检查融入**到您的常规测试套件中。使用 Axe 或 Wave 等工具自动进行这些检查。
-- **实施持续集成**（CI）流程，其中包括无障碍性测试，确保它们在每次构建时都得到运行。
-
-```typescript
-jobs: 
-  accessibility_test: 
-    runs-on: ubuntu-latest 
-    steps: 
-      - name: Run accessibility checks 
-        run: npm run test:accessibility
+To ensure ongoing accessibility compliance in softwaretest automation:
+[test automation](/wiki/test-automation)- Integrate accessibility checksinto your regular test suites. Use tools like Axe or Wave to automate these checks.
+- Implement continuous integration(CI) processes that include accessibility tests, ensuring they are run with every build.
+- 
+**Integrate accessibility checks****Implement continuous integration**
 ```
 
-```typescript
-**采用左移方法**，在开发周期的早期将无障碍性测试纳入其中，以更早地发现问题。
-**定期更新测试用例**，以涵盖新的无障碍性标准和指南的演变。
-**教育您的团队**，鼓励开发人员从一开始就编写具有无障碍性的代码。
-**定期进行手动审核**，以捕获自动化工具可能遗漏的问题。
-**使用实际用户指标**（RUM）监控实际用户如何与您的应用程序交互，有助于识别无障碍性障碍。
-**与残障用户互动**，获取反馈并将他们的见解纳入您的测试策略。
-**保持了解**法律要求和行业最佳实践，以确保符合最新的标准。
-
-通过将这些实践嵌入到您的开发和测试工作流中，您可以随时间保持较高水平的无障碍性合规性。
 ```
+``
+jobs:
+accessibility_test:
+runs-on: ubuntu-latest
+steps:
+- name: Run accessibility checks
+run: npm run test:accessibility
 
-### 需要注意哪些常见的无障碍问题？
+```
+- **Adopt a shift-left approach**, incorporating accessibility testing early in the development cycle to catch issues sooner.
+- **Update your test cases** regularly to cover new accessibility standards and guidelines as they evolve.
+- **Educate your team** on accessibility importance, encouraging developers to write accessible code from the start.
+- **Conduct periodic manual audits** to catch issues that automated tools might miss.
+- **Use real user metrics** (RUM) to monitor how actual users interact with your application, which can help identify accessibility barriers.
+- **Engage with users with disabilities** for feedback and incorporate their insights into your testing strategy.
+- **Stay informed** about legal requirements and industry best practices to ensure compliance with the latest standards.
 
-在测试中要关注的一些常见无障碍性问题包括：
+By embedding these practices into your development and testing workflows, you can maintain a high level of accessibility compliance over time.
+```
+`- **Adopt a shift-left approach**, incorporating accessibility testing early in the development cycle to catch issues sooner.
+- **Update your test cases** regularly to cover new accessibility standards and guidelines as they evolve.
+- **Educate your team** on accessibility importance, encouraging developers to write accessible code from the start.
+- **Conduct periodic manual audits** to catch issues that automated tools might miss.
+- **Use real user metrics** (RUM) to monitor how actual users interact with your application, which can help identify accessibility barriers.
+- **Engage with users with disabilities** for feedback and incorporate their insights into your testing strategy.
+- **Stay informed** about legal requirements and industry best practices to ensure compliance with the latest standards.
 
-- **文本替代**：图像缺少`alt`文本，这对于使用屏幕阅读器的用户至关重要。
-- **键盘导航**：无法仅使用键盘导航网站，这会影响运动功能障碍的用户。
-- **颜色对比**：文本与背景之间的对比不足，使视觉障碍用户难以阅读内容。
-- **焦点指示器**：缺少可见的焦点指示器，这对于依赖键盘导航的用户至关重要。
-- **表单标签**：未标记的表单，对于屏幕阅读器用户难以解释。
-- **ARIA 误用**：导致屏幕阅读器体验差的错误或缺失的 ARIA 属性。
-- **基于时间的媒体**：音频和视频内容缺乏字幕或文本转录。
-- **可调整大小的文本**：文本无法调整大小或缩放而不损失内容或功能。
-- **语言标识**：缺少语言属性，未告知屏幕阅读器有关文本语言的信息。
-- **错误识别**：不足的错误消息，未能引导用户纠正错误。
-- **一致的导航**：导航顺序或命名不一致，令依赖模式的用户感到困惑。
-- **动态内容更新**：动态内容更新时屏幕阅读器缺少警报。
-
-这些问题可以通过使用自动化工具和[手动测试](../M/manual-testing.md)的组合来识别，以确保全面评估无障碍性。
-
-### 如何让网站更容易访问？
-
-为了提升网站的可访问性：
-
-- **使用语义化的 HTML** 结构化内容，确保正确使用标题 (`<h1>` 到 `<h6>`)，列表 (`<ul>`, `<ol>`) 和按钮 (`<button>`) 等元素。
-- **为非文本内容提供文本替代** (`alt` 属性)，如图像。
-- **确保文本和背景颜色之间有足够的对比度**。
-- **通过使用可聚焦的元素和管理焦点顺序，使所有功能可以使用键盘访问**。
-- **为交互元素创建标签**，使用 `<label>` 元素或 `aria-label` 和 `aria-labelledby`。
-- **避免或提供对引起癫痫的内容的替代方案**，例如闪烁的灯光。
-- **提供清晰一致的导航**。
-- **包含跳转导航链接**，以允许用户跳过重复的内容。
-- **确保表单是可访问的**，包括清晰的标签和错误消息。
-- **使用 ARIA landmarks** 定义页面的区域 (`<nav>`, `<main>`, `<aside>` 等)。
-- **使用屏幕阅读器和其他辅助技术进行测试**，以识别问题。
-- **提供控制或停止动画、视频和音频的选项**。
-- **设计响应式布局**，适用于各种设备和屏幕大小。
-- **使用可访问的颜色调色板**，考虑色盲。
-- **为音频和视频内容提供字幕和文本**。
-- **确保将动态内容更新通知给辅助技术**，使用 ARIA live regions。
-- **与残障用户一起进行测试**，以获取有关您网站可访问性的反馈。
-
-请记住，可访问性是一项持续的承诺，应该融入常规的开发和测试周期中。
+By embedding these practices into your development and testing workflows, you can maintain a high level of accessibility compliance over time.`
+Common accessibility issues to look for during testing include:
+- Text alternatives: Missingalttext for images, which is crucial for screen reader users.
+- Keyboard navigation: Inability to navigate the site using a keyboard alone, which affects users with motor disabilities.
+- Color contrast: Insufficient contrast between text and background, making content hard to read for users with visual impairments.
+- Focus indicators: Lack of visible focus indicators, which are essential for users who rely on keyboard navigation.
+- Form labels: Unlabeled forms that are difficult for screen reader users to interpret.
+- ARIA misusage: Incorrect or missing ARIA attributes that lead to poor screen reader experiences.
+- Time-based media: Absence of captions or transcripts for audio and video content.
+- Resizable text: Text that cannot be resized or zoomed without loss of content or functionality.
+- Language identification: Missing language attributes that inform screen readers about the language of the text.
+- Error identification: Inadequate error messaging that fails to guide users through correcting mistakes.
+- Consistent navigation: Inconsistent navigation order or naming, causing confusion for users who rely on patterns.
+- Dynamic content updates: Lack of alerts for screen readers when dynamic content updates occur.
+**Text alternatives**`alt`**Keyboard navigation****Color contrast****Focus indicators****Form labels****ARIA misusage****Time-based media****Resizable text****Language identification****Error identification****Consistent navigation****Dynamic content updates**
+These issues can be identified through a combination of automated tools andmanual testingto ensure a comprehensive accessibility evaluation.
+[manual testing](/wiki/manual-testing)
+To enhance website accessibility:
+- Use semantic HTMLto structure content, ensuring elements like headings (<h1>to<h6>), lists (<ul>,<ol>), and buttons (<button>) are used correctly.
+- Provide text alternatives(altattributes) for non-text content like images.
+- Ensure sufficient contrastbetween text and background colors.
+- Make all functionality available from a keyboardby using focusable elements and managing focus order.
+- Create labelsfor interactive elements using the<label>element oraria-labelandaria-labelledby.
+- Avoid or provide alternatives to content that causes seizures, such as flashing lights.
+- Provide clear and consistent navigation.
+- Include skip navigation linksto allow users to bypass repetitive content.
+- Ensure that forms are accessible, with clear labels and error messages.
+- Use ARIA landmarksto define regions of the page (<nav>,<main>,<aside>, etc.).
+- Test with screen readersand other assistive technologies to identify issues.
+- Offer options to control or stop animations, videos, and audio.
+- Design responsive layoutsthat work on various devices and screen sizes.
+- Use accessible color palettesand consider color blindness.
+- Provide captions and transcriptsfor audio and video content.
+- Ensure dynamic content updates are communicated to assistive technologiesusing ARIA live regions.
+- Test with real userswith disabilities to get feedback on the accessibility of your site.
+**Use semantic HTML**`<h1>``<h6>``<ul>``<ol>``<button>`**Provide text alternatives**`alt`**Ensure sufficient contrast****Make all functionality available from a keyboard****Create labels**`<label>``aria-label``aria-labelledby`**Avoid or provide alternatives to content that causes seizures****Provide clear and consistent navigation****Include skip navigation links****Ensure that forms are accessible****Use ARIA landmarks**`<nav>``<main>``<aside>`**Test with screen readers****Offer options to control or stop animations, videos, and audio****Design responsive layouts****Use accessible color palettes****Provide captions and transcripts****Ensure dynamic content updates are communicated to assistive technologies****Test with real users**
+Remember, accessibility is an ongoing commitment and should be integrated into regular development and testing cycles.
