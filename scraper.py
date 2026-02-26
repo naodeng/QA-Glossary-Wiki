@@ -4,13 +4,30 @@ QA Glossary Wiki Scraper
 Scrapes articles from https://ray.run/wiki and organizes them alphabetically
 """
 
+import logging
 import requests
 from bs4 import BeautifulSoup
 import os
 import re
 import time
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
+
+from progress_tracker import ProgressTracker
+
+# Error logger — writes to sync_error.log in the project root
+_error_logger = logging.getLogger("scraper")
+if not _error_logger.handlers:
+    _handler = logging.FileHandler(
+        Path(__file__).parent / "sync_error.log", encoding="utf-8"
+    )
+    _handler.setFormatter(
+        logging.Formatter("[%(asctime)s] [%(levelname)s] [scraper] %(message)s",
+                          datefmt="%Y-%m-%dT%H:%M:%SZ")
+    )
+    _error_logger.addHandler(_handler)
+    _error_logger.setLevel(logging.ERROR)
 
 BASE_URL = "https://ray.run/wiki"
 OUTPUT_DIR = Path("Sections")
@@ -46,6 +63,66 @@ def get_article_links():
     
     print(f"Found {len(unique_links)} unique articles")
     return unique_links
+
+def get_remote_slugs() -> set:
+    """Return a set of unique slugs from the wiki index page.
+    
+    Reuses get_article_links() logic to fetch and deduplicate all article slugs.
+    Raises an exception with a descriptive message on network failure.
+    """
+    try:
+        articles = get_article_links()
+    except requests.exceptions.RequestException as e:
+        raise RuntimeError(f"Failed to fetch remote article list: {e}") from e
+
+    slugs = {article['slug'] for article in articles}
+    print(f"Discovered {len(slugs)} unique article slugs")
+    return slugs
+
+
+def fetch_missing(slugs: list, tracker: ProgressTracker) -> tuple:
+    """Fetch and save articles for the given slugs, skipping already-completed ones.
+
+    Args:
+        slugs: List of article slugs to process.
+        tracker: ProgressTracker instance used to skip and record completed slugs.
+
+    Returns:
+        (success_count, fail_count) tuple.
+    """
+    success_count = 0
+    fail_count = 0
+
+    for idx, slug in enumerate(slugs, 1):
+        if tracker.is_done(slug, "en_sync"):
+            print(f"[{idx}/{len(slugs)}] Skipping (already done): {slug}")
+            continue
+
+        print(f"[{idx}/{len(slugs)}] Fetching: {slug}")
+        url = f"{BASE_URL}/{slug}"
+        # Use slug as fallback title (hyphens → spaces, title-cased)
+        title = slug.replace("-", " ").title()
+
+        try:
+            markdown = scrape_article(url, title, slug)
+            if markdown is None:
+                raise RuntimeError(f"scrape_article returned None for slug '{slug}'")
+
+            save_article(markdown, title, slug)
+            tracker.mark_done(slug, "en_sync")
+            success_count += 1
+        except Exception as exc:
+            fail_count += 1
+            _error_logger.error("Failed to fetch '%s': %s", slug, exc)
+            print(f"  [ERROR] {slug}: {exc}")
+
+        # Polite delay between requests (skip after the last item)
+        if idx < len(slugs):
+            time.sleep(1)
+
+    print(f"\nfetch_missing complete — success: {success_count}, failed: {fail_count}")
+    return success_count, fail_count
+
 
 def get_first_letter(title):
     """Get the first letter of the title for folder organization"""
