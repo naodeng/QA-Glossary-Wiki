@@ -32,6 +32,17 @@ AI_MODEL = os.getenv("AI_MODEL", "gpt-4")
 USE_FREE_TRANSLATE = os.getenv("USE_FREE_TRANSLATE", "true").lower() == "true"
 FREE_TRANSLATE_LINE_DELAY = float(os.getenv("FREE_TRANSLATE_LINE_DELAY", "0"))
 
+# Terms that should stay in English in translated output.
+NO_TRANSLATE_TERMS = [
+    "API", "Appium", "Applitools", "BDD", "BrowserStack", "Bugzilla", "Chai.js",
+    "Chrome", "CI/CD", "Cucumber", "Cypress", "DOM", "Edge", "Electron",
+    "Firefox", "Gherkin", "GitHub", "GitLab", "GraphQL", "iOS", "Jasmine",
+    "Java", "JavaScript", "Jest", "Jira", "JMeter", "JUnit", "KPI", "Mantis",
+    "Node.js", "npm", "NUnit", "Percy", "Playwright", "Postman", "Puppeteer",
+    "Python", "REST", "Ruby", "Selenium", "SPA", "SpecFlow", "SQL", "Swagger",
+    "Trello", "TestCafe", "TestNG", "TypeScript", "URL", "WebDriver", "Xray",
+]
+
 
 class TranslationManager:
     """Manages the translation process for QA glossary articles."""
@@ -210,6 +221,10 @@ class TranslationManager:
         protected = repl(r"!?\[[^\]]*\]\([^)]+\)", protected)
         # Raw URLs
         protected = repl(r"https?://\S+", protected)
+        # Keep tool/product names unchanged.
+        for term in sorted(NO_TRANSLATE_TERMS, key=len, reverse=True):
+            pattern = rf"(?<![A-Za-z0-9_]){re.escape(term)}(?![A-Za-z0-9_])"
+            protected = repl(pattern, protected)
         return protected, token_map
 
     def _restore_inline_markdown(self, text: str, token_map: Dict[str, str]) -> str:

@@ -64,7 +64,7 @@ QA-Glossary-Wiki/
 - [黑盒测试](Sections-zh/B/black-box-testing.md) | [Black Box Testing](Sections/B/black-box-testing.md)
 - [自下而上的集成](Sections-zh/B/bottom-up-integration.md) | [Bottom-up Integration](Sections/B/bottom-up-integration.md)
 - [边界测试](Sections-zh/B/boundary-testing.md) | [Boundary Testing](Sections/B/boundary-testing.md)
-- [浏览器堆栈](Sections-zh/B/browserstack.md) | [BrowserStack](Sections/B/browserstack.md)
+- [browserstack](Sections-zh/B/browserstack.md) | [BrowserStack](Sections/B/browserstack.md)
 - [BS 7925-2](Sections-zh/B/bs-7925-2.md) | [BS 7925-2](Sections/B/bs-7925-2.md)
 - [bug](Sections-zh/B/bug.md) | [Bug](Sections/B/bug.md)
 - [构建验证测试](Sections-zh/B/build-verification-testing.md) | [Build Verification Testing](Sections/B/build-verification-testing.md)
@@ -186,7 +186,7 @@ QA-Glossary-Wiki/
 ## N
 
 - [负面测试](Sections-zh/N/negative-testing.md) | [Negative Testing](Sections/N/negative-testing.md)
-- [节点.js](Sections-zh/N/node-js.md) | [Node.js](Sections/N/node-js.md)
+- [node.js](Sections-zh/N/node-js.md) | [Node.js](Sections/N/node-js.md)
 - [非功能测试](Sections-zh/N/non-functional-testing.md) | [Non-functional Testing](Sections/N/non-functional-testing.md)
 - [NUnit](Sections-zh/N/nunit.md) | [NUnit](Sections/N/nunit.md)
 
