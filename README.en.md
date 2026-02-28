@@ -224,7 +224,7 @@ QA-Glossary-Wiki/
 - [Requirements Management Tool](Sections/R/requirements-management-tool.md) | [需求管理工具](Sections-zh/R/requirements-management-tool.md)
 - [Responsive Design](Sections/R/responsive-design.md) | [响应式设计](Sections-zh/R/responsive-design.md)
 - [Retesting](Sections/R/retesting.md) | [重新测试](Sections-zh/R/retesting.md)
-- [Reviewer](Sections/R/reviewer.md) | [审稿人](Sections-zh/R/reviewer.md)
+- [Reviewer](Sections/R/reviewer.md) | [代码审查员](Sections-zh/R/reviewer.md)
 - [Risk-based Testing](Sections/R/risk-based-testing.md) | [基于风险的测试](Sections-zh/R/risk-based-testing.md)
 - [Robustness Testing](Sections/R/robustness-testing.md) | [稳健性测试](Sections-zh/R/robustness-testing.md)
 - [RUP](Sections/R/rup.md) | [RUP](Sections-zh/R/rup.md)
