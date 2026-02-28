@@ -1,4 +1,4 @@
-# 硒 IDE
+# selenium IDE
 
 <!-- TOC START -->
 - [相关术语：](#相关术语：)
@@ -29,7 +29,7 @@
     - [如何将 Selenium IDE 与其他测试工具集成？](#如何将-selenium-ide-与其他测试工具集成？)
 <!-- TOC END -->
 
-硒集成开发环境
+selenium集成开发环境
 
 通过登录、项目搜索和 UI 交互工具增强您的测试环境。
 

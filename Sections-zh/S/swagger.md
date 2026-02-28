@@ -1,4 +1,4 @@
-# 招摇
+# swagger
 
 <!-- TOC START -->
 - [相关术语：](#相关术语：)
@@ -10,7 +10,7 @@
     - [Swagger 如何帮助设计和记录 API？](#swagger-如何帮助设计和记录-api？)
     - [Swagger 在 RESTful Web 服务中的作用是什么？](#swagger-在-restful-web-服务中的作用是什么？)
     - [Swagger 如何为 API 生命周期做出贡献？](#swagger-如何为-api-生命周期做出贡献？)
-  - [招摇工具](#招摇工具)
+  - [swagger工具](#swagger工具)
     - [Swagger UI 是什么以及它有什么好处？](#swagger-ui-是什么以及它有什么好处？)
     - [Swagger 编辑器是什么以及如何使用它？](#swagger-编辑器是什么以及如何使用它？)
     - [Swagger Codegen 是什么以及它的用途是什么？](#swagger-codegen-是什么以及它的用途是什么？)
@@ -161,7 +161,7 @@
   [Swagger](../S/swagger.md) 在**维护阶段**的角色涉及使用[Swagger](../S/swagger.md) UI，它提供了交互式文档界面。这使得开发人员和测试人员能够轻松理解[API](../A/api.md)并与之交互，而无需深入代码库，从而有助于更快地识别和解决问题。
   总体而言，[Swagger](../S/swagger.md) 的工具套件增强了协作，减少了人为错误的可能性，并加速了[API](../A/api.md) 生命周期中高质量软件的交付。
 
-### 招摇工具
+### swagger工具
 
 #### Swagger UI 是什么以及它有什么好处？
 

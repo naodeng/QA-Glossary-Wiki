@@ -154,9 +154,9 @@ QA-Glossary-Wiki/
 
 ## J
 
-- [Jasmine](Sections/J/jasmine.md) | [茉莉花](Sections-zh/J/jasmine.md)
-- [Jest](Sections/J/jest.md) | [开玩笑](Sections-zh/J/jest.md)
-- [Jira](Sections/J/jira.md) | [吉拉](Sections-zh/J/jira.md)
+- [Jasmine](Sections/J/jasmine.md) | [jasmine](Sections-zh/J/jasmine.md)
+- [Jest](Sections/J/jest.md) | [Jest](Sections-zh/J/jest.md)
+- [Jira](Sections/J/jira.md) | [jira](Sections-zh/J/jira.md)
 - [JMeter](Sections/J/jmeter.md) | [JMeter](Sections-zh/J/jmeter.md)
 - [JUnit Testing](Sections/J/junit-testing.md) | [JUnit 测试](Sections-zh/J/junit-testing.md)
 
@@ -236,8 +236,8 @@ QA-Glossary-Wiki/
 - [Screenshot Testing](Sections/S/screenshot-testing.md) | [截图测试](Sections-zh/S/screenshot-testing.md)
 - [Scrum](Sections/S/scrum.md) | [Scrum](Sections-zh/S/scrum.md)
 - [Security Testing](Sections/S/security-testing.md) | [安全测试](Sections-zh/S/security-testing.md)
-- [Selenium IDE](Sections/S/selenium-ide.md) | [硒 IDE](Sections-zh/S/selenium-ide.md)
-- [Selenium](Sections/S/selenium.md) | [硒](Sections-zh/S/selenium.md)
+- [Selenium IDE](Sections/S/selenium-ide.md) | [selenium IDE](Sections-zh/S/selenium-ide.md)
+- [Selenium](Sections/S/selenium.md) | [selenium](Sections-zh/S/selenium.md)
 - [Session-Based Testing](Sections/S/session-based-testing.md) | [基于会话的测试](Sections-zh/S/session-based-testing.md)
 - [Setup](Sections/S/setup.md) | [setup](Sections-zh/S/setup.md)
 - [Severity](Sections/S/severity.md) | [严重性](Sections-zh/S/severity.md)
@@ -253,7 +253,7 @@ QA-Glossary-Wiki/
 - [STLC](Sections/S/stlc.md) | [STLC](Sections-zh/S/stlc.md)
 - [Stress Testing](Sections/S/stress-testing.md) | [压力测试](Sections-zh/S/stress-testing.md)
 - [Structural Testing](Sections/S/structural-testing.md) | [结构测试](Sections-zh/S/structural-testing.md)
-- [Swagger](Sections/S/swagger.md) | [招摇](Sections-zh/S/swagger.md)
+- [Swagger](Sections/S/swagger.md) | [swagger](Sections-zh/S/swagger.md)
 - [System Integration Testing](Sections/S/system-integration-testing.md) | [系统集成测试](Sections-zh/S/system-integration-testing.md)
 - [System Testing](Sections/S/system-testing.md) | [系统测试](Sections-zh/S/system-testing.md)
 

@@ -1,16 +1,16 @@
-# 硒
+# selenium
 
 <!-- TOC START -->
 - [相关术语：](#相关术语：)
   - [另请参阅：](#另请参阅：)
-- [关于硒的问题？](#关于硒的问题？)
+- [关于selenium的问题？](#关于selenium的问题？)
   - [基础知识和重要性](#基础知识和重要性)
-    - [硒是什么？](#硒是什么？)
+    - [selenium是什么？](#selenium是什么？)
     - [为什么 Selenium 在软件测试中很重要？](#为什么-selenium-在软件测试中很重要？)
     - [Selenium 有哪些不同的成分？](#selenium-有哪些不同的成分？)
     - [Selenium 与其他测试工具有何不同？](#selenium-与其他测试工具有何不同？)
     - [使用 Selenium 的优点和缺点是什么？](#使用-selenium-的优点和缺点是什么？)
-  - [使用硒](#使用硒)
+  - [使用selenium](#使用selenium)
     - [如何搭建Selenium环境？](#如何搭建selenium环境？)
     - [使用 Selenium 的先决条件是什么？](#使用-selenium-的先决条件是什么？)
     - [如何在 Selenium 中编写基本测试用例？](#如何在-selenium-中编写基本测试用例？)
@@ -30,7 +30,7 @@
     - [如何将 Selenium 与 Jenkins、Maven 等其他工具集成？](#如何将-selenium-与-jenkins、maven-等其他工具集成？)
 <!-- TOC END -->
 
-硒
+selenium
 
 是浏览器自动化工具的开源软件套件，主要用于在 Web 应用程序测试环境中自动化 Web 浏览器。它为开发人员和测试人员提供了一种使用各种编程语言（例如 Java、C#、Python 和 Ruby）编写脚本来模拟用户与网页和 Web 应用程序交互的方法。
 
@@ -43,11 +43,11 @@
 - [Official Website](https://www.selenium.dev/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Selenium_(software))
 
-## 关于硒的问题？
+## 关于selenium的问题？
 
 ### 基础知识和重要性
 
-#### 硒是什么？
+#### selenium是什么？
 
 [Selenium](../S/selenium.md) 是一个开源**自动化测试框架**，主要用于跨不同浏览器和平台验证 Web 应用程序。它由一套工具组成，支持使用各种编程语言（包括 Java、C#、Python、Ruby 和 JavaScript）开发 [test automation](../T/test-automation.md) 脚本。
   [Selenium](../S/selenium.md) 的核心是 **[WebDriver](../W/webdriver.md) [API](../A/api.md)**，它提供了一个独立于平台的接口来控制浏览器。 [WebDriver](../W/webdriver.md) 通过特定于浏览器的驱动程序与页面元素交互，必须为要自动化的浏览器安装和配置该驱动程序。
@@ -145,7 +145,7 @@
   - **测试开发**：由于需要编码，与某些商业工具相比，测试开发速度较慢。
   - **高级操作**：文件上传、下载或验证码处理等复杂操作可能具有挑战性。
 
-### 使用硒
+### 使用selenium
 
 #### 如何搭建Selenium环境？
 

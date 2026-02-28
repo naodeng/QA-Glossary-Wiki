@@ -155,7 +155,7 @@ QA-Glossary-Wiki/
 ## J
 
 - [茉莉花](Sections-zh/J/jasmine.md) | [Jasmine](Sections/J/jasmine.md)
-- [开玩笑](Sections-zh/J/jest.md) | [Jest](Sections/J/jest.md)
+- [Jest](Sections-zh/J/jest.md) | [Jest](Sections/J/jest.md)
 - [吉拉](Sections-zh/J/jira.md) | [Jira](Sections/J/jira.md)
 - [JMeter](Sections-zh/J/jmeter.md) | [JMeter](Sections/J/jmeter.md)
 - [JUnit 测试](Sections-zh/J/junit-testing.md) | [JUnit Testing](Sections/J/junit-testing.md)

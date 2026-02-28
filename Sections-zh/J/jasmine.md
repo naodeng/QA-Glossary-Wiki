@@ -1,9 +1,9 @@
-# 茉莉花
+# jasmine
 
 <!-- TOC START -->
 - [相关术语：](#相关术语：)
   - [另请参阅：](#另请参阅：)
-- [关于茉莉花的问题吗？](#关于茉莉花的问题吗？)
+- [关于jasmine的问题吗？](#关于jasmine的问题吗？)
   - [基础知识和重要性](#基础知识和重要性)
     - [软件测试中的 Jasmine 是什么？](#软件测试中的-jasmine-是什么？)
     - [为什么 Jasmine 在 e2e 测试中被认为很重要？](#为什么-jasmine-在-e2e-测试中被认为很重要？)
@@ -32,11 +32,11 @@
     - [在 Jasmine 中编写测试的最佳实践有哪些？](#在-jasmine-中编写测试的最佳实践有哪些？)
 <!-- TOC END -->
 
-茉莉花
+jasmine
 
 是一个 JavaScript 开源测试框架。它被设计为行为驱动的，允许开发人员以清晰、人类可读的术语描述软件预期行为的方式编写测试。
 
-茉莉花
+jasmine
 
 提供构建测试、设置前提条件和定义断言的函数。
 
@@ -51,7 +51,7 @@
 - [Official Website](https://jasmine.github.io/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Jasmine_(software))
 
-## 关于茉莉花的问题吗？
+## 关于jasmine的问题吗？
 
 ### 基础知识和重要性
 

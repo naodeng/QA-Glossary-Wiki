@@ -49,7 +49,7 @@ Node.js
 
 和浏览器。它与流行的 JavaScript 测试框架无缝配对，例如 Mocha 和
 
-茉莉花
+jasmine
 
 。 Chai 为开发人员提供了以可读语言表达断言的能力，模仿自然语言结构。
 
