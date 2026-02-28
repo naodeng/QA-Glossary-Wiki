@@ -124,7 +124,7 @@ QA-Glossary-Wiki/
 
 ## G
 
-- [Gherkin](Sections/G/gherkin.md) | [小黄瓜](Sections-zh/G/gherkin.md)
+- [Gherkin](Sections/G/gherkin.md) | [gherkin](Sections-zh/G/gherkin.md)
 - [Glass Box Testing](Sections/G/glass-box-testing.md) | [玻璃盒测试](Sections-zh/G/glass-box-testing.md)
 - [Gorilla Testing](Sections/G/gorilla-testing.md) | [大猩猩测试](Sections-zh/G/gorilla-testing.md)
 - [Grey Box Testing](Sections/G/grey-box-testing.md) | [灰盒测试](Sections-zh/G/grey-box-testing.md)
