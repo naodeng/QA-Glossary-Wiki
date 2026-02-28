@@ -1,1081 +1,1072 @@
 # BrowserStack
-[BrowserStack](#browserstack)[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)
-### Related Terms:
-- Cross-Browser Testing tool
-[Cross-Browser Testing tool](/glossary/cross-browser-testing-tool)
+
+
+<!-- TOC START -->
+- [Related Terms:](#related-terms)
+  - [See also:](#see-also)
+- [Questions about BrowserStack ?](#questions-about-browserstack)
+  - [Basics and Importance](#basics-and-importance)
+    - [What is BrowserStack?](#what-is-browserstack)
+    - [Why is BrowserStack important for software testing?](#why-is-browserstack-important-for-software-testing)
+    - [What are the key features of BrowserStack?](#what-are-the-key-features-of-browserstack)
+    - [How does BrowserStack improve the quality of software testing?](#how-does-browserstack-improve-the-quality-of-software-testing)
+    - [What types of testing can be performed using BrowserStack?](#what-types-of-testing-can-be-performed-using-browserstack)
+  - [Functionality and Usage](#functionality-and-usage)
+    - [How does BrowserStack work?](#how-does-browserstack-work)
+    - [How can I set up and start using BrowserStack?](#how-can-i-set-up-and-start-using-browserstack)
+    - [What are the steps to perform a test on BrowserStack?](#what-are-the-steps-to-perform-a-test-on-browserstack)
+    - [How can I use BrowserStack for mobile testing?](#how-can-i-use-browserstack-for-mobile-testing)
+    - [How does BrowserStack handle different browsers and operating systems?](#how-does-browserstack-handle-different-browsers-and-operating-systems)
+    - [Can I use BrowserStack for automated testing?](#can-i-use-browserstack-for-automated-testing)
+  - [Integration and Compatibility](#integration-and-compatibility)
+    - [How can BrowserStack be integrated with other testing tools?](#how-can-browserstack-be-integrated-with-other-testing-tools)
+    - [Is BrowserStack compatible with continuous integration tools?](#is-browserstack-compatible-with-continuous-integration-tools)
+    - [Can I use BrowserStack with Selenium?](#can-i-use-browserstack-with-selenium)
+    - [How does BrowserStack integrate with Jenkins?](#how-does-browserstack-integrate-with-jenkins)
+    - [What other tools and frameworks can be used with BrowserStack?](#what-other-tools-and-frameworks-can-be-used-with-browserstack)
+  - [Advanced Features](#advanced-features)
+    - [What are the advanced features of BrowserStack?](#what-are-the-advanced-features-of-browserstack)
+    - [How does the 'Live Testing' feature work in BrowserStack?](#how-does-the-live-testing-feature-work-in-browserstack)
+    - [What is 'Automate Pro' in BrowserStack?](#what-is-automate-pro-in-browserstack)
+    - [How can I use the 'App Live' feature in BrowserStack?](#how-can-i-use-the-app-live-feature-in-browserstack)
+    - [What is the 'Screenshots' feature in BrowserStack?](#what-is-the-screenshots-feature-in-browserstack)
+<!-- TOC END -->
+
+BrowserStack
+
+is a cloud-based web and mobile testing platform that allows developers and testers to view and interact with their websites and applications across multiple browsers, operating systems, and real mobile devices without the need for an internal lab of virtual machines or devices. It provides instant access to a wide range of browser and OS combinations, ensuring that developers can test their products in real-world conditions. This helps in identifying and resolving compatibility issues that might not be evident on a single platform or browser.
+
+BrowserStack
+
+is particularly beneficial for ensuring cross-browser and cross-platform compatibility, and it integrates with many popular continuous integration tools to streamline the testing process.
+
+## Related Terms:
+
+- [Cross-Browser Testing tool](../C/cross-browser-testing-tool.md)
+
 ### See also:
-- Official Website
-- Wikipedia
-[Official Website](https://www.browserstack.com/)[Wikipedia](https://en.wikipedia.org/wiki/BrowserStack)
-## Questions aboutBrowserStack?
 
-#### Basics and Importance
-- What is BrowserStack?BrowserStackis a cloud-basedcross-browser testingplatformthat enables developers and QA professionals to test their websites and mobile applications across a wide range of browsers, operating systems, and real mobile devices. It provides access to a vast inventory of browsers and devices, eliminating the need for maintaining an in-house testing infrastructure.WithBrowserStack, you can conductinteractivemanual testingor runautomated testsusing popular frameworks likeSelenium, Appium, andCypress. It supports various programming languages, including Java, Python, and Ruby, allowing seamless integration into existingtest suites.Setting upBrowserStackinvolves creating an account, configuring yourtest scriptswith the provided access credentials, and running tests through the platform's cloud infrastructure. You can initiate tests directly from your CI/CD pipeline, asBrowserStackoffers integration with tools like Jenkins, Travis CI, and CircleCI.For mobile testing,BrowserStack'sApp LiveandApp Automatefeatures enable testing of native and hybrid mobile apps. You can upload your app builds and interact with them on real devices or automate the testing process.BrowserStack'sScreenshotsfeature allows you to capture and compare screenshots across multiple browsers and devices, facilitatingvisual regression testing.The platform'sAutomate Proplan offers advanced capabilities such as parallel testing, IP whitelisting, andprioritysupport, which can significantly speed up the testing process and enhance security.Overall,BrowserStackstreamlines the testing workflow, ensuring that applications work flawlessly across all user touchpoints.
-- Why is BrowserStack important for software testing?BrowserStackis crucial forsoftware testingdue to itscross-browsercompatibility testingcapabilities. It allows testers to verify that applications work seamlessly across a multitude of browsers and devices without the need for an in-house device lab. This is particularly important as the diversity of user environments continues to grow, with various versions of browsers and operating systems.By providing access toreal devices and browsers,BrowserStackensures that tests reflect actual user conditions, leading to more accurate results compared to emulators or simulators. This real-world testing environment helps in uncovering edge cases andbugsthat might only appear under specific conditions not replicable by simulators.Moreover,BrowserStack'scloud-based infrastructureoffers scalability and flexibility. Testers can run multiple tests in parallel, significantly reducing the time required for extensivetest suites. This is essential for agile and DevOps teams aiming for rapiditerationand continuous delivery.The service's integration capabilities withCI/CD pipelinesand popular automation frameworks likeSeleniumenhance its importance. It allows for automated regression tests to be part of the build process, ensuring that new code changes do not break existing functionality.Lastly,BrowserStack'ssecurity featuresensure that testing is done in a secure environment, which is a critical consideration for businesses handling sensitive data. This makes it a trusted tool for not only functionality testing but also for testing applications that require adherence to strict security standards.
-- What are the key features of BrowserStack?Key features ofBrowserStackinclude:Cross-browser Testing: Test on a range of real browsers and operating systems without maintaining an in-house lab.Real Device Cloud: Access to a vast selection of real mobile devices for more accurate testing results.Local Testing: Securely test development and staging environments with the Local Testing feature.Parallel Testing: Run multiple tests simultaneously to reduce execution time.Integrations: Seamless integration with popular CI/CD tools like Jenkins, Travis CI, and CircleCI.Interactive Testing: Manually test and debug on desktop and mobile devices.Automated Screenshots and Videos: Automatically capture screenshots and videos of tests for visual regression and documentation.Geo-location Testing: Simulate and test geolocation-based scenarios.Responsive Testing: Evaluate the responsiveness of web applications across different devices.DevTools: Chrome DevTools for debugging and profiling on desktop browsers.Network Throttling: Test applications under different network conditions.Enterprise Features: SSO, priority support, team management, and usage analytics for enterprise needs.// Example of initiating a parallel test session in BrowserStack using Selenium WebDriver
-const { Builder } = require('selenium-webdriver');
-const capabilities = {
-  'browserName': 'chrome',
-  'browserstack.user': 'YOUR_USERNAME',
-  'browserstack.key': 'YOUR_ACCESS_KEY'
-};
+- [Official Website](https://www.browserstack.com/)
+- [Wikipedia](https://en.wikipedia.org/wiki/BrowserStack)
 
-async function runTest() {
-  let driver = new Builder()
-    .usingServer('http://hub-cloud.browserstack.com/wd/hub')
-    .withCapabilities(capabilities)
-    .build();
-  try {
-    await driver.get('http://www.google.com');
-    // Your test code here
-  } finally {
-    await driver.quit();
-  }
-}
-runTest();These features, among others, makeBrowserStacka versatile platform for web and mobile application testing.
-- How does BrowserStack improve the quality of software testing?BrowserStackenhancessoftware testingquality by providingaccess to a vast range of real devices and browsers. This diversity ensures that applications are tested under conditions that closely mirror end-user environments, leading to the detection ofedge-case issuesthat might be missed when testing on emulators or a limited set of devices.Withparallel testing capabilities,test suitescan be executed simultaneously across multiple environments, significantly reducing the time required for comprehensive testing and speeding up the feedback loop for development teams.Local testingallows for the secure testing of development and staging environments, ensuring that applications are thoroughly vetted before being released to production. This feature is crucial for identifying environment-specificbugs.BrowserStack'sintegration with popular CI/CD toolslike Jenkins, and compatibility with frameworks likeSelenium, enables seamless inclusion in the automation pipeline. This integration supportscontinuous testing practices, which is essential for agile and DevOps workflows.The platform'sreliability and scalabilityensure that automated tests run consistently, reducing thefalse positivesthat can undermine trust inautomated testingprocesses. Moreover,BrowserStack'sadvanced featureslike geolocation testing, and varied network conditions, allow for more nuanced testing scenarios, further improvingtest coverageandquality assurance.In summary,BrowserStack's comprehensive device and browser coverage, parallel testing, local testing capabilities, and seamless integrations contribute to a more robust, efficient, and reliable testing process, ultimately leading to the delivery of higher-quality software.
-- What types of testing can be performed using BrowserStack?UsingBrowserStack,test automationengineers can perform a variety of tests to ensure application quality across different devices and platforms:Cross-browser Testing: Validate your web application's functionality and design across multiple browsers and their versions.Responsive DesignTesting: Check how your web application adapts to different screen sizes and resolutions.Regression Testing: Automatically re-runtest casesafter changes to the application to ensure existing functionality is unaffected.Performance Testing: Measure the responsiveness and stability of your application under various conditions usingBrowserStack's performance tools.Localization Testing: Test your application in different geographical settings to ensure it behaves correctly in various locales.Accessibility Testing: UseBrowserStackto ensure your application is accessible to users with disabilities, complying with standards like WCAG.Interactive Testing: Manually interact with your application on a wide range of real devices forexploratory testingpurposes.Visual Testing: Compare screenshots of your application across different devices and browsers to spot UI inconsistencies.AutomatedScreenshot Testing: Capture and compare screenshots at scale to validate visual aspects of your application.Mobile App Testing: Test native and hybrid mobile applications on a vast selection of real iOS and Android devices.Integration Testing: CombineBrowserStackwith CI/CD pipelines to run tests as part of the development process.These tests can be executed using popular frameworks and tools such asSelenium, Appium,Cypress, and others, which are supported byBrowserStackfor seamless integration into existingtest suites.
+## Questions about BrowserStack ?
 
-BrowserStackis a cloud-basedcross-browser testingplatformthat enables developers and QA professionals to test their websites and mobile applications across a wide range of browsers, operating systems, and real mobile devices. It provides access to a vast inventory of browsers and devices, eliminating the need for maintaining an in-house testing infrastructure.
-[BrowserStack](/wiki/browserstack)**cross-browser testingplatform**[cross-browser testing](/wiki/cross-browser-testing)
-WithBrowserStack, you can conductinteractivemanual testingor runautomated testsusing popular frameworks likeSelenium, Appium, andCypress. It supports various programming languages, including Java, Python, and Ruby, allowing seamless integration into existingtest suites.
-[BrowserStack](/wiki/browserstack)**interactivemanual testing**[manual testing](/wiki/manual-testing)**automated tests**[Selenium](/wiki/selenium)[Cypress](/wiki/cypress)[test suites](/wiki/test-suite)
-Setting upBrowserStackinvolves creating an account, configuring yourtest scriptswith the provided access credentials, and running tests through the platform's cloud infrastructure. You can initiate tests directly from your CI/CD pipeline, asBrowserStackoffers integration with tools like Jenkins, Travis CI, and CircleCI.
-[BrowserStack](/wiki/browserstack)[test scripts](/wiki/test-script)[BrowserStack](/wiki/browserstack)
-For mobile testing,BrowserStack'sApp LiveandApp Automatefeatures enable testing of native and hybrid mobile apps. You can upload your app builds and interact with them on real devices or automate the testing process.
-[BrowserStack](/wiki/browserstack)**App Live****App Automate**
-BrowserStack'sScreenshotsfeature allows you to capture and compare screenshots across multiple browsers and devices, facilitatingvisual regression testing.
-[BrowserStack](/wiki/browserstack)**Screenshots**[visual regression testing](/wiki/visual-regression-testing)
-The platform'sAutomate Proplan offers advanced capabilities such as parallel testing, IP whitelisting, andprioritysupport, which can significantly speed up the testing process and enhance security.
-**Automate Pro**[priority](/wiki/priority)
-Overall,BrowserStackstreamlines the testing workflow, ensuring that applications work flawlessly across all user touchpoints.
-[BrowserStack](/wiki/browserstack)
-BrowserStackis crucial forsoftware testingdue to itscross-browsercompatibility testingcapabilities. It allows testers to verify that applications work seamlessly across a multitude of browsers and devices without the need for an in-house device lab. This is particularly important as the diversity of user environments continues to grow, with various versions of browsers and operating systems.
-[BrowserStack](/wiki/browserstack)[software testing](/wiki/software-testing)**cross-browsercompatibility testing**[compatibility testing](/wiki/compatibility-testing)
-By providing access toreal devices and browsers,BrowserStackensures that tests reflect actual user conditions, leading to more accurate results compared to emulators or simulators. This real-world testing environment helps in uncovering edge cases andbugsthat might only appear under specific conditions not replicable by simulators.
-**real devices and browsers**[BrowserStack](/wiki/browserstack)[bugs](/wiki/bug)
-Moreover,BrowserStack'scloud-based infrastructureoffers scalability and flexibility. Testers can run multiple tests in parallel, significantly reducing the time required for extensivetest suites. This is essential for agile and DevOps teams aiming for rapiditerationand continuous delivery.
-[BrowserStack](/wiki/browserstack)**cloud-based infrastructure**[test suites](/wiki/test-suite)[iteration](/wiki/iteration)
-The service's integration capabilities withCI/CD pipelinesand popular automation frameworks likeSeleniumenhance its importance. It allows for automated regression tests to be part of the build process, ensuring that new code changes do not break existing functionality.
-**CI/CD pipelines**[Selenium](/wiki/selenium)
-Lastly,BrowserStack'ssecurity featuresensure that testing is done in a secure environment, which is a critical consideration for businesses handling sensitive data. This makes it a trusted tool for not only functionality testing but also for testing applications that require adherence to strict security standards.
-[BrowserStack](/wiki/browserstack)**security features**
-Key features ofBrowserStackinclude:
-[BrowserStack](/wiki/browserstack)- Cross-browser Testing: Test on a range of real browsers and operating systems without maintaining an in-house lab.
-- Real Device Cloud: Access to a vast selection of real mobile devices for more accurate testing results.
-- Local Testing: Securely test development and staging environments with the Local Testing feature.
-- Parallel Testing: Run multiple tests simultaneously to reduce execution time.
-- Integrations: Seamless integration with popular CI/CD tools like Jenkins, Travis CI, and CircleCI.
-- Interactive Testing: Manually test and debug on desktop and mobile devices.
-- Automated Screenshots and Videos: Automatically capture screenshots and videos of tests for visual regression and documentation.
-- Geo-location Testing: Simulate and test geolocation-based scenarios.
-- Responsive Testing: Evaluate the responsiveness of web applications across different devices.
-- DevTools: Chrome DevTools for debugging and profiling on desktop browsers.
-- Network Throttling: Test applications under different network conditions.
-- Enterprise Features: SSO, priority support, team management, and usage analytics for enterprise needs.
-**Cross-browser Testing**[Cross-browser Testing](/wiki/cross-browser-testing)**Real Device Cloud****Local Testing****Parallel Testing****Integrations****Interactive Testing****Automated Screenshots and Videos****Geo-location Testing****Responsive Testing****DevTools****Network Throttling****Enterprise Features**
-```
-// Example of initiating a parallel test session in BrowserStack using Selenium WebDriver
-const { Builder } = require('selenium-webdriver');
-const capabilities = {
-  'browserName': 'chrome',
-  'browserstack.user': 'YOUR_USERNAME',
-  'browserstack.key': 'YOUR_ACCESS_KEY'
-};
+### Basics and Importance
 
-async function runTest() {
-  let driver = new Builder()
-    .usingServer('http://hub-cloud.browserstack.com/wd/hub')
-    .withCapabilities(capabilities)
-    .build();
-  try {
-    await driver.get('http://www.google.com');
-    // Your test code here
-  } finally {
-    await driver.quit();
-  }
-}
-runTest();
-```
-`// Example of initiating a parallel test session in BrowserStack using Selenium WebDriver
-const { Builder } = require('selenium-webdriver');
-const capabilities = {
-  'browserName': 'chrome',
-  'browserstack.user': 'YOUR_USERNAME',
-  'browserstack.key': 'YOUR_ACCESS_KEY'
-};
+#### What is BrowserStack?
 
-async function runTest() {
-  let driver = new Builder()
-    .usingServer('http://hub-cloud.browserstack.com/wd/hub')
-    .withCapabilities(capabilities)
-    .build();
-  try {
-    await driver.get('http://www.google.com');
-    // Your test code here
-  } finally {
-    await driver.quit();
-  }
-}
-runTest();`
-These features, among others, makeBrowserStacka versatile platform for web and mobile application testing.
-[BrowserStack](/wiki/browserstack)
-BrowserStackenhancessoftware testingquality by providingaccess to a vast range of real devices and browsers. This diversity ensures that applications are tested under conditions that closely mirror end-user environments, leading to the detection ofedge-case issuesthat might be missed when testing on emulators or a limited set of devices.
-[BrowserStack](/wiki/browserstack)[software testing](/wiki/software-testing)**access to a vast range of real devices and browsers****edge-case issues**
-Withparallel testing capabilities,test suitescan be executed simultaneously across multiple environments, significantly reducing the time required for comprehensive testing and speeding up the feedback loop for development teams.
-**parallel testing capabilities**[test suites](/wiki/test-suite)
-Local testingallows for the secure testing of development and staging environments, ensuring that applications are thoroughly vetted before being released to production. This feature is crucial for identifying environment-specificbugs.
-**Local testing**[bugs](/wiki/bug)
-BrowserStack'sintegration with popular CI/CD toolslike Jenkins, and compatibility with frameworks likeSelenium, enables seamless inclusion in the automation pipeline. This integration supportscontinuous testing practices, which is essential for agile and DevOps workflows.
-[BrowserStack](/wiki/browserstack)**integration with popular CI/CD tools**[Selenium](/wiki/selenium)**continuous testing practices**
-The platform'sreliability and scalabilityensure that automated tests run consistently, reducing thefalse positivesthat can undermine trust inautomated testingprocesses. Moreover,BrowserStack'sadvanced featureslike geolocation testing, and varied network conditions, allow for more nuanced testing scenarios, further improvingtest coverageandquality assurance.
-**reliability and scalability**[false positives](/wiki/false-positive)[automated testing](/wiki/automated-testing)[BrowserStack](/wiki/browserstack)**advanced features**[test coverage](/wiki/test-coverage)[quality assurance](/wiki/quality-assurance)
-In summary,BrowserStack's comprehensive device and browser coverage, parallel testing, local testing capabilities, and seamless integrations contribute to a more robust, efficient, and reliable testing process, ultimately leading to the delivery of higher-quality software.
-[BrowserStack](/wiki/browserstack)
-UsingBrowserStack,test automationengineers can perform a variety of tests to ensure application quality across different devices and platforms:
-[BrowserStack](/wiki/browserstack)[test automation](/wiki/test-automation)- Cross-browser Testing: Validate your web application's functionality and design across multiple browsers and their versions.
-- Responsive DesignTesting: Check how your web application adapts to different screen sizes and resolutions.
-- Regression Testing: Automatically re-runtest casesafter changes to the application to ensure existing functionality is unaffected.
-- Performance Testing: Measure the responsiveness and stability of your application under various conditions usingBrowserStack's performance tools.
-- Localization Testing: Test your application in different geographical settings to ensure it behaves correctly in various locales.
-- Accessibility Testing: UseBrowserStackto ensure your application is accessible to users with disabilities, complying with standards like WCAG.
-- Interactive Testing: Manually interact with your application on a wide range of real devices forexploratory testingpurposes.
-- Visual Testing: Compare screenshots of your application across different devices and browsers to spot UI inconsistencies.
-- AutomatedScreenshot Testing: Capture and compare screenshots at scale to validate visual aspects of your application.
-- Mobile App Testing: Test native and hybrid mobile applications on a vast selection of real iOS and Android devices.
-- Integration Testing: CombineBrowserStackwith CI/CD pipelines to run tests as part of the development process.
+  [BrowserStack](../B/browserstack.md) is a cloud-based **[cross-browser testing](../C/cross-browser-testing.md) platform** that enables developers and QA professionals to test their websites and mobile applications across a wide range of browsers, operating systems, and real mobile devices. It provides access to a vast inventory of browsers and devices, eliminating the need for maintaining an in-house testing infrastructure.
+  With [BrowserStack](../B/browserstack.md), you can conduct **interactive [manual testing](../M/manual-testing.md)** or run **automated tests** using popular frameworks like [Selenium](../S/selenium.md), Appium, and [Cypress](../C/cypress.md). It supports various programming languages, including Java, Python, and Ruby, allowing seamless integration into existing [test suites](../T/test-suite.md).
+  Setting up [BrowserStack](../B/browserstack.md) involves creating an account, configuring your [test scripts](../T/test-script.md) with the provided access credentials, and running tests through the platform's cloud infrastructure. You can initiate tests directly from your CI/CD pipeline, as [BrowserStack](../B/browserstack.md) offers integration with tools like Jenkins, Travis CI, and CircleCI.
+  For mobile testing, [BrowserStack](../B/browserstack.md)'s **App Live** and **App Automate** features enable testing of native and hybrid mobile apps. You can upload your app builds and interact with them on real devices or automate the testing process.
+  [BrowserStack](../B/browserstack.md)'s **Screenshots** feature allows you to capture and compare screenshots across multiple browsers and devices, facilitating [visual regression testing](../V/visual-regression-testing.md).
+  The platform's **Automate Pro** plan offers advanced capabilities such as parallel testing, IP whitelisting, and [priority](../P/priority.md) support, which can significantly speed up the testing process and enhance security.
+  Overall, [BrowserStack](../B/browserstack.md) streamlines the testing workflow, ensuring that applications work flawlessly across all user touchpoints.
 
-Cross-browser Testing: Validate your web application's functionality and design across multiple browsers and their versions.
-**Cross-browser Testing**[Cross-browser Testing](/wiki/cross-browser-testing)
-Responsive DesignTesting: Check how your web application adapts to different screen sizes and resolutions.
-**Responsive DesignTesting**[Responsive Design](/wiki/responsive-design)
-Regression Testing: Automatically re-runtest casesafter changes to the application to ensure existing functionality is unaffected.
-**Regression Testing**[Regression Testing](/wiki/regression-testing)[test cases](/wiki/test-case)
-Performance Testing: Measure the responsiveness and stability of your application under various conditions usingBrowserStack's performance tools.
-**Performance Testing**[Performance Testing](/wiki/performance-testing)[BrowserStack](/wiki/browserstack)
-Localization Testing: Test your application in different geographical settings to ensure it behaves correctly in various locales.
-**Localization Testing**[Localization Testing](/wiki/localization-testing)
-Accessibility Testing: UseBrowserStackto ensure your application is accessible to users with disabilities, complying with standards like WCAG.
-**Accessibility Testing**[Accessibility Testing](/wiki/accessibility-testing)[BrowserStack](/wiki/browserstack)
-Interactive Testing: Manually interact with your application on a wide range of real devices forexploratory testingpurposes.
-**Interactive Testing**[exploratory testing](/wiki/exploratory-testing)
-Visual Testing: Compare screenshots of your application across different devices and browsers to spot UI inconsistencies.
-**Visual Testing**
-AutomatedScreenshot Testing: Capture and compare screenshots at scale to validate visual aspects of your application.
-**AutomatedScreenshot Testing**[Screenshot Testing](/wiki/screenshot-testing)
-Mobile App Testing: Test native and hybrid mobile applications on a vast selection of real iOS and Android devices.
-**Mobile App Testing**[Mobile App Testing](/wiki/mobile-app-testing)
-Integration Testing: CombineBrowserStackwith CI/CD pipelines to run tests as part of the development process.
-**Integration Testing**[Integration Testing](/wiki/integration-testing)[BrowserStack](/wiki/browserstack)
-These tests can be executed using popular frameworks and tools such asSelenium, Appium,Cypress, and others, which are supported byBrowserStackfor seamless integration into existingtest suites.
-[Selenium](/wiki/selenium)[Cypress](/wiki/cypress)[BrowserStack](/wiki/browserstack)[test suites](/wiki/test-suite)
-#### Functionality and Usage
-- How does BrowserStack work?BrowserStackoperates by providing a cloud-based platform where users can access a wide range ofreal devices,browsers, andoperating systemsfor testing purposes. When a test is initiated,BrowserStackallocates a virtual machine or a real device from its device farm, depending on the test requirements.Forautomated testing, you would typically write yourtest scriptsusing a framework likeSeleniumorAppium, and then configure these scripts to communicate with theBrowserStackservers using the providedAPIsandaccess keys. Here's a simplified example in JavaScript using WebDriverIO withSelenium:const { remote } = require('webdriverio');
+#### Why is BrowserStack important for software testing?
 
-async function runTestOnBrowserStack() {
-  const browserStackOptions = {
-    os: 'Windows',
-    os_version: '10',
-    browserName: 'Chrome',
-    browser_version: 'latest',
+  [BrowserStack](../B/browserstack.md) is crucial for [software testing](../S/software-testing.md) due to its **cross-browser [compatibility testing](../C/compatibility-testing.md)** capabilities. It allows testers to verify that applications work seamlessly across a multitude of browsers and devices without the need for an in-house device lab. This is particularly important as the diversity of user environments continues to grow, with various versions of browsers and operating systems.
+  By providing access to **real devices and browsers**, [BrowserStack](../B/browserstack.md) ensures that tests reflect actual user conditions, leading to more accurate results compared to emulators or simulators. This real-world testing environment helps in uncovering edge cases and [bugs](../B/bug.md) that might only appear under specific conditions not replicable by simulators.
+  Moreover, [BrowserStack](../B/browserstack.md)'s **cloud-based infrastructure** offers scalability and flexibility. Testers can run multiple tests in parallel, significantly reducing the time required for extensive [test suites](../T/test-suite.md). This is essential for agile and DevOps teams aiming for rapid [iteration](../I/iteration.md) and continuous delivery.
+  The service's integration capabilities with **CI/CD pipelines** and popular automation frameworks like [Selenium](../S/selenium.md) enhance its importance. It allows for automated regression tests to be part of the build process, ensuring that new code changes do not break existing functionality.
+  Lastly, [BrowserStack](../B/browserstack.md)'s **security features** ensure that testing is done in a secure environment, which is a critical consideration for businesses handling sensitive data. This makes it a trusted tool for not only functionality testing but also for testing applications that require adherence to strict security standards.
+
+#### What are the key features of BrowserStack?
+
+  Key features of [BrowserStack](../B/browserstack.md) include:
+
+  - **[Cross-browser Testing](../C/cross-browser-testing.md)** : Test on a range of real browsers and operating systems without maintaining an in-house lab.
+  - **Real Device Cloud** : Access to a vast selection of real mobile devices for more accurate testing results.
+  - **Local Testing** : Securely test development and staging environments with the Local Testing feature.
+  - **Parallel Testing** : Run multiple tests simultaneously to reduce execution time.
+  - **Integrations** : Seamless integration with popular CI/CD tools like Jenkins, Travis CI, and CircleCI.
+  - **Interactive Testing** : Manually test and debug on desktop and mobile devices.
+  - **Automated Screenshots and Videos** : Automatically capture screenshots and videos of tests for visual regression and documentation.
+  - **Geo-location Testing** : Simulate and test geolocation-based scenarios.
+  - **Responsive Testing** : Evaluate the responsiveness of web applications across different devices.
+  - **DevTools** : Chrome DevTools for debugging and profiling on desktop browsers.
+  - **Network Throttling** : Test applications under different network conditions.
+  - **Enterprise Features** : SSO, priority support, team management, and usage analytics for enterprise needs.
+
+  ```
+  // Example of initiating a parallel test session in BrowserStack using Selenium WebDriver
+  const { Builder } = require('selenium-webdriver');
+  const capabilities = {
+    'browserName': 'chrome',
     'browserstack.user': 'YOUR_USERNAME',
     'browserstack.key': 'YOUR_ACCESS_KEY'
   };
-
-  const driver = await remote({
-    capabilities: browserStackOptions,
-    host: 'hub.browserstack.com',
-    port: 80
-  });
-
-  await driver.url('https://www.yourwebsite.com');
-  // Your test steps go here
-  await driver.deleteSession();
-}
-
-runTestOnBrowserStack();The script connects toBrowserStack, which then spins up the specified environment. The test runs as if it were being executed locally, but it's actually running on aBrowserStackserver. This allows forparallel testingacross different environments, significantly speeding up the testing process.BrowserStack's infrastructure is designed to handle thesetup, maintenance, andteardownof testing environments, which simplifies the testing workflow and allows you to focus on writing and executing tests. After tests are completed,BrowserStackprovidesdetailed logs,screenshots, andvideo recordingsto help debug any issues.
-- How can I set up and start using BrowserStack?To set up and start usingBrowserStackfortest automation, follow these steps:Sign upfor aBrowserStackaccount if you haven't already.Once logged in, navigate to theAutomatesection to access your automation dashboard.Configure yourtest scriptsto connect toBrowserStack's remote servers. You'll need to setBrowserStack's URL and access credentials in your test code. Use the provided username and access key from yourBrowserStackaccount.const capabilities = {
-  'browserName' : 'Chrome',
-  'browserstack.user' : 'YOUR_USERNAME',
-  'browserstack.key' : 'YOUR_ACCESS_KEY'
-}Select the desired browser and OSconfigurations for your tests by specifying them in your test capabilities.Run yourtest scriptsusing your preferredtest runner. Your tests will now execute onBrowserStack's remote browsers/devices.Monitor your testsin real-time through theBrowserStackAutomate dashboard, where you can view test progress, video recordings, logs, and screenshots.Analyze test resultsand debug issues using the detailed reports provided byBrowserStack.Remember to secure yourBrowserStackaccess credentials and do not share them publicly. For continuous integration, use environment variables to store yourBrowserStackusername and access key. When integrating with CI tools like Jenkins, add theBrowserStackplugin or use the providedAPIto trigger tests as part of your build process.
-- What are the steps to perform a test on BrowserStack?To perform a test onBrowserStack, follow these steps:Sign into your BrowserStack account.Selectthe type of testing: Live, Automate, App Live, or Screenshots & Responsive.ForAutomate:Configureyour test scripts to use BrowserStack's hub URL and desired capabilities.const capabilities = {
-  'browserName': 'Chrome',
-  'browser_version': 'latest',
-  'os': 'Windows',
-  'os_version': '10',
-  'resolution': '1024x768',
-  'browserstack.user': 'YOUR_USERNAME',
-  'browserstack.key': 'YOUR_ACCESS_KEY'
-};Runyour test scripts from your IDE or command line.ForLive Testing:Choosethe browser, version, and operating system.Navigateto the URL where your web application is hosted.Interactwith your website manually to perform the test.ForApp Live:Uploadyour mobile app or provide a public URL to the app.Selectthe device and OS version.Interactwith your app on the chosen device.ForScreenshots & Responsive:Enterthe URL of your web application.Choosethe browsers and devices for screenshots.Generatescreenshots to review the layout across different devices and browsers.After testing,reviewthe results, which may include video recordings, logs, and screenshots, depending on the type of test performed.Analyzethe outcomes to identify any issues orbugs.
-- How can I use BrowserStack for mobile testing?To useBrowserStackfor mobile testing, follow these steps:Sign into yourBrowserStackaccount.Navigate to theApp LiveorApp Automatesection, depending on whether you want to do manual orautomated testing.ForApp Live:Upload your mobile app or provide a public URL.Select the device and OS version you want to test on.Interact with your app on the chosen device through your browser.ForApp Automate:Ensure you have an automation script ready using a framework like Appium or Espresso.Configure your test script to connect to BrowserStack using the providedaccess keyandusername.Specify desired capabilities, including device and OS version.Run your test script. It will execute on the BrowserStack cloud.Here's a sample code snippet for an Appium test:DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability("device", "iPhone 11 Pro Max");
-capabilities.setCapability("os_version", "13");
-capabilities.setCapability("realMobile", "true");
-capabilities.setCapability("browserstack.user", "YOUR_USERNAME");
-capabilities.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
-
-AppiumDriver driver = new AppiumDriver(new URL("http://hub.browserstack.com/wd/hub"), capabilities);Monitor test results through theBrowserStackDashboardwhere you can view video recordings, logs, and screenshots.Remember to replace"YOUR_USERNAME"and"YOUR_ACCESS_KEY"with your actualBrowserStackcredentials.
-- How does BrowserStack handle different browsers and operating systems?BrowserStackmanages a variety of browsers and operating systems by maintaining avast inventoryof real devices and browser versions. When a test is initiated,BrowserStackallocatesa virtual machine or a real device that matches the specified criteria, such as browser version, operating system, and screen resolution.For browsers,BrowserStacksupports a wide range of versions acrossChrome,Firefox,Safari,Internet Explorer, andEdge. It also offers various versions of mobile browsers for testing on different devices.For operating systems, it includesWindows,macOS,iOS, andAndroidplatforms, covering multiple versions to ensure compatibility across different environments.BrowserStackuses acloud-based infrastructureto provide access to these environments, which means that tests can be run in parallel across multiple combinations of browsers and operating systems without the need for localsetupor maintenance.To specify the desired environment, testers use capabilities in theirtest scripts. Here's an example usingSeleniumWebDriverin JavaScript:const capabilities = {
-  'browserName' : 'Chrome',
-  'browser_version' : 'latest',
-  'os' : 'Windows',
-  'os_version' : '10',
-  'resolution' : '1024x768'
-};
-
-const driver = new webdriver.Builder().
-  usingServer('http://hub-cloud.browserstack.com/wd/hub').
-  withCapabilities(capabilities).
-  build();This approach ensures that applications are tested inenvironments that closely mimic user conditions, leading to more reliable test outcomes.
-- Can I use BrowserStack for automated testing?Certainly,BrowserStackcan be utilized forautomated testing. It offers a cloud-based platform that enables you to run automated tests on a variety of browsers and real mobile devices. To get started, you'll need to configure yourtest automationframework to connect withBrowserStack's remote servers.Here's a basic example usingSeleniumWebDriverwithJavaScript:const { Builder } = require('selenium-webdriver');
-require('chromedriver');
-
-async function runTestOnBrowserStack() {
-  const capabilities = {
-    'bstack:options' : {
-      "os" : "Windows",
-      "osVersion" : "10",
-      "local" : "false",
-      "seleniumVersion" : "3.14.0",
-      "userName" : "YOUR_USERNAME",
-      "accessKey" : "YOUR_ACCESS_KEY",
-    },
-    "browserName" : "Chrome",
-    "browserVersion" : "latest",
-  };
-
-  let driver = new Builder()
-    .usingServer('http://hub-cloud.browserstack.com/wd/hub')
-    .withCapabilities(capabilities)
-    .build();
-
-  try {
-    await driver.get('http://www.google.com');
-    // Add your test logic here
-  } finally {
-    await driver.quit();
-  }
-}
-
-runTestOnBrowserStack();ReplaceYOUR_USERNAMEandYOUR_ACCESS_KEYwith yourBrowserStackcredentials. This code sets up aSeleniumWebDrivertest to run onBrowserStack's infrastructure.Forcontinuous integration, you can integrateBrowserStackwith tools likeJenkins,Travis CI, orCircleCIto automatically run tests on every commit or pull request.BrowserStackalso supports other testing frameworks likeAppiumformobile app testing, andCypress,Playwright, orEspressofor more specialized testing scenarios. Integration with these tools follows a similar pattern of configuring your tests to communicate withBrowserStack's remote servers.
-
-BrowserStackoperates by providing a cloud-based platform where users can access a wide range ofreal devices,browsers, andoperating systemsfor testing purposes. When a test is initiated,BrowserStackallocates a virtual machine or a real device from its device farm, depending on the test requirements.
-[BrowserStack](/wiki/browserstack)**real devices****browsers****operating systems**[BrowserStack](/wiki/browserstack)
-Forautomated testing, you would typically write yourtest scriptsusing a framework likeSeleniumorAppium, and then configure these scripts to communicate with theBrowserStackservers using the providedAPIsandaccess keys. Here's a simplified example in JavaScript using WebDriverIO withSelenium:
-[automated testing](/wiki/automated-testing)[test scripts](/wiki/test-script)**Selenium**[Selenium](/wiki/selenium)**Appium**[BrowserStack](/wiki/browserstack)**APIs**[APIs](/wiki/api)**access keys**[Selenium](/wiki/selenium)
-```
-const { remote } = require('webdriverio');
-
-async function runTestOnBrowserStack() {
-  const browserStackOptions = {
-    os: 'Windows',
-    os_version: '10',
-    browserName: 'Chrome',
-    browser_version: 'latest',
-    'browserstack.user': 'YOUR_USERNAME',
-    'browserstack.key': 'YOUR_ACCESS_KEY'
-  };
-
-  const driver = await remote({
-    capabilities: browserStackOptions,
-    host: 'hub.browserstack.com',
-    port: 80
-  });
-
-  await driver.url('https://www.yourwebsite.com');
-  // Your test steps go here
-  await driver.deleteSession();
-}
-
-runTestOnBrowserStack();
-```
-`const { remote } = require('webdriverio');
-
-async function runTestOnBrowserStack() {
-  const browserStackOptions = {
-    os: 'Windows',
-    os_version: '10',
-    browserName: 'Chrome',
-    browser_version: 'latest',
-    'browserstack.user': 'YOUR_USERNAME',
-    'browserstack.key': 'YOUR_ACCESS_KEY'
-  };
-
-  const driver = await remote({
-    capabilities: browserStackOptions,
-    host: 'hub.browserstack.com',
-    port: 80
-  });
-
-  await driver.url('https://www.yourwebsite.com');
-  // Your test steps go here
-  await driver.deleteSession();
-}
-
-runTestOnBrowserStack();`
-The script connects toBrowserStack, which then spins up the specified environment. The test runs as if it were being executed locally, but it's actually running on aBrowserStackserver. This allows forparallel testingacross different environments, significantly speeding up the testing process.
-[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)**parallel testing**
-BrowserStack's infrastructure is designed to handle thesetup, maintenance, andteardownof testing environments, which simplifies the testing workflow and allows you to focus on writing and executing tests. After tests are completed,BrowserStackprovidesdetailed logs,screenshots, andvideo recordingsto help debug any issues.
-[BrowserStack](/wiki/browserstack)**setup, maintenance**[setup](/wiki/setup)**teardown**[BrowserStack](/wiki/browserstack)**detailed logs****screenshots****video recordings**
-To set up and start usingBrowserStackfortest automation, follow these steps:
-[BrowserStack](/wiki/browserstack)[test automation](/wiki/test-automation)1. Sign upfor aBrowserStackaccount if you haven't already.
-2. Once logged in, navigate to theAutomatesection to access your automation dashboard.
-3. Configure yourtest scriptsto connect toBrowserStack's remote servers. You'll need to setBrowserStack's URL and access credentials in your test code. Use the provided username and access key from yourBrowserStackaccount.const capabilities = {
-  'browserName' : 'Chrome',
-  'browserstack.user' : 'YOUR_USERNAME',
-  'browserstack.key' : 'YOUR_ACCESS_KEY'
-}
-4. Select the desired browser and OSconfigurations for your tests by specifying them in your test capabilities.
-5. Run yourtest scriptsusing your preferredtest runner. Your tests will now execute onBrowserStack's remote browsers/devices.
-6. Monitor your testsin real-time through theBrowserStackAutomate dashboard, where you can view test progress, video recordings, logs, and screenshots.
-7. Analyze test resultsand debug issues using the detailed reports provided byBrowserStack.
-
-Sign upfor aBrowserStackaccount if you haven't already.
-**Sign up**[BrowserStack](/wiki/browserstack)
-Once logged in, navigate to theAutomatesection to access your automation dashboard.
-**Automate**
-Configure yourtest scriptsto connect toBrowserStack's remote servers. You'll need to setBrowserStack's URL and access credentials in your test code. Use the provided username and access key from yourBrowserStackaccount.
-**Configure yourtest scripts**[test scripts](/wiki/test-script)[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)
-```
-const capabilities = {
-  'browserName' : 'Chrome',
-  'browserstack.user' : 'YOUR_USERNAME',
-  'browserstack.key' : 'YOUR_ACCESS_KEY'
-}
-```
-`const capabilities = {
-  'browserName' : 'Chrome',
-  'browserstack.user' : 'YOUR_USERNAME',
-  'browserstack.key' : 'YOUR_ACCESS_KEY'
-}`
-Select the desired browser and OSconfigurations for your tests by specifying them in your test capabilities.
-**Select the desired browser and OS**
-Run yourtest scriptsusing your preferredtest runner. Your tests will now execute onBrowserStack's remote browsers/devices.
-**Run yourtest scripts**[test scripts](/wiki/test-script)[test runner](/wiki/test-runner)[BrowserStack](/wiki/browserstack)
-Monitor your testsin real-time through theBrowserStackAutomate dashboard, where you can view test progress, video recordings, logs, and screenshots.
-**Monitor your tests**[BrowserStack](/wiki/browserstack)
-Analyze test resultsand debug issues using the detailed reports provided byBrowserStack.
-**Analyze test results**[BrowserStack](/wiki/browserstack)
-Remember to secure yourBrowserStackaccess credentials and do not share them publicly. For continuous integration, use environment variables to store yourBrowserStackusername and access key. When integrating with CI tools like Jenkins, add theBrowserStackplugin or use the providedAPIto trigger tests as part of your build process.
-[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)[API](/wiki/api)
-To perform a test onBrowserStack, follow these steps:
-[BrowserStack](/wiki/browserstack)1. Sign into your BrowserStack account.
-2. Selectthe type of testing: Live, Automate, App Live, or Screenshots & Responsive.
-3. ForAutomate:Configureyour test scripts to use BrowserStack's hub URL and desired capabilities.const capabilities = {
-  'browserName': 'Chrome',
-  'browser_version': 'latest',
-  'os': 'Windows',
-  'os_version': '10',
-  'resolution': '1024x768',
-  'browserstack.user': 'YOUR_USERNAME',
-  'browserstack.key': 'YOUR_ACCESS_KEY'
-};Runyour test scripts from your IDE or command line.
-4. ForLive Testing:Choosethe browser, version, and operating system.Navigateto the URL where your web application is hosted.Interactwith your website manually to perform the test.
-5. ForApp Live:Uploadyour mobile app or provide a public URL to the app.Selectthe device and OS version.Interactwith your app on the chosen device.
-6. ForScreenshots & Responsive:Enterthe URL of your web application.Choosethe browsers and devices for screenshots.Generatescreenshots to review the layout across different devices and browsers.
-**Sign in****Select****Automate**- Configureyour test scripts to use BrowserStack's hub URL and desired capabilities.
-**Configure**
-```
-const capabilities = {
-  'browserName': 'Chrome',
-  'browser_version': 'latest',
-  'os': 'Windows',
-  'os_version': '10',
-  'resolution': '1024x768',
-  'browserstack.user': 'YOUR_USERNAME',
-  'browserstack.key': 'YOUR_ACCESS_KEY'
-};
-```
-`const capabilities = {
-  'browserName': 'Chrome',
-  'browser_version': 'latest',
-  'os': 'Windows',
-  'os_version': '10',
-  'resolution': '1024x768',
-  'browserstack.user': 'YOUR_USERNAME',
-  'browserstack.key': 'YOUR_ACCESS_KEY'
-};`- Runyour test scripts from your IDE or command line.
-**Run****Live Testing**- Choosethe browser, version, and operating system.
-- Navigateto the URL where your web application is hosted.
-- Interactwith your website manually to perform the test.
-**Choose****Navigate****Interact****App Live**- Uploadyour mobile app or provide a public URL to the app.
-- Selectthe device and OS version.
-- Interactwith your app on the chosen device.
-**Upload****Select****Interact****Screenshots & Responsive**- Enterthe URL of your web application.
-- Choosethe browsers and devices for screenshots.
-- Generatescreenshots to review the layout across different devices and browsers.
-**Enter****Choose****Generate**
-After testing,reviewthe results, which may include video recordings, logs, and screenshots, depending on the type of test performed.Analyzethe outcomes to identify any issues orbugs.
-**review****Analyze**[bugs](/wiki/bug)
-To useBrowserStackfor mobile testing, follow these steps:
-[BrowserStack](/wiki/browserstack)1. Sign into yourBrowserStackaccount.
-2. Navigate to theApp LiveorApp Automatesection, depending on whether you want to do manual orautomated testing.
-3. ForApp Live:Upload your mobile app or provide a public URL.Select the device and OS version you want to test on.Interact with your app on the chosen device through your browser.
-4. ForApp Automate:Ensure you have an automation script ready using a framework like Appium or Espresso.Configure your test script to connect to BrowserStack using the providedaccess keyandusername.Specify desired capabilities, including device and OS version.Run your test script. It will execute on the BrowserStack cloud.
-
-Sign into yourBrowserStackaccount.
-**Sign in**[BrowserStack](/wiki/browserstack)
-Navigate to theApp LiveorApp Automatesection, depending on whether you want to do manual orautomated testing.
-**App Live****App Automate**[automated testing](/wiki/automated-testing)
-ForApp Live:
-**App Live**- Upload your mobile app or provide a public URL.
-- Select the device and OS version you want to test on.
-- Interact with your app on the chosen device through your browser.
-
-ForApp Automate:
-**App Automate**- Ensure you have an automation script ready using a framework like Appium or Espresso.
-- Configure your test script to connect to BrowserStack using the providedaccess keyandusername.
-- Specify desired capabilities, including device and OS version.
-- Run your test script. It will execute on the BrowserStack cloud.
-**access key****username**
-Here's a sample code snippet for an Appium test:
-
-```
-DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability("device", "iPhone 11 Pro Max");
-capabilities.setCapability("os_version", "13");
-capabilities.setCapability("realMobile", "true");
-capabilities.setCapability("browserstack.user", "YOUR_USERNAME");
-capabilities.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
-
-AppiumDriver driver = new AppiumDriver(new URL("http://hub.browserstack.com/wd/hub"), capabilities);
-```
-`DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability("device", "iPhone 11 Pro Max");
-capabilities.setCapability("os_version", "13");
-capabilities.setCapability("realMobile", "true");
-capabilities.setCapability("browserstack.user", "YOUR_USERNAME");
-capabilities.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
-
-AppiumDriver driver = new AppiumDriver(new URL("http://hub.browserstack.com/wd/hub"), capabilities);`1. Monitor test results through theBrowserStackDashboardwhere you can view video recordings, logs, and screenshots.
-**BrowserStackDashboard**[BrowserStack](/wiki/browserstack)
-Remember to replace"YOUR_USERNAME"and"YOUR_ACCESS_KEY"with your actualBrowserStackcredentials.
-`"YOUR_USERNAME"``"YOUR_ACCESS_KEY"`[BrowserStack](/wiki/browserstack)
-BrowserStackmanages a variety of browsers and operating systems by maintaining avast inventoryof real devices and browser versions. When a test is initiated,BrowserStackallocatesa virtual machine or a real device that matches the specified criteria, such as browser version, operating system, and screen resolution.
-[BrowserStack](/wiki/browserstack)**vast inventory**[BrowserStack](/wiki/browserstack)**allocates**
-For browsers,BrowserStacksupports a wide range of versions acrossChrome,Firefox,Safari,Internet Explorer, andEdge. It also offers various versions of mobile browsers for testing on different devices.
-[BrowserStack](/wiki/browserstack)**Chrome****Firefox****Safari****Internet Explorer****Edge**
-For operating systems, it includesWindows,macOS,iOS, andAndroidplatforms, covering multiple versions to ensure compatibility across different environments.
-**Windows****macOS****iOS****Android**
-BrowserStackuses acloud-based infrastructureto provide access to these environments, which means that tests can be run in parallel across multiple combinations of browsers and operating systems without the need for localsetupor maintenance.
-[BrowserStack](/wiki/browserstack)**cloud-based infrastructure**[setup](/wiki/setup)
-To specify the desired environment, testers use capabilities in theirtest scripts. Here's an example usingSeleniumWebDriverin JavaScript:
-[test scripts](/wiki/test-script)[Selenium](/wiki/selenium)[WebDriver](/wiki/webdriver)
-```
-const capabilities = {
-  'browserName' : 'Chrome',
-  'browser_version' : 'latest',
-  'os' : 'Windows',
-  'os_version' : '10',
-  'resolution' : '1024x768'
-};
-
-const driver = new webdriver.Builder().
-  usingServer('http://hub-cloud.browserstack.com/wd/hub').
-  withCapabilities(capabilities).
-  build();
-```
-`const capabilities = {
-  'browserName' : 'Chrome',
-  'browser_version' : 'latest',
-  'os' : 'Windows',
-  'os_version' : '10',
-  'resolution' : '1024x768'
-};
-
-const driver = new webdriver.Builder().
-  usingServer('http://hub-cloud.browserstack.com/wd/hub').
-  withCapabilities(capabilities).
-  build();`
-This approach ensures that applications are tested inenvironments that closely mimic user conditions, leading to more reliable test outcomes.
-**environments that closely mimic user conditions**
-Certainly,BrowserStackcan be utilized forautomated testing. It offers a cloud-based platform that enables you to run automated tests on a variety of browsers and real mobile devices. To get started, you'll need to configure yourtest automationframework to connect withBrowserStack's remote servers.
-**BrowserStack**[BrowserStack](/wiki/browserstack)[automated testing](/wiki/automated-testing)[test automation](/wiki/test-automation)[BrowserStack](/wiki/browserstack)
-Here's a basic example usingSeleniumWebDriverwithJavaScript:
-**SeleniumWebDriver**[Selenium](/wiki/selenium)[WebDriver](/wiki/webdriver)**JavaScript**
-```
-const { Builder } = require('selenium-webdriver');
-require('chromedriver');
-
-async function runTestOnBrowserStack() {
-  const capabilities = {
-    'bstack:options' : {
-      "os" : "Windows",
-      "osVersion" : "10",
-      "local" : "false",
-      "seleniumVersion" : "3.14.0",
-      "userName" : "YOUR_USERNAME",
-      "accessKey" : "YOUR_ACCESS_KEY",
-    },
-    "browserName" : "Chrome",
-    "browserVersion" : "latest",
-  };
-
-  let driver = new Builder()
-    .usingServer('http://hub-cloud.browserstack.com/wd/hub')
-    .withCapabilities(capabilities)
-    .build();
-
-  try {
-    await driver.get('http://www.google.com');
-    // Add your test logic here
-  } finally {
-    await driver.quit();
-  }
-}
-
-runTestOnBrowserStack();
-```
-`const { Builder } = require('selenium-webdriver');
-require('chromedriver');
-
-async function runTestOnBrowserStack() {
-  const capabilities = {
-    'bstack:options' : {
-      "os" : "Windows",
-      "osVersion" : "10",
-      "local" : "false",
-      "seleniumVersion" : "3.14.0",
-      "userName" : "YOUR_USERNAME",
-      "accessKey" : "YOUR_ACCESS_KEY",
-    },
-    "browserName" : "Chrome",
-    "browserVersion" : "latest",
-  };
-
-  let driver = new Builder()
-    .usingServer('http://hub-cloud.browserstack.com/wd/hub')
-    .withCapabilities(capabilities)
-    .build();
-
-  try {
-    await driver.get('http://www.google.com');
-    // Add your test logic here
-  } finally {
-    await driver.quit();
-  }
-}
-
-runTestOnBrowserStack();`
-ReplaceYOUR_USERNAMEandYOUR_ACCESS_KEYwith yourBrowserStackcredentials. This code sets up aSeleniumWebDrivertest to run onBrowserStack's infrastructure.
-`YOUR_USERNAME``YOUR_ACCESS_KEY`[BrowserStack](/wiki/browserstack)[Selenium](/wiki/selenium)[WebDriver](/wiki/webdriver)[BrowserStack](/wiki/browserstack)
-Forcontinuous integration, you can integrateBrowserStackwith tools likeJenkins,Travis CI, orCircleCIto automatically run tests on every commit or pull request.
-**continuous integration**[BrowserStack](/wiki/browserstack)**Jenkins****Travis CI****CircleCI**
-BrowserStackalso supports other testing frameworks likeAppiumformobile app testing, andCypress,Playwright, orEspressofor more specialized testing scenarios. Integration with these tools follows a similar pattern of configuring your tests to communicate withBrowserStack's remote servers.
-[BrowserStack](/wiki/browserstack)**Appium**[mobile app testing](/wiki/mobile-app-testing)**Cypress**[Cypress](/wiki/cypress)**Playwright****Espresso**[BrowserStack](/wiki/browserstack)
-#### Integration and Compatibility
-- How can BrowserStack be integrated with other testing tools?BrowserStackcan be integrated with various testing tools to enhance automation and streamline workflows. Here's how to integrate it with some common tools:Appium: UseBrowserStack's Appium servers formobile app testing. Set theremote_urlin your Appium client toBrowserStack's endpoint with your access credentials.DesiredCapabilities caps = new DesiredCapabilities();
-caps.setCapability("browserstack.user", "YOUR_USERNAME");
-caps.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
-// Additional capabilities
-AppiumDriver driver = new AppiumDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);Cypress: ForCypressintegration, installBrowserStack's CLI tool and use thebrowserstack-cypresscommand to run your tests onBrowserStack.npm install -g browserstack-cypress-cli
-browserstack-cypress runTestCafe: Integrate TestCafe by using theBrowserStackplugin. Configure yourBrowserStackcredentials and desired capabilities in the.testcaferc.jsonfile.{
-  "browsers": "browserstack:chrome",
-  "browserstack": {
-    "username": "YOUR_USERNAME",
-    "accessKey": "YOUR_ACCESS_KEY"
-  }
-}JUnit: For JUnit integration, configure your tests to connect toBrowserStack'sSeleniumGrid using theRemoteWebDriverand desired capabilities.DesiredCapabilities caps = new DesiredCapabilities();
-caps.setCapability("browserstack.user", "YOUR_USERNAME");
-caps.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
-// Additional capabilities
-WebDriver driver = new RemoteWebDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);GitHub Actions: UseBrowserStack's GitHub Action to set up your CI/CD pipeline. Add the action to your workflow file and configure it with yourBrowserStackcredentials.- name: BrowserStack Action
-  uses: browserstack/github-actions@master
-  with:
-    username: ${{ secrets.BROWSERSTACK_USERNAME }}
-    access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}These integrations allow you to leverageBrowserStack's infrastructure within your existingtest automationecosystem, facilitating cross-browser and cross-platform testing.
-- Is BrowserStack compatible with continuous integration tools?Yes,BrowserStackis compatible with a variety ofcontinuous integration (CI)tools. It offers plugins and integrations for seamless workflow with CI systems, enabling automated tests to run as part of the build process. This compatibility ensures that testing is an integral part of the development cycle, leading to early detection of issues and maintainingsoftware quality.For instance,BrowserStackintegrates withJenkinsthrough a plugin, allowing you to triggerBrowserStacktests directly from your Jenkins build process. Similarly, it supports other CI tools likeTravis CI,CircleCI,GitLab CI, andBitbucket Pipelinesthrough available plugins or by using custom scripts within your CI configuration.To integrateBrowserStackwith a CI tool, you typically add yourBrowserStackaccess credentials and configure yourtest scriptsto communicate with theBrowserStackAPI. Here's an example of how you might set upBrowserStackwith a CI tool using environment variables for authentication:export BROWSERSTACK_USERNAME="your_username"
-export BROWSERSTACK_ACCESS_KEY="your_access_key"Then, you would run your test command that includes theBrowserStackcapabilities. The specifics of this command will depend on the testing framework and language you're using.By integratingBrowserStackwith CI tools, you can automate cross-browser and cross-platform testing, ensuring that every commit or build is verified, thus maintaining a high standard of quality with minimal manual intervention.
-- Can I use BrowserStack with Selenium?Certainly,BrowserStackcan be used withSeleniumto run automated browser tests. To integrateSeleniumwithBrowserStack, follow these steps:Set up your environment:Ensure you haveSeleniumWebDriverinstalled for your preferred programming language.Install necessary language-specific bindings.Configure yourtest script:Import the WebDriver from Selenium and theDesiredCapabilitiesmodule.Define your BrowserStack credentials and desired capabilities, including the browser, browser version, and operating system you want to test on.Initialize the remoteWebDriver:Point the WebDriver to the BrowserStack remote URL, including your access credentials.Write yourtest cases:Use the same Selenium commands you would use for local browser testing.Here's a basic example in Java:import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import java.net.URL;
-
-public class BrowserStackSeleniumTest {
-  public static final String USERNAME = "your_browserstack_username";
-  public static final String AUTOMATE_KEY = "your_browserstack_accesskey";
-  public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY +
-                                   "@hub-cloud.browserstack.com/wd/hub";
-
-  public static void main(String[] args) throws Exception {
-    DesiredCapabilities caps = new DesiredCapabilities();
-    caps.setCapability("browserName", "chrome");
-    caps.setCapability("browserVersion", "latest");
-    caps.setCapability("os", "Windows");
-    caps.setCapability("os_version", "10");
-    caps.setCapability("name", "BrowserStackTest");
-
-    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
-    driver.get("http://www.google.com");
-    // Your test code here
-    driver.quit();
-  }
-}Replaceyour_browserstack_usernameandyour_browserstack_accesskeywith yourBrowserStackcredentials. Adjust the capabilities to match your testing requirements.
-- How does BrowserStack integrate with Jenkins?BrowserStackintegrates with Jenkins through itsBrowserStackJenkins Plugin. This plugin allows you to easily run your automated tests onBrowserStack's infrastructure directly from the Jenkins interface. To set up the integration, follow these steps:Install theBrowserStackJenkins Pluginfrom the Jenkins plugin manager.Configure the plugin with your BrowserStackAccess KeyandUsernameby navigating to the Jenkins system configuration page.In your job configuration, add a build step or post-build action torun automated tests onBrowserStack.Define your test configurations, including the browsers and devices you want to test against.Use theBrowserStackLocalbinary for testing internal, private, or staging environments through a secure tunnel.Start your Jenkins build, and the plugin will automatically trigger the tests on BrowserStack.Here's an example of how you might configure a Jenkins job to useBrowserStack:pipeline {
-    agent any
-    stages {
-        stage('Test') {
-            steps {
-                script {
-                    // Set up BrowserStack credentials
-                    def browserStackCredentials = withCredentials([usernamePassword(credentialsId: 'BROWSERSTACK_CREDENTIALS', passwordVariable: 'BROWSERSTACK_ACCESS_KEY', usernameVariable: 'BROWSERSTACK_USERNAME')]) {
-                        // Run tests on BrowserStack
-                        sh 'mvn test -DBrowserStack_Username=$BROWSERSTACK_USERNAME -DBrowserStack_AccessKey=$BROWSERSTACK_ACCESS_KEY'
-                    }
-                }
-            }
-        }
+  async function runTest() {
+    let driver = new Builder()
+      .usingServer('http://hub-cloud.browserstack.com/wd/hub')
+      .withCapabilities(capabilities)
+      .build();
+    try {
+      await driver.get('http://www.google.com');
+      // Your test code here
+    } finally {
+      await driver.quit();
     }
-}The plugin also providesenvironment variablesforBrowserStackcredentials, which can be used in yourtest scripts. After the tests are executed, results and video recordings are available on theBrowserStackAutomate dashboard. Jenkins will also display the results, making it easy to track test success and failures directly from the CI pipeline.
-- What other tools and frameworks can be used with BrowserStack?BrowserStackcan be integrated with a variety oftest automationtools and frameworksto enhance testing capabilities. Here are some notable ones:Appium: For mobile application testing, you can use Appium withBrowserStackto run automated tests on a wide range of real devices.browserstackUser = "YOUR_USER";
-browserstackKey = "YOUR_KEY";
-
-desiredCapabilities.setCapability("browserstack.user", browserstackUser);
-desiredCapabilities.setCapability("browserstack.key", browserstackKey);Cypress:BrowserStacksupportsCypresstests, allowing you to run them across multiple browsers and operating systems.TestCafe: You can run TestCafe scripts onBrowserStackto leverage itscross-browser testingcapabilities.Espresso: For Android app testing, Espresso tests can be executed onBrowserStack's real device cloud.XCTest: Similarly, XCTest framework for iOS apps is supported, enabling tests on a range of Apple devices.Puppeteer:BrowserStackoffers support for headless browser testing using Puppeteer, which is useful for quick feedback.Playwright: Integrate Playwright tests to run onBrowserStackfor testing modern web apps across all browsers.GitHub Actions: Automate your workflows by integratingBrowserStackwith GitHub Actions for continuous testing.Bitbucket Pipelines: Run tests inBrowserStackas part of your Bitbucket Pipelines CI/CD process.TeamCity: Integrate with TeamCity to automatically triggerBrowserStacktests with your builds.Visual Studio Team Services: Connect your VSTS pipeline withBrowserStackto run automated tests as part of your release process.These integrations help leverageBrowserStack's device and browser coverage, making it a versatile choice for comprehensiveautomated testing.
-
-BrowserStackcan be integrated with various testing tools to enhance automation and streamline workflows. Here's how to integrate it with some common tools:
-[BrowserStack](/wiki/browserstack)
-Appium: UseBrowserStack's Appium servers formobile app testing. Set theremote_urlin your Appium client toBrowserStack's endpoint with your access credentials.
-**Appium**[BrowserStack](/wiki/browserstack)[mobile app testing](/wiki/mobile-app-testing)`remote_url`[BrowserStack](/wiki/browserstack)
-```
-DesiredCapabilities caps = new DesiredCapabilities();
-caps.setCapability("browserstack.user", "YOUR_USERNAME");
-caps.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
-// Additional capabilities
-AppiumDriver driver = new AppiumDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);
-```
-`DesiredCapabilities caps = new DesiredCapabilities();
-caps.setCapability("browserstack.user", "YOUR_USERNAME");
-caps.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
-// Additional capabilities
-AppiumDriver driver = new AppiumDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);`
-Cypress: ForCypressintegration, installBrowserStack's CLI tool and use thebrowserstack-cypresscommand to run your tests onBrowserStack.
-**Cypress**[Cypress](/wiki/cypress)[Cypress](/wiki/cypress)[BrowserStack](/wiki/browserstack)`browserstack-cypress`[BrowserStack](/wiki/browserstack)
-```
-npm install -g browserstack-cypress-cli
-browserstack-cypress run
-```
-`npm install -g browserstack-cypress-cli
-browserstack-cypress run`
-TestCafe: Integrate TestCafe by using theBrowserStackplugin. Configure yourBrowserStackcredentials and desired capabilities in the.testcaferc.jsonfile.
-**TestCafe**[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)`.testcaferc.json`
-```
-{
-  "browsers": "browserstack:chrome",
-  "browserstack": {
-    "username": "YOUR_USERNAME",
-    "accessKey": "YOUR_ACCESS_KEY"
   }
-}
-```
-`{
-  "browsers": "browserstack:chrome",
-  "browserstack": {
-    "username": "YOUR_USERNAME",
-    "accessKey": "YOUR_ACCESS_KEY"
+  runTest();
+  ```
+  These features, among others, make [BrowserStack](../B/browserstack.md) a versatile platform for web and mobile application testing.
+
+  - **[Cross-browser Testing](../C/cross-browser-testing.md)** : Test on a range of real browsers and operating systems without maintaining an in-house lab.
+  - **Real Device Cloud** : Access to a vast selection of real mobile devices for more accurate testing results.
+  - **Local Testing** : Securely test development and staging environments with the Local Testing feature.
+  - **Parallel Testing** : Run multiple tests simultaneously to reduce execution time.
+  - **Integrations** : Seamless integration with popular CI/CD tools like Jenkins, Travis CI, and CircleCI.
+  - **Interactive Testing** : Manually test and debug on desktop and mobile devices.
+  - **Automated Screenshots and Videos** : Automatically capture screenshots and videos of tests for visual regression and documentation.
+  - **Geo-location Testing** : Simulate and test geolocation-based scenarios.
+  - **Responsive Testing** : Evaluate the responsiveness of web applications across different devices.
+  - **DevTools** : Chrome DevTools for debugging and profiling on desktop browsers.
+  - **Network Throttling** : Test applications under different network conditions.
+  - **Enterprise Features** : SSO, priority support, team management, and usage analytics for enterprise needs.
+
+#### How does BrowserStack improve the quality of software testing?
+
+  [BrowserStack](../B/browserstack.md) enhances [software testing](../S/software-testing.md) quality by providing **access to a vast range of real devices and browsers**. This diversity ensures that applications are tested under conditions that closely mirror end-user environments, leading to the detection of **edge-case issues** that might be missed when testing on emulators or a limited set of devices.
+  With **parallel testing capabilities**, [test suites](../T/test-suite.md) can be executed simultaneously across multiple environments, significantly reducing the time required for comprehensive testing and speeding up the feedback loop for development teams.
+  **Local testing** allows for the secure testing of development and staging environments, ensuring that applications are thoroughly vetted before being released to production. This feature is crucial for identifying environment-specific [bugs](../B/bug.md).
+  [BrowserStack](../B/browserstack.md)'s **integration with popular CI/CD tools** like Jenkins, and compatibility with frameworks like [Selenium](../S/selenium.md), enables seamless inclusion in the automation pipeline. This integration supports **continuous testing practices**, which is essential for agile and DevOps workflows.
+  The platform's **reliability and scalability** ensure that automated tests run consistently, reducing the [false positives](../F/false-positive.md) that can undermine trust in [automated testing](../A/automated-testing.md) processes. Moreover, [BrowserStack](../B/browserstack.md)'s **advanced features** like geolocation testing, and varied network conditions, allow for more nuanced testing scenarios, further improving [test coverage](../T/test-coverage.md) and [quality assurance](../Q/quality-assurance.md).
+  In summary, [BrowserStack](../B/browserstack.md)'s comprehensive device and browser coverage, parallel testing, local testing capabilities, and seamless integrations contribute to a more robust, efficient, and reliable testing process, ultimately leading to the delivery of higher-quality software.
+
+#### What types of testing can be performed using BrowserStack?
+
+  Using [BrowserStack](../B/browserstack.md), [test automation](../T/test-automation.md) engineers can perform a variety of tests to ensure application quality across different devices and platforms:
+
+  - **[Cross-browser Testing](../C/cross-browser-testing.md)**: Validate your web application's functionality and design across multiple browsers and their versions.
+  - **[Responsive Design](../R/responsive-design.md) Testing**: Check how your web application adapts to different screen sizes and resolutions.
+  - **[Regression Testing](../R/regression-testing.md)**: Automatically re-run [test cases](../T/test-case.md) after changes to the application to ensure existing functionality is unaffected.
+  - **[Performance Testing](../P/performance-testing.md)**: Measure the responsiveness and stability of your application under various conditions using [BrowserStack](../B/browserstack.md)'s performance tools.
+  - **[Localization Testing](../L/localization-testing.md)**: Test your application in different geographical settings to ensure it behaves correctly in various locales.
+  - **[Accessibility Testing](../A/accessibility-testing.md)**: Use [BrowserStack](../B/browserstack.md) to ensure your application is accessible to users with disabilities, complying with standards like WCAG.
+  - **Interactive Testing**: Manually interact with your application on a wide range of real devices for [exploratory testing](../E/exploratory-testing.md) purposes.
+  - **Visual Testing**: Compare screenshots of your application across different devices and browsers to spot UI inconsistencies.
+  - **Automated [Screenshot Testing](../S/screenshot-testing.md)**: Capture and compare screenshots at scale to validate visual aspects of your application.
+  - **[Mobile App Testing](../M/mobile-app-testing.md)**: Test native and hybrid mobile applications on a vast selection of real iOS and Android devices.
+  - **[Integration Testing](../I/integration-testing.md)**: Combine [BrowserStack](../B/browserstack.md) with CI/CD pipelines to run tests as part of the development process.
+  These tests can be executed using popular frameworks and tools such as [Selenium](../S/selenium.md), Appium, [Cypress](../C/cypress.md), and others, which are supported by [BrowserStack](../B/browserstack.md) for seamless integration into existing [test suites](../T/test-suite.md).
+
+  - **[Cross-browser Testing](../C/cross-browser-testing.md)**: Validate your web application's functionality and design across multiple browsers and their versions.
+  - **[Responsive Design](../R/responsive-design.md) Testing**: Check how your web application adapts to different screen sizes and resolutions.
+  - **[Regression Testing](../R/regression-testing.md)**: Automatically re-run [test cases](../T/test-case.md) after changes to the application to ensure existing functionality is unaffected.
+  - **[Performance Testing](../P/performance-testing.md)**: Measure the responsiveness and stability of your application under various conditions using [BrowserStack](../B/browserstack.md)'s performance tools.
+  - **[Localization Testing](../L/localization-testing.md)**: Test your application in different geographical settings to ensure it behaves correctly in various locales.
+  - **[Accessibility Testing](../A/accessibility-testing.md)**: Use [BrowserStack](../B/browserstack.md) to ensure your application is accessible to users with disabilities, complying with standards like WCAG.
+  - **Interactive Testing**: Manually interact with your application on a wide range of real devices for [exploratory testing](../E/exploratory-testing.md) purposes.
+  - **Visual Testing**: Compare screenshots of your application across different devices and browsers to spot UI inconsistencies.
+  - **Automated [Screenshot Testing](../S/screenshot-testing.md)**: Capture and compare screenshots at scale to validate visual aspects of your application.
+  - **[Mobile App Testing](../M/mobile-app-testing.md)**: Test native and hybrid mobile applications on a vast selection of real iOS and Android devices.
+  - **[Integration Testing](../I/integration-testing.md)**: Combine [BrowserStack](../B/browserstack.md) with CI/CD pipelines to run tests as part of the development process.
+
+### Functionality and Usage
+
+#### How does BrowserStack work?
+
+  [BrowserStack](../B/browserstack.md) operates by providing a cloud-based platform where users can access a wide range of **real devices**, **browsers**, and **operating systems** for testing purposes. When a test is initiated, [BrowserStack](../B/browserstack.md) allocates a virtual machine or a real device from its device farm, depending on the test requirements.
+  For [automated testing](../A/automated-testing.md), you would typically write your [test scripts](../T/test-script.md) using a framework like **[Selenium](../S/selenium.md)** or **Appium**, and then configure these scripts to communicate with the [BrowserStack](../B/browserstack.md) servers using the provided **[APIs](../A/api.md)** and **access keys**. Here's a simplified example in JavaScript using WebDriverIO with [Selenium](../S/selenium.md):
+
+  ```
+  const { remote } = require('webdriverio');
+  async function runTestOnBrowserStack() {
+    const browserStackOptions = {
+      os: 'Windows',
+      os_version: '10',
+      browserName: 'Chrome',
+      browser_version: 'latest',
+      'browserstack.user': 'YOUR_USERNAME',
+      'browserstack.key': 'YOUR_ACCESS_KEY'
+    };
+    const driver = await remote({
+      capabilities: browserStackOptions,
+      host: 'hub.browserstack.com',
+      port: 80
+    });
+    await driver.url('https://www.yourwebsite.com');
+    // Your test steps go here
+    await driver.deleteSession();
   }
-}`
-JUnit: For JUnit integration, configure your tests to connect toBrowserStack'sSeleniumGrid using theRemoteWebDriverand desired capabilities.
-**JUnit**[BrowserStack](/wiki/browserstack)[Selenium](/wiki/selenium)`RemoteWebDriver`
-```
-DesiredCapabilities caps = new DesiredCapabilities();
-caps.setCapability("browserstack.user", "YOUR_USERNAME");
-caps.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
-// Additional capabilities
-WebDriver driver = new RemoteWebDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);
-```
-`DesiredCapabilities caps = new DesiredCapabilities();
-caps.setCapability("browserstack.user", "YOUR_USERNAME");
-caps.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
-// Additional capabilities
-WebDriver driver = new RemoteWebDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);`
-GitHub Actions: UseBrowserStack's GitHub Action to set up your CI/CD pipeline. Add the action to your workflow file and configure it with yourBrowserStackcredentials.
-**GitHub Actions**[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)
-```
-- name: BrowserStack Action
-  uses: browserstack/github-actions@master
-  with:
-    username: ${{ secrets.BROWSERSTACK_USERNAME }}
-    access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-```
-`- name: BrowserStack Action
-  uses: browserstack/github-actions@master
-  with:
-    username: ${{ secrets.BROWSERSTACK_USERNAME }}
-    access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}`
-These integrations allow you to leverageBrowserStack's infrastructure within your existingtest automationecosystem, facilitating cross-browser and cross-platform testing.
-[BrowserStack](/wiki/browserstack)[test automation](/wiki/test-automation)
-Yes,BrowserStackis compatible with a variety ofcontinuous integration (CI)tools. It offers plugins and integrations for seamless workflow with CI systems, enabling automated tests to run as part of the build process. This compatibility ensures that testing is an integral part of the development cycle, leading to early detection of issues and maintainingsoftware quality.
-**BrowserStack**[BrowserStack](/wiki/browserstack)**continuous integration (CI)**[software quality](/wiki/software-quality)
-For instance,BrowserStackintegrates withJenkinsthrough a plugin, allowing you to triggerBrowserStacktests directly from your Jenkins build process. Similarly, it supports other CI tools likeTravis CI,CircleCI,GitLab CI, andBitbucket Pipelinesthrough available plugins or by using custom scripts within your CI configuration.
-[BrowserStack](/wiki/browserstack)**Jenkins**[BrowserStack](/wiki/browserstack)**Travis CI****CircleCI****GitLab CI****Bitbucket Pipelines**
-To integrateBrowserStackwith a CI tool, you typically add yourBrowserStackaccess credentials and configure yourtest scriptsto communicate with theBrowserStackAPI. Here's an example of how you might set upBrowserStackwith a CI tool using environment variables for authentication:
-[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)[test scripts](/wiki/test-script)[BrowserStack](/wiki/browserstack)[API](/wiki/api)[BrowserStack](/wiki/browserstack)
-```
-export BROWSERSTACK_USERNAME="your_username"
-export BROWSERSTACK_ACCESS_KEY="your_access_key"
-```
-`export BROWSERSTACK_USERNAME="your_username"
-export BROWSERSTACK_ACCESS_KEY="your_access_key"`
-Then, you would run your test command that includes theBrowserStackcapabilities. The specifics of this command will depend on the testing framework and language you're using.
-[BrowserStack](/wiki/browserstack)
-By integratingBrowserStackwith CI tools, you can automate cross-browser and cross-platform testing, ensuring that every commit or build is verified, thus maintaining a high standard of quality with minimal manual intervention.
-[BrowserStack](/wiki/browserstack)
-Certainly,BrowserStackcan be used withSeleniumto run automated browser tests. To integrateSeleniumwithBrowserStack, follow these steps:
-**BrowserStack**[BrowserStack](/wiki/browserstack)**Selenium**[Selenium](/wiki/selenium)[Selenium](/wiki/selenium)[BrowserStack](/wiki/browserstack)1. Set up your environment:Ensure you haveSeleniumWebDriverinstalled for your preferred programming language.Install necessary language-specific bindings.
-2. Configure yourtest script:Import the WebDriver from Selenium and theDesiredCapabilitiesmodule.Define your BrowserStack credentials and desired capabilities, including the browser, browser version, and operating system you want to test on.
-3. Initialize the remoteWebDriver:Point the WebDriver to the BrowserStack remote URL, including your access credentials.
-4. Write yourtest cases:Use the same Selenium commands you would use for local browser testing.
+  runTestOnBrowserStack();
+  ```
+  The script connects to [BrowserStack](../B/browserstack.md), which then spins up the specified environment. The test runs as if it were being executed locally, but it's actually running on a [BrowserStack](../B/browserstack.md) server. This allows for **parallel testing** across different environments, significantly speeding up the testing process.
+  [BrowserStack](../B/browserstack.md)'s infrastructure is designed to handle the **[setup](../S/setup.md), maintenance**, and **teardown** of testing environments, which simplifies the testing workflow and allows you to focus on writing and executing tests. After tests are completed, [BrowserStack](../B/browserstack.md) provides **detailed logs**, **screenshots**, and **video recordings** to help debug any issues.
 
-Set up your environment:
-**Set up your environment**- Ensure you haveSeleniumWebDriverinstalled for your preferred programming language.
-- Install necessary language-specific bindings.
-**SeleniumWebDriver**[Selenium](/wiki/selenium)[WebDriver](/wiki/webdriver)
-Configure yourtest script:
-**Configure yourtest script**[test script](/wiki/test-script)- Import the WebDriver from Selenium and theDesiredCapabilitiesmodule.
-- Define your BrowserStack credentials and desired capabilities, including the browser, browser version, and operating system you want to test on.
-`DesiredCapabilities`
-Initialize the remoteWebDriver:
-**Initialize the remoteWebDriver**[WebDriver](/wiki/webdriver)- Point the WebDriver to the BrowserStack remote URL, including your access credentials.
+#### How can I set up and start using BrowserStack?
 
-Write yourtest cases:
-**Write yourtest cases**[test cases](/wiki/test-case)- Use the same Selenium commands you would use for local browser testing.
+  To set up and start using [BrowserStack](../B/browserstack.md) for [test automation](../T/test-automation.md), follow these steps:
 
-Here's a basic example in Java:
+  1. **Sign up** for a [BrowserStack](../B/browserstack.md) account if you haven't already.
+  2. Once logged in, navigate to the **Automate** section to access your automation dashboard.
+  3. **Configure your [test scripts](../T/test-script.md)** to connect to [BrowserStack](../B/browserstack.md)'s remote servers. You'll need to set [BrowserStack](../B/browserstack.md)'s URL and access credentials in your test code. Use the provided username and access key from your [BrowserStack](../B/browserstack.md) account.
 
-```
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import java.net.URL;
-
-public class BrowserStackSeleniumTest {
-  public static final String USERNAME = "your_browserstack_username";
-  public static final String AUTOMATE_KEY = "your_browserstack_accesskey";
-  public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY +
-                                   "@hub-cloud.browserstack.com/wd/hub";
-
-  public static void main(String[] args) throws Exception {
-    DesiredCapabilities caps = new DesiredCapabilities();
-    caps.setCapability("browserName", "chrome");
-    caps.setCapability("browserVersion", "latest");
-    caps.setCapability("os", "Windows");
-    caps.setCapability("os_version", "10");
-    caps.setCapability("name", "BrowserStackTest");
-
-    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
-    driver.get("http://www.google.com");
-    // Your test code here
-    driver.quit();
-  }
-}
-```
-`import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import java.net.URL;
-
-public class BrowserStackSeleniumTest {
-  public static final String USERNAME = "your_browserstack_username";
-  public static final String AUTOMATE_KEY = "your_browserstack_accesskey";
-  public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY +
-                                   "@hub-cloud.browserstack.com/wd/hub";
-
-  public static void main(String[] args) throws Exception {
-    DesiredCapabilities caps = new DesiredCapabilities();
-    caps.setCapability("browserName", "chrome");
-    caps.setCapability("browserVersion", "latest");
-    caps.setCapability("os", "Windows");
-    caps.setCapability("os_version", "10");
-    caps.setCapability("name", "BrowserStackTest");
-
-    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
-    driver.get("http://www.google.com");
-    // Your test code here
-    driver.quit();
-  }
-}`
-Replaceyour_browserstack_usernameandyour_browserstack_accesskeywith yourBrowserStackcredentials. Adjust the capabilities to match your testing requirements.
-`your_browserstack_username``your_browserstack_accesskey`[BrowserStack](/wiki/browserstack)
-BrowserStackintegrates with Jenkins through itsBrowserStackJenkins Plugin. This plugin allows you to easily run your automated tests onBrowserStack's infrastructure directly from the Jenkins interface. To set up the integration, follow these steps:
-[BrowserStack](/wiki/browserstack)**BrowserStackJenkins Plugin**[BrowserStack](/wiki/browserstack)[BrowserStack](/wiki/browserstack)1. Install theBrowserStackJenkins Pluginfrom the Jenkins plugin manager.
-2. Configure the plugin with your BrowserStackAccess KeyandUsernameby navigating to the Jenkins system configuration page.
-3. In your job configuration, add a build step or post-build action torun automated tests onBrowserStack.
-4. Define your test configurations, including the browsers and devices you want to test against.
-5. Use theBrowserStackLocalbinary for testing internal, private, or staging environments through a secure tunnel.
-6. Start your Jenkins build, and the plugin will automatically trigger the tests on BrowserStack.
-**BrowserStackJenkins Plugin**[BrowserStack](/wiki/browserstack)**Access Key****Username****run automated tests onBrowserStack**[BrowserStack](/wiki/browserstack)**BrowserStackLocal**
-Here's an example of how you might configure a Jenkins job to useBrowserStack:
-[BrowserStack](/wiki/browserstack)
-```
-pipeline {
-    agent any
-    stages {
-        stage('Test') {
-            steps {
-                script {
-                    // Set up BrowserStack credentials
-                    def browserStackCredentials = withCredentials([usernamePassword(credentialsId: 'BROWSERSTACK_CREDENTIALS', passwordVariable: 'BROWSERSTACK_ACCESS_KEY', usernameVariable: 'BROWSERSTACK_USERNAME')]) {
-                        // Run tests on BrowserStack
-                        sh 'mvn test -DBrowserStack_Username=$BROWSERSTACK_USERNAME -DBrowserStack_AccessKey=$BROWSERSTACK_ACCESS_KEY'
-                    }
-                }
-            }
-        }
+    ```
+    const capabilities = {
+      'browserName' : 'Chrome',
+      'browserstack.user' : 'YOUR_USERNAME',
+      'browserstack.key' : 'YOUR_ACCESS_KEY'
     }
-}
-```
-`pipeline {
-    agent any
-    stages {
-        stage('Test') {
-            steps {
-                script {
-                    // Set up BrowserStack credentials
-                    def browserStackCredentials = withCredentials([usernamePassword(credentialsId: 'BROWSERSTACK_CREDENTIALS', passwordVariable: 'BROWSERSTACK_ACCESS_KEY', usernameVariable: 'BROWSERSTACK_USERNAME')]) {
-                        // Run tests on BrowserStack
-                        sh 'mvn test -DBrowserStack_Username=$BROWSERSTACK_USERNAME -DBrowserStack_AccessKey=$BROWSERSTACK_ACCESS_KEY'
-                    }
-                }
-            }
-        }
+    ```
+
+  4. **Select the desired browser and OS** configurations for your tests by specifying them in your test capabilities.
+  5. **Run your [test scripts](../T/test-script.md)** using your preferred [test runner](../T/test-runner.md). Your tests will now execute on [BrowserStack](../B/browserstack.md)'s remote browsers/devices.
+  6. **Monitor your tests** in real-time through the [BrowserStack](../B/browserstack.md) Automate dashboard, where you can view test progress, video recordings, logs, and screenshots.
+  7. **Analyze test results** and debug issues using the detailed reports provided by [BrowserStack](../B/browserstack.md).
+  Remember to secure your [BrowserStack](../B/browserstack.md) access credentials and do not share them publicly. For continuous integration, use environment variables to store your [BrowserStack](../B/browserstack.md) username and access key. When integrating with CI tools like Jenkins, add the [BrowserStack](../B/browserstack.md) plugin or use the provided [API](../A/api.md) to trigger tests as part of your build process.
+
+  1. **Sign up** for a [BrowserStack](../B/browserstack.md) account if you haven't already.
+  2. Once logged in, navigate to the **Automate** section to access your automation dashboard.
+  3. **Configure your [test scripts](../T/test-script.md)** to connect to [BrowserStack](../B/browserstack.md)'s remote servers. You'll need to set [BrowserStack](../B/browserstack.md)'s URL and access credentials in your test code. Use the provided username and access key from your [BrowserStack](../B/browserstack.md) account.
+
+    ```
+    const capabilities = {
+      'browserName' : 'Chrome',
+      'browserstack.user' : 'YOUR_USERNAME',
+      'browserstack.key' : 'YOUR_ACCESS_KEY'
     }
-}`
-The plugin also providesenvironment variablesforBrowserStackcredentials, which can be used in yourtest scripts. After the tests are executed, results and video recordings are available on theBrowserStackAutomate dashboard. Jenkins will also display the results, making it easy to track test success and failures directly from the CI pipeline.
-**environment variables**[BrowserStack](/wiki/browserstack)[test scripts](/wiki/test-script)[BrowserStack](/wiki/browserstack)
-BrowserStackcan be integrated with a variety oftest automationtools and frameworksto enhance testing capabilities. Here are some notable ones:
-[BrowserStack](/wiki/browserstack)**test automationtools and frameworks**[test automation](/wiki/test-automation)- Appium: For mobile application testing, you can use Appium withBrowserStackto run automated tests on a wide range of real devices.browserstackUser = "YOUR_USER";
-browserstackKey = "YOUR_KEY";
+    ```
 
-desiredCapabilities.setCapability("browserstack.user", browserstackUser);
-desiredCapabilities.setCapability("browserstack.key", browserstackKey);
-- Cypress:BrowserStacksupportsCypresstests, allowing you to run them across multiple browsers and operating systems.
-- TestCafe: You can run TestCafe scripts onBrowserStackto leverage itscross-browser testingcapabilities.
-- Espresso: For Android app testing, Espresso tests can be executed onBrowserStack's real device cloud.
-- XCTest: Similarly, XCTest framework for iOS apps is supported, enabling tests on a range of Apple devices.
-- Puppeteer:BrowserStackoffers support for headless browser testing using Puppeteer, which is useful for quick feedback.
-- Playwright: Integrate Playwright tests to run onBrowserStackfor testing modern web apps across all browsers.
-- GitHub Actions: Automate your workflows by integratingBrowserStackwith GitHub Actions for continuous testing.
-- Bitbucket Pipelines: Run tests inBrowserStackas part of your Bitbucket Pipelines CI/CD process.
-- TeamCity: Integrate with TeamCity to automatically triggerBrowserStacktests with your builds.
-- Visual Studio Team Services: Connect your VSTS pipeline withBrowserStackto run automated tests as part of your release process.
+  4. **Select the desired browser and OS** configurations for your tests by specifying them in your test capabilities.
+  5. **Run your [test scripts](../T/test-script.md)** using your preferred [test runner](../T/test-runner.md). Your tests will now execute on [BrowserStack](../B/browserstack.md)'s remote browsers/devices.
+  6. **Monitor your tests** in real-time through the [BrowserStack](../B/browserstack.md) Automate dashboard, where you can view test progress, video recordings, logs, and screenshots.
+  7. **Analyze test results** and debug issues using the detailed reports provided by [BrowserStack](../B/browserstack.md).
 
-Appium: For mobile application testing, you can use Appium withBrowserStackto run automated tests on a wide range of real devices.
-**Appium**[BrowserStack](/wiki/browserstack)
-```
-browserstackUser = "YOUR_USER";
-browserstackKey = "YOUR_KEY";
+#### What are the steps to perform a test on BrowserStack?
 
-desiredCapabilities.setCapability("browserstack.user", browserstackUser);
-desiredCapabilities.setCapability("browserstack.key", browserstackKey);
-```
-`browserstackUser = "YOUR_USER";
-browserstackKey = "YOUR_KEY";
+  To perform a test on [BrowserStack](../B/browserstack.md), follow these steps:
 
-desiredCapabilities.setCapability("browserstack.user", browserstackUser);
-desiredCapabilities.setCapability("browserstack.key", browserstackKey);`
-Cypress:BrowserStacksupportsCypresstests, allowing you to run them across multiple browsers and operating systems.
-**Cypress**[Cypress](/wiki/cypress)[BrowserStack](/wiki/browserstack)[Cypress](/wiki/cypress)
-TestCafe: You can run TestCafe scripts onBrowserStackto leverage itscross-browser testingcapabilities.
-**TestCafe**[BrowserStack](/wiki/browserstack)[cross-browser testing](/wiki/cross-browser-testing)
-Espresso: For Android app testing, Espresso tests can be executed onBrowserStack's real device cloud.
-**Espresso**[BrowserStack](/wiki/browserstack)
-XCTest: Similarly, XCTest framework for iOS apps is supported, enabling tests on a range of Apple devices.
-**XCTest**
-Puppeteer:BrowserStackoffers support for headless browser testing using Puppeteer, which is useful for quick feedback.
-**Puppeteer**[BrowserStack](/wiki/browserstack)
-Playwright: Integrate Playwright tests to run onBrowserStackfor testing modern web apps across all browsers.
-**Playwright**[BrowserStack](/wiki/browserstack)
-GitHub Actions: Automate your workflows by integratingBrowserStackwith GitHub Actions for continuous testing.
-**GitHub Actions**[BrowserStack](/wiki/browserstack)
-Bitbucket Pipelines: Run tests inBrowserStackas part of your Bitbucket Pipelines CI/CD process.
-**Bitbucket Pipelines**[BrowserStack](/wiki/browserstack)
-TeamCity: Integrate with TeamCity to automatically triggerBrowserStacktests with your builds.
-**TeamCity**[BrowserStack](/wiki/browserstack)
-Visual Studio Team Services: Connect your VSTS pipeline withBrowserStackto run automated tests as part of your release process.
-**Visual Studio Team Services**[BrowserStack](/wiki/browserstack)
-These integrations help leverageBrowserStack's device and browser coverage, making it a versatile choice for comprehensiveautomated testing.
-[BrowserStack](/wiki/browserstack)[automated testing](/wiki/automated-testing)
-#### Advanced Features
-- What are the advanced features of BrowserStack?BrowserStackoffers several advanced features that cater to the needs of experiencedtest automationengineers:Local Testing: Securely test development and staging environments, behind firewalls, or on localhost, by establishing a secure tunnel betweenBrowserStackand your local machine.Parallel Testing: Speed uptest executionby running multiple tests simultaneously across different browsers, devices, and operating systems.Geolocation Testing: Simulate website and app performance from different geographic locations to ensure users worldwide have a consistent experience.Real Device Cloud: Access a vast range of real mobile devices for more accurate testing results, as opposed to emulators or simulators.Visual Regression Testing: Automatically detect visual regressions by comparing screenshots over time.Network Throttling: Test applications under various network conditions, including 3G, 4G, LTE, and Wi-Fi, to understand performance and user experience.Interactive Debugging: Use tools like breakpoints and console logs during live testing sessions to identify and troubleshoot issues in real-time.Integrated Developer Tools: Access browser dev tools on remote devices for in-depth debugging.AutomatedMobile App Testing: Run automated tests on native and hybrid mobile apps using Appium, Espresso, and XCUITest frameworks.Enterprise Features: Customized solutions for large organizations, including Single Sign-On (SSO), team management, andprioritysupport.To utilize these features, engineers can incorporate relevantBrowserStackcapabilities into their existingtest automationframeworks, using providedAPIsand CLI tools. For example, to enable Local Testing, use the BrowserStackLocal binary:BrowserStackLocal --key YOUR_ACCESS_KEYFor Parallel Testing, configure yourtest scriptsto initiate multiple sessions with different configurations:"browsers": [
-  { "browser": "chrome", "browser_version": "latest", "os": "Windows", "os_version": "10" },
-  { "browser": "firefox", "browser_version": "latest", "os": "OS X", "os_version": "Catalina" }
-]These features are designed to enhance testing efficiency, accuracy, and coverage, ensuring that applications perform optimally across all user touchpoints.
-- How does the 'Live Testing' feature work in BrowserStack?TheLive Testingfeature inBrowserStackallows you to interactively test your website or application on different browsers and devices without the need for setting up an actualtest environment. It provides a real-time browser session on the platform's cloud infrastructure, enabling you to manually navigate and test the functionality of your web application as if you were using a local device or browser.To use Live Testing:Log in to your BrowserStack account.Navigate to theLivesection.Select the desiredbrowser,browser version, andoperating system.Enter theURLof the website or web application you want to test.ClickStart Sessionto initiate a live testing session.During the session, you can interact with the website or application, test layouts, functionality, and debug issues in real-time. You can also switch between different browsers and devices quickly to test cross-browser compatibility.Live Testing also offers tools for debugging, such asconsole logs,network logs, and the ability to takescreenshotsorvideo recordingsof the session. These features help in identifying and documenting issues that may arise during the testing process.Remember, Live Testing is formanual testing. Forautomated testing, you would useBrowserStack's Automate feature or otherautomated testingintegrations.
-- What is 'Automate Pro' in BrowserStack?Automate Pro is a premium offering fromBrowserStacktailored forenterprise-leveltest automationneeds. It providesadvanced featuresandenhanced capabilitiesover the standard Automate plan. With Automate Pro, users get access tounlimited parallel test runs, which significantly reduces the time required for running largetest suites. This is particularly beneficial for organizations with high testing demands that need to scale their automation efforts.Additionally, Automate Pro includesprioritysupportto ensure any issues are addressed promptly, minimizing downtime. Users also benefit fromexclusive featuressuch asSingle Sign-On (SSO)for added security and convenience, andIP whitelistingto control access and maintain compliance with corporate network policies.For teams focusing ontest coverage, Automate Pro offersreal device testingto ensure that applications work seamlessly across actual mobile devices, not just emulators or simulators. This is critical for delivering a high-quality user experience in today's mobile-centric world.To cater to the needs of large organizations, Automate Pro also providesteam management capabilities, allowing for better coordination and collaboration among distributed testing teams. This includes features likerole-based access controlandteam usage insightsfor managing resources effectively.In summary, Automate Pro is designed to support the complex and extensive testing requirements of large-scale enterprises by offering a more robust and feature-richtest automationenvironment withinBrowserStack.
-- How can I use the 'App Live' feature in BrowserStack?To use theApp Livefeature inBrowserStack, follow these steps:Sign into your BrowserStack account.Navigate to theApp Livesection.Uploadyour mobile app binary:For iOS, upload an.ipafile.For Android, upload an.apkfile.Once uploaded, select thedesired devicefrom the list of available iOS and Android devices.Launchthe app on the chosen device. BrowserStack will instantiate a real device session.Interactwith your app in real-time within your browser window.Use thetoolbarto perform actions such as rotate, shake, take screenshots, and set geolocation.Debugyour app by viewing logs, video recordings, and other data.Integratewith your local development environment using theLocal Testingfeature if needed to test internal servers or dev environments.Forautomated testingof your app, switch to theAutomatesection inBrowserStackand follow the relevant steps for your chosen framework, such as Appium or Espresso.Remember, App Live is formanual interactive testing. For automated tests, useBrowserStack'sAutomateorAutomate Profeatures.
-- What is the 'Screenshots' feature in BrowserStack?TheScreenshotsfeature inBrowserStackis a tool that allows users to capture and save images of web pages across different browsers and operating systems. This is particularly useful forvisual regression testing, where you need to ensure that your web application looks and functions correctly across multiple browser environments.To use the Screenshots feature, you specify the URL of the web page you want to test, along with a list of browser and OS combinations.BrowserStackthen generates screenshots of that page as it would appear on the selected browsers and devices. These screenshots can be reviewed manually or compared programmatically using third-party tools to detect visual differences.Here's a basic example of how you might trigger the ScreenshotsAPIusing JavaScript:const request = require('request');
+  1. **Sign in**
+    to your BrowserStack account.
 
-const options = {
-  method: 'POST',
-  url: 'https://www.browserstack.com/screenshots',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': 'Basic ' + Buffer.from('your_username:your_access_key').toString('base64')
-  },
-  body: JSON.stringify({
-    url: 'http://www.yourwebsite.com',
-    browsers: [
-      {os: 'Windows', os_version: '10', browser: 'chrome', browser_version: 'latest'},
-      {os: 'OS X', os_version: 'Big Sur', browser: 'safari', browser_version: 'latest'}
-      // Add more browsers/OS combinations as needed
-    ]
-  })
-};
+  2. **Select**
+    the type of testing: Live, Automate, App Live, or Screenshots & Responsive.
 
-request(options, function (error, response, body) {
-  if (error) throw new Error(error);
-  console.log(body);
-});This feature is essential for quickly identifying UI issues without the need for manualcross-browser testing, thus saving time and resources. Screenshots can also be shared with team members or stakeholders to provide visual evidence of testing outcomes.
+  3. For
+    **Automate** :
 
-BrowserStackoffers several advanced features that cater to the needs of experiencedtest automationengineers:
-[BrowserStack](/wiki/browserstack)[test automation](/wiki/test-automation)- Local Testing: Securely test development and staging environments, behind firewalls, or on localhost, by establishing a secure tunnel betweenBrowserStackand your local machine.
-- Parallel Testing: Speed uptest executionby running multiple tests simultaneously across different browsers, devices, and operating systems.
-- Geolocation Testing: Simulate website and app performance from different geographic locations to ensure users worldwide have a consistent experience.
-- Real Device Cloud: Access a vast range of real mobile devices for more accurate testing results, as opposed to emulators or simulators.
-- Visual Regression Testing: Automatically detect visual regressions by comparing screenshots over time.
-- Network Throttling: Test applications under various network conditions, including 3G, 4G, LTE, and Wi-Fi, to understand performance and user experience.
-- Interactive Debugging: Use tools like breakpoints and console logs during live testing sessions to identify and troubleshoot issues in real-time.
-- Integrated Developer Tools: Access browser dev tools on remote devices for in-depth debugging.
-- AutomatedMobile App Testing: Run automated tests on native and hybrid mobile apps using Appium, Espresso, and XCUITest frameworks.
-- Enterprise Features: Customized solutions for large organizations, including Single Sign-On (SSO), team management, andprioritysupport.
+    ```
+    const capabilities = {
+      'browserName': 'Chrome',
+      'browser_version': 'latest',
+      'os': 'Windows',
+      'os_version': '10',
+      'resolution': '1024x768',
+      'browserstack.user': 'YOUR_USERNAME',
+      'browserstack.key': 'YOUR_ACCESS_KEY'
+    };
+    ```
 
-Local Testing: Securely test development and staging environments, behind firewalls, or on localhost, by establishing a secure tunnel betweenBrowserStackand your local machine.
-**Local Testing**[BrowserStack](/wiki/browserstack)
-Parallel Testing: Speed uptest executionby running multiple tests simultaneously across different browsers, devices, and operating systems.
-**Parallel Testing**[test execution](/wiki/test-execution)
-Geolocation Testing: Simulate website and app performance from different geographic locations to ensure users worldwide have a consistent experience.
-**Geolocation Testing**
-Real Device Cloud: Access a vast range of real mobile devices for more accurate testing results, as opposed to emulators or simulators.
-**Real Device Cloud**
-Visual Regression Testing: Automatically detect visual regressions by comparing screenshots over time.
-**Visual Regression Testing**[Visual Regression Testing](/wiki/visual-regression-testing)
-Network Throttling: Test applications under various network conditions, including 3G, 4G, LTE, and Wi-Fi, to understand performance and user experience.
-**Network Throttling**
-Interactive Debugging: Use tools like breakpoints and console logs during live testing sessions to identify and troubleshoot issues in real-time.
-**Interactive Debugging**
-Integrated Developer Tools: Access browser dev tools on remote devices for in-depth debugging.
-**Integrated Developer Tools**
-AutomatedMobile App Testing: Run automated tests on native and hybrid mobile apps using Appium, Espresso, and XCUITest frameworks.
-**AutomatedMobile App Testing**[Mobile App Testing](/wiki/mobile-app-testing)
-Enterprise Features: Customized solutions for large organizations, including Single Sign-On (SSO), team management, andprioritysupport.
-**Enterprise Features**[priority](/wiki/priority)
-To utilize these features, engineers can incorporate relevantBrowserStackcapabilities into their existingtest automationframeworks, using providedAPIsand CLI tools. For example, to enable Local Testing, use the BrowserStackLocal binary:
-[BrowserStack](/wiki/browserstack)[test automation](/wiki/test-automation)[APIs](/wiki/api)
-```
-BrowserStackLocal --key YOUR_ACCESS_KEY
-```
-`BrowserStackLocal --key YOUR_ACCESS_KEY`
-For Parallel Testing, configure yourtest scriptsto initiate multiple sessions with different configurations:
-[test scripts](/wiki/test-script)
-```
-"browsers": [
-  { "browser": "chrome", "browser_version": "latest", "os": "Windows", "os_version": "10" },
-  { "browser": "firefox", "browser_version": "latest", "os": "OS X", "os_version": "Catalina" }
-]
-```
-`"browsers": [
-  { "browser": "chrome", "browser_version": "latest", "os": "Windows", "os_version": "10" },
-  { "browser": "firefox", "browser_version": "latest", "os": "OS X", "os_version": "Catalina" }
-]`
-These features are designed to enhance testing efficiency, accuracy, and coverage, ensuring that applications perform optimally across all user touchpoints.
+    - **Configure**
+      your test scripts to use BrowserStack's hub URL and desired capabilities.
 
-TheLive Testingfeature inBrowserStackallows you to interactively test your website or application on different browsers and devices without the need for setting up an actualtest environment. It provides a real-time browser session on the platform's cloud infrastructure, enabling you to manually navigate and test the functionality of your web application as if you were using a local device or browser.
-**Live Testing**[BrowserStack](/wiki/browserstack)[test environment](/wiki/test-environment)
-To use Live Testing:
-1. Log in to your BrowserStack account.
-2. Navigate to theLivesection.
-3. Select the desiredbrowser,browser version, andoperating system.
-4. Enter theURLof the website or web application you want to test.
-5. ClickStart Sessionto initiate a live testing session.
-**Live****browser****browser version****operating system****URL****Start Session**
-During the session, you can interact with the website or application, test layouts, functionality, and debug issues in real-time. You can also switch between different browsers and devices quickly to test cross-browser compatibility.
+    - **Run**
+      your test scripts from your IDE or command line.
 
-Live Testing also offers tools for debugging, such asconsole logs,network logs, and the ability to takescreenshotsorvideo recordingsof the session. These features help in identifying and documenting issues that may arise during the testing process.
-**console logs****network logs****screenshots****video recordings**
-Remember, Live Testing is formanual testing. Forautomated testing, you would useBrowserStack's Automate feature or otherautomated testingintegrations.
-[manual testing](/wiki/manual-testing)[automated testing](/wiki/automated-testing)[BrowserStack](/wiki/browserstack)[automated testing](/wiki/automated-testing)
-Automate Pro is a premium offering fromBrowserStacktailored forenterprise-leveltest automationneeds. It providesadvanced featuresandenhanced capabilitiesover the standard Automate plan. With Automate Pro, users get access tounlimited parallel test runs, which significantly reduces the time required for running largetest suites. This is particularly beneficial for organizations with high testing demands that need to scale their automation efforts.
-[BrowserStack](/wiki/browserstack)**enterprise-level**[test automation](/wiki/test-automation)**advanced features****enhanced capabilities****unlimited parallel test runs**[test suites](/wiki/test-suite)
-Additionally, Automate Pro includesprioritysupportto ensure any issues are addressed promptly, minimizing downtime. Users also benefit fromexclusive featuressuch asSingle Sign-On (SSO)for added security and convenience, andIP whitelistingto control access and maintain compliance with corporate network policies.
-**prioritysupport**[priority](/wiki/priority)**exclusive features****Single Sign-On (SSO)****IP whitelisting**
-For teams focusing ontest coverage, Automate Pro offersreal device testingto ensure that applications work seamlessly across actual mobile devices, not just emulators or simulators. This is critical for delivering a high-quality user experience in today's mobile-centric world.
-**test coverage**[test coverage](/wiki/test-coverage)**real device testing**
-To cater to the needs of large organizations, Automate Pro also providesteam management capabilities, allowing for better coordination and collaboration among distributed testing teams. This includes features likerole-based access controlandteam usage insightsfor managing resources effectively.
-**team management capabilities****role-based access control****team usage insights**
-In summary, Automate Pro is designed to support the complex and extensive testing requirements of large-scale enterprises by offering a more robust and feature-richtest automationenvironment withinBrowserStack.
-[test automation](/wiki/test-automation)[BrowserStack](/wiki/browserstack)
-To use theApp Livefeature inBrowserStack, follow these steps:
-**App Live**[BrowserStack](/wiki/browserstack)1. Sign into your BrowserStack account.
-2. Navigate to theApp Livesection.
-3. Uploadyour mobile app binary:For iOS, upload an.ipafile.For Android, upload an.apkfile.
-4. Once uploaded, select thedesired devicefrom the list of available iOS and Android devices.
-5. Launchthe app on the chosen device. BrowserStack will instantiate a real device session.
-6. Interactwith your app in real-time within your browser window.
-7. Use thetoolbarto perform actions such as rotate, shake, take screenshots, and set geolocation.
-8. Debugyour app by viewing logs, video recordings, and other data.
-9. Integratewith your local development environment using theLocal Testingfeature if needed to test internal servers or dev environments.
-**Sign in****App Live****Upload**- For iOS, upload an.ipafile.
-- For Android, upload an.apkfile.
-`.ipa``.apk`**desired device****Launch****Interact****toolbar****Debug****Integrate****Local Testing**
-Forautomated testingof your app, switch to theAutomatesection inBrowserStackand follow the relevant steps for your chosen framework, such as Appium or Espresso.
-**automated testing**[automated testing](/wiki/automated-testing)**Automate**[BrowserStack](/wiki/browserstack)
-Remember, App Live is formanual interactive testing. For automated tests, useBrowserStack'sAutomateorAutomate Profeatures.
-**manual interactive testing**[BrowserStack](/wiki/browserstack)**Automate****Automate Pro**
-TheScreenshotsfeature inBrowserStackis a tool that allows users to capture and save images of web pages across different browsers and operating systems. This is particularly useful forvisual regression testing, where you need to ensure that your web application looks and functions correctly across multiple browser environments.
-**Screenshots**[BrowserStack](/wiki/browserstack)[visual regression testing](/wiki/visual-regression-testing)
-To use the Screenshots feature, you specify the URL of the web page you want to test, along with a list of browser and OS combinations.BrowserStackthen generates screenshots of that page as it would appear on the selected browsers and devices. These screenshots can be reviewed manually or compared programmatically using third-party tools to detect visual differences.
-[BrowserStack](/wiki/browserstack)
-Here's a basic example of how you might trigger the ScreenshotsAPIusing JavaScript:
-[API](/wiki/api)
-```
-const request = require('request');
+    - **Configure**
+      your test scripts to use BrowserStack's hub URL and desired capabilities.
 
-const options = {
-  method: 'POST',
-  url: 'https://www.browserstack.com/screenshots',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': 'Basic ' + Buffer.from('your_username:your_access_key').toString('base64')
-  },
-  body: JSON.stringify({
-    url: 'http://www.yourwebsite.com',
-    browsers: [
-      {os: 'Windows', os_version: '10', browser: 'chrome', browser_version: 'latest'},
-      {os: 'OS X', os_version: 'Big Sur', browser: 'safari', browser_version: 'latest'}
-      // Add more browsers/OS combinations as needed
-    ]
-  })
-};
+    - **Run**
+      your test scripts from your IDE or command line.
 
-request(options, function (error, response, body) {
-  if (error) throw new Error(error);
-  console.log(body);
-});
-```
-`const request = require('request');
+  4. For
+    **Live Testing** :
 
-const options = {
-  method: 'POST',
-  url: 'https://www.browserstack.com/screenshots',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': 'Basic ' + Buffer.from('your_username:your_access_key').toString('base64')
-  },
-  body: JSON.stringify({
-    url: 'http://www.yourwebsite.com',
-    browsers: [
-      {os: 'Windows', os_version: '10', browser: 'chrome', browser_version: 'latest'},
-      {os: 'OS X', os_version: 'Big Sur', browser: 'safari', browser_version: 'latest'}
-      // Add more browsers/OS combinations as needed
-    ]
-  })
-};
+    - **Choose**
+      the browser, version, and operating system.
 
-request(options, function (error, response, body) {
-  if (error) throw new Error(error);
-  console.log(body);
-});`
-This feature is essential for quickly identifying UI issues without the need for manualcross-browser testing, thus saving time and resources. Screenshots can also be shared with team members or stakeholders to provide visual evidence of testing outcomes.
-[cross-browser testing](/wiki/cross-browser-testing)
+    - **Navigate**
+      to the URL where your web application is hosted.
+
+    - **Interact**
+      with your website manually to perform the test.
+
+    - **Choose**
+      the browser, version, and operating system.
+
+    - **Navigate**
+      to the URL where your web application is hosted.
+
+    - **Interact**
+      with your website manually to perform the test.
+
+  5. For
+    **App Live** :
+
+    - **Upload**
+      your mobile app or provide a public URL to the app.
+
+    - **Select**
+      the device and OS version.
+
+    - **Interact**
+      with your app on the chosen device.
+
+    - **Upload**
+      your mobile app or provide a public URL to the app.
+
+    - **Select**
+      the device and OS version.
+
+    - **Interact**
+      with your app on the chosen device.
+
+  6. For
+    **Screenshots & Responsive** :
+
+    - **Enter**
+      the URL of your web application.
+
+    - **Choose**
+      the browsers and devices for screenshots.
+
+    - **Generate**
+      screenshots to review the layout across different devices and browsers.
+
+    - **Enter**
+      the URL of your web application.
+
+    - **Choose**
+      the browsers and devices for screenshots.
+
+    - **Generate**
+      screenshots to review the layout across different devices and browsers.
+  After testing, **review** the results, which may include video recordings, logs, and screenshots, depending on the type of test performed. **Analyze** the outcomes to identify any issues or [bugs](../B/bug.md).
+
+  1. **Sign in**
+    to your BrowserStack account.
+
+  2. **Select**
+    the type of testing: Live, Automate, App Live, or Screenshots & Responsive.
+
+  3. For
+    **Automate** :
+
+    ```
+    const capabilities = {
+      'browserName': 'Chrome',
+      'browser_version': 'latest',
+      'os': 'Windows',
+      'os_version': '10',
+      'resolution': '1024x768',
+      'browserstack.user': 'YOUR_USERNAME',
+      'browserstack.key': 'YOUR_ACCESS_KEY'
+    };
+    ```
+
+    - **Configure**
+      your test scripts to use BrowserStack's hub URL and desired capabilities.
+
+    - **Run**
+      your test scripts from your IDE or command line.
+
+    - **Configure**
+      your test scripts to use BrowserStack's hub URL and desired capabilities.
+
+    - **Run**
+      your test scripts from your IDE or command line.
+
+  4. For
+    **Live Testing** :
+
+    - **Choose**
+      the browser, version, and operating system.
+
+    - **Navigate**
+      to the URL where your web application is hosted.
+
+    - **Interact**
+      with your website manually to perform the test.
+
+    - **Choose**
+      the browser, version, and operating system.
+
+    - **Navigate**
+      to the URL where your web application is hosted.
+
+    - **Interact**
+      with your website manually to perform the test.
+
+  5. For
+    **App Live** :
+
+    - **Upload**
+      your mobile app or provide a public URL to the app.
+
+    - **Select**
+      the device and OS version.
+
+    - **Interact**
+      with your app on the chosen device.
+
+    - **Upload**
+      your mobile app or provide a public URL to the app.
+
+    - **Select**
+      the device and OS version.
+
+    - **Interact**
+      with your app on the chosen device.
+
+  6. For
+    **Screenshots & Responsive** :
+
+    - **Enter**
+      the URL of your web application.
+
+    - **Choose**
+      the browsers and devices for screenshots.
+
+    - **Generate**
+      screenshots to review the layout across different devices and browsers.
+
+    - **Enter**
+      the URL of your web application.
+
+    - **Choose**
+      the browsers and devices for screenshots.
+
+    - **Generate**
+      screenshots to review the layout across different devices and browsers.
+
+#### How can I use BrowserStack for mobile testing?
+
+  To use [BrowserStack](../B/browserstack.md) for mobile testing, follow these steps:
+
+  1. **Sign in** to your [BrowserStack](../B/browserstack.md) account.
+  2. Navigate to the **App Live** or **App Automate** section, depending on whether you want to do manual or [automated testing](../A/automated-testing.md).
+  3. For **App Live**:
+    - Upload your mobile app or provide a public URL.
+    - Select the device and OS version you want to test on.
+    - Interact with your app on the chosen device through your browser.
+    - Upload your mobile app or provide a public URL.
+    - Select the device and OS version you want to test on.
+    - Interact with your app on the chosen device through your browser.
+  4. For **App Automate**:
+    - Ensure you have an automation script ready using a framework like Appium or Espresso.
+    - Configure your test script to connect to BrowserStack using the provided
+      **access key**
+      and
+      **username**
+      .
+
+    - Specify desired capabilities, including device and OS version.
+    - Run your test script. It will execute on the BrowserStack cloud.
+    - Ensure you have an automation script ready using a framework like Appium or Espresso.
+    - Configure your test script to connect to BrowserStack using the provided
+      **access key**
+      and
+      **username**
+      .
+
+    - Specify desired capabilities, including device and OS version.
+    - Run your test script. It will execute on the BrowserStack cloud.
+  Here's a sample code snippet for an Appium test:
+
+  ```
+  DesiredCapabilities capabilities = new DesiredCapabilities();
+  capabilities.setCapability("device", "iPhone 11 Pro Max");
+  capabilities.setCapability("os_version", "13");
+  capabilities.setCapability("realMobile", "true");
+  capabilities.setCapability("browserstack.user", "YOUR_USERNAME");
+  capabilities.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
+  AppiumDriver driver = new AppiumDriver(new URL("http://hub.browserstack.com/wd/hub"), capabilities);
+  ```
+
+  1. Monitor test results through the
+    **[BrowserStack](../B/browserstack.md) Dashboard**
+    where you can view video recordings, logs, and screenshots.
+  Remember to replace `"YOUR_USERNAME"` and `"YOUR_ACCESS_KEY"` with your actual [BrowserStack](../B/browserstack.md) credentials.
+
+  1. **Sign in** to your [BrowserStack](../B/browserstack.md) account.
+  2. Navigate to the **App Live** or **App Automate** section, depending on whether you want to do manual or [automated testing](../A/automated-testing.md).
+  3. For **App Live**:
+    - Upload your mobile app or provide a public URL.
+    - Select the device and OS version you want to test on.
+    - Interact with your app on the chosen device through your browser.
+    - Upload your mobile app or provide a public URL.
+    - Select the device and OS version you want to test on.
+    - Interact with your app on the chosen device through your browser.
+  4. For **App Automate**:
+    - Ensure you have an automation script ready using a framework like Appium or Espresso.
+    - Configure your test script to connect to BrowserStack using the provided
+      **access key**
+      and
+      **username**
+      .
+
+    - Specify desired capabilities, including device and OS version.
+    - Run your test script. It will execute on the BrowserStack cloud.
+    - Ensure you have an automation script ready using a framework like Appium or Espresso.
+    - Configure your test script to connect to BrowserStack using the provided
+      **access key**
+      and
+      **username**
+      .
+
+    - Specify desired capabilities, including device and OS version.
+    - Run your test script. It will execute on the BrowserStack cloud.
+  1. Monitor test results through the
+    **[BrowserStack](../B/browserstack.md) Dashboard**
+    where you can view video recordings, logs, and screenshots.
+
+#### How does BrowserStack handle different browsers and operating systems?
+
+  [BrowserStack](../B/browserstack.md) manages a variety of browsers and operating systems by maintaining a **vast inventory** of real devices and browser versions. When a test is initiated, [BrowserStack](../B/browserstack.md) **allocates** a virtual machine or a real device that matches the specified criteria, such as browser version, operating system, and screen resolution.
+  For browsers, [BrowserStack](../B/browserstack.md) supports a wide range of versions across **Chrome**, **Firefox**, **Safari**, **Internet Explorer**, and **Edge**. It also offers various versions of mobile browsers for testing on different devices.
+  For operating systems, it includes **Windows**, **macOS**, **iOS**, and **Android** platforms, covering multiple versions to ensure compatibility across different environments.
+  [BrowserStack](../B/browserstack.md) uses a **cloud-based infrastructure** to provide access to these environments, which means that tests can be run in parallel across multiple combinations of browsers and operating systems without the need for local [setup](../S/setup.md) or maintenance.
+  To specify the desired environment, testers use capabilities in their [test scripts](../T/test-script.md). Here's an example using [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md) in JavaScript:
+
+  ```
+  const capabilities = {
+    'browserName' : 'Chrome',
+    'browser_version' : 'latest',
+    'os' : 'Windows',
+    'os_version' : '10',
+    'resolution' : '1024x768'
+  };
+  const driver = new webdriver.Builder().
+    usingServer('http://hub-cloud.browserstack.com/wd/hub').
+    withCapabilities(capabilities).
+    build();
+  ```
+  This approach ensures that applications are tested in **environments that closely mimic user conditions**, leading to more reliable test outcomes.
+
+#### Can I use BrowserStack for automated testing?
+
+  Certainly, **[BrowserStack](../B/browserstack.md)** can be utilized for [automated testing](../A/automated-testing.md). It offers a cloud-based platform that enables you to run automated tests on a variety of browsers and real mobile devices. To get started, you'll need to configure your [test automation](../T/test-automation.md) framework to connect with [BrowserStack](../B/browserstack.md)'s remote servers.
+  Here's a basic example using **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)** with **JavaScript**:
+
+  ```
+  const { Builder } = require('selenium-webdriver');
+  require('chromedriver');
+  async function runTestOnBrowserStack() {
+    const capabilities = {
+      'bstack:options' : {
+        "os" : "Windows",
+        "osVersion" : "10",
+        "local" : "false",
+        "seleniumVersion" : "3.14.0",
+        "userName" : "YOUR_USERNAME",
+        "accessKey" : "YOUR_ACCESS_KEY",
+      },
+      "browserName" : "Chrome",
+      "browserVersion" : "latest",
+    };
+    let driver = new Builder()
+      .usingServer('http://hub-cloud.browserstack.com/wd/hub')
+      .withCapabilities(capabilities)
+      .build();
+    try {
+      await driver.get('http://www.google.com');
+      // Add your test logic here
+    } finally {
+      await driver.quit();
+    }
+  }
+  runTestOnBrowserStack();
+  ```
+  Replace `YOUR_USERNAME` and `YOUR_ACCESS_KEY` with your [BrowserStack](../B/browserstack.md) credentials. This code sets up a [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md) test to run on [BrowserStack](../B/browserstack.md)'s infrastructure.
+  For **continuous integration**, you can integrate [BrowserStack](../B/browserstack.md) with tools like **Jenkins**, **Travis CI**, or **CircleCI** to automatically run tests on every commit or pull request.
+  [BrowserStack](../B/browserstack.md) also supports other testing frameworks like **Appium** for [mobile app testing](../M/mobile-app-testing.md), and **[Cypress](../C/cypress.md)**, **Playwright**, or **Espresso** for more specialized testing scenarios. Integration with these tools follows a similar pattern of configuring your tests to communicate with [BrowserStack](../B/browserstack.md)'s remote servers.
+
+### Integration and Compatibility
+
+#### How can BrowserStack be integrated with other testing tools?
+
+  [BrowserStack](../B/browserstack.md) can be integrated with various testing tools to enhance automation and streamline workflows. Here's how to integrate it with some common tools:
+  **Appium**: Use [BrowserStack](../B/browserstack.md)'s Appium servers for [mobile app testing](../M/mobile-app-testing.md). Set the `remote_url` in your Appium client to [BrowserStack](../B/browserstack.md)'s endpoint with your access credentials.
+
+  ```
+  DesiredCapabilities caps = new DesiredCapabilities();
+  caps.setCapability("browserstack.user", "YOUR_USERNAME");
+  caps.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
+  // Additional capabilities
+  AppiumDriver driver = new AppiumDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);
+  ```
+  **[Cypress](../C/cypress.md)**: For [Cypress](../C/cypress.md) integration, install [BrowserStack](../B/browserstack.md)'s CLI tool and use the `browserstack-cypress` command to run your tests on [BrowserStack](../B/browserstack.md).
+
+  ```
+  npm install -g browserstack-cypress-cli
+  browserstack-cypress run
+  ```
+  **TestCafe**: Integrate TestCafe by using the [BrowserStack](../B/browserstack.md) plugin. Configure your [BrowserStack](../B/browserstack.md) credentials and desired capabilities in the `.testcaferc.json` file.
+
+  ```
+  {
+    "browsers": "browserstack:chrome",
+    "browserstack": {
+      "username": "YOUR_USERNAME",
+      "accessKey": "YOUR_ACCESS_KEY"
+    }
+  }
+  ```
+  **JUnit**: For JUnit integration, configure your tests to connect to [BrowserStack](../B/browserstack.md)'s [Selenium](../S/selenium.md) Grid using the `RemoteWebDriver` and desired capabilities.
+
+  ```
+  DesiredCapabilities caps = new DesiredCapabilities();
+  caps.setCapability("browserstack.user", "YOUR_USERNAME");
+  caps.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
+  // Additional capabilities
+  WebDriver driver = new RemoteWebDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);
+  ```
+  **GitHub Actions**: Use [BrowserStack](../B/browserstack.md)'s GitHub Action to set up your CI/CD pipeline. Add the action to your workflow file and configure it with your [BrowserStack](../B/browserstack.md) credentials.
+
+  ```
+  - name: BrowserStack Action
+    uses: browserstack/github-actions@master
+    with:
+      username: ${{ secrets.BROWSERSTACK_USERNAME }}
+      access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+  ```
+  These integrations allow you to leverage [BrowserStack](../B/browserstack.md)'s infrastructure within your existing [test automation](../T/test-automation.md) ecosystem, facilitating cross-browser and cross-platform testing.
+
+#### Is BrowserStack compatible with continuous integration tools?
+
+  Yes, **[BrowserStack](../B/browserstack.md)** is compatible with a variety of **continuous integration (CI)** tools. It offers plugins and integrations for seamless workflow with CI systems, enabling automated tests to run as part of the build process. This compatibility ensures that testing is an integral part of the development cycle, leading to early detection of issues and maintaining [software quality](../S/software-quality.md).
+  For instance, [BrowserStack](../B/browserstack.md) integrates with **Jenkins** through a plugin, allowing you to trigger [BrowserStack](../B/browserstack.md) tests directly from your Jenkins build process. Similarly, it supports other CI tools like **Travis CI**, **CircleCI**, **GitLab CI**, and **Bitbucket Pipelines** through available plugins or by using custom scripts within your CI configuration.
+  To integrate [BrowserStack](../B/browserstack.md) with a CI tool, you typically add your [BrowserStack](../B/browserstack.md) access credentials and configure your [test scripts](../T/test-script.md) to communicate with the [BrowserStack](../B/browserstack.md) [API](../A/api.md). Here's an example of how you might set up [BrowserStack](../B/browserstack.md) with a CI tool using environment variables for authentication:
+
+  ```
+  export BROWSERSTACK_USERNAME="your_username"
+  export BROWSERSTACK_ACCESS_KEY="your_access_key"
+  ```
+  Then, you would run your test command that includes the [BrowserStack](../B/browserstack.md) capabilities. The specifics of this command will depend on the testing framework and language you're using.
+  By integrating [BrowserStack](../B/browserstack.md) with CI tools, you can automate cross-browser and cross-platform testing, ensuring that every commit or build is verified, thus maintaining a high standard of quality with minimal manual intervention.
+
+#### Can I use BrowserStack with Selenium?
+
+  Certainly, **[BrowserStack](../B/browserstack.md)** can be used with **[Selenium](../S/selenium.md)** to run automated browser tests. To integrate [Selenium](../S/selenium.md) with [BrowserStack](../B/browserstack.md), follow these steps:
+
+  1. **Set up your environment**:
+    - Ensure you have
+      **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**
+      installed for your preferred programming language.
+
+    - Install necessary language-specific bindings.
+    - Ensure you have
+      **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**
+      installed for your preferred programming language.
+
+    - Install necessary language-specific bindings.
+  2. **Configure your [test script](../T/test-script.md)**:
+    - Import the WebDriver from Selenium and the
+      `DesiredCapabilities`
+      module.
+
+    - Define your BrowserStack credentials and desired capabilities, including the browser, browser version, and operating system you want to test on.
+    - Import the WebDriver from Selenium and the
+      `DesiredCapabilities`
+      module.
+
+    - Define your BrowserStack credentials and desired capabilities, including the browser, browser version, and operating system you want to test on.
+  3. **Initialize the remote [WebDriver](../W/webdriver.md)**:
+    - Point the WebDriver to the BrowserStack remote URL, including your access credentials.
+    - Point the WebDriver to the BrowserStack remote URL, including your access credentials.
+  4. **Write your [test cases](../T/test-case.md)**:
+    - Use the same Selenium commands you would use for local browser testing.
+    - Use the same Selenium commands you would use for local browser testing.
+  Here's a basic example in Java:
+
+  ```
+  import org.openqa.selenium.WebDriver;
+  import org.openqa.selenium.remote.DesiredCapabilities;
+  import org.openqa.selenium.remote.RemoteWebDriver;
+  import java.net.URL;
+  public class BrowserStackSeleniumTest {
+    public static final String USERNAME = "your_browserstack_username";
+    public static final String AUTOMATE_KEY = "your_browserstack_accesskey";
+    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY +
+                                     "@hub-cloud.browserstack.com/wd/hub";
+    public static void main(String[] args) throws Exception {
+      DesiredCapabilities caps = new DesiredCapabilities();
+      caps.setCapability("browserName", "chrome");
+      caps.setCapability("browserVersion", "latest");
+      caps.setCapability("os", "Windows");
+      caps.setCapability("os_version", "10");
+      caps.setCapability("name", "BrowserStackTest");
+      WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+      driver.get("http://www.google.com");
+      // Your test code here
+      driver.quit();
+    }
+  }
+  ```
+  Replace `your_browserstack_username` and `your_browserstack_accesskey` with your [BrowserStack](../B/browserstack.md) credentials. Adjust the capabilities to match your testing requirements.
+
+  1. **Set up your environment**:
+    - Ensure you have
+      **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**
+      installed for your preferred programming language.
+
+    - Install necessary language-specific bindings.
+    - Ensure you have
+      **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**
+      installed for your preferred programming language.
+
+    - Install necessary language-specific bindings.
+  2. **Configure your [test script](../T/test-script.md)**:
+    - Import the WebDriver from Selenium and the
+      `DesiredCapabilities`
+      module.
+
+    - Define your BrowserStack credentials and desired capabilities, including the browser, browser version, and operating system you want to test on.
+    - Import the WebDriver from Selenium and the
+      `DesiredCapabilities`
+      module.
+
+    - Define your BrowserStack credentials and desired capabilities, including the browser, browser version, and operating system you want to test on.
+  3. **Initialize the remote [WebDriver](../W/webdriver.md)**:
+    - Point the WebDriver to the BrowserStack remote URL, including your access credentials.
+    - Point the WebDriver to the BrowserStack remote URL, including your access credentials.
+  4. **Write your [test cases](../T/test-case.md)**:
+    - Use the same Selenium commands you would use for local browser testing.
+    - Use the same Selenium commands you would use for local browser testing.
+
+#### How does BrowserStack integrate with Jenkins?
+
+  [BrowserStack](../B/browserstack.md) integrates with Jenkins through its **[BrowserStack](../B/browserstack.md) Jenkins Plugin**. This plugin allows you to easily run your automated tests on [BrowserStack](../B/browserstack.md)'s infrastructure directly from the Jenkins interface. To set up the integration, follow these steps:
+
+  1. Install the
+    **[BrowserStack](../B/browserstack.md) Jenkins Plugin**
+    from the Jenkins plugin manager.
+
+  2. Configure the plugin with your BrowserStack
+    **Access Key**
+    and
+    **Username**
+    by navigating to the Jenkins system configuration page.
+
+  3. In your job configuration, add a build step or post-build action to
+    **run automated tests on [BrowserStack](../B/browserstack.md)**
+    .
+
+  4. Define your test configurations, including the browsers and devices you want to test against.
+  5. Use the
+    **BrowserStackLocal**
+    binary for testing internal, private, or staging environments through a secure tunnel.
+
+  6. Start your Jenkins build, and the plugin will automatically trigger the tests on BrowserStack.
+  Here's an example of how you might configure a Jenkins job to use [BrowserStack](../B/browserstack.md):
+
+  ```
+  pipeline {
+      agent any
+      stages {
+          stage('Test') {
+              steps {
+                  script {
+                      // Set up BrowserStack credentials
+                      def browserStackCredentials = withCredentials([usernamePassword(credentialsId: 'BROWSERSTACK_CREDENTIALS', passwordVariable: 'BROWSERSTACK_ACCESS_KEY', usernameVariable: 'BROWSERSTACK_USERNAME')]) {
+                          // Run tests on BrowserStack
+                          sh 'mvn test -DBrowserStack_Username=$BROWSERSTACK_USERNAME -DBrowserStack_AccessKey=$BROWSERSTACK_ACCESS_KEY'
+                      }
+                  }
+              }
+          }
+      }
+  }
+  ```
+  The plugin also provides **environment variables** for [BrowserStack](../B/browserstack.md) credentials, which can be used in your [test scripts](../T/test-script.md). After the tests are executed, results and video recordings are available on the [BrowserStack](../B/browserstack.md) Automate dashboard. Jenkins will also display the results, making it easy to track test success and failures directly from the CI pipeline.
+
+  1. Install the
+    **[BrowserStack](../B/browserstack.md) Jenkins Plugin**
+    from the Jenkins plugin manager.
+
+  2. Configure the plugin with your BrowserStack
+    **Access Key**
+    and
+    **Username**
+    by navigating to the Jenkins system configuration page.
+
+  3. In your job configuration, add a build step or post-build action to
+    **run automated tests on [BrowserStack](../B/browserstack.md)**
+    .
+
+  4. Define your test configurations, including the browsers and devices you want to test against.
+  5. Use the
+    **BrowserStackLocal**
+    binary for testing internal, private, or staging environments through a secure tunnel.
+
+  6. Start your Jenkins build, and the plugin will automatically trigger the tests on BrowserStack.
+
+#### What other tools and frameworks can be used with BrowserStack?
+
+  [BrowserStack](../B/browserstack.md) can be integrated with a variety of **[test automation](../T/test-automation.md) tools and frameworks** to enhance testing capabilities. Here are some notable ones:
+
+  - **Appium**: For mobile application testing, you can use Appium with [BrowserStack](../B/browserstack.md) to run automated tests on a wide range of real devices.
+
+    ```
+    browserstackUser = "YOUR_USER";
+    browserstackKey = "YOUR_KEY";
+    desiredCapabilities.setCapability("browserstack.user", browserstackUser);
+    desiredCapabilities.setCapability("browserstack.key", browserstackKey);
+    ```
+
+  - **[Cypress](../C/cypress.md)**: [BrowserStack](../B/browserstack.md) supports [Cypress](../C/cypress.md) tests, allowing you to run them across multiple browsers and operating systems.
+  - **TestCafe**: You can run TestCafe scripts on [BrowserStack](../B/browserstack.md) to leverage its [cross-browser testing](../C/cross-browser-testing.md) capabilities.
+  - **Espresso**: For Android app testing, Espresso tests can be executed on [BrowserStack](../B/browserstack.md)'s real device cloud.
+  - **XCTest**: Similarly, XCTest framework for iOS apps is supported, enabling tests on a range of Apple devices.
+  - **Puppeteer**: [BrowserStack](../B/browserstack.md) offers support for headless browser testing using Puppeteer, which is useful for quick feedback.
+  - **Playwright**: Integrate Playwright tests to run on [BrowserStack](../B/browserstack.md) for testing modern web apps across all browsers.
+  - **GitHub Actions**: Automate your workflows by integrating [BrowserStack](../B/browserstack.md) with GitHub Actions for continuous testing.
+  - **Bitbucket Pipelines**: Run tests in [BrowserStack](../B/browserstack.md) as part of your Bitbucket Pipelines CI/CD process.
+  - **TeamCity**: Integrate with TeamCity to automatically trigger [BrowserStack](../B/browserstack.md) tests with your builds.
+  - **Visual Studio Team Services**: Connect your VSTS pipeline with [BrowserStack](../B/browserstack.md) to run automated tests as part of your release process.
+  These integrations help leverage [BrowserStack](../B/browserstack.md)'s device and browser coverage, making it a versatile choice for comprehensive [automated testing](../A/automated-testing.md).
+
+  - **Appium**: For mobile application testing, you can use Appium with [BrowserStack](../B/browserstack.md) to run automated tests on a wide range of real devices.
+
+    ```
+    browserstackUser = "YOUR_USER";
+    browserstackKey = "YOUR_KEY";
+    desiredCapabilities.setCapability("browserstack.user", browserstackUser);
+    desiredCapabilities.setCapability("browserstack.key", browserstackKey);
+    ```
+
+  - **[Cypress](../C/cypress.md)**: [BrowserStack](../B/browserstack.md) supports [Cypress](../C/cypress.md) tests, allowing you to run them across multiple browsers and operating systems.
+  - **TestCafe**: You can run TestCafe scripts on [BrowserStack](../B/browserstack.md) to leverage its [cross-browser testing](../C/cross-browser-testing.md) capabilities.
+  - **Espresso**: For Android app testing, Espresso tests can be executed on [BrowserStack](../B/browserstack.md)'s real device cloud.
+  - **XCTest**: Similarly, XCTest framework for iOS apps is supported, enabling tests on a range of Apple devices.
+  - **Puppeteer**: [BrowserStack](../B/browserstack.md) offers support for headless browser testing using Puppeteer, which is useful for quick feedback.
+  - **Playwright**: Integrate Playwright tests to run on [BrowserStack](../B/browserstack.md) for testing modern web apps across all browsers.
+  - **GitHub Actions**: Automate your workflows by integrating [BrowserStack](../B/browserstack.md) with GitHub Actions for continuous testing.
+  - **Bitbucket Pipelines**: Run tests in [BrowserStack](../B/browserstack.md) as part of your Bitbucket Pipelines CI/CD process.
+  - **TeamCity**: Integrate with TeamCity to automatically trigger [BrowserStack](../B/browserstack.md) tests with your builds.
+  - **Visual Studio Team Services**: Connect your VSTS pipeline with [BrowserStack](../B/browserstack.md) to run automated tests as part of your release process.
+
+### Advanced Features
+
+#### What are the advanced features of BrowserStack?
+
+  [BrowserStack](../B/browserstack.md) offers several advanced features that cater to the needs of experienced [test automation](../T/test-automation.md) engineers:
+
+  - **Local Testing**: Securely test development and staging environments, behind firewalls, or on localhost, by establishing a secure tunnel between [BrowserStack](../B/browserstack.md) and your local machine.
+  - **Parallel Testing**: Speed up [test execution](../T/test-execution.md) by running multiple tests simultaneously across different browsers, devices, and operating systems.
+  - **Geolocation Testing**: Simulate website and app performance from different geographic locations to ensure users worldwide have a consistent experience.
+  - **Real Device Cloud**: Access a vast range of real mobile devices for more accurate testing results, as opposed to emulators or simulators.
+  - **[Visual Regression Testing](../V/visual-regression-testing.md)**: Automatically detect visual regressions by comparing screenshots over time.
+  - **Network Throttling**: Test applications under various network conditions, including 3G, 4G, LTE, and Wi-Fi, to understand performance and user experience.
+  - **Interactive Debugging**: Use tools like breakpoints and console logs during live testing sessions to identify and troubleshoot issues in real-time.
+  - **Integrated Developer Tools**: Access browser dev tools on remote devices for in-depth debugging.
+  - **Automated [Mobile App Testing](../M/mobile-app-testing.md)**: Run automated tests on native and hybrid mobile apps using Appium, Espresso, and XCUITest frameworks.
+  - **Enterprise Features**: Customized solutions for large organizations, including Single Sign-On (SSO), team management, and [priority](../P/priority.md) support.
+  To utilize these features, engineers can incorporate relevant [BrowserStack](../B/browserstack.md) capabilities into their existing [test automation](../T/test-automation.md) frameworks, using provided [APIs](../A/api.md) and CLI tools. For example, to enable Local Testing, use the BrowserStackLocal binary:
+
+  ```
+  BrowserStackLocal --key YOUR_ACCESS_KEY
+  ```
+  For Parallel Testing, configure your [test scripts](../T/test-script.md) to initiate multiple sessions with different configurations:
+
+  ```
+  "browsers": [
+    { "browser": "chrome", "browser_version": "latest", "os": "Windows", "os_version": "10" },
+    { "browser": "firefox", "browser_version": "latest", "os": "OS X", "os_version": "Catalina" }
+  ]
+  ```
+  These features are designed to enhance testing efficiency, accuracy, and coverage, ensuring that applications perform optimally across all user touchpoints.
+
+  - **Local Testing**: Securely test development and staging environments, behind firewalls, or on localhost, by establishing a secure tunnel between [BrowserStack](../B/browserstack.md) and your local machine.
+  - **Parallel Testing**: Speed up [test execution](../T/test-execution.md) by running multiple tests simultaneously across different browsers, devices, and operating systems.
+  - **Geolocation Testing**: Simulate website and app performance from different geographic locations to ensure users worldwide have a consistent experience.
+  - **Real Device Cloud**: Access a vast range of real mobile devices for more accurate testing results, as opposed to emulators or simulators.
+  - **[Visual Regression Testing](../V/visual-regression-testing.md)**: Automatically detect visual regressions by comparing screenshots over time.
+  - **Network Throttling**: Test applications under various network conditions, including 3G, 4G, LTE, and Wi-Fi, to understand performance and user experience.
+  - **Interactive Debugging**: Use tools like breakpoints and console logs during live testing sessions to identify and troubleshoot issues in real-time.
+  - **Integrated Developer Tools**: Access browser dev tools on remote devices for in-depth debugging.
+  - **Automated [Mobile App Testing](../M/mobile-app-testing.md)**: Run automated tests on native and hybrid mobile apps using Appium, Espresso, and XCUITest frameworks.
+  - **Enterprise Features**: Customized solutions for large organizations, including Single Sign-On (SSO), team management, and [priority](../P/priority.md) support.
+
+#### How does the 'Live Testing' feature work in BrowserStack?
+
+  The **Live Testing** feature in [BrowserStack](../B/browserstack.md) allows you to interactively test your website or application on different browsers and devices without the need for setting up an actual [test environment](../T/test-environment.md). It provides a real-time browser session on the platform's cloud infrastructure, enabling you to manually navigate and test the functionality of your web application as if you were using a local device or browser.
+  To use Live Testing:
+
+  1. Log in to your BrowserStack account.
+  2. Navigate to the
+    **Live**
+    section.
+
+  3. Select the desired
+    **browser**
+    ,
+    **browser version**
+    , and
+    **operating system**
+    .
+
+  4. Enter the
+    **URL**
+    of the website or web application you want to test.
+
+  5. Click
+    **Start Session**
+    to initiate a live testing session.
+  During the session, you can interact with the website or application, test layouts, functionality, and debug issues in real-time. You can also switch between different browsers and devices quickly to test cross-browser compatibility.
+  Live Testing also offers tools for debugging, such as **console logs**, **network logs**, and the ability to take **screenshots** or **video recordings** of the session. These features help in identifying and documenting issues that may arise during the testing process.
+  Remember, Live Testing is for [manual testing](../M/manual-testing.md). For [automated testing](../A/automated-testing.md), you would use [BrowserStack](../B/browserstack.md)'s Automate feature or other [automated testing](../A/automated-testing.md) integrations.
+
+  1. Log in to your BrowserStack account.
+  2. Navigate to the
+    **Live**
+    section.
+
+  3. Select the desired
+    **browser**
+    ,
+    **browser version**
+    , and
+    **operating system**
+    .
+
+  4. Enter the
+    **URL**
+    of the website or web application you want to test.
+
+  5. Click
+    **Start Session**
+    to initiate a live testing session.
+
+#### What is 'Automate Pro' in BrowserStack?
+
+  Automate Pro is a premium offering from [BrowserStack](../B/browserstack.md) tailored for **enterprise-level** [test automation](../T/test-automation.md) needs. It provides **advanced features** and **enhanced capabilities** over the standard Automate plan. With Automate Pro, users get access to **unlimited parallel test runs**, which significantly reduces the time required for running large [test suites](../T/test-suite.md). This is particularly beneficial for organizations with high testing demands that need to scale their automation efforts.
+  Additionally, Automate Pro includes **[priority](../P/priority.md) support** to ensure any issues are addressed promptly, minimizing downtime. Users also benefit from **exclusive features** such as **Single Sign-On (SSO)** for added security and convenience, and **IP whitelisting** to control access and maintain compliance with corporate network policies.
+  For teams focusing on **[test coverage](../T/test-coverage.md)**, Automate Pro offers **real device testing** to ensure that applications work seamlessly across actual mobile devices, not just emulators or simulators. This is critical for delivering a high-quality user experience in today's mobile-centric world.
+  To cater to the needs of large organizations, Automate Pro also provides **team management capabilities**, allowing for better coordination and collaboration among distributed testing teams. This includes features like **role-based access control** and **team usage insights** for managing resources effectively.
+  In summary, Automate Pro is designed to support the complex and extensive testing requirements of large-scale enterprises by offering a more robust and feature-rich [test automation](../T/test-automation.md) environment within [BrowserStack](../B/browserstack.md).
+
+#### How can I use the 'App Live' feature in BrowserStack?
+
+  To use the **App Live** feature in [BrowserStack](../B/browserstack.md), follow these steps:
+
+  1. **Sign in**
+    to your BrowserStack account.
+
+  2. Navigate to the
+    **App Live**
+    section.
+
+  3. **Upload**
+    your mobile app binary:
+
+    - For iOS, upload an
+      `.ipa`
+      file.
+
+    - For Android, upload an
+      `.apk`
+      file.
+
+    - For iOS, upload an
+      `.ipa`
+      file.
+
+    - For Android, upload an
+      `.apk`
+      file.
+
+  4. Once uploaded, select the
+    **desired device**
+    from the list of available iOS and Android devices.
+
+  5. **Launch**
+    the app on the chosen device. BrowserStack will instantiate a real device session.
+
+  6. **Interact**
+    with your app in real-time within your browser window.
+
+  7. Use the
+    **toolbar**
+    to perform actions such as rotate, shake, take screenshots, and set geolocation.
+
+  8. **Debug**
+    your app by viewing logs, video recordings, and other data.
+
+  9. **Integrate**
+    with your local development environment using the
+    **Local Testing**
+    feature if needed to test internal servers or dev environments.
+  For **[automated testing](../A/automated-testing.md)** of your app, switch to the **Automate** section in [BrowserStack](../B/browserstack.md) and follow the relevant steps for your chosen framework, such as Appium or Espresso.
+  Remember, App Live is for **manual interactive testing**. For automated tests, use [BrowserStack](../B/browserstack.md)'s **Automate** or **Automate Pro** features.
+
+  1. **Sign in**
+    to your BrowserStack account.
+
+  2. Navigate to the
+    **App Live**
+    section.
+
+  3. **Upload**
+    your mobile app binary:
+
+    - For iOS, upload an
+      `.ipa`
+      file.
+
+    - For Android, upload an
+      `.apk`
+      file.
+
+    - For iOS, upload an
+      `.ipa`
+      file.
+
+    - For Android, upload an
+      `.apk`
+      file.
+
+  4. Once uploaded, select the
+    **desired device**
+    from the list of available iOS and Android devices.
+
+  5. **Launch**
+    the app on the chosen device. BrowserStack will instantiate a real device session.
+
+  6. **Interact**
+    with your app in real-time within your browser window.
+
+  7. Use the
+    **toolbar**
+    to perform actions such as rotate, shake, take screenshots, and set geolocation.
+
+  8. **Debug**
+    your app by viewing logs, video recordings, and other data.
+
+  9. **Integrate**
+    with your local development environment using the
+    **Local Testing**
+    feature if needed to test internal servers or dev environments.
+
+#### What is the 'Screenshots' feature in BrowserStack?
+
+  The **Screenshots** feature in [BrowserStack](../B/browserstack.md) is a tool that allows users to capture and save images of web pages across different browsers and operating systems. This is particularly useful for [visual regression testing](../V/visual-regression-testing.md), where you need to ensure that your web application looks and functions correctly across multiple browser environments.
+  To use the Screenshots feature, you specify the URL of the web page you want to test, along with a list of browser and OS combinations. [BrowserStack](../B/browserstack.md) then generates screenshots of that page as it would appear on the selected browsers and devices. These screenshots can be reviewed manually or compared programmatically using third-party tools to detect visual differences.
+  Here's a basic example of how you might trigger the Screenshots [API](../A/api.md) using JavaScript:
+
+  ```
+  const request = require('request');
+  const options = {
+    method: 'POST',
+    url: 'https://www.browserstack.com/screenshots',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Basic ' + Buffer.from('your_username:your_access_key').toString('base64')
+    },
+    body: JSON.stringify({
+      url: 'http://www.yourwebsite.com',
+      browsers: [
+        {os: 'Windows', os_version: '10', browser: 'chrome', browser_version: 'latest'},
+        {os: 'OS X', os_version: 'Big Sur', browser: 'safari', browser_version: 'latest'}
+        // Add more browsers/OS combinations as needed
+      ]
+    })
+  };
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+    console.log(body);
+  });
+  ```
+  This feature is essential for quickly identifying UI issues without the need for manual [cross-browser testing](../C/cross-browser-testing.md), thus saving time and resources. Screenshots can also be shared with team members or stakeholders to provide visual evidence of testing outcomes.

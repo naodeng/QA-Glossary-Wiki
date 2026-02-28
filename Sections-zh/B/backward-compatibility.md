@@ -1,211 +1,359 @@
-# 向后兼容性 (Backward Compatibility)
+# 向后兼容性
 
-[向后兼容性](#backward-compatibility)
+<!-- TOC START -->
+- [有关向后兼容性的问题吗？](#有关向后兼容性的问题吗？)
+  - [基础知识和重要性](#基础知识和重要性)
+    - [什么是软件向后兼容性？](#什么是软件向后兼容性？)
+    - [为什么向后兼容性在软件开发中很重要？](#为什么向后兼容性在软件开发中很重要？)
+    - [不保持向后兼容性的潜在后果是什么？](#不保持向后兼容性的潜在后果是什么？)
+    - [向后兼容性如何影响用户体验？](#向后兼容性如何影响用户体验？)
+    - [流行软件中向后兼容的一些例子有哪些？](#流行软件中向后兼容的一些例子有哪些？)
+  - [实施和挑战](#实施和挑战)
+    - [开发软件时确保向后兼容性的步骤有哪些？](#开发软件时确保向后兼容性的步骤有哪些？)
+    - [保持向后兼容性时面临哪些常见挑战？](#保持向后兼容性时面临哪些常见挑战？)
+    - [软件开发人员如何在引入新功能和保持向后兼容性之间取得平衡？](#软件开发人员如何在引入新功能和保持向后兼容性之间取得平衡？)
+    - [保持向后兼容性的最佳实践是什么？](#保持向后兼容性的最佳实践是什么？)
+    - [自动化测试如何帮助确保向后兼容性？](#自动化测试如何帮助确保向后兼容性？)
+  - [案例研究和现实世界的例子](#案例研究和现实世界的例子)
+    - [您能否提供一个因缺乏向后兼容性而导致用户不满意的案例研究？](#您能否提供一个因缺乏向后兼容性而导致用户不满意的案例研究？)
+    - [Microsoft 或 Apple 等主要软件公司如何处理向后兼容性？](#microsoft-或-apple-等主要软件公司如何处理向后兼容性？)
+    - [成功实现向后兼容性的一些实际示例有哪些？](#成功实现向后兼容性的一些实际示例有哪些？)
+    - [您能否提供一个示例，说明软件必须在新功能上做出妥协才能保持向后兼容性？](#您能否提供一个示例，说明软件必须在新功能上做出妥协才能保持向后兼容性？)
+    - [具有强大的向后兼容性策略的软件示例有哪些？](#具有强大的向后兼容性策略的软件示例有哪些？)
+<!-- TOC END -->
 
-## 关于向后兼容性的问题？
+向后兼容性
 
-#### 基础知识与重要性
+，在上下文中
 
-- **什么是软件中的向后兼容性？**
+软件测试
 
-**向后兼容性 (Backward Compatibility)** 在软件中是指系统与其自身旧版本或专为旧版本设计的输入进行交互的能力。它确保新版本的软件在接受、执行或解释由旧版本产生的数据或代码时不会出现错误或功能丢失。
+，是指软件应用程序或系统与其早期版本有效运行或与较旧的输入数据格式、配置或硬件正确连接的能力。本质上，当软件产品向后兼容时，它可以确保使用旧版本的用户在与新版本交互时不会遇到意外问题或故障
 
-对于**测试自动化 (Test Automation)** 工程师而言，向后兼容性意味着为旧版本设计的自动化测试在新的发布版本中应能继续运行。这至关重要，因为它允许进行**持续测试 (Continuous Testing)**，而无需频繁更新**测试脚本 (Test Scripts)**。
+迭代
 
-为了维持向后兼容性，工程师通常会：
-- 使用**版本化的 API** 以防止更改影响旧客户端。
-- 实施**功能开关 (Feature Toggles)** 以逐步引入更改，而不破坏现有功能。
-- 采用**弃用政策 (Deprecation Policies)**，为用户和开发人员适应新版本预留时间。
+。测试
 
-针对向后兼容性的自动化测试通常包括：
-- 针对新版本运行**回归测试套件**。
-- 使用**虚拟机或容器**在不同的环境和版本间进行测试。
-- 将向后兼容性检查整合进 **CI/CD** 流水线中。
+向后兼容性
 
-```javascript
-// 自动化测试中简单的向后兼容性检查示例
-function testBackwardCompatibility(newVersionFunction) {
-  const oldVersionResult = oldVersionFunction(input);
-  const newVersionResult = newVersionFunction(input);
-  assert.equal(newVersionResult, oldVersionResult, '该函数不具备向后兼容性');
-}
-```
+在软件升级或发布过程中，确保引入的更改不会对现有用户产生负面影响或破坏既定功能至关重要。这种做法优先考虑用户体验，确保软件各代之间的无缝过渡和交互。
 
-维持向后兼容性是创新与稳定之间的一种**微妙平衡**，需要周密的计划和测试，以确保技术的进步不会扰乱现有用户的日常流程。
+## 有关向后兼容性的问题吗？
 
-- **为什么向后兼容性在软件开发中很重要？**
+### 基础知识和重要性
 
-向后兼容性对于**无缝集成**和**连续性**至关重要。它确保新版本的软件可以处理为旧版本设计的数据、接口或系统，从而防止用户工作流程中断，并保护对现有基础设施的投资。
+#### 什么是软件向后兼容性？
 
-维持向后兼容性是对**用户信任**和**产品可靠性**的一种承诺。它允许用户按自己的节奏升级软件，而无需担心失去对关键功能或数据的访问权限。对于企业而言，这意味着可以避免高昂的迁移和再培训成本，并确保第三方集成和定制化解决方案能持续运行。
+软件中的[Backward compatibility](../B/backward-compatibility.md) 是指系统**与自身的旧版本**交互或与为此类版本设计的输入交互的能力。它确保较新版本的软件可以接受、执行或解释旧版本生成的数据或代码，而不会出现错误或功能丢失。
+  对于[test automation](../T/test-automation.md) 工程师来说，[backward compatibility](../B/backward-compatibility.md) 意味着为以前版本设计的自动化测试应该继续适用于新版本。这很重要，因为它允许**连续测试**，而不需要不断更新[test scripts](../T/test-script.md)。
+  为了维护[backward compatibility](../B/backward-compatibility.md)，工程师经常：
 
-在测试自动化背景下，向后兼容性意味着测试脚本和框架在软件更新后仍能正常运行。这对于持续测试和交付流水线至关重要，因为任何中断都可能导致延迟和成本增加。
+- 使用
+    **版本化[APIs](../A/api.md)**
+    以防止更改影响老客户。
 
-开发人员必须谨慎管理新功能的引入和旧功能的停用，通常通过**版本控制 (Versioning)** 和**弃用警告**来提示更改。自动化测试（包括单元测试、集成测试和回归测试）在验证新更新不会破坏现有功能方面发挥着关键作用。
+- 实施
+    **功能切换**
+    在不破坏现有功能的情况下逐步引入更改。
 
-综上所述，向后兼容性旨在尊重用户的现有环境，同时不断推进创新。这种微妙的平衡如果处理得当，将带来**长期的用户满意度**和**产品的成功**。
+- 申请
+    **弃用政策**
+    给用户和开发人员时间来适应新版本。
+  [Automated testing](../A/automated-testing.md) 对于 [backward compatibility](../B/backward-compatibility.md) 通常涉及：
 
-- **不维持向后兼容性可能带来的后果有哪些？**
+- 运行一个
+    **回归测试套件**
+    反对新版本。
 
-不维持向后兼容性可能导致以下负面结果：
-- **支持成本增加**：使用旧版本的用户可能会遇到需要支持的问题，从而增加服务台和支持团队的工作负担。
-- **碎片化**：用户群体可能会分散在不同版本中，使更新和安全补丁的部署变得复杂。
-- **强制升级**：用户可能被迫升级其系统或硬件以运行最新的软件版本，这既昂贵又耗时。
-- **集成问题**：如果第三方集成或依赖系统依赖于旧的 API 或软件版本，它们可能会失效，从而扰乱工作流程和业务运营。
-- **信任丢失**：如果用户感觉被抛弃或被迫改变，那些无法或选择不升级的用户可能会对软件失去信心。
-- **数据不兼容**：新软件版本可能使用不同的数据格式，导致尝试访问旧数据时出现潜在的数据丢失或损坏。
-- **市场份额下降**：潜在客户可能会选择那些与其现有基础设施提供更好兼容性的竞争产品。
-- **法律和合规风险**：在某些行业，因兼容性问题导致无法访问或使用数据，可能会导致不符合监管标准。
+- 使用
+    **虚拟机或容器**
+    跨不同环境和版本进行测试。
 
-自动化测试可以通过验证新软件版本与之前版本的兼容性来减轻这些风险，从而确保现有功能在更新后不受影响。
+- 纳入
+    **[backward compatibility](../B/backward-compatibility.md) 检查**
+    进入 CI/CD 管道。
 
-- **向后兼容性如何影响用户体验？**
+  ```
+  // Example of a simple backward compatibility check in an automated test
+  function testBackwardCompatibility(newVersionFunction) {
+    const oldVersionResult = oldVersionFunction(input);
+    const newVersionResult = newVersionFunction(input);
+    assert.equal(newVersionResult, oldVersionResult, 'The function is not backward compatible');
+  }
+  ```维护[backward compatibility](../B/backward-compatibility.md) 是创新与稳定性之间的**微妙平衡**，需要仔细规划和测试以确保进步不会扰乱现有用户的工作流程。
 
-向后兼容性通过确保软件版本间的平滑过渡，直接影响**用户体验 (UX)**。用户期望现有的工作流程、脚本和工具在更新后能继续发挥作用。当向后兼容性得以维持时，用户可以在日常操作中享受**一致性**，避免了因不必要的变化而产生的学习新操作或适应环境的挫败感。
+- 使用
+    **版本化[APIs](../A/api.md)**
+    以防止更改影响老客户。
 
-对于测试自动化工程师，向后兼容性意味着测试脚本在多个软件版本间保持有效和可靠。这种稳定性减少了脚本日常维护的负担，让工程师能专注于提高测试覆盖率或探索新功能。
+- 实施
+    **功能切换**
+    在不破坏现有功能的情况下逐步引入更改。
 
-相反，如果不保留向后兼容性，用户可能会面临**中断**。他们可能需要更新或重写脚本、配置或集成方案，导致停机和生产力下降。在极端情况下，用户甚至可能被迫放弃该软件，寻求其他尊重其原有设置和培训投资的替代方案。
+- 申请
+    **弃用政策**
+    给用户和开发人员时间来适应新版本。
 
-维持向后兼容性是对用户信任和满意度的**承诺**，确保新功能的引入不会以牺牲现有功能为代价。这种微妙的平衡一旦达成，将产生积极的 UX，增强忠诚度并促进软件的长期采用。
+- 运行一个
+    **回归测试套件**
+    反对新版本。
 
-- **流行软件中向后兼容性的例子有哪些？**
+- 使用
+    **虚拟机或容器**
+    跨不同环境和版本进行测试。
 
-流行软件中向后兼容性的典型案例：
-- **Microsoft Windows**：新版本通常支持为旧版本设计的应用程序。例如，Windows 10 在无需修改的情况下即可运行许多 Windows 7 应用。
-- **Java 运行时环境 (JRE)**：得益于 Java 发展过程中对向后兼容性的坚持，在旧版本上编译的 Java 应用程序通常能在更新的 JRE 上运行。
-- **Python 2 到 Python 3**：尽管 Python 3 引入了破坏性更改，但像 `2to3` 这样的工具和 `six` 这样的兼容性库帮助在两个版本间搭起了桥梁。
-- **Adobe Photoshop**：新版本通常能打开旧版本创建的文件，保留了用户的工作流程。
-- **Apple macOS**：尽管架构发生了变化，macOS 仍包含 Rosetta 2 等功能，允许针对 Intel 处理器编译的软件在 Apple Silicon 上运行。
-- **SQL Server**：微软的数据库服务器维持一定的兼容级别，允许将旧版本的数据库还原或附加到新版本的 SQL Server。
-- **WordPress**：该 CMS 确保插件和主题通常与新版本兼容，保障了用户在更新后的网站功能。
-- **HTTP/2**：设计时考虑了与 HTTP/1.1 的向后兼容性，使客户端和服务器能够同时支持这两种协议。
-- **USB 标准**：较新的 USB 版本通常设计为能与之前版本的设备和线缆协同工作。
-- **游戏主机**：像 PlayStation 5 这样的一些主机提供了对前几代游戏的向后兼容支持。
+- 纳入
+    **[backward compatibility](../B/backward-compatibility.md) 检查**
+    进入 CI/CD 管道。
 
-#### 实施与挑战
+#### 为什么向后兼容性在软件开发中很重要？
 
-- **在开发软件时，确保向后兼容性的步骤有哪些？**
+[Backward compatibility](../B/backward-compatibility.md) 对于软件开发中的**无缝集成**和**连续性**至关重要。它确保新版本的软件可以与为旧版本设计的数据、接口或系统配合使用，防止用户工作流程中断并保护现有基础设施的投资。
+  维护[backward compatibility](../B/backward-compatibility.md) 是对**用户信任**和**产品可靠性**的承诺。它允许用户按照自己的节奏升级软件，而不必担心失去对关键功能或数据的访问。对于企业而言，这意味着避免成本高昂的迁移和再培训，并确保第三方集成和定制解决方案继续发挥作用。
+  在[test automation](../T/test-automation.md) 上下文中，[backward compatibility](../B/backward-compatibility.md) 表示[test scripts](../T/test-script.md) 和框架在软件更新后仍保持功能。这对于**持续测试**和**交付管道**至关重要，任何破损都可能导致延误和成本增加。
+  开发人员必须仔细管理新功能的引入和旧功能的弃用，通常使用**版本控制**和**弃用警告**来表示更改。 [Automated testing](../A/automated-testing.md)，包括**单元测试**、**集成测试**和**回归测试**，在验证新更新不会破坏现有功能方面发挥着关键作用。
+  最终，[backward compatibility](../B/backward-compatibility.md) 是尊重用户现有的环境，同时继续创新。这是一种微妙的平衡，如果处理得当，可以带来**长期用户满意度**和**产品成功**。
 
-为了在开发软件时确保向后兼容性，请遵循以下步骤：
-1. **定义兼容性规则**：明确规定向后兼容性包含的内容，包括 API 契约、数据格式和配置文件。
-2. **版本控制**：使用语义化版本控制来传达变更。主版本号增加表示破坏性更改，次版本号增加表示向后兼容的新功能，修订号增加表示错误修复。
-3. **弃用政策**：在引入影响兼容性的更改时，提供弃用时间线并告知用户。
-4. **自动化测试**：实施自动化回归测试，针对旧版本软件运行，以确保新更改不会破坏现有功能。
-5. **持续集成 (CI)**：将向后兼容性测试整合到 CI 流水线中，以便及早发现问题。
-6. **功能标志 (Feature Flags)**：使用功能开关逐步推出新功能，使您能够禁用它们而不影响现有功能。
-7. **文档记录**：保留所有更改的详细文档，包括帮助用户从旧版本过渡的迁移指南。
-8. **用户反馈**：与用户社区交流，了解他们的需求以及更改可能对他们产生的影响。
-9. **遗留系统支持**：维护一个镜像旧系统的测试环境，以确保兼容性。
-10. **代码评审**：进行严格的代码评审，重点关注潜在的向后兼容性问题。
+#### 不保持向后兼容性的潜在后果是什么？
 
-通过遵循这些步骤，您可以最大限度地降低引入破坏性更改的风险，并为用户提供稳定可靠的软件产品。
+不维护 [backward compatibility](../B/backward-compatibility.md) 可能会导致一些负面结果：
 
-- **维持向后兼容性时面临哪些常见挑战？**
+- **支持成本增加**：使用旧版本的用户可能会遇到需要支持的问题，从而增加帮助台和支持团队的工作量。
+  - **碎片**：用户群可能会在不同版本之间变得碎片化，从而使更新和安全补丁的部署变得复杂。
+  - **强制升级**：用户可能被迫升级其系统或硬件以运行最新的软件版本，这可能既昂贵又耗时。
+  - **集成问题**：第三方集成或依赖系统如果依赖于较旧的 API 或软件版本，则可能会失败，从而可能会中断工作流程和业务运营。
+  - **失去信任**：无法升级或选择不升级的用户如果感到被抛弃或被迫进行更改，可能会失去对软件的信任。
+  - **数据不兼容性**：新软件版本可能使用不同的数据格式，从而在尝试访问旧数据时导致潜在的数据丢失或损坏。
+  - **市场份额减少**：潜在客户可能会选择与其现有基础设施具有更好兼容性的竞争对手的产品。
+  - **法律和合规风险**：在某些行业中，由于兼容性问题而无法访问或使用数据可能会导致不遵守监管标准。
+  [Automated testing](../A/automated-testing.md) 可以通过验证新软件版本是否与以前版本保持兼容性来减轻这些风险，确保现有功能不受更新影响。
 
-维持向后兼容性会带来多项挑战：
-- **复杂性**：随着软件演进，代码库变得愈加复杂，很难预测更改将如何与旧版本交互。
-- **测试开销**：确保兼容性需要在多个版本间进行广泛测试，这不仅耗时而且耗资源。
+- **支持成本增加**：使用旧版本的用户可能会遇到需要支持的问题，从而增加帮助台和支持团队的工作量。
+  - **碎片**：用户群可能会在不同版本之间变得碎片化，从而使更新和安全补丁的部署变得复杂。
+  - **强制升级**：用户可能被迫升级其系统或硬件以运行最新的软件版本，这可能既昂贵又耗时。
+  - **集成问题**：第三方集成或依赖系统如果依赖于较旧的 API 或软件版本，则可能会失败，从而可能会中断工作流程和业务运营。
+  - **失去信任**：无法升级或选择不升级的用户如果感到被抛弃或被迫进行更改，可能会失去对软件的信任。
+  - **数据不兼容性**：新软件版本可能使用不同的数据格式，从而在尝试访问旧数据时导致潜在的数据丢失或损坏。
+  - **市场份额减少**：潜在客户可能会选择与其现有基础设施具有更好兼容性的竞争对手的产品。
+  - **法律和合规风险**：在某些行业中，由于兼容性问题而无法访问或使用数据可能会导致不遵守监管标准。
 
-```javascript
-// 示例：针对多个版本的自动化测试脚本片段
-const versions = ['v1.0', 'v1.1', 'v2.0'];
-versions.forEach(version => {
-  test(`确保功能 X 在 ${version} 上运行`, () => {
-    // 测试实现
+#### 向后兼容性如何影响用户体验？
+
+[Backward compatibility](../B/backward-compatibility.md) 通过确保软件版本之间的无缝过渡直接影响**用户体验 (UX)**。用户希望他们现有的工作流程、脚本和工具在更新后能够继续运行。当维护[backward compatibility](../B/backward-compatibility.md)时，用户在日常操作中享受**一致性**，避免重新学习或适应不必要的更改的挫败感。
+  对于[test automation](../T/test-automation.md) 工程师来说，[backward compatibility](../B/backward-compatibility.md) 意味着[test scripts](../T/test-script.md) 在多个软件版本上保持**有效**和**可靠**。这种稳定性减少了对持续脚本维护的需求，使工程师能够专注于增强[test coverage](../T/test-coverage.md)或探索新功能。
+  但是，当[backward compatibility](../B/backward-compatibility.md) 未保留时，用户可能会面临**中断**。他们可能需要**更新**或**重写**脚本、配置或集成，从而导致**停机**并降低生产力。在极端情况下，用户甚至可能被迫**放弃**该软件，寻求替代方案来兑现他们在[setup](../S/setup.md)和培训方面的现有投资。
+  维护[backward compatibility](../B/backward-compatibility.md) 是对用户信任和满意度的**承诺**，确保新功能的引入不会以牺牲现有功能为代价。这是一种微妙的平衡，一旦实现，就会产生积极的用户体验，培养软件的**忠诚度**和**长期采用**。
+
+#### 流行软件中向后兼容的一些例子有哪些？
+
+流行软件中[backward compatibility](../B/backward-compatibility.md)的示例：
+
+- **Microsoft Windows**：新版本通常支持为旧版本设计的应用程序。例如，Windows 10 无需修改即可运行许多 Windows 7 应用程序。
+  - **Java 运行时环境 (JRE)**：在旧版本上编译的 Java 应用程序通常在较新的 JRE 上运行，因为 Java 的发展遵循 [backward compatibility](../B/backward-compatibility.md)。
+  - **Python 2 到 Python 3**：虽然 Python 3 引入了重大更改，但 `2to3` 等工具和 `six` 等兼容性库有助于维护两个版本之间的桥梁。
+  - **Adobe Photoshop**：新版本通常可以打开旧版本创建的文件，保留用户工作流程。
+  - **Apple macOS**：尽管架构发生了变化，macOS 仍包含 Rosetta 2 等功能，允许为英特尔处理器编译的软件在 Apple Silicon 上运行。
+  - **[SQL](../S/sql.md) 服务器**：Microsoft 的[database](../D/database.md) 服务器保持兼容性级别，允许旧版本的[databases](../D/database.md) 恢复或附加到较新版本的[SQL](../S/sql.md) 服务器。
+  - **WordPress**：CMS 确保插件和主题通常与新版本兼容，从而在更新后保护用户的网站功能。
+  - **HTTP/2**：设计为向后兼容 HTTP/1.1，使客户端和服务器能够支持这两种协议。
+  - **USB 标准**：较新的 USB 版本通常设计用于与以前的 [iterations](../I/iteration.md) 中的设备和电缆配合使用，确保用户硬件投资保持有效。
+  - **游戏机**：某些游戏机（例如 PlayStation 5）提供 [backward compatibility](../B/backward-compatibility.md) 前几代游戏，保护用户的游戏库投资。
+  - **Microsoft Windows**：新版本通常支持为旧版本设计的应用程序。例如，Windows 10 无需修改即可运行许多 Windows 7 应用程序。
+  - **Java 运行时环境 (JRE)**：在旧版本上编译的 Java 应用程序通常在较新的 JRE 上运行，因为 Java 的发展遵循 [backward compatibility](../B/backward-compatibility.md)。
+  - **Python 2 到 Python 3**：虽然 Python 3 引入了重大更改，但 `2to3` 等工具和 `six` 等兼容性库有助于维护两个版本之间的桥梁。
+  - **Adobe Photoshop**：新版本通常可以打开旧版本创建的文件，保留用户工作流程。
+  - **Apple macOS**：尽管架构发生了变化，macOS 仍包含 Rosetta 2 等功能，允许为英特尔处理器编译的软件在 Apple Silicon 上运行。
+  - **[SQL](../S/sql.md) 服务器**：Microsoft 的[database](../D/database.md) 服务器保持兼容性级别，允许将旧版本的[databases](../D/database.md) 恢复或附加到较新版本的[SQL](../S/sql.md) 服务器。
+  - **WordPress**：CMS 确保插件和主题通常与新版本兼容，从而在更新后保护用户的网站功能。
+  - **HTTP/2**：设计为向后兼容 HTTP/1.1，使客户端和服务器能够支持这两种协议。
+  - **USB 标准**：较新的 USB 版本通常设计用于与以前的[iterations](../I/iteration.md) 中的设备和电缆配合使用，确保用户硬件投资保持有效。
+  - **游戏机**：某些游戏机（例如 PlayStation 5）提供 [backward compatibility](../B/backward-compatibility.md) 前几代游戏，保护用户的游戏库投资。
+
+### 实施和挑战
+
+#### 开发软件时确保向后兼容性的步骤有哪些？
+
+要在开发软件时确保 [backward compatibility](../B/backward-compatibility.md)，请按照以下步骤操作：
+
+1. **定义兼容性规则**：清楚地概述您的项目的[backward compatibility](../B/backward-compatibility.md)的构成，包括[API](../A/api.md)合约、数据格式和配置文件。
+  2. **版本控制**：使用语义版本控制来传达更改。增量主要版本用于重大更改，次要版本用于向后兼容的新功能，以及 [bug](../B/bug.md) 修复的补丁。
+  3. **弃用政策**：在引入影响兼容性的更改时，提供弃用时间表并将其传达给用户。
+  4. **[Automated Testing](../A/automated-testing.md)**：实施针对旧版本软件运行的自动回归测试，以确保新更改不会破坏现有功能。
+  5. **持续集成 (CI)**：将 [backward compatibility](../B/backward-compatibility.md) 测试集成到 CI 管道中以尽早发现问题。
+  6. **功能标志**：使用功能切换逐步推出新功能，允许您在不影响现有功能的情况下禁用它们。
+  7. **文档**：保留所有更改的完整文档，包括用户从旧版本过渡的迁移指南。
+  8. **用户反馈**：与您的用户社区互动，了解他们的需求以及更改可能如何影响他们。
+  9. **旧系统支持**：维护镜像旧系统的[test environment](../T/test-environment.md)以确保兼容性。
+  10. **代码审查**：进行彻底的代码审查，重点关注潜在的[backward compatibility](../B/backward-compatibility.md)问题。
+  通过遵循这些步骤，您可以最大限度地降低引入重大更改的风险，并为用户维护稳定可靠的软件产品。
+
+1. **定义兼容性规则**：清楚地概述您的项目的[backward compatibility](../B/backward-compatibility.md)的构成，包括[API](../A/api.md)合约、数据格式和配置文件。
+  2. **版本控制**：使用语义版本控制来传达更改。增量主要版本用于重大更改，次要版本用于向后兼容的新功能，以及 [bug](../B/bug.md) 修复的补丁。
+  3. **弃用政策**：在引入影响兼容性的更改时，提供弃用时间表并将其传达给用户。
+  4. **[Automated Testing](../A/automated-testing.md)**：实施针对旧版本软件运行的自动回归测试，以确保新更改不会破坏现有功能。
+  5. **持续集成 (CI)**：将 [backward compatibility](../B/backward-compatibility.md) 测试集成到 CI 管道中以尽早发现问题。
+  6. **功能标志**：使用功能切换逐步推出新功能，允许您在不影响现有功能的情况下禁用它们。
+  7. **文档**：保留所有更改的完整文档，包括用户从旧版本过渡的迁移指南。
+  8. **用户反馈**：与您的用户社区互动，了解他们的需求以及更改可能如何影响他们。
+  9. **旧系统支持**：维护镜像旧系统的[test environment](../T/test-environment.md)以确保兼容性。
+  10. **代码审查**：进行彻底的代码审查，重点关注潜在的[backward compatibility](../B/backward-compatibility.md)问题。
+
+#### 保持向后兼容性时面临哪些常见挑战？
+
+维护[backward compatibility](../B/backward-compatibility.md) 面临着一些挑战：
+
+- **复杂性**：随着软件的发展，代码库变得越来越复杂，使得预测更改将如何与旧版本交互变得更加困难。
+  - **测试开销**：确保兼容性需要跨多个版本进行广泛的测试，这可能非常耗时且占用资源。
+  - $
+
+    ```
+    ```// 示例：多个版本的自动 [test script](../T/test-script.md) 片段
+  const 版本 = ['v1.0', 'v1.1', 'v2.0'];
+  版本.forEach(版本 => {
+  测试(`Ensure feature X works on ${version}`, () => {
+  // 测试实现
   });
-});
-```
-- **依赖管理**：外部库或 API 可能不维持自身的向后兼容性，被迫的更新可能会破坏现有功能。
-- **性能**：向后兼容层可能会引入性能瓶颈，因为遗留支持代码可能未针对当前硬件进行优化。
-- **代码膨胀**：维持遗留代码会导致软件臃肿，因为弃用的功能必须与新功能并存。
-- **资源分配**：平衡当前开发与旧版本维护可能会使资源紧张，从而减慢新功能的推出。
-- **文档维护**：为多个版本实时更新文档具有挑战性，如果管理不当可能会引起混淆。
-
-资深的测试自动化工程师必须谨慎应对这些挑战，通过采用功能标志、版本化 API 和模块化架构等策略来降低风险。
-
-- **软件开发人员如何平衡引入新功能与维持向后兼容性？**
-
-平衡引入新功能与维持向后兼容性是开发人员的关键任务。为此，他们通常采用**版本控制策略**。语义化版本控制 (SemVer) 是常用方法，版本号传达了变更的性质。主版本号更改表示破坏性变更，而次版本号和修订号分别代表向后兼容的改进和错误修复。
-
-开发人员还依靠**弃用政策**逐步淘汰旧功能。他们将过时的功能标记为已弃用，但在过渡期内仍使其保持可用。这给予用户在未来主版本移除这些功能前，适应新 API 或新功能的时间。
-
-**功能标志**允许开发人员在引入新功能的同时让旧功能保持运行。用户可以在准备好时选择开启新功能。
-
-**模块化架构**是另一方面。通过将新功能隔离到独立的模块或服务中，核心系统可以保持稳定，兼容性不太可能受到影响。
-
-**自动化测试**（包括回归和集成测试）至关重要。它确保新更改不会破坏现有功能。
-
-最后，就更改（尤其是破坏性更改）与用户进行**清晰的沟通**必不可少。提供详细的发布说明和迁移指南可帮助用户理解更新的影响。
-
-- **维持向后兼容性的最佳实践有哪些？**
-
-维持向后兼容性的最佳实践：
-- **坚持语义化版本控制**：根据变更类型正确更新版本号。
-- **实行弃用政策**：提供明确的弃用警告，并在移除前维持一段合理的时间。
-- **利用功能开关**：逐步替换功能，而非一蹴而就。
-- **维持全面的测试套件**：包括覆盖旧功能的回归测试。
-- **精细地记录文档**：提供变更日志。
-- **采用稳健的 API 策略**：设计具有扩展性的 API，遵循开闭原则。
-- **隔离遗留系统**：必要时封装旧代码。
-- **使用抽象层**：将新实现与旧接口分离。
-- **进行影响分析**：在更改现有功能前分析对当前用户的影响。
-- **收集用户反馈**：了解社区对兼容性的关注点。
-
-- **自动化测试如何帮助确保向后兼容性？**
-
-自动化测试通过提供系统化的方式来验证新代码更改不会破坏现有功能，在确保向后兼容性方面发挥着核心作用。
-
-```javascript
-// 自动化回归测试示例
-describe('向后兼容性测试', () => {
-  it('应能处理遗留数据格式', () => {
-    const legacyData = getLegacyData();
-    const result = newSoftwareFunction(legacyData);
-    expect(result).toBeCompatibleWithLegacySystems();
   });
-});
-```
-自动化测试可以针对软件的多个版本运行。通过将自动化测试整合进 CI/CD 流水线，团队可以在每次构建时持续验证向后兼容性。此外，自动化测试可以模拟真实场景，使用旧版本的实际数据和工作流程，从而确保向后兼容性在实际应用场景中得以保留。
 
-#### 案例研究与真实案例
+  ```
+  - **Dependency Management**: External libraries or APIs may not maintain their own backward compatibility, forcing updates that could break existing functionality.
+  - **Performance**: Backward compatibility layers can introduce performance bottlenecks, as legacy support code may not be optimized for current hardware.
+  - **Code Bloat**: Maintaining legacy code can lead to bloated software, as deprecated features must coexist with new ones.
+  - **Resource Allocation**: Balancing current development with maintaining old versions can strain resources, potentially slowing down new feature rollouts.
+  - **Documentation**: Keeping documentation up-to-date for multiple versions is challenging and can lead to confusion if not managed properly.
+  Experienced test automation engineers must navigate these challenges carefully, often employing strategies like feature flags, versioned APIs, and modular architecture to mitigate the risks while ensuring a seamless user experience.
+  ```
 
-- **能否提供一个因缺乏向后兼容性导致用户不满的案例？**
+- **复杂性**：随着软件的发展，代码库变得越来越复杂，使得预测更改将如何与旧版本交互变得更加困难。
+  - **测试开销**：确保兼容性需要跨多个版本进行广泛的测试，这可能非常耗时且占用资源。
+  - $
 
-2018 年，**Adobe Photoshop CC 2019** (版本 20.0) 的发布因缺乏向后兼容性引起了剧烈的用户不满。Adobe 引入了新功能，但移除了一些许多用户依赖的遗留功能，如“存储为 Web 所用格式 (Save for Web)”选项（尽管未完全移除，但位置和交互发生了变化，导致了混淆）。
+    ```
+    ```
 
-对于将 Photoshop 整合进**自动化工作流**的用户来说，这次更改影响巨大。依赖被移除功能的脚本和动作失效，导致自动化流程中断。专业用户发现其工作效率大打折扣。尽管 Adobe 后来对其决策进行了调整并提供了替代方案，但这仍然是一个关于在未充分考虑对现有用户工作流影响的情况下移除功能的警示案例。
+#### 软件开发人员如何在引入新功能和保持向后兼容性之间取得平衡？
 
-- **主要的软件公司（如微软或苹果）是如何处理向后兼容性的？**
+平衡新功能的引入与维护[backward compatibility](../B/backward-compatibility.md) 是软件开发人员的一项关键任务。为了实现这一点，开发人员通常采用**版本控制策略**。语义版本控制 (SemVer) 是一种流行的方法，其中版本号传达有关底层更改的含义。主要版本中的更改表示重大更改，而次要版本和补丁版本分别表示向后兼容的改进和[bug](../B/bug.md)修复。
+  开发人员还依靠**弃用政策**来逐步淘汰旧功能。他们将过时的功能标记为已弃用，但在过渡期内保持其功能。这让用户有时间适应新的 [APIs](../A/api.md) 或功能，然后再在未来的主要版本中删除旧的功能。
+  **功能标志**或切换开关允许开发人员引入新功能，同时保持旧功能的运行。用户可以在新功能准备就绪时选择加入，从而提供灵活性并保持兼容性。
+  **模块化架构**是另一个关键方面。通过将新功能隔离到单独的模块或服务中，核心系统保持稳定，并且兼容性不太可能受到影响。
+  **[Automated testing](../A/automated-testing.md)**，包括回归和集成测试，至关重要。它确保新的更改不会破坏现有功能。持续集成 (CI) 系统可以在每次代码提交时自动运行这些测试。
+  最后，与用户就变更（尤其是破坏性变更）进行**清晰的沟通**至关重要。提供详细的发行说明和迁移指南可以帮助用户了解更新的影响以及如何相应地调整其系统。
+  通过结合这些策略，开发人员可以引入新功能，同时尊重 [backward compatibility](../B/backward-compatibility.md) 的需求。
 
-**微软 (Microsoft)** 历史上一直非常强调向后兼容性，尤其是其 Windows 操作系统。他们提供广泛的文档和工具（如应用程序兼容性工具包 ACT），并使用“垫片 (Shims)”技术拦截 API 调用以确保旧软件的兼容性。
+#### 保持向后兼容性的最佳实践是什么？
 
-**苹果 (Apple)** 则采取了更具前瞻性的策略，有时会为了现代化和采用新技术而牺牲向后兼容性。例如，macOS 引入了应用程序传输安全 (ATS) 作为默认设置，强制执行更严格的安全协议，这导致了一些未使用安全连接的旧应用失效。不过，苹果会提供 Xcode 等工具帮助开发者更新应用，并利用 Rosetta 等模拟技术辅助过渡。
+维护 [backward compatibility](../B/backward-compatibility.md) 对于最大限度地减少中断并确保用户在软件版本之间顺利过渡至关重要。以下是实现这一目标的最佳实践：
 
-两家公司都会利用版本控制和弃用政策，并在一段时间内提供遗留支持。
+- **遵守语义版本控制**：在进行不兼容的 API 更改时增加主要版本号，以向后兼容的方式添加功能的次要版本，以及向后兼容的错误修复的补丁版本。
+  - **使用弃用策略**：逐步淘汰功能。对已弃用的 API 提供警告，并在删除前将其维护一段合理的时间。
+  - **利用功能切换**：引入新功能，同时保持旧功能运行，允许用户根据需要进行切换。
+  - **维护全面的[test suites](../T/test-suite.md)** ：包括覆盖旧功能的回归测试以捕获重大更改。
+  - **细致地记录变更**：保留详细的变更日志，以便用户了解版本之间的修改。
+  - **采用强大的[API](../A/api.md)策略**：设计API时考虑到可扩展性，使用开放/封闭原则等原则，其中软件实体应该对扩展开放，但对修改关闭。
+  - **隔离遗留系统**：必要时，封装旧代码，防止其干扰新的开发。
+  - **利用抽象层**：引入抽象层将新实现与旧接口分开，使它们能够独立发展。
+  - **执行[impact analysis](../I/impact-analysis.md)** ：在更改现有功能之前，分析对当前用户的影响以了解更改的范围。
+  - **收集用户反馈**：与您的用户社区互动，了解他们对兼容性的需求和担忧。
+  通过遵循这些实践，您可以确保您的软件即使在不断发展时仍然可靠且用户友好。
 
-- **有哪些真实世界中成功的向后兼容性实施范例？**
+- **遵守语义版本控制**：在进行不兼容的 API 更改时增加主要版本号，以向后兼容的方式添加功能的次要版本，以及向后兼容的错误修复的补丁版本。
+  - **使用弃用策略**：逐步淘汰功能。对已弃用的 API 提供警告，并在删除前将其维护一段合理的时间。
+  - **利用功能切换**：引入新功能，同时保持旧功能运行，允许用户根据需要进行切换。
+  - **维护全面的[test suites](../T/test-suite.md)** ：包括覆盖旧功能的回归测试以捕获重大更改。
+  - **细致地记录变更**：保留详细的变更日志，以便用户了解版本之间的修改。
+  - **采用强大的[API](../A/api.md)策略**：设计API时考虑到可扩展性，使用开放/封闭原则等原则，其中软件实体应该对扩展开放，但对修改关闭。
+  - **隔离遗留系统**：必要时，封装旧代码，防止其干扰新的开发。
+  - **利用抽象层**：引入抽象层将新实现与旧接口分开，使它们能够独立发展。
+  - **执行[impact analysis](../I/impact-analysis.md)** ：在更改现有功能之前，分析对当前用户的影响以了解更改的范围。
+  - **收集用户反馈**：与您的用户社区互动，了解他们对兼容性的需求和担忧。
 
-成功的向后兼容性范例：
-- **Java**：JRE 允许在旧版本上编写的应用程序在最新 JRE 上运行而无需修改。
-- **Python 2 到 3**：尽管跨度很大，但提供了 `2to3` 等工具和 `six` 等库。
-- **Windows 操作系统**：通过兼容模式和垫片运行数十年以前的应用。
-- **PlayStation 主机**：PS2 兼容 PS1，PS5 兼容 PS4。
-- **HTTP/2**：维持与 HTTP/1.1 的兼容。
-- **SQL Server**：支持还原旧版本数据库。
-- **WordPress**：保障了大量旧插件和主题的持续可用。
+#### 自动化测试如何帮助确保向后兼容性？
 
-- **能否举一个由于维持向后兼容性而不得不对新功能做出妥协的例子？**
+[Automated testing](../A/automated-testing.md) 通过提供系统方法来验证新代码更改不会破坏现有功能，在确保 **[backward compatibility](../B/backward-compatibility.md)** 方面发挥着至关重要的作用。通过实施一整套自动化回归测试，开发人员可以快速识别并解决开发过程中出现的任何兼容性问题。
 
-在 **Python 3** 的开发过程中，核心团队面临着巨大的向后兼容性挑战。虽然 Python 3 引入了许多现代化的改进，但由于它不是完全向后兼容的，导致了社区经历了长达十年的漫长过渡期。为了不让 Python 2 的庞大代码库立即失效，团队不得不延长 Python 2 的生命周期，并在 Python 2.7 中引入了一些 Python 3 的功能。这种兼顾导致了新功能在整个生态系统中的普及速度减慢。
+  ```
+  // Example of an automated regression test
+  describe('Backward Compatibility Tests', () => {
+    it('should work with legacy data formats', () => {
+      const legacyData = getLegacyData();
+      const result = newSoftwareFunction(legacyData);
+      expect(result).toBeCompatibleWithLegacySystems();
+    });
+  });
+  ```可以针对软件的多个版本运行自动化测试，确保新更新与旧版本保持兼容。当处理[APIs](../A/api.md)、数据格式或外部系统依赖一致行为的协议时，这一点尤其重要。
+  通过将 [automated testing](../A/automated-testing.md) 集成到 CI/CD 管道中，团队可以在每次构建时持续验证 [backward compatibility](../B/backward-compatibility.md)，使其成为开发工作流程中不可或缺的一部分。这种方法降低了引入重大更改的风险，并有助于维持与依赖软件稳定性的用户的信任。
+  此外，可以使用以前软件版本的实际数据和工作流程来设计自动化测试来模拟现实场景。这可确保测试代表用户环境，从而确保[backward compatibility](../B/backward-compatibility.md) 保留在实际[use cases](../U/use-case.md) 中。
+  总之，[automated testing](../A/automated-testing.md) 对于维护 [backward compatibility](../B/backward-compatibility.md) 至关重要，它提供了一种主动且有效的方法来防止回归并确保用户在软件更新过程中获得无缝体验。
 
-- **有哪些拥有强大向后兼容性政策的软件例子？**
+### 案例研究和现实世界的例子
 
-拥有强大向后兼容性政策的软件通常包括：
-- **Microsoft Windows**
-- **Java 运行时环境 (JRE)**
-- **Ubuntu LTS 版本**
-- **PostgreSQL**
-- **企业级软件 (如 SAP, Oracle)**
+#### 您能否提供一个因缺乏向后兼容性而导致用户不满意的案例研究？
 
-这些产品的共同点是承诺在引入新功能的同时，不牺牲运行现有软件的能力，从而保护用户的长期投资。
+2018年，**Adobe Photoshop CC 2019**（版本20.0）的发布因**缺少[backward compatibility](../B/backward-compatibility.md)**而引起了用户的极大不满。 Adobe 推出了新功能和改进的 UI，但删除了许多用户依赖的多项旧功能，例如 **保存为 Web** 选项。
+  此更改影响了将 Photoshop 集成到其**自动化工作流程**中的用户。依赖于已删除功能的脚本和操作**失败**，导致自动化流程中断。围绕这些功能构建了自定义自动化例程的专业用户发现他们的效率受到了影响。
+  立即遭到强烈反对。用户在 Adob​​e 论坛和社交媒体上纷纷抱怨，称工作流程被破坏，需要恢复到旧版本。在这种情况下，Adobe 决定优先考虑新功能而不是[backward compatibility](../B/backward-compatibility.md)，这导致了严重的**用户体验**问题，许多人质疑订阅模式的价值，如果这意味着失去对基本工具的访问权限。
+  该事件对软件开发人员来说是一个警示，让他们考虑删除功能的全面影响，特别是当这些功能是用户工作流程不可或缺的一部分时。它还强调了[automated testing](../A/automated-testing.md) 的重要性，其中包括对[backward compatibility](../B/backward-compatibility.md) 的检查，以确保更新不会破坏现有功能。
+
+#### Microsoft 或 Apple 等主要软件公司如何处理向后兼容性？
+
+**微软**和**苹果**等主要软件公司已采取多种策略来接触[backward compatibility](../B/backward-compatibility.md)，通常优先考虑维持稳定的用户群并确保软件版本之间的无缝过渡。
+  **Microsoft** 历来非常重视[backward compatibility](../B/backward-compatibility.md)，尤其是其 Windows 操作系统。他们提供广泛的文档和工具，例如**应用程序兼容性工具包 (ACT)**，以帮助开发人员针对新的 Windows 版本测试其应用程序。 Microsoft 还使用 **shims** 或小段代码来拦截 [API](../A/api.md) 调用并重定向或修改它们以与旧软件兼容。
+  另一方面，**苹果**采取了更进步的方法，有时牺牲[backward compatibility](../B/backward-compatibility.md)来推动现代化和新技术的采用。例如，在 macOS 中，Apple 引入了**应用程序传输安全性 (ATS)** 作为默认设置，该设置强制执行更严格的安全协议，并破坏了一些不使用安全网络连接的旧应用程序。然而，Apple 提供了详细的指南和工具（如 **Xcode**）来帮助开发人员更新他们的应用程序。
+  两家公司都利用**版本控制**和**弃用政策**来通知开发人员即将发生的可能影响[backward compatibility](../B/backward-compatibility.md)的更改。他们还提供一段时期的**旧版支持**，允许用户和开发人员逐渐过渡到新版本。
+  [Automated testing](../A/automated-testing.md) 框架对于这些公司测试[backward compatibility](../B/backward-compatibility.md) 至关重要。他们对新软件版本运行一套自动化测试，以确保现有功能不受影响。
+
+#### 成功实现向后兼容性的一些实际示例有哪些？
+
+[backward compatibility](../B/backward-compatibility.md) 的成功案例包括：
+
+- **Java**：Oracle 的 Java 平台以其对 [backward compatibility](../B/backward-compatibility.md) 的坚定承诺而闻名。 Java 运行时环境 (JRE) 允许用旧版本编写的应用程序无需修改即可在最新的 JRE 上运行。
+  - **Python 2 到 3**：虽然从 Python 2 到 3 的过渡很重要，但提供了 `2to3` 等工具和 `six` 等兼容性库来帮助维护 [backward compatibility](../B/backward-compatibility.md) 并简化迁移过程。
+  - **Windows 操作系统**：Microsoft 确保为旧版本 Windows 开发的应用程序可以继续在新版本上运行。他们使用垫片和兼容模式来实现这一点。
+  - **PlayStation 游戏机**：索尼的 PlayStation 2 与 PlayStation 1 游戏兼容，PlayStation 3 最初为 PS1 和 PS2 游戏提供[backward compatibility](../B/backward-compatibility.md)。
+  - **HTTP/2**：较新的 HTTP/2 协议使用 HTTP/1.1 维护 [backward compatibility](../B/backward-compatibility.md)。客户端和服务器可以协商要使用的协议版本，确保 Web 服务在不同的 HTTP 版本上继续运行。
+  - **[SQL](../S/sql.md) 服务器**：Microsoft [SQL](../S/sql.md) 服务器通过允许在较新版本的[SQL](../S/sql.md) 服务器上恢复旧版本的[databases](../D/database.md) 来维护[backward compatibility](../B/backward-compatibility.md)。
+  - **WordPress**：WordPress CMS 通过插件和主题维护[backward compatibility](../B/backward-compatibility.md)，确保核心软件的更新不会破坏现有功能。
+  这些示例展示了公司如何优先考虑 [backward compatibility](../B/backward-compatibility.md) 以保护用户投资并确保无缝过渡到较新的软件版本。
+
+- **Java**：Oracle 的 Java 平台以其对 [backward compatibility](../B/backward-compatibility.md) 的坚定承诺而闻名。 Java 运行时环境 (JRE) 允许用旧版本编写的应用程序无需修改即可在最新的 JRE 上运行。
+  - **Python 2 到 3**：虽然从 Python 2 到 3 的过渡很重要，但提供了 `2to3` 等工具和 `six` 等兼容性库来帮助维护 [backward compatibility](../B/backward-compatibility.md) 并简化迁移过程。
+  - **Windows 操作系统**：Microsoft 确保为旧版本 Windows 开发的应用程序可以继续在新版本上运行。他们使用垫片和兼容模式来实现这一点。
+  - **PlayStation 游戏机**：索尼的 PlayStation 2 与 PlayStation 1 游戏兼容，PlayStation 3 最初为 PS1 和 PS2 游戏提供[backward compatibility](../B/backward-compatibility.md)。
+  - **HTTP/2**：较新的 HTTP/2 协议使用 HTTP/1.1 维护 [backward compatibility](../B/backward-compatibility.md)。客户端和服务器可以协商要使用的协议版本，确保 Web 服务在不同的 HTTP 版本上继续运行。
+  - **[SQL](../S/sql.md) 服务器**：Microsoft [SQL](../S/sql.md) 服务器通过允许在较新版本的[SQL](../S/sql.md) 服务器上恢复旧版本的[databases](../D/database.md) 来维护[backward compatibility](../B/backward-compatibility.md)。
+  - **WordPress**：WordPress CMS 通过插件和主题维护[backward compatibility](../B/backward-compatibility.md)，确保核心软件的更新不会破坏现有功能。
+
+#### 您能否提供一个示例，说明软件必须在新功能上做出妥协才能保持向后兼容性？
+
+当然！这是按要求格式化的示例：
+  ---
+  在**Python 3**的开发过程中，核心团队面临着[backward compatibility](../B/backward-compatibility.md)的重大挑战。 Python 3 引入了许多新功能和改进，但它并不完全向后兼容 Python 2。这是一个经过深思熟虑的决定，旨在清理语言语法并删除冗余的操作方式，这意味着一些较旧的 Python 2 代码将无法在未经修改的情况下在 Python 3 上运行。
+  例如，`print` 语句成为一个函数：
+
+  ```
+  # Python 2 code
+  print "Hello, world!"
+  # Python 3 code
+  print("Hello, world!")
+  ```这一更改提高了语言的一致性和清晰度，但要求开发人员修改现有的 Python 2 代码以保持兼容性。因此，Python 社区不得不在立即采用 Python 3 中的新功能方面做出妥协，以维护现有的代码库。这导致了 Python 2 和 Python 3 都在使用的过渡期延长，Python 2 的生命周期终止日期多次延长，以便有更多的时间进行迁移。
+  Python 增强提案 (PEP) 404 正式声明 Python 2.8 永远不会发布，确保不会抱有向后兼容新版本的错误希望。这个例子强调了语言现代化和维护[backward compatibility](../B/backward-compatibility.md)之间的权衡，Python核心团队选择彻底决裂，为未来的创新铺平道路。
+
+#### 具有强大的向后兼容性策略的软件示例有哪些？
+
+多种软件产品以其强大的 [backward compatibility](../B/backward-compatibility.md) 策略而闻名：
+
+- **Microsoft Windows**：Windows 操作系统以保持与旧应用程序的兼容性而闻名，通常允许为早期版本编写的软件在最新的 Windows 版本上运行。
+  - **Java 运行时环境 (JRE)**：为旧版本 JRE 编写的 Java 应用程序通常无需修改即可在较新版本上运行，这要归功于 Java 平台对 [backward compatibility](../B/backward-compatibility.md) 的承诺。
+  - **Ubuntu LTS 版本**：Ubuntu 的长期支持 (LTS) 版本提供五年更新，并确保针对 LTS 版本的软件在此期间保持兼容。
+  - **PostgreSQL**：此[database](../D/database.md) 管理系统因确保较新版本与旧版本创建的[databases](../D/database.md) 保持兼容性而享有盛誉，从而实现无缝升级。
+  - **Python 2.7**：尽管Python 3引入了许多更改，但Python 2.7仍保留了较长一段时间，以便为现有Python 2应用程序提供稳定且兼容的平台。
+  - **企业软件（SAP、Oracle）**：企业软件供应商经常强调[backward compatibility](../B/backward-compatibility.md)，以确保其大型企业客户可以在不中断业务运营的情况下升级系统。
+  这些示例说明了对[backward compatibility](../B/backward-compatibility.md)的承诺，使用户能够从新功能和改进中受益，而无需牺牲运行现有软件的能力。
+
+- **Microsoft Windows**：Windows 操作系统以保持与旧应用程序的兼容性而闻名，通常允许为早期版本编写的软件在最新的 Windows 版本上运行。
+  - **Java 运行时环境 (JRE)**：为旧版本 JRE 编写的 Java 应用程序通常无需修改即可在较新版本上运行，这要归功于 Java 平台对 [backward compatibility](../B/backward-compatibility.md) 的承诺。
+  - **Ubuntu LTS 版本**：Ubuntu 的长期支持 (LTS) 版本提供五年更新，并确保针对 LTS 版本的软件在此期间保持兼容。
+  - **PostgreSQL**：此[database](../D/database.md) 管理系统因确保较新版本与旧版本创建的[databases](../D/database.md) 保持兼容性而享有盛誉，从而实现无缝升级。
+  - **Python 2.7**：尽管Python 3引入了许多更改，但Python 2.7仍保留了较长一段时间，以便为现有Python 2应用程序提供稳定且兼容的平台。
+  - **企业软件（SAP、Oracle）**：企业软件供应商经常强调[backward compatibility](../B/backward-compatibility.md)，以确保其大型企业客户可以在不中断业务运营的情况下升级系统。

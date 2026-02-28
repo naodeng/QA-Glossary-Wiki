@@ -1,0 +1,9 @@
+{
+  "targets": 211,
+  "done": 209,
+  "failed": 2,
+  "failed_items": {
+    "E/end-to-end-testing.md": "500 Server Error: Internal Server Error for url: https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=%23%23%23%23%20What%20is%20End-to-End%20Testing%3F",
+    "E/endurance-testing.md": "500 Server Error: Internal Server Error for url: https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=%20%20Best%20practices%20for%20effective%20%40%40PROTECTED_94%40%40%20include%3A"
+  }
+}

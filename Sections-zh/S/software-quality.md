@@ -1,249 +1,609 @@
-# 软件质量 (Software Quality)
-[软件质量 (Software Quality)](#software-quality) [软件质量 (Software Quality)](/wiki/software-quality)
+# 软件质量
 
-### 相关术语：
-- 软件质量管理 (Software Quality Management)
-- QA 指标 (QA Metrics)
-- 质量管理 (Quality Management)
-[软件质量管理 (Software Quality Management)](/glossary/software-quality-management) [QA 指标 (QA Metrics)](/glossary/qa-metrics) [质量管理 (Quality Management)](/glossary/quality-management)
+<!-- TOC START -->
+- [相关术语：](#相关术语：)
+- [有关软件质量的问题吗？](#有关软件质量的问题吗？)
+  - [基础知识和重要性](#基础知识和重要性)
+    - [什么是软件质量？](#什么是软件质量？)
+    - [为什么软件质量很重要？](#为什么软件质量很重要？)
+    - [软件质量的关键组成部分是什么？](#软件质量的关键组成部分是什么？)
+    - [软件质量如何影响用户体验？](#软件质量如何影响用户体验？)
+    - [软件质量保证工程师的角色是什么？](#软件质量保证工程师的角色是什么？)
+  - [软件质量指标](#软件质量指标)
+    - [什么是软件质量指标？](#什么是软件质量指标？)
+    - [在开发过程中如何使用软件质量指标？](#在开发过程中如何使用软件质量指标？)
+    - [软件质量指标有哪些示例？](#软件质量指标有哪些示例？)
+    - [软件质量指标如何帮助提高软件质量？](#软件质量指标如何帮助提高软件质量？)
+    - [产品指标和流程指标有什么区别？](#产品指标和流程指标有什么区别？)
+  - [软件质量标准](#软件质量标准)
+    - [什么是软件质量标准？](#什么是软件质量标准？)
+    - [ISO 9000 在软件质量中的作用是什么？](#iso-9000-在软件质量中的作用是什么？)
+    - [遵守软件质量标准有哪些好处？](#遵守软件质量标准有哪些好处？)
+    - [常用的软件质量标准有哪些？](#常用的软件质量标准有哪些？)
+  - [软件测试](#软件测试)
+    - [软件测试在保证软件质量方面的作用是什么？](#软件测试在保证软件质量方面的作用是什么？)
+    - [软件测试有哪些不同类型？](#软件测试有哪些不同类型？)
+    - [功能测试和非功能测试有什么区别？](#功能测试和非功能测试有什么区别？)
+    - [自动化测试如何提高软件质量？](#自动化测试如何提高软件质量？)
+    - [测试计划在软件测试中的作用是什么？](#测试计划在软件测试中的作用是什么？)
+  - [软件质量保证](#软件质量保证)
+    - [软件质量保证和软件测试有什么区别？](#软件质量保证和软件测试有什么区别？)
+    - [软件质量保证涉及哪些关键活动？](#软件质量保证涉及哪些关键活动？)
+    - [软件质量保证如何帮助预防缺陷？](#软件质量保证如何帮助预防缺陷？)
+    - [软件质量保证的最佳实践是什么？](#软件质量保证的最佳实践是什么？)
+<!-- TOC END -->
 
-## 关于软件质量的常见问题？
+软件质量
 
-#### 基础与重要性
-- **什么是软件质量？**
-  **软件质量 (Software quality)** 是指软件产品满足指定需求以及满足用户和利益相关者需求和期望的程度。它涵盖了各种属性，包括 **可靠性 (reliability)**、**效率 (efficiency)**、**[可维护性 (maintainability)](/wiki/maintainability)**、**可用性 (usability)** 和 **移植性 (portability)**。高质量的软件应在指定条件下执行其预定功能而不发生故障，没有缺陷，并且对于未来的增强或更正来说是可维护和可理解的。它还应通过直观且响应迅速的设计提供积极的用户体验。
-  在 **[测试自动化 (test automation)](/wiki/test-automation)** 的背景下，确保 **[软件质量 (software quality)](/wiki/software-quality)** 涉及创建和执行自动化测试，这些测试根据预期结果验证软件的功能和性能。自动化测试可以频繁且一致地运行，为开发团队提供快速反馈，并有助于及早发现问题。
-  软件质量不仅涉及最终产品，还涉及用于开发、维护和增强产品的过程。它涉及在整个软件开发生命周期 (SDLC) 中对改进和遵守最佳实践的持续承诺。这种承诺对于交付不仅满足当前需求，而且能够随需求和技术变化而演进的软件至关重要。
+反映了软件满足 SRS（软件需求规范）中记录的用户需求的能力。高质量的软件符合用户规范，并且可维护、及时且具有成本效益。
 
-- **为什么软件质量很重要？**
-  **[软件质量 (Software quality)](/wiki/software-quality)** 至关重要，因为它与应用程序的 **可靠性 (reliability)**、**安全性 (security)** 和 **[可维护性 (maintainability)](/wiki/maintainability)** 直接相关。高质量软件可确保系统按预期运行，具有抵御恶意攻击的韧性，并且可以在不引入新问题的情况下进行更新或修改。从长远来看，由于减少了对广泛维护和紧急修复的需求，这会带来 **成本节约 (cost savings)**。此外，遵循质量标准的软件更有可能具有 **[可扩展性 (scalable)](/wiki/scalable)** 和 **可互操作性 (interoperability)**，从而促进与其他系统的集成以及对不断变化的用户需求或技术进步的适应。在竞争激烈的市场中，质量可以成为优势，与用户和利益相关者建立 **信任 (trust)**。对于 **[测试自动化 (test automation)](/wiki/test-automation)** 工程师来说，专注于质量意味着构建稳健的测试，这些测试可以有效地捕捉回归缺陷并为稳定的产品做出贡献，最终支撑公司的声誉和盈利。
+## 相关术语：
 
-- **软件质量的关键组成部分有哪些？**
-  **[软件质量 (software quality)](/wiki/software-quality)** 的关键组成部分涵盖了确保软件产品达到其预期目的和用户期望的几个属性。这些组成部分包括：
-  - **正确性 (Correctness)**：软件准确执行其指定功能的程度。
-  - **可靠性 (Reliability)**：软件在指定条件下、在指定时间内执行的能力。
-  - **效率 (Efficiency)**：软件在执行其功能时有效利用系统资源的能力。
-  - **可维护性 (Maintainability)**：修改软件以纠正缺陷、提高性能或适应变化环境的难易程度。**[可维护性 (Maintainability)](/wiki/maintainability)** 是长期成功的关键。
-  - **可用性 (Usability)**：软件用户友好和直观的程度，促进易用性和学习。
-  - **移植性 (Portability)**：软件以最小的努力从一个环境转移到另一个环境的能力。
-  - **可测试性 (Testability)**：为了确保软件功能正确并满足其需求，对软件进行测试的难易程度。
-  - **可扩展性 (Scalability)**：软件在不损害性能的情况下处理增加的工作负载的能力。
-  - **安全性 (Security)**：软件中防止未经授权访问和漏洞的措施和功能。
-  这些组成部分是相互关联且必须平衡的；过度关注某一方面可能会对其他方面产生负面影响。例如，高度安全的软件可能不那么用户友好。**[测试自动化 (Test automation)](/wiki/test-automation)** 工程师应旨在在整个软件开发生命周期中理解并解决这些组成部分，以实现高质量的软件。
+- [Software Quality Management](../S/software-quality-management.md)
+- [QA Metrics](../Q/qa-metrics.md)
+- [Quality Management](../Q/quality-management.md)
 
-- **软件质量如何影响用户体验？**
-  **[软件质量 (Software quality)](/wiki/software-quality)** 通过决定应用程序的 **可靠性 (reliability)**、**可用性 (usability)** 和 **性能 (performance)** 直接影响 **用户体验 (UX)**。高质量的软件通常会带来积极的 UX，因为它满足用户期望并高效执行任务，没有错误或中断。
-  **可靠性 (Reliability)** 确保软件随时间推移正确且一致地运行，这对于维持用户信任至关重要。当软件表现不可预测或发生故障时，会导致挫败感和用户满意度下降。
-  **可用性 (Usability)** 是关于用户与软件交互的直观和容易程度。质量软件具有精心设计的用户界面和清晰的导航路径，使开发人员可以轻松地实现他们的目标。
-  **性能 (Performance)** 是指软件的响应能力和速度。用户期待快速的加载时间和流畅的交互。性能问题会导致感知质量低下，并可能迅速阻止用户继续使用软件。
-  总之，**[软件质量 (software quality)](/wiki/software-quality)** 是提供卓越用户体验的关键因素。它确保软件不仅满足 **[功能需求 (functional requirements)](/wiki/functional-requirements)**，还能为用户提供无缝、高效且愉悦的交互。作为 **[测试自动化 (test automation)](/wiki/test-automation)** 工程师，专注于 **[软件质量 (software quality)](/wiki/software-quality)** 对于创建令用户愉悦并在市场中脱颖而出的产品至关重要。
+## 有关软件质量的问题吗？
 
-- **软件质量保证工程师的角色是什么？**
-  **软件质量保证 (SQA) 工程师** 在软件开发生命周期中扮演着关键角色。他们的首要职责是 **确保软件产品符合质量标准** 并且没有缺陷。他们通过以下方式实现这一目标：
-  - **设计和实施 [测试计划 (test plans)](/wiki/test-plan)**：制定涵盖各种测试场景的综合策略。
-  - **编写 [测试用例 (test cases)](/wiki/test-case)**：开发特定的用例以根据需求验证功能。
-  - **执行测试**：运行手动或自动化测试以识别问题。
-  - **自动化测试**：利用工具和脚本实现重复性测试任务的自动化，提高效率和覆盖范围。
-  - **识别缺陷**：定位并记录 Bug 以供解决。
-  - **与开发团队协作**：与开发人员紧密合作，沟通缺陷并验证修复。
-  - **监控质量指标**：跟踪和分析数据以识别趋势和改进领域。
-  - **确保合规性**：验证软件是否遵守行业和组织标准。
-  - **持续改进**：推荐过程增强建议以预防未来的缺陷。
-  SQA 工程师必须具备 **对软件开发过程的深刻理解** 并 **精通 [测试自动化 (test automation)](/wiki/test-automation)** 工具。他们的角色对于交付符合技术规范和用户期望的高质量软件至关重要。
+### 基础知识和重要性
 
-#### 软件质量指标 (Software Quality Metrics)
-- **什么是软件质量指标？**
-  **软件质量指标 (Software quality metrics)** 是用于评估软件开发过程、产品和维护工作质量的可量化测量。这些指标提供了对 **[软件质量 (software quality)](/wiki/software-quality)** 各个方面的见解，如可靠性、**[可维护性 (maintainability)](/wiki/maintainability)**、效率和可用性。通过分析这些指标，团队可以识别改进领域，跟踪随时间推移的进展，并做出数据驱动的决策以增强 **[软件质量 (software quality)](/wiki/software-quality)**。
-  **产品指标 (Product metrics)** 侧重于软件产品本身的特征，包括代码复杂度、缺陷密度和 **[代码覆盖率 (code coverage)](/wiki/code-coverage)**。
-  **过程指标 (Process metrics)** 评估开发过程的有效性，如冲刺速度、缺陷发现率和解决问题的时间。
-  指标通常集成到 **持续集成/持续部署 (CI/CD)** 流水线中，以自动化收集和报告。这种集成允许实时反馈并能够对潜在质量问题做出快速反应。
-  常用指标包括：
-  - **代码覆盖率 (Code Coverage)**：测试过程中执行的代码百分比。
-  - **缺陷密度 (Defect Density)**：确认的缺陷数量除以软件实体的规模。
-  - **平均故障间隔时间 (MTTF)**：系统故障之间的平均时间。
-  - **平均修复时间 (MTTR)**：修复缺陷所需的平均时间。
-  - **变更请求计数 (Change Request Count)**：变更和增强请求的数量。
-  - **客户满意度分数 (Customer Satisfaction Scores)**：用户关于其软件经验的反馈。
-  通过定期监控这些指标，团队可以争取持续改进，确保软件既符合技术标准又符合最终用户的期望。
+#### 什么是软件质量？
 
-- **如何在开发过程中使用软件质量指标？**
-  **软件质量指标 (Software quality metrics)** 在 **开发过程中 (development process)** 对监控进度、识别改进领域以及确保产品在发布前达到所需标准至关重要。它们为评估 **软件项目的健康状况 (health of a software project)** 提供了定量基础，并指导决策制定。
-  在开发期间，指标用于跟踪 **代码质量 (code quality)**，包括 **复杂度 (complexity)**、**[可维护性 (maintainability)](/wiki/maintainability)** 和 **覆盖率 (coverage)**。**[自动化测试 (Automated testing)](/wiki/automated-testing)** 依赖这些指标来确 **[测试用例 (test cases)](/wiki/test-case)** 的优先级，重点关注高风险领域并确保新代码不会降低现有功能。
-  **缺陷密度 (Defect density)** 和 **缺陷趋势 (defect trends)** 有助于理解问题报告和解决的速度，允许团队相应调整其策略和资源。**性能指标 (Performance metrics)** 确保软件满足非功能性需求，如 **响应时间 (response time)** 和 **吞吐量 (throughput)**。
-  指标还通过提供共同语言和客观数据来讨论项目状态，从而促进利益相关者之间的 **沟通 (communication)**。它们通过突出成功点并指出产品和过程中的弱点来支持 **持续改进 (continuous improvement)**。
-  在 **敏捷环境 (agile environments)** 中，像 **速度 (velocity)** 和 **冲刺燃尽图 (sprint burndown)** 这样的指标衡量团队的生产力和进度，有助于预测发布日期并有效管理待办事项。
-  通过将指标集成到 **CI/CD 流水线 (CI/CD pipeline)** 中，团队可以自动化收集和分析数据，实现实时反馈并更快地对潜在质量问题做出反应。这种集成有助于在从初始设计到最终部署的整个开发生命周期中保持一致的质量水平。
+[Software quality](../S/software-quality.md) 是指软件产品满足其指定要求并满足其用户和利益相关者的需求和期望的程度。它包含各种属性，包括**可靠性**、**效率**、**[maintainability](../M/maintainability.md)**、**可用性**和**可移植性**。高质量的软件应该在指定条件下无故障地执行其预期功能，没有缺陷，并且易于维护和理解，以便将来进行增强或修正。它还应该通过直观和响应性提供积极的用户体验。
+  在[test automation](../T/test-automation.md) 的背景下，确保[software quality](../S/software-quality.md) 涉及创建和执行自动化测试，以根据预期结果验证软件的功能和性能。自动化测试可以频繁且一致地运行，为开发团队提供快速反馈并帮助及早发现问题。
+  软件的质量不仅仅涉及最终产品，还涉及用于开发、维护和增强它的过程。它涉及在整个软件开发生命周期 (SDLC) 中持续致力于改进和遵守最佳实践。这一承诺对于交付不仅满足当前需求而且能够随着不断变化的需求和技术而发展的软件至关重要。
 
-- **有哪些软件质量指标的例子？**
-  **软件质量指标 (Software quality metrics)** 是评估软件产品属性或创建过程中涉及的过程的定量量度。以下是一些例子：
-  - **代码覆盖率 (Code Coverage)**：测量测试期间执行的代码百分比。它有助于识别代码库中未经测试的部分。
+#### 为什么软件质量很重要？
+
+[Software quality](../S/software-quality.md) 至关重要，因为它与应用程序的**可靠性**、**安全性**和**[maintainability](../M/maintainability.md)** 直接相关。高质量的软件可确保系统按预期运行，能够抵御恶意攻击，并且可以更新或修改而不会引入新问题。从长远来看，这可以减少大量维护和紧急修复的需要，从而节省成本。此外，遵守质量标准的软件更有可能**可扩展**和**可互操作**，从而促进与其他系统的集成并适应不断变化的用户需求或技术进步。在竞争激烈的市场中，质量可以成为差异化因素，与用户和利益相关者建立**信任**。对于[test automation](../T/test-automation.md) 工程师来说，关注质量意味着构建强大的测试，可以有效地捕获回归并为稳定的产品做出贡献，最终支持公司的声誉和利润。
+
+#### 软件质量的关键组成部分是什么？
+
+[software quality](../S/software-quality.md) 的关键组件包含多个属性，这些属性共同确保软件产品满足其预期目的和用户期望。这些组件包括：
+
+- **正确性**：软件准确执行其指定功能的程度。
+  - **可靠性**：软件在指定条件下、指定时间段内执行的能力。
+  - **效率**：软件在执行其功能时有效利用系统资源的能力。
+  - **[Maintainability](../M/maintainability.md)** ：可以轻松修改软件以纠正缺陷、提高性能或适应变化的环境。
+  - **可用性**：软件用户友好和直观的程度，促进易用性和学习。
+  - **可移植性**：软件能够以最小的努力从一种环境转移到另一种环境。
+  - **可测试性**：测试软件以确保其正常运行并满足其要求的容易程度。
+  - **可扩展性**：软件在不影响性能的情况下处理增加的工作负载的能力。
+  - **安全**：软件中防止未经授权的访问和漏洞的措施和功能。
+  这些组成部分是相互关联的，必须保持平衡；过度关注某一方面可能会对其他方面产生负面影响。例如，高度安全的软件可能不太用户友好。 [Test automation](../T/test-automation.md) 工程师应该致力于在整个软件开发生命周期中理解和处理这些组件，以实现高质量的软件。
+
+- **正确性**：软件准确执行其指定功能的程度。
+  - **可靠性**：软件在指定条件下、指定时间段内执行的能力。
+  - **效率**：软件在执行其功能时有效利用系统资源的能力。
+  - **[Maintainability](../M/maintainability.md)** ：可以轻松修改软件以纠正缺陷、提高性能或适应变化的环境。
+  - **可用性**：软件用户友好和直观的程度，促进易用性和学习。
+  - **可移植性**：软件能够以最小的努力从一种环境转移到另一种环境。
+  - **可测试性**：测试软件以确保其正常运行并满足其要求的容易程度。
+  - **可扩展性**：软件在不影响性能的情况下处理增加的工作负载的能力。
+  - **安全**：软件中防止未经授权的访问和漏洞的措施和功能。
+
+#### 软件质量如何影响用户体验？
+
+[Software quality](../S/software-quality.md) 通过确定应用程序的**可靠性**、**可用性**和**性能**，直接影响**用户体验 (UX)**。高质量的软件通常会带来积极的用户体验，因为它满足用户的期望并有效地执行任务而不会出现错误或中断。
+  **可靠性**确保软件随着时间的推移正确且一致地运行，这对于维护用户信任至关重要。当软件行为不可预测或出现故障时，可能会导致用户沮丧并降低用户满意度。
+  **可用性**是关于用户与软件交互的直观和容易程度。优质软件具有精心设计的用户界面和清晰的导航路径，使用户可以轻松轻松地实现其目标。
+  **性能**是指软件的响应能力和速度。用户期望快速的加载时间和流畅的交互。性能问题可能会导致质量差的感觉，并可能很快阻止用户继续使用该软件。
+  总之，[software quality](../S/software-quality.md) 是提供卓越用户体验的关键因素。它确保软件不仅满足[functional requirements](../F/functional-requirements.md)，而且还为用户提供无缝、高效和愉快的交互。作为[test automation](../T/test-automation.md) 工程师，关注[software quality](../S/software-quality.md) 对于创造让用户满意并在市场上脱颖而出的产品至关重要。
+
+#### 软件质量保证工程师的角色是什么？
+
+**软件质量保证 (SQA) 工程师**在软件开发生命周期中发挥着关键作用。他们的主要职责是**确保软件产品符合质量标准**并且没有缺陷。他们通过以下方式实现这一目标：
+
+- **设计和实施[test plans](../T/test-plan.md)**：制定涵盖各种测试场景的全面策略。
+  - **编写[test cases](../T/test-case.md)**：开发特定案例以根据需求验证功能。
+  - **执行测试**：运行手动或自动测试来识别问题。
+  - **自动化测试**：利用工具和脚本自动执行重复的测试任务，提高效率和覆盖率。
+  - **识别缺陷**：查明并记录错误以供解决。
+  - **与开发团队合作**：与开发人员密切合作，沟通缺陷并验证修复。
+  - **监控质量指标**：跟踪和分析数据以确定趋势和需要改进的领域。
+  - **确保合规性**：验证软件是否符合行业和组织标准。
+  - **持续改进**：建议流程改进以防止未来出现缺陷。
+  SQA 工程师必须**深入了解软件开发流程**并**熟练使用[test automation](../T/test-automation.md) 工具**。他们的作用对于提供符合技术规范和用户期望的高质量软件至关重要。
+
+- **设计和实施[test plans](../T/test-plan.md)**：制定涵盖各种测试场景的全面策略。
+  - **编写[test cases](../T/test-case.md)**：开发特定案例以根据需求验证功能。
+  - **执行测试**：运行手动或自动测试来识别问题。
+  - **自动化测试**：利用工具和脚本自动执行重复的测试任务，提高效率和覆盖率。
+  - **识别缺陷**：查明并记录错误以供解决。
+  - **与开发团队合作**：与开发人员密切合作，沟通缺陷并验证修复。
+  - **监控质量指标**：跟踪和分析数据以确定趋势和需要改进的领域。
+  - **确保合规性**：验证软件是否符合行业和组织标准。
+  - **持续改进**：建议流程改进以防止未来出现缺陷。
+
+### 软件质量指标
+
+#### 什么是软件质量指标？
+
+[Software quality](../S/software-quality.md) 指标是用于评估软件开发过程、产品和维护工作质量的量化指标。这些指标提供了对 [software quality](../S/software-quality.md) 各个方面的见解，例如可靠性、[maintainability](../M/maintainability.md)、效率和可用性。通过分析这些指标，团队可以确定需要改进的领域，跟踪一段时间内的进展情况，并做出数据驱动的决策来增强[software quality](../S/software-quality.md)。
+  **产品指标**关注软件产品本身的特性，包括代码复杂性、缺陷密度和[code coverage](../C/code-coverage.md)。 **流程指标**评估开发流程的有效性，例如冲刺速度、缺陷发现率和解决问题的时间。
+  指标通常集成到**持续集成/持续部署 (CI/CD)** 管道中以自动收集和报告。这种集成可以实现实时反馈并能够对潜在的质量问题做出快速反应。
+  常用的指标包括：
+
+- **[Code Coverage](../C/code-coverage.md)** ：测试期间执行的代码的百分比。
+  - **缺陷密度**：已确认的缺陷数量除以软件实体的大小。
+  - **平均无故障时间 (MTTF)**：系统故障之间的平均时间。
+  - **平均修复时间 (MTTR)**：修复缺陷的平均时间。
+  - **更改请求计数**：更改和增强请求的数量。
+  - **客户满意度分数**：用户关于其软件体验的反馈。
+  通过定期监控这些指标，团队可以努力持续改进，确保软件满足技术标准和最终用户的期望。
+
+- **[Code Coverage](../C/code-coverage.md)** ：测试期间执行的代码的百分比。
+  - **缺陷密度**：已确认的缺陷数量除以软件实体的大小。
+  - **平均无故障时间 (MTTF)**：系统故障之间的平均时间。
+  - **平均修复时间 (MTTR)**：修复缺陷的平均时间。
+  - **更改请求计数**：更改和增强请求的数量。
+  - **客户满意度分数**：用户关于其软件体验的反馈。
+
+#### 在开发过程中如何使用软件质量指标？
+
+[Software quality](../S/software-quality.md) 指标是**开发过程**中不可或缺的一部分，用于监控进度、确定需要改进的领域以及确保产品在发布前满足所需的标准。它们为评估**软件项目的健康状况**提供了定量基础并指导决策。
+  在开发过程中，指标用于跟踪**代码质量**，包括**复杂性**、**[maintainability](../M/maintainability.md)**和**覆盖率**。 [Automated testing](../A/automated-testing.md) 依靠这些指标来确定 [test cases](../T/test-case.md) 的优先级，重点关注高风险领域并确保新代码不会降低现有功能。
+  **缺陷密度**和**缺陷趋势**有助于了解问题报告和解决的速度，使团队能够相应地调整其策略和资源。 **性能指标**确保软件满足非[functional requirements](../F/functional-requirements.md)，例如**响应时间**和**吞吐量**。
+  指标还通过提供共同语言和客观数据来讨论项目状态，促进利益相关者之间的**沟通**​​。他们通过强调产品和流程中的成功并查明弱点来支持**持续改进**。
+  在**敏捷环境**中，**速度**和**冲刺燃尽**等指标可以衡量团队的生产力和进度，有助于预测发布日期并有效管理积压。
+  通过将指标集成到 **CI/CD 管道**，团队可以自动收集和分析数据，从而实现实时反馈并更快地对潜在质量问题做出反应。这种集成有助于在整个开发生命周期（从初始设计到最终部署）中保持一致的质量水平。
+
+#### 软件质量指标有哪些示例？
+
+[Software quality](../S/software-quality.md) 指标是评估软件产品的属性或其创建过程所涉及的过程的定量度量。以下是一些示例：
+
+- **[Code Coverage](../C/code-coverage.md)** ：测量测试期间执行的代码的百分比。它有助于识别代码库中未经测试的部分。
+
     ```
-    // 例子：计算代码覆盖率百分比
+    // Example: Calculating code coverage percentage
     coveragePercentage = (linesOfCodeExecuted / totalLinesOfCode) * 100;
     ```
-  - **缺陷密度 (Defect Density)**：确认缺陷的数量除以软件实体的规模（例如 KLOC - 千行代码）。它表明了代码库中的缺陷水平。
-  - **平均检测时间 (MTTD)**：从问题引入到检测到问题所需的平均时间。它反映了测试过程在识别缺陷方面的效率。
-  - **平均修复时间 (MTTR)**：修复缺陷所需的平均时间。它衡量开发团队在解决问题方面的反应能力和效率。
-  - **[测试用例 (Test Case)](/wiki/test-case) 有效性**：发现的缺陷数量与执行的测试用例数量之比。它评估测试用例的质量和有效性。
-  - **缺陷逃逸率 (Defect Escape Rate)**：未在测试期间捕获而在发布后发现的缺陷百分比。它表明了测试策略的有效性。
-  - **客户满意度分数 (CSAT)**：衡量用户对软件产品的满意程度。通常通过调查问卷和反馈表收集。
-  - **技术债务 (Technical Debt)**：量化由于现在选择简单解决方案而不是使用需要更长时间的更好方法而导致的额外返工成本。
-  这些指标提供了可操作的见解，以改善 **[软件质量 (software quality)](/wiki/software-quality)** 并指导 **[测试自动化 (test automation)](/wiki/test-automation)** 过程中的战略决策。
 
-- **软件质量指标如何帮助提高软件质量？**
-  **软件质量指标 (Software quality metrics)** 作为 **定量指标 (quantitative indicators)**，提供了对软件开发过程有效性和效率的见解。它们使团队能够：
-  - **跟踪进度 (Track progress)** 和随时间推移的表现，识别可能预示改进或倒退的趋势。
-  - **尽早识别缺陷 (Identify defects early)**，通过在问题升级前捕获它们来降低修复成本。
-  - **优化资源分配 (Optimize resource allocation)**，通过突出需要更多关注的过程或资源可能未充分利用的领域。
-  - **增强沟通 (Enhance communication)**，通过提供共同语言和清晰、客观的数据点。
-  - **改善决策 (Improve decision-making)**，利用数据驱动的见解，允许团队确定任务优先级并对重点关注领域做出明智选择。
-  - **对标标准 (Benchmark against standards)** 和过去的项目，根据历史数据和行业规范设定现实的目标和期望。
-  - **促进持续改进 (Facilitate continuous improvement)**，通过建立反馈循环，让指标为过程调整提供信息。
-  通过在整个开发生命周期中集成这些指标，团队可以主动管理 **[软件质量 (software quality)](/wiki/software-quality)**，从而产生更可靠、可维护和用户友好的产品。
+- **缺陷密度**：已确认缺陷的数量除以软件实体的大小（例如，KLOC - 千行代码）。它指示代码库中的缺陷级别。
+  - **平均检测时间 (MTTD)**：从引入问题到检测到问题所需的平均时间。它反映了测试过程识别缺陷的效率。
+  - **平均修复时间 (MTTR)**：修复缺陷所需的平均时间。它衡量开发团队解决问题的响应能力和效率。
+  - **[Test Case](../T/test-case.md) 有效性**：发现的缺陷数量与执行的测试用例数量的比率。它评估测试用例的质量和有效性。
+  - **缺陷逃逸率**：在测试期间未捕获并在发布后发现的缺陷的百分比。它表明测试策略的有效性。
+  - **客户满意度分数 (CSAT)**：衡量用户对软件产品满意度的指标。它通常是通过调查和反馈表收集的。
+  - **技术债务**：量化由于现在选择简单的解决方案而不是使用需要更长时间的更好方法而导致的额外返工成本。
+  这些指标提供了可操作的见解，以改进[software quality](../S/software-quality.md)并指导[test automation](../T/test-automation.md)流程中的战略决策。
 
-- **产品指标和过程指标有什么区别？**
-  **产品指标 (Product metrics)** 和 **过程指标 (Process metrics)** 是软件开发和 **[测试自动化 (test automation)](/wiki/test-automation)** 中用于评估质量和效率不同方面的两种不同类型的测量。
-  **产品指标 (Product metrics)** 侧重于软件产品本身。它们测量产品的特征，如复杂度、规模、设计特征、性能和质量。例子包括：
-  - **[代码覆盖率 (Code coverage)](/wiki/code-coverage)**：测试期间执行的代码百分比。
-  - **缺陷密度 (Defect density)**：每单位规模软件发现的缺陷数量。
-  - **[可维护性指标 (Maintainability index)](/wiki/maintainability)**：反映维护代码难易程度的综合量度。
-  ```javascript
-  // 产品指标计算示例：代码覆盖率
+- **[Code Coverage](../C/code-coverage.md)** ：测量测试期间执行的代码的百分比。它有助于识别代码库中未经测试的部分。
+
+    ```
+    // Example: Calculating code coverage percentage
+    coveragePercentage = (linesOfCodeExecuted / totalLinesOfCode) * 100;
+    ```
+
+- **缺陷密度**：已确认缺陷的数量除以软件实体的大小（例如，KLOC - 千行代码）。它指示代码库中的缺陷级别。
+  - **平均检测时间 (MTTD)**：从引入问题到检测到问题所需的平均时间。它反映了测试过程识别缺陷的效率。
+  - **平均修复时间 (MTTR)**：修复缺陷所需的平均时间。它衡量开发团队解决问题的响应能力和效率。
+  - **[Test Case](../T/test-case.md) 有效性**：发现的缺陷数量与执行的测试用例数量的比率。它评估测试用例的质量和有效性。
+  - **缺陷逃逸率**：在测试期间未捕获并在发布后发现的缺陷的百分比。它表明测试策略的有效性。
+  - **客户满意度分数 (CSAT)**：衡量用户对软件产品满意度的指标。它通常是通过调查和反馈表收集的。
+  - **技术债务**：量化由于现在选择简单的解决方案而不是使用需要更长时间的更好方法而导致的额外返工成本。
+
+#### 软件质量指标如何帮助提高软件质量？
+
+[Software quality](../S/software-quality.md) 指标充当**定量指标**，提供对软件开发过程的有效性和效率的见解。它们使团队能够：
+
+- **跟踪进度**
+    以及一段时间内的表现，确定可能表明改进或退化领域的趋势。
+
+- **尽早发现缺陷**
+    ，通过在问题升级之前发现问题来减少解决问题的成本和精力。
+
+- **优化资源分配**
+    突出需要更多关注的流程或资源可能未得到充分利用的领域。
+
+- **加强沟通**
+    通过提供共同语言和清晰、客观的数据点，在团队成员和利益相关者之间建立联系。
+
+- **改善决策**
+    借助数据驱动的洞察力，团队可以确定任务的优先级，并就将工作重点放在何处做出明智的选择。
+
+- **针对标准的基准**
+    和过去的项目，根据历史数据和行业规范设定现实的目标和期望。
+
+- **促进持续改进**
+    通过建立一个反馈循环，其中指标可以通知流程调整，从而产生更高质量的结果。
+  通过将这些指标集成到开发生命周期中，团队可以主动管理[software quality](../S/software-quality.md)，从而产生更可靠、可维护和用户友好的产品。
+
+- **跟踪进度**
+    以及一段时间内的表现，确定可能表明改进或退化领域的趋势。
+
+- **尽早发现缺陷**
+    ，通过在问题升级之前发现问题来减少解决问题的成本和精力。
+
+- **优化资源分配**
+    突出需要更多关注的流程或资源可能未得到充分利用的领域。
+
+- **加强沟通**
+    通过提供共同语言和清晰、客观的数据点，在团队成员和利益相关者之间建立联系。
+
+- **改善决策**
+    借助数据驱动的洞察力，团队可以确定任务的优先级，并就将工作重点放在何处做出明智的选择。
+
+- **针对标准的基准**
+    和过去的项目，根据历史数据和行业规范设定现实的目标和期望。
+
+- **促进持续改进**
+    通过建立一个反馈循环，其中指标可以通知流程调整，从而产生更高质量的结果。
+
+#### 产品指标和流程指标有什么区别？
+
+产品指标和流程指标是软件开发中使用的两种不同类型的测量，[test automation](../T/test-automation.md) 用于评估质量和效率的不同方面。
+  **产品指标**关注软件产品本身。他们衡量产品的特征，例如复杂性、尺寸、设计特征、性能和质量。示例包括：
+
+- **[Code coverage](../C/code-coverage.md)** ：测试期间执行的代码的百分比。
+  - **缺陷密度**：每单位软件大小发现的缺陷数量。
+  - **[Maintainability](../M/maintainability.md) 索引**：反映代码维护难易程度的综合衡量标准。
+
+  ```
+  // Example of a product metric calculation: Code Coverage
   const totalLinesOfCode = 1000;
   const linesOfCodeTested = 750;
   const codeCoverage = (linesOfCodeTested / totalLinesOfCode) * 100;
+  ```另一方面，**流程指标**衡量用于创建和维护软件的流程的有效性和效率。它们帮助组织了解、控制和改进其软件开发和维护流程。示例包括：
+
+- **周期时间**：从开始到结束完成特定过程所需的时间。
+  - **缺陷去除效率 (DRE)**：发布前发现的缺陷的百分比。
+  - **上市时间**：从项目启动到产品推出的持续时间。
+
   ```
-  **过程指标 (Process metrics)** 则衡量用于创建和维护软件的过程的有效性和效率。它们帮助组织理解、控制和改进其软件开发和维护过程。例子包括：
-  - **周期时间 (Cycle time)**：完成从开始到结束的特定过程所需的时间。
-  - **缺陷消除效率 (DRE)**：发布前发现的缺陷百分比。
-  - **上市时间 (Time to market)**：从项目启动到产品发布的持续时间。
-  ```javascript
-  // 过程指标计算示例：缺陷消除效率
+  // Example of a process metric calculation: Defect Removal Efficiency
   const defectsFoundBeforeRelease = 90;
   const defectsFoundAfterRelease = 10;
   const DRE = (defectsFoundBeforeRelease / (defectsFoundBeforeRelease + defectsFoundAfterRelease)) * 100;
+  ```了解这些指标之间的差异可以让[test automation](../T/test-automation.md)工程师定制他们的策略和工具，以提高产品质量和开发过程的效率。
+
+- **[Code coverage](../C/code-coverage.md)** ：测试期间执行的代码的百分比。
+  - **缺陷密度**：每单位软件大小发现的缺陷数量。
+  - **[Maintainability](../M/maintainability.md) 索引**：反映代码维护难易程度的综合衡量标准。
+  - **周期时间**：从开始到结束完成特定过程所需的时间。
+  - **缺陷去除效率 (DRE)**：发布前发现的缺陷的百分比。
+  - **上市时间**：从项目启动到产品推出的持续时间。
+
+### 软件质量标准
+
+#### 什么是软件质量标准？
+
+[Software quality](../S/software-quality.md) 标准是一套正式和非正式的规则、指南和最佳实践，用于管理软件开发的流程和结果，以确保高质量的产品。这些标准通常由国际或国家标准组织、行业团体或监管机构制定，旨在应用于各种类型的软件项目。
+  **常用参考标准**包括 ISO/IEC 25010（定义了软件产品的一组质量特性）和 ISO/IEC 12207（提供软件生命周期过程的框架）。此类标准可帮助组织建立通用语言并理解软件产品和流程质量的构成要素。
+  遵守这些标准可以提高**产品可靠性、效率和[maintainability](../M/maintainability.md)**，以及更好的客户满意度。它们提供了衡量[software quality](../S/software-quality.md) 的基准，并指导组织实施有效的软件开发和[quality assurance](../Q/quality-assurance.md) 实践。
+  在 [test automation](../T/test-automation.md) 的背景下，这些标准可以影响[test cases](../T/test-case.md) 的设计、工具的选择以及确保自动化测试稳健、可重复并为正在测试的软件质量提供有意义的反馈的总体方法。
+  标准在医疗保健、金融和航空等行业的“监管合规性”方面也发挥着至关重要的作用，这些行业的软件故障可能会产生严重后果。在这种情况下，满足[software quality](../S/software-quality.md) 标准不仅是最佳实践的问题，也是法律要求的问题。
+
+#### ISO 9000 在软件质量中的作用是什么？
+
+ISO 9000 在[software quality](../S/software-quality.md) 中发挥着关键作用，为[quality management](../Q/quality-management.md) 系统 (QMS) 提供**框架**，组织可以使用该框架来确保它们始终满足客户和监管要求。它强调了采用**面向流程的方法**来管理和改进[software quality](../S/software-quality.md) 的重要性。
+  对于[test automation](../T/test-automation.md) 工程师来说，遵守 ISO 9000 标准意味着将[quality management](../Q/quality-management.md) 原则集成到自动化策略中。这涉及：
+
+- **记录流程**：确保所有测试自动化程序都有详细记录、可追溯且可重复。
+  - **一致性**：在所有测试活动中应用一致的标准和实践以保持质量。
+  - **持续改进**：定期审查和完善测试自动化实践，以提高效率和有效性。
+  - **风险管理**：识别自动化过程中潜在的质量风险并实施缓解策略。
+  - **以客户为中心**：使测试自动化目标与客户需求保持一致，并确保软件满足用户期望。
+  通过遵循 ISO 9000 标准，组织可以为[quality assurance](../Q/quality-assurance.md) 奠定坚实的基础，支持手动和[automated testing](../A/automated-testing.md) 工作，从而产生更高质量的软件产品。
+
+- **记录流程**：确保所有测试自动化程序都有详细记录、可追溯且可重复。
+  - **一致性**：在所有测试活动中应用一致的标准和实践以保持质量。
+  - **持续改进**：定期审查和完善测试自动化实践，以提高效率和有效性。
+  - **风险管理**：识别自动化过程中潜在的质量风险并实施缓解策略。
+  - **以客户为中心**：使测试自动化目标与客户需求保持一致，并确保软件满足用户期望。
+
+#### 软件质量标准如何保证软件质量？
+
+[Software quality](../S/software-quality.md) 标准提供了**框架**和**最佳实践**，以确保高质量软件的开发。他们提供**指南**，帮助组织建立质量流程并根据行业规范**其产品基准。
+  通过遵守这些标准，团队可以确保软件开发和维护流程的**一致性**，从而生产出满足客户期望和法规要求的产品。 **ISO/IEC 25010** 等标准定义了可靠性、可用性、性能效率和安全性等质量特征，这些特征对于创建强大的软件至关重要。
+  质量标准还通过定期审核和评估促进**持续改进**，推动团队不断完善其流程和产品。他们鼓励对质量采取“预防性方法”，旨在在开发生命周期的早期识别和减轻缺陷，这比解决发布后的问题更具成本效益。
+  在[test automation](../T/test-automation.md)中，这些标准确保自动化测试**可靠**、**可重复**和**可维护**。它们指导适当工具和框架的选择、[test cases](../T/test-case.md) 的设计以及测试结果的报告。通过遵循这些标准，自动化工程师可以创建一套测试，有效验证[software quality](../S/software-quality.md)并与组织的整体质量目标保持一致。
+  总之，[software quality](../S/software-quality.md) 标准对于建立质量文化至关重要，从而开发出可靠、安全和用户友好的软件，同时也符合业务目标和客户需求。
+
+#### 遵守软件质量标准有哪些好处？
+
+遵守 [software quality](../S/software-quality.md) 标准具有多项优势：
+
+- **一致性**：标准提供了一套统一的指导方针，确保不同项目和团队之间软件质量的一致性。
+  - **可靠性**：遵循标准可以带来更可靠的软件，因为它们通常包含防止常见错误的最佳实践。
+  - **效率**：标准简化流程，减少实现质量目标所需的时间和精力。
+  - **合规性**：遵守法规通常需要遵守标准，这在医疗保健和金融等行业至关重要。
+  - **互操作性**：标准可以确保不同系统和软件之间的兼容性，促进集成和通信。
+  - **基准测试**：它们提供了衡量软件质量的基准，使评估和与行业规范进行比较变得更加容易。
+  - **客户信心**：遵守标准可以增强客户信任，因为它表明了对质量和专业精神的承诺。
+  - **适销性**：符合公认质量标准的软件可能在市场上具有竞争优势。
+  - **风险管理**：通过遵循既定的质量标准，组织可以减轻与软件故障和缺陷相关的风险。
+  在[test automation](../T/test-automation.md)的背景下，遵守质量标准可确保自动化测试可靠、可维护，并提供有关软件质量的准确反馈，直接影响持续集成和部署实践的成功。
+
+- **一致性**：标准提供了一套统一的指导方针，确保不同项目和团队之间软件质量的一致性。
+  - **可靠性**：遵循标准可以带来更可靠的软件，因为它们通常包含防止常见错误的最佳实践。
+  - **效率**：标准简化流程，减少实现质量目标所需的时间和精力。
+  - **合规性**：遵守法规通常需要遵守标准，这在医疗保健和金融等行业至关重要。
+  - **互操作性**：标准可以确保不同系统和软件之间的兼容性，促进集成和通信。
+  - **基准测试**：它们提供了衡量软件质量的基准，使评估和与行业规范进行比较变得更加容易。
+  - **客户信心**：遵守标准可以增强客户信任，因为它表明了对质量和专业精神的承诺。
+  - **适销性**：符合公认质量标准的软件可能在市场上具有竞争优势。
+  - **风险管理**：通过遵循既定的质量标准，组织可以减轻与软件故障和缺陷相关的风险。
+
+#### 常用的软件质量标准有哪些？
+
+常用的[software quality](../S/software-quality.md) 标准包括：
+
+- **ISO/IEC 25010**：该标准定义了软件产品质量和系统质量的质量模型，将质量分为特性和子特性。
+  - **ISO/IEC 9126**：ISO/IEC 25010 的前身，它还提供了评估软件产品质量的框架。
+  - **ISO 9001**：该标准专注于质量管理体系，确保组织在与产品或服务相关的法律和法规要求范围内满足客户和其他利益相关者的需求。
+  - **[CMMI](../C/cmmi.md)（能力成熟度模型集成）**：为组织提供有效流程的基本要素，最终提高其绩效。
+  - **IEEE 标准**：一系列标准，例如用于测试文档的 IEEE 829 和用于软件审查和审计的 IEEE 1028，它们为软件开发过程提供了指南。
+  - **[ISTQB](../I/istqb.md)（国际[Software Testing](../S/software-testing.md) 资格委员会）**：为软件测试人员提供基于能力的认证计划，该计划与国际标准和最佳实践保持一致。
+  - **ASQ（美国质量协会）**：为质量管理专业人员（包括软件质量人员）提供标准和认证。
+  这些标准对于建立一致的[software quality](../S/software-quality.md)方法、为[quality assurance](../Q/quality-assurance.md)提供框架和指南以及确保软件产品满足功能性和非[functional requirements](../F/functional-requirements.md)的要求是不可或缺的。遵守这些标准可以帮助组织实现更高质量的软件，从而提高客户满意度、降低成本并提高产品可靠性和性能。
+
+- **ISO/IEC 25010**：该标准定义了软件产品质量和系统质量的质量模型，将质量分为特性和子特性。
+  - **ISO/IEC 9126**：ISO/IEC 25010 的前身，它还提供了评估软件产品质量的框架。
+  - **ISO 9001**：该标准专注于质量管理体系，确保组织在与产品或服务相关的法律和法规要求范围内满足客户和其他利益相关者的需求。
+  - **[CMMI](../C/cmmi.md)（能力成熟度模型集成）**：为组织提供有效流程的基本要素，最终提高其绩效。
+  - **IEEE 标准**：一系列标准，例如用于测试文档的 IEEE 829 和用于软件审查和审计的 IEEE 1028，它们为软件开发过程提供了指南。
+  - **[ISTQB](../I/istqb.md)（国际[Software Testing](../S/software-testing.md) 资格委员会）**：为软件测试人员提供基于能力的认证计划，该计划与国际标准和最佳实践保持一致。
+  - **ASQ（美国质量协会）**：为质量管理专业人员（包括软件质量人员）提供标准和认证。
+
+### 软件测试
+
+#### 软件测试在保证软件质量方面的作用是什么？
+
+[Software testing](../S/software-testing.md) 通过**验证**和**核实**软件满足定义的要求并按预期工作，在确保[software quality](../S/software-quality.md) 方面发挥**关键作用**。它涉及执行一个系统来识别与实际需求相比的任何**差距、错误或缺失的需求**。
+  测试充当软件开发生命周期 (SDLC) 中的**检查点**，以确保正在开发的软件**可靠、安全且高性能**。它有助于**及早发现缺陷**，从而降低修复缺陷的成本，并防止缺陷泄漏到后期或生产中。
+  具体而言，**[Automated testing](../A/automated-testing.md)** 通过提供**速度和效率**来增强测试过程。它允许**持续测试**和集成，从而实现更频繁和彻底的测试，这对于手动实现来说是一项挑战。自动化测试可以**重复**运行，几乎不需要额外的成本，确保对代码的更改不会引入新的[bugs](../B/bug.md) - 称为**[regression testing](../R/regression-testing.md)**。
+  此外，[software testing](../S/software-testing.md)提供测试过程和缺陷的**文档**，这对于**维护**和未来的开发至关重要。它还确保软件可以处理**真实使用场景**中所需的任务，从而为软件的稳定性和功能提供信心。
+  总之，[software testing](../S/software-testing.md) 是保持高[software quality](../S/software-quality.md) 不可或缺的一部分，因为它确保产品不仅满足技术要求，而且满足用户需求和期望，最终导致**客户满意度**和**产品成功**。
+
+#### 软件测试有哪些不同类型？
+
+不同类型的[software testing](../S/software-testing.md)包含一系列方法，以确保软件按预期运行并满足要求。这些包括：
+
+- **[Unit Testing](../U/unit-testing.md)** ：验证各个组件或功能。
+  - **[Integration Testing](../I/integration-testing.md)** ：确保模块或服务协同工作。
+  - **[System Testing](../S/system-testing.md)** ：验证完整且集成的软件系统。
+  - **[Acceptance Testing](../A/acceptance-testing.md)** ：确认软件满足业务要求。
+  - **[Performance Testing](../P/performance-testing.md)** ：评估响应能力、稳定性和可扩展性。
+  - **[Load Testing](../L/load-testing.md)** ：确定系统在重负载下的行为方式。
+  - **[Stress Testing](../S/stress-testing.md)** ：评估超出正常运行能力的系统性能。
+  - **[Security Testing](../S/security-testing.md)** ：识别漏洞和安全漏洞。
+  - **[Usability Testing](../U/usability-testing.md)** ：检查应用程序的用户友好程度。
+  - **[Compatibility Testing](../C/compatibility-testing.md)** ：确保软件在不同的设备、操作系统和浏览器上运行。
+  - **[Regression Testing](../R/regression-testing.md)** ：确认最近的更改没有对现有功能产生不利影响。
+  - **冒烟测试**：进行初步测试以揭示严重到足以拒绝预期软件版本的简单故障。
+  - **[Exploratory Testing](../E/exploratory-testing.md)** ：涉及同步学习、测试设计和执行。
+  - **临时测试**：没有特定计划或方法的非结构化测试。
+  - **[Alpha Testing](../A/alpha-testing.md)** ：由内部用户在开发环境中执行。
+  - **[Beta Testing](../B/beta-testing.md)** ：向公司外部的有限受众发布。
+  - **[Static Testing](../S/static-testing.md)** ：审查代码、需求文档和设计文档，以在不执行代码的情况下查找错误。
+  每种类型在软件开发生命周期中都发挥着关键作用，确保最终产品强大、安全且用户友好。
+
+- **[Unit Testing](../U/unit-testing.md)** ：验证各个组件或功能。
+  - **[Integration Testing](../I/integration-testing.md)** ：确保模块或服务协同工作。
+  - **[System Testing](../S/system-testing.md)** ：验证完整且集成的软件系统。
+  - **[Acceptance Testing](../A/acceptance-testing.md)** ：确认软件满足业务要求。
+  - **[Performance Testing](../P/performance-testing.md)** ：评估响应能力、稳定性和可扩展性。
+  - **[Load Testing](../L/load-testing.md)** ：确定系统在重负载下的行为方式。
+  - **[Stress Testing](../S/stress-testing.md)** ：评估超出正常运行能力的系统性能。
+  - **[Security Testing](../S/security-testing.md)** ：识别漏洞和安全漏洞。
+  - **[Usability Testing](../U/usability-testing.md)** ：检查应用程序的用户友好程度。
+  - **[Compatibility Testing](../C/compatibility-testing.md)** ：确保软件在不同的设备、操作系统和浏览器上运行。
+  - **[Regression Testing](../R/regression-testing.md)** ：确认最近的更改没有对现有功能产生不利影响。
+  - **冒烟测试**：进行初步测试以揭示严重到足以拒绝预期软件版本的简单故障。
+  - **[Exploratory Testing](../E/exploratory-testing.md)** ：涉及同步学习、测试设计和执行。
+  - **临时测试**：没有特定计划或方法的非结构化测试。
+  - **[Alpha Testing](../A/alpha-testing.md)** ：由内部用户在开发环境中执行。
+  - **[Beta Testing](../B/beta-testing.md)** ：向公司外部的有限受众发布。
+  - **[Static Testing](../S/static-testing.md)** ：审查代码、需求文档和设计文档，以在不执行代码的情况下查找错误。
+
+#### 功能测试和非功能测试有什么区别？
+
+[Functional testing](../F/functional-testing.md) 专注于验证软件的功能是否按照要求工作。它回答了“该软件是否能完成其应有的功能？”的问题。这包括测试用户交互、[APIs](../A/api.md)、[database](../D/database.md) 管理、安全性和服务器交互以及软件功能的其他方面。
+  另一方面，[Non-functional testing](../N/non-functional-testing.md) 处理软件的操作方面。它与“软件的性能如何？”有关。这包括[performance testing](../P/performance-testing.md)、[load testing](../L/load-testing.md)、[stress testing](../S/stress-testing.md)、[usability testing](../U/usability-testing.md)、可靠性和[scalability testing](../S/scalability-testing.md) 等。非功能测试对于确保软件在各种条件下的稳健性、效率和用户满意度至关重要。
+  **功能测试**验证应用程序的操作和行为，**非功能测试**评估性能、可用​​性和可靠性。两者对于交付高质量的软件产品都是必不可少的，但它们涉及不同的质量属性。
+
+#### 自动化测试如何提高软件质量？
+
+[Automated testing](../A/automated-testing.md) 通过启用[test cases](../T/test-case.md) 的**一致执行**，显着增强了[software quality](../S/software-quality.md)，确保软件行为在整个开发周期中保持稳定。它允许**频繁的[regression testing](../R/regression-testing.md)**，无需额外成本，尽早发现缺陷并降低[bugs](../B/bug.md)投入生产的风险。自动化支持**高覆盖率**，比单独的 [manual testing](../M/manual-testing.md) 实现更多的功能、代码路径和边缘情况。
+  通过与持续集成/持续部署 (CI/CD) 管道集成，可以在每次代码提交时自动运行自动化测试，为开发人员提供**即时反馈**。这种快速周转对于在不牺牲质量的情况下保持高速发展至关重要。
+  自动化测试可以设计为**可重用和可维护**，从而更容易适应软件的变化。它们还支持**并行执行**，减少测试周期所需的时间并加快发布过程。
+  此外，自动化消除了[manual testing](../M/manual-testing.md)固有的**人为错误**因素，从而获得更可靠和客观的测试结果。它使 [quality assurance](../Q/quality-assurance.md) 工程师能够专注于更复杂的测试场景，并且[exploratory testing](../E/exploratory-testing.md) 可以发现自动化测试可能遗漏的问题。
+  总之，[automated testing](../A/automated-testing.md) 是[software quality](../S/software-quality.md) 的关键贡献者，提供速度、效率和可靠性，最终带来更强大且用户值得信赖的软件产品。
+
+#### 测试计划在软件测试中的作用是什么？
+
+**[test plan](../T/test-plan.md)** 是一份战略文件，概述了预期测试活动的方法、资源和时间表。它定义了软件[test automation](../T/test-automation.md)的范围、目标和方法，确保所有功能和特性都根据指定要求进行验证。
+  [test plan](../T/test-plan.md) 作为测试过程的蓝图，指导 [test automation](../T/test-automation.md) 工程师：
+
+- **测试什么**：识别要测试的功能和组件。
+  - **如何测试**：选择适当的工具、框架和方法。
+  - **何时测试**：设置测试阶段的时间表和里程碑。
+  - **谁来测试**：将职责分配给团队成员。
+  - **[Test environment](../T/test-environment.md)** ：指定硬件、软件和网络配置。
+  - **风险评估**：评估潜在风险并定义缓解策略。
+  - **进入和退出标准**：建立开始和结束测试周期的条件。
+  - **测试可交付成果**：记录输出，包括测试用例、脚本和报告。
+  通过提供清晰的路线图，[test plan](../T/test-plan.md) 确保[test automation](../T/test-automation.md) 工作与项目目标保持一致并得到有效执行。它还促进利益相关者之间的沟通，实现透明度和问责制。此外，它有助于跟踪进度并做出明智的决策，从而形成更加结构化和有效的测试过程。
+
+- **测试什么**：识别要测试的功能和组件。
+  - **如何测试**：选择适当的工具、框架和方法。
+  - **何时测试**：设置测试阶段的时间表和里程碑。
+  - **谁来测试**：将职责分配给团队成员。
+  - **[Test environment](../T/test-environment.md)** ：指定硬件、软件和网络配置。
+  - **风险评估**：评估潜在风险并定义缓解策略。
+  - **进入和退出标准**：建立开始和结束测试周期的条件。
+  - **测试可交付成果**：记录输出，包括测试用例、脚本和报告。
+
+### 软件质量保证
+
+#### 什么是软件质量保证？
+
+软件质量保证 (SQA) 包含一种**主动方法**，以确保软件在整个开发生命周期中满足指定的要求、标准和程序。它涉及旨在评估软件质量及其创建方法的系统流程。 SQA 集成了从定义需求到编码的所有软件工程流程，目的是防止缺陷。
+  SQA 的主要活动包括：
+
+- **流程定义和实施**：建立并遵循一套软件开发流程，以确保一致性和质量。
+  - **审计和审查**：对项目可交付成果和流程进行正式检查，以尽早发现问题。
+  - **测试计划和控制**：定义测试策略并管理测试活动以确保彻底验证。
+  - **风险管理**：识别、分析和减轻可能影响软件质量的风险。
+  - **质量指标分析**：跟踪和分析指标以评估质量活动的有效性并做出改进。
+  - **工具选择和维护**：选择和维护支持SQA活动的工具，例如版本控制和问题跟踪系统。
+  - **培训和指导**：为团队成员提供遵守质量标准所需的知识和技能。
+  SQA 是**持续改进**不可或缺的一部分，并且通常受到 ISO 9001 等 **[quality management](../Q/quality-management.md) 系统**的支持。它与 [software testing](../S/software-testing.md) 不同，后者更侧重于识别现有软件中的缺陷，而不是预防缺陷。
+
+- **流程定义和实施**：建立并遵循一套软件开发流程，以确保一致性和质量。
+  - **审计和审查**：对项目可交付成果和流程进行正式检查，以尽早发现问题。
+  - **测试计划和控制**：定义测试策略并管理测试活动以确保彻底验证。
+  - **风险管理**：识别、分析和减轻可能影响软件质量的风险。
+  - **质量指标分析**：跟踪和分析指标以评估质量活动的有效性并做出改进。
+  - **工具选择和维护**：选择和维护支持SQA活动的工具，例如版本控制和问题跟踪系统。
+  - **培训和指导**：为团队成员提供遵守质量标准所需的知识和技能。
+
+#### 软件质量保证和软件测试有什么区别？
+
+软件质量保证 (SQA) 和 [software testing](../S/software-testing.md) 是软件开发中密切相关但又不同的方面。 **SQA** 是一个总括术语，涵盖旨在确保整个开发生命周期软件质量的所有活动。这包括流程定义、遵守标准、审计和审查。 SQA 积极主动，专注于通过改进流程和确保符合标准来预防缺陷。
+  另一方面，**[Software testing](../S/software-testing.md)** 是 SQA 活动的子集。它涉及执行软件，通过检查[actual results](../A/actual-result.md)是否与预期结果匹配来识别缺陷。测试是反应性的，因为它在缺陷被引入代码后识别缺陷。
+  本质上，SQA 建立了[quality management](../Q/quality-management.md) 实践的框架，而[software testing](../S/software-testing.md) 应用这些实践来验证产品的质量。测试是 SQA 中的一项关键活动，但并不是唯一的活动。 SQA 更广泛，旨在持续改进产品和流程，而测试主要以产品为中心。
+
   ```
-  了解这些指标之间的区别允许 **[测试自动化 (test automation)](/wiki/test-automation)** 工程师量身定制其策略和工具，以同时提高产品质量和开发过程效率。
+  - **SQA**: Preventive, process-oriented, ensures adherence to standards, aims at continuous improvement.
+  - **Testing**: Reactive, product-oriented, identifies defects, verifies product quality against requirements.
+  ```经验丰富的[test automation](../T/test-automation.md) 工程师会认识到，虽然[automated testing](../A/automated-testing.md) 是识别缺陷的关键工具，但SQA 涵盖了更广泛的活动，这些活动共同提高了软件产品的整体质量。
 
-#### 软件质量标准
-- **什么是软件质量标准？**
-  **软件质量标准 (Software quality standards)** 是管理软件开发过程和结果的一套正式和非正式规则、指南和最佳实践，旨在确保产品的高质量。这些标准通常由国际或国家标准组织、行业团体或监管机构制定。
-  **通常引用的标准** 包括 ISO/IEC 25010（定义了软件产品的一组质量特征）和 ISO/IEC 12207（提供软件生命周期过程框架）。这类标准帮助组织建立关于什么是软件产品和过程质量的共同语言和理解。
-  遵循这些标准可以带来 **改进产品可靠性、效率和 [可维护性 (maintainability)](/wiki/maintainability)**，以及更好的客户满意度。它们为评估 **[软件质量 (software quality)](/wiki/software-quality)** 提供了基准，并指导组织实施有效的软件开发和 **[质量保证 (quality assurance)](/wiki/quality-assurance)** 实践。
-  在 **[测试自动化 (test automation)](/wiki/test-automation)** 的背景下，这些标准可以影响 **[测试用例 (test cases)](/wiki/test-case)** 的设计、工具的选择以及确保自动化测试稳健、可重复并提供有意义反馈的整体方法。
-  标准在医疗、金融和航空等行业的 **法规合规性 (regulatory compliance)** 中也起着至关重要的作用。在这些情况下，满足 **[软件质量 (software quality)](/wiki/software-quality)** 标准不仅是最佳实践，更是法律要求。
+#### 软件质量保证涉及哪些关键活动？
 
-- **ISO 9000 在软件质量中的作用是什么？**
-  ISO 9000 在 **[软件质量 (software quality)](/wiki/software-quality)** 中起着关键作用，它为 **质量管理 (quality management)** 体系 (QMS) 提供了一个 **框架 (framework)**，组织可以使用该框架来确保它们持续满足客户和监管要求。它强调了采用 **面向过程的方法 (process-oriented approach)** 来管理和改进 **[软件质量 (software quality)](/wiki/software-quality)** 的重要性。
-  对于 **[测试自动化 (test automation)](/wiki/test-automation)** 工程师来说，遵循 ISO 9000 标准意味着将 **[质量管理 (quality management)](/wiki/quality-management)** 原则集成到自动化策略中。这涉及：
-  - **记录过程 (Documenting processes)**：确保所有测试自动化程序都被充分记录、可追溯且可重复。
-  - **一致性 (Consistency)**：在所有测试活动中应用一致的标准和实践以维持质量。
-  - **持续改进 (Continuous improvement)**：定期评审和改进测试自动化实践，以提高效率和有效性。
-  - **风险管理 (Risk management)**：识别自动化过程中的潜在质量风险，并实施策略来缓解它们。
-  - **以客户为中心 (Customer focus)**：将测试自动化目标与客户需求保持一致。
-  通过遵循 ISO 9000 标准，组织可以为 **[质量保证 (quality assurance)](/wiki/quality-assurance)** 建立坚实基础，支持手动和 **[自动化测试 (automated testing)](/wiki/automated-testing)** 工作，从而产出更高质量的软件产品。
+**软件质量保证 (SQA)** 的关键活动涉及一套全面的流程，确保软件产品满足其指定的要求，并且可靠、高效且可维护。这些活动包括：
 
-- **软件质量标准如何确保软件质量？**
-  **软件质量 (Software quality)** 标准提供了一个 **框架 (framework)** 和 **最佳实践 (best practices)** 以确保高质量开发。它们提供了 **指南 (guidelines)**，帮助组织建立质量过程并根据行业规范对其产品进行 **对标 (benchmark)**。
-  通过遵循这些标准，团队可以确保开发和维护过程的 **一致性 (consistency)**。像 **ISO/IEC 25010** 这样的标准定义了可靠性、可用性、性能效率和安全性等属性。
-  质量标准还通过定期审计和评估促进 **持续改进 (continuous improvement)**，并鼓励采用 **预防性方法 (preventive approach)** 对待质量。
-  在 **[测试自动化 (test automation)](/wiki/test-automation)** 中，这些标准确保自动化测试是 **可靠、可重复且可维护的**。它们指导工具和框架的选择、**[测试用例 (test cases)](/wiki/test-case)** 的设计以及测试结果的报告。通过遵循这些标准，工程师可以创建一个有效验证 **[软件质量 (software quality)](/wiki/software-quality)** 的测试套件。
+- **需求分析**：理解并记录软件必须做什么并确保需求是可测试的。
+  - **风险管理**：识别、分析和减轻可能影响软件质量的风险。
+  - **测试计划**：定义测试活动的范围、方法、资源和时间表。
+  - **测试设计**：根据需求和设计文档创建测试用例和测试脚本。
+  - **[Test Environment](../T/test-environment.md) [Setup](../S/setup.md)** ：配置测试所需的硬件和软件要求。
+  - **[Test Execution](../T/test-execution.md)** ：运行测试来识别缺陷、验证功能并根据要求验证软件的行为。
+  - **缺陷跟踪**：记录、管理和跟踪测试期间发现的错误或问题。
+  - **测试报告**：总结测试活动、结果和指标，以提供对软件质量的见解。
+  - **[Test Process Improvement](../T/test-process-improvement.md)** ：根据经验教训和反馈不断评估和改进测试过程。
+  - **质量门评估**：根据预定义的质量标准评估软件发布的准备情况。
+  - **合规性[Verification](../V/verification.md)**：确保软件遵守相关行业标准和法规。
+  - **工具选择和维护**：选择和维护有效支持 SQA 活动的工具。
+  这些活动是迭代的并且经常重叠，形成一个连续的循环，旨在在整个开发生命周期中增强[software quality](../S/software-quality.md)。
 
-- **遵循软件质量标准的益处是什么？**
-  遵循 **[软件质量 (software quality)](/wiki/software-quality)** 标准带来了多项益处：
-  - **一致性 (Consistency)**：提供统一的指南集，确保跨项目的质量一致性。
-  - **可靠性 (Reliability)**：带来更可靠的软件，因为标准包含了预防常见错误的最佳实践。
-  - **效率 (Efficiency)**：简化过程，减少达到质量目标所需的时间和努力。
-  - **合规性 (Compliance)**：对医疗和金融等行业的监管合规通常是必不可少的。
-  - **互操作性 (Interoperability)**：确保不同系统和软件之间的兼容性。
-  - **对标 (Benchmarking)**：提供衡量质量的基准。
-  - **客户信心 (Customer Confidence)**：体现了对质量和专业性的承诺。
-  - **市场竞争力 (Marketability)**：使产品在市场中具有竞争优势。
-  - **风险管理 (Risk Management)**：减轻与软件故障相关的风险。
-  在 **[测试自动化 (test automation)](/wiki/test-automation)** 背景下，这确保了测试的可靠性和可维护性，直接影响 CI/CD 实践的成功。
+- **需求分析**：理解并记录软件必须做什么并确保需求是可测试的。
+  - **风险管理**：识别、分析和减轻可能影响软件质量的风险。
+  - **测试计划**：定义测试活动的范围、方法、资源和时间表。
+  - **测试设计**：根据需求和设计文档创建测试用例和测试脚本。
+  - **[Test Environment](../T/test-environment.md) [Setup](../S/setup.md)** ：配置测试所需的硬件和软件要求。
+  - **[Test Execution](../T/test-execution.md)** ：运行测试来识别缺陷、验证功能并根据要求验证软件的行为。
+  - **缺陷跟踪**：记录、管理和跟踪测试期间发现的错误或问题。
+  - **测试报告**：总结测试活动、结果和指标，以提供对软件质量的见解。
+  - **[Test Process Improvement](../T/test-process-improvement.md)** ：根据经验教训和反馈不断评估和改进测试过程。
+  - **质量门评估**：根据预定义的质量标准评估软件发布的准备情况。
+  - **合规性[Verification](../V/verification.md)**：确保软件遵守相关行业标准和法规。
+  - **工具选择和维护**：选择和维护有效支持 SQA 活动的工具。
 
-- **有哪些常用的软件质量标准？**
-  常用的 **[软件质量 (software quality)](/wiki/software-quality)** 标准包括：
-  - **ISO/IEC 25010**：定义了软件产品质量和系统质量模型。
-  - **ISO/IEC 9126**：ISO/IEC 25010 的前身。
-  - **ISO 9001**：专注于质量管理体系。
-  - **[CMMI (能力成熟度模型集成)](/wiki/cmmi)**：为改进过程提供基本要素。
-  - **IEEE 标准**：如 IEEE 829（测试文档）和 IEEE 1028（软件评审和审计）。
-  - **[ISTQB (国际软件测试认证委员会)](/wiki/istqb)**：提供与国际标准一致的 **[软件测试 (Software Testing)](/wiki/software-testing)** 认证。
-  - **ASQ (美国质量协会)**：为专业人士提供标准和认证。
-  这些标准对于建立一致的 **[软件质量 (software quality)](/wiki/software-quality)** 方法、提供 **[质量保证 (quality assurance)](/wiki/quality-assurance)** 框架并确保软件满足 **[功能需求 (functional requirements)](/wiki/functional-requirements)** 至关重要。
+#### 软件质量保证如何帮助预防缺陷？
 
-#### 软件测试
-- **软件测试在确保软件质量中的角色是什么？**
-  **[软件测试 (Software testing)](/wiki/software-testing)** 在确保 **[软件质量 (software quality)](/wiki/software-quality)** 中发挥着 **关键作用 (critical role)**，通过 **验证 (validating)** 和 **确认 (verifying)** 软件是否满足定义的需求并按预期工作。它涉及执行系统以识别与实际期望相比的 **差距、错误或缺失的需求**。
-  测试作为 SDLC 中的 **检查点 (checkpoint)**，可确保软件是 **可靠、安全且高性能的**。它有助于 **及早发现缺陷**。
-  **自动化测试 (Automated testing)** 专门提高了 **速度和效率**，辅助进行 **持续测试**。自动化测试可以 **重复 (repeatedly)** 运行，确保代码更改不会引入 **[Bug](/wiki/bug)** —— 即所谓的 **[回归测试 (regression testing)](/wiki/regression-testing)**。
-  此外，**[软件测试 (software testing)](/wiki/software-testing)** 提供了过程的 **文档记录 (documentation)**，这对 **维护 (maintenance)** 至关重要。它确保软件可以处理 **实际使用场景 (real-world usage scenarios)**。
-  总之，**[软件测试 (software testing)](/wiki/software-testing)** 是维持高 **[软件质量 (software quality)](/wiki/software-quality)** 的核心，能够带来 **客户满意度 (customer satisfaction)** 和 **产品成功 (product success)**。
+软件质量保证 (SQA) 通过实施主动的质量方法，在**预防缺陷**中发挥着至关重要的作用。它包含一组旨在确保开发和维护过程足以在软件到达最终用户之前将软件维护在满足商定标准的水平的活动。
+  SQA 涉及：
 
-- **软件测试有哪些不同类型？**
-  **[软件测试 (software testing)](/wiki/software-testing)** 的不同类型包括：
-  - **单元测试 (Unit Testing)**：验证单个组件。**[单元测试 (Unit Testing)](/wiki/unit-testing)**
-  - **集成测试 (Integration Testing)**：确保模块协同工作。**[集成测试 (Integration Testing)](/wiki/integration-testing)**
-  - **系统测试 (System Testing)**：验证完整的完整系统。**[系统测试 (System Testing)](/wiki/system-testing)**
-  - **验收测试 (Acceptance Testing)**：确认满足业务需求。**[验收测试 (Acceptance Testing)](/wiki/acceptance-testing)**
-  - **性能测试 (Performance Testing)**：评估响应能力。**[性能测试 (Performance Testing)](/wiki/performance-testing)**
-  - **负载测试 (Load Testing)**：在高负载下的表现。**[负载测试 (Load Testing)](/wiki/load-testing)**
-  - **压力测试 (Stress Testing)**：评估极限容量。**[压力测试 (Stress Testing)](/wiki/stress-testing)**
-  - **安全测试 (Security Testing)**：识别漏洞。**[安全测试 (Security Testing)](/wiki/security-testing)**
-  - **可用性测试 (Usability Testing)**：检查友好程度。**[可用性测试 (Usability Testing)](/wiki/usability-testing)**
-  - **兼容性测试 (Compatibility Testing)**：针对不同设备/OS。**[兼容性测试 (Compatibility Testing)](/wiki/compatibility-testing)**
-  - **回归测试 (Regression Testing)**：针对现有功能的影响。**[回归测试 (Regression Testing)](/wiki/regression-testing)**
-  - **冒烟测试 (Smoke Testing)**。
-  - **探索性测试 (Exploratory Testing)**。**[探索性测试 (Exploratory Testing)](/wiki/exploratory-testing)**
-  - **随机测试 (Ad-hoc Testing)**。
-  - **Alpha 测试**。**[Alpha 测试 (Alpha Testing)](/wiki/alpha-testing)**
-  - **Beta 测试**。**[Beta 测试 (Beta Testing)](/wiki/beta-testing)**
-  - **静态测试 (Static Testing)**：非执行代码检测。**[静态测试 (Static Testing)](/wiki/static-testing)**
+- **建立流程**
+    在整个软件开发生命周期中都遵循这些原则，以防止引入缺陷。
 
-- **功能测试和非功能测试有什么区别？**
-  **[功能测试 (Functional testing)](/wiki/functional-testing)** 侧重于验证功能，涉及用户交互、**[API](/wiki/api)**、**[数据库 (database)](/wiki/database)** 管理等。它回答“软件是否做了该做的事？”。
-  **[非功能测试 (Non-functional testing)](/wiki/non-functional-testing)** 则涉及性能、负载、压力、**[可用性测试 (usability testing)](/wiki/usability-testing)**、可靠性和 **[可扩展性测试 (scalability testing)](/wiki/scalability-testing)**。它回答“软件表现如何？”。
-  **功能测试 (functional tests)** 验证动作，而 **非功能测试 (non-functional tests)** 评估表现、易用性和可靠性。
+- **审核和审查**
+    流程和产品，以确保遵守标准和程序。
 
-- **自动化测试如何为软件质量做出贡献？**
-  **[自动化测试 (Automated testing)](/wiki/automated-testing)** 通过实现 **一致性执行** 显著增强 **[软件质量 (software quality)](/wiki/software-quality)**。它支持频繁的 **[测试用例 (test cases)](/wiki/test-case)** 运行，及早发现异常，辅助进行 **频繁的回归测试 (frequent regression testing)**，降低风险。自动化支持 **高覆盖范围 (high coverage)**。
-  通过集成 CI/CD，实现 **实时反馈 (immediate feedback)**。
-  自动化测试可以是 **可重用且可维护的**，并支持 **并行执行 (parallel execution)**。
-  它消除了 **人为错误 (human error)**，让 **[质量保证 (quality assurance)](/wiki/quality-assurance)** 工程师能专注于更复杂的 **[探索性测试 (exploratory testing)](/wiki/exploratory-testing)**。
+- **验证**
+    软件要求和设计规范适合满足用户需求并得到正确实施。
 
-- **测试计划在软件测试中角色是什么？**
-  **测试计划 (test plan)** 是一份战略文档。它定义了范围、目标和方法。
-  **[测试计划 (test plan)](/wiki/test-plan)** 为工程师提供指南：**测什么 (What to test)**、**怎么测 (How to test)**、**何时测 (When to test)**、**谁来测 (Who will test)**、**测试环境 (Test environment)**、**风险评估 (Risk assessment)**、**准入和准出准则 (Entry and exit criteria)** 以及 **测试交付物 (Test deliverables)**。
-  它确保 **[测试自动化 (test automation)](/wiki/test-automation)** 努力与项目目标一致，促进沟通，帮助跟踪进度。
+- **验证**
+    开发周期的每个阶段（例如需求分析、设计、编码和测试）在完成时都考虑到质量。
 
-#### 软件质量保证 (Software Quality Assurance)
-- **什么是软件质量保证？**
-  **软件质量保证 (SQA)** 涵盖了一种 **预防性方法 (proactive approach)**。关键 SQA 活动包括：
-  - **过程定义与实施 (Process definition and implementation)**
-  - **审计与评审 (Audits and reviews)**
-  - **测试计划与控制 (Test planning and control)**
-  - **风险管理 (Risk management)**
-  - **质量指标分析 (Quality metrics analysis)**
-  - **工具选择与维护 (Tool selection and maintenance)**
-  - **培训与辅导 (Training and mentoring)**
-  SQA 对 **持续改进 (continuous improvement)** 至关重要，并常由 **[质量管理 (quality management)](/wiki/quality-management)** 体系支持。它不同于专注于发现缺陷的 **[软件测试 (software testing)](/wiki/software-testing)**。
+- **执行**
+    严格的变更管理流程，以确保任何修改都不会引入新的缺陷。
+  通过专注于流程改进，SQA 有助于及早发现潜在问题，降低开发后修复缺陷的成本。它确保质量从头开始就融入到产品中，而不是事后进行检查。这种积极主动的质量态度有助于提供更可靠、更强大的软件产品，最终降低失败风险并提高客户满意度。
 
-- **软件质量保证和软件测试有什么区别？**
-  **SQA** 包含所有旨在确保质量的活动，是预防性的。而 **[软件测试 (Software testing)](/wiki/software-testing)** 是 SQA 的子集，专注于识别缺陷，是反应性的。
-  ```
-  - SQA：预防性、面向过程、确保遵循标准、旨在持续改进。
-  - 测试：反应性、面向产品、识别缺陷、根据需求验证质量。
-  ```
-  **[测试自动化 (test automation)](/wiki/test-automation)** 虽然关键，但 SQA 范围更广。
+- **建立流程**
+    在整个软件开发生命周期中都遵循这些原则，以防止引入缺陷。
 
-- **软件质量保证涉及哪些关键活动？**
-  关键活动包括：**需求分析 (Requirement Analysis)**、**风险管理 (Risk Management)**、**测试计划 (Test Planning)**、**测试设计 (Test Design)**、**测试环境搭建 (Test Environment Setup)**、**测试执行 (Test Execution)**、**缺陷跟踪 (Defect Tracking)**、**测试报告 (Test Reporting)**、**测试过程改进 (Test Process Improvement)**、**质量门禁评估 (Quality Gate Evaluation)**、**合规性确认 (Compliance Verification)** 以及 **工具维护**。
-  这些活动形成了增强 **[软件质量 (software quality)](/wiki/software-quality)** 的持续循环。
+- **审核和审查**
+    流程和产品，以确保遵守标准和程序。
 
-- **软件质量保证如何帮助预防缺陷？**
-  SQA 通过 **[预防缺陷 (preventing defects)](/wiki/preventing defects)** 的前瞻性方法发挥作用。它涉及：**建立过程 (Establishing processes)**、**审计与评审 (Auditing and reviewing)**、**验证 (Validating)** 需求和设计规格、**确认 (Verifying)** 每个阶段以及 **强制实施 (Enforcing)** 变更管理。
-  这有助于降低修复成本。
+- **验证**
+    软件要求和设计规范适合满足用户需求并得到正确实施。
 
-- **软件质量保证的最佳实践有哪些？**
-  关键实践包括：**及早定义质量目标 (Define clear quality objectives)**、**全生命周期集成 (Integrate QA)**、**实施 CI/CD (Implement CI/CD)**、**编写好维护的 [测试用例 (test cases)](/wiki/test-case)**、**基于风险排序 (Prioritize test cases)**、**使用版本控制 (Use version control)**、**结合手动与 [自动化测试 (automated testing)](/wiki/automated-testing)**、**定期更新框架**、**收集并分析指标** 以及 **培养质量文化 (Foster a culture of quality)**。
+- **验证**
+    开发周期的每个阶段（例如需求分析、设计、编码和测试）在完成时都考虑到质量。
+
+- **执行**
+    严格的变更管理流程，以确保任何修改都不会引入新的缺陷。
+
+#### 软件质量保证的最佳实践是什么？
+
+软件质量保证 (QA) 的最佳实践对于交付可靠且高性能的软件至关重要。以下是一些关键做法：
+
+- **定义明确的质量目标**
+    在开发周期的早期，确保所有团队成员了解预期标准。
+
+- **将 QA 集成到整个软件开发生命周期 (SDLC)**
+    ，不只是在最后。这包括参与需求收集、设计、编码和部署。
+
+- **实施持续集成（CI）和持续交付（CD）**
+    自动化构建、测试和部署流程，以便及早发现问题。
+
+- **编写可维护和可重用的[test cases](../T/test-case.md)**
+    确保测试可以与他们正在测试的应用程序一起轻松更新。
+
+- **优先考虑[test cases](../T/test-case.md)**
+    基于风险和影响。专注于影响应用程序核心方面的关键功能。
+
+- **使用版本控制**
+    用于测试脚本和文档以跟踪更改并有效协作。
+
+- **执行手动和[automated testing](../A/automated-testing.md)**
+    充分利用每种方法的优势。手动测试对于探索性、可用性和临时测试至关重要，而自动化则擅长重复和回归任务。
+
+- **定期审查和更新[test automation](../T/test-automation.md)框架**
+    以适应新的测试需求和技术。
+
+- **收集和分析测试指标**
+    衡量有效性并确定需要改进的领域。
+
+- **培养质量文化**
+    每个团队成员都对软件质量负责，而不仅仅是 QA 团队。
+
+- **定期举办知识分享会**
+    在团队成员中传播最佳实践和经验教训。
+  通过坚持这些实践，质量保证团队可以确保他们为高质量软件的开发做出有效的贡献。
+
+- **定义明确的质量目标**
+    在开发周期的早期，确保所有团队成员了解预期标准。
+
+- **将 QA 集成到整个软件开发生命周期 (SDLC)**
+    ，不只是在最后。这包括参与需求收集、设计、编码和部署。
+
+- **实施持续集成（CI）和持续交付（CD）**
+    自动化构建、测试和部署流程，以便及早发现问题。
+
+- **编写可维护和可重用的[test cases](../T/test-case.md)**
+    确保测试可以与他们正在测试的应用程序一起轻松更新。
+
+- **优先考虑[test cases](../T/test-case.md)**
+    基于风险和影响。专注于影响应用程序核心方面的关键功能。
+
+- **使用版本控制**
+    用于测试脚本和文档以跟踪更改并有效协作。
+
+- **执行手动和[automated testing](../A/automated-testing.md)**
+    充分利用每种方法的优势。手动测试对于探索性、可用性和临时测试至关重要，而自动化则擅长重复和回归任务。
+
+- **定期审查和更新[test automation](../T/test-automation.md)框架**
+    以适应新的测试需求和技术。
+
+- **收集和分析测试指标**
+    衡量有效性并确定需要改进的领域。
+
+- **培养质量文化**
+    每个团队成员都对软件质量负责，而不仅仅是 QA 团队。
+
+- **定期举办知识分享会**
+    在团队成员中传播最佳实践和经验教训。
