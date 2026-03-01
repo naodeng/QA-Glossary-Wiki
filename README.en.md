@@ -83,7 +83,7 @@ QA-Glossary-Wiki/
 - [Concurrency Testing](Sections/C/concurrency-testing.md) | [并发测试](Sections-zh/C/concurrency-testing.md)
 - [Control Flow Testing](Sections/C/control-flow-testing.md) | [控制流测试](Sections-zh/C/control-flow-testing.md)
 - [Cross-Browser Testing](Sections/C/cross-browser-testing.md) | [跨浏览器测试](Sections-zh/C/cross-browser-testing.md)
-- [Cypress](Sections/C/cypress.md) | [柏树](Sections-zh/C/cypress.md)
+- [Cypress](Sections/C/cypress.md) | [Cypress](Sections-zh/C/cypress.md)
 
 ## D
 

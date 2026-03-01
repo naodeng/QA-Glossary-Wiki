@@ -263,6 +263,18 @@ class TranslationManager:
 
     def translate_article_with_free_api(self, english_content: str) -> str:
         """Translate markdown while preserving fenced code blocks and inline markdown tokens."""
+        # Remove existing TOC blocks from source to avoid duplicated TOC after add_toc().
+        english_content = re.sub(
+            r"\n?<!-- TOC START -->[\s\S]*?<!-- TOC END -->\n?",
+            "\n",
+            english_content,
+        )
+        english_content = re.sub(
+            r"\n?<!-- 目录开始 -->[\s\S]*?<!-- 目录结束 -->\n?",
+            "\n",
+            english_content,
+        )
+
         # Split content into non-fence / fence chunks using a line scanner so
         # indented fences are preserved exactly.
         chunks: List[tuple[str, str]] = []

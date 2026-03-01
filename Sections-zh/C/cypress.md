@@ -2,76 +2,40 @@
 
 
 
-<!-- TOC START -->
-- [相关术语：](#相关术语：)
-  - [另请参阅：](#另请参阅：)
-- [关于Cypress 有疑问吗？](#关于cypress-有疑问吗？)
-  - [基础知识和重要性](#基础知识和重要性)
-    - [Cypress 是什么？](#cypress-是什么？)
-    - [为什么在测试中使用Cypress？](#为什么在测试中使用cypress？)
-    - [Cypress 与 Selenium 等其他测试工具有何不同？](#cypress-与-selenium-等其他测试工具有何不同？)
-    - [使用Cypress 可以执行哪些类型的测试？](#使用cypress-可以执行哪些类型的测试？)
-  - [安装和设置](#安装和设置)
-    - [如何安装Cypress？](#如何安装cypress？)
-    - [Cypress 的系统要求是什么？](#cypress-的系统要求是什么？)
-    - [如何在Cypress 中建立项目？](#如何在cypress-中建立项目？)
-    - [如何为特定环境配置Cypress？](#如何为特定环境配置cypress？)
-  - [编写和运行测试](#编写和运行测试)
-    - [如何在Cypress 中编写基本测试？](#如何在cypress-中编写基本测试？)
-    - [Cypress 测试的结构是什么？](#cypress-测试的结构是什么？)
-    - [如何在Cypress 中运行测试？](#如何在cypress-中运行测试？)
-    - [如何在Cypress 中使用断言？](#如何在cypress-中使用断言？)
-    - [如何处理Cypress 中的事件？](#如何处理cypress-中的事件？)
-    - [如何在Cypress 中使用灯具？](#如何在cypress-中使用灯具？)
-  - [高级概念](#高级概念)
-    - [Cypress 如何处理异步操作？](#cypress-如何处理异步操作？)
-    - [如何在Cypress 中使用自定义命令？](#如何在cypress-中使用自定义命令？)
-    - [如何处理Cypress 中的网络请求？](#如何处理cypress-中的网络请求？)
-    - [如何使用 Cypress 中的 cookie 和本地存储？](#如何使用-cypress-中的-cookie-和本地存储？)
-    - [如何处理 Cypress 中的 iframe？](#如何处理-cypress-中的-iframe？)
-    - [如何使用Cypress中的插件？](#如何使用cypress中的插件？)
-  - [最佳实践和故障排除](#最佳实践和故障排除)
-    - [在 Cypress 中编写测试的最佳实践有哪些？](#在-cypress-中编写测试的最佳实践有哪些？)
-    - [如何在Cypress 中调试测试？](#如何在cypress-中调试测试？)
-    - [如何处理Cypress 中的常见错误？](#如何处理cypress-中的常见错误？)
-    - [如何优化 Cypress 中的测试执行时间？](#如何优化-cypress-中的测试执行时间？)
-<!-- TOC END -->
 
-<!-- 目录开始 -->
-- [Related Terms:](#related-terms)
-  - [See also:](#see-also)
-- [Questions about Cypress ?](#questions-about-cypress)
-  - [Basics and Importance](#basics-and-importance)
-    - [What is Cypress?](#what-is-cypress)
-    - [Why is Cypress used in testing?](#why-is-cypress-used-in-testing)
-    - [What are the key features of Cypress?](#what-are-the-key-features-of-cypress)
-    - [How does Cypress differ from other testing tools like Selenium?](#how-does-cypress-differ-from-other-testing-tools-like-selenium)
-    - [What types of testing can be performed using Cypress?](#what-types-of-testing-can-be-performed-using-cypress)
-  - [Installation and Setup](#installation-and-setup)
-    - [How to install Cypress?](#how-to-install-cypress)
-    - [What are the system requirements for Cypress?](#what-are-the-system-requirements-for-cypress)
-    - [How to set up a project in Cypress?](#how-to-set-up-a-project-in-cypress)
-    - [How to configure Cypress for a specific environment?](#how-to-configure-cypress-for-a-specific-environment)
-  - [Writing and Running Tests](#writing-and-running-tests)
-    - [How to write a basic test in Cypress?](#how-to-write-a-basic-test-in-cypress)
-    - [What is the structure of a Cypress test?](#what-is-the-structure-of-a-cypress-test)
-    - [How to run a test in Cypress?](#how-to-run-a-test-in-cypress)
-    - [How to use assertions in Cypress?](#how-to-use-assertions-in-cypress)
-    - [How to handle events in Cypress?](#how-to-handle-events-in-cypress)
-    - [How to use fixtures in Cypress?](#how-to-use-fixtures-in-cypress)
-  - [Advanced Concepts](#advanced-concepts)
-    - [How does Cypress handle asynchronous operations?](#how-does-cypress-handle-asynchronous-operations)
-    - [How to use custom commands in Cypress?](#how-to-use-custom-commands-in-cypress)
-    - [How to handle network requests in Cypress?](#how-to-handle-network-requests-in-cypress)
-    - [How to work with cookies and local storage in Cypress?](#how-to-work-with-cookies-and-local-storage-in-cypress)
-    - [How to handle iframes in Cypress?](#how-to-handle-iframes-in-cypress)
-    - [How to use plugins in Cypress?](#how-to-use-plugins-in-cypress)
-  - [Best Practices and Troubleshooting](#best-practices-and-troubleshooting)
-    - [What are some best practices for writing tests in Cypress?](#what-are-some-best-practices-for-writing-tests-in-cypress)
-    - [How to debug tests in Cypress?](#how-to-debug-tests-in-cypress)
-    - [How to handle common errors in Cypress?](#how-to-handle-common-errors-in-cypress)
-    - [How to optimize test execution time in Cypress?](#how-to-optimize-test-execution-time-in-cypress)
-<!-- 目录结束 -->
+<!-- TOC START -->
+- [# 另请参阅：](##-另请参阅：)
+- [# 基础知识和重要性](##-基础知识和重要性)
+  - [# Cypress 是什么？](##-cypress-是什么？)
+  - [# 为什么在测试中使用Cypress？](##-为什么在测试中使用cypress？)
+  - [# Cypress 的主要功能是什么？](##-cypress-的主要功能是什么？)
+  - [# Cypress 与 Selenium 等其他测试工具有何不同？](##-cypress-与-selenium-等其他测试工具有何不同？)
+  - [# 使用Cypress 可以执行哪些类型的测试？](##-使用cypress-可以执行哪些类型的测试？)
+- [# 安装和设置](##-安装和设置)
+  - [# 如何安装Cypress？](##-如何安装cypress？)
+  - [# Cypress 的系统要求是什么？](##-cypress-的系统要求是什么？)
+  - [# 如何在Cypress 中建立项目？](##-如何在cypress-中建立项目？)
+  - [# 如何为特定环境配置Cypress？](##-如何为特定环境配置cypress？)
+- [# 编写和运行测试](##-编写和运行测试)
+  - [# 如何在Cypress 中编写基本测试？](##-如何在cypress-中编写基本测试？)
+  - [# Cypress 测试的结构是什么？](##-cypress-测试的结构是什么？)
+  - [# 如何在Cypress 中运行测试？](##-如何在cypress-中运行测试？)
+  - [# 如何在Cypress 中使用断言？](##-如何在cypress-中使用断言？)
+  - [# 如何处理Cypress 中的事件？](##-如何处理cypress-中的事件？)
+  - [# 如何在Cypress 中使用灯具？](##-如何在cypress-中使用灯具？)
+- [# 高级概念](##-高级概念)
+  - [# Cypress 如何处理异步操作？](##-cypress-如何处理异步操作？)
+  - [# 如何在Cypress 中使用自定义命令？](##-如何在cypress-中使用自定义命令？)
+  - [# 如何处理Cypress 中的网络请求？](##-如何处理cypress-中的网络请求？)
+  - [# 如何使用 Cypress 中的 cookie 和本地存储？](##-如何使用-cypress-中的-cookie-和本地存储？)
+  - [# 如何处理 Cypress 中的 iframe？](##-如何处理-cypress-中的-iframe？)
+  - [# 如何使用Cypress中的插件？](##-如何使用cypress中的插件？)
+- [# 最佳实践和故障排除](##-最佳实践和故障排除)
+  - [# 在 Cypress 中编写测试的最佳实践有哪些？](##-在-cypress-中编写测试的最佳实践有哪些？)
+  - [# 如何在Cypress 中调试测试？](##-如何在cypress-中调试测试？)
+  - [# 如何处理Cypress 中的常见错误？](##-如何处理cypress-中的常见错误？)
+  - [# 如何优化 Cypress 中的测试执行时间？](##-如何优化-cypress-中的测试执行时间？)
+<!-- TOC END -->
 
 （又名 Cypress.io ）
 
@@ -107,38 +71,38 @@ Cypress
 
 为 Web 应用程序测试提供全面且用户友好的环境。
 
-## 相关术语：
+# # 相关术语：
 
 - [Web Automation tool](../W/web-automation-tool.md)
 - [Playwright](../P/playwright.md)
 
-### 另请参阅：
+## # 另请参阅：
 
 - [Official Website](https://www.cypress.io/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Cypress_(software))
 
-## 关于Cypress 有疑问吗？
+# # 关于Cypress 有疑问吗？
 
-### 基础知识和重要性
+## # 基础知识和重要性
 
-#### Cypress 是什么？
+### # Cypress 是什么？
 
 [Cypress](../C/cypress.md) 是一个专为现代 Web 应用程序设计的 **[end-to-end testing](../E/end-to-end-testing.md) 框架**。它在浏览器中运行测试，并基于 **JavaScript** 和 **[Node.js](../N/node-js.md)** 等技术构建。与许多其他测试工具不同，[Cypress](../C/cypress.md) 在与应用程序相同的运行循环中执行测试，提供对每个对象的本机访问，而不需要单独的驱动程序或服务器。
   [Cypress](../C/cypress.md) 提供了**丰富的交互式[test runner](../T/test-runner.md)**，允许您在命令执行时查看命令，同时还可以查看正在测试的应用程序。该工具为 [test-driven development](../T/test-driven-development.md) 提供**实时重新加载**，并在文件保存时重新运行测试。
-  [Cypress](../C/cypress.md) 中的测试是使用 **可链接的 [API](../A/api.md)** 编写的，它与 Promise 一起使用，从而简化了异步操作的处理。 [Cypress](../C/cypress.md) 包含用于DOM 遍历和操作的**类似 jQuery 的命令**，使其为前端开发人员所熟悉。
+  [Cypress](../C/cypress.md) 中的测试是使用 **可链接的 [API](../A/api.md)** 编写的，它与 Promise 一起使用，从而简化了异步操作的处理。 [Cypress](../C/cypress.md) 包含**类似 jQuery 的命令**，用于 DOM 遍历和操作，使其为前端开发人员所熟悉。
   [Cypress](../C/cypress.md) 在执行操作或断言之前提供**自动等待**，从而在大多数情况下无需显式等待或睡眠。它还提供**间谍、存根和时钟**来验证和控制服务器响应、函数或计时器的行为。
   该工具具有**屏幕截图和视频录制**功能，可以方便地调试和理解测试失败。 [Cypress](../C/cypress.md) 测试可以在持续集成 (CI) 环境中无头运行，也可以在开发过程中以交互方式运行。
   [Cypress](../C/cypress.md) 的体系结构不使用[Selenium](../S/selenium.md) 或[WebDriver](../W/webdriver.md)，这允许更快的执行和更多的控制，但也意味着它主要适合测试在浏览器中运行的应用程序。它支持**Chrome系列浏览器**（包括Electron）和**Firefox**。
 
-#### 为什么在测试中使用Cypress？
+### # 为什么在测试中使用Cypress？
 
 [Cypress](../C/cypress.md) 用于测试主要是因为其**简单**和**开发人员友好**方法[end-to-end testing](../E/end-to-end-testing.md)。由于其独特的架构与被测试的应用程序在同一运行循环中运行，因此它允许编写**无片断**测试。与在浏览器之外运行的其他工具相比，这会产生更可靠的测试和一致的测试。
   [Cypress](../C/cypress.md) 的使用因其**实时重新加载**而受到青睐，它可以提供有关测试代码更改的即时反馈，从而提高生产力并减少编写和维护测试所花费的时间。它的**自动等待**机制消除了手动睡眠或等待命令的需要，从而降低了[test scripts](../T/test-script.md)的复杂性。
-  当开发人员和 QA 工程师需要与现代开发工具和工作流程（包括持续集成和版本控制系统）**紧密集成**时，他们会选择 [Cypress](../C/cypress.md)。 [Cypress](../C/cypress.md) 的**丰富的调试功能**使得直接从浏览器的开发人员工具诊断和修复问题变得更加容易。
+  当开发人员和 QA 工程师需要与现代开发工具和工作流程（包括持续集成和版本控制系统）**紧密集成**时，他们会选择[Cypress](../C/cypress.md)。 [Cypress](../C/cypress.md) 的**丰富的调试功能**使得直接从浏览器的开发人员工具诊断和修复问题变得更加容易。
   [Cypress](../C/cypress.md) 的**屏幕截图和视频录制**功能对于可视化测试失败时应用程序的状态至关重要，有助于更快地排除故障。它的**网络流量控制**允许轻松地对边缘情况进行存根和测试，而无需后端依赖项。
-  总体而言，[Cypress](../C/cypress.md) 用于其**一体化**测试体验，提供了一组强大的工具来满足现代 Web 应用程序测试的需求，所有这些都在一个单一的、连贯的框架内。
+  总的来说，[Cypress](../C/cypress.md) 用于其**一体化**测试体验，提供了一组强大的工具来满足现代 Web 应用程序测试的需求，所有这些都在一个单一的、连贯的框架内。
 
-####Cypress 的主要功能是什么？
+### # Cypress 的主要功能是什么？
 
 [Cypress](../C/cypress.md) 的主要功能包括：
 
@@ -173,32 +137,32 @@ Cypress
     `cypress-axe`
     ，您可以将可访问性检查合并到您的测试套件中。
 
-#### Cypress 与 Selenium 等其他测试工具有何不同？
+### # Cypress 与 Selenium 等其他测试工具有何不同？
 
 [Cypress](../C/cypress.md) 与 [Selenium](../S/selenium.md) 在几个关键方面有所不同：
 
 - **架构**：[Cypress](../C/cypress.md) 与正在测试的应用程序在同一运行循环中运行，从而实现更快的执行和更一致的结果。 [Selenium](../S/selenium.md) 在浏览器外部运行，这可能会导致延迟和不稳定。
-  - **Language Support**: [Cypress](../C/cypress.md) tests are written in JavaScript, while [Selenium](../S/selenium.md) supports multiple languages like Java, C#, Python, and Ruby.
-  - **Direct Access**: [Cypress](../C/cypress.md) has direct access to the DOM and can interact with elements more naturally. [Selenium](../S/selenium.md) 需要中介 ([WebDriver](../W/webdriver.md)) 与浏览器通信，这会减慢交互速度。
-  - **[Setup](../S/setup.md) 和配置**：[Cypress](../C/cypress.md) 更易于设置，无需额外的驱动程序或服务器。 [Selenium](../S/selenium.md) 通常需要额外的[setup](../S/setup.md) 用于[WebDriver](../W/webdriver.md) 和特定于浏览器的驱动程序。
-  - **实时重新加载**：[Cypress](../C/cypress.md) 提供[Test Runner](../T/test-runner.md)，它会在测试文件更改时自动重新加载，提供即时反馈。 [Selenium](../S/selenium.md) 没有内置等效项。
-  - **自动等待**：[Cypress](../C/cypress.md) 在继续之前自动等待命令和断言。 [Selenium](../S/selenium.md) 需要显式等待或睡眠命令来管理计时问题。
-  - **[API Testing](../A/api-testing.md)**：[Cypress](../C/cypress.md) 包含对 [API testing](../A/api-testing.md) 的内置支持，允许在一个框架中进行前端和后端测试。 [Selenium](../S/selenium.md) 主要专注于基于浏览器的测试。
-  - **屏幕截图和视频**：[Cypress](../C/cypress.md) 可以本地截图和录制视频。 [Selenium](../S/selenium.md)可以捕获屏幕截图，但视频录制通常需要额外的工具或插件。
-  - **可调试性**：[Cypress](../C/cypress.md) 提供更多信息性错误消息和堆栈跟踪，使调试更容易。 [Selenium](../S/selenium.md) 的错误消息可能不太清晰，使调试更具挑战性。
-  - **[Cross-browser Testing](../C/cross-browser-testing.md)**：[Selenium](../S/selenium.md) 支持更广泛的浏览器和版本。 [Cypress](../C/cypress.md) 的跨浏览器支持正在改进，但历史上仅限于较少的浏览器。
-  - **架构**：[Cypress](../C/cypress.md) 与正在测试的应用程序在同一运行循环中运行，从而实现更快的执行和更一致的结果。 [Selenium](../S/selenium.md) 在浏览器外部运行，这可能会导致延迟和不稳定。
-  - **Language Support**: [Cypress](../C/cypress.md) tests are written in JavaScript, while [Selenium](../S/selenium.md) supports multiple languages like Java, C#, Python, and Ruby.
-  - **Direct Access**: [Cypress](../C/cypress.md) has direct access to the DOM and can interact with elements more naturally. [Selenium](../S/selenium.md) 需要中介 ([WebDriver](../W/webdriver.md)) 与浏览器通信，这会减慢交互速度。
-  - **[Setup](../S/setup.md) 和配置**：[Cypress](../C/cypress.md) 更易于设置，无需额外的驱动程序或服务器。 [Selenium](../S/selenium.md) 通常需要额外的[setup](../S/setup.md) 用于[WebDriver](../W/webdriver.md) 和特定于浏览器的驱动程序。
+  - **语言支持**：[Cypress](../C/cypress.md) 测试以JavaScript 编写，而[Selenium](../S/selenium.md) 支持多种语言，例如Java、C#、Python 和Ruby。
+  - **直接访问**：[Cypress](../C/cypress.md) 可以直接访问DOM，并且可以更自然地与元素交互。 [Selenium](../S/selenium.md) 需要中介 ([WebDriver](../W/webdriver.md)) 与浏览器通信，这会减慢交互速度。
+  - **[Setup](../S/setup.md) 和配置**：[Cypress](../C/cypress.md) 更易于设置，无需额外的驱动程序或服务器。 [Selenium](../S/selenium.md) 通常需要额外的[setup](../S/setup.md) 用于[WebDriver](../W/webdriver.md) 和浏览器特定的驱动程序。
   - **实时重新加载**：[Cypress](../C/cypress.md) 提供[Test Runner](../T/test-runner.md)，可在测试文件更改时自动重新加载，提供即时反馈。 [Selenium](../S/selenium.md) 没有内置等效项。
   - **自动等待**：[Cypress](../C/cypress.md) 在继续之前自动等待命令和断言。 [Selenium](../S/selenium.md) 需要显式等待或睡眠命令来管理计时问题。
   - **[API Testing](../A/api-testing.md)**：[Cypress](../C/cypress.md) 包含对 [API testing](../A/api-testing.md) 的内置支持，允许在一个框架中进行前端和后端测试。 [Selenium](../S/selenium.md) 主要专注于基于浏览器的测试。
   - **屏幕截图和视频**：[Cypress](../C/cypress.md) 可以本地截图和录制视频。 [Selenium](../S/selenium.md)可以捕获屏幕截图，但视频录制通常需要额外的工具或插件。
   - **可调试性**：[Cypress](../C/cypress.md) 提供更多信息性错误消息和堆栈跟踪，使调试更容易。 [Selenium](../S/selenium.md) 的错误消息可能不太清晰，使调试更具挑战性。
   - **[Cross-browser Testing](../C/cross-browser-testing.md)**：[Selenium](../S/selenium.md) 支持更广泛的浏览器和版本。 [Cypress](../C/cypress.md) 的跨浏览器支持正在改进，但历史上仅限于较少的浏览器。
+  - **架构**：[Cypress](../C/cypress.md) 与正在测试的应用程序在同一运行循环中运行，从而实现更快的执行和更一致的结果。 [Selenium](../S/selenium.md) 在浏览器外部运行，这可能会导致延迟和不稳定。
+  - **语言支持**：[Cypress](../C/cypress.md) 测试以JavaScript 编写，而[Selenium](../S/selenium.md) 支持多种语言，例如Java、C#、Python 和Ruby。
+  - **直接访问**：[Cypress](../C/cypress.md) 可以直接访问DOM，并且可以更自然地与元素交互。 [Selenium](../S/selenium.md) 需要中介 ([WebDriver](../W/webdriver.md)) 与浏览器通信，这会减慢交互速度。
+  - **[Setup](../S/setup.md) 和配置**：[Cypress](../C/cypress.md) 更易于设置，无需额外的驱动程序或服务器。 [Selenium](../S/selenium.md) 通常需要额外的[setup](../S/setup.md) 用于[WebDriver](../W/webdriver.md) 和浏览器特定的驱动程序。
+  - **实时重新加载**：[Cypress](../C/cypress.md) 提供了 [Test Runner](../T/test-runner.md)，可在测试文件更改时自动重新加载，提供即时反馈。 [Selenium](../S/selenium.md) 没有内置等效项。
+  - **自动等待**：[Cypress](../C/cypress.md) 在继续之前自动等待命令和断言。 [Selenium](../S/selenium.md) 需要显式等待或睡眠命令来管理计时问题。
+  - **[API Testing](../A/api-testing.md)**：[Cypress](../C/cypress.md) 包含对 [API testing](../A/api-testing.md) 的内置支持，允许在一个框架中进行前端和后端测试。 [Selenium](../S/selenium.md) 主要专注于基于浏览器的测试。
+  - **屏幕截图和视频**：[Cypress](../C/cypress.md) 可以本地截图和录制视频。 [Selenium](../S/selenium.md)可以捕获屏幕截图，但视频录制通常需要额外的工具或插件。
+  - **可调试性**：[Cypress](../C/cypress.md) 提供更多信息性错误消息和堆栈跟踪，使调试更容易。 [Selenium](../S/selenium.md) 的错误消息可能不太清晰，使调试更具挑战性。
+  - **[Cross-browser Testing](../C/cross-browser-testing.md)**：[Selenium](../S/selenium.md) 支持更广泛的浏览器和版本。 [Cypress](../C/cypress.md) 的跨浏览器支持正在改进，但历史上仅限于较少的浏览器。
 
-#### 使用Cypress 可以执行哪些类型的测试？
+### # 使用Cypress 可以执行哪些类型的测试？
 
 使用[Cypress](../C/cypress.md)，测试人员可以执行各种类型的测试，包括：
 
@@ -224,12 +188,12 @@ Cypress
     `cypress-axe`
     ，测试人员可以将可访问性检查合并到他们的测试套件中，以确保符合 WCAG 等标准。
 
-- **[API Testing](../A/api-testing.md)** ：虽然 Cypress 主要是一个基于浏览器的工具，但它可以通过发送 HTTP 请求并断言响应来测试 REST 或 GraphQL API。
+- **[API Testing](../A/api-testing.md)** ：虽然 Cypress 主要是一个基于浏览器的工具，但它可用于通过发送 HTTP 请求并断言响应来测试 REST 或 GraphQL API。
   - **[Performance Testing](../P/performance-testing.md)** ：虽然不是成熟的性能测试工具，Cypress 可以捕获页面加载时间等性能指标，并使用断言来标记性能回归。
 
-### 安装和设置
+## # 安装和设置
 
-#### 如何安装Cypress？
+### # 如何安装Cypress？
 
 要安装 [Cypress](../C/cypress.md)，请确保您的系统上安装了 **[Node.js](../N/node-js.md)**（版本 12 或更高版本）和 **npm**（版本 6 或更高版本）。打开终端或命令提示符并按照以下步骤操作：
 
@@ -309,7 +273,7 @@ Cypress
     ```
     yarn run cypress open
     ```
-#### Cypress 的系统要求是什么？
+### # Cypress 的系统要求是什么？
 
 [Cypress](../C/cypress.md) 与 **Windows、macOS 和 Linux** 操作系统兼容。具体的系统要求包括：
 
@@ -374,7 +338,7 @@ Cypress
 - **内存和CPU**：有足够的资源来运行Electron浏览器，特别是在并行运行多个测试时。建议至少 2GB RAM。
   - **屏幕分辨率**：建议查看 Cypress 测试运行程序时的最小屏幕分辨率为 1280x720。
 
-#### 如何在Cypress 中建立项目？
+### # 如何在Cypress 中建立项目？
 
 要在 [Cypress](../C/cypress.md) 中设置项目，请执行以下步骤：
 
@@ -453,7 +417,7 @@ Cypress
   7. **使用[Cypress](../C/cypress.md) 提供的`describe` 和`it` 函数编写测试**，并使用`.spec.js` 或`.spec.ts` 扩展名保存它们。
   8. **运行测试** 使用 `npx cypress open` 打开 [Cypress](../C/cypress.md) [Test Runner](../T/test-runner.md) 或 `npx cypress run` 在无头模式下执行测试。
 
-#### 如何为特定环境配置Cypress？
+### # 如何为特定环境配置Cypress？
 
 要为特定环境配置[Cypress](../C/cypress.md)，您需要设置环境变量并可能调整您的`cypress.json` 配置文件。这是一个简洁的指南：
 
@@ -529,9 +493,9 @@ Cypress
     ```
     const apiUrl = Cypress.env('apiUrl');
     ```
-### 编写和运行测试
+## # 编写和运行测试
 
-#### 如何在Cypress 中编写基本测试？
+### # 如何在Cypress 中编写基本测试？
 
 要在 [Cypress](../C/cypress.md) 中编写基本测试，请按照以下步骤操作：
 
@@ -615,7 +579,7 @@ Cypress
     `cypress run`
     。
 
-#### Cypress 测试的结构是什么？
+### # Cypress 测试的结构是什么？
 
 [Cypress](../C/cypress.md) 测试通常遵循的结构包括导入必要的依赖项、描述[test suites](../T/test-suite.md)、定义[test cases](../T/test-case.md) 以及使用断言实现测试步骤。以下是基本 [Cypress](../C/cypress.md) 测试结构的示例：
 
@@ -698,7 +662,7 @@ Cypress
 - **应该**
     用于断言以验证所需的状态。
 
-#### 如何在Cypress 中运行测试？
+### # 如何在Cypress 中运行测试？
 
 要在 [Cypress](../C/cypress.md) 中运行测试，请按照以下步骤操作：
 
@@ -745,7 +709,7 @@ Cypress
   1. 在终端中使用以下命令：
   1. 这将在默认的无头浏览器 (Electron) 中运行所有测试文件。
 
-#### 如何在Cypress 中使用断言？
+### # 如何在Cypress 中使用断言？
 
 在 [Cypress](../C/cypress.md) 中使用断言对于验证被测应用程序是否按预期运行至关重要。 [Cypress](../C/cypress.md) 使用 Chai 进行断言，它提供 `expect`、`assert` 和 `should` 语法。
   **Expect** 和 **should** 是 [BDD](../B/bdd.md)（行为驱动开发）风格的断言，而 **assert** 是 TDD ([Test-Driven Development](../T/test-driven-development.md)) 风格。以下是如何使用它们：
@@ -790,7 +754,7 @@ Cypress
   ```
 通过有效地使用断言，您可以确保您的测试准确地验证应用程序的行为。
 
-#### 如何处理Cypress 中的事件？
+### # 如何处理Cypress 中的事件？
 
 由于其类似于 jQuery 的语法，在 [Cypress](../C/cypress.md) 中处理事件非常简单。要与元素交互并处理事件，您可以使用模拟用户操作的 [Cypress](../C/cypress.md) 命令。
   例如，要处理单击事件，您可以使用 `.click()` 命令：
@@ -831,7 +795,7 @@ Cypress
   ```
 始终确保您了解应用程序的行为，以正确模拟事件并获得可靠的测试结果。
 
-#### 如何在Cypress 中使用灯具？
+### # 如何在Cypress 中使用灯具？
 
 在[Cypress](../C/cypress.md) 中使用固定装置是一种与[test scripts](../T/test-script.md) 分开管理[test data](../T/test-data.md) 的方法，允许您加载可在多个测试中使用的静态数据。以下是在 [Cypress](../C/cypress.md) 中使用灯具的方法：
 
@@ -913,9 +877,9 @@ Cypress
     `as()`
     。
 
-### 高级概念
+## # 高级概念
 
-#### Cypress 如何处理异步操作？
+### # Cypress 如何处理异步操作？
 
 [Cypress](../C/cypress.md) 通过在继续下一步之前自动等待命令和断言来处理异步操作。这意味着它将等待元素变得可见、动画完成以及网络请求完成，然后再执行下一个命令。无需在测试中添加显式等待或睡眠。
   例如，当您使用命令获取元素时，[Cypress](../C/cypress.md)将不断重试该命令，直到找到该元素或达到超时。这适用于 [Cypress](../C/cypress.md) 中的大多数命令：
@@ -944,7 +908,7 @@ Cypress
   ```
 这种方法简化了异步操作的处理，使测试更具可读性且不那么不稳定。
 
-#### 如何在Cypress 中使用自定义命令？
+### # 如何在Cypress 中使用自定义命令？
 
 在[Cypress](../C/cypress.md) 中使用自定义命令可以通过封装重复任务来增强您的[test suite](../T/test-suite.md)。要定义自定义命令，请将函数添加到`cypress/support` 目录中`commands.js` 文件中的`Cypress.Commands.add` 方法。
 
@@ -981,7 +945,7 @@ Cypress
   ```
 请记住**记录**您的自定义命令，以确保团队成员了解其目的和用法。通过限制自定义命令的范围和复杂性来保持自定义命令的**可维护性**。
 
-#### 如何处理Cypress 中的网络请求？
+### # 如何处理Cypress 中的网络请求？
 
 可以使用`cy.intercept()` 方法来处理[Cypress](../C/cypress.md) 中的网络请求。这允许您监听、修改或模拟网络请求和响应。
   **拦截GET请求：**
@@ -1028,7 +992,7 @@ Cypress
   ```
 使用`cy.intercept()` 获得对网络请求和响应的完全控制，使您能够测试应用程序在各种场景下的行为。
 
-#### 如何使用 Cypress 中的 cookie 和本地存储？
+### # 如何使用 Cypress 中的 cookie 和本地存储？
 
 由于其内置命令，[Cypress](../C/cypress.md) 中的 cookie 和本地存储的使用非常简单。
   **饼干：**
@@ -1085,7 +1049,7 @@ Cypress
   ```
 请记住，这些命令是异步的并返回承诺，因此它们应该与 [Cypress](../C/cypress.md) 的链接机制一起使用。此外，本地存储操作通常在被测应用程序的上下文中执行，因此请确保在尝试与本地存储交互之前加载正确的页面。
 
-#### 如何处理 Cypress 中的 iframe？
+### # 如何处理 Cypress 中的 iframe？
 
 处理 [Cypress](../C/cypress.md) 中的 iframe 需要一些额外的步骤，因为 [Cypress](../C/cypress.md) 命令被设计为在同源上下文中操作。这是一个简洁的指南：
 
@@ -1128,7 +1092,7 @@ Cypress
 1. **与元素交互**
     - 包装后，您可以与 iframe 内的元素进行交互，就像与 Cypress 中的任何其他元素进行交互一样。
 
-#### 如何使用Cypress中的插件？
+### # 如何使用Cypress中的插件？
 
 在[Cypress](../C/cypress.md) 中使用插件可以通过扩展其核心功能来增强其功能。要使用插件，请按照下列步骤操作：
 
@@ -1179,9 +1143,9 @@ Cypress
     ```
     cy.get('input[type="file"]').attachFile('file.json');
     ```
-### 最佳实践和故障排除
+## # 最佳实践和故障排除
 
-#### 在 Cypress 中编写测试的最佳实践有哪些？
+### # 在 Cypress 中编写测试的最佳实践有哪些？
 
 在 [Cypress](../C/cypress.md) 中编写测试时，请考虑以下最佳实践：
 
@@ -1286,7 +1250,7 @@ Cypress
 - **实施持续集成**
     自动对代码更改运行测试，确保立即反馈应用程序的运行状况。
 
-#### 如何在Cypress 中调试测试？
+### # 如何在Cypress 中调试测试？
 
 可以系统地进行[Cypress](../C/cypress.md) 中的调试测试：
 
@@ -1333,7 +1297,7 @@ Cypress
   9. **[Cypress](../C/cypress.md) 日志**：通过设置`Cypress.config('log', true)` 启用详细日志记录，以获取有关[test execution](../T/test-execution.md) 的更多详细信息。
   10. **重试能力**：了解 [Cypress](../C/cypress.md) 命令会自动重试，直到成功或超时。如果测试因应用程序准备就绪之前运行断言而失败，请考虑为中间状态添加等待或断言。
 
-#### 如何处理Cypress 中的常见错误？
+### # 如何处理Cypress 中的常见错误？
 
 处理 [Cypress](../C/cypress.md) 中的常见错误涉及了解错误消息并应用适当的修复或解决方法。以下是一些策略：
   **超时错误**：如果元素加载时间较长，请使用 `cy.wait()` 或在 `cypress.json` 中全局增加默认超时设置。
@@ -1378,7 +1342,7 @@ Cypress
 **[Cypress](../C/cypress.md) 命令队列错误**：请记住，[Cypress](../C/cypress.md) 命令是异步且排队的。避免将传统的 async/await 与 [Cypress](../C/cypress.md) 命令一起使用。
   对于更复杂或持续存在的错误，请参阅[Cypress](../C/cypress.md) 文档或社区论坛以获取特定的解决方案和故障排除提示。
 
-#### 如何优化 Cypress 中的测试执行时间？
+### # 如何优化 Cypress 中的测试执行时间？
 
 要优化 [Cypress](../C/cypress.md) 中的 [test execution](../T/test-execution.md) 时间，请考虑以下策略：
 
