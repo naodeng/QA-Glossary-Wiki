@@ -1,6 +1,5 @@
 # Test Harness
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
 - [Questions about Test Harness ?](#questions-about-test-harness)
@@ -34,8 +33,8 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
 ## Related Terms:
 
-- [Test environment](../T/test-environment.md)
-- [Test infrastructure](../T/test-infrastructure.md)
+- [Test environment](https://naodeng.com.cn/en/wiki/test-environment)
+- [Test infrastructure](https://naodeng.com.cn/en/wiki/test-infrastructure)
 
 ## Questions about Test Harness ?
 
@@ -43,52 +42,52 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
 #### What is a Test Harness in software testing?
 
-  A **[Test Harness](../T/test-harness.md)** in [software testing](../S/software-testing.md) is a collection of software and [test data](../T/test-data.md) configured to test a program unit by running it under varying conditions and monitoring its behavior and outputs. It acts as a controlled environment for [automated testing](../A/automated-testing.md), where the [test cases](../T/test-case.md) are executed and the results are observed without manual intervention.
-  Test Harnesses typically include **[test execution](../T/test-execution.md) engines**, **result reporting tools**, and **[setup](../S/setup.md) and teardown mechanisms** to create a comprehensive environment for running and evaluating the outcomes of the tests. They are designed to automate the testing process, allowing for the execution of numerous [test cases](../T/test-case.md) in a consistent and repeatable manner.
-  In practice, a [Test Harness](../T/test-harness.md) may involve **mock objects**, **stubs**, and **drivers** to simulate the components that interact with the unit being tested. This isolation helps in identifying issues directly related to the test subject. The [Test Harness](../T/test-harness.md) also captures and logs the [test execution](../T/test-execution.md) details, which are crucial for debugging and improving the quality of the software.
-  To implement a [Test Harness](../T/test-harness.md), engineers typically write **[test scripts](../T/test-script.md)** or **use a testing framework** that can handle the orchestration of [test cases](../T/test-case.md), the [setup](../S/setup.md) of the [test environment](../T/test-environment.md), and the comparison of expected versus [actual results](../A/actual-result.md). The automation provided by a [Test Harness](../T/test-harness.md) is essential for continuous integration and delivery practices, as it enables rapid feedback on the system's health with each change introduced into the codebase.
+  A **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** in [software testing](https://naodeng.com.cn/en/wiki/software-testing) is a collection of software and [test data](https://naodeng.com.cn/en/wiki/test-data) configured to test a program unit by running it under varying conditions and monitoring its behavior and outputs. It acts as a controlled environment for [automated testing](https://naodeng.com.cn/en/wiki/automated-testing), where the [test cases](https://naodeng.com.cn/en/wiki/test-case) are executed and the results are observed without manual intervention.
+  Test Harnesses typically include **[test execution](https://naodeng.com.cn/en/wiki/test-execution) engines**, **result reporting tools**, and **[setup](https://naodeng.com.cn/en/wiki/setup) and teardown mechanisms** to create a comprehensive environment for running and evaluating the outcomes of the tests. They are designed to automate the testing process, allowing for the execution of numerous [test cases](https://naodeng.com.cn/en/wiki/test-case) in a consistent and repeatable manner.
+  In practice, a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) may involve **mock objects**, **stubs**, and **drivers** to simulate the components that interact with the unit being tested. This isolation helps in identifying issues directly related to the test subject. The [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) also captures and logs the [test execution](https://naodeng.com.cn/en/wiki/test-execution) details, which are crucial for debugging and improving the quality of the software.
+  To implement a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness), engineers typically write **[test scripts](https://naodeng.com.cn/en/wiki/test-script)** or **use a testing framework** that can handle the orchestration of [test cases](https://naodeng.com.cn/en/wiki/test-case), the [setup](https://naodeng.com.cn/en/wiki/setup) of the [test environment](https://naodeng.com.cn/en/wiki/test-environment), and the comparison of expected versus [actual results](https://naodeng.com.cn/en/wiki/actual-result). The automation provided by a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) is essential for continuous integration and delivery practices, as it enables rapid feedback on the system's health with each change introduced into the codebase.
 
 #### Why is a Test Harness important in software testing?
 
-  A **[Test Harness](../T/test-harness.md)** is crucial in [software testing](../S/software-testing.md) as it provides a controlled and consistent environment for automated [test execution](../T/test-execution.md). It enables the validation of software components independently from the rest of the system, ensuring that tests are repeatable and reliable. By abstracting [test execution](../T/test-execution.md) and evaluation, a [Test Harness](../T/test-harness.md) allows for automated result [verification](../V/verification.md), reducing the need for manual oversight and minimizing human error.
-  The importance of a [Test Harness](../T/test-harness.md) extends to its role in facilitating continuous integration and delivery (CI/CD) pipelines. It can be integrated with build systems and version control to automatically trigger tests upon code commits, ensuring immediate feedback on the impact of changes.
-  Moreover, a [Test Harness](../T/test-harness.md) supports various levels of testing, from unit to integration, by providing the necessary infrastructure to simulate interfaces, stub out external dependencies, and manage [test data](../T/test-data.md). This flexibility is essential for thorough testing of complex systems.
-  In the context of [regression testing](../R/regression-testing.md), a [Test Harness](../T/test-harness.md) is indispensable. It enables the automated rerun of tests against new software versions to detect unintended changes or side effects, ensuring software stability over time.
-  Lastly, a [Test Harness](../T/test-harness.md) contributes to the [maintainability](../M/maintainability.md) of [test suites](../T/test-suite.md). As the software evolves, the [Test Harness](../T/test-harness.md) can be updated to accommodate changes, making it easier to manage and extend tests, which is vital for long-term software quality assurance .
+  A **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** is crucial in [software testing](https://naodeng.com.cn/en/wiki/software-testing) as it provides a controlled and consistent environment for automated [test execution](https://naodeng.com.cn/en/wiki/test-execution). It enables the validation of software components independently from the rest of the system, ensuring that tests are repeatable and reliable. By abstracting [test execution](https://naodeng.com.cn/en/wiki/test-execution) and evaluation, a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) allows for automated result [verification](https://naodeng.com.cn/en/wiki/verification), reducing the need for manual oversight and minimizing human error.
+  The importance of a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) extends to its role in facilitating continuous integration and delivery (CI/CD) pipelines. It can be integrated with build systems and version control to automatically trigger tests upon code commits, ensuring immediate feedback on the impact of changes.
+  Moreover, a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) supports various levels of testing, from unit to integration, by providing the necessary infrastructure to simulate interfaces, stub out external dependencies, and manage [test data](https://naodeng.com.cn/en/wiki/test-data). This flexibility is essential for thorough testing of complex systems.
+  In the context of [regression testing](https://naodeng.com.cn/en/wiki/regression-testing), a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) is indispensable. It enables the automated rerun of tests against new software versions to detect unintended changes or side effects, ensuring software stability over time.
+  Lastly, a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) contributes to the [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of [test suites](https://naodeng.com.cn/en/wiki/test-suite). As the software evolves, the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) can be updated to accommodate changes, making it easier to manage and extend tests, which is vital for long-term software quality assurance .
 
 #### What are the key components of a Test Harness?
 
-  Key components of a **[Test Harness](../T/test-harness.md)** include:
+  Key components of a **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** include:
 
-  - **[Test Execution](../T/test-execution.md) Engine** : Orchestrates the running of tests, managing the sequence, and reporting results.
-  - **[Test Script](../T/test-script.md) Repository** : Stores the actual test cases or scripts that will be executed.
-  - **[Test Data](../T/test-data.md)** : Input data necessary for test execution, which can be static, dynamic, or generated on-the-fly.
+  - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Engine** : Orchestrates the running of tests, managing the sequence, and reporting results.
+  - **[Test Script](https://naodeng.com.cn/en/wiki/test-script) Repository** : Stores the actual test cases or scripts that will be executed.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data)** : Input data necessary for test execution, which can be static, dynamic, or generated on-the-fly.
   - **Stubs and Drivers** : Code modules that simulate the behavior of missing components (stubs) or call functions of the component under test (drivers).
   - **Test Configuration** : Settings and parameters that define the test environment, including hardware, software, network configurations, and system states.
   - **Result Reporter** : Collects, organizes, and presents test results, often with logging capabilities.
-  - **[Setup](../S/setup.md) and Cleanup Routines** : Scripts that prepare the environment before tests run and clean up afterward.
+  - **[Setup](https://naodeng.com.cn/en/wiki/setup) and Cleanup Routines** : Scripts that prepare the environment before tests run and clean up afterward.
   - **Mock Objects** : Simulated objects that mimic the behavior of real components with controllable inputs and outputs for unit testing.
   - **Integration Points** : Interfaces that allow the harness to interact with other tools or systems, such as version control or continuous integration servers.
   - **User Interface** : Provides a way for testers to interact with the test harness, which could be a command-line interface, a graphical UI, or integration with an IDE.
-  These components work together to automate the execution of tests, manage [test data](../T/test-data.md) and environments, and report on the outcomes, which is essential for continuous integration and delivery pipelines.
+  These components work together to automate the execution of tests, manage [test data](https://naodeng.com.cn/en/wiki/test-data) and environments, and report on the outcomes, which is essential for continuous integration and delivery pipelines.
 
-  - **[Test Execution](../T/test-execution.md) Engine** : Orchestrates the running of tests, managing the sequence, and reporting results.
-  - **[Test Script](../T/test-script.md) Repository** : Stores the actual test cases or scripts that will be executed.
-  - **[Test Data](../T/test-data.md)** : Input data necessary for test execution, which can be static, dynamic, or generated on-the-fly.
+  - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Engine** : Orchestrates the running of tests, managing the sequence, and reporting results.
+  - **[Test Script](https://naodeng.com.cn/en/wiki/test-script) Repository** : Stores the actual test cases or scripts that will be executed.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data)** : Input data necessary for test execution, which can be static, dynamic, or generated on-the-fly.
   - **Stubs and Drivers** : Code modules that simulate the behavior of missing components (stubs) or call functions of the component under test (drivers).
   - **Test Configuration** : Settings and parameters that define the test environment, including hardware, software, network configurations, and system states.
   - **Result Reporter** : Collects, organizes, and presents test results, often with logging capabilities.
-  - **[Setup](../S/setup.md) and Cleanup Routines** : Scripts that prepare the environment before tests run and clean up afterward.
+  - **[Setup](https://naodeng.com.cn/en/wiki/setup) and Cleanup Routines** : Scripts that prepare the environment before tests run and clean up afterward.
   - **Mock Objects** : Simulated objects that mimic the behavior of real components with controllable inputs and outputs for unit testing.
   - **Integration Points** : Interfaces that allow the harness to interact with other tools or systems, such as version control or continuous integration servers.
   - **User Interface** : Provides a way for testers to interact with the test harness, which could be a command-line interface, a graphical UI, or integration with an IDE.
 
 #### How does a Test Harness improve the efficiency of software testing?
 
-  A **[Test Harness](../T/test-harness.md)** streamlines [software testing](../S/software-testing.md) by automating the execution of [test cases](../T/test-case.md), which significantly reduces manual intervention and speeds up the feedback loop. It enables parallel execution of tests, which is a substantial time-saver, especially for large [test suites](../T/test-suite.md) or when running tests across various environments and configurations.
-  By abstracting [test execution](../T/test-execution.md) and environment [setup](../S/setup.md), a [Test Harness](../T/test-harness.md) allows for **consistent test runs**. This consistency is crucial for reliable results, as it minimizes the impact of environmental factors and human error. It also facilitates **continuous integration (CI)** practices by allowing tests to be triggered automatically upon code commits, further enhancing efficiency by catching issues early in the development cycle.
-  Moreover, a [Test Harness](../T/test-harness.md) often includes **logging and reporting** mechanisms, providing immediate and detailed feedback on test outcomes. This feature helps in quickly identifying and addressing failures, thus improving the overall quality of the software.
-  In essence, a [Test Harness](../T/test-harness.md) contributes to efficiency by:
+  A **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** streamlines [software testing](https://naodeng.com.cn/en/wiki/software-testing) by automating the execution of [test cases](https://naodeng.com.cn/en/wiki/test-case), which significantly reduces manual intervention and speeds up the feedback loop. It enables parallel execution of tests, which is a substantial time-saver, especially for large [test suites](https://naodeng.com.cn/en/wiki/test-suite) or when running tests across various environments and configurations.
+  By abstracting [test execution](https://naodeng.com.cn/en/wiki/test-execution) and environment [setup](https://naodeng.com.cn/en/wiki/setup), a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) allows for **consistent test runs**. This consistency is crucial for reliable results, as it minimizes the impact of environmental factors and human error. It also facilitates **continuous integration (CI)** practices by allowing tests to be triggered automatically upon code commits, further enhancing efficiency by catching issues early in the development cycle.
+  Moreover, a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) often includes **logging and reporting** mechanisms, providing immediate and detailed feedback on test outcomes. This feature helps in quickly identifying and addressing failures, thus improving the overall quality of the software.
+  In essence, a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) contributes to efficiency by:
 
   - **Automating repetitive tasks**
     , freeing up time for more complex test scenarios.
@@ -104,7 +103,7 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
   - **Providing quick feedback**
     through logs and reports, accelerating issue resolution.
-  By leveraging a [Test Harness](../T/test-harness.md), [test automation](../T/test-automation.md) engineers can focus on designing effective tests rather than managing the intricacies of [test execution](../T/test-execution.md), leading to a more streamlined and efficient testing process.
+  By leveraging a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness), [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can focus on designing effective tests rather than managing the intricacies of [test execution](https://naodeng.com.cn/en/wiki/test-execution), leading to a more streamlined and efficient testing process.
 
   - **Automating repetitive tasks**
     , freeing up time for more complex test scenarios.
@@ -128,7 +127,7 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
   Different types of test harnesses cater to various testing needs:
 
   - **Custom Test Harnesses** : Tailored to specific application requirements, often built in-house.
-  - **[Unit Test Frameworks](../U/unit-test-framework.md)** : Designed for unit testing, examples include JUnit for Java, NUnit for .NET, and unittest for Python.
+  - **[Unit Test Frameworks](https://naodeng.com.cn/en/wiki/unit-test-framework)** : Designed for unit testing, examples include JUnit for Java, NUnit for .NET, and unittest for Python.
   - $
 
     ```
@@ -155,13 +154,13 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
   - **Continuous Integration (CI) Test Harnesses** : Integrated with CI pipelines, such as Jenkins or Travis CI, to automate testing in the build process.
   - **Mocking Frameworks** : Simulate components within a test environment, like Mockito for Java or Moq for .NET.
-  - **Behavior-Driven Development ([BDD](../B/bdd.md)) Frameworks** : Combine documentation and test case definition, such as Cucumber or SpecFlow.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) Frameworks** : Combine documentation and test case definition, such as Cucumber or SpecFlow.
   - **Security Test Harnesses** : Focus on identifying security vulnerabilities, tools like OWASP ZAP or Burp Suite are used.
-  - **[Database](../D/database.md) Test Harnesses** : Validate database interactions and data integrity, tools like DBUnit or tSQLt can be utilized.
-  Each harness type is chosen based on the [test coverage](../T/test-coverage.md) required and the specific aspects of the application under test.
+  - **[Database](https://naodeng.com.cn/en/wiki/database) Test Harnesses** : Validate database interactions and data integrity, tools like DBUnit or tSQLt can be utilized.
+  Each harness type is chosen based on the [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) required and the specific aspects of the application under test.
 
   - **Custom Test Harnesses** : Tailored to specific application requirements, often built in-house.
-  - **[Unit Test Frameworks](../U/unit-test-framework.md)** : Designed for unit testing, examples include JUnit for Java, NUnit for .NET, and unittest for Python.
+  - **[Unit Test Frameworks](https://naodeng.com.cn/en/wiki/unit-test-framework)** : Designed for unit testing, examples include JUnit for Java, NUnit for .NET, and unittest for Python.
   - $
 
     ```
@@ -169,14 +168,14 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
   - **Continuous Integration (CI) Test Harnesses** : Integrated with CI pipelines, such as Jenkins or Travis CI, to automate testing in the build process.
   - **Mocking Frameworks** : Simulate components within a test environment, like Mockito for Java or Moq for .NET.
-  - **Behavior-Driven Development ([BDD](../B/bdd.md)) Frameworks** : Combine documentation and test case definition, such as Cucumber or SpecFlow.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) Frameworks** : Combine documentation and test case definition, such as Cucumber or SpecFlow.
   - **Security Test Harnesses** : Focus on identifying security vulnerabilities, tools like OWASP ZAP or Burp Suite are used.
-  - **[Database](../D/database.md) Test Harnesses** : Validate database interactions and data integrity, tools like DBUnit or tSQLt can be utilized.
+  - **[Database](https://naodeng.com.cn/en/wiki/database) Test Harnesses** : Validate database interactions and data integrity, tools like DBUnit or tSQLt can be utilized.
 
 #### How is a Test Harness used in unit testing?
 
-  In [unit testing](../U/unit-testing.md), a **[Test Harness](../T/test-harness.md)** serves as a controlled environment for executing individual unit tests. It typically includes a testing framework and stubs or mocks to simulate dependencies, ensuring that each unit can be tested in isolation.
-  Here's a basic example in JavaScript using [Jest](../J/jest.md):
+  In [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), a **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** serves as a controlled environment for executing individual unit tests. It typically includes a testing framework and stubs or mocks to simulate dependencies, ensuring that each unit can be tested in isolation.
+  Here's a basic example in JavaScript using [Jest](https://naodeng.com.cn/en/wiki/jest):
 
   ```
   // sum.js
@@ -190,13 +189,13 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
     expect(sum(1, 2)).toBe(3);
   });
   ```
-  In this scenario, `sum.test.js` is part of the [Test Harness](../T/test-harness.md), where [Jest](../J/jest.md) provides the framework to run the test and assert the results. The [test case](../T/test-case.md) is isolated, focusing solely on the `sum` function's behavior.
-  The [Test Harness](../T/test-harness.md) manages the [test execution](../T/test-execution.md) cycle: setting up the environment, running the tests, and tearing down post-test. It also captures and reports test results, which can be integrated into continuous integration pipelines for automated feedback.
-  Experienced engineers leverage the [Test Harness](../T/test-harness.md) to automate repetitive tasks, such as instantiating objects, intercepting calls, and validating outputs, which streamlines the [unit testing](../U/unit-testing.md) process and enhances test reliability.
+  In this scenario, `sum.test.js` is part of the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness), where [Jest](https://naodeng.com.cn/en/wiki/jest) provides the framework to run the test and assert the results. The [test case](https://naodeng.com.cn/en/wiki/test-case) is isolated, focusing solely on the `sum` function's behavior.
+  The [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) manages the [test execution](https://naodeng.com.cn/en/wiki/test-execution) cycle: setting up the environment, running the tests, and tearing down post-test. It also captures and reports test results, which can be integrated into continuous integration pipelines for automated feedback.
+  Experienced engineers leverage the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) to automate repetitive tasks, such as instantiating objects, intercepting calls, and validating outputs, which streamlines the [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) process and enhances test reliability.
 
 #### How is a Test Harness used in integration testing?
 
-  In [integration testing](../I/integration-testing.md), a **[Test Harness](../T/test-harness.md)** serves as a controlled environment to test the interactions between integrated units (modules, components, or services). It simulates the behavior of interfacing modules and provides [test data](../T/test-data.md) input, monitoring, and validation of outputs.
+  In [integration testing](https://naodeng.com.cn/en/wiki/integration-testing), a **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** serves as a controlled environment to test the interactions between integrated units (modules, components, or services). It simulates the behavior of interfacing modules and provides [test data](https://naodeng.com.cn/en/wiki/test-data) input, monitoring, and validation of outputs.
   The harness might include **stubs and drivers** to mimic the functionality of missing components. For example, if Module A is supposed to interact with Module B, but Module B isn't developed yet, a stub can be used to simulate Module B's expected behavior.
   Here's a simplified example in TypeScript:
 
@@ -229,7 +228,7 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
     **TestNG**
     for Java applications, which provide annotations and assertions to create test cases and suites, and can be integrated with build tools like Maven and Gradle.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     for .NET applications, similar to JUnit but designed for the .NET framework, supporting parallel execution and parameterized tests.
 
   - **pytest**
@@ -240,15 +239,15 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
   - **Mocha**
     and
-    **[Jest](../J/jest.md)**
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     for JavaScript, with Mocha providing flexibility and Jest offering a zero-configuration approach with built-in mocking and assertions.
 
   - **Google Test**
     for C++ applications, offering a rich set of assertions and user-defined tests.
 
-  - **[Cypress](../C/cypress.md)**
+  - **[Cypress](https://naodeng.com.cn/en/wiki/cypress)**
     and
-    **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**
+    **[Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)**
     for end-to-end web application testing, with Cypress providing a more modern, all-in-one solution and Selenium being the industry standard for browser automation.
 
   - **Appium**
@@ -256,14 +255,14 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
   - **Robot Framework**
     for acceptance testing, which uses a keyword-driven approach to make tests readable and easy to create.
-  These harnesses are often integrated with **CI/CD pipelines** using tools like Jenkins, GitLab CI, or GitHub Actions to automate the execution of tests upon code commits or during scheduled builds. They can also be combined with **[code coverage](../C/code-coverage.md) tools** like JaCoCo or Istanbul to assess the effectiveness of tests.
+  These harnesses are often integrated with **CI/CD pipelines** using tools like Jenkins, GitLab CI, or GitHub Actions to automate the execution of tests upon code commits or during scheduled builds. They can also be combined with **[code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools** like JaCoCo or Istanbul to assess the effectiveness of tests.
 
   - **JUnit**
     and
     **TestNG**
     for Java applications, which provide annotations and assertions to create test cases and suites, and can be integrated with build tools like Maven and Gradle.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     for .NET applications, similar to JUnit but designed for the .NET framework, supporting parallel execution and parameterized tests.
 
   - **pytest**
@@ -274,15 +273,15 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
   - **Mocha**
     and
-    **[Jest](../J/jest.md)**
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     for JavaScript, with Mocha providing flexibility and Jest offering a zero-configuration approach with built-in mocking and assertions.
 
   - **Google Test**
     for C++ applications, offering a rich set of assertions and user-defined tests.
 
-  - **[Cypress](../C/cypress.md)**
+  - **[Cypress](https://naodeng.com.cn/en/wiki/cypress)**
     and
-    **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**
+    **[Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)**
     for end-to-end web application testing, with Cypress providing a more modern, all-in-one solution and Selenium being the industry standard for browser automation.
 
   - **Appium**
@@ -295,35 +294,35 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
 #### What are the steps to design a Test Harness?
 
-  Designing a **[Test Harness](../T/test-harness.md)** involves several steps to ensure it effectively meets the testing requirements. Here's a concise guide:
+  Designing a **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** involves several steps to ensure it effectively meets the testing requirements. Here's a concise guide:
 
   1. **Identify Test Requirements**: Determine the specific tests to be automated, including unit, integration, system, and acceptance tests.
-  2. **Select Tools and Technologies**: Choose appropriate tools for [test execution](../T/test-execution.md), reporting, and logging that align with the technology stack of the application under test.
-  3. **Define [Test Cases](../T/test-case.md) and Data**: Create detailed [test cases](../T/test-case.md) and prepare [test data](../T/test-data.md) that will be used for automation.
-  4. **Design [Test Scripts](../T/test-script.md)**: Develop automation scripts that are maintainable and reusable. Follow best coding practices and consider using a [Page Object Model](../P/page-object-model.md) (POM) for UI tests.
-  5. **Set Up [Test Environment](../T/test-environment.md)**: Configure the necessary hardware, software, and network settings to mimic production environments as closely as possible.
-  6. **Implement Logging and Reporting**: Integrate mechanisms for capturing [test execution](../T/test-execution.md) details and generating reports to analyze test outcomes.
+  2. **Select Tools and Technologies**: Choose appropriate tools for [test execution](https://naodeng.com.cn/en/wiki/test-execution), reporting, and logging that align with the technology stack of the application under test.
+  3. **Define [Test Cases](https://naodeng.com.cn/en/wiki/test-case) and Data**: Create detailed [test cases](https://naodeng.com.cn/en/wiki/test-case) and prepare [test data](https://naodeng.com.cn/en/wiki/test-data) that will be used for automation.
+  4. **Design [Test Scripts](https://naodeng.com.cn/en/wiki/test-script)**: Develop automation scripts that are maintainable and reusable. Follow best coding practices and consider using a [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) for UI tests.
+  5. **Set Up [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)**: Configure the necessary hardware, software, and network settings to mimic production environments as closely as possible.
+  6. **Implement Logging and Reporting**: Integrate mechanisms for capturing [test execution](https://naodeng.com.cn/en/wiki/test-execution) details and generating reports to analyze test outcomes.
   7. **Create Build and Deployment Scripts**: Automate the build and deployment process to enable continuous integration and testing.
-  8. **Integrate with CI/CD Pipeline**: Connect the [test harness](../T/test-harness.md) with the CI/CD pipeline to trigger automated tests on code commits or scheduled intervals.
+  8. **Integrate with CI/CD Pipeline**: Connect the [test harness](https://naodeng.com.cn/en/wiki/test-harness) with the CI/CD pipeline to trigger automated tests on code commits or scheduled intervals.
   9. **Execute and Monitor Tests**: Run tests using the harness and monitor their execution to ensure stability and performance.
-  10. **Review and Refine**: Regularly review test results, update [test cases](../T/test-case.md), and refine the [test harness](../T/test-harness.md) to adapt to changes in the application and improve [test coverage](../T/test-coverage.md) and efficiency.
+  10. **Review and Refine**: Regularly review test results, update [test cases](https://naodeng.com.cn/en/wiki/test-case), and refine the [test harness](https://naodeng.com.cn/en/wiki/test-harness) to adapt to changes in the application and improve [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and efficiency.
   1. **Identify Test Requirements**: Determine the specific tests to be automated, including unit, integration, system, and acceptance tests.
-  2. **Select Tools and Technologies**: Choose appropriate tools for [test execution](../T/test-execution.md), reporting, and logging that align with the technology stack of the application under test.
-  3. **Define [Test Cases](../T/test-case.md) and Data**: Create detailed [test cases](../T/test-case.md) and prepare [test data](../T/test-data.md) that will be used for automation.
-  4. **Design [Test Scripts](../T/test-script.md)**: Develop automation scripts that are maintainable and reusable. Follow best coding practices and consider using a [Page Object Model](../P/page-object-model.md) (POM) for UI tests.
-  5. **Set Up [Test Environment](../T/test-environment.md)**: Configure the necessary hardware, software, and network settings to mimic production environments as closely as possible.
-  6. **Implement Logging and Reporting**: Integrate mechanisms for capturing [test execution](../T/test-execution.md) details and generating reports to analyze test outcomes.
+  2. **Select Tools and Technologies**: Choose appropriate tools for [test execution](https://naodeng.com.cn/en/wiki/test-execution), reporting, and logging that align with the technology stack of the application under test.
+  3. **Define [Test Cases](https://naodeng.com.cn/en/wiki/test-case) and Data**: Create detailed [test cases](https://naodeng.com.cn/en/wiki/test-case) and prepare [test data](https://naodeng.com.cn/en/wiki/test-data) that will be used for automation.
+  4. **Design [Test Scripts](https://naodeng.com.cn/en/wiki/test-script)**: Develop automation scripts that are maintainable and reusable. Follow best coding practices and consider using a [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) for UI tests.
+  5. **Set Up [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)**: Configure the necessary hardware, software, and network settings to mimic production environments as closely as possible.
+  6. **Implement Logging and Reporting**: Integrate mechanisms for capturing [test execution](https://naodeng.com.cn/en/wiki/test-execution) details and generating reports to analyze test outcomes.
   7. **Create Build and Deployment Scripts**: Automate the build and deployment process to enable continuous integration and testing.
-  8. **Integrate with CI/CD Pipeline**: Connect the [test harness](../T/test-harness.md) with the CI/CD pipeline to trigger automated tests on code commits or scheduled intervals.
+  8. **Integrate with CI/CD Pipeline**: Connect the [test harness](https://naodeng.com.cn/en/wiki/test-harness) with the CI/CD pipeline to trigger automated tests on code commits or scheduled intervals.
   9. **Execute and Monitor Tests**: Run tests using the harness and monitor their execution to ensure stability and performance.
-  10. **Review and Refine**: Regularly review test results, update [test cases](../T/test-case.md), and refine the [test harness](../T/test-harness.md) to adapt to changes in the application and improve [test coverage](../T/test-coverage.md) and efficiency.
+  10. **Review and Refine**: Regularly review test results, update [test cases](https://naodeng.com.cn/en/wiki/test-case), and refine the [test harness](https://naodeng.com.cn/en/wiki/test-harness) to adapt to changes in the application and improve [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and efficiency.
 
 #### What are the key considerations when implementing a Test Harness?
 
-  When implementing a **[Test Harness](../T/test-harness.md)**, consider the following:
+  When implementing a **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)**, consider the following:
 
   - **Scalability** : Ensure the harness can handle the growth in test cases and complexity.
-  - **[Maintainability](../M/maintainability.md)** : Design for easy updates and modifications.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : Design for easy updates and modifications.
   - **Usability** : Aim for a user-friendly interface for test execution and result analysis.
   - **Compatibility** : Verify that the harness supports the languages and frameworks in use.
   - **Performance** : Optimize for minimal impact on test execution time.
@@ -337,10 +336,10 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
   - **Parallel Execution** : Support concurrent test execution to reduce run times.
   - **Flexibility** : Allow for different test types and environments.
   - **Extensibility** : Design with the ability to add new features without significant rework.
-  Remember to **test the [Test Harness](../T/test-harness.md)** itself to ensure reliability and to conduct regular **reviews and updates** as testing needs evolve.
+  Remember to **test the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** itself to ensure reliability and to conduct regular **reviews and updates** as testing needs evolve.
 
   - **Scalability** : Ensure the harness can handle the growth in test cases and complexity.
-  - **[Maintainability](../M/maintainability.md)** : Design for easy updates and modifications.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : Design for easy updates and modifications.
   - **Usability** : Aim for a user-friendly interface for test execution and result analysis.
   - **Compatibility** : Verify that the harness supports the languages and frameworks in use.
   - **Performance** : Optimize for minimal impact on test execution time.
@@ -357,7 +356,7 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
 #### How can a Test Harness be customized for different testing scenarios?
 
-  Customizing a **[Test Harness](../T/test-harness.md)** for different testing scenarios involves tailoring it to the specific requirements of the [test environment](../T/test-environment.md) and the application under test. Here's how you can achieve this:
+  Customizing a **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** for different testing scenarios involves tailoring it to the specific requirements of the [test environment](https://naodeng.com.cn/en/wiki/test-environment) and the application under test. Here's how you can achieve this:
 
   - **Parameterization**: Use configuration files or environment variables to set up parameters that can be easily changed without altering the code. This allows for flexibility in testing different scenarios.
 
@@ -366,19 +365,19 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
     browser: 'chrome'
     ```
 
-  - **Modular Design**: Structure the [Test Harness](../T/test-harness.md) with reusable components or modules. This enables you to mix and match different parts for various [test cases](../T/test-case.md).
+  - **Modular Design**: Structure the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) with reusable components or modules. This enables you to mix and match different parts for various [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
     ```
     import { loginModule, paymentModule } from 'testModules';
     ```
 
-  - **[Test Data](../T/test-data.md) Management**: Implement a system to manage [test data](../T/test-data.md) dynamically. This could be through [databases](../D/database.md), data pools, or files that can be modified or selected based on the [test case](../T/test-case.md).
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management**: Implement a system to manage [test data](https://naodeng.com.cn/en/wiki/test-data) dynamically. This could be through [databases](https://naodeng.com.cn/en/wiki/database), data pools, or files that can be modified or selected based on the [test case](https://naodeng.com.cn/en/wiki/test-case).
 
     ```
     SELECT * FROM testData WHERE scenario = 'edgeCase';
     ```
 
-  - **Hooks and Callbacks**: Integrate hooks to perform actions at certain points in the [test execution](../T/test-execution.md), like [setup](../S/setup.md) or teardown, which can be customized for different scenarios.
+  - **Hooks and Callbacks**: Integrate hooks to perform actions at certain points in the [test execution](https://naodeng.com.cn/en/wiki/test-execution), like [setup](https://naodeng.com.cn/en/wiki/setup) or teardown, which can be customized for different scenarios.
 
     ```
     beforeEach(() => {
@@ -395,12 +394,12 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
         run_functional_test()
     ```
 
-  - **Plug-ins and Extensions**: Utilize plug-ins to extend the capabilities of the [Test Harness](../T/test-harness.md) for specific technologies or frameworks.
+  - **Plug-ins and Extensions**: Utilize plug-ins to extend the capabilities of the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) for specific technologies or frameworks.
 
     ```
     harness.addPlugin('reportingPlugin');
     ```
-  By focusing on these customization strategies, you can ensure that your [Test Harness](../T/test-harness.md) is adaptable to a wide range of testing scenarios, maximizing its utility and effectiveness.
+  By focusing on these customization strategies, you can ensure that your [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) is adaptable to a wide range of testing scenarios, maximizing its utility and effectiveness.
 
   - **Parameterization**: Use configuration files or environment variables to set up parameters that can be easily changed without altering the code. This allows for flexibility in testing different scenarios.
 
@@ -409,19 +408,19 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
     browser: 'chrome'
     ```
 
-  - **Modular Design**: Structure the [Test Harness](../T/test-harness.md) with reusable components or modules. This enables you to mix and match different parts for various [test cases](../T/test-case.md).
+  - **Modular Design**: Structure the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) with reusable components or modules. This enables you to mix and match different parts for various [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
     ```
     import { loginModule, paymentModule } from 'testModules';
     ```
 
-  - **[Test Data](../T/test-data.md) Management**: Implement a system to manage [test data](../T/test-data.md) dynamically. This could be through [databases](../D/database.md), data pools, or files that can be modified or selected based on the [test case](../T/test-case.md).
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management**: Implement a system to manage [test data](https://naodeng.com.cn/en/wiki/test-data) dynamically. This could be through [databases](https://naodeng.com.cn/en/wiki/database), data pools, or files that can be modified or selected based on the [test case](https://naodeng.com.cn/en/wiki/test-case).
 
     ```
     SELECT * FROM testData WHERE scenario = 'edgeCase';
     ```
 
-  - **Hooks and Callbacks**: Integrate hooks to perform actions at certain points in the [test execution](../T/test-execution.md), like [setup](../S/setup.md) or teardown, which can be customized for different scenarios.
+  - **Hooks and Callbacks**: Integrate hooks to perform actions at certain points in the [test execution](https://naodeng.com.cn/en/wiki/test-execution), like [setup](https://naodeng.com.cn/en/wiki/setup) or teardown, which can be customized for different scenarios.
 
     ```
     beforeEach(() => {
@@ -438,7 +437,7 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
         run_functional_test()
     ```
 
-  - **Plug-ins and Extensions**: Utilize plug-ins to extend the capabilities of the [Test Harness](../T/test-harness.md) for specific technologies or frameworks.
+  - **Plug-ins and Extensions**: Utilize plug-ins to extend the capabilities of the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) for specific technologies or frameworks.
 
     ```
     harness.addPlugin('reportingPlugin');
@@ -446,41 +445,41 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
 #### What are some common challenges in implementing a Test Harness and how can they be overcome?
 
-  Implementing a **[Test Harness](../T/test-harness.md)** can present several challenges:
+  Implementing a **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** can present several challenges:
 
   - **Complexity**: Test Harnesses can become complex, especially when integrating with multiple systems. **Simplify** by breaking down the system into smaller, manageable components and using modular design principles.
-  - **[Maintainability](../M/maintainability.md)**: As the system evolves, the [Test Harness](../T/test-harness.md) must too. Implement **version control** and **documentation** practices to keep the [Test Harness](../T/test-harness.md) up-to-date.
-  - **Environment Consistency**: Ensuring the [Test Harness](../T/test-harness.md) environment matches production can be difficult. Use **containerization** and **infrastructure as code** to replicate production environments accurately.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)**: As the system evolves, the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) must too. Implement **version control** and **documentation** practices to keep the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) up-to-date.
+  - **Environment Consistency**: Ensuring the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) environment matches production can be difficult. Use **containerization** and **infrastructure as code** to replicate production environments accurately.
   - **Scalability**: Test Harnesses might struggle under load. Design for scalability by using **cloud resources** and **load balancing** techniques.
-  - **Data Management**: Managing [test data](../T/test-data.md) and state can be challenging. Utilize **data mocking** and **stateless tests** where possible, and ensure proper **data cleanup** after tests.
-  - **Integration**: Integrating with other tools and technologies can lead to compatibility issues. Adopt **open standards** and **[APIs](../A/api.md)** for better interoperability.
+  - **Data Management**: Managing [test data](https://naodeng.com.cn/en/wiki/test-data) and state can be challenging. Utilize **data mocking** and **stateless tests** where possible, and ensure proper **data cleanup** after tests.
+  - **Integration**: Integrating with other tools and technologies can lead to compatibility issues. Adopt **open standards** and **[APIs](https://naodeng.com.cn/en/wiki/api)** for better interoperability.
   - **Flakiness**: Tests may pass or fail inconsistently. Address by ensuring **idempotency** of tests and investigating the root causes of flakiness, such as timing issues or external dependencies.
-  - **Resource Constraints**: Limited computing resources can hinder [test execution](../T/test-execution.md). Optimize resource usage and consider **cloud-based solutions** for additional capacity.
+  - **Resource Constraints**: Limited computing resources can hinder [test execution](https://naodeng.com.cn/en/wiki/test-execution). Optimize resource usage and consider **cloud-based solutions** for additional capacity.
   - **Expertise**: The team may lack knowledge in certain areas. Invest in **training** and **knowledge sharing** to build expertise.
   Overcoming these challenges requires a combination of **good design practices**, **appropriate tooling**, and **ongoing maintenance** efforts.
 
   - **Complexity**: Test Harnesses can become complex, especially when integrating with multiple systems. **Simplify** by breaking down the system into smaller, manageable components and using modular design principles.
-  - **[Maintainability](../M/maintainability.md)**: As the system evolves, the [Test Harness](../T/test-harness.md) must too. Implement **version control** and **documentation** practices to keep the [Test Harness](../T/test-harness.md) up-to-date.
-  - **Environment Consistency**: Ensuring the [Test Harness](../T/test-harness.md) environment matches production can be difficult. Use **containerization** and **infrastructure as code** to replicate production environments accurately.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)**: As the system evolves, the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) must too. Implement **version control** and **documentation** practices to keep the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) up-to-date.
+  - **Environment Consistency**: Ensuring the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) environment matches production can be difficult. Use **containerization** and **infrastructure as code** to replicate production environments accurately.
   - **Scalability**: Test Harnesses might struggle under load. Design for scalability by using **cloud resources** and **load balancing** techniques.
-  - **Data Management**: Managing [test data](../T/test-data.md) and state can be challenging. Utilize **data mocking** and **stateless tests** where possible, and ensure proper **data cleanup** after tests.
-  - **Integration**: Integrating with other tools and technologies can lead to compatibility issues. Adopt **open standards** and **[APIs](../A/api.md)** for better interoperability.
+  - **Data Management**: Managing [test data](https://naodeng.com.cn/en/wiki/test-data) and state can be challenging. Utilize **data mocking** and **stateless tests** where possible, and ensure proper **data cleanup** after tests.
+  - **Integration**: Integrating with other tools and technologies can lead to compatibility issues. Adopt **open standards** and **[APIs](https://naodeng.com.cn/en/wiki/api)** for better interoperability.
   - **Flakiness**: Tests may pass or fail inconsistently. Address by ensuring **idempotency** of tests and investigating the root causes of flakiness, such as timing issues or external dependencies.
-  - **Resource Constraints**: Limited computing resources can hinder [test execution](../T/test-execution.md). Optimize resource usage and consider **cloud-based solutions** for additional capacity.
+  - **Resource Constraints**: Limited computing resources can hinder [test execution](https://naodeng.com.cn/en/wiki/test-execution). Optimize resource usage and consider **cloud-based solutions** for additional capacity.
   - **Expertise**: The team may lack knowledge in certain areas. Invest in **training** and **knowledge sharing** to build expertise.
 
 ### Tools and Technologies
 
 #### What tools are commonly used to create a Test Harness?
 
-  Common tools for creating a **[Test Harness](../T/test-harness.md)** include:
+  Common tools for creating a **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** include:
 
   - **JUnit**
     and
     **TestNG**
     for Java applications, offering annotations and assertions to create test cases and suites.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     and
     **xUnit**
     for .NET frameworks, providing similar functionality to JUnit for the .NET ecosystem.
@@ -495,9 +494,9 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
   - **Mocha**
     ,
-    **[Jest](../J/jest.md)**
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     , and
-    **[Jasmine](../J/jasmine.md)**
+    **[Jasmine](https://naodeng.com.cn/en/wiki/jasmine)**
     for JavaScript, with Mocha and Jasmine being flexible in assertion libraries, and Jest providing a zero-configuration testing platform.
 
   - **Google Test**
@@ -506,9 +505,9 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
   - **Robot Framework**
     for acceptance testing, which is keyword-driven and easily extensible.
 
-  - **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)**
     for web application testing, which can be used within test harnesses to control browsers and simulate user actions.
-  Integration with build tools and continuous integration (CI) systems like **Jenkins**, **Travis CI**, and **CircleCI** is common to automate the execution of the [test harness](../T/test-harness.md) as part of the development pipeline.
+  Integration with build tools and continuous integration (CI) systems like **Jenkins**, **Travis CI**, and **CircleCI** is common to automate the execution of the [test harness](https://naodeng.com.cn/en/wiki/test-harness) as part of the development pipeline.
 
   ```
   // Example of a simple test case in JUnit:
@@ -528,7 +527,7 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
     **TestNG**
     for Java applications, offering annotations and assertions to create test cases and suites.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     and
     **xUnit**
     for .NET frameworks, providing similar functionality to JUnit for the .NET ecosystem.
@@ -543,9 +542,9 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
 
   - **Mocha**
     ,
-    **[Jest](../J/jest.md)**
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     , and
-    **[Jasmine](../J/jasmine.md)**
+    **[Jasmine](https://naodeng.com.cn/en/wiki/jasmine)**
     for JavaScript, with Mocha and Jasmine being flexible in assertion libraries, and Jest providing a zero-configuration testing platform.
 
   - **Google Test**
@@ -554,26 +553,26 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
   - **Robot Framework**
     for acceptance testing, which is keyword-driven and easily extensible.
 
-  - **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)**
     for web application testing, which can be used within test harnesses to control browsers and simulate user actions.
 
 #### How do different Test Harness tools compare?
 
-  Comparing different **[Test Harness](../T/test-harness.md)** tools involves evaluating their **features**, **usability**, **integration capabilities**, and **support** for various testing types. Tools like **JUnit** and **TestNG** are popular for [unit testing](../U/unit-testing.md) in Java, offering annotations and assertions to streamline [test case](../T/test-case.md) development. **JUnit** is more minimalistic, while **TestNG** provides additional functionalities like grouping, sequencing, and parameterization of tests.
-  For UI automation, **[Selenium](../S/selenium.md)** is widely used, allowing for [cross-browser testing](../C/cross-browser-testing.md) with a rich set of [APIs](../A/api.md). It integrates well with frameworks like **WebDriverIO** and **Protractor**, which offer additional syntactic sugar and support for specific technologies like [Node.js](../N/node-js.md) and Angular.
-  **Cucumber** stands out for behavior-driven development ([BDD](../B/bdd.md)) with its [Gherkin](../G/gherkin.md) language, enabling non-technical stakeholders to contribute to [test scenarios](../T/test-scenario.md). It can be integrated with other harnesses to execute these scenarios.
-  **PyTest** is a powerful tool for Python, known for its simple syntax and ability to scale from simple unit tests to complex [functional testing](../F/functional-testing.md). It supports fixtures and plugins for extensibility.
-  **Mocha** and **[Jest](../J/jest.md)** are preferred in the JavaScript ecosystem. **Mocha** is flexible and pairs with assertion libraries like **Chai**, while **[Jest](../J/jest.md)** offers a more opinionated, zero-configuration approach with built-in mocking and snapshot testing.
-  For [performance testing](../P/performance-testing.md), **[JMeter](../J/jmeter.md)** and **Gatling** are notable. **[JMeter](../J/jmeter.md)** is Java-based with a GUI for designing tests, whereas **Gatling** uses Scala for scripting, offering a more code-centric approach.
+  Comparing different **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** tools involves evaluating their **features**, **usability**, **integration capabilities**, and **support** for various testing types. Tools like **JUnit** and **TestNG** are popular for [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) in Java, offering annotations and assertions to streamline [test case](https://naodeng.com.cn/en/wiki/test-case) development. **JUnit** is more minimalistic, while **TestNG** provides additional functionalities like grouping, sequencing, and parameterization of tests.
+  For UI automation, **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** is widely used, allowing for [cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing) with a rich set of [APIs](https://naodeng.com.cn/en/wiki/api). It integrates well with frameworks like **WebDriverIO** and **Protractor**, which offer additional syntactic sugar and support for specific technologies like [Node.js](https://naodeng.com.cn/en/wiki/node-js) and Angular.
+  **Cucumber** stands out for behavior-driven development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) with its [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) language, enabling non-technical stakeholders to contribute to [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario). It can be integrated with other harnesses to execute these scenarios.
+  **PyTest** is a powerful tool for Python, known for its simple syntax and ability to scale from simple unit tests to complex [functional testing](https://naodeng.com.cn/en/wiki/functional-testing). It supports fixtures and plugins for extensibility.
+  **Mocha** and **[Jest](https://naodeng.com.cn/en/wiki/jest)** are preferred in the JavaScript ecosystem. **Mocha** is flexible and pairs with assertion libraries like **Chai**, while **[Jest](https://naodeng.com.cn/en/wiki/jest)** offers a more opinionated, zero-configuration approach with built-in mocking and snapshot testing.
+  For [performance testing](https://naodeng.com.cn/en/wiki/performance-testing), **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** and **Gatling** are notable. **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** is Java-based with a GUI for designing tests, whereas **Gatling** uses Scala for scripting, offering a more code-centric approach.
   Each tool has its strengths and is chosen based on the specific needs of the project, such as language support, ease of use, and the type of testing required. Integration with CI/CD pipelines and other DevOps tools is also a critical factor in the comparison.
 
 #### What technologies are typically integrated with a Test Harness?
 
   Test Harnesses often integrate with various technologies to enhance testing capabilities and streamline the automation process. **Continuous Integration (CI) systems** like Jenkins, Travis CI, or CircleCI are commonly connected to automatically trigger test runs upon code commits or scheduled intervals.
-  **Version control systems** such as Git are essential for managing [test scripts](../T/test-script.md) and source code, ensuring that tests are run against the correct code version. Integration with **issue tracking tools** like [JIRA](../J/jira.md) or Bugzilla allows for automated creation and updating of tickets based on test results.
-  **[Test management](../T/test-management.md) tools** such as TestRail or qTest provide a structured way to manage [test cases](../T/test-case.md), plans, and runs, and can be linked to the [Test Harness](../T/test-harness.md) to synchronize results and metrics. **Cloud services** like [BrowserStack](../B/browserstack.md) or Sauce Labs offer platforms for cross-browser and cross-device testing, which can be controlled through the [Test Harness](../T/test-harness.md).
-  **[Code coverage](../C/code-coverage.md) tools** like Istanbul or JaCoCo can be used in conjunction with a [Test Harness](../T/test-harness.md) to measure the effectiveness of tests. **[Performance testing](../P/performance-testing.md) tools** such as [JMeter](../J/jmeter.md) or LoadRunner might be integrated for load and [stress testing](../S/stress-testing.md) scenarios.
-  **Containerization technologies** like Docker enable consistent [test environments](../T/test-environment.md), and **orchestration tools** like Kubernetes can manage these containers at scale. **Mocking frameworks** and **service virtualization tools** help simulate external dependencies and services.
+  **Version control systems** such as Git are essential for managing [test scripts](https://naodeng.com.cn/en/wiki/test-script) and source code, ensuring that tests are run against the correct code version. Integration with **issue tracking tools** like [JIRA](https://naodeng.com.cn/en/wiki/jira) or Bugzilla allows for automated creation and updating of tickets based on test results.
+  **[Test management](https://naodeng.com.cn/en/wiki/test-management) tools** such as TestRail or qTest provide a structured way to manage [test cases](https://naodeng.com.cn/en/wiki/test-case), plans, and runs, and can be linked to the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) to synchronize results and metrics. **Cloud services** like [BrowserStack](https://naodeng.com.cn/en/wiki/browserstack) or Sauce Labs offer platforms for cross-browser and cross-device testing, which can be controlled through the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness).
+  **[Code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools** like Istanbul or JaCoCo can be used in conjunction with a [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) to measure the effectiveness of tests. **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) tools** such as [JMeter](https://naodeng.com.cn/en/wiki/jmeter) or LoadRunner might be integrated for load and [stress testing](https://naodeng.com.cn/en/wiki/stress-testing) scenarios.
+  **Containerization technologies** like Docker enable consistent [test environments](https://naodeng.com.cn/en/wiki/test-environment), and **orchestration tools** like Kubernetes can manage these containers at scale. **Mocking frameworks** and **service virtualization tools** help simulate external dependencies and services.
 
   ```
   // Example of integrating a mocking tool within a Test Harness
@@ -586,29 +585,29 @@ is a suite of auxiliary tools, including stubs and drivers, used during testing.
     });
   });
   ```
-  **Data management tools** are also integrated for setting up and tearing down [test data](../T/test-data.md), ensuring tests have the necessary data context.
+  **Data management tools** are also integrated for setting up and tearing down [test data](https://naodeng.com.cn/en/wiki/test-data), ensuring tests have the necessary data context.
 
 #### How can a Test Harness be integrated with other testing tools and technologies?
 
-  Integrating a **[Test Harness](../T/test-harness.md)** with other testing tools and technologies typically involves leveraging [APIs](../A/api.md), plugins, or middleware to create a seamless workflow. Here's how it can be done:
+  Integrating a **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)** with other testing tools and technologies typically involves leveraging [APIs](https://naodeng.com.cn/en/wiki/api), plugins, or middleware to create a seamless workflow. Here's how it can be done:
 
-  - **[APIs](../A/api.md)** : Use application programming interfaces (APIs) to connect the Test Harness with tools like issue trackers (e.g., JIRA), continuous integration systems (e.g., Jenkins), and test management software (e.g., TestRail). This allows for automated result reporting and test case synchronization.
+  - **[APIs](https://naodeng.com.cn/en/wiki/api)** : Use application programming interfaces (APIs) to connect the Test Harness with tools like issue trackers (e.g., JIRA), continuous integration systems (e.g., Jenkins), and test management software (e.g., TestRail). This allows for automated result reporting and test case synchronization.
 
   ```
   // Example API call to update a test case status in a test management tool
   updateTestCaseStatus(testCaseId, status, callback);
   ```
 
-  - **Plugins**: Many Test Harnesses support plugins that extend their functionality. Plugins can be used to integrate with version control systems (e.g., Git), to pull the latest code for testing, or to deploy [test environments](../T/test-environment.md).
-  - **Middleware**: In some cases, middleware can act as a bridge between the [Test Harness](../T/test-harness.md) and other tools, especially when direct integration isn't available. Middleware can listen for events from the [Test Harness](../T/test-harness.md) and trigger actions in other tools.
-  - **Command Line Interfaces (CLIs)**: Use CLIs to execute tests from within build scripts or deployment pipelines, allowing the [Test Harness](../T/test-harness.md) to be part of a larger automation strategy.
-  - **SDKs**: Software Development Kits (SDKs) provided by some tools can be used to write custom integrations, enabling the [Test Harness](../T/test-harness.md) to interact with proprietary or less common systems.
-  - **Webhooks**: Configure webhooks to notify other tools or services when certain events occur in the [Test Harness](../T/test-harness.md), such as the completion of a test run.
-  By integrating with other tools, the [Test Harness](../T/test-harness.md) can become a central component in a comprehensive [test automation](../T/test-automation.md) ecosystem, facilitating better communication between tools, streamlining processes, and enhancing overall testing effectiveness.
+  - **Plugins**: Many Test Harnesses support plugins that extend their functionality. Plugins can be used to integrate with version control systems (e.g., Git), to pull the latest code for testing, or to deploy [test environments](https://naodeng.com.cn/en/wiki/test-environment).
+  - **Middleware**: In some cases, middleware can act as a bridge between the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) and other tools, especially when direct integration isn't available. Middleware can listen for events from the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) and trigger actions in other tools.
+  - **Command Line Interfaces (CLIs)**: Use CLIs to execute tests from within build scripts or deployment pipelines, allowing the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) to be part of a larger automation strategy.
+  - **SDKs**: Software Development Kits (SDKs) provided by some tools can be used to write custom integrations, enabling the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) to interact with proprietary or less common systems.
+  - **Webhooks**: Configure webhooks to notify other tools or services when certain events occur in the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness), such as the completion of a test run.
+  By integrating with other tools, the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) can become a central component in a comprehensive [test automation](https://naodeng.com.cn/en/wiki/test-automation) ecosystem, facilitating better communication between tools, streamlining processes, and enhancing overall testing effectiveness.
 
-  - **[APIs](../A/api.md)** : Use application programming interfaces (APIs) to connect the Test Harness with tools like issue trackers (e.g., JIRA), continuous integration systems (e.g., Jenkins), and test management software (e.g., TestRail). This allows for automated result reporting and test case synchronization.
-  - **Plugins**: Many Test Harnesses support plugins that extend their functionality. Plugins can be used to integrate with version control systems (e.g., Git), to pull the latest code for testing, or to deploy [test environments](../T/test-environment.md).
-  - **Middleware**: In some cases, middleware can act as a bridge between the [Test Harness](../T/test-harness.md) and other tools, especially when direct integration isn't available. Middleware can listen for events from the [Test Harness](../T/test-harness.md) and trigger actions in other tools.
-  - **Command Line Interfaces (CLIs)**: Use CLIs to execute tests from within build scripts or deployment pipelines, allowing the [Test Harness](../T/test-harness.md) to be part of a larger automation strategy.
-  - **SDKs**: Software Development Kits (SDKs) provided by some tools can be used to write custom integrations, enabling the [Test Harness](../T/test-harness.md) to interact with proprietary or less common systems.
-  - **Webhooks**: Configure webhooks to notify other tools or services when certain events occur in the [Test Harness](../T/test-harness.md), such as the completion of a test run.
+  - **[APIs](https://naodeng.com.cn/en/wiki/api)** : Use application programming interfaces (APIs) to connect the Test Harness with tools like issue trackers (e.g., JIRA), continuous integration systems (e.g., Jenkins), and test management software (e.g., TestRail). This allows for automated result reporting and test case synchronization.
+  - **Plugins**: Many Test Harnesses support plugins that extend their functionality. Plugins can be used to integrate with version control systems (e.g., Git), to pull the latest code for testing, or to deploy [test environments](https://naodeng.com.cn/en/wiki/test-environment).
+  - **Middleware**: In some cases, middleware can act as a bridge between the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) and other tools, especially when direct integration isn't available. Middleware can listen for events from the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) and trigger actions in other tools.
+  - **Command Line Interfaces (CLIs)**: Use CLIs to execute tests from within build scripts or deployment pipelines, allowing the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) to be part of a larger automation strategy.
+  - **SDKs**: Software Development Kits (SDKs) provided by some tools can be used to write custom integrations, enabling the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness) to interact with proprietary or less common systems.
+  - **Webhooks**: Configure webhooks to notify other tools or services when certain events occur in the [Test Harness](https://naodeng.com.cn/en/wiki/test-harness), such as the completion of a test run.

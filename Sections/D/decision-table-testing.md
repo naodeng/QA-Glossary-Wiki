@@ -1,6 +1,5 @@
 # Decision Table Testing
 
-
 <!-- TOC START -->
 - [Questions about Decision Table Testing ?](#questions-about-decision-table-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -45,36 +44,36 @@ test cases
 
 #### What is Decision Table Testing?
 
-  [Decision Table Testing](../D/decision-table-testing.md) is a systematic approach to capture complex business rules and validate their implementation in software applications. It involves tabulating conditions and actions to ensure all combinations are covered and tested. This method is particularly effective for functionalities with logical relationships that can be expressed in a tabular form.
-  **Decision tables** encapsulate inputs (conditions) and their corresponding outputs (actions), allowing testers to identify [test cases](../T/test-case.md) that exercise the full spectrum of decision logic. This testing is crucial for verifying multi-condition systems, ensuring that no condition combinations are overlooked.
+  [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is a systematic approach to capture complex business rules and validate their implementation in software applications. It involves tabulating conditions and actions to ensure all combinations are covered and tested. This method is particularly effective for functionalities with logical relationships that can be expressed in a tabular form.
+  **Decision tables** encapsulate inputs (conditions) and their corresponding outputs (actions), allowing testers to identify [test cases](https://naodeng.com.cn/en/wiki/test-case) that exercise the full spectrum of decision logic. This testing is crucial for verifying multi-condition systems, ensuring that no condition combinations are overlooked.
   Creating a decision table involves identifying conditions and actions, then populating the table with all possible combinations. Execution is carried out by systematically testing each combination against the application.
-  Tools like Excel, TestComplete, or specialized decision table software can facilitate the process, with some offering automation capabilities. Automated [decision table testing](../D/decision-table-testing.md) can be integrated into continuous integration pipelines using [test automation](../T/test-automation.md) frameworks.
-  In scenarios with numerous interdependent variables, such as financial calculations or rule-based systems, [decision table testing](../D/decision-table-testing.md) shines by providing a clear, organized method to validate complex logic.
+  Tools like Excel, TestComplete, or specialized decision table software can facilitate the process, with some offering automation capabilities. Automated [decision table testing](https://naodeng.com.cn/en/wiki/decision-table-testing) can be integrated into continuous integration pipelines using [test automation](https://naodeng.com.cn/en/wiki/test-automation) frameworks.
+  In scenarios with numerous interdependent variables, such as financial calculations or rule-based systems, [decision table testing](https://naodeng.com.cn/en/wiki/decision-table-testing) shines by providing a clear, organized method to validate complex logic.
   Challenges include managing large tables with many conditions and ensuring the table's completeness. These can be mitigated by breaking down complex tables into simpler ones and using software tools to manage and execute tests.
-  [Decision Table Testing](../D/decision-table-testing.md) should be avoided when dealing with simple systems with few conditions or when the effort to create the table outweighs the benefits of its structured approach.
+  [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) should be avoided when dealing with simple systems with few conditions or when the effort to create the table outweighs the benefits of its structured approach.
 
 #### Why is Decision Table Testing important in software testing?
 
-  [Decision Table Testing](../D/decision-table-testing.md) is crucial in [software testing](../S/software-testing.md) because it enables systematic examination of **complex decision logic**. By mapping out every possible combination of inputs and their corresponding outputs, testers can ensure that all scenarios are covered, which is particularly important for systems with numerous interdependent variables and rules.
+  [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is crucial in [software testing](https://naodeng.com.cn/en/wiki/software-testing) because it enables systematic examination of **complex decision logic**. By mapping out every possible combination of inputs and their corresponding outputs, testers can ensure that all scenarios are covered, which is particularly important for systems with numerous interdependent variables and rules.
   This method is highly effective in identifying gaps in requirements or overlooked conditions, leading to a more thorough validation of application behavior. It also aids in uncovering **hidden defects** that might not be immediately apparent through other testing techniques, especially when dealing with intricate business rules.
-  Moreover, [Decision Table Testing](../D/decision-table-testing.md) supports **clear communication** among stakeholders, as the tables provide a visual and structured representation of the business logic that can be easily understood by both technical and non-technical team members.
-  In terms of **[maintainability](../M/maintainability.md)**, these tables are relatively straightforward to update when business rules change, making them a valuable asset for [regression testing](../R/regression-testing.md). They help ensure that modifications in the system do not introduce new errors or break existing functionality.
-  Lastly, [Decision Table Testing](../D/decision-table-testing.md) is conducive to **[test automation](../T/test-automation.md)**, as the decision tables can be directly translated into automated [test scripts](../T/test-script.md). This automation further enhances the efficiency and repeatability of the testing process, allowing for rapid feedback and continuous integration in a DevOps environment.
+  Moreover, [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) supports **clear communication** among stakeholders, as the tables provide a visual and structured representation of the business logic that can be easily understood by both technical and non-technical team members.
+  In terms of **[maintainability](https://naodeng.com.cn/en/wiki/maintainability)**, these tables are relatively straightforward to update when business rules change, making them a valuable asset for [regression testing](https://naodeng.com.cn/en/wiki/regression-testing). They help ensure that modifications in the system do not introduce new errors or break existing functionality.
+  Lastly, [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is conducive to **[test automation](https://naodeng.com.cn/en/wiki/test-automation)**, as the decision tables can be directly translated into automated [test scripts](https://naodeng.com.cn/en/wiki/test-script). This automation further enhances the efficiency and repeatability of the testing process, allowing for rapid feedback and continuous integration in a DevOps environment.
 
 #### What are the key components of a Decision Table?
 
   The key components of a **Decision Table** are:
 
-  - **Conditions**: These are the inputs or causes that can affect the outcome. They represent different [test scenarios](../T/test-scenario.md).
+  - **Conditions**: These are the inputs or causes that can affect the outcome. They represent different [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario).
   - **Actions**: These are the outputs or effects that result from the conditions. They represent the system's response or behavior under certain conditions.
   - **Condition Stubs**: These are the specific instances or variables of the conditions that will be tested.
   - **Action Stubs**: These are the specific instances or actions that will occur in response to the condition stubs.
   - **Rules**: These are the columns of the decision table, representing a unique combination of condition stubs and the corresponding action stubs that should be executed.
   - **Condition Entries**: These are the cells within the table where testers specify whether a condition is true or false for a particular rule.
   - **Action Entries**: These are the cells that indicate which action is to be taken when the rule's conditions are met.
-  Each rule within a decision table is essentially a [test case](../T/test-case.md). By covering all possible combinations of conditions and actions, decision tables ensure comprehensive testing of complex business rules and decision-making processes.
+  Each rule within a decision table is essentially a [test case](https://naodeng.com.cn/en/wiki/test-case). By covering all possible combinations of conditions and actions, decision tables ensure comprehensive testing of complex business rules and decision-making processes.
 
-  - **Conditions**: These are the inputs or causes that can affect the outcome. They represent different [test scenarios](../T/test-scenario.md).
+  - **Conditions**: These are the inputs or causes that can affect the outcome. They represent different [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario).
   - **Actions**: These are the outputs or effects that result from the conditions. They represent the system's response or behavior under certain conditions.
   - **Condition Stubs**: These are the specific instances or variables of the conditions that will be tested.
   - **Action Stubs**: These are the specific instances or actions that will occur in response to the condition stubs.
@@ -84,12 +83,12 @@ test cases
 
 #### How does Decision Table Testing differ from other types of software testing?
 
-  [Decision Table Testing](../D/decision-table-testing.md) uniquely addresses scenarios with **complex business logic** by mapping different combinations of inputs to their expected outcomes. Unlike other testing types, such as **[unit testing](../U/unit-testing.md)** which focuses on individual components, or **[integration testing](../I/integration-testing.md)** which ensures that components work together, [Decision Table Testing](../D/decision-table-testing.md) is particularly adept at validating systems with numerous interdependent variables and rules.
-  In contrast to **[exploratory testing](../E/exploratory-testing.md)**, which relies on the tester's creativity and experience, [Decision Table Testing](../D/decision-table-testing.md) is systematic and exhaustive. It ensures that all possible combinations are considered, reducing the risk of missing an edge case.
-  While **boundary value** and **[equivalence partitioning](../E/equivalence-partitioning.md)** techniques focus on input value ranges and grouping inputs with similar outcomes, [Decision Table Testing](../D/decision-table-testing.md) goes further by examining the effects of different input combinations, making it more comprehensive for certain contexts.
-  Compared to **[state transition testing](../S/state-transition-testing.md)**, where the focus is on how the system transitions from one state to another, [Decision Table Testing](../D/decision-table-testing.md) provides a clear structure for verifying how different input states affect the system's behavior in a tabular form.
-  It stands out from **[user acceptance testing](../U/user-acceptance-testing.md) (UAT)**, which assesses the system's suitability for end-users, by being more granular and technical, often used earlier in the development process to refine business logic before UAT begins.
-  Overall, [Decision Table Testing](../D/decision-table-testing.md)'s structured approach to handling complex decision logic sets it apart from other testing methodologies, making it indispensable for verifying systems with intricate rules and multiple decision points.
+  [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) uniquely addresses scenarios with **complex business logic** by mapping different combinations of inputs to their expected outcomes. Unlike other testing types, such as **[unit testing](https://naodeng.com.cn/en/wiki/unit-testing)** which focuses on individual components, or **[integration testing](https://naodeng.com.cn/en/wiki/integration-testing)** which ensures that components work together, [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is particularly adept at validating systems with numerous interdependent variables and rules.
+  In contrast to **[exploratory testing](https://naodeng.com.cn/en/wiki/exploratory-testing)**, which relies on the tester's creativity and experience, [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is systematic and exhaustive. It ensures that all possible combinations are considered, reducing the risk of missing an edge case.
+  While **boundary value** and **[equivalence partitioning](https://naodeng.com.cn/en/wiki/equivalence-partitioning)** techniques focus on input value ranges and grouping inputs with similar outcomes, [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) goes further by examining the effects of different input combinations, making it more comprehensive for certain contexts.
+  Compared to **[state transition testing](https://naodeng.com.cn/en/wiki/state-transition-testing)**, where the focus is on how the system transitions from one state to another, [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) provides a clear structure for verifying how different input states affect the system's behavior in a tabular form.
+  It stands out from **[user acceptance testing](https://naodeng.com.cn/en/wiki/user-acceptance-testing) (UAT)**, which assesses the system's suitability for end-users, by being more granular and technical, often used earlier in the development process to refine business logic before UAT begins.
+  Overall, [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing)'s structured approach to handling complex decision logic sets it apart from other testing methodologies, making it indispensable for verifying systems with intricate rules and multiple decision points.
 
 ### Implementation and Execution
 
@@ -101,9 +100,9 @@ test cases
   2. **Construct the Table**: Create a table with conditions as rows and cases (combinations of conditions) as columns. List actions in subsequent rows.
   3. **Fill in the Table**: For each case, indicate the outcome for every action with symbols like Y (Yes) for action to be executed and N (No) for action not to be executed.
   4. **Simplify the Table**: Apply rules to merge similar cases, reducing complexity.
-  5. **Translate to [Test Cases](../T/test-case.md)**: Convert each column into a [test case](../T/test-case.md) with specified inputs and [expected results](../E/expected-result.md).
-  6. **Execute [Test Cases](../T/test-case.md)**: Automate or manually run the [test cases](../T/test-case.md) against the system.
-  7. **Verify Results**: Check if the system's actual outcomes match the [expected results](../E/expected-result.md) in the decision table.
+  5. **Translate to [Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Convert each column into a [test case](https://naodeng.com.cn/en/wiki/test-case) with specified inputs and [expected results](https://naodeng.com.cn/en/wiki/expected-result).
+  6. **Execute [Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Automate or manually run the [test cases](https://naodeng.com.cn/en/wiki/test-case) against the system.
+  7. **Verify Results**: Check if the system's actual outcomes match the [expected results](https://naodeng.com.cn/en/wiki/expected-result) in the decision table.
   8. **Refine as Needed**: Update the decision table for changes in rules or additional scenarios.
   Here's a simple example of how a decision table might be represented in code:
 
@@ -126,33 +125,33 @@ test cases
   2. **Construct the Table**: Create a table with conditions as rows and cases (combinations of conditions) as columns. List actions in subsequent rows.
   3. **Fill in the Table**: For each case, indicate the outcome for every action with symbols like Y (Yes) for action to be executed and N (No) for action not to be executed.
   4. **Simplify the Table**: Apply rules to merge similar cases, reducing complexity.
-  5. **Translate to [Test Cases](../T/test-case.md)**: Convert each column into a [test case](../T/test-case.md) with specified inputs and [expected results](../E/expected-result.md).
-  6. **Execute [Test Cases](../T/test-case.md)**: Automate or manually run the [test cases](../T/test-case.md) against the system.
-  7. **Verify Results**: Check if the system's actual outcomes match the [expected results](../E/expected-result.md) in the decision table.
+  5. **Translate to [Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Convert each column into a [test case](https://naodeng.com.cn/en/wiki/test-case) with specified inputs and [expected results](https://naodeng.com.cn/en/wiki/expected-result).
+  6. **Execute [Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Automate or manually run the [test cases](https://naodeng.com.cn/en/wiki/test-case) against the system.
+  7. **Verify Results**: Check if the system's actual outcomes match the [expected results](https://naodeng.com.cn/en/wiki/expected-result) in the decision table.
   8. **Refine as Needed**: Update the decision table for changes in rules or additional scenarios.
 
 #### What are the steps involved in Decision Table Testing?
 
-  The steps involved in **[Decision Table Testing](../D/decision-table-testing.md)** are as follows:
+  The steps involved in **[Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing)** are as follows:
 
-  1. **Identify [Test Scenarios](../T/test-scenario.md)** : Determine the functionality to be tested and the related business rules or conditions.
+  1. **Identify [Test Scenarios](https://naodeng.com.cn/en/wiki/test-scenario)** : Determine the functionality to be tested and the related business rules or conditions.
   2. **Define Conditions and Actions** : List all possible conditions and the actions that occur based on those conditions.
   3. **Construct the Decision Table** : Create a table with conditions as rows and test cases as columns, filling in the actions that correspond to each combination of conditions.
   4. **Simplify the Table** : Look for redundancies or contradictions and remove them to simplify the table.
-  5. **Determine [Test Cases](../T/test-case.md)** : Each column in the simplified table represents a test case with a unique combination of conditions and their resulting actions.
-  6. **Write [Test Scripts](../T/test-script.md)** : Develop automated test scripts that correspond to each test case identified in the decision table.
+  5. **Determine [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Each column in the simplified table represents a test case with a unique combination of conditions and their resulting actions.
+  6. **Write [Test Scripts](https://naodeng.com.cn/en/wiki/test-script)** : Develop automated test scripts that correspond to each test case identified in the decision table.
   7. **Execute Tests** : Run the test scripts against the software to verify that the correct actions are taken for each set of conditions.
   8. **Review Results** : Analyze the outcomes of the test executions to ensure that the software behaves as expected.
   9. **Report Defects** : If discrepancies are found, log defects for the development team to address.
   10. **Refine Tests** : Based on the test results and any changes to the software or business rules, update the decision table and test scripts as necessary.
   This structured approach ensures comprehensive coverage of business rule combinations and helps in identifying defects related to complex decision logic.
 
-  1. **Identify [Test Scenarios](../T/test-scenario.md)** : Determine the functionality to be tested and the related business rules or conditions.
+  1. **Identify [Test Scenarios](https://naodeng.com.cn/en/wiki/test-scenario)** : Determine the functionality to be tested and the related business rules or conditions.
   2. **Define Conditions and Actions** : List all possible conditions and the actions that occur based on those conditions.
   3. **Construct the Decision Table** : Create a table with conditions as rows and test cases as columns, filling in the actions that correspond to each combination of conditions.
   4. **Simplify the Table** : Look for redundancies or contradictions and remove them to simplify the table.
-  5. **Determine [Test Cases](../T/test-case.md)** : Each column in the simplified table represents a test case with a unique combination of conditions and their resulting actions.
-  6. **Write [Test Scripts](../T/test-script.md)** : Develop automated test scripts that correspond to each test case identified in the decision table.
+  5. **Determine [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Each column in the simplified table represents a test case with a unique combination of conditions and their resulting actions.
+  6. **Write [Test Scripts](https://naodeng.com.cn/en/wiki/test-script)** : Develop automated test scripts that correspond to each test case identified in the decision table.
   7. **Execute Tests** : Run the test scripts against the software to verify that the correct actions are taken for each set of conditions.
   8. **Review Results** : Analyze the outcomes of the test executions to ensure that the software behaves as expected.
   9. **Report Defects** : If discrepancies are found, log defects for the development team to address.
@@ -160,7 +159,7 @@ test cases
 
 #### What tools can be used for Decision Table Testing?
 
-  Several tools can be used for **[Decision Table Testing](../D/decision-table-testing.md)**, each offering unique features to aid in the creation, management, and execution of decision tables:
+  Several tools can be used for **[Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing)**, each offering unique features to aid in the creation, management, and execution of decision tables:
 
   - **CA Agile Requirements Designer**
     (formerly Grid-Tools Agile Designer) allows testers to model requirements as decision tables and automatically generate test cases.
@@ -179,7 +178,7 @@ test cases
 
   - **FitNesse**
     is an open-source tool that allows users to define examples in decision tables and automate them as acceptance tests.
-  These tools often integrate with other [test management](../T/test-management.md) and automation frameworks, enhancing their capabilities to cover [decision table testing](../D/decision-table-testing.md) needs. Experienced [test automation](../T/test-automation.md) engineers can leverage these tools to efficiently validate complex business rules and logic, ensuring comprehensive [test coverage](../T/test-coverage.md) and the detection of defects that might be missed using other testing methods.
+  These tools often integrate with other [test management](https://naodeng.com.cn/en/wiki/test-management) and automation frameworks, enhancing their capabilities to cover [decision table testing](https://naodeng.com.cn/en/wiki/decision-table-testing) needs. Experienced [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can leverage these tools to efficiently validate complex business rules and logic, ensuring comprehensive [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and the detection of defects that might be missed using other testing methods.
 
   - **CA Agile Requirements Designer**
     (formerly Grid-Tools Agile Designer) allows testers to model requirements as decision tables and automatically generate test cases.
@@ -201,7 +200,7 @@ test cases
 
 #### How can Decision Table Testing be automated?
 
-  Automating [Decision Table Testing](../D/decision-table-testing.md) involves translating decision tables into [test scripts](../T/test-script.md) that can be executed by a [test automation](../T/test-automation.md) framework. Here's a concise guide:
+  Automating [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) involves translating decision tables into [test scripts](https://naodeng.com.cn/en/wiki/test-script) that can be executed by a [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework. Here's a concise guide:
 
   1. **Identify**
     the decision table to be automated.
@@ -238,7 +237,7 @@ test cases
 
   5. **Run**
     the automated tests as part of the continuous integration pipeline to ensure that changes do not break existing functionality.
-  By following these steps, [test automation](../T/test-automation.md) engineers can efficiently convert decision tables into automated tests, ensuring that complex business rules are consistently validated with each software [iteration](../I/iteration.md).
+  By following these steps, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can efficiently convert decision tables into automated tests, ensuring that complex business rules are consistently validated with each software [iteration](https://naodeng.com.cn/en/wiki/iteration).
 
   1. **Identify**
     the decision table to be automated.
@@ -271,7 +270,7 @@ test cases
 
 #### Can you provide an example of a scenario where Decision Table Testing would be particularly useful?
 
-  [Decision Table Testing](../D/decision-table-testing.md) is particularly useful in scenarios where a system's behavior is influenced by a combination of multiple input conditions that can lead to different actions or outcomes. A classic example is a loan eligibility application where the decision to approve or reject a loan is based on various criteria such as credit score, income level, employment status, and loan amount.
+  [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is particularly useful in scenarios where a system's behavior is influenced by a combination of multiple input conditions that can lead to different actions or outcomes. A classic example is a loan eligibility application where the decision to approve or reject a loan is based on various criteria such as credit score, income level, employment status, and loan amount.
   Consider a simplified scenario where a bank's loan approval process is dictated by the following rules:
 
   - If the applicant has a
@@ -355,7 +354,7 @@ test cases
   For automation:
 
   - Use scripts to
-    **generate [test cases](../T/test-case.md)**
+    **generate [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     from the Decision Table, feeding them into the test automation framework.
 
   - **Validate**
@@ -391,7 +390,7 @@ test cases
     these test cases either manually or using automated testing tools, verifying that the system's actions match the expected outcomes in the table.
 
   - Use scripts to
-    **generate [test cases](../T/test-case.md)**
+    **generate [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     from the Decision Table, feeding them into the test automation framework.
 
   - **Validate**
@@ -402,7 +401,7 @@ test cases
 
 #### What types of software bugs can be detected with Decision Table Testing?
 
-  [Decision Table Testing](../D/decision-table-testing.md) is adept at uncovering a variety of software [bugs](../B/bug.md) related to:
+  [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is adept at uncovering a variety of software [bugs](https://naodeng.com.cn/en/wiki/bug) related to:
 
   - **Complex business rule validation** : It can detect scenarios where application behavior does not align with specified business rules.
   - **Handling of combinations of inputs** : Bugs arising from unanticipated interactions between different input combinations are often revealed.
@@ -411,7 +410,7 @@ test cases
   - **Data integrity issues** : Decision tables can help ensure that operations preserve data integrity by testing different permutations of data states.
   - **Functionality gaps** : Missing logic or functionality that should be present according to the decision logic can be detected.
   - **Incorrect system states** : By representing different system states in the decision table, you can find bugs where the system does not transition correctly between states.
-  [Decision Table Testing](../D/decision-table-testing.md) is particularly effective for systems with logical conditions that can be clearly tabulated, allowing for comprehensive and systematic testing of software behavior against defined criteria.
+  [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is particularly effective for systems with logical conditions that can be clearly tabulated, allowing for comprehensive and systematic testing of software behavior against defined criteria.
 
   - **Complex business rule validation** : It can detect scenarios where application behavior does not align with specified business rules.
   - **Handling of combinations of inputs** : Bugs arising from unanticipated interactions between different input combinations are often revealed.
@@ -425,7 +424,7 @@ test cases
 
 #### What are some challenges or limitations of Decision Table Testing?
 
-  [Decision Table Testing](../D/decision-table-testing.md), while powerful, has its own set of challenges:
+  [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing), while powerful, has its own set of challenges:
 
   - **Complexity** : With an increase in the number of variables, the number of combinations can grow exponentially, making the table complex and difficult to manage.
   - **Maintenance** : Decision tables need to be updated with changes in business rules, which can be cumbersome and error-prone.
@@ -444,30 +443,30 @@ test cases
 
 #### How can these challenges be overcome?
 
-  Overcoming challenges in [Decision Table Testing](../D/decision-table-testing.md) (DTT) involves strategic planning and tool utilization. To address the **complexity** of creating decision tables for intricate business rules, use **modularization** to break down the rules into smaller, manageable components. This simplifies the tables and enhances [maintainability](../M/maintainability.md).
-  For the **maintenance overhead** when business rules change frequently, implement **version control** and **automated [regression testing](../R/regression-testing.md)**. This ensures that changes are tracked and that the impact on existing [test cases](../T/test-case.md) is automatically assessed.
-  To tackle the **time-consuming** nature of manual [test execution](../T/test-execution.md), leverage **[test automation](../T/test-automation.md) frameworks** that support DTT. Tools like **[Selenium](../S/selenium.md)**, **TestComplete**, or **SpecFlow** can be integrated with decision table libraries or plugins to automate the execution process.
-  When dealing with a large number of [test cases](../T/test-case.md) that can lead to **redundancy**, apply **test optimization techniques** such as pairwise testing or combinatorial testing tools to minimize the number of [test cases](../T/test-case.md) while still covering all possible scenarios.
+  Overcoming challenges in [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) (DTT) involves strategic planning and tool utilization. To address the **complexity** of creating decision tables for intricate business rules, use **modularization** to break down the rules into smaller, manageable components. This simplifies the tables and enhances [maintainability](https://naodeng.com.cn/en/wiki/maintainability).
+  For the **maintenance overhead** when business rules change frequently, implement **version control** and **automated [regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**. This ensures that changes are tracked and that the impact on existing [test cases](https://naodeng.com.cn/en/wiki/test-case) is automatically assessed.
+  To tackle the **time-consuming** nature of manual [test execution](https://naodeng.com.cn/en/wiki/test-execution), leverage **[test automation](https://naodeng.com.cn/en/wiki/test-automation) frameworks** that support DTT. Tools like **[Selenium](https://naodeng.com.cn/en/wiki/selenium)**, **TestComplete**, or **SpecFlow** can be integrated with decision table libraries or plugins to automate the execution process.
+  When dealing with a large number of [test cases](https://naodeng.com.cn/en/wiki/test-case) that can lead to **redundancy**, apply **test optimization techniques** such as pairwise testing or combinatorial testing tools to minimize the number of [test cases](https://naodeng.com.cn/en/wiki/test-case) while still covering all possible scenarios.
   For **knowledge transfer** issues, ensure that decision tables are well-documented and use **collaborative tools** like Confluence or shared repositories where team members can contribute and access the decision tables.
   Lastly, to mitigate the risk of **oversight** in covering all possible combinations, perform **peer reviews** and use **coverage analysis tools** to validate that all logical paths have been accounted for in the decision tables.
 
 #### When should Decision Table Testing not be used?
 
-  [Decision Table Testing](../D/decision-table-testing.md) should not be used in the following scenarios:
+  [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) should not be used in the following scenarios:
 
   - **Simple scenarios with few rules**: If the application logic is straightforward with minimal conditions, using Decision Tables can be overkill. Simpler testing methods might be more efficient.
   - **Highly dynamic systems**: In systems where business rules change frequently, maintaining Decision Tables can become cumbersome and prone to errors.
-  - **Limited input combinations**: When there are very few possible input combinations, other testing techniques like boundary value analysis or [equivalence partitioning](../E/equivalence-partitioning.md) might be more suitable.
-  - **Non-rule-based logic**: If the system's behavior is not based on clear-cut rules, Decision Tables may not effectively capture the necessary [test scenarios](../T/test-scenario.md).
-  - **[Performance testing](../P/performance-testing.md)**: [Decision Table Testing](../D/decision-table-testing.md) is not designed for [performance testing](../P/performance-testing.md) as it focuses on functional correctness rather than system performance metrics.
-  - **User [interface testing](../I/interface-testing.md)**: It is not ideal for testing user interfaces where visual elements and user interactions are more important than underlying business logic.
-  - **[Exploratory testing](../E/exploratory-testing.md)**: When the goal is to explore the software without predefined expectations, structured approaches like Decision Tables may limit the discovery of unanticipated issues.
-  Remember, the choice of testing technique should align with the complexity and nature of the application under test. [Decision Table Testing](../D/decision-table-testing.md) excels in scenarios with complex business rules and multiple decision points but may not be the best fit for all testing needs.
+  - **Limited input combinations**: When there are very few possible input combinations, other testing techniques like boundary value analysis or [equivalence partitioning](https://naodeng.com.cn/en/wiki/equivalence-partitioning) might be more suitable.
+  - **Non-rule-based logic**: If the system's behavior is not based on clear-cut rules, Decision Tables may not effectively capture the necessary [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario).
+  - **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing)**: [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is not designed for [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) as it focuses on functional correctness rather than system performance metrics.
+  - **User [interface testing](https://naodeng.com.cn/en/wiki/interface-testing)**: It is not ideal for testing user interfaces where visual elements and user interactions are more important than underlying business logic.
+  - **[Exploratory testing](https://naodeng.com.cn/en/wiki/exploratory-testing)**: When the goal is to explore the software without predefined expectations, structured approaches like Decision Tables may limit the discovery of unanticipated issues.
+  Remember, the choice of testing technique should align with the complexity and nature of the application under test. [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) excels in scenarios with complex business rules and multiple decision points but may not be the best fit for all testing needs.
 
   - **Simple scenarios with few rules**: If the application logic is straightforward with minimal conditions, using Decision Tables can be overkill. Simpler testing methods might be more efficient.
   - **Highly dynamic systems**: In systems where business rules change frequently, maintaining Decision Tables can become cumbersome and prone to errors.
-  - **Limited input combinations**: When there are very few possible input combinations, other testing techniques like boundary value analysis or [equivalence partitioning](../E/equivalence-partitioning.md) might be more suitable.
-  - **Non-rule-based logic**: If the system's behavior is not based on clear-cut rules, Decision Tables may not effectively capture the necessary [test scenarios](../T/test-scenario.md).
-  - **[Performance testing](../P/performance-testing.md)**: [Decision Table Testing](../D/decision-table-testing.md) is not designed for [performance testing](../P/performance-testing.md) as it focuses on functional correctness rather than system performance metrics.
-  - **User [interface testing](../I/interface-testing.md)**: It is not ideal for testing user interfaces where visual elements and user interactions are more important than underlying business logic.
-  - **[Exploratory testing](../E/exploratory-testing.md)**: When the goal is to explore the software without predefined expectations, structured approaches like Decision Tables may limit the discovery of unanticipated issues.
+  - **Limited input combinations**: When there are very few possible input combinations, other testing techniques like boundary value analysis or [equivalence partitioning](https://naodeng.com.cn/en/wiki/equivalence-partitioning) might be more suitable.
+  - **Non-rule-based logic**: If the system's behavior is not based on clear-cut rules, Decision Tables may not effectively capture the necessary [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario).
+  - **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing)**: [Decision Table Testing](https://naodeng.com.cn/en/wiki/decision-table-testing) is not designed for [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) as it focuses on functional correctness rather than system performance metrics.
+  - **User [interface testing](https://naodeng.com.cn/en/wiki/interface-testing)**: It is not ideal for testing user interfaces where visual elements and user interactions are more important than underlying business logic.
+  - **[Exploratory testing](https://naodeng.com.cn/en/wiki/exploratory-testing)**: When the goal is to explore the software without predefined expectations, structured approaches like Decision Tables may limit the discovery of unanticipated issues.

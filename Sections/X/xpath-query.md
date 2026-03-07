@@ -1,6 +1,5 @@
 # XPath Query
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
   - [See also:](#see-also)
@@ -35,8 +34,8 @@ A language designed to extract and manipulate XML document data. Useful for retr
 
 ## Related Terms:
 
-- [Web Testing](../W/web-testing.md)
-- [UI Testing](../U/ui-testing.md)
+- [Web Testing](https://naodeng.com.cn/en/wiki/web-testing)
+- [UI Testing](https://naodeng.com.cn/en/wiki/ui-testing)
 
 ### See also:
 
@@ -48,28 +47,28 @@ A language designed to extract and manipulate XML document data. Useful for retr
 
 #### What is XPath Query?
 
-  [XPath Query](../X/xpath-query.md) is a powerful language designed for selecting nodes from an XML document. It can be equally effective in querying HTML structures, especially when used within [web automation](../W/web-automation.md) frameworks like [Selenium](../S/selenium.md). XPath stands out for its ability to perform complex queries with precision, enabling testers to locate elements within a webpage's DOM with specificity.
+  [XPath Query](https://naodeng.com.cn/en/wiki/xpath-query) is a powerful language designed for selecting nodes from an XML document. It can be equally effective in querying HTML structures, especially when used within [web automation](https://naodeng.com.cn/en/wiki/web-automation) frameworks like [Selenium](https://naodeng.com.cn/en/wiki/selenium). XPath stands out for its ability to perform complex queries with precision, enabling testers to locate elements within a webpage's DOM with specificity.
   Here's an example of an XPath expression that selects all `input` elements with a `name` attribute containing the substring 'user':
 
   ```
   //input[contains(@name, 'user')]
   ```
   XPath's ability to navigate the DOM using various axes, such as `ancestor`, `descendant`, `following`, and `preceding`, provides a versatile toolkit for testers to interact with web elements in relation to their position in the DOM tree. This is particularly useful when elements lack unique identifiers or when DOM structures are dynamic.
-  In [test automation](../T/test-automation.md), XPath Queries are often used within scripts to interact with web elements, such as clicking a button or extracting text. The precision of XPath makes it invaluable for asserting the presence of elements or their states, which is crucial for verifying the functionality of web applications.
-  While XPath is a cornerstone in [web automation](../W/web-automation.md), it requires careful crafting to avoid brittle selectors that may break with UI changes. Testers must balance specificity with flexibility, often opting for relative XPath expressions that can withstand minor alterations in the DOM structure. Efficient use of XPath can significantly enhance the robustness and [maintainability](../M/maintainability.md) of automated [test suites](../T/test-suite.md).
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), XPath Queries are often used within scripts to interact with web elements, such as clicking a button or extracting text. The precision of XPath makes it invaluable for asserting the presence of elements or their states, which is crucial for verifying the functionality of web applications.
+  While XPath is a cornerstone in [web automation](https://naodeng.com.cn/en/wiki/web-automation), it requires careful crafting to avoid brittle selectors that may break with UI changes. Testers must balance specificity with flexibility, often opting for relative XPath expressions that can withstand minor alterations in the DOM structure. Efficient use of XPath can significantly enhance the robustness and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of automated [test suites](https://naodeng.com.cn/en/wiki/test-suite).
 
 #### Why is XPath Query important in software automation?
 
-  [XPath Query](../X/xpath-query.md) is crucial in software [test automation](../T/test-automation.md) for its **precision** and **flexibility** in locating elements within XML and HTML documents. It enables testers to identify elements with **specific attributes**, **text values**, or **hierarchical relationships**, which is essential when dealing with dynamic or complex web pages where elements' attributes or positions may change.
+  [XPath Query](https://naodeng.com.cn/en/wiki/xpath-query) is crucial in software [test automation](https://naodeng.com.cn/en/wiki/test-automation) for its **precision** and **flexibility** in locating elements within XML and HTML documents. It enables testers to identify elements with **specific attributes**, **text values**, or **hierarchical relationships**, which is essential when dealing with dynamic or complex web pages where elements' attributes or positions may change.
   Using XPath, automation engineers can craft **unique paths** to interact with elements that lack identifiers or classes, or when other locator strategies are not viable. This is particularly useful in **end-to-end (e2e) testing**, where replicating user interactions with the UI is necessary.
   Moreover, XPath's ability to navigate both **forwards and backwards** in the DOM (Document Object Model) hierarchy allows for more **sophisticated element searches**, including finding a parent element based on the attributes of a child, or vice versa.
-  In the context of **[Selenium](../S/selenium.md)** and other [web automation](../W/web-automation.md) tools, XPath is often the **go-to** querying language due to its **cross-browser compatibility** and support for **complex locators**. It is a powerful tool for **assertions** as well, allowing testers to verify the presence, absence, or state of elements in a page.
+  In the context of **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** and other [web automation](https://naodeng.com.cn/en/wiki/web-automation) tools, XPath is often the **go-to** querying language due to its **cross-browser compatibility** and support for **complex locators**. It is a powerful tool for **assertions** as well, allowing testers to verify the presence, absence, or state of elements in a page.
   However, XPath queries can be **brittle** and **slower** compared to CSS selectors, especially with poorly structured HTML. To mitigate this, it's important to write **efficient** and **resilient** XPath expressions, focusing on **relative paths** and **robust attributes**.
-  In summary, XPath is an indispensable tool in the [test automation](../T/test-automation.md) engineer's arsenal, providing the **granularity** and **control** needed to effectively interact with and verify UI elements in automated tests.
+  In summary, XPath is an indispensable tool in the [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineer's arsenal, providing the **granularity** and **control** needed to effectively interact with and verify UI elements in automated tests.
 
 #### What are the basic components of an XPath Query?
 
-  The basic components of an [XPath query](../X/xpath-query.md) include:
+  The basic components of an [XPath query](https://naodeng.com.cn/en/wiki/xpath-query) include:
 
   - **Root node** : The starting point of the query, denoted by
     `/`
@@ -126,7 +125,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
     , or
     `following-sibling::`
     .
-  Example [XPath query](../X/xpath-query.md) structure:
+  Example [XPath query](https://naodeng.com.cn/en/wiki/xpath-query) structure:
 
   ```
   //div[@class='example']//a[text()='Click Here']/@href
@@ -251,31 +250,31 @@ A language designed to extract and manipulate XML document data. Useful for retr
 
 #### What is the role of XPath Query in e2e testing?
 
-  In end-to-end (e2e) testing, **[XPath Query](../X/xpath-query.md)** plays a crucial role in locating and interacting with web elements. It enables testers to pinpoint specific elements within the Document Object Model (DOM) of a webpage, which is essential for simulating user interactions such as clicking buttons, entering text, and validating the presence or properties of elements.
+  In end-to-end (e2e) testing, **[XPath Query](https://naodeng.com.cn/en/wiki/xpath-query)** plays a crucial role in locating and interacting with web elements. It enables testers to pinpoint specific elements within the Document Object Model (DOM) of a webpage, which is essential for simulating user interactions such as clicking buttons, entering text, and validating the presence or properties of elements.
   XPath's ability to navigate through the DOM using various axes and functions allows for dynamic and flexible element selection. This is particularly useful in e2e tests where the structure of web pages may change, requiring selectors that can adapt to these changes without breaking the tests.
   For instance, in a complex web application, elements might not have unique identifiers or consistent CSS classes. XPath can traverse the DOM to find elements based on their relationships with other elements, which is less brittle in the face of UI changes.
   Moreover, XPath's support for predicates enables testers to refine their element selection with conditions, ensuring that even elements with similar attributes can be distinguished and accurately targeted.
-  In automated e2e testing frameworks like [Selenium](../S/selenium.md), XPath is often used to create robust locators. For example:
+  In automated e2e testing frameworks like [Selenium](https://naodeng.com.cn/en/wiki/selenium), XPath is often used to create robust locators. For example:
 
   ```
   driver.findElement(By.xpath("//button[text()='Submit']")).click();
   ```
-  This line of code would find a button with the text 'Submit' and perform a click action, mimicking a user's interaction during the [test scenario](../T/test-scenario.md).
-  Overall, [XPath Query](../X/xpath-query.md) is indispensable for achieving precision and flexibility in element location strategies within e2e testing, contributing to more reliable and maintainable [test suites](../T/test-suite.md).
+  This line of code would find a button with the text 'Submit' and perform a click action, mimicking a user's interaction during the [test scenario](https://naodeng.com.cn/en/wiki/test-scenario).
+  Overall, [XPath Query](https://naodeng.com.cn/en/wiki/xpath-query) is indispensable for achieving precision and flexibility in element location strategies within e2e testing, contributing to more reliable and maintainable [test suites](https://naodeng.com.cn/en/wiki/test-suite).
 
 #### How does XPath Query differ from other querying languages?
 
-  [XPath Query](../X/xpath-query.md) is distinct from other querying languages primarily in its **specificity to XML and HTML** structures. Unlike [SQL](../S/sql.md), which is designed for querying relational [databases](../D/database.md), or CSS selectors, which are used for styling and selecting elements in HTML, XPath enables the **selection of nodes** based on a variety of criteria, including their hierarchy, attributes, and content within an XML document.
+  [XPath Query](https://naodeng.com.cn/en/wiki/xpath-query) is distinct from other querying languages primarily in its **specificity to XML and HTML** structures. Unlike [SQL](https://naodeng.com.cn/en/wiki/sql), which is designed for querying relational [databases](https://naodeng.com.cn/en/wiki/database), or CSS selectors, which are used for styling and selecting elements in HTML, XPath enables the **selection of nodes** based on a variety of criteria, including their hierarchy, attributes, and content within an XML document.
   XPath stands out with its **rich set of functions** and **axes**, allowing for complex traversals and selections that are not as straightforward in other languages. For instance, while CSS selectors can be used to navigate HTML documents, they lack the ability to traverse upwards in the document hierarchy or select nodes based on text content, both of which XPath can do with ease.
-  Furthermore, XPath's ability to use **predicates** offers a more granular level of control over selections than what is typically available in CSS selectors. This makes it particularly powerful for scenarios where precise extraction of data is required, such as in [test automation](../T/test-automation.md) where specific elements need to be targeted.
+  Furthermore, XPath's ability to use **predicates** offers a more granular level of control over selections than what is typically available in CSS selectors. This makes it particularly powerful for scenarios where precise extraction of data is required, such as in [test automation](https://naodeng.com.cn/en/wiki/test-automation) where specific elements need to be targeted.
   In contrast to JSONPath, which is used for JSON objects, XPath is designed for the **structured nature of XML** and cannot be directly applied to JSON. However, both share a similar concept of path expressions to navigate through elements.
-  Overall, XPath's unique capabilities make it an indispensable tool in scenarios where **precise navigation and selection** within XML and HTML documents are necessary, particularly in the context of software [test automation](../T/test-automation.md).
+  Overall, XPath's unique capabilities make it an indispensable tool in scenarios where **precise navigation and selection** within XML and HTML documents are necessary, particularly in the context of software [test automation](https://naodeng.com.cn/en/wiki/test-automation).
 
 ### Syntax and Structure
 
 #### What is the basic syntax of an XPath Query?
 
-  The basic syntax of an [XPath query](../X/xpath-query.md) consists of a path expression that defines the way to navigate through the elements and attributes in an XML document. Here's a simplified breakdown:
+  The basic syntax of an [XPath query](https://naodeng.com.cn/en/wiki/xpath-query) consists of a path expression that defines the way to navigate through the elements and attributes in an XML document. Here's a simplified breakdown:
 
   - **Absolute path** : Starts with a single forward slash
     `/`
@@ -392,7 +391,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
 
 #### How do you structure an XPath Query to select nodes?
 
-  To structure an [XPath query](../X/xpath-query.md) for selecting nodes, follow these guidelines:
+  To structure an [XPath query](https://naodeng.com.cn/en/wiki/xpath-query) for selecting nodes, follow these guidelines:
 
   - **Identify the starting point**: Choose the context node from where the search should begin. If no context is specified, the query starts from the root node.
   - **Use path expressions**: Combine steps to navigate through the nodes. Steps are separated by slashes (`/` for direct children, `//` for any descendant).
@@ -401,7 +400,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
   - **Specify axes**: Include axes to define the relationship between the current node and the nodes to be selected (e.g., `ancestor`, `descendant`, `following-sibling`).
   - **Utilize operators**: Combine conditions within predicates using operators like `and`, `or`, `=`, `!=`.
   - **Incorporate functions**: Use XPath functions for string manipulation, numeric calculations, or node set processing (e.g., `text()`, `contains()`, `count()`).
-  Here's an example of a structured [XPath query](../X/xpath-query.md):
+  Here's an example of a structured [XPath query](https://naodeng.com.cn/en/wiki/xpath-query):
 
   ```
   //div[@class='container']/table//tr[td[contains(text(),'Automation')]]
@@ -433,12 +432,12 @@ A language designed to extract and manipulate XML document data. Useful for retr
   - **preceding** : Selects all nodes that appear before the current node in the document, except ancestors, attribute nodes, and namespace nodes.
   - **preceding-sibling** : Selects all siblings before the current node.
   - **self** : Selects the current node.
-  Example usage in an [XPath query](../X/xpath-query.md):
+  Example usage in an [XPath query](https://naodeng.com.cn/en/wiki/xpath-query):
 
   ```
   //book/child::*
   ```
-  This selects all child elements of `book` nodes. [Test automation](../T/test-automation.md) engineers use these axes to navigate through the XML or HTML document structure, allowing for precise location of elements for interaction and validation.
+  This selects all child elements of `book` nodes. [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers use these axes to navigate through the XML or HTML document structure, allowing for precise location of elements for interaction and validation.
 
   - **ancestor** : Selects all ancestors (parent, grandparent, etc.) of the current node.
   - **ancestor-or-self** : Selects all ancestors and the current node.
@@ -482,7 +481,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
   ```
   //book/author[1]/name
   ```
-  Using predicates effectively can lead to more precise and efficient XPath queries, which is crucial in [test automation](../T/test-automation.md) for locating elements accurately and performing actions or validations on them.
+  Using predicates effectively can lead to more precise and efficient XPath queries, which is crucial in [test automation](https://naodeng.com.cn/en/wiki/test-automation) for locating elements accurately and performing actions or validations on them.
 
 #### What are XPath functions and how are they used in queries?
 
@@ -517,7 +516,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
     ,
     `round()`
     .
-  In [test automation](../T/test-automation.md), functions are used to enhance the selection of nodes. For example, to find an element with a specific attribute value, you might use:
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), functions are used to enhance the selection of nodes. For example, to find an element with a specific attribute value, you might use:
 
   ```
   //input[contains(@id, 'username')]
@@ -535,7 +534,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
   //input[@type='checkbox' and not(@checked)]
   ```
   The `not()` function inverts the boolean result of the `@checked` predicate.
-  Using functions correctly can greatly increase the precision and efficiency of your XPath queries in [test automation](../T/test-automation.md) scripts.
+  Using functions correctly can greatly increase the precision and efficiency of your XPath queries in [test automation](https://naodeng.com.cn/en/wiki/test-automation) scripts.
 
   - **Node-set functions** : Operate on node-sets, e.g.,
     `count()`
@@ -571,7 +570,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
 
 #### How do you use XPath Query in Selenium for web automation testing?
 
-  Using **XPath** in [Selenium](../S/selenium.md) for [web automation](../W/web-automation.md) testing involves locating elements on a web page by their XML path. Here's a concise guide on how to implement this:
+  Using **XPath** in [Selenium](https://naodeng.com.cn/en/wiki/selenium) for [web automation](https://naodeng.com.cn/en/wiki/web-automation) testing involves locating elements on a web page by their XML path. Here's a concise guide on how to implement this:
 
   1. **Import**
     the necessary Selenium WebDriver classes in your test script:
@@ -621,7 +620,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
   WebElement dynamicElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tagname[@attribute='value']")));
   ```
-  By following these steps, you can effectively utilize XPath in [Selenium](../S/selenium.md) to target and manipulate web elements for your automation testing needs.
+  By following these steps, you can effectively utilize XPath in [Selenium](https://naodeng.com.cn/en/wiki/selenium) to target and manipulate web elements for your automation testing needs.
 
   1. **Import**
     the necessary Selenium WebDriver classes in your test script:
@@ -643,7 +642,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
 
 #### What are some common use cases for XPath Query in software automation?
 
-  [XPath Query](../X/xpath-query.md) is commonly used in software [test automation](../T/test-automation.md) for the following [use cases](../U/use-case.md):
+  [XPath Query](https://naodeng.com.cn/en/wiki/xpath-query) is commonly used in software [test automation](https://naodeng.com.cn/en/wiki/test-automation) for the following [use cases](https://naodeng.com.cn/en/wiki/use-case):
 
   - **Locating Elements** : Automators use XPath to pinpoint specific elements within a web page or XML document that need interaction or verification. For example, clicking a button, checking a checkbox, or validating the presence of a node.
 
@@ -687,7 +686,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
   ```
   driver.findElement(By.xpath("//input[@type='checkbox' and not(@disabled)]"));
   ```
-  These [use cases](../U/use-case.md) demonstrate XPath's versatility in addressing various scenarios encountered in software [test automation](../T/test-automation.md).
+  These [use cases](https://naodeng.com.cn/en/wiki/use-case) demonstrate XPath's versatility in addressing various scenarios encountered in software [test automation](https://naodeng.com.cn/en/wiki/test-automation).
 
   - **Locating Elements** : Automators use XPath to pinpoint specific elements within a web page or XML document that need interaction or verification. For example, clicking a button, checking a checkbox, or validating the presence of a node.
   - **Dynamic Element Identification** : When elements have dynamic IDs or classes, XPath can locate these elements using partial matches or other attributes.
@@ -699,7 +698,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
 
 #### How can XPath Query be used to navigate XML documents?
 
-  [XPath Query](../X/xpath-query.md) can be utilized to navigate XML documents by providing a way to select and traverse nodes in the document tree. It allows for pinpointing specific elements, attributes, or text within the XML structure, enabling precise data extraction or manipulation.
+  [XPath Query](https://naodeng.com.cn/en/wiki/xpath-query) can be utilized to navigate XML documents by providing a way to select and traverse nodes in the document tree. It allows for pinpointing specific elements, attributes, or text within the XML structure, enabling precise data extraction or manipulation.
   For example, to select all `book` elements within a `library` element, you would use:
 
   ```
@@ -730,18 +729,18 @@ A language designed to extract and manipulate XML document data. Useful for retr
   ```
   /library/book[position()>1]
   ```
-  Using XPath in [test automation](../T/test-automation.md), engineers can assert the presence, value, and structure of XML responses or configurations, ensuring that the software behaves as expected when interacting with XML-based data.
+  Using XPath in [test automation](https://naodeng.com.cn/en/wiki/test-automation), engineers can assert the presence, value, and structure of XML responses or configurations, ensuring that the software behaves as expected when interacting with XML-based data.
 
 #### What are some challenges in using XPath Query and how can they be overcome?
 
-  XPath queries can present several challenges in [test automation](../T/test-automation.md):
+  XPath queries can present several challenges in [test automation](https://naodeng.com.cn/en/wiki/test-automation):
 
   - **Performance Issues**: Complex XPath expressions can be slow, particularly with large documents. To overcome this, use more specific paths and avoid wildcards. Optimize by targeting elements with unique attributes.
-  - **[Maintainability](../M/maintainability.md)**: XPaths can be brittle, breaking with UI changes. Use stable identifiers like `id` or `name` when possible. Employing CSS selectors where appropriate can enhance [maintainability](../M/maintainability.md).
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)**: XPaths can be brittle, breaking with UI changes. Use stable identifiers like `id` or `name` when possible. Employing CSS selectors where appropriate can enhance [maintainability](https://naodeng.com.cn/en/wiki/maintainability).
   - **Dynamic Content**: Pages with dynamic content can render XPath ineffective. Utilize functions like `contains()`, `starts-with()`, or `text()` to match dynamic text patterns. For dynamic IDs, partial matches with these functions can help.
   - **Complexity**: Writing complex XPaths can be error-prone. Break down complex queries into simpler, composable parts. Test and validate each part before combining them.
   - **Namespace Handling**: XML namespaces can complicate XPath queries. Use local-name() and namespace-uri() functions to handle namespaces or register namespace prefixes in your XPath engine.
-  - **Cross-Browser Compatibility**: Different browsers may interpret XPath slightly differently. Ensure cross-browser compatibility by testing your XPaths across browsers and using tools like [Selenium](../S/selenium.md) that abstract away some of the differences.
+  - **Cross-Browser Compatibility**: Different browsers may interpret XPath slightly differently. Ensure cross-browser compatibility by testing your XPaths across browsers and using tools like [Selenium](https://naodeng.com.cn/en/wiki/selenium) that abstract away some of the differences.
   - **Learning Curve**: XPath's flexibility and power come with complexity. Invest time in learning and practice. Use tools like XPath helper extensions to build and test queries.
   Here's an example of optimizing an XPath for better performance:
 
@@ -753,19 +752,19 @@ A language designed to extract and manipulate XML document data. Useful for retr
   ```
   //div[@id='content']/table/tbody/tr[td='Specific Text']
   ```
-  By addressing these challenges with strategic approaches, XPath can be a robust tool for locating elements in [test automation](../T/test-automation.md).
+  By addressing these challenges with strategic approaches, XPath can be a robust tool for locating elements in [test automation](https://naodeng.com.cn/en/wiki/test-automation).
 
   - **Performance Issues**: Complex XPath expressions can be slow, particularly with large documents. To overcome this, use more specific paths and avoid wildcards. Optimize by targeting elements with unique attributes.
-  - **[Maintainability](../M/maintainability.md)**: XPaths can be brittle, breaking with UI changes. Use stable identifiers like `id` or `name` when possible. Employing CSS selectors where appropriate can enhance [maintainability](../M/maintainability.md).
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)**: XPaths can be brittle, breaking with UI changes. Use stable identifiers like `id` or `name` when possible. Employing CSS selectors where appropriate can enhance [maintainability](https://naodeng.com.cn/en/wiki/maintainability).
   - **Dynamic Content**: Pages with dynamic content can render XPath ineffective. Utilize functions like `contains()`, `starts-with()`, or `text()` to match dynamic text patterns. For dynamic IDs, partial matches with these functions can help.
   - **Complexity**: Writing complex XPaths can be error-prone. Break down complex queries into simpler, composable parts. Test and validate each part before combining them.
   - **Namespace Handling**: XML namespaces can complicate XPath queries. Use local-name() and namespace-uri() functions to handle namespaces or register namespace prefixes in your XPath engine.
-  - **Cross-Browser Compatibility**: Different browsers may interpret XPath slightly differently. Ensure cross-browser compatibility by testing your XPaths across browsers and using tools like [Selenium](../S/selenium.md) that abstract away some of the differences.
+  - **Cross-Browser Compatibility**: Different browsers may interpret XPath slightly differently. Ensure cross-browser compatibility by testing your XPaths across browsers and using tools like [Selenium](https://naodeng.com.cn/en/wiki/selenium) that abstract away some of the differences.
   - **Learning Curve**: XPath's flexibility and power come with complexity. Invest time in learning and practice. Use tools like XPath helper extensions to build and test queries.
 
 #### How can XPath Query be used to extract data from HTML?
 
-  [XPath Query](../X/xpath-query.md) can be utilized to **extract data from HTML** by targeting specific elements, attributes, or text within the HTML DOM structure. Given that HTML is structurally similar to XML, XPath can be effectively applied to traverse the HTML tree and select nodes of interest.
+  [XPath Query](https://naodeng.com.cn/en/wiki/xpath-query) can be utilized to **extract data from HTML** by targeting specific elements, attributes, or text within the HTML DOM structure. Given that HTML is structurally similar to XML, XPath can be effectively applied to traverse the HTML tree and select nodes of interest.
   To extract data:
 
   1. **Identify the HTML element**
@@ -774,7 +773,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
   2. **Construct an XPath expression**
     that uniquely locates this element within the DOM.
 
-  3. **Execute the [XPath query](../X/xpath-query.md)**
+  3. **Execute the [XPath query](https://naodeng.com.cn/en/wiki/xpath-query)**
     using a tool or library that supports XPath, such as Selenium or lxml in Python.
   For example, to extract the text from a paragraph with a specific `id`, you might use:
 
@@ -786,7 +785,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
   ```
   //a[@class='link-class']/@href
   ```
-  In [test automation](../T/test-automation.md) frameworks like [Selenium](../S/selenium.md), you can use these XPath expressions with methods like `find_element_by_xpath()` to interact with the web elements:
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation) frameworks like [Selenium](https://naodeng.com.cn/en/wiki/selenium), you can use these XPath expressions with methods like `find_element_by_xpath()` to interact with the web elements:
 
   ```
   WebElement element = driver.findElement(By.xpath("//p[@id='unique-paragraph-id']"));
@@ -800,7 +799,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
   2. **Construct an XPath expression**
     that uniquely locates this element within the DOM.
 
-  3. **Execute the [XPath query](../X/xpath-query.md)**
+  3. **Execute the [XPath query](https://naodeng.com.cn/en/wiki/xpath-query)**
     using a tool or library that supports XPath, such as Selenium or lxml in Python.
 
 ### Advanced Concepts
@@ -862,7 +861,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
     ```
     //input[not(@disabled)]
     ```
-  These functions enhance the ability to perform text manipulation, string comparisons, and mathematical calculations directly within XPath queries, making them powerful tools in the arsenal of [test automation](../T/test-automation.md) engineers.
+  These functions enhance the ability to perform text manipulation, string comparisons, and mathematical calculations directly within XPath queries, making them powerful tools in the arsenal of [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers.
 
   - **`normalize-space()`**: Strips leading and trailing whitespaces and replaces sequences of whitespace characters with a single space. Useful for cleaning up text nodes.
 
@@ -923,8 +922,8 @@ A language designed to extract and manipulate XML document data. Useful for retr
   When dealing with XML documents that utilize namespaces, XPath queries must be adjusted to correctly reference the elements within these namespaces. To do this, you must register the namespaces and use a prefix when writing your XPath expressions.
   Here's a brief guide on how to handle namespaces in XPath queries:
 
-  1. **Register the namespace**: Before executing an [XPath query](../X/xpath-query.md), register the namespace with a prefix using the [API](../A/api.md) provided by your XML parsing library. For example, in Java's XPath [API](../A/api.md), you can use a `NamespaceContext` to map prefixes to namespace URIs.
-  2. **Use the prefix in your [XPath query](../X/xpath-query.md)**: Once registered, use the prefix in your XPath expressions to reference elements in the namespace.
+  1. **Register the namespace**: Before executing an [XPath query](https://naodeng.com.cn/en/wiki/xpath-query), register the namespace with a prefix using the [API](https://naodeng.com.cn/en/wiki/api) provided by your XML parsing library. For example, in Java's XPath [API](https://naodeng.com.cn/en/wiki/api), you can use a `NamespaceContext` to map prefixes to namespace URIs.
+  2. **Use the prefix in your [XPath query](https://naodeng.com.cn/en/wiki/xpath-query)**: Once registered, use the prefix in your XPath expressions to reference elements in the namespace.
 
   ```
   <!-- Example XML with namespaces -->
@@ -946,10 +945,10 @@ A language designed to extract and manipulate XML document data. Useful for retr
   String expression = "/root/ns:child";
   Node childNode = (Node) xpath.evaluate(expression, document, XPathConstants.NODE);
   ```
-  Remember, the choice of prefix is arbitrary and does not have to match the prefix used in the XML document; it just needs to be consistent within your [XPath query](../X/xpath-query.md) and namespace registration.
+  Remember, the choice of prefix is arbitrary and does not have to match the prefix used in the XML document; it just needs to be consistent within your [XPath query](https://naodeng.com.cn/en/wiki/xpath-query) and namespace registration.
 
-  1. **Register the namespace**: Before executing an [XPath query](../X/xpath-query.md), register the namespace with a prefix using the [API](../A/api.md) provided by your XML parsing library. For example, in Java's XPath [API](../A/api.md), you can use a `NamespaceContext` to map prefixes to namespace URIs.
-  2. **Use the prefix in your [XPath query](../X/xpath-query.md)**: Once registered, use the prefix in your XPath expressions to reference elements in the namespace.
+  1. **Register the namespace**: Before executing an [XPath query](https://naodeng.com.cn/en/wiki/xpath-query), register the namespace with a prefix using the [API](https://naodeng.com.cn/en/wiki/api) provided by your XML parsing library. For example, in Java's XPath [API](https://naodeng.com.cn/en/wiki/api), you can use a `NamespaceContext` to map prefixes to namespace URIs.
+  2. **Use the prefix in your [XPath query](https://naodeng.com.cn/en/wiki/xpath-query)**: Once registered, use the prefix in your XPath expressions to reference elements in the namespace.
   1. **Write the XPath expression** : With the namespace registered, you can now write the XPath expression using the prefix.
 
 #### What is XPath Injection and how can it be prevented?
@@ -959,7 +958,7 @@ A language designed to extract and manipulate XML document data. Useful for retr
 
   - **Input Validation**: Ensure input conforms to expected formats using regular expressions or validation libraries.
   - **Sanitize Input**: Remove or encode potentially dangerous characters before including them in XPath queries.
-  - **Parameterized Queries**: Use [APIs](../A/api.md) that support parameterization, which separates the query structure from input values.
+  - **Parameterized Queries**: Use [APIs](https://naodeng.com.cn/en/wiki/api) that support parameterization, which separates the query structure from input values.
 
     ```
     // Example using a safe parameterized API
@@ -970,11 +969,11 @@ A language designed to extract and manipulate XML document data. Useful for retr
   - **Least Privilege**: Restrict XML data access rights to the minimum necessary for the application's functionality.
   - **Security Libraries**: Utilize libraries that provide secure methods for creating XPath queries.
   - **Error Handling**: Implement secure error handling that does not expose sensitive information, even when an XPath Injection attempt is detected.
-  By combining these strategies, you can significantly reduce the risk of XPath Injection vulnerabilities in your software [test automation](../T/test-automation.md).
+  By combining these strategies, you can significantly reduce the risk of XPath Injection vulnerabilities in your software [test automation](https://naodeng.com.cn/en/wiki/test-automation).
 
   - **Input Validation**: Ensure input conforms to expected formats using regular expressions or validation libraries.
   - **Sanitize Input**: Remove or encode potentially dangerous characters before including them in XPath queries.
-  - **Parameterized Queries**: Use [APIs](../A/api.md) that support parameterization, which separates the query structure from input values.
+  - **Parameterized Queries**: Use [APIs](https://naodeng.com.cn/en/wiki/api) that support parameterization, which separates the query structure from input values.
 
     ```
     // Example using a safe parameterized API
@@ -1020,8 +1019,8 @@ A language designed to extract and manipulate XML document data. Useful for retr
 
 #### How can XPath Query be used in conjunction with other querying languages like SQL?
 
-  [XPath Query](../X/xpath-query.md) can be integrated with [SQL](../S/sql.md) when dealing with XML data types in [databases](../D/database.md) that support XML querying and manipulation. This integration allows for the extraction and manipulation of XML data stored within [SQL](../S/sql.md) [databases](../D/database.md).
-  For instance, in Microsoft [SQL](../S/sql.md) Server, you can use the `nodes()` method to shred XML data into relational rows and columns, and then apply XPath expressions to target specific elements or attributes. Here's an example of how you might combine XPath with [SQL](../S/sql.md):
+  [XPath Query](https://naodeng.com.cn/en/wiki/xpath-query) can be integrated with [SQL](https://naodeng.com.cn/en/wiki/sql) when dealing with XML data types in [databases](https://naodeng.com.cn/en/wiki/database) that support XML querying and manipulation. This integration allows for the extraction and manipulation of XML data stored within [SQL](https://naodeng.com.cn/en/wiki/sql) [databases](https://naodeng.com.cn/en/wiki/database).
+  For instance, in Microsoft [SQL](https://naodeng.com.cn/en/wiki/sql) Server, you can use the `nodes()` method to shred XML data into relational rows and columns, and then apply XPath expressions to target specific elements or attributes. Here's an example of how you might combine XPath with [SQL](https://naodeng.com.cn/en/wiki/sql):
 
   ```
   SELECT
@@ -1031,5 +1030,5 @@ A language designed to extract and manipulate XML document data. Useful for retr
   CROSS APPLY
       Tbl.XmlColumn.nodes('XPath_Node_Selection') as T(XCol)
   ```
-  In this [SQL](../S/sql.md) query, `XPath_Expression` is where you would place your [XPath query](../X/xpath-query.md) to filter or select specific XML data, and `XPath_Node_Selection` is the XPath expression to identify the nodes that will be represented as rows.
-  By leveraging XPath within [SQL](../S/sql.md) queries, you can perform complex queries that involve both relational and hierarchical data structures, providing a powerful tool for scenarios where XML data needs to be queried in conjunction with traditional [SQL](../S/sql.md) queries. This is particularly useful in scenarios like reporting, data migration, or integration tasks where XML data is stored in [SQL](../S/sql.md) [databases](../D/database.md).
+  In this [SQL](https://naodeng.com.cn/en/wiki/sql) query, `XPath_Expression` is where you would place your [XPath query](https://naodeng.com.cn/en/wiki/xpath-query) to filter or select specific XML data, and `XPath_Node_Selection` is the XPath expression to identify the nodes that will be represented as rows.
+  By leveraging XPath within [SQL](https://naodeng.com.cn/en/wiki/sql) queries, you can perform complex queries that involve both relational and hierarchical data structures, providing a powerful tool for scenarios where XML data needs to be queried in conjunction with traditional [SQL](https://naodeng.com.cn/en/wiki/sql) queries. This is particularly useful in scenarios like reporting, data migration, or integration tasks where XML data is stored in [SQL](https://naodeng.com.cn/en/wiki/sql) [databases](https://naodeng.com.cn/en/wiki/database).

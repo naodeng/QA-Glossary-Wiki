@@ -1,6 +1,5 @@
 # Mock Testing
 
-
 <!-- TOC START -->
 - [Questions about Mock Testing ?](#questions-about-mock-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -37,8 +36,8 @@ Utilizes mock objects to mimic real objects in tests.
 
 #### What is mock testing?
 
-  [Mock testing](../M/mock-testing.md) involves simulating the behavior of real objects with **mock objects** to test the interactions between software components in isolation. Mock objects are configured to return specific values and capture calls they receive.
-  In [mock testing](../M/mock-testing.md), you typically:
+  [Mock testing](https://naodeng.com.cn/en/wiki/mock-testing) involves simulating the behavior of real objects with **mock objects** to test the interactions between software components in isolation. Mock objects are configured to return specific values and capture calls they receive.
+  In [mock testing](https://naodeng.com.cn/en/wiki/mock-testing), you typically:
 
   1. **Design the mock**
     to mimic the behavior of the actual object.
@@ -57,8 +56,8 @@ Utilizes mock objects to mimic real objects in tests.
   const mockObject = new Mock<SomeDependency>();
   mockObject.Setup(method => method.SomeFunction()).Returns(someValue);
   ```
-  Common tools include **Mockito**, **Moq**, **Sinon.js**, and **[Jest](../J/jest.md)**.
-  For a [database](../D/database.md), you'd mock the data access layer or repository, setting up expected queries and their results:
+  Common tools include **Mockito**, **Moq**, **Sinon.js**, and **[Jest](https://naodeng.com.cn/en/wiki/jest)**.
+  For a [database](https://naodeng.com.cn/en/wiki/database), you'd mock the data access layer or repository, setting up expected queries and their results:
 
   ```
   const mockRepository = new Mock<IDatabaseRepository>();
@@ -69,10 +68,10 @@ Utilizes mock objects to mimic real objects in tests.
   - Clear separation of test cases.
   - Precise expectation configuration to avoid false positives/negatives.
   - Cleanup and reset of mock states between tests.
-  Challenges like over-mocking or maintaining complex mock [setups](../S/setup.md) are mitigated by focusing on essential interactions and using factory methods for mock creation.
+  Challenges like over-mocking or maintaining complex mock [setups](https://naodeng.com.cn/en/wiki/setup) are mitigated by focusing on essential interactions and using factory methods for mock creation.
   To ensure effectiveness, regularly review and refactor mock tests to align with current system behavior and requirements.
-  Integrate mock tests into CI/CD by including them in the [test suite](../T/test-suite.md) that runs on each build or deployment.
-  In TDD, [mock testing](../M/mock-testing.md) is used to test-drive the design of interfaces and interactions before implementing the actual components.
+  Integrate mock tests into CI/CD by including them in the [test suite](https://naodeng.com.cn/en/wiki/test-suite) that runs on each build or deployment.
+  In TDD, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) is used to test-drive the design of interfaces and interactions before implementing the actual components.
 
   1. **Design the mock**
     to mimic the behavior of the actual object.
@@ -92,22 +91,22 @@ Utilizes mock objects to mimic real objects in tests.
 
 #### Why is mock testing important in software development?
 
-  [Mock testing](../M/mock-testing.md) is crucial in software development for isolating the system under test, ensuring that tests are not affected by external dependencies or stateful components. By using mock objects, developers can simulate the behavior of complex, real-world systems, which may be unavailable or difficult to configure for testing purposes. This isolation helps in pinpointing defects within the unit of code being tested, leading to more reliable and maintainable code.
-  Additionally, [mock testing](../M/mock-testing.md) facilitates **testing in parallel**, allowing different aspects of the system to be tested simultaneously without waiting for actual dependencies to be built or become available. This can significantly **reduce development time** and **increase efficiency**.
-  Mocking also supports **behavior [verification](../V/verification.md)**, ensuring that the system under test interacts with its dependencies in the expected manner. This is particularly important in a **service-oriented architecture** where interactions between components are critical.
-  Moreover, [mock testing](../M/mock-testing.md) can lead to **cost savings** by reducing the need for setting up and maintaining complex [test environments](../T/test-environment.md). It also allows for **reproducible tests**, as mock objects can be configured to return consistent results, eliminating flakiness caused by external systems.
-  In summary, [mock testing](../M/mock-testing.md) is a powerful technique that enhances test reliability, reduces coupling with external systems, and accelerates the development process by allowing more focused and controlled testing scenarios.
+  [Mock testing](https://naodeng.com.cn/en/wiki/mock-testing) is crucial in software development for isolating the system under test, ensuring that tests are not affected by external dependencies or stateful components. By using mock objects, developers can simulate the behavior of complex, real-world systems, which may be unavailable or difficult to configure for testing purposes. This isolation helps in pinpointing defects within the unit of code being tested, leading to more reliable and maintainable code.
+  Additionally, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) facilitates **testing in parallel**, allowing different aspects of the system to be tested simultaneously without waiting for actual dependencies to be built or become available. This can significantly **reduce development time** and **increase efficiency**.
+  Mocking also supports **behavior [verification](https://naodeng.com.cn/en/wiki/verification)**, ensuring that the system under test interacts with its dependencies in the expected manner. This is particularly important in a **service-oriented architecture** where interactions between components are critical.
+  Moreover, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) can lead to **cost savings** by reducing the need for setting up and maintaining complex [test environments](https://naodeng.com.cn/en/wiki/test-environment). It also allows for **reproducible tests**, as mock objects can be configured to return consistent results, eliminating flakiness caused by external systems.
+  In summary, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) is a powerful technique that enhances test reliability, reduces coupling with external systems, and accelerates the development process by allowing more focused and controlled testing scenarios.
 
 #### What are the key differences between mock testing and other types of testing?
 
-  [Mock testing](../M/mock-testing.md) differs from other types of testing in several key ways:
+  [Mock testing](https://naodeng.com.cn/en/wiki/mock-testing) differs from other types of testing in several key ways:
 
   - **Isolation**: Mocks isolate the unit of code being tested by simulating dependencies, ensuring that tests do not fail due to issues in external systems or components.
   - **Control**: Testers have complete control over the behavior of mock objects, allowing them to simulate various scenarios, including edge cases and error conditions that may be difficult to reproduce with real dependencies.
-  - **Speed**: Tests using mocks run faster because they avoid the overhead of setting up and interacting with actual dependencies, such as [databases](../D/database.md) or web services.
+  - **Speed**: Tests using mocks run faster because they avoid the overhead of setting up and interacting with actual dependencies, such as [databases](https://naodeng.com.cn/en/wiki/database) or web services.
   - **Determinism**: Mocks provide deterministic behavior, ensuring that tests produce the same results every time they are run, which is not always the case with real dependencies that can have variable states.
   - **Focus**: By using mocks, tests focus solely on the code's logic rather than the integration with other systems, which is covered by integration tests.
-  Here's an example of creating a mock in TypeScript using [Jest](../J/jest.md):
+  Here's an example of creating a mock in TypeScript using [Jest](https://naodeng.com.cn/en/wiki/jest):
 
   ```
   import { myFunction } from './myModule';
@@ -120,49 +119,49 @@ Utilizes mock objects to mimic real objects in tests.
     expect(myFunction()).toBe('mocked value');
   });
   ```
-  In contrast, other testing types, such as **[integration testing](../I/integration-testing.md)**, **[system testing](../S/system-testing.md)**, or **[end-to-end testing](../E/end-to-end-testing.md)**, involve working with real systems and aim to test how different parts of the application interact with each other or with the system as a whole.
+  In contrast, other testing types, such as **[integration testing](https://naodeng.com.cn/en/wiki/integration-testing)**, **[system testing](https://naodeng.com.cn/en/wiki/system-testing)**, or **[end-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**, involve working with real systems and aim to test how different parts of the application interact with each other or with the system as a whole.
 
   - **Isolation**: Mocks isolate the unit of code being tested by simulating dependencies, ensuring that tests do not fail due to issues in external systems or components.
   - **Control**: Testers have complete control over the behavior of mock objects, allowing them to simulate various scenarios, including edge cases and error conditions that may be difficult to reproduce with real dependencies.
-  - **Speed**: Tests using mocks run faster because they avoid the overhead of setting up and interacting with actual dependencies, such as [databases](../D/database.md) or web services.
+  - **Speed**: Tests using mocks run faster because they avoid the overhead of setting up and interacting with actual dependencies, such as [databases](https://naodeng.com.cn/en/wiki/database) or web services.
   - **Determinism**: Mocks provide deterministic behavior, ensuring that tests produce the same results every time they are run, which is not always the case with real dependencies that can have variable states.
   - **Focus**: By using mocks, tests focus solely on the code's logic rather than the integration with other systems, which is covered by integration tests.
 
 #### How does mock testing improve the quality of software?
 
-  [Mock testing](../M/mock-testing.md) enhances [software quality](../S/software-quality.md) by allowing for **isolated testing** of components, ensuring that each part functions correctly without the interference of external dependencies. This isolation helps in identifying defects within the unit itself, rather than in the interactions with external systems, which can be tested separately in integration tests.
-  By using mocks, you can simulate various scenarios, including **error conditions** and **edge cases**, that might be difficult to reproduce with actual dependencies. This thoroughness increases [test coverage](../T/test-coverage.md) and improves the robustness of the software.
+  [Mock testing](https://naodeng.com.cn/en/wiki/mock-testing) enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by allowing for **isolated testing** of components, ensuring that each part functions correctly without the interference of external dependencies. This isolation helps in identifying defects within the unit itself, rather than in the interactions with external systems, which can be tested separately in integration tests.
+  By using mocks, you can simulate various scenarios, including **error conditions** and **edge cases**, that might be difficult to reproduce with actual dependencies. This thoroughness increases [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and improves the robustness of the software.
   Mocks also contribute to a **faster and more reliable** testing process. Since external systems are not involved, tests run quicker and are not prone to failures caused by issues in those systems, such as network latency or downtime.
-  Furthermore, [mock testing](../M/mock-testing.md) supports **parallel development**. Teams can work on different components simultaneously without waiting for actual implementations of the dependencies to be completed.
-  Finally, [mock testing](../M/mock-testing.md) can lead to better **design decisions**, as it often requires clear interfaces and separation of concerns to be effectively implemented. This can lead to a more modular and maintainable codebase, which is a hallmark of high-quality software.
-  In summary, [mock testing](../M/mock-testing.md) improves [software quality](../S/software-quality.md) by enabling isolated, thorough, and efficient testing, fostering parallel development, and encouraging good design practices.
+  Furthermore, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) supports **parallel development**. Teams can work on different components simultaneously without waiting for actual implementations of the dependencies to be completed.
+  Finally, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) can lead to better **design decisions**, as it often requires clear interfaces and separation of concerns to be effectively implemented. This can lead to a more modular and maintainable codebase, which is a hallmark of high-quality software.
+  In summary, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) improves [software quality](https://naodeng.com.cn/en/wiki/software-quality) by enabling isolated, thorough, and efficient testing, fostering parallel development, and encouraging good design practices.
 
 #### What are the basic principles of mock testing?
 
-  [Mock testing](../M/mock-testing.md) relies on several basic principles to ensure effective simulation and isolation of components during testing:
+  [Mock testing](https://naodeng.com.cn/en/wiki/mock-testing) relies on several basic principles to ensure effective simulation and isolation of components during testing:
 
   - **Isolation**: Mock objects are used to isolate the system under test from external dependencies or components that are not part of the current test, ensuring that tests are not affected by external factors.
   - **Simulation**: Mocks simulate the behavior of real objects, allowing testers to define expected interactions and outcomes, which helps in testing the system's reaction to various conditions.
-  - **Behavior [Verification](../V/verification.md)**: Tests using mocks often focus on verifying that the system under test interacts with the mocks in the expected ways, such as calling methods with the correct parameters.
+  - **Behavior [Verification](https://naodeng.com.cn/en/wiki/verification)**: Tests using mocks often focus on verifying that the system under test interacts with the mocks in the expected ways, such as calling methods with the correct parameters.
   - **Configurability**: Mocks are highly configurable, allowing testers to set up different scenarios by specifying return values, throwing exceptions, or tracking interactions.
-  - **Repeatability**: Mock tests should be repeatable with consistent results, which is crucial for [regression testing](../R/regression-testing.md) and continuous integration.
+  - **Repeatability**: Mock tests should be repeatable with consistent results, which is crucial for [regression testing](https://naodeng.com.cn/en/wiki/regression-testing) and continuous integration.
   - **Simplicity**: By using mocks, tests can avoid the complexity of setting up and tearing down real dependencies, leading to simpler and faster tests.
-  - **Focus on Unit of Work**: [Mock testing](../M/mock-testing.md) encourages a focus on the unit of work by testing it in isolation, which promotes better design and more maintainable code.
-  Remember, [mock testing](../M/mock-testing.md) should be combined with other testing methods to ensure comprehensive coverage, as it does not test the integration with real dependencies.
+  - **Focus on Unit of Work**: [Mock testing](https://naodeng.com.cn/en/wiki/mock-testing) encourages a focus on the unit of work by testing it in isolation, which promotes better design and more maintainable code.
+  Remember, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) should be combined with other testing methods to ensure comprehensive coverage, as it does not test the integration with real dependencies.
 
   - **Isolation**: Mock objects are used to isolate the system under test from external dependencies or components that are not part of the current test, ensuring that tests are not affected by external factors.
   - **Simulation**: Mocks simulate the behavior of real objects, allowing testers to define expected interactions and outcomes, which helps in testing the system's reaction to various conditions.
-  - **Behavior [Verification](../V/verification.md)**: Tests using mocks often focus on verifying that the system under test interacts with the mocks in the expected ways, such as calling methods with the correct parameters.
+  - **Behavior [Verification](https://naodeng.com.cn/en/wiki/verification)**: Tests using mocks often focus on verifying that the system under test interacts with the mocks in the expected ways, such as calling methods with the correct parameters.
   - **Configurability**: Mocks are highly configurable, allowing testers to set up different scenarios by specifying return values, throwing exceptions, or tracking interactions.
-  - **Repeatability**: Mock tests should be repeatable with consistent results, which is crucial for [regression testing](../R/regression-testing.md) and continuous integration.
+  - **Repeatability**: Mock tests should be repeatable with consistent results, which is crucial for [regression testing](https://naodeng.com.cn/en/wiki/regression-testing) and continuous integration.
   - **Simplicity**: By using mocks, tests can avoid the complexity of setting up and tearing down real dependencies, leading to simpler and faster tests.
-  - **Focus on Unit of Work**: [Mock testing](../M/mock-testing.md) encourages a focus on the unit of work by testing it in isolation, which promotes better design and more maintainable code.
+  - **Focus on Unit of Work**: [Mock testing](https://naodeng.com.cn/en/wiki/mock-testing) encourages a focus on the unit of work by testing it in isolation, which promotes better design and more maintainable code.
 
 ### Implementation
 
 #### How is mock testing implemented in a software development project?
 
-  [Mock testing](../M/mock-testing.md) is implemented in a software development project through a series of strategic steps that integrate mock objects into the testing framework. Here's a concise guide:
+  [Mock testing](https://naodeng.com.cn/en/wiki/mock-testing) is implemented in a software development project through a series of strategic steps that integrate mock objects into the testing framework. Here's a concise guide:
 
   1. **Identify dependencies**
     in the system under test (SUT) that need to be isolated for unit testing.
@@ -181,7 +180,7 @@ Utilizes mock objects to mimic real objects in tests.
   1. **Inject mock objects**
     into the SUT, often through constructor injection, setter injection, or a dependency injection framework.
 
-  2. **Write [test cases](../T/test-case.md)**
+  2. **Write [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that focus on the SUT's behavior, utilizing mock objects to control the test environment.
 
   3. **Verify interactions**
@@ -197,7 +196,7 @@ Utilizes mock objects to mimic real objects in tests.
 
   2. **Integrate mock tests**
     into the automated test suite to run as part of the regular build process, ensuring they contribute to CI/CD feedback loops.
-  By following these steps, [mock testing](../M/mock-testing.md) becomes a seamless part of the development cycle, allowing for early detection of issues and continuous validation of system behavior in isolation from external dependencies.
+  By following these steps, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) becomes a seamless part of the development cycle, allowing for early detection of issues and continuous validation of system behavior in isolation from external dependencies.
 
   1. **Identify dependencies**
     in the system under test (SUT) that need to be isolated for unit testing.
@@ -211,7 +210,7 @@ Utilizes mock objects to mimic real objects in tests.
   1. **Inject mock objects**
     into the SUT, often through constructor injection, setter injection, or a dependency injection framework.
 
-  2. **Write [test cases](../T/test-case.md)**
+  2. **Write [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that focus on the SUT's behavior, utilizing mock objects to control the test environment.
 
   3. **Verify interactions**
@@ -227,9 +226,9 @@ Utilizes mock objects to mimic real objects in tests.
 
   Creating a mock object typically involves the following steps:
 
-  1. **Identify the dependency** you want to replace with a mock. This could be an external service, [database](../D/database.md), or any other component your system interacts with.
+  1. **Identify the dependency** you want to replace with a mock. This could be an external service, [database](https://naodeng.com.cn/en/wiki/database), or any other component your system interacts with.
   2. **Define the interface** or class of the dependency. Mocks are created based on the same interface that the real objects implement.
-  3. **Use a mocking framework** to create an instance of the mock object. Popular frameworks include Mockito for Java, Moq for .NET, and [Jest](../J/jest.md) for JavaScript.
+  3. **Use a mocking framework** to create an instance of the mock object. Popular frameworks include Mockito for Java, Moq for .NET, and [Jest](https://naodeng.com.cn/en/wiki/jest) for JavaScript.
 
     ```
     MyDependency mockDependency = Mockito.mock(MyDependency.class);
@@ -250,9 +249,9 @@ Utilizes mock objects to mimic real objects in tests.
     ```
 
   8. **Run your test** and check the results. If the test fails, investigate and correct the behavior of the system under test or update the mock configuration as needed.
-  1. **Identify the dependency** you want to replace with a mock. This could be an external service, [database](../D/database.md), or any other component your system interacts with.
+  1. **Identify the dependency** you want to replace with a mock. This could be an external service, [database](https://naodeng.com.cn/en/wiki/database), or any other component your system interacts with.
   2. **Define the interface** or class of the dependency. Mocks are created based on the same interface that the real objects implement.
-  3. **Use a mocking framework** to create an instance of the mock object. Popular frameworks include Mockito for Java, Moq for .NET, and [Jest](../J/jest.md) for JavaScript.
+  3. **Use a mocking framework** to create an instance of the mock object. Popular frameworks include Mockito for Java, Moq for .NET, and [Jest](https://naodeng.com.cn/en/wiki/jest) for JavaScript.
 
     ```
     MyDependency mockDependency = Mockito.mock(MyDependency.class);
@@ -276,7 +275,7 @@ Utilizes mock objects to mimic real objects in tests.
 
 #### What are some common tools used for mock testing?
 
-  Common tools for [mock testing](../M/mock-testing.md) include:
+  Common tools for [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) include:
 
   - **Mockito**: A popular Java mocking framework that allows you to create and configure mock objects. Usage example:
 
@@ -284,13 +283,13 @@ Utilizes mock objects to mimic real objects in tests.
     List mockedList = Mockito.mock(List.class);
     ```
 
-  - **Moq**: Widely used in .NET for creating mock objects with a fluent [API](../A/api.md). Example:
+  - **Moq**: Widely used in .NET for creating mock objects with a fluent [API](https://naodeng.com.cn/en/wiki/api). Example:
 
     ```
     var mock = new Mock<IService>();
     ```
 
-  - **Sinon.js**: A versatile mocking library for JavaScript, suitable for [Node.js](../N/node-js.md) and browser environments. Example:
+  - **Sinon.js**: A versatile mocking library for JavaScript, suitable for [Node.js](https://naodeng.com.cn/en/wiki/node-js) and browser environments. Example:
 
     ```
     const sinon = require('sinon');
@@ -310,7 +309,7 @@ Utilizes mock objects to mimic real objects in tests.
     mock_model = double('Model')
     ```
 
-  - **[Jest](../J/jest.md)**: Provides a built-in mocking library for JavaScript testing, particularly React applications. Example:
+  - **[Jest](https://naodeng.com.cn/en/wiki/jest)**: Provides a built-in mocking library for JavaScript testing, particularly React applications. Example:
 
     ```
     jest.mock('module_name');
@@ -335,13 +334,13 @@ Utilizes mock objects to mimic real objects in tests.
     List mockedList = Mockito.mock(List.class);
     ```
 
-  - **Moq**: Widely used in .NET for creating mock objects with a fluent [API](../A/api.md). Example:
+  - **Moq**: Widely used in .NET for creating mock objects with a fluent [API](https://naodeng.com.cn/en/wiki/api). Example:
 
     ```
     var mock = new Mock<IService>();
     ```
 
-  - **Sinon.js**: A versatile mocking library for JavaScript, suitable for [Node.js](../N/node-js.md) and browser environments. Example:
+  - **Sinon.js**: A versatile mocking library for JavaScript, suitable for [Node.js](https://naodeng.com.cn/en/wiki/node-js) and browser environments. Example:
 
     ```
     const sinon = require('sinon');
@@ -361,7 +360,7 @@ Utilizes mock objects to mimic real objects in tests.
     mock_model = double('Model')
     ```
 
-  - **[Jest](../J/jest.md)**: Provides a built-in mocking library for JavaScript testing, particularly React applications. Example:
+  - **[Jest](https://naodeng.com.cn/en/wiki/jest)**: Provides a built-in mocking library for JavaScript testing, particularly React applications. Example:
 
     ```
     jest.mock('module_name');
@@ -381,11 +380,11 @@ Utilizes mock objects to mimic real objects in tests.
 
 #### How can you create a mock test for a database?
 
-  To create a mock test for a [database](../D/database.md), follow these steps:
+  To create a mock test for a [database](https://naodeng.com.cn/en/wiki/database), follow these steps:
 
-  1. **Identify the [database](../D/database.md) operations** your application performs that need to be tested.
+  1. **Identify the [database](https://naodeng.com.cn/en/wiki/database) operations** your application performs that need to be tested.
   2. **Choose a mocking framework** compatible with your testing environment, such as Mockito for Java or Moq for .NET.
-  3. **Create a mock [database](../D/database.md) interface** that represents the actual [database](../D/database.md) operations. This interface should mimic the behavior of the real [database](../D/database.md) service.
+  3. **Create a mock [database](https://naodeng.com.cn/en/wiki/database) interface** that represents the actual [database](https://naodeng.com.cn/en/wiki/database) operations. This interface should mimic the behavior of the real [database](https://naodeng.com.cn/en/wiki/database) service.
 
     ```
     public interface DatabaseService {
@@ -402,8 +401,8 @@ Utilizes mock objects to mimic real objects in tests.
     doThrow(new DatabaseException()).when(mockDatabase).updateUser(any(User.class));
     ```
 
-  5. **Inject the mock object** into the system under test, replacing the real [database](../D/database.md) dependency.
-  6. **Write your [test cases](../T/test-case.md)** using the mock object to verify the system's behavior with controlled, predictable [database](../D/database.md) interactions.
+  5. **Inject the mock object** into the system under test, replacing the real [database](https://naodeng.com.cn/en/wiki/database) dependency.
+  6. **Write your [test cases](https://naodeng.com.cn/en/wiki/test-case)** using the mock object to verify the system's behavior with controlled, predictable [database](https://naodeng.com.cn/en/wiki/database) interactions.
 
     ```
     @Test
@@ -413,12 +412,12 @@ Utilizes mock objects to mimic real objects in tests.
     }
     ```
 
-  7. **Run your tests** to ensure they pass with the mock [database](../D/database.md). Adjust the mock's behavior as necessary to cover different scenarios.
-  By isolating the system from the real [database](../D/database.md), you can test various data conditions and error cases without relying on an actual [database](../D/database.md), leading to faster and more reliable tests.
+  7. **Run your tests** to ensure they pass with the mock [database](https://naodeng.com.cn/en/wiki/database). Adjust the mock's behavior as necessary to cover different scenarios.
+  By isolating the system from the real [database](https://naodeng.com.cn/en/wiki/database), you can test various data conditions and error cases without relying on an actual [database](https://naodeng.com.cn/en/wiki/database), leading to faster and more reliable tests.
 
-  1. **Identify the [database](../D/database.md) operations** your application performs that need to be tested.
+  1. **Identify the [database](https://naodeng.com.cn/en/wiki/database) operations** your application performs that need to be tested.
   2. **Choose a mocking framework** compatible with your testing environment, such as Mockito for Java or Moq for .NET.
-  3. **Create a mock [database](../D/database.md) interface** that represents the actual [database](../D/database.md) operations. This interface should mimic the behavior of the real [database](../D/database.md) service.
+  3. **Create a mock [database](https://naodeng.com.cn/en/wiki/database) interface** that represents the actual [database](https://naodeng.com.cn/en/wiki/database) operations. This interface should mimic the behavior of the real [database](https://naodeng.com.cn/en/wiki/database) service.
 
     ```
     public interface DatabaseService {
@@ -435,8 +434,8 @@ Utilizes mock objects to mimic real objects in tests.
     doThrow(new DatabaseException()).when(mockDatabase).updateUser(any(User.class));
     ```
 
-  5. **Inject the mock object** into the system under test, replacing the real [database](../D/database.md) dependency.
-  6. **Write your [test cases](../T/test-case.md)** using the mock object to verify the system's behavior with controlled, predictable [database](../D/database.md) interactions.
+  5. **Inject the mock object** into the system under test, replacing the real [database](https://naodeng.com.cn/en/wiki/database) dependency.
+  6. **Write your [test cases](https://naodeng.com.cn/en/wiki/test-case)** using the mock object to verify the system's behavior with controlled, predictable [database](https://naodeng.com.cn/en/wiki/database) interactions.
 
     ```
     @Test
@@ -446,11 +445,11 @@ Utilizes mock objects to mimic real objects in tests.
     }
     ```
 
-  7. **Run your tests** to ensure they pass with the mock [database](../D/database.md). Adjust the mock's behavior as necessary to cover different scenarios.
+  7. **Run your tests** to ensure they pass with the mock [database](https://naodeng.com.cn/en/wiki/database). Adjust the mock's behavior as necessary to cover different scenarios.
 
 #### What are the best practices for implementing mock testing?
 
-  Best practices for implementing [mock testing](../M/mock-testing.md) include:
+  Best practices for implementing [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) include:
 
   - **Designing for testability** : Ensure your code is modular to easily isolate components for mocking.
   - **Using clear, descriptive naming conventions** : Name mocks and their methods to reflect their purpose and behavior.
@@ -495,7 +494,7 @@ Utilizes mock objects to mimic real objects in tests.
 
 #### What are some common challenges faced during mock testing?
 
-  Common challenges in [mock testing](../M/mock-testing.md) include:
+  Common challenges in [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) include:
 
   - **Over-mocking** : Excessive use of mocks can lead to tests that are brittle and overly sensitive to changes in implementation, making them difficult to maintain.
   - **Complexity** : Creating mocks for complex dependencies or systems with intricate behavior can be time-consuming and error-prone.
@@ -508,7 +507,7 @@ Utilizes mock objects to mimic real objects in tests.
 
   - **Minimal Mocking** : Only mock what is necessary to isolate the unit of work being tested.
   - **Clear Abstractions** : Design clear interfaces for components, making them easier to mock.
-  - **[Incremental Testing](../I/incremental-testing.md)** : Complement mock testing with integration tests to catch interaction defects.
+  - **[Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)** : Complement mock testing with integration tests to catch interaction defects.
   - **Test Isolation** : Ensure each test is independent and manages its own mock state.
   - **Documentation** : Document complex mock setups to aid understanding.
   - **Tool Proficiency** : Stay updated with the capabilities and best practices of the chosen mocking tools.
@@ -521,93 +520,93 @@ Utilizes mock objects to mimic real objects in tests.
   - **Tool Limitations** : Mocking frameworks and tools may have limitations that prevent certain behaviors from being mocked, or they may not support the latest language features or frameworks.
   - **Minimal Mocking** : Only mock what is necessary to isolate the unit of work being tested.
   - **Clear Abstractions** : Design clear interfaces for components, making them easier to mock.
-  - **[Incremental Testing](../I/incremental-testing.md)** : Complement mock testing with integration tests to catch interaction defects.
+  - **[Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)** : Complement mock testing with integration tests to catch interaction defects.
   - **Test Isolation** : Ensure each test is independent and manages its own mock state.
   - **Documentation** : Document complex mock setups to aid understanding.
   - **Tool Proficiency** : Stay updated with the capabilities and best practices of the chosen mocking tools.
 
 #### How can these challenges be overcome?
 
-  Overcoming challenges in [mock testing](../M/mock-testing.md) requires a strategic approach and attention to detail. Here are some strategies:
+  Overcoming challenges in [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) requires a strategic approach and attention to detail. Here are some strategies:
 
   - **Refactor Code for Testability**: Ensure that the codebase is designed with testing in mind, which often means using design patterns that support dependency injection and loose coupling.
   - **Use Abstraction Layers**: Create abstraction layers for external services and dependencies. This allows for easier mocking and reduces the complexity of tests.
   - **Invest in Quality Mocking Frameworks**: Utilize robust mocking frameworks that are well-documented and widely supported. This can simplify the creation and management of mock objects.
-  - **Regularly Review and Update Mocks**: Keep mock objects and responses up-to-date with the actual behavior of the dependencies they represent to avoid [false positives](../F/false-positive.md) or negatives.
-  - **Automate Mock Data Generation**: Implement tools or scripts to automatically generate mock data, ensuring a diverse and realistic set of [test cases](../T/test-case.md).
-  - **Integrate Mocks into [Automated Testing](../A/automated-testing.md) Pipelines**: Ensure that mock tests are part of the [automated testing](../A/automated-testing.md) suite and are executed as part of the CI/CD process.
-  - **Monitor [Test Coverage](../T/test-coverage.md)**: Use [code coverage](../C/code-coverage.md) tools to identify areas that are not being tested and adjust mock tests accordingly.
-  - **Educate the Team**: Provide training and resources to the team on best practices and the proper use of [mock testing](../M/mock-testing.md) to avoid common pitfalls.
+  - **Regularly Review and Update Mocks**: Keep mock objects and responses up-to-date with the actual behavior of the dependencies they represent to avoid [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives.
+  - **Automate Mock Data Generation**: Implement tools or scripts to automatically generate mock data, ensuring a diverse and realistic set of [test cases](https://naodeng.com.cn/en/wiki/test-case).
+  - **Integrate Mocks into [Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing) Pipelines**: Ensure that mock tests are part of the [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) suite and are executed as part of the CI/CD process.
+  - **Monitor [Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Use [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools to identify areas that are not being tested and adjust mock tests accordingly.
+  - **Educate the Team**: Provide training and resources to the team on best practices and the proper use of [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) to avoid common pitfalls.
   - **Peer Reviews**: Conduct code reviews for test code, including mock tests, to catch issues early and share knowledge within the team.
   - **Balance Mocking with End-to-End Tests**: Complement mock tests with end-to-end tests to ensure that the system works as expected in a production-like environment.
-  By implementing these strategies, [test automation](../T/test-automation.md) engineers can mitigate the challenges associated with [mock testing](../M/mock-testing.md) and enhance the reliability and effectiveness of their [test suites](../T/test-suite.md).
+  By implementing these strategies, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can mitigate the challenges associated with [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) and enhance the reliability and effectiveness of their [test suites](https://naodeng.com.cn/en/wiki/test-suite).
 
   - **Refactor Code for Testability**: Ensure that the codebase is designed with testing in mind, which often means using design patterns that support dependency injection and loose coupling.
   - **Use Abstraction Layers**: Create abstraction layers for external services and dependencies. This allows for easier mocking and reduces the complexity of tests.
   - **Invest in Quality Mocking Frameworks**: Utilize robust mocking frameworks that are well-documented and widely supported. This can simplify the creation and management of mock objects.
-  - **Regularly Review and Update Mocks**: Keep mock objects and responses up-to-date with the actual behavior of the dependencies they represent to avoid [false positives](../F/false-positive.md) or negatives.
-  - **Automate Mock Data Generation**: Implement tools or scripts to automatically generate mock data, ensuring a diverse and realistic set of [test cases](../T/test-case.md).
-  - **Integrate Mocks into [Automated Testing](../A/automated-testing.md) Pipelines**: Ensure that mock tests are part of the [automated testing](../A/automated-testing.md) suite and are executed as part of the CI/CD process.
-  - **Monitor [Test Coverage](../T/test-coverage.md)**: Use [code coverage](../C/code-coverage.md) tools to identify areas that are not being tested and adjust mock tests accordingly.
-  - **Educate the Team**: Provide training and resources to the team on best practices and the proper use of [mock testing](../M/mock-testing.md) to avoid common pitfalls.
+  - **Regularly Review and Update Mocks**: Keep mock objects and responses up-to-date with the actual behavior of the dependencies they represent to avoid [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives.
+  - **Automate Mock Data Generation**: Implement tools or scripts to automatically generate mock data, ensuring a diverse and realistic set of [test cases](https://naodeng.com.cn/en/wiki/test-case).
+  - **Integrate Mocks into [Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing) Pipelines**: Ensure that mock tests are part of the [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) suite and are executed as part of the CI/CD process.
+  - **Monitor [Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Use [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools to identify areas that are not being tested and adjust mock tests accordingly.
+  - **Educate the Team**: Provide training and resources to the team on best practices and the proper use of [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) to avoid common pitfalls.
   - **Peer Reviews**: Conduct code reviews for test code, including mock tests, to catch issues early and share knowledge within the team.
   - **Balance Mocking with End-to-End Tests**: Complement mock tests with end-to-end tests to ensure that the system works as expected in a production-like environment.
 
 #### What are some common mistakes made during mock testing?
 
-  Common mistakes during [mock testing](../M/mock-testing.md) include:
+  Common mistakes during [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) include:
 
   - **Overusing mocks**: Relying too heavily on mocks can lead to tests that are fragile and not representative of real-world scenarios. Use mocks sparingly and only when necessary.
   - **Not validating interactions**: Forgetting to verify that the system under test interacts with the mocks as expected can result in missed defects. Always check that the expected methods are called with the correct parameters.
   - **Mocking what you don't own**: Creating mocks for external dependencies not controlled by your team can lead to tests that break when those external systems change. Mock only the components you own or have control over.
-  - **Inadequate mock configuration**: Incorrectly setting up mocks can lead to [false positives](../F/false-positive.md) or negatives. Ensure that mocks are configured to mimic the behavior of the real components accurately.
+  - **Inadequate mock configuration**: Incorrectly setting up mocks can lead to [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives. Ensure that mocks are configured to mimic the behavior of the real components accurately.
   - **Ignoring side effects**: Some methods have side effects that need to be replicated by the mocks. Neglecting these can lead to incomplete tests.
   - **Not updating mocks**: As the codebase evolves, mocks must be updated to reflect changes. Outdated mocks can cause tests to pass incorrectly or fail when they shouldn't.
   - **Over-specifying mocks**: Setting up mocks to expect very specific calls with exact arguments can make tests brittle. Use argument matchers to allow for some flexibility.
-  - **Not isolating tests**: If mock [setup](../S/setup.md) or state is shared between tests, it can lead to inter-test dependencies and unpredictable results. Isolate each [test case](../T/test-case.md) to ensure they run independently.
+  - **Not isolating tests**: If mock [setup](https://naodeng.com.cn/en/wiki/setup) or state is shared between tests, it can lead to inter-test dependencies and unpredictable results. Isolate each [test case](https://naodeng.com.cn/en/wiki/test-case) to ensure they run independently.
   - **Lack of understanding**: Misunderstanding the system being mocked can result in incorrect assumptions and ineffective tests. Gain a thorough understanding of the system before mocking it.
   - **Overusing mocks**: Relying too heavily on mocks can lead to tests that are fragile and not representative of real-world scenarios. Use mocks sparingly and only when necessary.
   - **Not validating interactions**: Forgetting to verify that the system under test interacts with the mocks as expected can result in missed defects. Always check that the expected methods are called with the correct parameters.
   - **Mocking what you don't own**: Creating mocks for external dependencies not controlled by your team can lead to tests that break when those external systems change. Mock only the components you own or have control over.
-  - **Inadequate mock configuration**: Incorrectly setting up mocks can lead to [false positives](../F/false-positive.md) or negatives. Ensure that mocks are configured to mimic the behavior of the real components accurately.
+  - **Inadequate mock configuration**: Incorrectly setting up mocks can lead to [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives. Ensure that mocks are configured to mimic the behavior of the real components accurately.
   - **Ignoring side effects**: Some methods have side effects that need to be replicated by the mocks. Neglecting these can lead to incomplete tests.
   - **Not updating mocks**: As the codebase evolves, mocks must be updated to reflect changes. Outdated mocks can cause tests to pass incorrectly or fail when they shouldn't.
   - **Over-specifying mocks**: Setting up mocks to expect very specific calls with exact arguments can make tests brittle. Use argument matchers to allow for some flexibility.
-  - **Not isolating tests**: If mock [setup](../S/setup.md) or state is shared between tests, it can lead to inter-test dependencies and unpredictable results. Isolate each [test case](../T/test-case.md) to ensure they run independently.
+  - **Not isolating tests**: If mock [setup](https://naodeng.com.cn/en/wiki/setup) or state is shared between tests, it can lead to inter-test dependencies and unpredictable results. Isolate each [test case](https://naodeng.com.cn/en/wiki/test-case) to ensure they run independently.
   - **Lack of understanding**: Misunderstanding the system being mocked can result in incorrect assumptions and ineffective tests. Gain a thorough understanding of the system before mocking it.
 
 #### How can you ensure that your mock tests are effective?
 
   To ensure **mock tests** are effective:
 
-  - **Validate mock configurations**: Ensure that mocks are set up correctly to mimic expected behavior. Incorrect configurations can lead to [false positives](../F/false-positive.md) or negatives.
+  - **Validate mock configurations**: Ensure that mocks are set up correctly to mimic expected behavior. Incorrect configurations can lead to [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives.
   - **Keep mocks up-to-date**: Regularly update mocks to reflect changes in the actual dependencies they represent.
-  - **Verify interactions**: Use [verification](../V/verification.md) methods to check that the system under test interacts with the mocks as expected.
+  - **Verify interactions**: Use [verification](https://naodeng.com.cn/en/wiki/verification) methods to check that the system under test interacts with the mocks as expected.
   - **Isolate the system under test**: Ensure that the mock is the only variable in the test, to accurately assess the system's behavior.
   - **Use realistic data**: Mocks should return data that is representative of what the actual dependency would produce.
   - **Test edge cases**: Include scenarios that test how the system handles exceptional or boundary conditions through mocks.
   - **Review and refactor**: Periodically review mock tests to remove redundancies and improve clarity.
   - **Pair with other test types**: Combine mock tests with other testing methods to cover more scenarios and increase confidence in the system's reliability.
-  - **Automate mock tests**: Integrate mock tests into your automated [test suite](../T/test-suite.md) to run them consistently and catch regressions early.
-  - **Monitor coverage**: Use [code coverage](../C/code-coverage.md) tools to ensure that mock tests are covering the intended code paths.
+  - **Automate mock tests**: Integrate mock tests into your automated [test suite](https://naodeng.com.cn/en/wiki/test-suite) to run them consistently and catch regressions early.
+  - **Monitor coverage**: Use [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools to ensure that mock tests are covering the intended code paths.
   - **Peer review**: Have mock tests reviewed by peers to catch issues that the original author may have overlooked.
-  By following these guidelines, you can enhance the effectiveness of your mock tests and contribute to a more robust and reliable [software testing](../S/software-testing.md) process.
+  By following these guidelines, you can enhance the effectiveness of your mock tests and contribute to a more robust and reliable [software testing](https://naodeng.com.cn/en/wiki/software-testing) process.
 
-  - **Validate mock configurations**: Ensure that mocks are set up correctly to mimic expected behavior. Incorrect configurations can lead to [false positives](../F/false-positive.md) or negatives.
+  - **Validate mock configurations**: Ensure that mocks are set up correctly to mimic expected behavior. Incorrect configurations can lead to [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives.
   - **Keep mocks up-to-date**: Regularly update mocks to reflect changes in the actual dependencies they represent.
-  - **Verify interactions**: Use [verification](../V/verification.md) methods to check that the system under test interacts with the mocks as expected.
+  - **Verify interactions**: Use [verification](https://naodeng.com.cn/en/wiki/verification) methods to check that the system under test interacts with the mocks as expected.
   - **Isolate the system under test**: Ensure that the mock is the only variable in the test, to accurately assess the system's behavior.
   - **Use realistic data**: Mocks should return data that is representative of what the actual dependency would produce.
   - **Test edge cases**: Include scenarios that test how the system handles exceptional or boundary conditions through mocks.
   - **Review and refactor**: Periodically review mock tests to remove redundancies and improve clarity.
   - **Pair with other test types**: Combine mock tests with other testing methods to cover more scenarios and increase confidence in the system's reliability.
-  - **Automate mock tests**: Integrate mock tests into your automated [test suite](../T/test-suite.md) to run them consistently and catch regressions early.
-  - **Monitor coverage**: Use [code coverage](../C/code-coverage.md) tools to ensure that mock tests are covering the intended code paths.
+  - **Automate mock tests**: Integrate mock tests into your automated [test suite](https://naodeng.com.cn/en/wiki/test-suite) to run them consistently and catch regressions early.
+  - **Monitor coverage**: Use [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools to ensure that mock tests are covering the intended code paths.
   - **Peer review**: Have mock tests reviewed by peers to catch issues that the original author may have overlooked.
 
 #### How can mock testing be integrated into a continuous integration/continuous deployment (CI/CD) pipeline?
 
-  Integrating [mock testing](../M/mock-testing.md) into a CI/CD pipeline involves automating the execution of mock tests as part of the build and deployment process. Here's a concise guide:
+  Integrating [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) into a CI/CD pipeline involves automating the execution of mock tests as part of the build and deployment process. Here's a concise guide:
 
   1. **Create mock tests**
     using your preferred mocking framework.
@@ -670,7 +669,7 @@ Utilizes mock objects to mimic real objects in tests.
 
 #### What is the role of mock testing in Test Driven Development (TDD)?
 
-  In **Test Driven Development (TDD)**, [mock testing](../M/mock-testing.md) plays a pivotal role by simulating the behavior of real objects that are yet to be implemented or are impractical to include in unit tests. By using mocks, developers can focus on the unit under test, ensuring that tests are isolated and not dependent on external systems or complex dependencies.
+  In **Test Driven Development (TDD)**, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) plays a pivotal role by simulating the behavior of real objects that are yet to be implemented or are impractical to include in unit tests. By using mocks, developers can focus on the unit under test, ensuring that tests are isolated and not dependent on external systems or complex dependencies.
   During the TDD cycle of writing a failing test, implementing the minimal code to pass the test, and then refactoring, mocks are often introduced in the first phase. They help in specifying the expected interactions with dependencies, which drives the design of the interfaces. This is particularly useful when the actual implementation of these dependencies might be time-consuming or would introduce flakiness in the tests.
   Mocks enable developers to verify that the correct methods are called with the expected parameters, which is crucial for the contract between different parts of the system. This allows for a design that is more modular and adheres to the **Single Responsibility Principle**.
   Furthermore, by using mocks, the feedback loop in TDD is significantly shortened, as there is no need to wait for actual dependencies to respond or be available. This accelerates the development process and helps maintain a steady pace.
@@ -686,12 +685,12 @@ Utilizes mock objects to mimic real objects in tests.
     expect(mockDependency.performAction).toHaveBeenCalledWith('expected-param');
   });
   ```
-  In summary, [mock testing](../M/mock-testing.md) within TDD ensures that each unit can be tested in isolation, supports better design, and speeds up the development cycle.
+  In summary, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) within TDD ensures that each unit can be tested in isolation, supports better design, and speeds up the development cycle.
 
 #### How does mock testing work in a microservices architecture?
 
-  In a **microservices architecture**, [mock testing](../M/mock-testing.md) involves simulating the behavior of external services that a microservice interacts with. This allows for **isolated testing** of the service in question.
-  To implement [mock testing](../M/mock-testing.md) in microservices:
+  In a **microservices architecture**, [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) involves simulating the behavior of external services that a microservice interacts with. This allows for **isolated testing** of the service in question.
+  To implement [mock testing](https://naodeng.com.cn/en/wiki/mock-testing) in microservices:
 
   1. Identify the
     **external dependencies**
@@ -779,7 +778,7 @@ Utilizes mock objects to mimic real objects in tests.
 
 #### What is the concept of 'stubbing' in mock testing?
 
-  Stubbing is a technique used in **[mock testing](../M/mock-testing.md)** to replace parts of the system under test with **simplified implementations** that return predetermined responses. It's a form of **test double** that stands in for real functionality that is either not implemented or would be impractical to use during testing due to side effects, slowness, or non-determinism.
+  Stubbing is a technique used in **[mock testing](https://naodeng.com.cn/en/wiki/mock-testing)** to replace parts of the system under test with **simplified implementations** that return predetermined responses. It's a form of **test double** that stands in for real functionality that is either not implemented or would be impractical to use during testing due to side effects, slowness, or non-determinism.
   Unlike full-fledged mocks, stubs typically do not have expectations about how they are called. They are primarily used to **control the behavior** of the system under test by returning specific values or throwing exceptions, thus allowing tests to focus on the code paths that are triggered by those responses.
   Here's an example in TypeScript using a popular stubbing library, Sinon.js:
 
@@ -798,14 +797,14 @@ Utilizes mock objects to mimic real objects in tests.
   });
   ```
   In this example, `dependencyMethod` is stubbed to return `'stubbed value'` whenever it is called within `MyService`. This allows the test to verify behavior without relying on the actual implementation of `dependencyMethod`.
-  Stubbing is particularly useful when dealing with **external services**, **[database](../D/database.md) calls**, or any other components that would introduce complexity or non-determinism into the tests. It helps create **isolated** and **predictable** [test environments](../T/test-environment.md) where the focus is on the unit of code being tested.
+  Stubbing is particularly useful when dealing with **external services**, **[database](https://naodeng.com.cn/en/wiki/database) calls**, or any other components that would introduce complexity or non-determinism into the tests. It helps create **isolated** and **predictable** [test environments](https://naodeng.com.cn/en/wiki/test-environment) where the focus is on the unit of code being tested.
 
 #### How can mock testing be used for performance testing?
 
-  [Mock testing](../M/mock-testing.md) can be leveraged in [performance testing](../P/performance-testing.md) to simulate the behavior of components that are either unavailable or too costly to include in a full-scale performance test. By replacing these components with mocks, you can **isolate** and test the performance of specific parts of the system under load without the overhead or interference from external systems.
+  [Mock testing](https://naodeng.com.cn/en/wiki/mock-testing) can be leveraged in [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) to simulate the behavior of components that are either unavailable or too costly to include in a full-scale performance test. By replacing these components with mocks, you can **isolate** and test the performance of specific parts of the system under load without the overhead or interference from external systems.
   For instance, if you're testing an application that relies on a third-party service, you can use a mock to **mimic the latency** and **throughput** of the real service. This allows you to:
 
-  - **Control the [test environment](../T/test-environment.md)**
+  - **Control the [test environment](https://naodeng.com.cn/en/wiki/test-environment)**
     more predictably by eliminating external dependencies that could introduce variability.
 
   - **Simulate various scenarios**
@@ -813,7 +812,7 @@ Utilizes mock objects to mimic real objects in tests.
 
   - **Stress test**
     individual components by simulating high loads that might not be possible or practical with the actual dependent service.
-  Here's an example of creating a mock for a service in a performance [test scenario](../T/test-scenario.md):
+  Here's an example of creating a mock for a service in a performance [test scenario](https://naodeng.com.cn/en/wiki/test-scenario):
 
   ```
   // Mock service that simulates a delay
@@ -829,9 +828,9 @@ Utilizes mock objects to mimic real objects in tests.
   }
   ```
   In this code, `mockService` simulates a service call with a specified delay, and `performanceTest` measures the time taken to complete the call. By adjusting the delay, you can test how your system handles different response times.
-  Using mocks in [performance testing](../P/performance-testing.md) is a **cost-effective** and **flexible** approach to identify bottlenecks and optimize the performance of the system under test.
+  Using mocks in [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) is a **cost-effective** and **flexible** approach to identify bottlenecks and optimize the performance of the system under test.
 
-  - **Control the [test environment](../T/test-environment.md)**
+  - **Control the [test environment](https://naodeng.com.cn/en/wiki/test-environment)**
     more predictably by eliminating external dependencies that could introduce variability.
 
   - **Simulate various scenarios**
@@ -842,7 +841,7 @@ Utilizes mock objects to mimic real objects in tests.
 
 #### What is the difference between a mock and a spy in testing?
 
-  In [test automation](../T/test-automation.md), **mocks** and **spies** serve different purposes when isolating units of code for testing. A **mock** is an object that replaces a real component, with pre-programmed behaviors and expectations set. It's used to verify interactions between the system under test and the mock.
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), **mocks** and **spies** serve different purposes when isolating units of code for testing. A **mock** is an object that replaces a real component, with pre-programmed behaviors and expectations set. It's used to verify interactions between the system under test and the mock.
 
   ```
   // Example of a mock

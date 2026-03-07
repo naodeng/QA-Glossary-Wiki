@@ -1,6 +1,5 @@
 # Concurrency Testing
 
-
 <!-- TOC START -->
 - [Questions about Concurrency Testing ?](#questions-about-concurrency-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -37,15 +36,15 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### What is concurrency testing?
 
-  [Concurrency testing](../C/concurrency-testing.md) is a method to verify the stability and reliability of a system when multiple processes or threads access shared resources concurrently. It aims to uncover issues that arise due to the simultaneous execution of processes, such as data corruption, deadlocks, race conditions, and [priority](../P/priority.md) conflicts.
-  To conduct [concurrency testing](../C/concurrency-testing.md), engineers typically simulate a multi-user environment to stress the system's synchronization, locking mechanisms, and resource sharing strategies. This involves creating tests that perform operations in parallel, often at a higher intensity than expected in production, to push the system to its limits and ensure it can handle concurrent operations without failure.
-  **Key aspects of [concurrency testing](../C/concurrency-testing.md)** include:
+  [Concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) is a method to verify the stability and reliability of a system when multiple processes or threads access shared resources concurrently. It aims to uncover issues that arise due to the simultaneous execution of processes, such as data corruption, deadlocks, race conditions, and [priority](https://naodeng.com.cn/en/wiki/priority) conflicts.
+  To conduct [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing), engineers typically simulate a multi-user environment to stress the system's synchronization, locking mechanisms, and resource sharing strategies. This involves creating tests that perform operations in parallel, often at a higher intensity than expected in production, to push the system to its limits and ensure it can handle concurrent operations without failure.
+  **Key aspects of [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing)** include:
 
   - **Simulating multiple users** : Mimicking the actions of multiple users interacting with the system at the same time.
   - **Timing considerations** : Varying the timing of operations to identify timing-related defects.
   - **Resource contention** : Forcing the system to contend for shared resources to identify potential bottlenecks or conflicts.
   - **Synchronization mechanisms** : Testing the effectiveness of locks, semaphores, and other synchronization techniques.
-  **Example of a simple concurrency [test case](../T/test-case.md)**:
+  **Example of a simple concurrency [test case](https://naodeng.com.cn/en/wiki/test-case)**:
 
   ```
   // Pseudo-code for a basic concurrency test case
@@ -58,7 +57,7 @@ Measures the system's performance under simultaneous or multi-user loads.
     assert(sharedResource.isValidState());
   }
   ```
-  In this [test case](../T/test-case.md), `accessSharedResource` represents a function that multiple threads or processes would call concurrently, while `isValidState` would be a method to verify the integrity of the shared resource after concurrent access.
+  In this [test case](https://naodeng.com.cn/en/wiki/test-case), `accessSharedResource` represents a function that multiple threads or processes would call concurrently, while `isValidState` would be a method to verify the integrity of the shared resource after concurrent access.
 
   - **Simulating multiple users** : Mimicking the actions of multiple users interacting with the system at the same time.
   - **Timing considerations** : Varying the timing of operations to identify timing-related defects.
@@ -67,14 +66,14 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### Why is concurrency testing important?
 
-  [Concurrency testing](../C/concurrency-testing.md) is crucial because it ensures that a software application can handle multiple processes or users simultaneously without performance degradation or data corruption. In today's multi-user environments, applications often face concurrent access, making it essential to validate their stability and reliability under such conditions.
-  By simulating multiple users or processes, [concurrency testing](../C/concurrency-testing.md) uncovers issues like deadlocks, race conditions, and data inconsistencies that might not surface in other types of testing. It helps in identifying synchronization problems and ensures that transactions are processed correctly and resources are shared effectively without conflicts.
-  Moreover, [concurrency testing](../C/concurrency-testing.md) is vital for applications that require high availability and robustness, such as banking systems, online retail platforms, and cloud services. It provides confidence that the application can handle peak loads and maintain data integrity, which is critical for user satisfaction and business continuity.
-  Incorporating [concurrency testing](../C/concurrency-testing.md) into the development cycle can prevent costly downtime and data loss incidents. It is an indispensable part of ensuring that an application is production-ready and can meet the demands of real-world usage.
+  [Concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) is crucial because it ensures that a software application can handle multiple processes or users simultaneously without performance degradation or data corruption. In today's multi-user environments, applications often face concurrent access, making it essential to validate their stability and reliability under such conditions.
+  By simulating multiple users or processes, [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) uncovers issues like deadlocks, race conditions, and data inconsistencies that might not surface in other types of testing. It helps in identifying synchronization problems and ensures that transactions are processed correctly and resources are shared effectively without conflicts.
+  Moreover, [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) is vital for applications that require high availability and robustness, such as banking systems, online retail platforms, and cloud services. It provides confidence that the application can handle peak loads and maintain data integrity, which is critical for user satisfaction and business continuity.
+  Incorporating [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) into the development cycle can prevent costly downtime and data loss incidents. It is an indispensable part of ensuring that an application is production-ready and can meet the demands of real-world usage.
 
 #### What are the key benefits of concurrency testing?
 
-  Key benefits of [concurrency testing](../C/concurrency-testing.md) include:
+  Key benefits of [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) include:
 
   - **Improved System Reliability** : Ensures that the application can handle simultaneous user actions without failure, leading to a more robust system.
   - **Enhanced Performance** : Identifies performance bottlenecks when multiple processes are executed concurrently, allowing for optimization.
@@ -85,7 +84,7 @@ Measures the system's performance under simultaneous or multi-user loads.
   - **Data Integrity Assurance** : Confirms that concurrent transactions do not lead to data corruption or loss.
   - **User Experience Improvement** : By ensuring the system behaves correctly under load, the user experience is not compromised during peak usage times.
   - **Regulatory Compliance** : In some industries, the ability to handle concurrent operations is a regulatory requirement, making concurrency testing essential for compliance.
-  By addressing these aspects, [concurrency testing](../C/concurrency-testing.md) plays a crucial role in delivering a high-quality, dependable, and user-friendly product.
+  By addressing these aspects, [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) plays a crucial role in delivering a high-quality, dependable, and user-friendly product.
 
   - **Improved System Reliability** : Ensures that the application can handle simultaneous user actions without failure, leading to a more robust system.
   - **Enhanced Performance** : Identifies performance bottlenecks when multiple processes are executed concurrently, allowing for optimization.
@@ -99,23 +98,23 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### What are the potential issues that can be identified through concurrency testing?
 
-  [Concurrency testing](../C/concurrency-testing.md) can reveal a variety of issues that are critical to the performance and stability of multi-threaded applications. Here are some potential issues that can be identified:
+  [Concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) can reveal a variety of issues that are critical to the performance and stability of multi-threaded applications. Here are some potential issues that can be identified:
 
   - **Deadlocks** : Situations where two or more threads are unable to proceed because each is waiting for the other to release a resource.
   - **Race Conditions** : Flaws that occur when the system's behavior is dependent on the sequence or timing of other uncontrollable events.
   - **Resource Leaks** : Scenarios where threads do not properly release resources (e.g., memory, file handles) when they are no longer needed, leading to exhaustion of resources.
-  - **[Priority](../P/priority.md) Inversion** : A lower-priority task holds a resource needed by a higher-priority task, but is preempted by an intermediate-priority task, thus blocking the higher-priority task.
+  - **[Priority](https://naodeng.com.cn/en/wiki/priority) Inversion** : A lower-priority task holds a resource needed by a higher-priority task, but is preempted by an intermediate-priority task, thus blocking the higher-priority task.
   - **Starvation** : Cases where a thread is perpetually denied necessary resources to proceed, often due to priority issues or resource monopolization by other threads.
   - **Throughput Issues** : Problems where the system does not process transactions at the expected speed, which could be due to inefficient locking or thread management.
   - **Performance Bottlenecks** : Points in the system where the concurrent processing speed is significantly reduced due to a single or few components.
   - **Incorrect Processing** : Errors in the logic that only manifest under specific timing or sequencing of events, leading to incorrect results or behavior.
   - **Livelocks** : Situations where threads are not blocked, but they are unable to make progress because they keep responding to each other without doing any useful work.
-  Identifying these issues early through [concurrency testing](../C/concurrency-testing.md) is crucial to ensure that the software can handle simultaneous operations without adverse effects on performance or functionality.
+  Identifying these issues early through [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) is crucial to ensure that the software can handle simultaneous operations without adverse effects on performance or functionality.
 
   - **Deadlocks** : Situations where two or more threads are unable to proceed because each is waiting for the other to release a resource.
   - **Race Conditions** : Flaws that occur when the system's behavior is dependent on the sequence or timing of other uncontrollable events.
   - **Resource Leaks** : Scenarios where threads do not properly release resources (e.g., memory, file handles) when they are no longer needed, leading to exhaustion of resources.
-  - **[Priority](../P/priority.md) Inversion** : A lower-priority task holds a resource needed by a higher-priority task, but is preempted by an intermediate-priority task, thus blocking the higher-priority task.
+  - **[Priority](https://naodeng.com.cn/en/wiki/priority) Inversion** : A lower-priority task holds a resource needed by a higher-priority task, but is preempted by an intermediate-priority task, thus blocking the higher-priority task.
   - **Starvation** : Cases where a thread is perpetually denied necessary resources to proceed, often due to priority issues or resource monopolization by other threads.
   - **Throughput Issues** : Problems where the system does not process transactions at the expected speed, which could be due to inefficient locking or thread management.
   - **Performance Bottlenecks** : Points in the system where the concurrent processing speed is significantly reduced due to a single or few components.
@@ -124,64 +123,64 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### What is the difference between concurrency testing and other types of testing?
 
-  [Concurrency testing](../C/concurrency-testing.md) differs from other types of testing by focusing on the behavior of an application when multiple operations or transactions are executed simultaneously. Unlike [unit testing](../U/unit-testing.md), which isolates a piece of code to verify its correctness, or [integration testing](../I/integration-testing.md), which ensures that different modules work together as expected, [concurrency testing](../C/concurrency-testing.md) aims to uncover issues that arise only when there is concurrent access or modification of shared resources.
-  [Functional testing](../F/functional-testing.md) checks for the correct output given a specific input, without considering the system's state with concurrent users. [Performance testing](../P/performance-testing.md), while it may involve multiple users, typically assesses the system's overall responsiveness and stability under load rather than the correctness of the application's behavior under concurrent processing.
-  In contrast, [concurrency testing](../C/concurrency-testing.md) specifically targets race conditions, deadlocks, and data consistency issues that are not typically exposed by other testing types. It requires a different approach, often involving the creation of tests that simulate multiple users or processes interacting with the application at the same time to try and force timing issues that could lead to incorrect behavior or system crashes.
-  While [stress testing](../S/stress-testing.md) also involves a high volume of concurrent users or requests, its primary goal is to determine the application's limits and robustness, not to identify concurrency-specific defects. [Concurrency testing](../C/concurrency-testing.md), on the other hand, is more concerned with ensuring that the system can manage simultaneous operations correctly and without conflict, regardless of the overall system load.
+  [Concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) differs from other types of testing by focusing on the behavior of an application when multiple operations or transactions are executed simultaneously. Unlike [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), which isolates a piece of code to verify its correctness, or [integration testing](https://naodeng.com.cn/en/wiki/integration-testing), which ensures that different modules work together as expected, [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) aims to uncover issues that arise only when there is concurrent access or modification of shared resources.
+  [Functional testing](https://naodeng.com.cn/en/wiki/functional-testing) checks for the correct output given a specific input, without considering the system's state with concurrent users. [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing), while it may involve multiple users, typically assesses the system's overall responsiveness and stability under load rather than the correctness of the application's behavior under concurrent processing.
+  In contrast, [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) specifically targets race conditions, deadlocks, and data consistency issues that are not typically exposed by other testing types. It requires a different approach, often involving the creation of tests that simulate multiple users or processes interacting with the application at the same time to try and force timing issues that could lead to incorrect behavior or system crashes.
+  While [stress testing](https://naodeng.com.cn/en/wiki/stress-testing) also involves a high volume of concurrent users or requests, its primary goal is to determine the application's limits and robustness, not to identify concurrency-specific defects. [Concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing), on the other hand, is more concerned with ensuring that the system can manage simultaneous operations correctly and without conflict, regardless of the overall system load.
 
 ### Techniques and Approaches
 
 #### What are the common techniques used in concurrency testing?
 
-  Common techniques used in **[concurrency testing](../C/concurrency-testing.md)** include:
+  Common techniques used in **[concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing)** include:
 
   - **Thread Pooling** : Utilizing a pool of threads to simulate concurrent access and interactions with the application.
   - **Lock Testing** : Explicitly acquiring and releasing locks to test the application's ability to handle synchronization.
   - **Shared Data Manipulation** : Simultaneously reading and writing to shared data structures to uncover data corruption or inconsistency issues.
   - **Resource Starvation** : Deliberately limiting resources to ensure the application can handle low-resource scenarios without deadlocks or performance degradation.
-  - **[Priority](../P/priority.md) Testing** : Assigning different priorities to concurrent processes to verify the application's behavior under varying priority conditions.
+  - **[Priority](https://naodeng.com.cn/en/wiki/priority) Testing** : Assigning different priorities to concurrent processes to verify the application's behavior under varying priority conditions.
   - **Timed Testing** : Introducing delays or timing constraints to test the application's response to timing issues such as race conditions.
   - **Randomized Testing** : Randomizing the order and timing of operations to simulate unpredictable concurrent interactions.
-  - **[State Transition Testing](../S/state-transition-testing.md)** : Monitoring the state transitions of the application under concurrent usage to ensure state consistency.
+  - **[State Transition Testing](https://naodeng.com.cn/en/wiki/state-transition-testing)** : Monitoring the state transitions of the application under concurrent usage to ensure state consistency.
   These techniques are often combined and executed in a controlled environment to simulate real-world scenarios. Automation tools can be used to script these tests and run them repeatedly, ensuring thorough coverage and the detection of concurrency-related defects.
 
   - **Thread Pooling** : Utilizing a pool of threads to simulate concurrent access and interactions with the application.
   - **Lock Testing** : Explicitly acquiring and releasing locks to test the application's ability to handle synchronization.
   - **Shared Data Manipulation** : Simultaneously reading and writing to shared data structures to uncover data corruption or inconsistency issues.
   - **Resource Starvation** : Deliberately limiting resources to ensure the application can handle low-resource scenarios without deadlocks or performance degradation.
-  - **[Priority](../P/priority.md) Testing** : Assigning different priorities to concurrent processes to verify the application's behavior under varying priority conditions.
+  - **[Priority](https://naodeng.com.cn/en/wiki/priority) Testing** : Assigning different priorities to concurrent processes to verify the application's behavior under varying priority conditions.
   - **Timed Testing** : Introducing delays or timing constraints to test the application's response to timing issues such as race conditions.
   - **Randomized Testing** : Randomizing the order and timing of operations to simulate unpredictable concurrent interactions.
-  - **[State Transition Testing](../S/state-transition-testing.md)** : Monitoring the state transitions of the application under concurrent usage to ensure state consistency.
+  - **[State Transition Testing](https://naodeng.com.cn/en/wiki/state-transition-testing)** : Monitoring the state transitions of the application under concurrent usage to ensure state consistency.
 
 #### How to design a test case for concurrency testing?
 
-  Designing a [test case](../T/test-case.md) for [concurrency testing](../C/concurrency-testing.md) involves simulating multiple users or processes interacting with the system at the same time to uncover issues such as deadlocks, race conditions, and data inconsistencies. Here's a succinct guide to creating a concurrency [test case](../T/test-case.md):
+  Designing a [test case](https://naodeng.com.cn/en/wiki/test-case) for [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) involves simulating multiple users or processes interacting with the system at the same time to uncover issues such as deadlocks, race conditions, and data inconsistencies. Here's a succinct guide to creating a concurrency [test case](https://naodeng.com.cn/en/wiki/test-case):
 
   1. **Identify the critical sections** of the application where concurrent access is expected or where issues are most likely to occur.
   2. **Define the scope** of the concurrency test, including the number of concurrent users or processes and the specific actions they will perform.
-  3. **Create a [test scenario](../T/test-scenario.md)** that outlines the steps each user or process will execute. Ensure that the scenario includes actions that are likely to cause contention, such as simultaneous reads and writes to shared resources.
+  3. **Create a [test scenario](https://naodeng.com.cn/en/wiki/test-scenario)** that outlines the steps each user or process will execute. Ensure that the scenario includes actions that are likely to cause contention, such as simultaneous reads and writes to shared resources.
   4. **Set up preconditions** necessary for the test, such as user accounts, data states, and system configurations.
   5. **Determine the expected outcome** for the test, including the system's behavior under concurrent load and the final state of shared resources.
   6. **Use synchronization mechanisms** if needed to coordinate the actions of concurrent users or processes, ensuring they occur in the desired order.
-  7. **Implement the [test case](../T/test-case.md)** using a suitable automation tool that supports concurrency, such as [JMeter](../J/jmeter.md) or a custom script.
-  8. **Execute the [test case](../T/test-case.md)** and monitor the system for any unexpected behavior, errors, or performance degradation.
+  7. **Implement the [test case](https://naodeng.com.cn/en/wiki/test-case)** using a suitable automation tool that supports concurrency, such as [JMeter](https://naodeng.com.cn/en/wiki/jmeter) or a custom script.
+  8. **Execute the [test case](https://naodeng.com.cn/en/wiki/test-case)** and monitor the system for any unexpected behavior, errors, or performance degradation.
   9. **Record the results** and analyze them to identify any concurrency-related issues.
-  10. **Iterate and refine** the [test case](../T/test-case.md) based on findings, adjusting the level of concurrency and the complexity of interactions as needed.
+  10. **Iterate and refine** the [test case](https://naodeng.com.cn/en/wiki/test-case) based on findings, adjusting the level of concurrency and the complexity of interactions as needed.
   1. **Identify the critical sections** of the application where concurrent access is expected or where issues are most likely to occur.
   2. **Define the scope** of the concurrency test, including the number of concurrent users or processes and the specific actions they will perform.
-  3. **Create a [test scenario](../T/test-scenario.md)** that outlines the steps each user or process will execute. Ensure that the scenario includes actions that are likely to cause contention, such as simultaneous reads and writes to shared resources.
+  3. **Create a [test scenario](https://naodeng.com.cn/en/wiki/test-scenario)** that outlines the steps each user or process will execute. Ensure that the scenario includes actions that are likely to cause contention, such as simultaneous reads and writes to shared resources.
   4. **Set up preconditions** necessary for the test, such as user accounts, data states, and system configurations.
   5. **Determine the expected outcome** for the test, including the system's behavior under concurrent load and the final state of shared resources.
   6. **Use synchronization mechanisms** if needed to coordinate the actions of concurrent users or processes, ensuring they occur in the desired order.
-  7. **Implement the [test case](../T/test-case.md)** using a suitable automation tool that supports concurrency, such as [JMeter](../J/jmeter.md) or a custom script.
-  8. **Execute the [test case](../T/test-case.md)** and monitor the system for any unexpected behavior, errors, or performance degradation.
+  7. **Implement the [test case](https://naodeng.com.cn/en/wiki/test-case)** using a suitable automation tool that supports concurrency, such as [JMeter](https://naodeng.com.cn/en/wiki/jmeter) or a custom script.
+  8. **Execute the [test case](https://naodeng.com.cn/en/wiki/test-case)** and monitor the system for any unexpected behavior, errors, or performance degradation.
   9. **Record the results** and analyze them to identify any concurrency-related issues.
-  10. **Iterate and refine** the [test case](../T/test-case.md) based on findings, adjusting the level of concurrency and the complexity of interactions as needed.
+  10. **Iterate and refine** the [test case](https://naodeng.com.cn/en/wiki/test-case) based on findings, adjusting the level of concurrency and the complexity of interactions as needed.
 
 #### What is the role of load generators in concurrency testing?
 
-  Load generators play a crucial role in **[concurrency testing](../C/concurrency-testing.md)** by simulating multiple users or processes to interact with the software application simultaneously. They generate a high volume of virtual user activity to stress the application and its infrastructure, allowing testers to:
+  Load generators play a crucial role in **[concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing)** by simulating multiple users or processes to interact with the software application simultaneously. They generate a high volume of virtual user activity to stress the application and its infrastructure, allowing testers to:
 
   - **Evaluate performance**
     under expected and peak load conditions.
@@ -242,15 +241,15 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### What is the difference between stress testing and concurrency testing?
 
-  [Stress testing](../S/stress-testing.md) and [concurrency testing](../C/concurrency-testing.md) are distinct types of [performance testing](../P/performance-testing.md), each targeting different aspects of system behavior under load.
-  **[Stress testing](../S/stress-testing.md)** evaluates a system's performance under extreme conditions, often beyond its specified limits, to determine its breaking point or failure mode. It involves incrementally increasing the load until the system becomes unresponsive or crashes, identifying the maximum capacity and the system's behavior under failure.
-  **[Concurrency testing](../C/concurrency-testing.md)**, on the other hand, focuses on ensuring that a system can handle simultaneous operations or transactions as expected. It aims to uncover issues like deadlocks, race conditions, and data inconsistencies that arise when multiple processes or threads access shared resources concurrently.
-  While [stress testing](../S/stress-testing.md) is about pushing the system to its limits to observe when and how it fails, [concurrency testing](../C/concurrency-testing.md) is about ensuring that the system can manage multiple simultaneous interactions correctly. [Concurrency testing](../C/concurrency-testing.md) is critical in multi-user environments where simultaneous access is common, whereas [stress testing](../S/stress-testing.md) is essential for understanding the upper limits of system capacity and stability.
-  In summary, [stress testing](../S/stress-testing.md) is load-oriented, pushing the system to extreme conditions, while [concurrency testing](../C/concurrency-testing.md) is interaction-oriented, ensuring correct behavior under simultaneous usage. Both are crucial for comprehensive performance evaluation but serve different purposes in the [software testing](../S/software-testing.md) lifecycle.
+  [Stress testing](https://naodeng.com.cn/en/wiki/stress-testing) and [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) are distinct types of [performance testing](https://naodeng.com.cn/en/wiki/performance-testing), each targeting different aspects of system behavior under load.
+  **[Stress testing](https://naodeng.com.cn/en/wiki/stress-testing)** evaluates a system's performance under extreme conditions, often beyond its specified limits, to determine its breaking point or failure mode. It involves incrementally increasing the load until the system becomes unresponsive or crashes, identifying the maximum capacity and the system's behavior under failure.
+  **[Concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing)**, on the other hand, focuses on ensuring that a system can handle simultaneous operations or transactions as expected. It aims to uncover issues like deadlocks, race conditions, and data inconsistencies that arise when multiple processes or threads access shared resources concurrently.
+  While [stress testing](https://naodeng.com.cn/en/wiki/stress-testing) is about pushing the system to its limits to observe when and how it fails, [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) is about ensuring that the system can manage multiple simultaneous interactions correctly. [Concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) is critical in multi-user environments where simultaneous access is common, whereas [stress testing](https://naodeng.com.cn/en/wiki/stress-testing) is essential for understanding the upper limits of system capacity and stability.
+  In summary, [stress testing](https://naodeng.com.cn/en/wiki/stress-testing) is load-oriented, pushing the system to extreme conditions, while [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) is interaction-oriented, ensuring correct behavior under simultaneous usage. Both are crucial for comprehensive performance evaluation but serve different purposes in the [software testing](https://naodeng.com.cn/en/wiki/software-testing) lifecycle.
 
 #### What are the best practices for concurrency testing?
 
-  Best practices for [concurrency testing](../C/concurrency-testing.md) include:
+  Best practices for [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) include:
 
   - **Prioritize critical sections**
     of the application where concurrent access is likely, such as shared resources or data contention points.
@@ -317,9 +316,9 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### What tools are commonly used for concurrency testing?
 
-  Common tools for [concurrency testing](../C/concurrency-testing.md) include:
+  Common tools for [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) include:
 
-  - **Apache [JMeter](../J/jmeter.md)** : An open-source tool designed for performance testing, which can simulate multiple users and various concurrency scenarios.
+  - **Apache [JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : An open-source tool designed for performance testing, which can simulate multiple users and various concurrency scenarios.
   - **LoadRunner** : A widely-used tool by Micro Focus for performance testing, it can create accurate real-life loads for concurrency testing.
   - **Gatling** : An open-source load testing framework based on Scala, Gatling offers concurrency testing capabilities with easy-to-write scripts.
   - **Locust** : An open-source load testing tool written in Python, allowing you to define user behavior with code and test system performance.
@@ -329,7 +328,7 @@ Measures the system's performance under simultaneous or multi-user loads.
   - **Taurus** : An automation-friendly framework for continuous testing, which can run JMeter and Gatling tests, among others, and provides an abstraction layer for writing tests.
   These tools help automate the process of simulating multiple users or processes and can identify issues such as deadlocks, race conditions, and throughput problems. They often provide detailed reports and analytics to aid in diagnosing concurrency-related issues.
 
-  - **Apache [JMeter](../J/jmeter.md)** : An open-source tool designed for performance testing, which can simulate multiple users and various concurrency scenarios.
+  - **Apache [JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : An open-source tool designed for performance testing, which can simulate multiple users and various concurrency scenarios.
   - **LoadRunner** : A widely-used tool by Micro Focus for performance testing, it can create accurate real-life loads for concurrency testing.
   - **Gatling** : An open-source load testing framework based on Scala, Gatling offers concurrency testing capabilities with easy-to-write scripts.
   - **Locust** : An open-source load testing tool written in Python, allowing you to define user behavior with code and test system performance.
@@ -340,7 +339,7 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### What are the features to look for in a concurrency testing tool?
 
-  When selecting a [concurrency testing](../C/concurrency-testing.md) tool, consider the following features:
+  When selecting a [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) tool, consider the following features:
 
   - **Scalability** : Ability to simulate a wide range of concurrent users or processes to test different load levels.
   - **Real-time monitoring** : Provides live feedback on system performance and resource utilization during the test.
@@ -355,7 +354,7 @@ Measures the system's performance under simultaneous or multi-user loads.
   - **Error detection** : Identifies and logs concurrency-specific issues like deadlocks, race conditions, and thread safety violations.
   - **Reusability** : Facilitates the reuse of test scripts and scenarios across different tests and environments.
   - **Support and community** : Offers robust support options and has an active community for troubleshooting and sharing best practices.
-  Choose a tool that aligns with your specific testing requirements and integrates seamlessly into your existing [test automation](../T/test-automation.md) ecosystem.
+  Choose a tool that aligns with your specific testing requirements and integrates seamlessly into your existing [test automation](https://naodeng.com.cn/en/wiki/test-automation) ecosystem.
 
   - **Scalability** : Ability to simulate a wide range of concurrent users or processes to test different load levels.
   - **Real-time monitoring** : Provides live feedback on system performance and resource utilization during the test.
@@ -373,11 +372,11 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### How to use JMeter for concurrency testing?
 
-  Using **[JMeter](../J/jmeter.md)** for [concurrency testing](../C/concurrency-testing.md) involves simulating multiple users or threads to interact with the software application simultaneously. Here's a step-by-step guide:
+  Using **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** for [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) involves simulating multiple users or threads to interact with the software application simultaneously. Here's a step-by-step guide:
 
-  1. **Install [JMeter](../J/jmeter.md)**: Download from the Apache website and install it on your system.
-  2. **Create a [Test Plan](../T/test-plan.md)**: Open [JMeter](../J/jmeter.md) and create a new [test plan](../T/test-plan.md).
-  3. **Add Thread Group**: Right-click on the [Test Plan](../T/test-plan.md) and add a new thread group to define the number of concurrent users.
+  1. **Install [JMeter](https://naodeng.com.cn/en/wiki/jmeter)**: Download from the Apache website and install it on your system.
+  2. **Create a [Test Plan](https://naodeng.com.cn/en/wiki/test-plan)**: Open [JMeter](https://naodeng.com.cn/en/wiki/jmeter) and create a new [test plan](https://naodeng.com.cn/en/wiki/test-plan).
+  3. **Add Thread Group**: Right-click on the [Test Plan](https://naodeng.com.cn/en/wiki/test-plan) and add a new thread group to define the number of concurrent users.
   4. **Configure Thread Properties**:
     - Set the
       **Number of Threads**
@@ -426,11 +425,11 @@ Measures the system's performance under simultaneous or multi-user loads.
     <stringProp name="ThreadGroup.delay"></stringProp>
   </ThreadGroup>
   ```
-  Remember to **save your [test plan](../T/test-plan.md)** and **review [JMeter](../J/jmeter.md)'s documentation** for specific configurations and advanced features.
+  Remember to **save your [test plan](https://naodeng.com.cn/en/wiki/test-plan)** and **review [JMeter](https://naodeng.com.cn/en/wiki/jmeter)'s documentation** for specific configurations and advanced features.
 
-  1. **Install [JMeter](../J/jmeter.md)**: Download from the Apache website and install it on your system.
-  2. **Create a [Test Plan](../T/test-plan.md)**: Open [JMeter](../J/jmeter.md) and create a new [test plan](../T/test-plan.md).
-  3. **Add Thread Group**: Right-click on the [Test Plan](../T/test-plan.md) and add a new thread group to define the number of concurrent users.
+  1. **Install [JMeter](https://naodeng.com.cn/en/wiki/jmeter)**: Download from the Apache website and install it on your system.
+  2. **Create a [Test Plan](https://naodeng.com.cn/en/wiki/test-plan)**: Open [JMeter](https://naodeng.com.cn/en/wiki/jmeter) and create a new [test plan](https://naodeng.com.cn/en/wiki/test-plan).
+  3. **Add Thread Group**: Right-click on the [Test Plan](https://naodeng.com.cn/en/wiki/test-plan) and add a new thread group to define the number of concurrent users.
   4. **Configure Thread Properties**:
     - Set the
       **Number of Threads**
@@ -464,8 +463,8 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### What is the role of Selenium in concurrency testing?
 
-  [Selenium](../S/selenium.md), primarily a tool for automating web browsers, plays a **supportive role** in [concurrency testing](../C/concurrency-testing.md) by enabling the simulation of multiple users interacting with a web application simultaneously. It does this through the creation of multiple browser instances or sessions that can perform operations in parallel.
-  To facilitate [concurrency testing](../C/concurrency-testing.md), [test scripts](../T/test-script.md) written in [Selenium](../S/selenium.md) can be integrated with frameworks or tools that support parallel execution, such as **TestNG** or **JUnit**. These frameworks allow you to annotate test methods or classes to run concurrently, managing the threading and execution behind the scenes.
+  [Selenium](https://naodeng.com.cn/en/wiki/selenium), primarily a tool for automating web browsers, plays a **supportive role** in [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) by enabling the simulation of multiple users interacting with a web application simultaneously. It does this through the creation of multiple browser instances or sessions that can perform operations in parallel.
+  To facilitate [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing), [test scripts](https://naodeng.com.cn/en/wiki/test-script) written in [Selenium](https://naodeng.com.cn/en/wiki/selenium) can be integrated with frameworks or tools that support parallel execution, such as **TestNG** or **JUnit**. These frameworks allow you to annotate test methods or classes to run concurrently, managing the threading and execution behind the scenes.
   Here's a basic example using TestNG to run multiple instances:
 
   ```
@@ -474,13 +473,13 @@ Measures the system's performance under simultaneous or multi-user loads.
     // Your Selenium test code here
   }
   ```
-  In this snippet, `threadPoolSize` dictates the number of threads to be used, while `invocationCount` specifies how many times the method will be invoked. `timeOut` ensures that a hanging test doesn't block the [test suite](../T/test-suite.md) indefinitely.
-  However, it's important to note that [Selenium](../S/selenium.md) itself does not manage the concurrency aspect. It relies on **external libraries** or **[test runners](../T/test-runner.md)** to handle the complexities of threading and execution order. When using [Selenium](../S/selenium.md) for [concurrency testing](../C/concurrency-testing.md), ensure that the [test environment](../T/test-environment.md) is robust and can handle the parallel execution without causing [false positives](../F/false-positive.md) due to resource contention or timing issues.
-  For more sophisticated [concurrency testing](../C/concurrency-testing.md), especially at the [API](../A/api.md) or service level, tools like **[JMeter](../J/jmeter.md)** or **Gatling** are more commonly used, as they are designed specifically for load and [performance testing](../P/performance-testing.md), which includes concurrency scenarios.
+  In this snippet, `threadPoolSize` dictates the number of threads to be used, while `invocationCount` specifies how many times the method will be invoked. `timeOut` ensures that a hanging test doesn't block the [test suite](https://naodeng.com.cn/en/wiki/test-suite) indefinitely.
+  However, it's important to note that [Selenium](https://naodeng.com.cn/en/wiki/selenium) itself does not manage the concurrency aspect. It relies on **external libraries** or **[test runners](https://naodeng.com.cn/en/wiki/test-runner)** to handle the complexities of threading and execution order. When using [Selenium](https://naodeng.com.cn/en/wiki/selenium) for [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing), ensure that the [test environment](https://naodeng.com.cn/en/wiki/test-environment) is robust and can handle the parallel execution without causing [false positives](https://naodeng.com.cn/en/wiki/false-positive) due to resource contention or timing issues.
+  For more sophisticated [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing), especially at the [API](https://naodeng.com.cn/en/wiki/api) or service level, tools like **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** or **Gatling** are more commonly used, as they are designed specifically for load and [performance testing](https://naodeng.com.cn/en/wiki/performance-testing), which includes concurrency scenarios.
 
 #### How can cloud-based tools help in concurrency testing?
 
-  Cloud-based tools offer several advantages for [concurrency testing](../C/concurrency-testing.md):
+  Cloud-based tools offer several advantages for [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing):
 
   - **Scalability** : Cloud environments can quickly scale up to simulate thousands of users, providing a realistic test bed for concurrency issues.
   - **Cost-Effectiveness** : Pay-as-you-go models eliminate the need for expensive hardware setups and maintenance costs associated with on-premises testing environments.
@@ -488,7 +487,7 @@ Measures the system's performance under simultaneous or multi-user loads.
   - **Resource Availability** : Cloud platforms provide on-demand access to a wide range of testing resources, reducing the time to set up and execute concurrency tests.
   - **Isolation** : Testing in the cloud can be done in isolated environments, ensuring that tests do not interfere with each other or with production systems.
   - **Automation** : Cloud-based tools often come with built-in automation capabilities, making it easier to integrate concurrency testing into continuous integration/continuous deployment (CI/CD) pipelines.
-  By leveraging cloud-based tools, [test automation](../T/test-automation.md) engineers can efficiently execute concurrency tests, identify potential synchronization issues, and ensure that applications can handle expected user loads with minimal performance degradation.
+  By leveraging cloud-based tools, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can efficiently execute concurrency tests, identify potential synchronization issues, and ensure that applications can handle expected user loads with minimal performance degradation.
 
   - **Scalability** : Cloud environments can quickly scale up to simulate thousands of users, providing a realistic test bed for concurrency issues.
   - **Cost-Effectiveness** : Pay-as-you-go models eliminate the need for expensive hardware setups and maintenance costs associated with on-premises testing environments.
@@ -501,14 +500,14 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### What are the challenges in concurrency testing?
 
-  [Concurrency testing](../C/concurrency-testing.md) challenges often stem from the complex interactions between threads or processes. Here are some key challenges:
+  [Concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) challenges often stem from the complex interactions between threads or processes. Here are some key challenges:
 
   - **Determining the appropriate load** : Establishing a realistic load that can uncover concurrency issues without overloading the system is tricky.
   - **Timing issues** : Concurrency defects such as race conditions may only appear under specific timing scenarios, making them difficult to reproduce.
   - **Resource contention** : Identifying and managing shared resources can be complex, as tests need to ensure that resources are accessed properly by concurrent entities.
   - **Deadlocks** : Detecting and resolving deadlocks require careful analysis and understanding of the locking mechanisms and resource acquisition order.
   - **Non-deterministic behavior** : The non-reproducible nature of concurrency issues means that a test might pass one time and fail the next, complicating debugging and resolution.
-  - **[Test environment](../T/test-environment.md)** : Mimicking the production environment closely is essential for meaningful concurrency tests, but it can be resource-intensive and expensive.
+  - **[Test environment](https://naodeng.com.cn/en/wiki/test-environment)** : Mimicking the production environment closely is essential for meaningful concurrency tests, but it can be resource-intensive and expensive.
   - **Tooling** : Selecting tools that can effectively simulate concurrent operations and collect relevant data is critical but can be challenging due to the variety of options and their varying capabilities.
   Addressing these challenges often requires a combination of thorough planning, robust tooling, and an iterative approach to test design and execution.
 
@@ -517,21 +516,21 @@ Measures the system's performance under simultaneous or multi-user loads.
   - **Resource contention** : Identifying and managing shared resources can be complex, as tests need to ensure that resources are accessed properly by concurrent entities.
   - **Deadlocks** : Detecting and resolving deadlocks require careful analysis and understanding of the locking mechanisms and resource acquisition order.
   - **Non-deterministic behavior** : The non-reproducible nature of concurrency issues means that a test might pass one time and fail the next, complicating debugging and resolution.
-  - **[Test environment](../T/test-environment.md)** : Mimicking the production environment closely is essential for meaningful concurrency tests, but it can be resource-intensive and expensive.
+  - **[Test environment](https://naodeng.com.cn/en/wiki/test-environment)** : Mimicking the production environment closely is essential for meaningful concurrency tests, but it can be resource-intensive and expensive.
   - **Tooling** : Selecting tools that can effectively simulate concurrent operations and collect relevant data is critical but can be challenging due to the variety of options and their varying capabilities.
 
 #### How to overcome the challenges in concurrency testing?
 
-  To overcome challenges in [concurrency testing](../C/concurrency-testing.md), focus on **strategic planning** and **robust tooling**. Begin by **prioritizing [test scenarios](../T/test-scenario.md)** that reflect realistic user interactions and system loads. Utilize **modular test design** to create reusable components, enabling efficient updates as the system evolves.
+  To overcome challenges in [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing), focus on **strategic planning** and **robust tooling**. Begin by **prioritizing [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario)** that reflect realistic user interactions and system loads. Utilize **modular test design** to create reusable components, enabling efficient updates as the system evolves.
   Implement **automated test orchestration** to manage the execution of concurrent tests, ensuring they run in a controlled and predictable manner. Leverage **monitoring and logging** to capture detailed information about the system's behavior under test, aiding in the identification and diagnosis of concurrency issues.
   **Scale tests gradually**, starting with a small number of concurrent users and increasing the load incrementally. This approach helps isolate problems and assess system thresholds. Utilize **virtualization** or **containerization** to simulate multiple users or services in a cost-effective and scalable way.
-  Invest in **advanced [concurrency testing](../C/concurrency-testing.md) tools** that offer features like real-time analysis, distributed testing, and automated detection of race conditions and deadlocks. Integrate these tools with your **continuous integration/continuous deployment (CI/CD) pipeline** to ensure concurrency tests are part of the regular testing cycle.
+  Invest in **advanced [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) tools** that offer features like real-time analysis, distributed testing, and automated detection of race conditions and deadlocks. Integrate these tools with your **continuous integration/continuous deployment (CI/CD) pipeline** to ensure concurrency tests are part of the regular testing cycle.
   Regularly **review and update** your concurrency tests to align with new features and changes in the system architecture. Encourage a culture of **collaboration** between developers, testers, and operations teams to share insights and improve test effectiveness.
-  Finally, conduct **retrospectives** after significant test runs to identify what worked well and what can be improved, fostering a continuous improvement mindset in your [concurrency testing](../C/concurrency-testing.md) practices.
+  Finally, conduct **retrospectives** after significant test runs to identify what worked well and what can be improved, fostering a continuous improvement mindset in your [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) practices.
 
 #### What are the common mistakes in concurrency testing and how to avoid them?
 
-  Common mistakes in [concurrency testing](../C/concurrency-testing.md) include:
+  Common mistakes in [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) include:
 
   - **Insufficient coverage** : Focusing on a limited number of scenarios can miss critical concurrency issues. Ensure a wide range of interactions and timings are tested.
   - **Overlooking timing issues** : Timing is crucial in concurrency; failing to consider the timing of actions can lead to undetected race conditions. Use tools that can simulate various timings and delays.
@@ -542,7 +541,7 @@ Measures the system's performance under simultaneous or multi-user loads.
   - **Not cleaning up state** : Concurrency tests can leave the system in an unpredictable state. Implement robust setup and teardown routines to ensure consistency.
   To avoid these mistakes:
 
-  - **Expand [test scenarios](../T/test-scenario.md)** : Use combinatorial methods to generate a comprehensive set of test cases.
+  - **Expand [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario)** : Use combinatorial methods to generate a comprehensive set of test cases.
   - **Simulate real-world timings** : Introduce delays and jitter to emulate real-world operation.
   - **Enforce thread safety** : Review code for proper synchronization and use static analysis tools.
   - **Test in production-like environments** : Use containers or virtual machines to replicate production settings.
@@ -556,7 +555,7 @@ Measures the system's performance under simultaneous or multi-user loads.
   - **Underestimating resource contention** : High levels of contention can cause deadlocks or performance bottlenecks. Monitor and test for resource usage under high concurrency.
   - **Relying solely on automated tests** : Some concurrency issues are subtle and might not be caught by automated tests. Complement with code reviews and manual testing.
   - **Not cleaning up state** : Concurrency tests can leave the system in an unpredictable state. Implement robust setup and teardown routines to ensure consistency.
-  - **Expand [test scenarios](../T/test-scenario.md)** : Use combinatorial methods to generate a comprehensive set of test cases.
+  - **Expand [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario)** : Use combinatorial methods to generate a comprehensive set of test cases.
   - **Simulate real-world timings** : Introduce delays and jitter to emulate real-world operation.
   - **Enforce thread safety** : Review code for proper synchronization and use static analysis tools.
   - **Test in production-like environments** : Use containers or virtual machines to replicate production settings.
@@ -566,7 +565,7 @@ Measures the system's performance under simultaneous or multi-user loads.
 
 #### How to ensure the effectiveness of concurrency testing?
 
-  To ensure the effectiveness of [concurrency testing](../C/concurrency-testing.md), follow these strategies:
+  To ensure the effectiveness of [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing), follow these strategies:
 
   - **Implement a robust monitoring system** : Track system performance and behavior in real-time to identify issues as they occur.
   - **Use realistic scenarios** : Simulate real-world usage patterns to uncover potential concurrency problems that users might encounter.
@@ -579,7 +578,7 @@ Measures the system's performance under simultaneous or multi-user loads.
   - **Iterate and refine** : Continuously review and adjust tests based on previous test outcomes and code changes.
   - **Analyze thread dumps and logs** : Examine thread dumps and logs for deadlocks, race conditions, and other concurrency issues.
   - **Collaborate with developers** : Work closely with developers to understand the application's concurrency model and incorporate their insights into testing.
-  By integrating these strategies into your [concurrency testing](../C/concurrency-testing.md) approach, you can enhance the reliability and stability of your software in multi-user, concurrent environments.
+  By integrating these strategies into your [concurrency testing](https://naodeng.com.cn/en/wiki/concurrency-testing) approach, you can enhance the reliability and stability of your software in multi-user, concurrent environments.
 
   - **Implement a robust monitoring system** : Track system performance and behavior in real-time to identify issues as they occur.
   - **Use realistic scenarios** : Simulate real-world usage patterns to uncover potential concurrency problems that users might encounter.
@@ -608,7 +607,7 @@ Measures the system's performance under simultaneous or multi-user loads.
   - **Atomic Operations** : Use atomic operations provided by the programming language or hardware to ensure that a series of related operations complete without interruption.
   - **Thread-safe Libraries** : Employ libraries that are designed to be safe in concurrent environments.
   - **Immutable Objects** : Design objects that, once created, cannot be modified, thus inherently avoiding race conditions.
-  In both cases, thorough **code reviews** and **static analysis tools** can help identify potential problems early. Additionally, **[automated testing](../A/automated-testing.md)** with a focus on concurrency issues, such as using tools that simulate race conditions or deadlocks, can be invaluable in preventing these issues from reaching production.
+  In both cases, thorough **code reviews** and **static analysis tools** can help identify potential problems early. Additionally, **[automated testing](https://naodeng.com.cn/en/wiki/automated-testing)** with a focus on concurrency issues, such as using tools that simulate race conditions or deadlocks, can be invaluable in preventing these issues from reaching production.
 
   - **Lock Ordering** : Establish a global order in which locks must be acquired to prevent circular wait conditions.
   - **Lock Timeout** : Implement a timeout when attempting to acquire a lock, allowing the system to recover if a deadlock occurs.

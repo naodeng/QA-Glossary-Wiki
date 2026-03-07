@@ -1,6 +1,5 @@
 # Test Stub
 
-
 <!-- TOC START -->
 - [Questions about Test Stub ?](#questions-about-test-stub)
   - [Basics and Importance](#basics-and-importance)
@@ -31,8 +30,8 @@ Simulates the behavior of components that are absent.
 
 #### What is a Test Stub?
 
-  A **[Test Stub](../T/test-stub.md)** is a minimal implementation of an interface or class used during testing to replace a real component that the system under test interacts with. Stubs provide pre-defined responses to function calls made during the test, without executing any real code of the component they replace.
-  Implementing a [Test Stub](../T/test-stub.md) typically involves creating a new class or object that conforms to the required interface. This stub will include methods that are expected to be called by the system under test, and these methods will return fixed values relevant to the [test case](../T/test-case.md).
+  A **[Test Stub](https://naodeng.com.cn/en/wiki/test-stub)** is a minimal implementation of an interface or class used during testing to replace a real component that the system under test interacts with. Stubs provide pre-defined responses to function calls made during the test, without executing any real code of the component they replace.
+  Implementing a [Test Stub](https://naodeng.com.cn/en/wiki/test-stub) typically involves creating a new class or object that conforms to the required interface. This stub will include methods that are expected to be called by the system under test, and these methods will return fixed values relevant to the [test case](https://naodeng.com.cn/en/wiki/test-case).
 
   ```
   public class PaymentServiceStub implements PaymentService {
@@ -42,23 +41,23 @@ Simulates the behavior of components that are absent.
       }
   }
   ```
-  Stubs are particularly useful for simulating scenarios that are difficult to produce with real components, such as network failures or [database](../D/database.md) errors. By returning specific values or throwing exceptions, they can mimic these conditions.
-  When creating [Test Stubs](../T/test-stub.md), it's essential to ensure they are simple and focused on the test's needs. They should not contain complex logic but should be easy to understand and maintain. Integration with testing frameworks is usually straightforward, as stubs can be instantiated and used directly within [test cases](../T/test-case.md) or set up using the framework's mechanisms for dependency injection.
+  Stubs are particularly useful for simulating scenarios that are difficult to produce with real components, such as network failures or [database](https://naodeng.com.cn/en/wiki/database) errors. By returning specific values or throwing exceptions, they can mimic these conditions.
+  When creating [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub), it's essential to ensure they are simple and focused on the test's needs. They should not contain complex logic but should be easy to understand and maintain. Integration with testing frameworks is usually straightforward, as stubs can be instantiated and used directly within [test cases](https://naodeng.com.cn/en/wiki/test-case) or set up using the framework's mechanisms for dependency injection.
 
 #### Why are Test Stubs important in software testing?
 
-  [Test Stubs](../T/test-stub.md) are crucial in [software testing](../S/software-testing.md) because they facilitate **isolated testing** of components by simulating the behavior of software modules that a unit under test interacts with. This isolation helps in pinpointing defects within the unit itself, without interference from other parts of the system that may not be relevant to the test at hand or may not yet be developed.
-  By using Stubs, testers can **control the [test environment](../T/test-environment.md)** more effectively, providing specific inputs and simulating various scenarios, including error conditions. This control is essential for ensuring that the unit tests are both **reliable** and **repeatable**, which are key aspects of a solid testing strategy.
+  [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub) are crucial in [software testing](https://naodeng.com.cn/en/wiki/software-testing) because they facilitate **isolated testing** of components by simulating the behavior of software modules that a unit under test interacts with. This isolation helps in pinpointing defects within the unit itself, without interference from other parts of the system that may not be relevant to the test at hand or may not yet be developed.
+  By using Stubs, testers can **control the [test environment](https://naodeng.com.cn/en/wiki/test-environment)** more effectively, providing specific inputs and simulating various scenarios, including error conditions. This control is essential for ensuring that the unit tests are both **reliable** and **repeatable**, which are key aspects of a solid testing strategy.
   Stubs also play a significant role in **continuous integration** environments, where automated tests need to run quickly and efficiently. They help in reducing the complexity and execution time of tests by avoiding dependencies on external systems or components that are slow, flaky, or unavailable.
   Moreover, Stubs can be used to **simulate functionalities** that have legal or ethical restrictions, such as third-party services or payment gateways, allowing for comprehensive testing without breaching agreements or incurring costs.
-  In essence, [Test Stubs](../T/test-stub.md) are an indispensable tool for ensuring high-quality, robust, and maintainable code, as they enable developers to verify the correctness of their code in a controlled and predictable manner.
+  In essence, [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub) are an indispensable tool for ensuring high-quality, robust, and maintainable code, as they enable developers to verify the correctness of their code in a controlled and predictable manner.
 
 #### How does a Test Stub differ from a Mock Object?
 
-  [Test Stubs](../T/test-stub.md) and Mock Objects are both used in [unit testing](../U/unit-testing.md) to simulate dependencies, but they serve different purposes and are used in different contexts.
-  **[Test Stubs](../T/test-stub.md)** are simple implementations that return hardcoded data. They are primarily used to isolate the system under test by replacing complex, unavailable, or non-deterministic components with a predictable and controllable substitute. Stubs typically do not have any assertions; they are passive and only provide canned responses.
+  [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub) and Mock Objects are both used in [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) to simulate dependencies, but they serve different purposes and are used in different contexts.
+  **[Test Stubs](https://naodeng.com.cn/en/wiki/test-stub)** are simple implementations that return hardcoded data. They are primarily used to isolate the system under test by replacing complex, unavailable, or non-deterministic components with a predictable and controllable substitute. Stubs typically do not have any assertions; they are passive and only provide canned responses.
   **Mock Objects**, on the other hand, are more sophisticated. They are used to verify interactions between the system under test and its dependencies. Mocks can be programmed with expectations, meaning they can assert whether they were called with the correct parameters, the correct number of times, or in the correct order. They are active in the sense that they can cause a test to fail if the expected interactions do not occur.
-  In summary, while a [Test Stub](../T/test-stub.md) might be used to simulate a data source returning a fixed set of data, a Mock Object would be used to ensure that a method calls another method with specific parameters. Mocks are about behavior [verification](../V/verification.md), whereas Stubs are about state [verification](../V/verification.md).
+  In summary, while a [Test Stub](https://naodeng.com.cn/en/wiki/test-stub) might be used to simulate a data source returning a fixed set of data, a Mock Object would be used to ensure that a method calls another method with specific parameters. Mocks are about behavior [verification](https://naodeng.com.cn/en/wiki/verification), whereas Stubs are about state [verification](https://naodeng.com.cn/en/wiki/verification).
   Here's a simple example to illustrate the difference:
 
   ```
@@ -76,9 +75,9 @@ Simulates the behavior of components that are absent.
 
 #### What is the role of Test Stubs in Unit Testing?
 
-  In [unit testing](../U/unit-testing.md), **[test stubs](../T/test-stub.md)** serve as **placeholders** for missing components or modules that the unit under test interacts with. They provide **predefined responses** to method calls made during the test, ensuring that the unit test can run independently of external systems or services.
-  By using [test stubs](../T/test-stub.md), you isolate the unit under test, which allows you to verify the correctness of the unit's behavior in a controlled environment. Stubs can be particularly useful for simulating the behavior of components that are **unavailable** or **expensive** to interact with during testing, such as [databases](../D/database.md), web services, or third-party libraries.
-  When implementing a [test stub](../T/test-stub.md), you typically hard-code the responses that are relevant to the [test case](../T/test-case.md). For example, if the unit under test requires data from a [database](../D/database.md), a stub might return a fixed set of records without actually querying a real [database](../D/database.md).
+  In [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), **[test stubs](https://naodeng.com.cn/en/wiki/test-stub)** serve as **placeholders** for missing components or modules that the unit under test interacts with. They provide **predefined responses** to method calls made during the test, ensuring that the unit test can run independently of external systems or services.
+  By using [test stubs](https://naodeng.com.cn/en/wiki/test-stub), you isolate the unit under test, which allows you to verify the correctness of the unit's behavior in a controlled environment. Stubs can be particularly useful for simulating the behavior of components that are **unavailable** or **expensive** to interact with during testing, such as [databases](https://naodeng.com.cn/en/wiki/database), web services, or third-party libraries.
+  When implementing a [test stub](https://naodeng.com.cn/en/wiki/test-stub), you typically hard-code the responses that are relevant to the [test case](https://naodeng.com.cn/en/wiki/test-case). For example, if the unit under test requires data from a [database](https://naodeng.com.cn/en/wiki/database), a stub might return a fixed set of records without actually querying a real [database](https://naodeng.com.cn/en/wiki/database).
 
   ```
   function fetchDataStub() {
@@ -89,11 +88,11 @@ Simulates the behavior of components that are absent.
   }
   ```
   Stubs can also be configured to simulate **error conditions** by throwing exceptions or returning error codes, allowing you to test how the unit under test handles failures.
-  Incorporating [test stubs](../T/test-stub.md) into your testing strategy enhances the **reliability** and **speed** of your [test suite](../T/test-suite.md), as they remove dependencies on external factors. When using testing frameworks like JUnit or Mockito, stubs can be easily integrated using built-in mechanisms or annotations, streamlining the testing process and maintaining consistency across different [test cases](../T/test-case.md).
+  Incorporating [test stubs](https://naodeng.com.cn/en/wiki/test-stub) into your testing strategy enhances the **reliability** and **speed** of your [test suite](https://naodeng.com.cn/en/wiki/test-suite), as they remove dependencies on external factors. When using testing frameworks like JUnit or Mockito, stubs can be easily integrated using built-in mechanisms or annotations, streamlining the testing process and maintaining consistency across different [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
 #### What are the advantages and disadvantages of using Test Stubs?
 
-  **Advantages of using [Test Stubs](../T/test-stub.md):**
+  **Advantages of using [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub):**
 
   - **Isolation:**
     Stubs allow for testing a single unit of code in isolation, by simulating the behavior of dependent components.
@@ -109,7 +108,7 @@ Simulates the behavior of components that are absent.
 
   - **Determinism:**
     They provide consistent results, ensuring tests are not affected by external factors or state changes in dependencies.
-  **Disadvantages of using [Test Stubs](../T/test-stub.md):**
+  **Disadvantages of using [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub):**
 
   - **Limited Feedback:**
     Stubs can oversimplify a dependency's behavior, which might not reveal integration or interaction issues.
@@ -125,7 +124,7 @@ Simulates the behavior of components that are absent.
 
   - **State Management:**
     Stubs can be stateless and may not be suitable for testing scenarios where the state of the dependency is important.
-  Using [test stubs](../T/test-stub.md) effectively requires balancing their benefits with potential drawbacks, ensuring that they complement other testing strategies to provide comprehensive [test coverage](../T/test-coverage.md).
+  Using [test stubs](https://naodeng.com.cn/en/wiki/test-stub) effectively requires balancing their benefits with potential drawbacks, ensuring that they complement other testing strategies to provide comprehensive [test coverage](https://naodeng.com.cn/en/wiki/test-coverage).
 
   - **Isolation:**
     Stubs allow for testing a single unit of code in isolation, by simulating the behavior of dependent components.
@@ -161,7 +160,7 @@ Simulates the behavior of components that are absent.
 
 #### How is a Test Stub implemented?
 
-  Implementing a **[Test Stub](../T/test-stub.md)** typically involves the following steps:
+  Implementing a **[Test Stub](https://naodeng.com.cn/en/wiki/test-stub)** typically involves the following steps:
 
   1. **Identify the dependencies**
     of the unit under test that need to be replaced by stubs.
@@ -196,7 +195,7 @@ Simulates the behavior of components that are absent.
   const componentUnderTest = new ComponentThatUsesEmailService(testEmailService);
   // Assert that the component behaves correctly when email sending is successful
   ```
-  Remember to **keep stubs simple** and focused only on the behavior necessary for your tests. Avoid logic in stubs that isn't directly related to the [test scenario](../T/test-scenario.md). This ensures that tests remain maintainable and that the stubs do not become a source of complexity or potential [bugs](../B/bug.md) in the testing suite.
+  Remember to **keep stubs simple** and focused only on the behavior necessary for your tests. Avoid logic in stubs that isn't directly related to the [test scenario](https://naodeng.com.cn/en/wiki/test-scenario). This ensures that tests remain maintainable and that the stubs do not become a source of complexity or potential [bugs](https://naodeng.com.cn/en/wiki/bug) in the testing suite.
 
   1. **Identify the dependencies**
     of the unit under test that need to be replaced by stubs.
@@ -217,13 +216,13 @@ Simulates the behavior of components that are absent.
 
 #### What are the key elements of a Test Stub?
 
-  Key elements of a **[Test Stub](../T/test-stub.md)** include:
+  Key elements of a **[Test Stub](https://naodeng.com.cn/en/wiki/test-stub)** include:
 
   - **Predefined Responses** : Stubs provide hardcoded responses to function calls made during the test.
   - **Simplified Logic** : They contain minimal logic, only enough to make the test pass.
   - **Interface Implementation** : Stubs must adhere to the interface of the component they replace.
   - **Configuration** : They can be configured to return different outputs for different inputs to simulate various scenarios.
-  - **State [Verification](../V/verification.md)** : Some stubs may allow for state verification after test execution.
+  - **State [Verification](https://naodeng.com.cn/en/wiki/verification)** : Some stubs may allow for state verification after test execution.
   - **Error Simulation** : They can be designed to simulate error conditions by returning error codes or throwing exceptions.
   - **Performance** : Stubs can be lightweight to reduce the performance overhead in tests.
 
@@ -238,7 +237,7 @@ Simulates the behavior of components that are absent.
   ```
 
   - **Integration** : Stubs should easily integrate with the test suite and not require extensive setup.
-  - **[Maintainability](../M/maintainability.md)** : They should be easy to maintain and update as interfaces or requirements change.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : They should be easy to maintain and update as interfaces or requirements change.
   - **Isolation** : Stubs help isolate the system under test by removing dependencies on external systems or components.
   Remember to keep stubs as **simple** as possible and only use them when necessary to avoid overcomplicating tests. They should be a tool to achieve isolation, not a means to replicate complex logic.
 
@@ -246,16 +245,16 @@ Simulates the behavior of components that are absent.
   - **Simplified Logic** : They contain minimal logic, only enough to make the test pass.
   - **Interface Implementation** : Stubs must adhere to the interface of the component they replace.
   - **Configuration** : They can be configured to return different outputs for different inputs to simulate various scenarios.
-  - **State [Verification](../V/verification.md)** : Some stubs may allow for state verification after test execution.
+  - **State [Verification](https://naodeng.com.cn/en/wiki/verification)** : Some stubs may allow for state verification after test execution.
   - **Error Simulation** : They can be designed to simulate error conditions by returning error codes or throwing exceptions.
   - **Performance** : Stubs can be lightweight to reduce the performance overhead in tests.
   - **Integration** : Stubs should easily integrate with the test suite and not require extensive setup.
-  - **[Maintainability](../M/maintainability.md)** : They should be easy to maintain and update as interfaces or requirements change.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : They should be easy to maintain and update as interfaces or requirements change.
   - **Isolation** : Stubs help isolate the system under test by removing dependencies on external systems or components.
 
 #### Can you provide an example of a Test Stub?
 
-  Certainly! Below is an example of a [Test Stub](../T/test-stub.md) in a hypothetical scenario where you're testing a service that depends on a data repository. The stub will simulate the data repository's behavior.
+  Certainly! Below is an example of a [Test Stub](https://naodeng.com.cn/en/wiki/test-stub) in a hypothetical scenario where you're testing a service that depends on a data repository. The stub will simulate the data repository's behavior.
 
   ```
   public class DataRepositoryStub extends DataRepository {
@@ -289,7 +288,7 @@ Simulates the behavior of components that are absent.
 
 #### How can Test Stubs be used to simulate exceptions or error conditions?
 
-  [Test Stubs](../T/test-stub.md) can be used to simulate exceptions or error conditions by explicitly coding them to return error responses or throw exceptions when invoked. This allows testers to verify how the system under test (SUT) handles these scenarios without having to rely on the actual dependencies to fail.
+  [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub) can be used to simulate exceptions or error conditions by explicitly coding them to return error responses or throw exceptions when invoked. This allows testers to verify how the system under test (SUT) handles these scenarios without having to rely on the actual dependencies to fail.
   To simulate an exception, you would configure the stub to throw a specific exception type when a certain method is called. This is particularly useful when you want to test the SUT's error handling or resilience to faults in external services.
   For example, in Java using JUnit, you might create a stub that throws an `IOException`:
 
@@ -317,16 +316,16 @@ Simulates the behavior of components that are absent.
 
 #### What are some best practices when creating Test Stubs?
 
-  When creating [test stubs](../T/test-stub.md), adhere to the following best practices to ensure they are effective and maintainable:
+  When creating [test stubs](https://naodeng.com.cn/en/wiki/test-stub), adhere to the following best practices to ensure they are effective and maintainable:
 
   - **Keep stubs simple**: Stubs should be straightforward, only simulating the behavior necessary for the test. Avoid adding logic that doesn't directly contribute to the test's purpose.
   - **Use descriptive names**: Choose names that clearly indicate the stub's role and the conditions it simulates, aiding readability and maintenance.
   - **Isolate tests**: Ensure each stub is used in a way that doesn't affect other tests. Stubs should not introduce shared state between tests.
-  - **Parameterize stubs**: When possible, make stubs configurable so they can be reused across different [test scenarios](../T/test-scenario.md).
+  - **Parameterize stubs**: When possible, make stubs configurable so they can be reused across different [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario).
   - **Verify interactions**: If interaction with the stub is important, verify that the system under test interacts with the stub as expected.
   - **Clean up**: After each test, clean up any resources or state to prevent side effects on subsequent tests.
   - **Document stubs**: Comment on why the stub is needed and how it should be used, especially if its behavior isn't immediately obvious from its implementation.
-  - **Match real behavior**: Ensure the stub's behavior closely matches that of the real component it's standing in for, to avoid [false positives](../F/false-positive.md) or negatives.
+  - **Match real behavior**: Ensure the stub's behavior closely matches that of the real component it's standing in for, to avoid [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives.
   - **Version control**: Treat stubs as part of the codebase, maintaining them under version control with proper change tracking.
   - **Review and refactor**: Regularly review and refactor stubs to keep them relevant and aligned with the evolving codebase.
 
@@ -336,16 +335,16 @@ Simulates the behavior of components that are absent.
     return true;
   }
   ```
-  By following these practices, you'll create robust and reliable [test stubs](../T/test-stub.md) that contribute to a more effective and efficient testing process.
+  By following these practices, you'll create robust and reliable [test stubs](https://naodeng.com.cn/en/wiki/test-stub) that contribute to a more effective and efficient testing process.
 
   - **Keep stubs simple**: Stubs should be straightforward, only simulating the behavior necessary for the test. Avoid adding logic that doesn't directly contribute to the test's purpose.
   - **Use descriptive names**: Choose names that clearly indicate the stub's role and the conditions it simulates, aiding readability and maintenance.
   - **Isolate tests**: Ensure each stub is used in a way that doesn't affect other tests. Stubs should not introduce shared state between tests.
-  - **Parameterize stubs**: When possible, make stubs configurable so they can be reused across different [test scenarios](../T/test-scenario.md).
+  - **Parameterize stubs**: When possible, make stubs configurable so they can be reused across different [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario).
   - **Verify interactions**: If interaction with the stub is important, verify that the system under test interacts with the stub as expected.
   - **Clean up**: After each test, clean up any resources or state to prevent side effects on subsequent tests.
   - **Document stubs**: Comment on why the stub is needed and how it should be used, especially if its behavior isn't immediately obvious from its implementation.
-  - **Match real behavior**: Ensure the stub's behavior closely matches that of the real component it's standing in for, to avoid [false positives](../F/false-positive.md) or negatives.
+  - **Match real behavior**: Ensure the stub's behavior closely matches that of the real component it's standing in for, to avoid [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives.
   - **Version control**: Treat stubs as part of the codebase, maintaining them under version control with proper change tracking.
   - **Review and refactor**: Regularly review and refactor stubs to keep them relevant and aligned with the evolving codebase.
 
@@ -353,7 +352,7 @@ Simulates the behavior of components that are absent.
 
 #### How do Test Stubs integrate with popular testing frameworks?
 
-  Integrating [test stubs](../T/test-stub.md) with popular testing frameworks typically involves leveraging the framework's features to replace real dependencies with stubs during [test execution](../T/test-execution.md). Here's a concise guide:
+  Integrating [test stubs](https://naodeng.com.cn/en/wiki/test-stub) with popular testing frameworks typically involves leveraging the framework's features to replace real dependencies with stubs during [test execution](https://naodeng.com.cn/en/wiki/test-execution). Here's a concise guide:
   **JUnit**:
   JUnit doesn't have a built-in stubbing mechanism, but it allows for easy integration with stubbing libraries. Use `@BeforeEach` or `@Before` annotations to set up stubs before each test.
 
@@ -407,7 +406,7 @@ Simulates the behavior of components that are absent.
 
 #### How do you create a Test Stub in JUnit?
 
-  Creating a [test stub](../T/test-stub.md) in JUnit involves writing a simple implementation of an interface or a class with predefined behavior. This behavior is hard-coded to return specific values or perform certain actions that simulate real-world scenarios. Here's a step-by-step guide:
+  Creating a [test stub](https://naodeng.com.cn/en/wiki/test-stub) in JUnit involves writing a simple implementation of an interface or a class with predefined behavior. This behavior is hard-coded to return specific values or perform certain actions that simulate real-world scenarios. Here's a step-by-step guide:
 
   1. **Identify the dependency** you want to stub. This could be an interface or a concrete class that your unit under test interacts with.
   2. **Create a stub class** that implements the interface or extends the class you're stubbing.
@@ -436,7 +435,7 @@ Simulates the behavior of components that are absent.
       }
   }
   ```
-  In this example, `ExternalServiceStub` is the stub that simulates the behavior of an external service by returning a fixed value. The `MyClass` instance uses this stub in the test, allowing you to control the [test environment](../T/test-environment.md) and verify the behavior of `MyClass` when interacting with the external service.
+  In this example, `ExternalServiceStub` is the stub that simulates the behavior of an external service by returning a fixed value. The `MyClass` instance uses this stub in the test, allowing you to control the [test environment](https://naodeng.com.cn/en/wiki/test-environment) and verify the behavior of `MyClass` when interacting with the external service.
 
   1. **Identify the dependency** you want to stub. This could be an interface or a concrete class that your unit under test interacts with.
   2. **Create a stub class** that implements the interface or extends the class you're stubbing.
@@ -445,7 +444,7 @@ Simulates the behavior of components that are absent.
 
 #### How do you create a Test Stub in Mockito?
 
-  Creating a [test stub](../T/test-stub.md) in Mockito is straightforward. Use the `mock` method to create a stub of the desired class or interface. Then, define the behavior of the stub using `when` and `thenReturn` methods for the specific calls you want to stub out. Here's a concise example:
+  Creating a [test stub](https://naodeng.com.cn/en/wiki/test-stub) in Mockito is straightforward. Use the `mock` method to create a stub of the desired class or interface. Then, define the behavior of the stub using `when` and `thenReturn` methods for the specific calls you want to stub out. Here's a concise example:
 
   ```
   import static org.mockito.Mockito.*;
@@ -476,7 +475,7 @@ Simulates the behavior of components that are absent.
 
 #### What are some differences in using Test Stubs in different testing frameworks?
 
-  Differences in using [test stubs](../T/test-stub.md) across various testing frameworks stem from the **syntax**, **features**, and **integration capabilities** each framework offers:
+  Differences in using [test stubs](https://naodeng.com.cn/en/wiki/test-stub) across various testing frameworks stem from the **syntax**, **features**, and **integration capabilities** each framework offers:
 
   - **JUnit**: Stubs are manually created as simple classes or using the `@Mock` annotation with the Mockito extension. JUnit 5's extension model allows seamless integration with mocking libraries.
 
@@ -504,7 +503,7 @@ Simulates the behavior of components that are absent.
     allow(service).to receive(:operation).and_return("stubbed response")
     ```
 
-  - **Pytest (Python)**: Utilizes fixtures and monkeypatching to stub methods or functions. Pytest's fixtures offer powerful [setup](../S/setup.md) and teardown capabilities.
+  - **Pytest (Python)**: Utilizes fixtures and monkeypatching to stub methods or functions. Pytest's fixtures offer powerful [setup](https://naodeng.com.cn/en/wiki/setup) and teardown capabilities.
 
     ```
     def test_operation(monkeypatch):
@@ -513,13 +512,13 @@ Simulates the behavior of components that are absent.
         monkeypatch.setattr('module.Service.operation', mock_operation)
     ```
 
-  - **Mocha (JavaScript)**: Stubs are created using Sinon.js or other libraries, offering rich [APIs](../A/api.md) for behavior [verification](../V/verification.md) and stubbing.
+  - **Mocha (JavaScript)**: Stubs are created using Sinon.js or other libraries, offering rich [APIs](https://naodeng.com.cn/en/wiki/api) for behavior [verification](https://naodeng.com.cn/en/wiki/verification) and stubbing.
 
     ```
     const sinon = require('sinon');
     let stub = sinon.stub(service, 'operation').returns("stubbed response");
     ```
-  Each framework's approach to stubbing affects how **quickly** and **easily** [test automation](../T/test-automation.md) engineers can write and maintain tests. The choice of framework often depends on the language ecosystem and the specific needs of the project, such as the complexity of the tests or the need for certain features like asynchronous testing or integration with other tools.
+  Each framework's approach to stubbing affects how **quickly** and **easily** [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can write and maintain tests. The choice of framework often depends on the language ecosystem and the specific needs of the project, such as the complexity of the tests or the need for certain features like asynchronous testing or integration with other tools.
 
   - **JUnit**: Stubs are manually created as simple classes or using the `@Mock` annotation with the Mockito extension. JUnit 5's extension model allows seamless integration with mocking libraries.
 
@@ -547,7 +546,7 @@ Simulates the behavior of components that are absent.
     allow(service).to receive(:operation).and_return("stubbed response")
     ```
 
-  - **Pytest (Python)**: Utilizes fixtures and monkeypatching to stub methods or functions. Pytest's fixtures offer powerful [setup](../S/setup.md) and teardown capabilities.
+  - **Pytest (Python)**: Utilizes fixtures and monkeypatching to stub methods or functions. Pytest's fixtures offer powerful [setup](https://naodeng.com.cn/en/wiki/setup) and teardown capabilities.
 
     ```
     def test_operation(monkeypatch):
@@ -556,7 +555,7 @@ Simulates the behavior of components that are absent.
         monkeypatch.setattr('module.Service.operation', mock_operation)
     ```
 
-  - **Mocha (JavaScript)**: Stubs are created using Sinon.js or other libraries, offering rich [APIs](../A/api.md) for behavior [verification](../V/verification.md) and stubbing.
+  - **Mocha (JavaScript)**: Stubs are created using Sinon.js or other libraries, offering rich [APIs](https://naodeng.com.cn/en/wiki/api) for behavior [verification](https://naodeng.com.cn/en/wiki/verification) and stubbing.
 
     ```
     const sinon = require('sinon');
@@ -565,25 +564,25 @@ Simulates the behavior of components that are absent.
 
 #### How can Test Stubs be used in conjunction with other testing tools and techniques?
 
-  [Test Stubs](../T/test-stub.md) can be integrated with various testing tools and techniques to enhance the testing process:
+  [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub) can be integrated with various testing tools and techniques to enhance the testing process:
 
-  - **[Integration Testing](../I/integration-testing.md)**: Stubs can simulate components that are yet to be developed or are unavailable, allowing for early [integration testing](../I/integration-testing.md).
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Stubs can simulate components that are yet to be developed or are unavailable, allowing for early [integration testing](https://naodeng.com.cn/en/wiki/integration-testing).
   - **Continuous Integration (CI)**: In a CI pipeline, stubs ensure that tests can run autonomously without dependencies on external systems, leading to more reliable builds.
-  - **Behavior-Driven Development ([BDD](../B/bdd.md))**: Stubs can be used to mock the expected behavior of a system, allowing [BDD](../B/bdd.md) scenarios to be tested even when some components are not fully implemented.
-  - **Service Virtualization**: Stubs can act as virtual services, mimicking third-party [APIs](../A/api.md) or services that are costly or difficult to access during testing.
-  - **[Performance Testing](../P/performance-testing.md)**: By stubbing out parts of the system, you can isolate and stress-test specific components to identify performance bottlenecks.
-  - **[Test Data](../T/test-data.md) Management**: Stubs can be configured to return different sets of data, facilitating testing with various data scenarios without the need to manipulate a real [database](../D/database.md).
-  - **[End-to-End Testing](../E/end-to-end-testing.md)**: While not a substitute for testing with real integrations, stubs can be used in early [end-to-end testing](../E/end-to-end-testing.md) to simulate the behavior of external systems.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))**: Stubs can be used to mock the expected behavior of a system, allowing [BDD](https://naodeng.com.cn/en/wiki/bdd) scenarios to be tested even when some components are not fully implemented.
+  - **Service Virtualization**: Stubs can act as virtual services, mimicking third-party [APIs](https://naodeng.com.cn/en/wiki/api) or services that are costly or difficult to access during testing.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: By stubbing out parts of the system, you can isolate and stress-test specific components to identify performance bottlenecks.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management**: Stubs can be configured to return different sets of data, facilitating testing with various data scenarios without the need to manipulate a real [database](https://naodeng.com.cn/en/wiki/database).
+  - **[End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**: While not a substitute for testing with real integrations, stubs can be used in early [end-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing) to simulate the behavior of external systems.
   - **Test Isolation**: Stubs help in isolating the system under test, making it easier to pinpoint failures.
-  - **[Regression Testing](../R/regression-testing.md)**: They enable regression tests to run independently of external systems, which may change over time and affect test outcomes.
-  By combining [Test Stubs](../T/test-stub.md) with these tools and techniques, [test automation](../T/test-automation.md) engineers can create a robust and flexible testing environment that accommodates various testing needs while minimizing dependencies on external systems.
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: They enable regression tests to run independently of external systems, which may change over time and affect test outcomes.
+  By combining [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub) with these tools and techniques, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can create a robust and flexible testing environment that accommodates various testing needs while minimizing dependencies on external systems.
 
-  - **[Integration Testing](../I/integration-testing.md)**: Stubs can simulate components that are yet to be developed or are unavailable, allowing for early [integration testing](../I/integration-testing.md).
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Stubs can simulate components that are yet to be developed or are unavailable, allowing for early [integration testing](https://naodeng.com.cn/en/wiki/integration-testing).
   - **Continuous Integration (CI)**: In a CI pipeline, stubs ensure that tests can run autonomously without dependencies on external systems, leading to more reliable builds.
-  - **Behavior-Driven Development ([BDD](../B/bdd.md))**: Stubs can be used to mock the expected behavior of a system, allowing [BDD](../B/bdd.md) scenarios to be tested even when some components are not fully implemented.
-  - **Service Virtualization**: Stubs can act as virtual services, mimicking third-party [APIs](../A/api.md) or services that are costly or difficult to access during testing.
-  - **[Performance Testing](../P/performance-testing.md)**: By stubbing out parts of the system, you can isolate and stress-test specific components to identify performance bottlenecks.
-  - **[Test Data](../T/test-data.md) Management**: Stubs can be configured to return different sets of data, facilitating testing with various data scenarios without the need to manipulate a real [database](../D/database.md).
-  - **[End-to-End Testing](../E/end-to-end-testing.md)**: While not a substitute for testing with real integrations, stubs can be used in early [end-to-end testing](../E/end-to-end-testing.md) to simulate the behavior of external systems.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))**: Stubs can be used to mock the expected behavior of a system, allowing [BDD](https://naodeng.com.cn/en/wiki/bdd) scenarios to be tested even when some components are not fully implemented.
+  - **Service Virtualization**: Stubs can act as virtual services, mimicking third-party [APIs](https://naodeng.com.cn/en/wiki/api) or services that are costly or difficult to access during testing.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: By stubbing out parts of the system, you can isolate and stress-test specific components to identify performance bottlenecks.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management**: Stubs can be configured to return different sets of data, facilitating testing with various data scenarios without the need to manipulate a real [database](https://naodeng.com.cn/en/wiki/database).
+  - **[End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**: While not a substitute for testing with real integrations, stubs can be used in early [end-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing) to simulate the behavior of external systems.
   - **Test Isolation**: Stubs help in isolating the system under test, making it easier to pinpoint failures.
-  - **[Regression Testing](../R/regression-testing.md)**: They enable regression tests to run independently of external systems, which may change over time and affect test outcomes.
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: They enable regression tests to run independently of external systems, which may change over time and affect test outcomes.

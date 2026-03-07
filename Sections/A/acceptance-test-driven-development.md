@@ -1,6 +1,5 @@
 # Acceptance Test Driven Development
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
   - [See also:](#see-also)
@@ -37,8 +36,8 @@ Acceptance Test Driven Development
 
 ## Related Terms:
 
-- [Test-Driven Development](../T/test-driven-development.md)
-- [User Acceptance Testing](../U/user-acceptance-testing.md)
+- [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development)
+- [User Acceptance Testing](https://naodeng.com.cn/en/wiki/user-acceptance-testing)
 
 ### See also:
 
@@ -50,11 +49,11 @@ Acceptance Test Driven Development
 
 #### What is Acceptance Test Driven Development (ATDD)?
 
-  [Acceptance Test Driven Development](../A/acceptance-test-driven-development.md) (ATDD) is a development methodology where team members with different perspectives (developers, testers, and business customers) collaborate to write acceptance tests before coding begins. The primary goal is to specify detailed, customer-centric criteria for system functionality which guides development and provides a clear understanding of desired outcomes.
+  [Acceptance Test Driven Development](https://naodeng.com.cn/en/wiki/acceptance-test-driven-development) (ATDD) is a development methodology where team members with different perspectives (developers, testers, and business customers) collaborate to write acceptance tests before coding begins. The primary goal is to specify detailed, customer-centric criteria for system functionality which guides development and provides a clear understanding of desired outcomes.
   In ATDD, acceptance tests are expressed as examples or scenarios, often using the "Given-When-Then" format, which describe a system's behavior from the user's perspective. These tests are automated and serve as living documentation and regression suite.
   ATDD fosters better communication and understanding among team members, ensuring that features meet business requirements. It aligns development work with customer needs and helps prevent feature creep and defects. By focusing on customer requirements from the outset, teams can deliver more valuable and higher-quality software.
   The tester's role in ATDD extends beyond traditional testing to include participation in requirements clarification and ensuring that acceptance criteria are testable and clear. Testers collaborate closely with developers and business representatives to create and automate acceptance tests.
-  Commonly used tools for ATDD include Cucumber, SpecFlow, and FitNesse, which support Behavior-Driven Development ([BDD](../B/bdd.md)) and Specification by Example practices. These tools allow the writing of tests in a language that is understandable by all stakeholders, bridging the gap between technical and non-technical team members.
+  Commonly used tools for ATDD include Cucumber, SpecFlow, and FitNesse, which support Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) and Specification by Example practices. These tools allow the writing of tests in a language that is understandable by all stakeholders, bridging the gap between technical and non-technical team members.
   Implementing ATDD effectively requires a shift in mindset and practice, emphasizing upfront specification, continuous feedback, and iterative development. It is a key practice in agile and lean development methodologies, contributing to the delivery of high-quality software that meets user expectations.
 
 #### Why is ATDD important in software development?
@@ -62,14 +61,14 @@ Acceptance Test Driven Development
   ATDD is crucial in software development as it ensures that all stakeholders have a shared understanding of the requirements before coding begins. This approach aligns developers, testers, and business representatives around agreed-upon acceptance criteria, fostering better communication and collaboration. By focusing on customer requirements from the outset, ATDD minimizes the risk of misinterpretation and reduces the likelihood of costly rework later in the development cycle.
   Incorporating ATDD early in the development process helps in identifying and resolving issues before they escalate, leading to a more efficient and streamlined workflow. It encourages behavior specification in simple language, making tests understandable to all parties involved. This clarity helps in preventing defects rather than detecting them post-development, which is a more proactive approach compared to traditional testing methods.
   ATDD also facilitates continuous feedback, allowing for iterative improvements throughout the development lifecycle. This iterative process helps in refining the product to better meet user expectations, ultimately resulting in a higher quality software that aligns closely with business objectives.
-  Moreover, ATDD's emphasis on automation supports [regression testing](../R/regression-testing.md) and enables a sustainable testing process that can handle changes without a significant increase in effort. This [automated testing](../A/automated-testing.md) framework is essential for maintaining a high level of quality in a fast-paced development environment, especially when scaling to larger projects.
+  Moreover, ATDD's emphasis on automation supports [regression testing](https://naodeng.com.cn/en/wiki/regression-testing) and enables a sustainable testing process that can handle changes without a significant increase in effort. This [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) framework is essential for maintaining a high level of quality in a fast-paced development environment, especially when scaling to larger projects.
   In summary, ATDD is important because it promotes a shared understanding, reduces rework, ensures alignment with business goals, and supports a sustainable, high-quality development process.
 
 #### How does ATDD differ from traditional testing methods?
 
-  ATDD, or [Acceptance Test Driven Development](../A/acceptance-test-driven-development.md), differs from traditional testing methods primarily in its **collaborative approach** and **timing**. Traditional testing often occurs after the development phase, where testers create and execute tests based on already implemented features. In contrast, ATDD involves multiple stakeholders including developers, testers, and business representatives who define acceptance criteria and create acceptance tests **before** any code is written.
-  This upfront collaboration in ATDD ensures that all parties have a shared understanding of the requirements and the definition of "done." It shifts the focus from finding [bugs](../B/bug.md) after development to preventing [bugs](../B/bug.md) by clarifying expectations early on. Additionally, ATDD encourages **behavior-driven development** ([BDD](../B/bdd.md)), where tests are written in a language that is understandable to all stakeholders, often using a Given-When-Then format.
-  While traditional testing methods may rely heavily on [manual testing](../M/manual-testing.md) or create automated tests after the fact, ATDD integrates **[test automation](../T/test-automation.md)** from the start. Acceptance tests are automated and become part of the **regression suite**, providing immediate feedback on whether new changes meet the agreed-upon criteria.
+  ATDD, or [Acceptance Test Driven Development](https://naodeng.com.cn/en/wiki/acceptance-test-driven-development), differs from traditional testing methods primarily in its **collaborative approach** and **timing**. Traditional testing often occurs after the development phase, where testers create and execute tests based on already implemented features. In contrast, ATDD involves multiple stakeholders including developers, testers, and business representatives who define acceptance criteria and create acceptance tests **before** any code is written.
+  This upfront collaboration in ATDD ensures that all parties have a shared understanding of the requirements and the definition of "done." It shifts the focus from finding [bugs](https://naodeng.com.cn/en/wiki/bug) after development to preventing [bugs](https://naodeng.com.cn/en/wiki/bug) by clarifying expectations early on. Additionally, ATDD encourages **behavior-driven development** ([BDD](https://naodeng.com.cn/en/wiki/bdd)), where tests are written in a language that is understandable to all stakeholders, often using a Given-When-Then format.
+  While traditional testing methods may rely heavily on [manual testing](https://naodeng.com.cn/en/wiki/manual-testing) or create automated tests after the fact, ATDD integrates **[test automation](https://naodeng.com.cn/en/wiki/test-automation)** from the start. Acceptance tests are automated and become part of the **regression suite**, providing immediate feedback on whether new changes meet the agreed-upon criteria.
   In summary, ATDD's proactive, collaborative approach contrasts with traditional reactive testing methods, emphasizing prevention over detection and fostering a shared responsibility for quality across the entire team.
 
 #### What are the key benefits of using ATDD?
@@ -95,11 +94,11 @@ Acceptance Test Driven Development
 
 #### How does ATDD contribute to the quality of a software product?
 
-  ATDD enhances [software quality](../S/software-quality.md) by ensuring that **[functional requirements](../F/functional-requirements.md)** are precisely met and that the product behaves as the stakeholders expect. By focusing on customer requirements from the outset, ATDD promotes the creation of **clear and executable specifications**. These specifications guide development and testing, reducing the likelihood of defects due to misunderstandings or incomplete requirements.
+  ATDD enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by ensuring that **[functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements)** are precisely met and that the product behaves as the stakeholders expect. By focusing on customer requirements from the outset, ATDD promotes the creation of **clear and executable specifications**. These specifications guide development and testing, reducing the likelihood of defects due to misunderstandings or incomplete requirements.
   Acceptance tests are defined **before** code is written, which means that developers have a clear target to aim for. This **test-first approach** helps prevent feature creep and ensures that the codebase only contains what is necessary to pass the tests, leading to a cleaner and more maintainable codebase.
   Moreover, ATDD encourages collaboration between developers, testers, and business stakeholders. This **cross-functional communication** helps to identify and resolve ambiguities early in the development process, which can significantly improve the product's quality.
-  Continuous feedback from the execution of acceptance tests allows for **early detection of issues**, which is generally less costly to fix than [bugs](../B/bug.md) found later in the development cycle. Additionally, the suite of acceptance tests becomes a living documentation that can be used for **[regression testing](../R/regression-testing.md)**, ensuring that new changes do not break existing functionality.
-  In summary, ATDD contributes to [software quality](../S/software-quality.md) by clarifying requirements, fostering collaboration, and providing continuous feedback, all of which help in building a product that aligns closely with business needs and user expectations.
+  Continuous feedback from the execution of acceptance tests allows for **early detection of issues**, which is generally less costly to fix than [bugs](https://naodeng.com.cn/en/wiki/bug) found later in the development cycle. Additionally, the suite of acceptance tests becomes a living documentation that can be used for **[regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**, ensuring that new changes do not break existing functionality.
+  In summary, ATDD contributes to [software quality](https://naodeng.com.cn/en/wiki/software-quality) by clarifying requirements, fostering collaboration, and providing continuous feedback, all of which help in building a product that aligns closely with business needs and user expectations.
 
 ### Process and Techniques
 
@@ -122,15 +121,15 @@ Acceptance Test Driven Development
   5. **Refinement**
     of the acceptance tests as necessary, to address changes in requirements or understanding.
 
-  6. **[Test Execution](../T/test-execution.md)**
+  6. **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution)**
     to validate that the software meets the agreed-upon acceptance criteria.
 
   7. **Review and Feedback**
     from stakeholders to confirm that the acceptance tests cover the desired functionality and behavior.
 
-  8. **[Iteration](../I/iteration.md)**
+  8. **[Iteration](https://naodeng.com.cn/en/wiki/iteration)**
     through these steps as needed until the feature meets the acceptance criteria.
-  Acceptance tests are typically automated to facilitate frequent execution and [regression testing](../R/regression-testing.md). The tests are written in a language that is understandable by all parties involved, often using Behavior Driven Development ([BDD](../B/bdd.md)) frameworks like Cucumber or SpecFlow. This ensures that the tests serve as both specification and validation.
+  Acceptance tests are typically automated to facilitate frequent execution and [regression testing](https://naodeng.com.cn/en/wiki/regression-testing). The tests are written in a language that is understandable by all parties involved, often using Behavior Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) frameworks like Cucumber or SpecFlow. This ensures that the tests serve as both specification and validation.
 
   ```
   Feature: User login
@@ -156,13 +155,13 @@ Acceptance Test Driven Development
   5. **Refinement**
     of the acceptance tests as necessary, to address changes in requirements or understanding.
 
-  6. **[Test Execution](../T/test-execution.md)**
+  6. **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution)**
     to validate that the software meets the agreed-upon acceptance criteria.
 
   7. **Review and Feedback**
     from stakeholders to confirm that the acceptance tests cover the desired functionality and behavior.
 
-  8. **[Iteration](../I/iteration.md)**
+  8. **[Iteration](https://naodeng.com.cn/en/wiki/iteration)**
     through these steps as needed until the feature meets the acceptance criteria.
 
 #### How are acceptance tests created in ATDD?
@@ -198,24 +197,24 @@ Acceptance Test Driven Development
 
   In ATDD, several techniques are employed to ensure that acceptance criteria are met and that the software behaves as expected:
 
-  - **Behavior-Driven Development ([BDD](../B/bdd.md))**: This technique involves writing tests in a natural language style that describes the behavior of the application. Tools like Cucumber or SpecFlow are often used to facilitate [BDD](../B/bdd.md).
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))**: This technique involves writing tests in a natural language style that describes the behavior of the application. Tools like Cucumber or SpecFlow are often used to facilitate [BDD](https://naodeng.com.cn/en/wiki/bdd).
   - **Specification by Example**: Collaboratively defining examples that illustrate specific behaviors or requirements. These examples are then used as the basis for acceptance tests.
   - **Example Mapping**: A workshop technique where team members use cards to represent user stories (yellow), rules (blue), examples (green), and questions (red). This helps in understanding the story and creating acceptance tests.
   - **Executable Specifications**: Writing acceptance tests in a way that they can be executed directly against the code. This often involves a domain-specific language (DSL) to express the tests in a way that is understandable by all stakeholders.
   - **Test-First Development**: Writing the acceptance test before the actual implementation begins, ensuring that development is focused on passing the tests.
-  - **Collaboration Tools**: Using tools that facilitate collaboration between business stakeholders, developers, and testers, such as shared repositories or collaboration platforms like [JIRA](../J/jira.md) with Xray or TestRail.
+  - **Collaboration Tools**: Using tools that facilitate collaboration between business stakeholders, developers, and testers, such as shared repositories or collaboration platforms like [JIRA](https://naodeng.com.cn/en/wiki/jira) with Xray or TestRail.
   - **Continuous Integration (CI)**: Automatically running acceptance tests as part of the CI pipeline to get immediate feedback on the changes made.
-  - **Version Control for Test Artifacts**: Storing acceptance tests in version control systems alongside the codebase to maintain synchronization between [test cases](../T/test-case.md) and application code.
+  - **Version Control for Test Artifacts**: Storing acceptance tests in version control systems alongside the codebase to maintain synchronization between [test cases](https://naodeng.com.cn/en/wiki/test-case) and application code.
   These techniques help in defining clear acceptance criteria, fostering collaboration among team members, and ensuring that the software meets the business requirements before it is considered complete.
 
-  - **Behavior-Driven Development ([BDD](../B/bdd.md))**: This technique involves writing tests in a natural language style that describes the behavior of the application. Tools like Cucumber or SpecFlow are often used to facilitate [BDD](../B/bdd.md).
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))**: This technique involves writing tests in a natural language style that describes the behavior of the application. Tools like Cucumber or SpecFlow are often used to facilitate [BDD](https://naodeng.com.cn/en/wiki/bdd).
   - **Specification by Example**: Collaboratively defining examples that illustrate specific behaviors or requirements. These examples are then used as the basis for acceptance tests.
   - **Example Mapping**: A workshop technique where team members use cards to represent user stories (yellow), rules (blue), examples (green), and questions (red). This helps in understanding the story and creating acceptance tests.
   - **Executable Specifications**: Writing acceptance tests in a way that they can be executed directly against the code. This often involves a domain-specific language (DSL) to express the tests in a way that is understandable by all stakeholders.
   - **Test-First Development**: Writing the acceptance test before the actual implementation begins, ensuring that development is focused on passing the tests.
-  - **Collaboration Tools**: Using tools that facilitate collaboration between business stakeholders, developers, and testers, such as shared repositories or collaboration platforms like [JIRA](../J/jira.md) with Xray or TestRail.
+  - **Collaboration Tools**: Using tools that facilitate collaboration between business stakeholders, developers, and testers, such as shared repositories or collaboration platforms like [JIRA](https://naodeng.com.cn/en/wiki/jira) with Xray or TestRail.
   - **Continuous Integration (CI)**: Automatically running acceptance tests as part of the CI pipeline to get immediate feedback on the changes made.
-  - **Version Control for Test Artifacts**: Storing acceptance tests in version control systems alongside the codebase to maintain synchronization between [test cases](../T/test-case.md) and application code.
+  - **Version Control for Test Artifacts**: Storing acceptance tests in version control systems alongside the codebase to maintain synchronization between [test cases](https://naodeng.com.cn/en/wiki/test-case) and application code.
 
 #### How is ATDD integrated into the software development lifecycle?
 
@@ -229,9 +228,9 @@ Acceptance Test Driven Development
 #### What is the role of a tester in ATDD?
 
   In ATDD, a tester's role is multifaceted, focusing on collaboration, specification, and validation. Testers work closely with **developers**, **business analysts**, and **stakeholders** to clarify requirements and ensure that acceptance criteria are well-defined. They contribute to the **creation of user stories** and **acceptance tests**, ensuring that these tests accurately reflect business needs and can be automated.
-  During the development process, testers are involved in the **continuous refinement** of acceptance tests, often pairing with developers to create and maintain [test automation](../T/test-automation.md). They ensure that tests are **executable specifications** that guide development and provide immediate feedback on the software's behavior against expected outcomes.
-  Testers also play a critical role in **maintaining the [test suite](../T/test-suite.md)**, ensuring that it remains **reliable** and **efficient** as the codebase evolves. They may also be responsible for **[test data](../T/test-data.md) management** and setting up the necessary **[test environments](../T/test-environment.md)**.
-  In the ATDD cycle, testers help facilitate the **three Amigos meetings**, where discussions about feature implementation take place, and they actively participate in **[iteration](../I/iteration.md) planning** and **retrospectives** to continuously improve the process.
+  During the development process, testers are involved in the **continuous refinement** of acceptance tests, often pairing with developers to create and maintain [test automation](https://naodeng.com.cn/en/wiki/test-automation). They ensure that tests are **executable specifications** that guide development and provide immediate feedback on the software's behavior against expected outcomes.
+  Testers also play a critical role in **maintaining the [test suite](https://naodeng.com.cn/en/wiki/test-suite)**, ensuring that it remains **reliable** and **efficient** as the codebase evolves. They may also be responsible for **[test data](https://naodeng.com.cn/en/wiki/test-data) management** and setting up the necessary **[test environments](https://naodeng.com.cn/en/wiki/test-environment)**.
+  In the ATDD cycle, testers help facilitate the **three Amigos meetings**, where discussions about feature implementation take place, and they actively participate in **[iteration](https://naodeng.com.cn/en/wiki/iteration) planning** and **retrospectives** to continuously improve the process.
   Ultimately, testers in ATDD ensure that the team delivers a product that not only meets the technical requirements but also fulfills the business needs and provides value to the end user. They are key in driving the **quality-first approach** inherent in ATDD.
 
 ### Tools and Technologies
@@ -246,8 +245,8 @@ Acceptance Test Driven Development
   - **Robot Framework** : A keyword-driven test automation framework that is highly extensible and supports tabular data for test cases.
   - **Concordion** : Integrates with JUnit and allows writing specifications in HTML, which can be linked to Java code for testing.
   - **JBehave** : A framework for behavior-driven development (BDD) in Java, it uses stories written in natural language to drive development.
-  - **Serenity [BDD](../B/bdd.md)** : Enhances other BDD tools like Cucumber and JBehave by providing advanced reporting and living documentation features.
-  These tools support the ATDD process by enabling the definition of acceptance criteria in a language that is understandable by all stakeholders. They facilitate the automation of acceptance tests and help ensure that software features meet the predefined criteria before they are considered complete. [Test automation](../T/test-automation.md) engineers use these tools to write, manage, and execute acceptance tests, often integrating them into continuous integration pipelines for continuous feedback. Proficiency in programming, understanding of the application domain, and familiarity with the chosen tool's syntax and best practices are essential to use these tools effectively.
+  - **Serenity [BDD](https://naodeng.com.cn/en/wiki/bdd)** : Enhances other BDD tools like Cucumber and JBehave by providing advanced reporting and living documentation features.
+  These tools support the ATDD process by enabling the definition of acceptance criteria in a language that is understandable by all stakeholders. They facilitate the automation of acceptance tests and help ensure that software features meet the predefined criteria before they are considered complete. [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers use these tools to write, manage, and execute acceptance tests, often integrating them into continuous integration pipelines for continuous feedback. Proficiency in programming, understanding of the application domain, and familiarity with the chosen tool's syntax and best practices are essential to use these tools effectively.
 
   - **Cucumber** : Utilizes Gherkin language for writing tests, enabling collaboration between technical and non-technical stakeholders.
   - **SpecFlow** : Similar to Cucumber but tailored for the .NET framework, it also uses Gherkin for test specifications.
@@ -255,13 +254,13 @@ Acceptance Test Driven Development
   - **Robot Framework** : A keyword-driven test automation framework that is highly extensible and supports tabular data for test cases.
   - **Concordion** : Integrates with JUnit and allows writing specifications in HTML, which can be linked to Java code for testing.
   - **JBehave** : A framework for behavior-driven development (BDD) in Java, it uses stories written in natural language to drive development.
-  - **Serenity [BDD](../B/bdd.md)** : Enhances other BDD tools like Cucumber and JBehave by providing advanced reporting and living documentation features.
+  - **Serenity [BDD](https://naodeng.com.cn/en/wiki/bdd)** : Enhances other BDD tools like Cucumber and JBehave by providing advanced reporting and living documentation features.
 
 #### How do these tools support the ATDD process?
 
-  [Test automation](../T/test-automation.md) tools facilitate the **ATDD process** by enabling the **execution** of acceptance tests written in a **behavior-driven** format. These tools often integrate with frameworks like **Cucumber**, **SpecFlow**, or **FitNesse**, which allow the definition of tests in a **business-readable** language, such as [Gherkin](../G/gherkin.md).
+  [Test automation](https://naodeng.com.cn/en/wiki/test-automation) tools facilitate the **ATDD process** by enabling the **execution** of acceptance tests written in a **behavior-driven** format. These tools often integrate with frameworks like **Cucumber**, **SpecFlow**, or **FitNesse**, which allow the definition of tests in a **business-readable** language, such as [Gherkin](https://naodeng.com.cn/en/wiki/gherkin).
   By using these tools, teams can automate the **validation** of acceptance criteria, ensuring that the software adheres to the agreed-upon specifications. This automation supports **continuous integration** (CI) practices by allowing tests to be run automatically upon code check-ins, providing **immediate feedback** to developers.
-  Moreover, [test automation](../T/test-automation.md) tools support **refactoring** by maintaining a suite of tests that can be run to verify that changes have not broken existing functionality. This is crucial in ATDD, where the focus is on meeting the acceptance criteria throughout the development process.
+  Moreover, [test automation](https://naodeng.com.cn/en/wiki/test-automation) tools support **refactoring** by maintaining a suite of tests that can be run to verify that changes have not broken existing functionality. This is crucial in ATDD, where the focus is on meeting the acceptance criteria throughout the development process.
   In addition, these tools often come with **reporting features** that make it easier to communicate the status of the tests to all stakeholders. This transparency helps in maintaining a **shared understanding** of the project's progress and quality.
   For example, a typical ATDD toolchain might look like this:
 
@@ -276,17 +275,17 @@ Acceptance Test Driven Development
 
 #### What skills are required to use these tools effectively?
 
-  To effectively use [test automation](../T/test-automation.md) tools, several skills are essential:
+  To effectively use [test automation](https://naodeng.com.cn/en/wiki/test-automation) tools, several skills are essential:
 
   - **Programming Knowledge**: Proficiency in programming languages relevant to the automation tools, such as Java, Python, or C#.
   - **Understanding of Software Development**: Familiarity with software development practices and lifecycle to align testing with development phases.
   - **Test Frameworks Expertise**: Experience with test frameworks like JUnit, TestNG, or pytest, and understanding their features and integrations.
-  - **Version Control Systems**: Ability to use version control systems like Git to manage [test scripts](../T/test-script.md) and collaborate with the development team.
+  - **Version Control Systems**: Ability to use version control systems like Git to manage [test scripts](https://naodeng.com.cn/en/wiki/test-script) and collaborate with the development team.
   - **Continuous Integration/Continuous Deployment (CI/CD)**: Knowledge of CI/CD pipelines and tools like Jenkins, CircleCI, or Travis CI to integrate automated tests into the build process.
-  - **Scripting for Automation**: Skills in scripting to create robust, maintainable, and reusable [test scripts](../T/test-script.md).
+  - **Scripting for Automation**: Skills in scripting to create robust, maintainable, and reusable [test scripts](https://naodeng.com.cn/en/wiki/test-script).
   - **Understanding of ATDD**: Although not to be covered in detail, a grasp of ATDD principles is crucial to create acceptance tests that reflect user requirements.
-  - **Problem-Solving and Analytical Skills**: Ability to troubleshoot issues with [test scripts](../T/test-script.md) and adapt to changing requirements or environments.
-  - **Attention to Detail**: Precision in writing [test cases](../T/test-case.md) to cover edge cases and prevent [false positives](../F/false-positive.md) or negatives.
+  - **Problem-Solving and Analytical Skills**: Ability to troubleshoot issues with [test scripts](https://naodeng.com.cn/en/wiki/test-script) and adapt to changing requirements or environments.
+  - **Attention to Detail**: Precision in writing [test cases](https://naodeng.com.cn/en/wiki/test-case) to cover edge cases and prevent [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives.
   - **Communication**: Clear communication with stakeholders to understand requirements and convey the significance of test results.
   - **Tool-Specific Knowledge**: Proficiency with specific ATDD tools like Cucumber, SpecFlow, or FitNesse, including their syntax and best practices.
 
@@ -299,19 +298,19 @@ Acceptance Test Driven Development
       Then the user is redirected to the dashboard
   ```
 
-  - **Performance and [Security Testing](../S/security-testing.md)** : Awareness of performance bottlenecks and security vulnerabilities to incorporate relevant tests into the automation suite.
+  - **Performance and [Security Testing](https://naodeng.com.cn/en/wiki/security-testing)** : Awareness of performance bottlenecks and security vulnerabilities to incorporate relevant tests into the automation suite.
   - **Programming Knowledge**: Proficiency in programming languages relevant to the automation tools, such as Java, Python, or C#.
   - **Understanding of Software Development**: Familiarity with software development practices and lifecycle to align testing with development phases.
   - **Test Frameworks Expertise**: Experience with test frameworks like JUnit, TestNG, or pytest, and understanding their features and integrations.
-  - **Version Control Systems**: Ability to use version control systems like Git to manage [test scripts](../T/test-script.md) and collaborate with the development team.
+  - **Version Control Systems**: Ability to use version control systems like Git to manage [test scripts](https://naodeng.com.cn/en/wiki/test-script) and collaborate with the development team.
   - **Continuous Integration/Continuous Deployment (CI/CD)**: Knowledge of CI/CD pipelines and tools like Jenkins, CircleCI, or Travis CI to integrate automated tests into the build process.
-  - **Scripting for Automation**: Skills in scripting to create robust, maintainable, and reusable [test scripts](../T/test-script.md).
+  - **Scripting for Automation**: Skills in scripting to create robust, maintainable, and reusable [test scripts](https://naodeng.com.cn/en/wiki/test-script).
   - **Understanding of ATDD**: Although not to be covered in detail, a grasp of ATDD principles is crucial to create acceptance tests that reflect user requirements.
-  - **Problem-Solving and Analytical Skills**: Ability to troubleshoot issues with [test scripts](../T/test-script.md) and adapt to changing requirements or environments.
-  - **Attention to Detail**: Precision in writing [test cases](../T/test-case.md) to cover edge cases and prevent [false positives](../F/false-positive.md) or negatives.
+  - **Problem-Solving and Analytical Skills**: Ability to troubleshoot issues with [test scripts](https://naodeng.com.cn/en/wiki/test-script) and adapt to changing requirements or environments.
+  - **Attention to Detail**: Precision in writing [test cases](https://naodeng.com.cn/en/wiki/test-case) to cover edge cases and prevent [false positives](https://naodeng.com.cn/en/wiki/false-positive) or negatives.
   - **Communication**: Clear communication with stakeholders to understand requirements and convey the significance of test results.
   - **Tool-Specific Knowledge**: Proficiency with specific ATDD tools like Cucumber, SpecFlow, or FitNesse, including their syntax and best practices.
-  - **Performance and [Security Testing](../S/security-testing.md)** : Awareness of performance bottlenecks and security vulnerabilities to incorporate relevant tests into the automation suite.
+  - **Performance and [Security Testing](https://naodeng.com.cn/en/wiki/security-testing)** : Awareness of performance bottlenecks and security vulnerabilities to incorporate relevant tests into the automation suite.
 
 #### What is the role of automation in ATDD?
 
@@ -323,7 +322,7 @@ Acceptance Test Driven Development
   - **Ensures repeatability**
     and consistency of acceptance tests, reducing human error and variability in test execution.
 
-  - **Increases [test coverage](../T/test-coverage.md)**
+  - **Increases [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)**
     by allowing more tests to be executed in a shorter time frame.
 
   - **Enhances collaboration**
@@ -351,7 +350,7 @@ Acceptance Test Driven Development
   - **Ensures repeatability**
     and consistency of acceptance tests, reducing human error and variability in test execution.
 
-  - **Increases [test coverage](../T/test-coverage.md)**
+  - **Increases [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)**
     by allowing more tests to be executed in a shorter time frame.
 
   - **Enhances collaboration**
@@ -366,7 +365,7 @@ Acceptance Test Driven Development
 #### How can ATDD be implemented in agile development environments?
 
   Implementing ATDD in agile environments involves collaboration between developers, testers, and business stakeholders to define acceptance criteria before development begins. Use **user stories** to capture requirements and define **acceptance tests** that reflect the behavior expected by the stakeholders.
-  Start with a **planning meeting** to discuss the user stories and create acceptance tests. This ensures a shared understanding of the feature and its expected outcomes. Use **Behavior-Driven Development ([BDD](../B/bdd.md)) tools** like Cucumber or SpecFlow to write acceptance tests in a language that is understandable by all parties involved.
+  Start with a **planning meeting** to discuss the user stories and create acceptance tests. This ensures a shared understanding of the feature and its expected outcomes. Use **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) tools** like Cucumber or SpecFlow to write acceptance tests in a language that is understandable by all parties involved.
   During **development**, programmers and testers work in tandem, with testers focusing on automating the acceptance tests. These tests are integrated into the **continuous integration (CI) pipeline**, ensuring they are run frequently.
   After development, execute the acceptance tests. If they pass, the feature meets the agreed-upon criteria. If not, developers make the necessary changes. This cycle continues until the feature passes all acceptance tests.
   Incorporate **feedback loops** by regularly reviewing the tests and their results with the team, including stakeholders. This ensures that the acceptance criteria remain aligned with business objectives and that any misunderstandings are addressed promptly.
@@ -381,10 +380,10 @@ Acceptance Test Driven Development
 
   - **Collaboration difficulties** : Ensuring effective communication between developers, testers, and business stakeholders can be challenging. Misunderstandings can lead to incorrect test criteria.
   - **Writing clear acceptance criteria** : Crafting unambiguous, testable acceptance criteria requires skill and experience. Poorly written criteria can result in ineffective tests.
-  - **Maintaining [test suites](../T/test-suite.md)** : As the application evolves, keeping the acceptance tests up-to-date can be time-consuming.
-  - **[Test data](../T/test-data.md) management** : Generating and managing the data needed for acceptance tests can be complex, especially when dealing with multiple environments.
+  - **Maintaining [test suites](https://naodeng.com.cn/en/wiki/test-suite)** : As the application evolves, keeping the acceptance tests up-to-date can be time-consuming.
+  - **[Test data](https://naodeng.com.cn/en/wiki/test-data) management** : Generating and managing the data needed for acceptance tests can be complex, especially when dealing with multiple environments.
   - **Balancing coverage with speed** : Achieving sufficient test coverage while keeping the test suite fast enough for continuous integration can be difficult.
-  - **[Flaky tests](../F/flaky-test.md)** : Tests that pass and fail intermittently can undermine confidence in the test suite and waste time in investigation.
+  - **[Flaky tests](https://naodeng.com.cn/en/wiki/flaky-test)** : Tests that pass and fail intermittently can undermine confidence in the test suite and waste time in investigation.
   - **Integration with existing processes** : Introducing ATDD into established workflows can meet resistance and requires careful change management.
   - **Tooling compatibility** : Ensuring that the chosen tools integrate well with the technology stack and support the ATDD approach can be a hurdle.
   - **Skillset** : Team members may need training to effectively participate in ATDD, including writing acceptance tests and automating them.
@@ -392,10 +391,10 @@ Acceptance Test Driven Development
 
   - **Collaboration difficulties** : Ensuring effective communication between developers, testers, and business stakeholders can be challenging. Misunderstandings can lead to incorrect test criteria.
   - **Writing clear acceptance criteria** : Crafting unambiguous, testable acceptance criteria requires skill and experience. Poorly written criteria can result in ineffective tests.
-  - **Maintaining [test suites](../T/test-suite.md)** : As the application evolves, keeping the acceptance tests up-to-date can be time-consuming.
-  - **[Test data](../T/test-data.md) management** : Generating and managing the data needed for acceptance tests can be complex, especially when dealing with multiple environments.
+  - **Maintaining [test suites](https://naodeng.com.cn/en/wiki/test-suite)** : As the application evolves, keeping the acceptance tests up-to-date can be time-consuming.
+  - **[Test data](https://naodeng.com.cn/en/wiki/test-data) management** : Generating and managing the data needed for acceptance tests can be complex, especially when dealing with multiple environments.
   - **Balancing coverage with speed** : Achieving sufficient test coverage while keeping the test suite fast enough for continuous integration can be difficult.
-  - **[Flaky tests](../F/flaky-test.md)** : Tests that pass and fail intermittently can undermine confidence in the test suite and waste time in investigation.
+  - **[Flaky tests](https://naodeng.com.cn/en/wiki/flaky-test)** : Tests that pass and fail intermittently can undermine confidence in the test suite and waste time in investigation.
   - **Integration with existing processes** : Introducing ATDD into established workflows can meet resistance and requires careful change management.
   - **Tooling compatibility** : Ensuring that the chosen tools integrate well with the technology stack and support the ATDD approach can be a hurdle.
   - **Skillset** : Team members may need training to effectively participate in ATDD, including writing acceptance tests and automating them.
@@ -459,7 +458,7 @@ Acceptance Test Driven Development
     pipeline to run tests automatically with each build.
 
   - Use
-    **[test data](../T/test-data.md) management**
+    **[test data](https://naodeng.com.cn/en/wiki/test-data) management**
     strategies to ensure tests have the necessary data in the right state.
 
   - **Prioritize**
@@ -472,7 +471,7 @@ Acceptance Test Driven Development
   - Regularly
     **review and adapt**
     your ATDD process to address any issues and improve efficiency.
-  By following these practices, you can enhance collaboration, ensure clarity of requirements, and maintain a high level of [software quality](../S/software-quality.md) throughout the development lifecycle.
+  By following these practices, you can enhance collaboration, ensure clarity of requirements, and maintain a high level of [software quality](https://naodeng.com.cn/en/wiki/software-quality) throughout the development lifecycle.
 
   - **Collaborate**
     with product owners, developers, and testers to define acceptance criteria before coding begins. Use
@@ -500,7 +499,7 @@ Acceptance Test Driven Development
     pipeline to run tests automatically with each build.
 
   - Use
-    **[test data](../T/test-data.md) management**
+    **[test data](https://naodeng.com.cn/en/wiki/test-data) management**
     strategies to ensure tests have the necessary data in the right state.
 
   - **Prioritize**
@@ -517,10 +516,10 @@ Acceptance Test Driven Development
 #### How can ATDD be scaled for large projects?
 
   Scaling ATDD for large projects requires strategic planning and efficient tooling. Begin by **structuring acceptance tests** to reflect the project's modular architecture. This allows for parallel development and testing across different teams. Utilize **version control** to manage test artifacts and ensure synchronization across teams.
-  Leverage **[test data](../T/test-data.md) management** to provide consistent and isolated [test environments](../T/test-environment.md), avoiding conflicts and dependencies that can arise with shared data. Implement **continuous integration (CI)** to automatically run acceptance tests against new code commits, providing immediate feedback on the integration status.
-  **Distributed [test execution](../T/test-execution.md)** is crucial to handle the increased test load. Use tools that support running tests in parallel across multiple machines or containers. This reduces the feedback loop and ensures quicker turnaround times.
+  Leverage **[test data](https://naodeng.com.cn/en/wiki/test-data) management** to provide consistent and isolated [test environments](https://naodeng.com.cn/en/wiki/test-environment), avoiding conflicts and dependencies that can arise with shared data. Implement **continuous integration (CI)** to automatically run acceptance tests against new code commits, providing immediate feedback on the integration status.
+  **Distributed [test execution](https://naodeng.com.cn/en/wiki/test-execution)** is crucial to handle the increased test load. Use tools that support running tests in parallel across multiple machines or containers. This reduces the feedback loop and ensures quicker turnaround times.
   **Collaboration tools** are essential for maintaining communication between developers, testers, and stakeholders. These tools should support traceability from requirements to tests and the codebase, ensuring that all parties are aligned on the acceptance criteria.
-  **Metrics and reporting** should be tailored to provide insights into the progress and quality at scale. Automated dashboards can track [test coverage](../T/test-coverage.md), pass/fail rates, and trends over time, helping to identify areas of concern early.
+  **Metrics and reporting** should be tailored to provide insights into the progress and quality at scale. Automated dashboards can track [test coverage](https://naodeng.com.cn/en/wiki/test-coverage), pass/fail rates, and trends over time, helping to identify areas of concern early.
   Lastly, **modularize and reuse** test components where possible. Shared libraries of test steps or domain-specific language (DSL) definitions can reduce duplication and maintenance overhead.
   By focusing on these strategies, ATDD can be effectively scaled to accommodate the complexities of large-scale projects.
 
@@ -529,20 +528,20 @@ Acceptance Test Driven Development
   The effectiveness of ATDD can be measured through several key indicators:
 
   - **Reduction in defect rates**: Track the number of defects found after release. A lower number suggests that ATDD is helping to catch and resolve issues earlier.
-  - **Improved [test coverage](../T/test-coverage.md)**: Use coverage tools to ensure that acceptance tests cover a significant portion of the codebase and user stories.
+  - **Improved [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Use coverage tools to ensure that acceptance tests cover a significant portion of the codebase and user stories.
   - **Cycle time**: Monitor the time from feature conception to delivery. ATDD should help streamline the process, resulting in shorter cycle times.
   - **Feedback loop duration**: Measure how long it takes to receive feedback from stakeholders. ATDD aims to shorten this loop, allowing for quicker adjustments.
   - **Team collaboration**: Evaluate the level of collaboration between developers, testers, and business stakeholders. Effective ATDD practices should enhance communication and understanding.
-  - **Regression [test suite](../T/test-suite.md) execution time**: Track the time it takes to run the regression suite. ATDD should lead to more efficient and targeted tests, reducing the execution time.
+  - **Regression [test suite](https://naodeng.com.cn/en/wiki/test-suite) execution time**: Track the time it takes to run the regression suite. ATDD should lead to more efficient and targeted tests, reducing the execution time.
   - **Pass/fail rate of acceptance tests**: Record the pass rate of acceptance tests at first run. A high pass rate indicates that the team has a good understanding of the requirements.
   - **Customer satisfaction**: Survey stakeholders and end-users to gauge their satisfaction with the delivered features. Higher satisfaction levels can indicate successful ATDD implementation.
   By monitoring these metrics, teams can assess and continually improve their ATDD practices.
 
   - **Reduction in defect rates**: Track the number of defects found after release. A lower number suggests that ATDD is helping to catch and resolve issues earlier.
-  - **Improved [test coverage](../T/test-coverage.md)**: Use coverage tools to ensure that acceptance tests cover a significant portion of the codebase and user stories.
+  - **Improved [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Use coverage tools to ensure that acceptance tests cover a significant portion of the codebase and user stories.
   - **Cycle time**: Monitor the time from feature conception to delivery. ATDD should help streamline the process, resulting in shorter cycle times.
   - **Feedback loop duration**: Measure how long it takes to receive feedback from stakeholders. ATDD aims to shorten this loop, allowing for quicker adjustments.
   - **Team collaboration**: Evaluate the level of collaboration between developers, testers, and business stakeholders. Effective ATDD practices should enhance communication and understanding.
-  - **Regression [test suite](../T/test-suite.md) execution time**: Track the time it takes to run the regression suite. ATDD should lead to more efficient and targeted tests, reducing the execution time.
+  - **Regression [test suite](https://naodeng.com.cn/en/wiki/test-suite) execution time**: Track the time it takes to run the regression suite. ATDD should lead to more efficient and targeted tests, reducing the execution time.
   - **Pass/fail rate of acceptance tests**: Record the pass rate of acceptance tests at first run. A high pass rate indicates that the team has a good understanding of the requirements.
   - **Customer satisfaction**: Survey stakeholders and end-users to gauge their satisfaction with the delivered features. Higher satisfaction levels can indicate successful ATDD implementation.

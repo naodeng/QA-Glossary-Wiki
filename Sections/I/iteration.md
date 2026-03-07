@@ -1,6 +1,5 @@
 # Iteration
 
-
 <!-- TOC START -->
 - [Questions about Iteration ?](#questions-about-iteration)
   - [Basics and Importance](#basics-and-importance)
@@ -33,9 +32,9 @@ Iterative testing involves periodically updating a product based on previous fee
 
 #### What is an iteration in the context of software development?
 
-  In software development, an **[iteration](../I/iteration.md)** refers to a distinct phase of the development cycle where a set of features or code changes are designed, developed, tested, and reviewed. [Iterations](../I/iteration.md) are time-boxed and typically last from one to four weeks, depending on the project's methodology. Each [iteration](../I/iteration.md) aims to produce a working increment of the product that is potentially shippable or deliverable to the customer.
-  [Iterations](../I/iteration.md) involve **repetitive cycles** of development activities which allow teams to refine and expand the software incrementally. This approach facilitates **continuous integration** and **feedback**, enabling teams to adapt to changes and incorporate improvements regularly.
-  In **[test automation](../T/test-automation.md)**, [iterations](../I/iteration.md) are crucial for incrementally building and refining automated [test suites](../T/test-suite.md). They allow for the **gradual addition** of new [test cases](../T/test-case.md) and the **refinement** of existing ones in response to changes in the software being tested. Iterative development in [test automation](../T/test-automation.md) ensures that scripts remain **relevant** and **effective** as the software evolves.
+  In software development, an **[iteration](https://naodeng.com.cn/en/wiki/iteration)** refers to a distinct phase of the development cycle where a set of features or code changes are designed, developed, tested, and reviewed. [Iterations](https://naodeng.com.cn/en/wiki/iteration) are time-boxed and typically last from one to four weeks, depending on the project's methodology. Each [iteration](https://naodeng.com.cn/en/wiki/iteration) aims to produce a working increment of the product that is potentially shippable or deliverable to the customer.
+  [Iterations](https://naodeng.com.cn/en/wiki/iteration) involve **repetitive cycles** of development activities which allow teams to refine and expand the software incrementally. This approach facilitates **continuous integration** and **feedback**, enabling teams to adapt to changes and incorporate improvements regularly.
+  In **[test automation](https://naodeng.com.cn/en/wiki/test-automation)**, [iterations](https://naodeng.com.cn/en/wiki/iteration) are crucial for incrementally building and refining automated [test suites](https://naodeng.com.cn/en/wiki/test-suite). They allow for the **gradual addition** of new [test cases](https://naodeng.com.cn/en/wiki/test-case) and the **refinement** of existing ones in response to changes in the software being tested. Iterative development in [test automation](https://naodeng.com.cn/en/wiki/test-automation) ensures that scripts remain **relevant** and **effective** as the software evolves.
 
   ```
   // Example of an iterative approach in test automation script development:
@@ -47,13 +46,13 @@ Iterative testing involves periodically updating a product based on previous fee
     // Refine tests based on feedback
   }
   ```
-  By employing [iterations](../I/iteration.md), [test automation](../T/test-automation.md) engineers can systematically **build**, **execute**, and **refine** their automation scripts, leading to more robust and reliable testing processes.
+  By employing [iterations](https://naodeng.com.cn/en/wiki/iteration), [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can systematically **build**, **execute**, and **refine** their automation scripts, leading to more robust and reliable testing processes.
 
 #### Why is iteration important in software development and testing?
 
-  [Iteration](../I/iteration.md) is crucial for **incremental improvement** and **adaptability**. By breaking down the development and testing process into manageable chunks, teams can focus on delivering **small, functional pieces** of the software, allowing for **continuous feedback** and **course correction**. This approach enables the identification of issues early on, reducing the risk of significant problems at later stages.
-  In [test automation](../T/test-automation.md), [iteration](../I/iteration.md) allows for the **refinement of [test cases](../T/test-case.md)** and **scripts** based on changing requirements or new insights. Automated tests can be **continuously executed** and **enhanced** with each [iteration](../I/iteration.md), ensuring that they remain effective and relevant as the software evolves. [Iteration](../I/iteration.md) also supports the **modular development** of automation frameworks, making them more **maintainable** and **scalable**.
-  Moreover, [iteration](../I/iteration.md) fosters a **culture of experimentation**, where new testing strategies can be tried and evaluated quickly. This leads to more **innovative solutions** and **efficient testing practices**. Iterative development aligns with the **principles of Agile**, promoting collaboration, responsiveness to change, and a focus on delivering high-quality software.
+  [Iteration](https://naodeng.com.cn/en/wiki/iteration) is crucial for **incremental improvement** and **adaptability**. By breaking down the development and testing process into manageable chunks, teams can focus on delivering **small, functional pieces** of the software, allowing for **continuous feedback** and **course correction**. This approach enables the identification of issues early on, reducing the risk of significant problems at later stages.
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), [iteration](https://naodeng.com.cn/en/wiki/iteration) allows for the **refinement of [test cases](https://naodeng.com.cn/en/wiki/test-case)** and **scripts** based on changing requirements or new insights. Automated tests can be **continuously executed** and **enhanced** with each [iteration](https://naodeng.com.cn/en/wiki/iteration), ensuring that they remain effective and relevant as the software evolves. [Iteration](https://naodeng.com.cn/en/wiki/iteration) also supports the **modular development** of automation frameworks, making them more **maintainable** and **scalable**.
+  Moreover, [iteration](https://naodeng.com.cn/en/wiki/iteration) fosters a **culture of experimentation**, where new testing strategies can be tried and evaluated quickly. This leads to more **innovative solutions** and **efficient testing practices**. Iterative development aligns with the **principles of Agile**, promoting collaboration, responsiveness to change, and a focus on delivering high-quality software.
 
   ```
   // Example of iterative improvement in test script
@@ -67,20 +66,20 @@ Iterative testing involves periodically updating a product based on previous fee
     });
   });
   ```
-  In summary, [iteration](../I/iteration.md) is a **dynamic process** that enhances **quality**, **efficiency**, and **reliability** in both software development and [test automation](../T/test-automation.md).
+  In summary, [iteration](https://naodeng.com.cn/en/wiki/iteration) is a **dynamic process** that enhances **quality**, **efficiency**, and **reliability** in both software development and [test automation](https://naodeng.com.cn/en/wiki/test-automation).
 
 #### How does iteration contribute to the overall quality of a software product?
 
-  [Iteration](../I/iteration.md) enhances [software quality](../S/software-quality.md) by enabling **continuous refinement**. Each [iteration](../I/iteration.md) cycle allows for **incremental improvements** to the product, with new features and [bug](../B/bug.md) fixes integrated regularly. This approach supports a **steady progression** towards a more robust and reliable software product.
-  Through iterative development, teams can **respond to feedback** quickly, ensuring that the product evolves in line with user needs and expectations. [Iteration](../I/iteration.md) also promotes a **test-driven environment**, where code is regularly tested, and defects are addressed promptly, reducing the risk of compounding issues.
-  In [test automation](../T/test-automation.md), [iteration](../I/iteration.md) is crucial for **optimizing [test suites](../T/test-suite.md)**. As the software evolves, automated tests must be iteratively reviewed and updated to remain effective. This process helps in maintaining a high level of **test relevance** and **coverage**, ensuring that automated tests continue to provide value.
-  Moreover, [iteration](../I/iteration.md) allows for the **refactoring of test code**, which is essential for keeping automation frameworks maintainable and scalable. By iteratively improving the test code, automation engineers can enhance performance, reduce flakiness, and increase the **reliability of test results**.
-  In summary, [iteration](../I/iteration.md) is a key factor in driving the **[quality assurance](../Q/quality-assurance.md) process**, ensuring that each release meets the desired quality standards and that the automation framework remains efficient and aligned with the evolving software product.
+  [Iteration](https://naodeng.com.cn/en/wiki/iteration) enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by enabling **continuous refinement**. Each [iteration](https://naodeng.com.cn/en/wiki/iteration) cycle allows for **incremental improvements** to the product, with new features and [bug](https://naodeng.com.cn/en/wiki/bug) fixes integrated regularly. This approach supports a **steady progression** towards a more robust and reliable software product.
+  Through iterative development, teams can **respond to feedback** quickly, ensuring that the product evolves in line with user needs and expectations. [Iteration](https://naodeng.com.cn/en/wiki/iteration) also promotes a **test-driven environment**, where code is regularly tested, and defects are addressed promptly, reducing the risk of compounding issues.
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), [iteration](https://naodeng.com.cn/en/wiki/iteration) is crucial for **optimizing [test suites](https://naodeng.com.cn/en/wiki/test-suite)**. As the software evolves, automated tests must be iteratively reviewed and updated to remain effective. This process helps in maintaining a high level of **test relevance** and **coverage**, ensuring that automated tests continue to provide value.
+  Moreover, [iteration](https://naodeng.com.cn/en/wiki/iteration) allows for the **refactoring of test code**, which is essential for keeping automation frameworks maintainable and scalable. By iteratively improving the test code, automation engineers can enhance performance, reduce flakiness, and increase the **reliability of test results**.
+  In summary, [iteration](https://naodeng.com.cn/en/wiki/iteration) is a key factor in driving the **[quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance) process**, ensuring that each release meets the desired quality standards and that the automation framework remains efficient and aligned with the evolving software product.
 
 #### What is the difference between iteration and recursion?
 
-  [Iteration](../I/iteration.md) and recursion are two programming techniques for repeating a set of instructions, but they differ fundamentally in their approach and execution.
-  **[Iteration](../I/iteration.md)** uses looping constructs like `for`, `while`, or `do-while` to execute code multiple times. In each loop, a condition is evaluated at the start or end, determining whether to continue or exit the loop. [Iteration](../I/iteration.md) is explicit, with the loop's control structure visible in the code.
+  [Iteration](https://naodeng.com.cn/en/wiki/iteration) and recursion are two programming techniques for repeating a set of instructions, but they differ fundamentally in their approach and execution.
+  **[Iteration](https://naodeng.com.cn/en/wiki/iteration)** uses looping constructs like `for`, `while`, or `do-while` to execute code multiple times. In each loop, a condition is evaluated at the start or end, determining whether to continue or exit the loop. [Iteration](https://naodeng.com.cn/en/wiki/iteration) is explicit, with the loop's control structure visible in the code.
 
   ```
   for (let i = 0; i < n; i++) {
@@ -99,24 +98,24 @@ Iterative testing involves periodically updating a product based on previous fee
       recurse(n - 1);
   }
   ```
-  In [test automation](../T/test-automation.md), [iteration](../I/iteration.md) might be used to run through a collection of [test cases](../T/test-case.md) or data sets, while recursion could be employed for more complex tasks like navigating nested structures or performing actions that have a naturally recursive nature, such as traversing a tree or graph. Choosing between [iteration](../I/iteration.md) and recursion depends on the specific problem, readability, performance considerations, and personal or team coding preferences.
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), [iteration](https://naodeng.com.cn/en/wiki/iteration) might be used to run through a collection of [test cases](https://naodeng.com.cn/en/wiki/test-case) or data sets, while recursion could be employed for more complex tasks like navigating nested structures or performing actions that have a naturally recursive nature, such as traversing a tree or graph. Choosing between [iteration](https://naodeng.com.cn/en/wiki/iteration) and recursion depends on the specific problem, readability, performance considerations, and personal or team coding preferences.
 
 ### Iteration in Agile Methodology
 
 #### How is iteration used in Agile methodology?
 
-  In Agile methodology, **[iteration](../I/iteration.md)** is a fundamental concept that facilitates continuous improvement and adaptability throughout the development lifecycle. [Iterations](../I/iteration.md) are fixed time periods during which specific work must be completed and made ready for review. Agile teams use [iterations](../I/iteration.md) to break down complex projects into manageable chunks, allowing for regular reassessment and refinement of plans based on feedback and changing requirements.
-  During each [iteration](../I/iteration.md), [test automation](../T/test-automation.md) engineers focus on developing and refining automation scripts to align with the evolving features and codebase. This iterative approach ensures that automation efforts keep pace with development, allowing for immediate validation of new features and [regression testing](../R/regression-testing.md) of existing functionality.
-  [Iterations](../I/iteration.md) also provide a structured framework for incremental development of the automation suite. Engineers can prioritize automation tasks based on the current [iteration](../I/iteration.md)'s goals, ensuring that the most critical tests are automated first. This strategy enhances the effectiveness of the [test suite](../T/test-suite.md) and allows for quicker identification of defects.
-  By leveraging [iterations](../I/iteration.md), automation engineers can iteratively enhance their scripts, making them more robust and maintainable. As the codebase grows and changes, scripts can be updated in tandem, reducing the risk of obsolescence and ensuring that the automation suite remains relevant and effective.
-  In summary, [iteration](../I/iteration.md) in Agile methodology is a driver for continuous integration and delivery, enabling [test automation](../T/test-automation.md) engineers to systematically improve their testing strategies and maintain alignment with the ongoing development process.
+  In Agile methodology, **[iteration](https://naodeng.com.cn/en/wiki/iteration)** is a fundamental concept that facilitates continuous improvement and adaptability throughout the development lifecycle. [Iterations](https://naodeng.com.cn/en/wiki/iteration) are fixed time periods during which specific work must be completed and made ready for review. Agile teams use [iterations](https://naodeng.com.cn/en/wiki/iteration) to break down complex projects into manageable chunks, allowing for regular reassessment and refinement of plans based on feedback and changing requirements.
+  During each [iteration](https://naodeng.com.cn/en/wiki/iteration), [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers focus on developing and refining automation scripts to align with the evolving features and codebase. This iterative approach ensures that automation efforts keep pace with development, allowing for immediate validation of new features and [regression testing](https://naodeng.com.cn/en/wiki/regression-testing) of existing functionality.
+  [Iterations](https://naodeng.com.cn/en/wiki/iteration) also provide a structured framework for incremental development of the automation suite. Engineers can prioritize automation tasks based on the current [iteration](https://naodeng.com.cn/en/wiki/iteration)'s goals, ensuring that the most critical tests are automated first. This strategy enhances the effectiveness of the [test suite](https://naodeng.com.cn/en/wiki/test-suite) and allows for quicker identification of defects.
+  By leveraging [iterations](https://naodeng.com.cn/en/wiki/iteration), automation engineers can iteratively enhance their scripts, making them more robust and maintainable. As the codebase grows and changes, scripts can be updated in tandem, reducing the risk of obsolescence and ensuring that the automation suite remains relevant and effective.
+  In summary, [iteration](https://naodeng.com.cn/en/wiki/iteration) in Agile methodology is a driver for continuous integration and delivery, enabling [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers to systematically improve their testing strategies and maintain alignment with the ongoing development process.
 
 #### What is the role of iteration in Scrum?
 
-  In [Scrum](../S/scrum.md), **[iteration](../I/iteration.md)**—commonly referred to as a **Sprint**—serves as a time-boxed period for the team to develop a potentially shippable product increment. [Iteration](../I/iteration.md) facilitates **continuous feedback** and **adaptation**, allowing teams to refine and reprioritize the backlog, ensuring that the most valuable features are delivered first.
-  During each [iteration](../I/iteration.md), the team performs tasks such as **planning**, **design**, **coding**, **testing**, and **reviewing**. This cycle promotes a **rhythmic work pattern** and helps in maintaining a **steady pace** of development. [Iteration](../I/iteration.md) also encourages **collaboration** and **communication** among team members, which is crucial for identifying impediments and promoting **knowledge sharing**.
-  For [test automation](../T/test-automation.md) engineers, [iteration](../I/iteration.md) provides a structured framework to **integrate testing** within the development process. Automated tests are developed and refined in tandem with the evolving product, allowing for **immediate feedback** on new features and [bug](../B/bug.md) fixes. This approach ensures that automation efforts are aligned with current project needs and can be adjusted as requirements change.
-  [Iteration](../I/iteration.md) also supports **incremental improvement** of the automation suite. As the product evolves, so do the [test cases](../T/test-case.md), which can be reviewed and enhanced with each [iteration](../I/iteration.md) to maintain **relevance** and **effectiveness**.
+  In [Scrum](https://naodeng.com.cn/en/wiki/scrum), **[iteration](https://naodeng.com.cn/en/wiki/iteration)**—commonly referred to as a **Sprint**—serves as a time-boxed period for the team to develop a potentially shippable product increment. [Iteration](https://naodeng.com.cn/en/wiki/iteration) facilitates **continuous feedback** and **adaptation**, allowing teams to refine and reprioritize the backlog, ensuring that the most valuable features are delivered first.
+  During each [iteration](https://naodeng.com.cn/en/wiki/iteration), the team performs tasks such as **planning**, **design**, **coding**, **testing**, and **reviewing**. This cycle promotes a **rhythmic work pattern** and helps in maintaining a **steady pace** of development. [Iteration](https://naodeng.com.cn/en/wiki/iteration) also encourages **collaboration** and **communication** among team members, which is crucial for identifying impediments and promoting **knowledge sharing**.
+  For [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers, [iteration](https://naodeng.com.cn/en/wiki/iteration) provides a structured framework to **integrate testing** within the development process. Automated tests are developed and refined in tandem with the evolving product, allowing for **immediate feedback** on new features and [bug](https://naodeng.com.cn/en/wiki/bug) fixes. This approach ensures that automation efforts are aligned with current project needs and can be adjusted as requirements change.
+  [Iteration](https://naodeng.com.cn/en/wiki/iteration) also supports **incremental improvement** of the automation suite. As the product evolves, so do the [test cases](https://naodeng.com.cn/en/wiki/test-case), which can be reviewed and enhanced with each [iteration](https://naodeng.com.cn/en/wiki/iteration) to maintain **relevance** and **effectiveness**.
 
   ```
   // Example: Iterative improvement of an automation script
@@ -130,35 +129,35 @@ Iterative testing involves periodically updating a product based on previous fee
     }
   }
   ```
-  By embedding [iteration](../I/iteration.md) into their workflow, [test automation](../T/test-automation.md) engineers can ensure that their efforts are **efficient**, **relevant**, and **aligned** with the overall project goals.
+  By embedding [iteration](https://naodeng.com.cn/en/wiki/iteration) into their workflow, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can ensure that their efforts are **efficient**, **relevant**, and **aligned** with the overall project goals.
 
 #### How does iteration help in managing the development process in Agile?
 
-  [Iterations](../I/iteration.md) in Agile facilitate **adaptive planning** and **progressive refinement** of both the product and the process. By breaking down the development cycle into manageable chunks, teams can **respond to change** more effectively and maintain a **steady pace** of delivery.
-  In managing the development process, [iterations](../I/iteration.md) allow for **continuous feedback** and **course correction**. After each [iteration](../I/iteration.md), the team can evaluate the product increment, integrating stakeholder input and adapting to any shifts in requirements or priorities. This **iterative assessment** ensures that the development is aligned with user needs and business goals.
-  Moreover, [iterations](../I/iteration.md) support **risk management** by identifying potential issues early on. Teams can address these risks incrementally, rather than facing them at the end of a long development cycle. This approach reduces the impact of problems and avoids the costly rework associated with traditional waterfall models.
-  [Iterations](../I/iteration.md) also promote **team collaboration** and **knowledge sharing**. Regular planning, review, and retrospective meetings encourage open communication and collective ownership of the project. This environment fosters a culture of continuous improvement, where processes and practices are refined over time.
-  Finally, [iterations](../I/iteration.md) provide a framework for **measuring progress**. By setting [iteration](../I/iteration.md) goals and tracking completion, teams can gauge their velocity and predict future performance with greater accuracy. This helps in managing expectations and provides a clear picture of the project's trajectory.
-  In summary, [iteration](../I/iteration.md) is a cornerstone of Agile that enhances adaptability, feedback integration, risk mitigation, team dynamics, and progress tracking within the development process.
+  [Iterations](https://naodeng.com.cn/en/wiki/iteration) in Agile facilitate **adaptive planning** and **progressive refinement** of both the product and the process. By breaking down the development cycle into manageable chunks, teams can **respond to change** more effectively and maintain a **steady pace** of delivery.
+  In managing the development process, [iterations](https://naodeng.com.cn/en/wiki/iteration) allow for **continuous feedback** and **course correction**. After each [iteration](https://naodeng.com.cn/en/wiki/iteration), the team can evaluate the product increment, integrating stakeholder input and adapting to any shifts in requirements or priorities. This **iterative assessment** ensures that the development is aligned with user needs and business goals.
+  Moreover, [iterations](https://naodeng.com.cn/en/wiki/iteration) support **risk management** by identifying potential issues early on. Teams can address these risks incrementally, rather than facing them at the end of a long development cycle. This approach reduces the impact of problems and avoids the costly rework associated with traditional waterfall models.
+  [Iterations](https://naodeng.com.cn/en/wiki/iteration) also promote **team collaboration** and **knowledge sharing**. Regular planning, review, and retrospective meetings encourage open communication and collective ownership of the project. This environment fosters a culture of continuous improvement, where processes and practices are refined over time.
+  Finally, [iterations](https://naodeng.com.cn/en/wiki/iteration) provide a framework for **measuring progress**. By setting [iteration](https://naodeng.com.cn/en/wiki/iteration) goals and tracking completion, teams can gauge their velocity and predict future performance with greater accuracy. This helps in managing expectations and provides a clear picture of the project's trajectory.
+  In summary, [iteration](https://naodeng.com.cn/en/wiki/iteration) is a cornerstone of Agile that enhances adaptability, feedback integration, risk mitigation, team dynamics, and progress tracking within the development process.
 
 #### What is the difference between an iteration and a sprint in Agile?
 
-  In Agile, an **[iteration](../I/iteration.md)** is a generic term for a time-boxed period during which a team works to complete a set amount of work. [Iterations](../I/iteration.md) are used in various Agile frameworks, including [Scrum](../S/scrum.md), and can vary in length, typically lasting from one to four weeks.
-  A **sprint** is a specific type of [iteration](../I/iteration.md) used in the [Scrum](../S/scrum.md) framework. It is a time-boxed effort of a consistent length, usually two to four weeks, during which a "Done", useable, and potentially releasable product increment is created. Sprints include set ceremonies such as Sprint Planning, Daily [Scrums](../S/scrum.md), Sprint Review, and Sprint Retrospective to ensure progress is tracked and goals are clear.
-  The key difference lies in the **framework-specific nature** of a sprint versus the more **general application** of an [iteration](../I/iteration.md). While all sprints are [iterations](../I/iteration.md), not all [iterations](../I/iteration.md) are sprints. Sprints come with a prescribed set of roles, events, and artifacts within [Scrum](../S/scrum.md), whereas [iterations](../I/iteration.md) in other Agile frameworks may not be as strictly defined and can be more flexible in their implementation.
+  In Agile, an **[iteration](https://naodeng.com.cn/en/wiki/iteration)** is a generic term for a time-boxed period during which a team works to complete a set amount of work. [Iterations](https://naodeng.com.cn/en/wiki/iteration) are used in various Agile frameworks, including [Scrum](https://naodeng.com.cn/en/wiki/scrum), and can vary in length, typically lasting from one to four weeks.
+  A **sprint** is a specific type of [iteration](https://naodeng.com.cn/en/wiki/iteration) used in the [Scrum](https://naodeng.com.cn/en/wiki/scrum) framework. It is a time-boxed effort of a consistent length, usually two to four weeks, during which a "Done", useable, and potentially releasable product increment is created. Sprints include set ceremonies such as Sprint Planning, Daily [Scrums](https://naodeng.com.cn/en/wiki/scrum), Sprint Review, and Sprint Retrospective to ensure progress is tracked and goals are clear.
+  The key difference lies in the **framework-specific nature** of a sprint versus the more **general application** of an [iteration](https://naodeng.com.cn/en/wiki/iteration). While all sprints are [iterations](https://naodeng.com.cn/en/wiki/iteration), not all [iterations](https://naodeng.com.cn/en/wiki/iteration) are sprints. Sprints come with a prescribed set of roles, events, and artifacts within [Scrum](https://naodeng.com.cn/en/wiki/scrum), whereas [iterations](https://naodeng.com.cn/en/wiki/iteration) in other Agile frameworks may not be as strictly defined and can be more flexible in their implementation.
 
 ### Iteration in Testing
 
 #### How does iteration apply to software testing?
 
-  In software [test automation](../T/test-automation.md), **[iteration](../I/iteration.md)** refers to the repetitive execution of a set of [test cases](../T/test-case.md) or [test scripts](../T/test-script.md) across different cycles. [Iteration](../I/iteration.md) is crucial for validating the behavior of a software application under test (AUT) with various inputs, configurations, and environments.
-  For automation engineers, [iteration](../I/iteration.md) enables the refinement of [test scripts](../T/test-script.md). By iterating, you can:
+  In software [test automation](https://naodeng.com.cn/en/wiki/test-automation), **[iteration](https://naodeng.com.cn/en/wiki/iteration)** refers to the repetitive execution of a set of [test cases](https://naodeng.com.cn/en/wiki/test-case) or [test scripts](https://naodeng.com.cn/en/wiki/test-script) across different cycles. [Iteration](https://naodeng.com.cn/en/wiki/iteration) is crucial for validating the behavior of a software application under test (AUT) with various inputs, configurations, and environments.
+  For automation engineers, [iteration](https://naodeng.com.cn/en/wiki/iteration) enables the refinement of [test scripts](https://naodeng.com.cn/en/wiki/test-script). By iterating, you can:
 
   - **Enhance script robustness** : Repeated runs expose flakiness or brittleness in scripts, prompting improvements.
   - **Optimize execution** : Identify performance bottlenecks and streamline test execution.
   - **Expand coverage** : Iteratively add new test cases to cover more features or scenarios.
   - **Validate fixes** : Ensure bug fixes work across multiple cycles and don't introduce regressions.
-  In practice, [iteration](../I/iteration.md) in [test automation](../T/test-automation.md) might look like this:
+  In practice, [iteration](https://naodeng.com.cn/en/wiki/iteration) in [test automation](https://naodeng.com.cn/en/wiki/test-automation) might look like this:
 
   ```
   for (const input of inputs) {
@@ -168,8 +167,8 @@ Iterative testing involves periodically updating a product based on previous fee
     });
   }
   ```
-  This loop runs the same test logic with different inputs, a common pattern in data-driven testing. [Iteration](../I/iteration.md) also applies when running tests across different browsers or devices, ensuring compatibility and responsiveness.
-  By embracing [iteration](../I/iteration.md), automation engineers can continuously improve the [test suite](../T/test-suite.md)'s effectiveness, making it a cornerstone of a robust [test automation](../T/test-automation.md) strategy.
+  This loop runs the same test logic with different inputs, a common pattern in data-driven testing. [Iteration](https://naodeng.com.cn/en/wiki/iteration) also applies when running tests across different browsers or devices, ensuring compatibility and responsiveness.
+  By embracing [iteration](https://naodeng.com.cn/en/wiki/iteration), automation engineers can continuously improve the [test suite](https://naodeng.com.cn/en/wiki/test-suite)'s effectiveness, making it a cornerstone of a robust [test automation](https://naodeng.com.cn/en/wiki/test-automation) strategy.
 
   - **Enhance script robustness** : Repeated runs expose flakiness or brittleness in scripts, prompting improvements.
   - **Optimize execution** : Identify performance bottlenecks and streamline test execution.
@@ -178,8 +177,8 @@ Iterative testing involves periodically updating a product based on previous fee
 
 #### How can iteration be used to improve test coverage?
 
-  Iterative approaches in [test automation](../T/test-automation.md) allow for **incremental increases in [test coverage](../T/test-coverage.md)** over time. By repeatedly cycling through the test development process, automation engineers can refine and expand their [test suites](../T/test-suite.md).
-  Initially, a **baseline of automated tests** is established to cover critical features. In subsequent [iterations](../I/iteration.md), engineers can:
+  Iterative approaches in [test automation](https://naodeng.com.cn/en/wiki/test-automation) allow for **incremental increases in [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** over time. By repeatedly cycling through the test development process, automation engineers can refine and expand their [test suites](https://naodeng.com.cn/en/wiki/test-suite).
+  Initially, a **baseline of automated tests** is established to cover critical features. In subsequent [iterations](https://naodeng.com.cn/en/wiki/iteration), engineers can:
 
   - **Add new tests**
     for additional features or user stories developed in the current iteration.
@@ -189,8 +188,8 @@ Iterative testing involves periodically updating a product based on previous fee
 
   - **Refactor tests**
     to improve maintainability and performance, which may also uncover areas of the application that lack sufficient coverage.
-  Using [iteration](../I/iteration.md), [test coverage](../T/test-coverage.md) can be **strategically extended** to areas of the application that analytics or [bug](../B/bug.md) reports indicate are high-risk or frequently used. This targeted approach ensures that [test coverage](../T/test-coverage.md) grows in alignment with the application's evolution and user behavior.
-  Moreover, [iteration](../I/iteration.md) facilitates the practice of **continuous integration and continuous testing**, where automated tests are run frequently against new code changes. This helps in identifying coverage gaps early and allows for immediate improvements.
+  Using [iteration](https://naodeng.com.cn/en/wiki/iteration), [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) can be **strategically extended** to areas of the application that analytics or [bug](https://naodeng.com.cn/en/wiki/bug) reports indicate are high-risk or frequently used. This targeted approach ensures that [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) grows in alignment with the application's evolution and user behavior.
+  Moreover, [iteration](https://naodeng.com.cn/en/wiki/iteration) facilitates the practice of **continuous integration and continuous testing**, where automated tests are run frequently against new code changes. This helps in identifying coverage gaps early and allows for immediate improvements.
 
   ```
   // Example: Adding a new test case in an iterative manner
@@ -204,7 +203,7 @@ Iterative testing involves periodically updating a product based on previous fee
     });
   });
   ```
-  By embracing [iteration](../I/iteration.md), [test automation](../T/test-automation.md) engineers ensure that the [test suite](../T/test-suite.md) remains **relevant, comprehensive, and effective** in verifying the application's functionality and performance.
+  By embracing [iteration](https://naodeng.com.cn/en/wiki/iteration), [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers ensure that the [test suite](https://naodeng.com.cn/en/wiki/test-suite) remains **relevant, comprehensive, and effective** in verifying the application's functionality and performance.
 
   - **Add new tests**
     for additional features or user stories developed in the current iteration.
@@ -217,14 +216,14 @@ Iterative testing involves periodically updating a product based on previous fee
 
 #### What is iterative testing and how does it differ from other testing methods?
 
-  Iterative testing is a **repetitive process** where tests are conducted on versions of software as they evolve through development cycles. It differs from other methods like waterfall testing, where testing is a distinct phase after development. In iterative testing, testing activities are integrated into each [iteration](../I/iteration.md), allowing for **continuous feedback** and refinement.
+  Iterative testing is a **repetitive process** where tests are conducted on versions of software as they evolve through development cycles. It differs from other methods like waterfall testing, where testing is a distinct phase after development. In iterative testing, testing activities are integrated into each [iteration](https://naodeng.com.cn/en/wiki/iteration), allowing for **continuous feedback** and refinement.
   Key differences include:
 
   - **Frequency** : Iterative testing happens multiple times during development, not just once at the end.
   - **Scope** : Each iteration may focus on a specific set of features or components, rather than the entire application.
   - **Adaptability** : Test plans and cases are regularly updated to reflect changes in the software.
-  - **Early [Bug](../B/bug.md) Detection** : Bugs are identified and addressed earlier, reducing the risk of compounded errors.
-  In contrast, non-iterative methods might delay testing until a later stage, potentially leading to a higher accumulation of [bugs](../B/bug.md) and a more challenging debugging process.
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection** : Bugs are identified and addressed earlier, reducing the risk of compounded errors.
+  In contrast, non-iterative methods might delay testing until a later stage, potentially leading to a higher accumulation of [bugs](https://naodeng.com.cn/en/wiki/bug) and a more challenging debugging process.
   Iterative testing is particularly effective in Agile environments where changes are frequent and software evolves rapidly. It ensures that automation tests remain relevant and that any issues are caught and resolved promptly, contributing to a more robust and reliable software product.
 
   ```
@@ -242,11 +241,11 @@ Iterative testing involves periodically updating a product based on previous fee
   - **Frequency** : Iterative testing happens multiple times during development, not just once at the end.
   - **Scope** : Each iteration may focus on a specific set of features or components, rather than the entire application.
   - **Adaptability** : Test plans and cases are regularly updated to reflect changes in the software.
-  - **Early [Bug](../B/bug.md) Detection** : Bugs are identified and addressed earlier, reducing the risk of compounded errors.
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection** : Bugs are identified and addressed earlier, reducing the risk of compounded errors.
 
 #### How can iteration be used to identify and fix bugs more effectively?
 
-  [Iteration](../I/iteration.md) allows for **incremental [bug](../B/bug.md) detection** and resolution, enhancing the effectiveness of [test automation](../T/test-automation.md). By repeatedly running tests, engineers can:
+  [Iteration](https://naodeng.com.cn/en/wiki/iteration) allows for **incremental [bug](https://naodeng.com.cn/en/wiki/bug) detection** and resolution, enhancing the effectiveness of [test automation](https://naodeng.com.cn/en/wiki/test-automation). By repeatedly running tests, engineers can:
 
   - **Identify patterns**
     in failures, pinpointing systemic issues.
@@ -259,7 +258,7 @@ Iterative testing involves periodically updating a product based on previous fee
 
   - **Prioritize fixes**
     based on recurring bugs, focusing on the most critical issues first.
-  For example, consider an automated [test suite](../T/test-suite.md) that is executed after each commit. If a [bug](../B/bug.md) is introduced, the suite can quickly identify the issue. Engineers can then:
+  For example, consider an automated [test suite](https://naodeng.com.cn/en/wiki/test-suite) that is executed after each commit. If a [bug](https://naodeng.com.cn/en/wiki/bug) is introduced, the suite can quickly identify the issue. Engineers can then:
 
   ```
   // Pseudo-code for an iterative test approach
@@ -273,7 +272,7 @@ Iterative testing involves periodically updating a product based on previous fee
     }
   }
   ```
-  This loop ensures that [bugs](../B/bug.md) are caught and addressed promptly, reducing the risk of accumulation and the complexity of debugging. By leveraging [iteration](../I/iteration.md), [test automation](../T/test-automation.md) becomes a **dynamic process** that adapts to the evolving codebase, maintaining the effectiveness and relevance of [test cases](../T/test-case.md).
+  This loop ensures that [bugs](https://naodeng.com.cn/en/wiki/bug) are caught and addressed promptly, reducing the risk of accumulation and the complexity of debugging. By leveraging [iteration](https://naodeng.com.cn/en/wiki/iteration), [test automation](https://naodeng.com.cn/en/wiki/test-automation) becomes a **dynamic process** that adapts to the evolving codebase, maintaining the effectiveness and relevance of [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
   - **Identify patterns**
     in failures, pinpointing systemic issues.
@@ -291,13 +290,13 @@ Iterative testing involves periodically updating a product based on previous fee
 
 #### How is iteration used in automation testing?
 
-  In automation testing, **[iteration](../I/iteration.md)** is the repetitive execution of a [test suite](../T/test-suite.md) or a part of it to ensure that the associated software functionality works as expected across different cycles. [Iteration](../I/iteration.md) is used to:
+  In automation testing, **[iteration](https://naodeng.com.cn/en/wiki/iteration)** is the repetitive execution of a [test suite](https://naodeng.com.cn/en/wiki/test-suite) or a part of it to ensure that the associated software functionality works as expected across different cycles. [Iteration](https://naodeng.com.cn/en/wiki/iteration) is used to:
 
-  - **Refine [test cases](../T/test-case.md)** : As new features are added or existing ones are modified, test cases are iterated upon to align with the changes, ensuring they remain relevant and effective.
+  - **Refine [test cases](https://naodeng.com.cn/en/wiki/test-case)** : As new features are added or existing ones are modified, test cases are iterated upon to align with the changes, ensuring they remain relevant and effective.
   - **Data-driven testing** : Automation scripts iterate over a set of data inputs to validate the software's handling of various input combinations. This is typically done using loops or data providers within the test scripts.
-  - **[Regression testing](../R/regression-testing.md)** : Iterative runs of test suites ensure that new code changes have not adversely affected existing functionality. This is crucial for maintaining software stability over time.
-  - **[Performance testing](../P/performance-testing.md)** : Iteration is used to simulate multiple instances of test execution to measure performance metrics like response time and system behavior under load.
-  Here's an example of a simple [iteration](../I/iteration.md) in a [test script](../T/test-script.md) using JavaScript:
+  - **[Regression testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Iterative runs of test suites ensure that new code changes have not adversely affected existing functionality. This is crucial for maintaining software stability over time.
+  - **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** : Iteration is used to simulate multiple instances of test execution to measure performance metrics like response time and system behavior under load.
+  Here's an example of a simple [iteration](https://naodeng.com.cn/en/wiki/iteration) in a [test script](https://naodeng.com.cn/en/wiki/test-script) using JavaScript:
 
   ```
   const testData = [
@@ -312,19 +311,19 @@ Iterative testing involves periodically updating a product based on previous fee
     });
   });
   ```
-  This code iterates over `testData` to execute the test for each data set, validating the `functionUnderTest` against expected outcomes. [Iteration](../I/iteration.md) in this context ensures thorough validation of the function for different inputs, enhancing [test coverage](../T/test-coverage.md) and reliability.
+  This code iterates over `testData` to execute the test for each data set, validating the `functionUnderTest` against expected outcomes. [Iteration](https://naodeng.com.cn/en/wiki/iteration) in this context ensures thorough validation of the function for different inputs, enhancing [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and reliability.
 
-  - **Refine [test cases](../T/test-case.md)** : As new features are added or existing ones are modified, test cases are iterated upon to align with the changes, ensuring they remain relevant and effective.
+  - **Refine [test cases](https://naodeng.com.cn/en/wiki/test-case)** : As new features are added or existing ones are modified, test cases are iterated upon to align with the changes, ensuring they remain relevant and effective.
   - **Data-driven testing** : Automation scripts iterate over a set of data inputs to validate the software's handling of various input combinations. This is typically done using loops or data providers within the test scripts.
-  - **[Regression testing](../R/regression-testing.md)** : Iterative runs of test suites ensure that new code changes have not adversely affected existing functionality. This is crucial for maintaining software stability over time.
-  - **[Performance testing](../P/performance-testing.md)** : Iteration is used to simulate multiple instances of test execution to measure performance metrics like response time and system behavior under load.
+  - **[Regression testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Iterative runs of test suites ensure that new code changes have not adversely affected existing functionality. This is crucial for maintaining software stability over time.
+  - **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** : Iteration is used to simulate multiple instances of test execution to measure performance metrics like response time and system behavior under load.
 
 #### What role does iteration play in developing automation scripts?
 
-  Iterative development in automation scripting allows for **incremental improvements** and **refinement** of scripts. As scripts are developed, they are **continuously tested and enhanced** to handle new [test cases](../T/test-case.md), edge cases, and unexpected behaviors. This process helps in identifying **flaws or gaps** early, ensuring scripts are robust and reliable.
-  During each [iteration](../I/iteration.md), scripts can be **extended** to cover more functionality or **optimized** for performance and [maintainability](../M/maintainability.md). [Iteration](../I/iteration.md) also supports **refactoring**, which is crucial for keeping the codebase clean and manageable as the complexity of the automation suite grows.
-  Moreover, iterative development aligns with **continuous integration (CI)** practices. Automation scripts can be integrated into CI pipelines, where they are executed regularly. Each [iteration](../I/iteration.md) can introduce **new assertions** or **adapt to changes** in the application under test, maintaining the relevance and effectiveness of the [test suite](../T/test-suite.md).
-  In dynamic environments, where application features evolve rapidly, [iteration](../I/iteration.md) ensures that automation scripts **stay synchronized** with the product. This is essential for **accurate feedback** on the state of the application with each release.
+  Iterative development in automation scripting allows for **incremental improvements** and **refinement** of scripts. As scripts are developed, they are **continuously tested and enhanced** to handle new [test cases](https://naodeng.com.cn/en/wiki/test-case), edge cases, and unexpected behaviors. This process helps in identifying **flaws or gaps** early, ensuring scripts are robust and reliable.
+  During each [iteration](https://naodeng.com.cn/en/wiki/iteration), scripts can be **extended** to cover more functionality or **optimized** for performance and [maintainability](https://naodeng.com.cn/en/wiki/maintainability). [Iteration](https://naodeng.com.cn/en/wiki/iteration) also supports **refactoring**, which is crucial for keeping the codebase clean and manageable as the complexity of the automation suite grows.
+  Moreover, iterative development aligns with **continuous integration (CI)** practices. Automation scripts can be integrated into CI pipelines, where they are executed regularly. Each [iteration](https://naodeng.com.cn/en/wiki/iteration) can introduce **new assertions** or **adapt to changes** in the application under test, maintaining the relevance and effectiveness of the [test suite](https://naodeng.com.cn/en/wiki/test-suite).
+  In dynamic environments, where application features evolve rapidly, [iteration](https://naodeng.com.cn/en/wiki/iteration) ensures that automation scripts **stay synchronized** with the product. This is essential for **accurate feedback** on the state of the application with each release.
 
   ```
   // Example of iterative improvement in a script
@@ -339,11 +338,11 @@ Iterative testing involves periodically updating a product based on previous fee
     expect(getErrorMessage()).toContain('invalid credentials');
   });
   ```
-  In summary, [iteration](../I/iteration.md) in developing automation scripts is key for **progressive enhancement**, **[maintainability](../M/maintainability.md)**, and ensuring **alignment with application changes**.
+  In summary, [iteration](https://naodeng.com.cn/en/wiki/iteration) in developing automation scripts is key for **progressive enhancement**, **[maintainability](https://naodeng.com.cn/en/wiki/maintainability)**, and ensuring **alignment with application changes**.
 
 #### How can iteration help in improving the efficiency of automation tests?
 
-  Iterative approaches in [test automation](../T/test-automation.md) allow for **continuous improvement** of [test scripts](../T/test-script.md) and frameworks. By repeatedly running automation tests and analyzing results, engineers can **refine** and **optimize** tests for better efficiency. This includes:
+  Iterative approaches in [test automation](https://naodeng.com.cn/en/wiki/test-automation) allow for **continuous improvement** of [test scripts](https://naodeng.com.cn/en/wiki/test-script) and frameworks. By repeatedly running automation tests and analyzing results, engineers can **refine** and **optimize** tests for better efficiency. This includes:
 
   - **Refactoring**
     code to enhance readability and maintainability.
@@ -351,12 +350,12 @@ Iterative testing involves periodically updating a product based on previous fee
   - **Removing redundancies**
     to speed up test execution.
 
-  - **Improving [test data](../T/test-data.md) management**
+  - **Improving [test data](https://naodeng.com.cn/en/wiki/test-data) management**
     to ensure tests are running with the most relevant and varied data sets.
 
   - **Enhancing error handling**
     to reduce false positives and improve test reliability.
-  For example, consider a [test suite](../T/test-suite.md) where initial [iterations](../I/iteration.md) reveal that certain tests frequently fail due to timing issues. Engineers can apply **wait strategies** or **synchronization** methods to stabilize these tests.
+  For example, consider a [test suite](https://naodeng.com.cn/en/wiki/test-suite) where initial [iterations](https://naodeng.com.cn/en/wiki/iteration) reveal that certain tests frequently fail due to timing issues. Engineers can apply **wait strategies** or **synchronization** methods to stabilize these tests.
 
   ```
   // Before iteration: Flaky test due to timing
@@ -371,7 +370,7 @@ Iterative testing involves periodically updating a product based on previous fee
     expect(getUserProfile().isDisplayed()).toBeTruthy();
   });
   ```
-  Through [iteration](../I/iteration.md), [test suites](../T/test-suite.md) become more **robust** and **efficient**, reducing execution time and resource consumption. Iterative improvement also supports the **scalability** of [test automation](../T/test-automation.md), as tests must evolve to cover new features and code changes without becoming a bottleneck. This iterative refinement ensures that automation remains a valuable asset in the software development lifecycle, contributing to faster releases and higher-quality software.
+  Through [iteration](https://naodeng.com.cn/en/wiki/iteration), [test suites](https://naodeng.com.cn/en/wiki/test-suite) become more **robust** and **efficient**, reducing execution time and resource consumption. Iterative improvement also supports the **scalability** of [test automation](https://naodeng.com.cn/en/wiki/test-automation), as tests must evolve to cover new features and code changes without becoming a bottleneck. This iterative refinement ensures that automation remains a valuable asset in the software development lifecycle, contributing to faster releases and higher-quality software.
 
   - **Refactoring**
     code to enhance readability and maintainability.
@@ -379,7 +378,7 @@ Iterative testing involves periodically updating a product based on previous fee
   - **Removing redundancies**
     to speed up test execution.
 
-  - **Improving [test data](../T/test-data.md) management**
+  - **Improving [test data](https://naodeng.com.cn/en/wiki/test-data) management**
     to ensure tests are running with the most relevant and varied data sets.
 
   - **Enhancing error handling**
@@ -387,11 +386,11 @@ Iterative testing involves periodically updating a product based on previous fee
 
 #### What is the importance of iteration in maintaining and updating automation scripts?
 
-  Iterative maintenance and updating of automation scripts are crucial for **adapting to changes** in the software under test. As features evolve and new functionalities are added, scripts must be **revisited** and **refined** to ensure they remain effective and relevant. This process allows for the **incremental improvement** of [test cases](../T/test-case.md), making them more **robust** and **flexible** to handle variations in the application.
-  Through [iteration](../I/iteration.md), automation engineers can **refactor** scripts for better **readability** and **[maintainability](../M/maintainability.md)**, reducing technical debt. It also enables the **integration** of new testing frameworks or tools that may enhance the automation suite's capabilities.
+  Iterative maintenance and updating of automation scripts are crucial for **adapting to changes** in the software under test. As features evolve and new functionalities are added, scripts must be **revisited** and **refined** to ensure they remain effective and relevant. This process allows for the **incremental improvement** of [test cases](https://naodeng.com.cn/en/wiki/test-case), making them more **robust** and **flexible** to handle variations in the application.
+  Through [iteration](https://naodeng.com.cn/en/wiki/iteration), automation engineers can **refactor** scripts for better **readability** and **[maintainability](https://naodeng.com.cn/en/wiki/maintainability)**, reducing technical debt. It also enables the **integration** of new testing frameworks or tools that may enhance the automation suite's capabilities.
   Moreover, iterative updates help in keeping the automation suite **aligned** with the application's changing architecture and design patterns. This alignment is essential to avoid flakiness and ensure that tests are **reliable** and **trustworthy**.
-  Incorporating feedback from previous test runs is another benefit of [iteration](../I/iteration.md). Engineers can analyze results to **identify patterns** or **common failures**, leading to more targeted and effective [test cases](../T/test-case.md).
-  Lastly, [iteration](../I/iteration.md) supports the **continuous integration/continuous deployment (CI/CD)** pipeline by ensuring that automation scripts can be executed reliably with each new build, providing rapid feedback on the health of the application.
+  Incorporating feedback from previous test runs is another benefit of [iteration](https://naodeng.com.cn/en/wiki/iteration). Engineers can analyze results to **identify patterns** or **common failures**, leading to more targeted and effective [test cases](https://naodeng.com.cn/en/wiki/test-case).
+  Lastly, [iteration](https://naodeng.com.cn/en/wiki/iteration) supports the **continuous integration/continuous deployment (CI/CD)** pipeline by ensuring that automation scripts can be executed reliably with each new build, providing rapid feedback on the health of the application.
 
   ```
   // Example of refactoring an outdated test script
@@ -401,4 +400,4 @@ Iterative testing involves periodically updating a product based on previous fee
   const button = driver.findElement(By.id("new_id"));
   button.click();
   ```
-  By iteratively maintaining and updating automation scripts, engineers ensure that the [test automation](../T/test-automation.md) suite remains a valuable asset in delivering high-quality software efficiently.
+  By iteratively maintaining and updating automation scripts, engineers ensure that the [test automation](https://naodeng.com.cn/en/wiki/test-automation) suite remains a valuable asset in delivering high-quality software efficiently.

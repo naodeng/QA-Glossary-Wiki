@@ -1,6 +1,5 @@
 # Chaos Engineering
 
-
 <!-- TOC START -->
 - [See also:](#see-also)
 - [Questions about Chaos Engineering ?](#questions-about-chaos-engineering)
@@ -40,22 +39,22 @@ tests a software's resilience by introducing random faults and disruptions. This
 
 #### What is Chaos Engineering?
 
-  [Chaos Engineering](../C/chaos-engineering.md) is a **proactive testing discipline** that involves experimenting on a system by introducing turbulent conditions or unexpected events to observe how the system responds and to identify weaknesses. Unlike traditional testing, which often focuses on expected paths and controlled environments, [Chaos Engineering](../C/chaos-engineering.md) tests the system's ability to withstand turbulent conditions that are likely to occur in production.
+  [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) is a **proactive testing discipline** that involves experimenting on a system by introducing turbulent conditions or unexpected events to observe how the system responds and to identify weaknesses. Unlike traditional testing, which often focuses on expected paths and controlled environments, [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) tests the system's ability to withstand turbulent conditions that are likely to occur in production.
   It's a method to **validate the reliability** of systems in the face of real-world events like server crashes, network failures, and unpredictable traffic patterns. By intentionally injecting faults in a controlled manner, engineers can uncover issues that wouldn't be found in standard testing environments.
   Chaos experiments are typically carried out on a **small scale initially** and expanded as confidence in the system's resilience grows. The practice is closely associated with **DevOps** and **continuous delivery** practices, as it can be integrated into the CI/CD pipeline to ensure that resilience is continuously tested.
-  To execute [Chaos Engineering](../C/chaos-engineering.md) effectively, engineers use a variety of tools designed to orchestrate and manage experiments. These tools help in defining the scope, executing the tests, and analyzing the results to improve system robustness.
-  The key to successful [Chaos Engineering](../C/chaos-engineering.md) is a **systematic approach** that starts with a clear hypothesis, followed by a well-planned experiment, and concludes with a thorough analysis of the results to inform system improvements. It's a continuous process that helps in building confidence in the system's capability to handle unexpected disruptions gracefully.
+  To execute [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) effectively, engineers use a variety of tools designed to orchestrate and manage experiments. These tools help in defining the scope, executing the tests, and analyzing the results to improve system robustness.
+  The key to successful [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) is a **systematic approach** that starts with a clear hypothesis, followed by a well-planned experiment, and concludes with a thorough analysis of the results to inform system improvements. It's a continuous process that helps in building confidence in the system's capability to handle unexpected disruptions gracefully.
 
 #### Why is Chaos Engineering important in software development?
 
-  [Chaos Engineering](../C/chaos-engineering.md) is crucial in software development for **anticipating unpredictable failures** and ensuring that systems can withstand unexpected disruptions. Unlike traditional testing, which often assumes a stable environment, [Chaos Engineering](../C/chaos-engineering.md) acknowledges that real-world conditions are variable and often turbulent. By intentionally injecting faults into a system, developers can identify weaknesses before they become critical issues in production.
-  This practice is particularly important as systems become more complex and distributed. In such environments, the interaction between components can lead to unforeseen issues that are difficult to detect with standard testing methods. [Chaos Engineering](../C/chaos-engineering.md) allows teams to **proactively explore** and **mitigate these complex failure modes**.
+  [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) is crucial in software development for **anticipating unpredictable failures** and ensuring that systems can withstand unexpected disruptions. Unlike traditional testing, which often assumes a stable environment, [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) acknowledges that real-world conditions are variable and often turbulent. By intentionally injecting faults into a system, developers can identify weaknesses before they become critical issues in production.
+  This practice is particularly important as systems become more complex and distributed. In such environments, the interaction between components can lead to unforeseen issues that are difficult to detect with standard testing methods. [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) allows teams to **proactively explore** and **mitigate these complex failure modes**.
   Moreover, it supports a **culture of reliability** by encouraging developers to design systems with failure in mind, leading to more robust architecture and better handling of potential outages. This is essential for maintaining user trust and ensuring business continuity, especially for services that require high availability.
-  By integrating [Chaos Engineering](../C/chaos-engineering.md) into the development lifecycle, teams can continuously test and improve their systems' resilience. This integration helps in maintaining a high standard of quality and reliability in a cost-effective and efficient manner, ultimately leading to a more stable and trustworthy software product.
+  By integrating [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) into the development lifecycle, teams can continuously test and improve their systems' resilience. This integration helps in maintaining a high standard of quality and reliability in a cost-effective and efficient manner, ultimately leading to a more stable and trustworthy software product.
 
 #### What are the key principles of Chaos Engineering?
 
-  [Chaos Engineering](../C/chaos-engineering.md) is grounded in a few **key principles** that guide its practice:
+  [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) is grounded in a few **key principles** that guide its practice:
 
   - **Build a Hypothesis Around Steady State Behavior** : Define what normal operation looks like to measure deviations effectively.
   - **Vary Real-World Events** : Introduce changes that mimic real-world events to understand how unforeseen disturbances affect the system.
@@ -74,14 +73,14 @@ tests a software's resilience by introducing random faults and disruptions. This
 
 #### How does Chaos Engineering improve system resilience?
 
-  [Chaos Engineering](../C/chaos-engineering.md) enhances system resilience by proactively **introducing faults** into systems to test how they withstand unexpected conditions. By doing so, it uncovers weaknesses before they become outages. This approach allows teams to:
+  [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) enhances system resilience by proactively **introducing faults** into systems to test how they withstand unexpected conditions. By doing so, it uncovers weaknesses before they become outages. This approach allows teams to:
 
   - **Identify failure points** : Discovering areas where the system can fail enables engineers to address issues before they impact users.
   - **Validate assumptions** : Testing how the system behaves under stress validates if redundancy and failover mechanisms work as expected.
   - **Improve monitoring** : By tracking the system's response to chaos experiments, teams can fine-tune monitoring tools to catch issues early.
   - **Develop robust recovery procedures** : Experiencing failures in a controlled environment helps teams create effective recovery plans.
   - **Build confidence** : Knowing the system can handle chaotic events increases confidence in its stability and performance.
-  [Chaos Engineering](../C/chaos-engineering.md) moves beyond the limitations of traditional testing by ensuring the system is battle-tested against real-world scenarios, leading to a more resilient infrastructure.
+  [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) moves beyond the limitations of traditional testing by ensuring the system is battle-tested against real-world scenarios, leading to a more resilient infrastructure.
 
   - **Identify failure points** : Discovering areas where the system can fail enables engineers to address issues before they impact users.
   - **Validate assumptions** : Testing how the system behaves under stress validates if redundancy and failover mechanisms work as expected.
@@ -91,17 +90,17 @@ tests a software's resilience by introducing random faults and disruptions. This
 
 #### What is the difference between Chaos Engineering and traditional testing methods?
 
-  [Chaos Engineering](../C/chaos-engineering.md) differs from traditional testing methods in its **approach** and **scope**. Traditional testing, such as unit, integration, and [system testing](../S/system-testing.md), focuses on expected behaviors and known failure modes. It validates that the software works as designed under controlled conditions. These tests are deterministic, with predefined inputs and expected outputs.
-  In contrast, [Chaos Engineering](../C/chaos-engineering.md) is a **proactive** and **experimental** approach that tests a system's ability to withstand unpredictable and turbulent conditions. It intentionally injects faults into a system to assess its resilience and ability to maintain functionality despite failures. This method acknowledges that complex systems can behave in unexpected ways and that not all failure modes can be anticipated.
-  While traditional testing often occurs in a **staging environment** before deployment, [Chaos Engineering](../C/chaos-engineering.md) is typically performed in **production** to test the system under real-world conditions. This shift in environment is crucial as it exposes the software to the full spectrum of potential stressors and interactions that can't be replicated in a [test environment](../T/test-environment.md).
-  Moreover, traditional testing aims to **prevent** failures before they occur, whereas [Chaos Engineering](../C/chaos-engineering.md) assumes failures are inevitable and focuses on **improving recovery** and **minimizing impact**. The goal is to identify weaknesses before they result in outages or data loss, thereby enhancing the system's overall resilience.
-  In summary, [Chaos Engineering](../C/chaos-engineering.md) complements traditional testing by introducing an element of unpredictability and by testing the system's behavior under adverse conditions, which goes beyond the scope of conventional [test cases](../T/test-case.md).
+  [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) differs from traditional testing methods in its **approach** and **scope**. Traditional testing, such as unit, integration, and [system testing](https://naodeng.com.cn/en/wiki/system-testing), focuses on expected behaviors and known failure modes. It validates that the software works as designed under controlled conditions. These tests are deterministic, with predefined inputs and expected outputs.
+  In contrast, [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) is a **proactive** and **experimental** approach that tests a system's ability to withstand unpredictable and turbulent conditions. It intentionally injects faults into a system to assess its resilience and ability to maintain functionality despite failures. This method acknowledges that complex systems can behave in unexpected ways and that not all failure modes can be anticipated.
+  While traditional testing often occurs in a **staging environment** before deployment, [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) is typically performed in **production** to test the system under real-world conditions. This shift in environment is crucial as it exposes the software to the full spectrum of potential stressors and interactions that can't be replicated in a [test environment](https://naodeng.com.cn/en/wiki/test-environment).
+  Moreover, traditional testing aims to **prevent** failures before they occur, whereas [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) assumes failures are inevitable and focuses on **improving recovery** and **minimizing impact**. The goal is to identify weaknesses before they result in outages or data loss, thereby enhancing the system's overall resilience.
+  In summary, [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) complements traditional testing by introducing an element of unpredictability and by testing the system's behavior under adverse conditions, which goes beyond the scope of conventional [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
 ### Implementation
 
 #### How is Chaos Engineering implemented in a system?
 
-  [Chaos Engineering](../C/chaos-engineering.md) is implemented through a series of **controlled experiments** designed to assess how a system behaves under unexpected conditions. The implementation process typically follows these steps:
+  [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) is implemented through a series of **controlled experiments** designed to assess how a system behaves under unexpected conditions. The implementation process typically follows these steps:
 
   1. **Define 'steady state' metrics**
     that reflect the normal behavior of the system.
@@ -131,7 +130,7 @@ tests a software's resilience by introducing random faults and disruptions. This
   }
   chaosExperiment.end()
   ```
-  **Automated rollback mechanisms** are crucial to mitigate risks, ensuring that any negative impact can be quickly reversed. **Post-experiment reviews** are essential to document findings and plan improvements. Implementing [Chaos Engineering](../C/chaos-engineering.md) requires a **cultural shift** towards accepting failures as learning opportunities and proactively testing for them.
+  **Automated rollback mechanisms** are crucial to mitigate risks, ensuring that any negative impact can be quickly reversed. **Post-experiment reviews** are essential to document findings and plan improvements. Implementing [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) requires a **cultural shift** towards accepting failures as learning opportunities and proactively testing for them.
 
   1. **Define 'steady state' metrics**
     that reflect the normal behavior of the system.
@@ -186,7 +185,7 @@ tests a software's resilience by introducing random faults and disruptions. This
 
 #### What tools are commonly used in Chaos Engineering?
 
-  Commonly used tools in **[Chaos Engineering](../C/chaos-engineering.md)** include:
+  Commonly used tools in **[Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering)** include:
 
   - **Chaos Monkey** : Part of the Netflix Simian Army, it randomly terminates virtual machine instances and containers to test system resilience.
   - **Gremlin** : Offers a full suite of chaos experiments across various levels of the stack.
@@ -228,27 +227,27 @@ tests a software's resilience by introducing random faults and disruptions. This
 
 #### What are some common Chaos Engineering practices?
 
-  Common [Chaos Engineering](../C/chaos-engineering.md) practices include:
+  Common [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) practices include:
 
-  - **[Baseline Testing](../B/baseline-testing.md)** : Establishing a performance and behavior baseline under normal conditions to compare against during chaos experiments.
+  - **[Baseline Testing](https://naodeng.com.cn/en/wiki/baseline-testing)** : Establishing a performance and behavior baseline under normal conditions to compare against during chaos experiments.
   - **Fault Injection** : Introducing various types of faults (e.g., server crashes, network latency) to test system responses and recovery procedures.
   - **Blackhole Testing** : Simulating network partitions to ensure that microservices can handle loss of connectivity.
   - **Resource Manipulation** : Altering system resources like CPU, memory, and disk space to validate system behavior under resource constraints.
-  - **[State Transition Testing](../S/state-transition-testing.md)** : Forcing state transitions (e.g., leader election in a cluster) to verify the system's ability to handle changes in state.
+  - **[State Transition Testing](https://naodeng.com.cn/en/wiki/state-transition-testing)** : Forcing state transitions (e.g., leader election in a cluster) to verify the system's ability to handle changes in state.
   - **User Behavior Simulation** : Mimicking user actions at scale to test how systems cope with varied and unpredictable user loads.
-  - **[Dependency Testing](../D/dependency-testing.md)** : Disabling dependencies to third-party services or databases to check for proper fallback mechanisms.
+  - **[Dependency Testing](https://naodeng.com.cn/en/wiki/dependency-testing)** : Disabling dependencies to third-party services or databases to check for proper fallback mechanisms.
   - **Chaos Monkey** : Randomly terminating instances in production to ensure that the system can sustain the loss of any single instance.
   - **Game Days** : Organizing planned events where teams practice responding to simulated incidents in a controlled environment.
   - **Chaos Automation** : Integrating chaos experiments into CI/CD pipelines for continuous resilience testing.
   These practices are typically executed in a controlled manner, with careful monitoring and rollback plans in place to minimize impact on production systems.
 
-  - **[Baseline Testing](../B/baseline-testing.md)** : Establishing a performance and behavior baseline under normal conditions to compare against during chaos experiments.
+  - **[Baseline Testing](https://naodeng.com.cn/en/wiki/baseline-testing)** : Establishing a performance and behavior baseline under normal conditions to compare against during chaos experiments.
   - **Fault Injection** : Introducing various types of faults (e.g., server crashes, network latency) to test system responses and recovery procedures.
   - **Blackhole Testing** : Simulating network partitions to ensure that microservices can handle loss of connectivity.
   - **Resource Manipulation** : Altering system resources like CPU, memory, and disk space to validate system behavior under resource constraints.
-  - **[State Transition Testing](../S/state-transition-testing.md)** : Forcing state transitions (e.g., leader election in a cluster) to verify the system's ability to handle changes in state.
+  - **[State Transition Testing](https://naodeng.com.cn/en/wiki/state-transition-testing)** : Forcing state transitions (e.g., leader election in a cluster) to verify the system's ability to handle changes in state.
   - **User Behavior Simulation** : Mimicking user actions at scale to test how systems cope with varied and unpredictable user loads.
-  - **[Dependency Testing](../D/dependency-testing.md)** : Disabling dependencies to third-party services or databases to check for proper fallback mechanisms.
+  - **[Dependency Testing](https://naodeng.com.cn/en/wiki/dependency-testing)** : Disabling dependencies to third-party services or databases to check for proper fallback mechanisms.
   - **Chaos Monkey** : Randomly terminating instances in production to ensure that the system can sustain the loss of any single instance.
   - **Game Days** : Organizing planned events where teams practice responding to simulated incidents in a controlled environment.
   - **Chaos Automation** : Integrating chaos experiments into CI/CD pipelines for continuous resilience testing.
@@ -257,34 +256,34 @@ tests a software's resilience by introducing random faults and disruptions. This
 
 #### What are the potential challenges in implementing Chaos Engineering?
 
-  Implementing [Chaos Engineering](../C/chaos-engineering.md) can present several challenges:
+  Implementing [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) can present several challenges:
 
   - **Complexity of Systems**: Modern systems are often complex and distributed, making it difficult to predict how they will react to injected failures.
   - **Cultural Resistance**: Teams may resist adopting practices that intentionally introduce faults into systems, fearing it could lead to real outages or impact performance.
   - **Resource Allocation**: Chaos experiments require resources, both in terms of infrastructure and personnel to design, execute, and analyze the results.
-  - **Defining Success Metrics**: It can be challenging to establish clear metrics for success, as the benefits of [Chaos Engineering](../C/chaos-engineering.md) are sometimes indirect or long-term.
+  - **Defining Success Metrics**: It can be challenging to establish clear metrics for success, as the benefits of [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) are sometimes indirect or long-term.
   - **Scope Management**: Determining the appropriate scope for experiments to ensure they are meaningful without being too disruptive is a delicate balance.
   - **Production Parity**: Ensuring that the testing environment closely mirrors production is crucial for meaningful experiments but can be difficult to achieve.
-  - **Incident Response**: Teams must be prepared to respond to issues uncovered during experiments, which requires a robust [incident management](../I/incident-management.md) process.
+  - **Incident Response**: Teams must be prepared to respond to issues uncovered during experiments, which requires a robust [incident management](https://naodeng.com.cn/en/wiki/incident-management) process.
   - **Knowledge and Expertise**: There is a learning curve associated with understanding how to design and interpret Chaos experiments effectively.
-  - **Integration with Existing Processes**: Integrating [Chaos Engineering](../C/chaos-engineering.md) into existing CI/CD pipelines and workflows can be complex and may require significant changes to current processes.
+  - **Integration with Existing Processes**: Integrating [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) into existing CI/CD pipelines and workflows can be complex and may require significant changes to current processes.
   - **Monitoring and Observability**: Adequate monitoring is essential to observe the effects of Chaos experiments, but achieving deep observability can be challenging.
   - **Risk Management**: Balancing the risk of potential disruptions against the benefits of improved resilience is crucial and requires careful planning and execution.
   - **Complexity of Systems**: Modern systems are often complex and distributed, making it difficult to predict how they will react to injected failures.
   - **Cultural Resistance**: Teams may resist adopting practices that intentionally introduce faults into systems, fearing it could lead to real outages or impact performance.
   - **Resource Allocation**: Chaos experiments require resources, both in terms of infrastructure and personnel to design, execute, and analyze the results.
-  - **Defining Success Metrics**: It can be challenging to establish clear metrics for success, as the benefits of [Chaos Engineering](../C/chaos-engineering.md) are sometimes indirect or long-term.
+  - **Defining Success Metrics**: It can be challenging to establish clear metrics for success, as the benefits of [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) are sometimes indirect or long-term.
   - **Scope Management**: Determining the appropriate scope for experiments to ensure they are meaningful without being too disruptive is a delicate balance.
   - **Production Parity**: Ensuring that the testing environment closely mirrors production is crucial for meaningful experiments but can be difficult to achieve.
-  - **Incident Response**: Teams must be prepared to respond to issues uncovered during experiments, which requires a robust [incident management](../I/incident-management.md) process.
+  - **Incident Response**: Teams must be prepared to respond to issues uncovered during experiments, which requires a robust [incident management](https://naodeng.com.cn/en/wiki/incident-management) process.
   - **Knowledge and Expertise**: There is a learning curve associated with understanding how to design and interpret Chaos experiments effectively.
-  - **Integration with Existing Processes**: Integrating [Chaos Engineering](../C/chaos-engineering.md) into existing CI/CD pipelines and workflows can be complex and may require significant changes to current processes.
+  - **Integration with Existing Processes**: Integrating [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) into existing CI/CD pipelines and workflows can be complex and may require significant changes to current processes.
   - **Monitoring and Observability**: Adequate monitoring is essential to observe the effects of Chaos experiments, but achieving deep observability can be challenging.
   - **Risk Management**: Balancing the risk of potential disruptions against the benefits of improved resilience is crucial and requires careful planning and execution.
 
 #### How do you mitigate the risks associated with Chaos Engineering?
 
-  Mitigating risks in [Chaos Engineering](../C/chaos-engineering.md) involves careful planning and controlled execution. Here are some strategies:
+  Mitigating risks in [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) involves careful planning and controlled execution. Here are some strategies:
 
   - **Start Small** : Begin with the least destructive experiments to understand the system's behavior and gradually increase the severity.
   - **Define Clear Objectives** : Ensure each experiment has specific goals and understand what you're trying to learn.
@@ -296,7 +295,7 @@ tests a software's resilience by introducing random faults and disruptions. This
   - **Limit Blast Radius** : Confine experiments to the smallest area possible to limit the impact on users and services.
   - **Run Experiments During Off-Peak Hours** : Schedule experiments when fewer users are affected in case of a failure.
   - **Build a Culture of Resilience** : Encourage a mindset where failures are seen as opportunities to learn and improve the system.
-  By following these strategies, you can reduce the risks associated with [Chaos Engineering](../C/chaos-engineering.md) while still reaping its benefits.
+  By following these strategies, you can reduce the risks associated with [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) while still reaping its benefits.
 
   - **Start Small** : Begin with the least destructive experiments to understand the system's behavior and gradually increase the severity.
   - **Define Clear Objectives** : Ensure each experiment has specific goals and understand what you're trying to learn.
@@ -348,24 +347,24 @@ tests a software's resilience by introducing random faults and disruptions. This
 
 #### What are some real-world examples of Chaos Engineering solving system issues?
 
-  Real-world examples of **[Chaos Engineering](../C/chaos-engineering.md)** solving system issues include:
+  Real-world examples of **[Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering)** solving system issues include:
 
-  - **Netflix**: As pioneers of [Chaos Engineering](../C/chaos-engineering.md), Netflix created Chaos Monkey, a tool that randomly terminates instances in production to ensure that engineers implement their services to be resilient to instance failures. This practice led to the development of the Simian Army, a suite of tools for various resilience tests, which has significantly improved Netflix's system reliability.
-  - **Amazon**: Amazon uses [Chaos Engineering](../C/chaos-engineering.md) to test the resilience of its AWS infrastructure. By intentionally introducing failures, Amazon ensures that their services can handle unexpected disruptions, leading to improved failover mechanisms and reduced downtime for AWS customers.
-  - **LinkedIn**: LinkedIn implemented [Chaos Engineering](../C/chaos-engineering.md) to test and improve their real-time data infrastructure. By simulating network partitions, they were able to identify and fix issues with their distributed messaging system, thus enhancing the reliability of LinkedIn's real-time services.
-  - **Capital One**: Capital One applies [Chaos Engineering](../C/chaos-engineering.md) to their banking services to ensure that their systems can withstand various outages and disruptions. This proactive approach has helped them to identify and remediate weaknesses before they impact customers, leading to a more robust banking platform.
-  These examples demonstrate how [Chaos Engineering](../C/chaos-engineering.md) provides a proactive method to uncover and resolve system vulnerabilities, leading to more resilient and reliable services in various industries.
+  - **Netflix**: As pioneers of [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering), Netflix created Chaos Monkey, a tool that randomly terminates instances in production to ensure that engineers implement their services to be resilient to instance failures. This practice led to the development of the Simian Army, a suite of tools for various resilience tests, which has significantly improved Netflix's system reliability.
+  - **Amazon**: Amazon uses [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) to test the resilience of its AWS infrastructure. By intentionally introducing failures, Amazon ensures that their services can handle unexpected disruptions, leading to improved failover mechanisms and reduced downtime for AWS customers.
+  - **LinkedIn**: LinkedIn implemented [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) to test and improve their real-time data infrastructure. By simulating network partitions, they were able to identify and fix issues with their distributed messaging system, thus enhancing the reliability of LinkedIn's real-time services.
+  - **Capital One**: Capital One applies [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) to their banking services to ensure that their systems can withstand various outages and disruptions. This proactive approach has helped them to identify and remediate weaknesses before they impact customers, leading to a more robust banking platform.
+  These examples demonstrate how [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) provides a proactive method to uncover and resolve system vulnerabilities, leading to more resilient and reliable services in various industries.
 
-  - **Netflix**: As pioneers of [Chaos Engineering](../C/chaos-engineering.md), Netflix created Chaos Monkey, a tool that randomly terminates instances in production to ensure that engineers implement their services to be resilient to instance failures. This practice led to the development of the Simian Army, a suite of tools for various resilience tests, which has significantly improved Netflix's system reliability.
-  - **Amazon**: Amazon uses [Chaos Engineering](../C/chaos-engineering.md) to test the resilience of its AWS infrastructure. By intentionally introducing failures, Amazon ensures that their services can handle unexpected disruptions, leading to improved failover mechanisms and reduced downtime for AWS customers.
-  - **LinkedIn**: LinkedIn implemented [Chaos Engineering](../C/chaos-engineering.md) to test and improve their real-time data infrastructure. By simulating network partitions, they were able to identify and fix issues with their distributed messaging system, thus enhancing the reliability of LinkedIn's real-time services.
-  - **Capital One**: Capital One applies [Chaos Engineering](../C/chaos-engineering.md) to their banking services to ensure that their systems can withstand various outages and disruptions. This proactive approach has helped them to identify and remediate weaknesses before they impact customers, leading to a more robust banking platform.
+  - **Netflix**: As pioneers of [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering), Netflix created Chaos Monkey, a tool that randomly terminates instances in production to ensure that engineers implement their services to be resilient to instance failures. This practice led to the development of the Simian Army, a suite of tools for various resilience tests, which has significantly improved Netflix's system reliability.
+  - **Amazon**: Amazon uses [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) to test the resilience of its AWS infrastructure. By intentionally introducing failures, Amazon ensures that their services can handle unexpected disruptions, leading to improved failover mechanisms and reduced downtime for AWS customers.
+  - **LinkedIn**: LinkedIn implemented [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) to test and improve their real-time data infrastructure. By simulating network partitions, they were able to identify and fix issues with their distributed messaging system, thus enhancing the reliability of LinkedIn's real-time services.
+  - **Capital One**: Capital One applies [Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering) to their banking services to ensure that their systems can withstand various outages and disruptions. This proactive approach has helped them to identify and remediate weaknesses before they impact customers, leading to a more robust banking platform.
 
 #### How can Chaos Engineering be integrated into a continuous delivery pipeline?
 
-  Integrating **[Chaos Engineering](../C/chaos-engineering.md)** into a continuous delivery pipeline involves injecting controlled experiments into the deployment process to test the resilience of the system in production-like environments. Here's a succinct guide:
+  Integrating **[Chaos Engineering](https://naodeng.com.cn/en/wiki/chaos-engineering)** into a continuous delivery pipeline involves injecting controlled experiments into the deployment process to test the resilience of the system in production-like environments. Here's a succinct guide:
 
-  1. **Automate Chaos Experiments**: Use tools like Chaos Monkey, Gremlin, or Litmus to automate the execution of chaos experiments. These tools can be integrated into your CI/CD pipeline using plugins or [API](../A/api.md) calls.
+  1. **Automate Chaos Experiments**: Use tools like Chaos Monkey, Gremlin, or Litmus to automate the execution of chaos experiments. These tools can be integrated into your CI/CD pipeline using plugins or [API](https://naodeng.com.cn/en/wiki/api) calls.
 
     ```
     stages:
@@ -380,11 +379,11 @@ tests a software's resilience by introducing random faults and disruptions. This
   3. **Monitor and Analyze**: Implement robust monitoring to observe the system's behavior during the chaos experiments. Use tools like Prometheus, Grafana, or ELK stack to collect and visualize metrics.
   4. **Fail Fast**: Configure the pipeline to halt progress if a chaos experiment uncovers a significant issue, ensuring that no further changes are deployed until the problem is resolved.
   5. **Feedback Loops**: Establish feedback mechanisms to report the outcomes of chaos experiments back to the development team for quick remediation.
-  6. **Incremental Increase**: Start with small, less-disruptive experiments and gradually increase the [severity](../S/severity.md) as confidence in the system's resilience grows.
+  6. **Incremental Increase**: Start with small, less-disruptive experiments and gradually increase the [severity](https://naodeng.com.cn/en/wiki/severity) as confidence in the system's resilience grows.
   7. **Documentation**: Maintain thorough documentation of each experiment, including its scope, results, and any follow-up actions.
   By embedding chaos experiments into the continuous delivery pipeline, you can proactively identify and address potential failures, ensuring a more resilient and reliable software delivery process.
 
-  1. **Automate Chaos Experiments**: Use tools like Chaos Monkey, Gremlin, or Litmus to automate the execution of chaos experiments. These tools can be integrated into your CI/CD pipeline using plugins or [API](../A/api.md) calls.
+  1. **Automate Chaos Experiments**: Use tools like Chaos Monkey, Gremlin, or Litmus to automate the execution of chaos experiments. These tools can be integrated into your CI/CD pipeline using plugins or [API](https://naodeng.com.cn/en/wiki/api) calls.
 
     ```
     stages:
@@ -399,5 +398,5 @@ tests a software's resilience by introducing random faults and disruptions. This
   3. **Monitor and Analyze**: Implement robust monitoring to observe the system's behavior during the chaos experiments. Use tools like Prometheus, Grafana, or ELK stack to collect and visualize metrics.
   4. **Fail Fast**: Configure the pipeline to halt progress if a chaos experiment uncovers a significant issue, ensuring that no further changes are deployed until the problem is resolved.
   5. **Feedback Loops**: Establish feedback mechanisms to report the outcomes of chaos experiments back to the development team for quick remediation.
-  6. **Incremental Increase**: Start with small, less-disruptive experiments and gradually increase the [severity](../S/severity.md) as confidence in the system's resilience grows.
+  6. **Incremental Increase**: Start with small, less-disruptive experiments and gradually increase the [severity](https://naodeng.com.cn/en/wiki/severity) as confidence in the system's resilience grows.
   7. **Documentation**: Maintain thorough documentation of each experiment, including its scope, results, and any follow-up actions.

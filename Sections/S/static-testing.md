@@ -1,6 +1,5 @@
 # Static Testing
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
 - [Questions about Static Testing ?](#questions-about-static-testing)
@@ -36,7 +35,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 ## Related Terms:
 
-- [Dynamic Testing](../D/dynamic-testing.md)
+- [Dynamic Testing](https://naodeng.com.cn/en/wiki/dynamic-testing)
 
 ## Questions about Static Testing ?
 
@@ -44,31 +43,31 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### What is static testing?
 
-  [Static testing](../S/static-testing.md) is the examination of software artifacts without executing the code. It involves **analyzing** documents and source code to find errors, which may include syntax errors, code standards violations, and design issues. This type of testing is typically done by using a combination of **manual** efforts, such as peer reviews, and **automated tools** that perform static code analysis.
-  Automated tools for [static testing](../S/static-testing.md) scan the codebase for predefined patterns that indicate potential issues. These tools can be integrated into the development environment or the continuous integration pipeline, providing immediate feedback to developers. They range from simple linters that enforce coding standards to complex static analysis tools that can detect more subtle problems like potential security vulnerabilities or performance bottlenecks.
-  [Static testing](../S/static-testing.md) is not only about finding [bugs](../B/bug.md) but also about **code quality** and **[maintainability](../M/maintainability.md)**. It helps ensure that the code adheres to standards and is understandable and modifiable. By identifying issues early in the development process, [static testing](../S/static-testing.md) contributes to reducing the cost of fixing defects, as issues caught earlier are generally cheaper to resolve.
-  To effectively implement [static testing](../S/static-testing.md), it's essential to select appropriate tools and techniques that align with the project's language and framework. Additionally, establishing a culture that values code quality and regular reviews can enhance the benefits of [static testing](../S/static-testing.md).
+  [Static testing](https://naodeng.com.cn/en/wiki/static-testing) is the examination of software artifacts without executing the code. It involves **analyzing** documents and source code to find errors, which may include syntax errors, code standards violations, and design issues. This type of testing is typically done by using a combination of **manual** efforts, such as peer reviews, and **automated tools** that perform static code analysis.
+  Automated tools for [static testing](https://naodeng.com.cn/en/wiki/static-testing) scan the codebase for predefined patterns that indicate potential issues. These tools can be integrated into the development environment or the continuous integration pipeline, providing immediate feedback to developers. They range from simple linters that enforce coding standards to complex static analysis tools that can detect more subtle problems like potential security vulnerabilities or performance bottlenecks.
+  [Static testing](https://naodeng.com.cn/en/wiki/static-testing) is not only about finding [bugs](https://naodeng.com.cn/en/wiki/bug) but also about **code quality** and **[maintainability](https://naodeng.com.cn/en/wiki/maintainability)**. It helps ensure that the code adheres to standards and is understandable and modifiable. By identifying issues early in the development process, [static testing](https://naodeng.com.cn/en/wiki/static-testing) contributes to reducing the cost of fixing defects, as issues caught earlier are generally cheaper to resolve.
+  To effectively implement [static testing](https://naodeng.com.cn/en/wiki/static-testing), it's essential to select appropriate tools and techniques that align with the project's language and framework. Additionally, establishing a culture that values code quality and regular reviews can enhance the benefits of [static testing](https://naodeng.com.cn/en/wiki/static-testing).
 
 #### Why is static testing important in the software development process?
 
-  [Static testing](../S/static-testing.md) is crucial in the software development process because it allows for the **early detection of defects** before [dynamic testing](../D/dynamic-testing.md) begins. By examining code, requirements, and design documents without executing the code, it helps to identify errors at a stage where they are **less costly to fix**. This proactive approach improves the **quality of the final product** by ensuring that issues are addressed in the initial stages, reducing the risk of compound errors later in the development lifecycle.
-  Moreover, [static testing](../S/static-testing.md) contributes to a **better understanding** of the code base and the system's architecture, which can lead to more maintainable and robust software. It also supports **compliance** with coding standards and can highlight potential **security vulnerabilities**. By catching ambiguities and inconsistencies in documentation and code, [static testing](../S/static-testing.md) enhances the clarity of software requirements and design, leading to more accurate and reliable implementation.
-  In essence, [static testing](../S/static-testing.md) is a **preventive measure** that complements [dynamic testing](../D/dynamic-testing.md) by ensuring that the codebase is of high quality before any functional tests are run. It is an integral part of a comprehensive [quality assurance](../Q/quality-assurance.md) strategy, helping to streamline the development process and contribute to the delivery of a more reliable software product.
+  [Static testing](https://naodeng.com.cn/en/wiki/static-testing) is crucial in the software development process because it allows for the **early detection of defects** before [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing) begins. By examining code, requirements, and design documents without executing the code, it helps to identify errors at a stage where they are **less costly to fix**. This proactive approach improves the **quality of the final product** by ensuring that issues are addressed in the initial stages, reducing the risk of compound errors later in the development lifecycle.
+  Moreover, [static testing](https://naodeng.com.cn/en/wiki/static-testing) contributes to a **better understanding** of the code base and the system's architecture, which can lead to more maintainable and robust software. It also supports **compliance** with coding standards and can highlight potential **security vulnerabilities**. By catching ambiguities and inconsistencies in documentation and code, [static testing](https://naodeng.com.cn/en/wiki/static-testing) enhances the clarity of software requirements and design, leading to more accurate and reliable implementation.
+  In essence, [static testing](https://naodeng.com.cn/en/wiki/static-testing) is a **preventive measure** that complements [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing) by ensuring that the codebase is of high quality before any functional tests are run. It is an integral part of a comprehensive [quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance) strategy, helping to streamline the development process and contribute to the delivery of a more reliable software product.
 
 #### How does static testing differ from dynamic testing?
 
-  [Static testing](../S/static-testing.md) involves examination of the code, requirements, or documentation without executing the program. It's a form of [verification](../V/verification.md) that checks for issues early in the development process. [Dynamic testing](../D/dynamic-testing.md), on the other hand, requires the code to be executed and validates the software operation against the defined requirements. It's a form of validation that often involves unit tests, integration tests, system tests, and acceptance tests.
-  **[Static Testing](../S/static-testing.md):**
+  [Static testing](https://naodeng.com.cn/en/wiki/static-testing) involves examination of the code, requirements, or documentation without executing the program. It's a form of [verification](https://naodeng.com.cn/en/wiki/verification) that checks for issues early in the development process. [Dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing), on the other hand, requires the code to be executed and validates the software operation against the defined requirements. It's a form of validation that often involves unit tests, integration tests, system tests, and acceptance tests.
+  **[Static Testing](https://naodeng.com.cn/en/wiki/static-testing):**
 
   - Analyzes code structure, syntax, and usage without running the program.
   - Includes reviews, inspections, and static code analysis.
   - Aims to find defects early, before code execution.
-  **[Dynamic Testing](../D/dynamic-testing.md):**
+  **[Dynamic Testing](https://naodeng.com.cn/en/wiki/dynamic-testing):**
 
   - Involves executing the code and checking system behavior under various conditions.
   - Includes functional and non-functional testing methods.
   - Aims to find defects that only surface when the software is running.
-  While [static testing](../S/static-testing.md) is about preventing defects, [dynamic testing](../D/dynamic-testing.md) is about finding them. [Static testing](../S/static-testing.md) can be more cost-effective since it identifies errors without the need for a running environment. [Dynamic testing](../D/dynamic-testing.md), however, is essential for ensuring the software works as intended in real-world scenarios. Both testing types are complementary and, when used together, provide a comprehensive approach to software quality assurance .
+  While [static testing](https://naodeng.com.cn/en/wiki/static-testing) is about preventing defects, [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing) is about finding them. [Static testing](https://naodeng.com.cn/en/wiki/static-testing) can be more cost-effective since it identifies errors without the need for a running environment. [Dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing), however, is essential for ensuring the software works as intended in real-world scenarios. Both testing types are complementary and, when used together, provide a comprehensive approach to software quality assurance .
 
   - Analyzes code structure, syntax, and usage without running the program.
   - Includes reviews, inspections, and static code analysis.
@@ -79,22 +78,22 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### What are the benefits of static testing?
 
-  Benefits of [static testing](../S/static-testing.md) include:
+  Benefits of [static testing](https://naodeng.com.cn/en/wiki/static-testing) include:
 
   - **Early Defect Detection** : Identifies issues before code execution, reducing the cost and effort of fixing bugs later in the development cycle.
   - **Improved Code Quality** : Encourages adherence to coding standards and best practices, leading to cleaner, more maintainable code.
-  - **Documentation [Verification](../V/verification.md)** : Ensures that documentation accurately reflects the intended functionality and design of the software.
+  - **Documentation [Verification](https://naodeng.com.cn/en/wiki/verification)** : Ensures that documentation accurately reflects the intended functionality and design of the software.
   - **Efficiency** : Saves time and resources by catching errors without the need for a running environment or the creation of test cases.
   - **Comprehensive Analysis** : Can analyze the entire codebase and documentation in a single pass, providing a thorough assessment of the software's quality.
   - **Non-Intrusive** : Does not alter the program's behavior, as it doesn't require code execution.
   - **Risk Mitigation** : Helps identify potential security vulnerabilities and compliance issues early on.
   - **Team Collaboration** : Facilitates discussions and knowledge sharing among team members through reviews and inspections.
   - **Process Improvement** : Offers insights into the development process, highlighting areas for improvement and ensuring consistency across the project.
-  [Static testing](../S/static-testing.md) complements [dynamic testing](../D/dynamic-testing.md) by providing a different perspective on quality and reliability, ultimately contributing to a more robust and error-free software product.
+  [Static testing](https://naodeng.com.cn/en/wiki/static-testing) complements [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing) by providing a different perspective on quality and reliability, ultimately contributing to a more robust and error-free software product.
 
   - **Early Defect Detection** : Identifies issues before code execution, reducing the cost and effort of fixing bugs later in the development cycle.
   - **Improved Code Quality** : Encourages adherence to coding standards and best practices, leading to cleaner, more maintainable code.
-  - **Documentation [Verification](../V/verification.md)** : Ensures that documentation accurately reflects the intended functionality and design of the software.
+  - **Documentation [Verification](https://naodeng.com.cn/en/wiki/verification)** : Ensures that documentation accurately reflects the intended functionality and design of the software.
   - **Efficiency** : Saves time and resources by catching errors without the need for a running environment or the creation of test cases.
   - **Comprehensive Analysis** : Can analyze the entire codebase and documentation in a single pass, providing a thorough assessment of the software's quality.
   - **Non-Intrusive** : Does not alter the program's behavior, as it doesn't require code execution.
@@ -104,7 +103,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### What are the key objectives of static testing?
 
-  The key objectives of [static testing](../S/static-testing.md) are:
+  The key objectives of [static testing](https://naodeng.com.cn/en/wiki/static-testing) are:
 
   - **Identify defects early** : Detect issues in the documentation, code, or design before dynamic testing begins.
   - **Improve quality** : Enhance the overall quality of the software by catching errors that might be harder to find in later stages.
@@ -116,7 +115,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
   - **Enhance security** : Spot security vulnerabilities that could be exploited if left undetected.
   - **Promote teamwork** : Encourage collaboration among team members through reviews and inspections, leading to knowledge sharing and consensus on best practices.
   - **Documentation validation** : Ensure that all required documentation is accurate, complete, and unambiguous.
-  By focusing on these objectives, [static testing](../S/static-testing.md) contributes to a more robust and reliable software development lifecycle.
+  By focusing on these objectives, [static testing](https://naodeng.com.cn/en/wiki/static-testing) contributes to a more robust and reliable software development lifecycle.
 
   - **Identify defects early** : Detect issues in the documentation, code, or design before dynamic testing begins.
   - **Improve quality** : Enhance the overall quality of the software by catching errors that might be harder to find in later stages.
@@ -133,13 +132,13 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### What are the common techniques used in static testing?
 
-  Common techniques used in [static testing](../S/static-testing.md) include:
+  Common techniques used in [static testing](https://naodeng.com.cn/en/wiki/static-testing) include:
 
   - **Syntax Checking**: Automated tools check code for syntactical correctness against the programming language's specifications.
   - **Code Reviews**: Peers manually examine source code to identify defects, enforce coding standards, and share knowledge.
   - **Pair Programming**: Two developers work together at one workstation, with one writing code and the other reviewing it simultaneously.
-  - **Model [Verification](../V/verification.md)**: Ensures that system models adhere to rules and conventions, often using modeling tools.
-  - **Document Reviews**: Examination of requirement specifications, design documents, [test plans](../T/test-plan.md), and user manuals for completeness, correctness, and clarity.
+  - **Model [Verification](https://naodeng.com.cn/en/wiki/verification)**: Ensures that system models adhere to rules and conventions, often using modeling tools.
+  - **Document Reviews**: Examination of requirement specifications, design documents, [test plans](https://naodeng.com.cn/en/wiki/test-plan), and user manuals for completeness, correctness, and clarity.
   - **Static Analysis Tools**: Automated tools that analyze code without executing it to find potential issues like security vulnerabilities, dead code, and memory leaks.
   - **Linter Tools**: Specialized static analysis tools that check source code for stylistic errors, programming errors, and suspicious constructs.
   - **Formal Methods**: Mathematical approaches for specifying and verifying software at different abstraction levels.
@@ -148,13 +147,13 @@ involves early-cycle assessment of software artifacts like requirements, design 
   - **Data Flow Analysis**: Analyzing the flow of data through code to detect potential issues like uninitialized variables or unreachable code.
   - **Interface Analysis**: Ensuring that interfaces between modules, functions, or systems are correctly defined and used.
   - **Compliance Checking**: Verifying that the code adheres to industry standards, regulations, and guidelines.
-  Each technique targets different aspects of [software quality](../S/software-quality.md) and can be used in combination to achieve comprehensive [static testing](../S/static-testing.md) coverage.
+  Each technique targets different aspects of [software quality](https://naodeng.com.cn/en/wiki/software-quality) and can be used in combination to achieve comprehensive [static testing](https://naodeng.com.cn/en/wiki/static-testing) coverage.
 
   - **Syntax Checking**: Automated tools check code for syntactical correctness against the programming language's specifications.
   - **Code Reviews**: Peers manually examine source code to identify defects, enforce coding standards, and share knowledge.
   - **Pair Programming**: Two developers work together at one workstation, with one writing code and the other reviewing it simultaneously.
-  - **Model [Verification](../V/verification.md)**: Ensures that system models adhere to rules and conventions, often using modeling tools.
-  - **Document Reviews**: Examination of requirement specifications, design documents, [test plans](../T/test-plan.md), and user manuals for completeness, correctness, and clarity.
+  - **Model [Verification](https://naodeng.com.cn/en/wiki/verification)**: Ensures that system models adhere to rules and conventions, often using modeling tools.
+  - **Document Reviews**: Examination of requirement specifications, design documents, [test plans](https://naodeng.com.cn/en/wiki/test-plan), and user manuals for completeness, correctness, and clarity.
   - **Static Analysis Tools**: Automated tools that analyze code without executing it to find potential issues like security vulnerabilities, dead code, and memory leaks.
   - **Linter Tools**: Specialized static analysis tools that check source code for stylistic errors, programming errors, and suspicious constructs.
   - **Formal Methods**: Mathematical approaches for specifying and verifying software at different abstraction levels.
@@ -166,24 +165,24 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### What is the difference between walkthroughs, inspections, and reviews in static testing?
 
-  Walkthroughs, [inspections](../I/inspection.md), and reviews are all methods of [static testing](../S/static-testing.md), each with distinct characteristics:
+  Walkthroughs, [inspections](https://naodeng.com.cn/en/wiki/inspection), and reviews are all methods of [static testing](https://naodeng.com.cn/en/wiki/static-testing), each with distinct characteristics:
 
   - **Walkthroughs**: These are informal sessions where the author of a software artifact (like code or design documents) presents it to peers for feedback. The goal is to provide a better understanding and find anomalies. There's no formal process; it's more of a guided tour through the material, often with the intent of educating or brainstorming.
-  - **[Inspections](../I/inspection.md)**: These are more formal than walkthroughs and involve a thorough examination of the software artifact. An [inspection](../I/inspection.md) is led by a moderator (not the author) and follows a defined process. The team includes roles such as a reader, who goes through the document line by line, and inspectors who identify defects. The focus is on defect detection, and it often includes a follow-up meeting to ensure all issues are addressed.
-  - **Reviews**: This term is broader and can encompass both walkthroughs and [inspections](../I/inspection.md). Reviews can be formal or informal and involve examining a software artifact to find defects, ensure conformance to standards, and assess the quality. The formality and structure of reviews can vary widely based on the organization's processes.
-  In essence, walkthroughs are educational and brainstorming sessions, [inspections](../I/inspection.md) are formal defect-finding meetings, and reviews can be either, depending on the context. Each serves a purpose in [static testing](../S/static-testing.md) to improve [software quality](../S/software-quality.md) before [dynamic testing](../D/dynamic-testing.md) begins.
+  - **[Inspections](https://naodeng.com.cn/en/wiki/inspection)**: These are more formal than walkthroughs and involve a thorough examination of the software artifact. An [inspection](https://naodeng.com.cn/en/wiki/inspection) is led by a moderator (not the author) and follows a defined process. The team includes roles such as a reader, who goes through the document line by line, and inspectors who identify defects. The focus is on defect detection, and it often includes a follow-up meeting to ensure all issues are addressed.
+  - **Reviews**: This term is broader and can encompass both walkthroughs and [inspections](https://naodeng.com.cn/en/wiki/inspection). Reviews can be formal or informal and involve examining a software artifact to find defects, ensure conformance to standards, and assess the quality. The formality and structure of reviews can vary widely based on the organization's processes.
+  In essence, walkthroughs are educational and brainstorming sessions, [inspections](https://naodeng.com.cn/en/wiki/inspection) are formal defect-finding meetings, and reviews can be either, depending on the context. Each serves a purpose in [static testing](https://naodeng.com.cn/en/wiki/static-testing) to improve [software quality](https://naodeng.com.cn/en/wiki/software-quality) before [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing) begins.
 
   - **Walkthroughs**: These are informal sessions where the author of a software artifact (like code or design documents) presents it to peers for feedback. The goal is to provide a better understanding and find anomalies. There's no formal process; it's more of a guided tour through the material, often with the intent of educating or brainstorming.
-  - **[Inspections](../I/inspection.md)**: These are more formal than walkthroughs and involve a thorough examination of the software artifact. An [inspection](../I/inspection.md) is led by a moderator (not the author) and follows a defined process. The team includes roles such as a reader, who goes through the document line by line, and inspectors who identify defects. The focus is on defect detection, and it often includes a follow-up meeting to ensure all issues are addressed.
-  - **Reviews**: This term is broader and can encompass both walkthroughs and [inspections](../I/inspection.md). Reviews can be formal or informal and involve examining a software artifact to find defects, ensure conformance to standards, and assess the quality. The formality and structure of reviews can vary widely based on the organization's processes.
+  - **[Inspections](https://naodeng.com.cn/en/wiki/inspection)**: These are more formal than walkthroughs and involve a thorough examination of the software artifact. An [inspection](https://naodeng.com.cn/en/wiki/inspection) is led by a moderator (not the author) and follows a defined process. The team includes roles such as a reader, who goes through the document line by line, and inspectors who identify defects. The focus is on defect detection, and it often includes a follow-up meeting to ensure all issues are addressed.
+  - **Reviews**: This term is broader and can encompass both walkthroughs and [inspections](https://naodeng.com.cn/en/wiki/inspection). Reviews can be formal or informal and involve examining a software artifact to find defects, ensure conformance to standards, and assess the quality. The formality and structure of reviews can vary widely based on the organization's processes.
 
 #### What is static code analysis?
 
-  Static code analysis is the automated examination of source code before it is executed to identify potential vulnerabilities, [bugs](../B/bug.md), and breaches of coding standards. Unlike [dynamic testing](../D/dynamic-testing.md), which requires code execution, static code analysis is performed without running the program. It's a form of white-box testing where tools scan the entire codebase to detect issues such as security vulnerabilities, memory leaks, concurrency problems, and other defects that could lead to poor performance, system crashes, or security breaches.
+  Static code analysis is the automated examination of source code before it is executed to identify potential vulnerabilities, [bugs](https://naodeng.com.cn/en/wiki/bug), and breaches of coding standards. Unlike [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing), which requires code execution, static code analysis is performed without running the program. It's a form of white-box testing where tools scan the entire codebase to detect issues such as security vulnerabilities, memory leaks, concurrency problems, and other defects that could lead to poor performance, system crashes, or security breaches.
   Tools designed for static code analysis often integrate with IDEs or build environments, enabling developers to detect and fix issues during the development phase. These tools can be rule-based or may use sophisticated algorithms to understand the code structure and data flow. Some common languages supported by static analysis tools include C, C++, Java, and C#.
   **Key benefits** of static code analysis include:
 
-  - **Early [bug](../B/bug.md) detection** : Identifies problems before runtime.
+  - **Early [bug](https://naodeng.com.cn/en/wiki/bug) detection** : Identifies problems before runtime.
   - **Code quality improvement** : Ensures adherence to coding standards.
   - **Security assurance** : Uncovers security flaws.
   - **Cost reduction** : Reduces the cost of bug fixes by catching them early.
@@ -194,7 +193,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
   - **ESLint** : A pluggable linting utility for JavaScript and JSX.
   To effectively incorporate static code analysis into the development workflow, it should be configured to run automatically, such as part of continuous integration (CI) pipelines, providing immediate feedback to developers.
 
-  - **Early [bug](../B/bug.md) detection** : Identifies problems before runtime.
+  - **Early [bug](https://naodeng.com.cn/en/wiki/bug) detection** : Identifies problems before runtime.
   - **Code quality improvement** : Ensures adherence to coding standards.
   - **Security assurance** : Uncovers security flaws.
   - **Cost reduction** : Reduces the cost of bug fixes by catching them early.
@@ -204,7 +203,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### How is static testing performed in the early stages of software development?
 
-  [Static testing](../S/static-testing.md) in the early stages of software development typically involves a series of activities that do not require code execution. These activities are aimed at evaluating and improving the quality of documentation and code without running the program. Here's how it is performed:
+  [Static testing](https://naodeng.com.cn/en/wiki/static-testing) in the early stages of software development typically involves a series of activities that do not require code execution. These activities are aimed at evaluating and improving the quality of documentation and code without running the program. Here's how it is performed:
 
   - **Review requirements**
     and design documents to ensure clarity, completeness, and testability. This can involve checking for consistency, identifying ambiguities, and ensuring alignment with business needs.
@@ -247,7 +246,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### What are the tools used for static testing?
 
-  [Static testing](../S/static-testing.md) tools are categorized based on their functionality and the type of analysis they perform. Here are some commonly used tools:
+  [Static testing](https://naodeng.com.cn/en/wiki/static-testing) tools are categorized based on their functionality and the type of analysis they perform. Here are some commonly used tools:
 
   - **Code Linters and Formatters** : Tools like
     `ESLint`
@@ -300,7 +299,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
     and
     `NDepend`
     assess code complexity, maintainability indices, and other metrics that can indicate potential problem areas.
-  These tools are often integrated into Continuous Integration (CI) pipelines using platforms like `Jenkins`, `Travis CI`, or `GitHub Actions` to automate the [static testing](../S/static-testing.md) process as part of the software development lifecycle.
+  These tools are often integrated into Continuous Integration (CI) pipelines using platforms like `Jenkins`, `Travis CI`, or `GitHub Actions` to automate the [static testing](https://naodeng.com.cn/en/wiki/static-testing) process as part of the software development lifecycle.
 
   - **Code Linters and Formatters** : Tools like
     `ESLint`
@@ -358,30 +357,30 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### What are the steps involved in the static testing process?
 
-  [Static testing](../S/static-testing.md) involves several steps to ensure that software artifacts meet quality standards before [dynamic testing](../D/dynamic-testing.md) begins. Here's a concise outline of the process:
+  [Static testing](https://naodeng.com.cn/en/wiki/static-testing) involves several steps to ensure that software artifacts meet quality standards before [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing) begins. Here's a concise outline of the process:
 
-  1. **Planning**: Define the scope, objectives, and strategy. Identify the artifacts to be reviewed, such as requirements, design documents, code, and [test cases](../T/test-case.md).
-  2. **Preparation**: Gather the necessary documents and tools. Create checklists or guidelines tailored to the specific artifacts and objectives of the [static testing](../S/static-testing.md).
+  1. **Planning**: Define the scope, objectives, and strategy. Identify the artifacts to be reviewed, such as requirements, design documents, code, and [test cases](https://naodeng.com.cn/en/wiki/test-case).
+  2. **Preparation**: Gather the necessary documents and tools. Create checklists or guidelines tailored to the specific artifacts and objectives of the [static testing](https://naodeng.com.cn/en/wiki/static-testing).
   3. **Examination**: Review the artifacts individually or in a team setting. This can involve manual reviews, walkthroughs, or automated static code analysis.
   4. **Reporting**: Document findings, such as defects, deviations from standards, and areas for improvement. Use a standardized format for consistency and traceability.
   5. **Fixing**: Address the reported issues. Developers or responsible team members correct the defects and non-conformities identified during the examination phase.
   6. **Re-examination**: Verify that all reported issues have been adequately resolved. This may involve a re-review of the artifacts or running the static analysis tools again.
-  7. **Follow-up**: Ensure that any process improvements identified during the [static testing](../S/static-testing.md) are implemented to prevent similar issues in the future.
-  8. **Closure**: Conclude the [static testing](../S/static-testing.md) process once all activities are completed, and the artifacts meet the quality criteria. Document the outcomes and lessons learned for future reference.
-  Throughout these steps, collaboration and communication among team members are crucial for an effective [static testing](../S/static-testing.md) process.
+  7. **Follow-up**: Ensure that any process improvements identified during the [static testing](https://naodeng.com.cn/en/wiki/static-testing) are implemented to prevent similar issues in the future.
+  8. **Closure**: Conclude the [static testing](https://naodeng.com.cn/en/wiki/static-testing) process once all activities are completed, and the artifacts meet the quality criteria. Document the outcomes and lessons learned for future reference.
+  Throughout these steps, collaboration and communication among team members are crucial for an effective [static testing](https://naodeng.com.cn/en/wiki/static-testing) process.
 
-  1. **Planning**: Define the scope, objectives, and strategy. Identify the artifacts to be reviewed, such as requirements, design documents, code, and [test cases](../T/test-case.md).
-  2. **Preparation**: Gather the necessary documents and tools. Create checklists or guidelines tailored to the specific artifacts and objectives of the [static testing](../S/static-testing.md).
+  1. **Planning**: Define the scope, objectives, and strategy. Identify the artifacts to be reviewed, such as requirements, design documents, code, and [test cases](https://naodeng.com.cn/en/wiki/test-case).
+  2. **Preparation**: Gather the necessary documents and tools. Create checklists or guidelines tailored to the specific artifacts and objectives of the [static testing](https://naodeng.com.cn/en/wiki/static-testing).
   3. **Examination**: Review the artifacts individually or in a team setting. This can involve manual reviews, walkthroughs, or automated static code analysis.
   4. **Reporting**: Document findings, such as defects, deviations from standards, and areas for improvement. Use a standardized format for consistency and traceability.
   5. **Fixing**: Address the reported issues. Developers or responsible team members correct the defects and non-conformities identified during the examination phase.
   6. **Re-examination**: Verify that all reported issues have been adequately resolved. This may involve a re-review of the artifacts or running the static analysis tools again.
-  7. **Follow-up**: Ensure that any process improvements identified during the [static testing](../S/static-testing.md) are implemented to prevent similar issues in the future.
-  8. **Closure**: Conclude the [static testing](../S/static-testing.md) process once all activities are completed, and the artifacts meet the quality criteria. Document the outcomes and lessons learned for future reference.
+  7. **Follow-up**: Ensure that any process improvements identified during the [static testing](https://naodeng.com.cn/en/wiki/static-testing) are implemented to prevent similar issues in the future.
+  8. **Closure**: Conclude the [static testing](https://naodeng.com.cn/en/wiki/static-testing) process once all activities are completed, and the artifacts meet the quality criteria. Document the outcomes and lessons learned for future reference.
 
 #### How to prepare for static testing?
 
-  Preparing for [static testing](../S/static-testing.md) involves a series of steps to ensure that the process is thorough and effective:
+  Preparing for [static testing](https://naodeng.com.cn/en/wiki/static-testing) involves a series of steps to ensure that the process is thorough and effective:
 
   1. **Define the scope** : Clearly outline what parts of the codebase or documentation will be examined.
   2. **Gather documentation** : Collect all relevant documents, including requirements, design specifications, and user stories.
@@ -393,7 +392,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
   8. **Schedule sessions** : Plan and schedule review sessions or allocate time for static analysis, ensuring it fits within the development timeline.
   9. **Communicate expectations** : Make sure all participants understand the objectives and expectations of the static testing phase.
   10. **Review past defects** : Analyze historical data on past defects to tailor the static testing approach to areas of known vulnerability.
-  By meticulously preparing, you can maximize the effectiveness of [static testing](../S/static-testing.md) and ensure it contributes to the overall quality of the software product.
+  By meticulously preparing, you can maximize the effectiveness of [static testing](https://naodeng.com.cn/en/wiki/static-testing) and ensure it contributes to the overall quality of the software product.
 
   1. **Define the scope** : Clearly outline what parts of the codebase or documentation will be examined.
   2. **Gather documentation** : Collect all relevant documents, including requirements, design specifications, and user stories.
@@ -408,47 +407,47 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### What are the roles and responsibilities of the participants in static testing?
 
-  Participants in [static testing](../S/static-testing.md) have distinct roles and responsibilities to ensure the process is effective and efficient:
+  Participants in [static testing](https://naodeng.com.cn/en/wiki/static-testing) have distinct roles and responsibilities to ensure the process is effective and efficient:
 
-  - **Testers/Analysts**: They are responsible for preparing [test cases](../T/test-case.md) and checklists based on the requirements and design documents. They use these artifacts to perform the [static testing](../S/static-testing.md), looking for inconsistencies, missing requirements, or potential errors.
+  - **Testers/Analysts**: They are responsible for preparing [test cases](https://naodeng.com.cn/en/wiki/test-case) and checklists based on the requirements and design documents. They use these artifacts to perform the [static testing](https://naodeng.com.cn/en/wiki/static-testing), looking for inconsistencies, missing requirements, or potential errors.
   - **Developers**: They engage in peer reviews and pair programming to examine each other's code for potential flaws. They also ensure that the code adheres to coding standards and best practices.
-  - **[Reviewers](../R/reviewer.md) (Peers)**: [Reviewers](../R/reviewer.md) are typically other team members who inspect the work products such as code, design documents, and requirements for defects. They provide feedback and suggest improvements.
-  - **Moderator (for [Inspections](../I/inspection.md))**: In formal [inspections](../I/inspection.md), a moderator leads the review process, ensuring that the review is conducted systematically and that all participants are prepared and understand their roles.
+  - **[Reviewers](https://naodeng.com.cn/en/wiki/reviewer) (Peers)**: [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) are typically other team members who inspect the work products such as code, design documents, and requirements for defects. They provide feedback and suggest improvements.
+  - **Moderator (for [Inspections](https://naodeng.com.cn/en/wiki/inspection))**: In formal [inspections](https://naodeng.com.cn/en/wiki/inspection), a moderator leads the review process, ensuring that the review is conducted systematically and that all participants are prepared and understand their roles.
   - **Authors**: The creators of the work product being reviewed. They answer questions and clarify intentions behind their work during reviews. They are also responsible for making the necessary changes after issues have been identified.
-  - **[Quality Assurance](../Q/quality-assurance.md) (QA) Team**: The QA team ensures that the [static testing](../S/static-testing.md) process adheres to organizational standards and processes. They may also audit the outcomes of [static testing](../S/static-testing.md) to ensure quality.
-  Each participant must be clear on their responsibilities and actively contribute to the process for [static testing](../S/static-testing.md) to be successful. Collaboration and communication among all participants are crucial.
+  - **[Quality Assurance](https://naodeng.com.cn/en/wiki/quality-assurance) (QA) Team**: The QA team ensures that the [static testing](https://naodeng.com.cn/en/wiki/static-testing) process adheres to organizational standards and processes. They may also audit the outcomes of [static testing](https://naodeng.com.cn/en/wiki/static-testing) to ensure quality.
+  Each participant must be clear on their responsibilities and actively contribute to the process for [static testing](https://naodeng.com.cn/en/wiki/static-testing) to be successful. Collaboration and communication among all participants are crucial.
 
-  - **Testers/Analysts**: They are responsible for preparing [test cases](../T/test-case.md) and checklists based on the requirements and design documents. They use these artifacts to perform the [static testing](../S/static-testing.md), looking for inconsistencies, missing requirements, or potential errors.
+  - **Testers/Analysts**: They are responsible for preparing [test cases](https://naodeng.com.cn/en/wiki/test-case) and checklists based on the requirements and design documents. They use these artifacts to perform the [static testing](https://naodeng.com.cn/en/wiki/static-testing), looking for inconsistencies, missing requirements, or potential errors.
   - **Developers**: They engage in peer reviews and pair programming to examine each other's code for potential flaws. They also ensure that the code adheres to coding standards and best practices.
-  - **[Reviewers](../R/reviewer.md) (Peers)**: [Reviewers](../R/reviewer.md) are typically other team members who inspect the work products such as code, design documents, and requirements for defects. They provide feedback and suggest improvements.
-  - **Moderator (for [Inspections](../I/inspection.md))**: In formal [inspections](../I/inspection.md), a moderator leads the review process, ensuring that the review is conducted systematically and that all participants are prepared and understand their roles.
+  - **[Reviewers](https://naodeng.com.cn/en/wiki/reviewer) (Peers)**: [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) are typically other team members who inspect the work products such as code, design documents, and requirements for defects. They provide feedback and suggest improvements.
+  - **Moderator (for [Inspections](https://naodeng.com.cn/en/wiki/inspection))**: In formal [inspections](https://naodeng.com.cn/en/wiki/inspection), a moderator leads the review process, ensuring that the review is conducted systematically and that all participants are prepared and understand their roles.
   - **Authors**: The creators of the work product being reviewed. They answer questions and clarify intentions behind their work during reviews. They are also responsible for making the necessary changes after issues have been identified.
-  - **[Quality Assurance](../Q/quality-assurance.md) (QA) Team**: The QA team ensures that the [static testing](../S/static-testing.md) process adheres to organizational standards and processes. They may also audit the outcomes of [static testing](../S/static-testing.md) to ensure quality.
+  - **[Quality Assurance](https://naodeng.com.cn/en/wiki/quality-assurance) (QA) Team**: The QA team ensures that the [static testing](https://naodeng.com.cn/en/wiki/static-testing) process adheres to organizational standards and processes. They may also audit the outcomes of [static testing](https://naodeng.com.cn/en/wiki/static-testing) to ensure quality.
 
 #### What are the common challenges faced during static testing and how to overcome them?
 
-  Common challenges in [static testing](../S/static-testing.md) include:
+  Common challenges in [static testing](https://naodeng.com.cn/en/wiki/static-testing) include:
 
-  - **Limited Coverage**: [Static testing](../S/static-testing.md) may not cover all code paths or scenarios. To overcome this, combine [static testing](../S/static-testing.md) with [dynamic testing](../D/dynamic-testing.md) to ensure comprehensive coverage.
-  - **[False Positives](../F/false-positive.md)/Negatives**: Static analysis tools can produce [false positives](../F/false-positive.md) (flagging non-issues) or [false negatives](../F/false-negative.md) (missing actual issues). Refine tool configurations and regularly review rules to minimize inaccuracies.
+  - **Limited Coverage**: [Static testing](https://naodeng.com.cn/en/wiki/static-testing) may not cover all code paths or scenarios. To overcome this, combine [static testing](https://naodeng.com.cn/en/wiki/static-testing) with [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing) to ensure comprehensive coverage.
+  - **[False Positives](https://naodeng.com.cn/en/wiki/false-positive)/Negatives**: Static analysis tools can produce [false positives](https://naodeng.com.cn/en/wiki/false-positive) (flagging non-issues) or [false negatives](https://naodeng.com.cn/en/wiki/false-negative) (missing actual issues). Refine tool configurations and regularly review rules to minimize inaccuracies.
   - **Complexity of Code**: Complex code can be difficult to analyze. Encourage developers to write clean, simple code and use pair programming to review complex sections.
   - **Tool Limitations**: No tool can detect all issues. Select tools that best fit your project's language and framework, and use multiple tools when necessary.
-  - **Resistance to Change**: Developers may resist the introduction of [static testing](../S/static-testing.md). Demonstrate the value of [static testing](../S/static-testing.md) through training and by showing how it can save time and improve code quality.
-  - **Integration with Development Process**: Integrating [static testing](../S/static-testing.md) into the development workflow can be challenging. Automate the [static testing](../S/static-testing.md) process as part of the continuous integration pipeline to ensure it's a seamless part of the workflow.
-  - **Understanding and Acting on Results**: Interpreting the results from [static testing](../S/static-testing.md) tools requires expertise. Provide adequate training to ensure that team members can understand and act on the findings effectively.
-  - **Maintaining [Test Suites](../T/test-suite.md)**: As the codebase evolves, static [test suites](../T/test-suite.md) must be updated. Regularly review and maintain [test cases](../T/test-case.md) to ensure they remain relevant and effective.
-  - **Limited Coverage**: [Static testing](../S/static-testing.md) may not cover all code paths or scenarios. To overcome this, combine [static testing](../S/static-testing.md) with [dynamic testing](../D/dynamic-testing.md) to ensure comprehensive coverage.
-  - **[False Positives](../F/false-positive.md)/Negatives**: Static analysis tools can produce [false positives](../F/false-positive.md) (flagging non-issues) or [false negatives](../F/false-negative.md) (missing actual issues). Refine tool configurations and regularly review rules to minimize inaccuracies.
+  - **Resistance to Change**: Developers may resist the introduction of [static testing](https://naodeng.com.cn/en/wiki/static-testing). Demonstrate the value of [static testing](https://naodeng.com.cn/en/wiki/static-testing) through training and by showing how it can save time and improve code quality.
+  - **Integration with Development Process**: Integrating [static testing](https://naodeng.com.cn/en/wiki/static-testing) into the development workflow can be challenging. Automate the [static testing](https://naodeng.com.cn/en/wiki/static-testing) process as part of the continuous integration pipeline to ensure it's a seamless part of the workflow.
+  - **Understanding and Acting on Results**: Interpreting the results from [static testing](https://naodeng.com.cn/en/wiki/static-testing) tools requires expertise. Provide adequate training to ensure that team members can understand and act on the findings effectively.
+  - **Maintaining [Test Suites](https://naodeng.com.cn/en/wiki/test-suite)**: As the codebase evolves, static [test suites](https://naodeng.com.cn/en/wiki/test-suite) must be updated. Regularly review and maintain [test cases](https://naodeng.com.cn/en/wiki/test-case) to ensure they remain relevant and effective.
+  - **Limited Coverage**: [Static testing](https://naodeng.com.cn/en/wiki/static-testing) may not cover all code paths or scenarios. To overcome this, combine [static testing](https://naodeng.com.cn/en/wiki/static-testing) with [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing) to ensure comprehensive coverage.
+  - **[False Positives](https://naodeng.com.cn/en/wiki/false-positive)/Negatives**: Static analysis tools can produce [false positives](https://naodeng.com.cn/en/wiki/false-positive) (flagging non-issues) or [false negatives](https://naodeng.com.cn/en/wiki/false-negative) (missing actual issues). Refine tool configurations and regularly review rules to minimize inaccuracies.
   - **Complexity of Code**: Complex code can be difficult to analyze. Encourage developers to write clean, simple code and use pair programming to review complex sections.
   - **Tool Limitations**: No tool can detect all issues. Select tools that best fit your project's language and framework, and use multiple tools when necessary.
-  - **Resistance to Change**: Developers may resist the introduction of [static testing](../S/static-testing.md). Demonstrate the value of [static testing](../S/static-testing.md) through training and by showing how it can save time and improve code quality.
-  - **Integration with Development Process**: Integrating [static testing](../S/static-testing.md) into the development workflow can be challenging. Automate the [static testing](../S/static-testing.md) process as part of the continuous integration pipeline to ensure it's a seamless part of the workflow.
-  - **Understanding and Acting on Results**: Interpreting the results from [static testing](../S/static-testing.md) tools requires expertise. Provide adequate training to ensure that team members can understand and act on the findings effectively.
-  - **Maintaining [Test Suites](../T/test-suite.md)**: As the codebase evolves, static [test suites](../T/test-suite.md) must be updated. Regularly review and maintain [test cases](../T/test-case.md) to ensure they remain relevant and effective.
+  - **Resistance to Change**: Developers may resist the introduction of [static testing](https://naodeng.com.cn/en/wiki/static-testing). Demonstrate the value of [static testing](https://naodeng.com.cn/en/wiki/static-testing) through training and by showing how it can save time and improve code quality.
+  - **Integration with Development Process**: Integrating [static testing](https://naodeng.com.cn/en/wiki/static-testing) into the development workflow can be challenging. Automate the [static testing](https://naodeng.com.cn/en/wiki/static-testing) process as part of the continuous integration pipeline to ensure it's a seamless part of the workflow.
+  - **Understanding and Acting on Results**: Interpreting the results from [static testing](https://naodeng.com.cn/en/wiki/static-testing) tools requires expertise. Provide adequate training to ensure that team members can understand and act on the findings effectively.
+  - **Maintaining [Test Suites](https://naodeng.com.cn/en/wiki/test-suite)**: As the codebase evolves, static [test suites](https://naodeng.com.cn/en/wiki/test-suite) must be updated. Regularly review and maintain [test cases](https://naodeng.com.cn/en/wiki/test-case) to ensure they remain relevant and effective.
 
 #### How to measure the effectiveness of static testing?
 
-  Measuring the effectiveness of [static testing](../S/static-testing.md) involves assessing the impact on code quality, development speed, and overall project costs. Key metrics include:
+  Measuring the effectiveness of [static testing](https://naodeng.com.cn/en/wiki/static-testing) involves assessing the impact on code quality, development speed, and overall project costs. Key metrics include:
 
   - **Defect Density** : Calculate the number of defects found per lines of code (LOC) or per module. A lower defect density after static testing indicates higher code quality.
 
@@ -462,31 +461,31 @@ involves early-cycle assessment of software artifacts like requirements, design 
   defectDetectionRate = (defectsFoundInStaticTesting / totalDefectsFound) * 100
   ```
 
-  - **Cost of Quality**: Compare the costs of prevention (including [static testing](../S/static-testing.md)) and failure (costs incurred due to defects). Effective [static testing](../S/static-testing.md) should reduce failure costs.
-  - **Time to Market**: Monitor any changes in the time it takes to release the software. Effective [static testing](../S/static-testing.md) can reduce this by catching defects early.
-  - **Code Complexity**: Use tools to measure cyclomatic complexity before and after [static testing](../S/static-testing.md). Lower complexity after [static testing](../S/static-testing.md) can indicate improved code [maintainability](../M/maintainability.md).
-  - **Review Efficiency**: Calculate the number of defects found per hour of review. Higher efficiency means the [static testing](../S/static-testing.md) process is more effective.
+  - **Cost of Quality**: Compare the costs of prevention (including [static testing](https://naodeng.com.cn/en/wiki/static-testing)) and failure (costs incurred due to defects). Effective [static testing](https://naodeng.com.cn/en/wiki/static-testing) should reduce failure costs.
+  - **Time to Market**: Monitor any changes in the time it takes to release the software. Effective [static testing](https://naodeng.com.cn/en/wiki/static-testing) can reduce this by catching defects early.
+  - **Code Complexity**: Use tools to measure cyclomatic complexity before and after [static testing](https://naodeng.com.cn/en/wiki/static-testing). Lower complexity after [static testing](https://naodeng.com.cn/en/wiki/static-testing) can indicate improved code [maintainability](https://naodeng.com.cn/en/wiki/maintainability).
+  - **Review Efficiency**: Calculate the number of defects found per hour of review. Higher efficiency means the [static testing](https://naodeng.com.cn/en/wiki/static-testing) process is more effective.
 
   ```
   reviewEfficiency = numberOfDefectsFound / hoursSpentReviewing
   ```
 
   - **Rework Percentage** : The amount of code that requires rework after static testing. Lower percentages suggest higher initial code quality.
-  Regularly track these metrics to evaluate and refine your [static testing](../S/static-testing.md) process, ensuring it remains effective and aligned with project goals.
+  Regularly track these metrics to evaluate and refine your [static testing](https://naodeng.com.cn/en/wiki/static-testing) process, ensuring it remains effective and aligned with project goals.
 
   - **Defect Density** : Calculate the number of defects found per lines of code (LOC) or per module. A lower defect density after static testing indicates higher code quality.
   - **Defect Detection Rate** : The percentage of defects found during static testing compared to the total number of defects found throughout the project lifecycle. A higher rate suggests static testing is effective in early defect identification.
-  - **Cost of Quality**: Compare the costs of prevention (including [static testing](../S/static-testing.md)) and failure (costs incurred due to defects). Effective [static testing](../S/static-testing.md) should reduce failure costs.
-  - **Time to Market**: Monitor any changes in the time it takes to release the software. Effective [static testing](../S/static-testing.md) can reduce this by catching defects early.
-  - **Code Complexity**: Use tools to measure cyclomatic complexity before and after [static testing](../S/static-testing.md). Lower complexity after [static testing](../S/static-testing.md) can indicate improved code [maintainability](../M/maintainability.md).
-  - **Review Efficiency**: Calculate the number of defects found per hour of review. Higher efficiency means the [static testing](../S/static-testing.md) process is more effective.
+  - **Cost of Quality**: Compare the costs of prevention (including [static testing](https://naodeng.com.cn/en/wiki/static-testing)) and failure (costs incurred due to defects). Effective [static testing](https://naodeng.com.cn/en/wiki/static-testing) should reduce failure costs.
+  - **Time to Market**: Monitor any changes in the time it takes to release the software. Effective [static testing](https://naodeng.com.cn/en/wiki/static-testing) can reduce this by catching defects early.
+  - **Code Complexity**: Use tools to measure cyclomatic complexity before and after [static testing](https://naodeng.com.cn/en/wiki/static-testing). Lower complexity after [static testing](https://naodeng.com.cn/en/wiki/static-testing) can indicate improved code [maintainability](https://naodeng.com.cn/en/wiki/maintainability).
+  - **Review Efficiency**: Calculate the number of defects found per hour of review. Higher efficiency means the [static testing](https://naodeng.com.cn/en/wiki/static-testing) process is more effective.
   - **Rework Percentage** : The amount of code that requires rework after static testing. Lower percentages suggest higher initial code quality.
 
 ### Best Practices
 
 #### What are the best practices for static testing?
 
-  Best practices for [static testing](../S/static-testing.md) include:
+  Best practices for [static testing](https://naodeng.com.cn/en/wiki/static-testing) include:
 
   - **Early Integration** : Integrate static testing into the development process as early as possible to identify defects before they propagate.
   - **Regular Execution** : Run static tests frequently to catch issues promptly, ideally with every new code commit.
@@ -499,7 +498,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
   - **Continuous Improvement** : Regularly review and refine the static testing process based on feedback and metrics to improve its effectiveness.
   - **Integration with CI/CD** : Automate static tests within the Continuous Integration/Continuous Deployment (CI/CD) pipeline to ensure they are not skipped.
   - **Actionable Reports** : Ensure static testing tools generate clear, actionable reports that developers can use to make informed decisions.
-  By following these practices, teams can maximize the benefits of [static testing](../S/static-testing.md), leading to cleaner code, fewer [bugs](../B/bug.md), and a more efficient development process.
+  By following these practices, teams can maximize the benefits of [static testing](https://naodeng.com.cn/en/wiki/static-testing), leading to cleaner code, fewer [bugs](https://naodeng.com.cn/en/wiki/bug), and a more efficient development process.
 
   - **Early Integration** : Integrate static testing into the development process as early as possible to identify defects before they propagate.
   - **Regular Execution** : Run static tests frequently to catch issues promptly, ideally with every new code commit.
@@ -515,7 +514,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### How to improve the efficiency of static testing?
 
-  To enhance the efficiency of [static testing](../S/static-testing.md):
+  To enhance the efficiency of [static testing](https://naodeng.com.cn/en/wiki/static-testing):
 
   - **Prioritize**
     the most critical code areas and modules based on complexity, change frequency, and past defect trends.
@@ -527,7 +526,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
   - **Customize analysis rules**
     to match your project's specific needs, reducing false positives and focusing on relevant issues.
 
-  - **Integrate [static testing](../S/static-testing.md) into your CI/CD pipeline**
+  - **Integrate [static testing](https://naodeng.com.cn/en/wiki/static-testing) into your CI/CD pipeline**
     , ensuring that code is automatically checked with each commit or build.
 
   - Develop a
@@ -537,7 +536,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
   - **Collaborate closely**
     with developers to ensure they understand static testing reports and can act on them promptly.
 
-  - **Refine your [static testing](../S/static-testing.md) process**
+  - **Refine your [static testing](https://naodeng.com.cn/en/wiki/static-testing) process**
     regularly based on feedback and metrics to stay aligned with project goals and quality standards.
 
   - **Educate your team**
@@ -549,7 +548,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
   - **Track and analyze metrics**
     such as defect density and time to fix, using this data to improve your static testing approach continuously.
-  By focusing on these strategies, you can significantly improve the efficiency of [static testing](../S/static-testing.md) in your software development process.
+  By focusing on these strategies, you can significantly improve the efficiency of [static testing](https://naodeng.com.cn/en/wiki/static-testing) in your software development process.
 
   - **Prioritize**
     the most critical code areas and modules based on complexity, change frequency, and past defect trends.
@@ -561,7 +560,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
   - **Customize analysis rules**
     to match your project's specific needs, reducing false positives and focusing on relevant issues.
 
-  - **Integrate [static testing](../S/static-testing.md) into your CI/CD pipeline**
+  - **Integrate [static testing](https://naodeng.com.cn/en/wiki/static-testing) into your CI/CD pipeline**
     , ensuring that code is automatically checked with each commit or build.
 
   - Develop a
@@ -571,7 +570,7 @@ involves early-cycle assessment of software artifacts like requirements, design 
   - **Collaborate closely**
     with developers to ensure they understand static testing reports and can act on them promptly.
 
-  - **Refine your [static testing](../S/static-testing.md) process**
+  - **Refine your [static testing](https://naodeng.com.cn/en/wiki/static-testing) process**
     regularly based on feedback and metrics to stay aligned with project goals and quality standards.
 
   - **Educate your team**
@@ -586,48 +585,48 @@ involves early-cycle assessment of software artifacts like requirements, design 
 
 #### What are the common mistakes to avoid in static testing?
 
-  Common mistakes to avoid in [static testing](../S/static-testing.md) include:
+  Common mistakes to avoid in [static testing](https://naodeng.com.cn/en/wiki/static-testing) include:
 
-  - **Neglecting early involvement**: [Static testing](../S/static-testing.md) should start early in the development process. Overlooking this can lead to missed defects that could have been identified and resolved with less effort if caught earlier.
+  - **Neglecting early involvement**: [Static testing](https://naodeng.com.cn/en/wiki/static-testing) should start early in the development process. Overlooking this can lead to missed defects that could have been identified and resolved with less effort if caught earlier.
   - **Insufficient coverage**: Focusing only on certain aspects of the code or documentation can lead to gaps in testing. Ensure all relevant materials are thoroughly examined.
   - **Lack of diversity in review teams**: Having a team with similar backgrounds or expertise can result in a narrow perspective. Include team members with diverse skills to catch a wider range of issues.
   - **Skipping preparation**: Adequate preparation, such as defining checklists and standards, is crucial. Without it, reviews may be inconsistent and less effective.
-  - **Ignoring non-code artifacts**: [Static testing](../S/static-testing.md) isn't just for code. Failing to review design documents, requirements, and other artifacts can lead to issues in later stages.
+  - **Ignoring non-code artifacts**: [Static testing](https://naodeng.com.cn/en/wiki/static-testing) isn't just for code. Failing to review design documents, requirements, and other artifacts can lead to issues in later stages.
   - **Over-reliance on tools**: While tools are helpful, they can't catch everything. Complement automated tools with manual reviews to ensure a comprehensive analysis.
-  - **Inadequate follow-up**: Finding defects is only half the battle. Without proper tracking and resolution of identified issues, the benefits of [static testing](../S/static-testing.md) are lost.
-  - **Poor communication**: Effective [static testing](../S/static-testing.md) relies on clear communication. Ensure feedback is constructive and that there's a mutual understanding of findings and actions required.
+  - **Inadequate follow-up**: Finding defects is only half the battle. Without proper tracking and resolution of identified issues, the benefits of [static testing](https://naodeng.com.cn/en/wiki/static-testing) are lost.
+  - **Poor communication**: Effective [static testing](https://naodeng.com.cn/en/wiki/static-testing) relies on clear communication. Ensure feedback is constructive and that there's a mutual understanding of findings and actions required.
   - **Resistance to findings**: Sometimes, there's a tendency to defend the work rather than address the issues. Encourage an open-minded approach where the focus is on improvement, not criticism.
-  Remember, the goal of [static testing](../S/static-testing.md) is to improve the quality of the software by identifying defects early and efficiently. Avoiding these common pitfalls can significantly enhance the effectiveness of your [static testing](../S/static-testing.md) efforts.
+  Remember, the goal of [static testing](https://naodeng.com.cn/en/wiki/static-testing) is to improve the quality of the software by identifying defects early and efficiently. Avoiding these common pitfalls can significantly enhance the effectiveness of your [static testing](https://naodeng.com.cn/en/wiki/static-testing) efforts.
 
-  - **Neglecting early involvement**: [Static testing](../S/static-testing.md) should start early in the development process. Overlooking this can lead to missed defects that could have been identified and resolved with less effort if caught earlier.
+  - **Neglecting early involvement**: [Static testing](https://naodeng.com.cn/en/wiki/static-testing) should start early in the development process. Overlooking this can lead to missed defects that could have been identified and resolved with less effort if caught earlier.
   - **Insufficient coverage**: Focusing only on certain aspects of the code or documentation can lead to gaps in testing. Ensure all relevant materials are thoroughly examined.
   - **Lack of diversity in review teams**: Having a team with similar backgrounds or expertise can result in a narrow perspective. Include team members with diverse skills to catch a wider range of issues.
   - **Skipping preparation**: Adequate preparation, such as defining checklists and standards, is crucial. Without it, reviews may be inconsistent and less effective.
-  - **Ignoring non-code artifacts**: [Static testing](../S/static-testing.md) isn't just for code. Failing to review design documents, requirements, and other artifacts can lead to issues in later stages.
+  - **Ignoring non-code artifacts**: [Static testing](https://naodeng.com.cn/en/wiki/static-testing) isn't just for code. Failing to review design documents, requirements, and other artifacts can lead to issues in later stages.
   - **Over-reliance on tools**: While tools are helpful, they can't catch everything. Complement automated tools with manual reviews to ensure a comprehensive analysis.
-  - **Inadequate follow-up**: Finding defects is only half the battle. Without proper tracking and resolution of identified issues, the benefits of [static testing](../S/static-testing.md) are lost.
-  - **Poor communication**: Effective [static testing](../S/static-testing.md) relies on clear communication. Ensure feedback is constructive and that there's a mutual understanding of findings and actions required.
+  - **Inadequate follow-up**: Finding defects is only half the battle. Without proper tracking and resolution of identified issues, the benefits of [static testing](https://naodeng.com.cn/en/wiki/static-testing) are lost.
+  - **Poor communication**: Effective [static testing](https://naodeng.com.cn/en/wiki/static-testing) relies on clear communication. Ensure feedback is constructive and that there's a mutual understanding of findings and actions required.
   - **Resistance to findings**: Sometimes, there's a tendency to defend the work rather than address the issues. Encourage an open-minded approach where the focus is on improvement, not criticism.
 
 #### How to integrate static testing into the software development lifecycle?
 
-  Integrating [static testing](../S/static-testing.md) into the software development lifecycle (SDLC) involves embedding it into various stages to ensure early detection of defects. Here's how to do it effectively:
-  **1. Requirement Analysis:** Introduce [static testing](../S/static-testing.md) by reviewing requirements documents. Use checklists to validate requirements for completeness, consistency, and testability.
-  **2. Design Phase:** Apply [static testing](../S/static-testing.md) to design specifications through reviews or model analysis. Tools like UML checkers can help validate design diagrams.
+  Integrating [static testing](https://naodeng.com.cn/en/wiki/static-testing) into the software development lifecycle (SDLC) involves embedding it into various stages to ensure early detection of defects. Here's how to do it effectively:
+  **1. Requirement Analysis:** Introduce [static testing](https://naodeng.com.cn/en/wiki/static-testing) by reviewing requirements documents. Use checklists to validate requirements for completeness, consistency, and testability.
+  **2. Design Phase:** Apply [static testing](https://naodeng.com.cn/en/wiki/static-testing) to design specifications through reviews or model analysis. Tools like UML checkers can help validate design diagrams.
   **3. Coding Phase:** Implement static code analysis tools that automatically scan code for potential issues as developers write it. Integrate these tools into your IDEs and version control systems to ensure continuous analysis.
   **4. Code Review:** Formalize peer reviews or pair programming to examine code for logic errors, adherence to coding standards, and potential performance issues.
   **5. Build and Deployment:** Include static analysis in your CI/CD pipeline. Configure pre-commit or pre-push hooks that trigger static analysis checks, blocking builds if critical issues are found.
-  **6. Test Planning:** During test planning, use [static testing](../S/static-testing.md) to review test strategies, plans, and cases. Ensure they cover all aspects of the software and align with the requirements.
-  **7. Maintenance:** Continuously apply [static testing](../S/static-testing.md) to any changes or additions to the codebase, ensuring that even during maintenance, the [software quality](../S/software-quality.md) remains high.
-  By integrating [static testing](../S/static-testing.md) throughout the SDLC, you can catch defects early, reduce costs, and maintain high-quality standards. Remember to select tools and techniques that align with your development practices and to train your team to effectively use [static testing](../S/static-testing.md) methods.
+  **6. Test Planning:** During test planning, use [static testing](https://naodeng.com.cn/en/wiki/static-testing) to review test strategies, plans, and cases. Ensure they cover all aspects of the software and align with the requirements.
+  **7. Maintenance:** Continuously apply [static testing](https://naodeng.com.cn/en/wiki/static-testing) to any changes or additions to the codebase, ensuring that even during maintenance, the [software quality](https://naodeng.com.cn/en/wiki/software-quality) remains high.
+  By integrating [static testing](https://naodeng.com.cn/en/wiki/static-testing) throughout the SDLC, you can catch defects early, reduce costs, and maintain high-quality standards. Remember to select tools and techniques that align with your development practices and to train your team to effectively use [static testing](https://naodeng.com.cn/en/wiki/static-testing) methods.
 
 #### What are the industry standards for static testing?
 
-  Industry standards for [static testing](../S/static-testing.md) are guidelines and practices that ensure a consistent and effective approach to evaluating software artifacts without executing the code. These standards often derive from both formal organizations and collective industry experience.
-  **ISO/IEC 20246:2019** is a widely recognized standard that provides requirements for [static testing](../S/static-testing.md), focusing on work product reviews. It outlines processes for performing reviews, including planning, preparation, execution, and documentation.
-  **IEEE 1028** defines standard practices for software reviews and audits, which include [inspections](../I/inspection.md), walkthroughs, technical reviews, and management reviews. This standard emphasizes the identification of defects and issues early in the development process.
+  Industry standards for [static testing](https://naodeng.com.cn/en/wiki/static-testing) are guidelines and practices that ensure a consistent and effective approach to evaluating software artifacts without executing the code. These standards often derive from both formal organizations and collective industry experience.
+  **ISO/IEC 20246:2019** is a widely recognized standard that provides requirements for [static testing](https://naodeng.com.cn/en/wiki/static-testing), focusing on work product reviews. It outlines processes for performing reviews, including planning, preparation, execution, and documentation.
+  **IEEE 1028** defines standard practices for software reviews and audits, which include [inspections](https://naodeng.com.cn/en/wiki/inspection), walkthroughs, technical reviews, and management reviews. This standard emphasizes the identification of defects and issues early in the development process.
   **MISRA (Motor Industry Software Reliability Association)** guidelines, particularly relevant for embedded systems, provide a set of rules for static code analysis to ensure safety and reliability in software.
   **CERT (Computer Emergency Response Team)** coding standards offer a collection of static analysis rules and recommendations to avoid common programming errors that can lead to security vulnerabilities.
   **OWASP (Open Web Application Security Project)** provides a list of best practices and tools for static code analysis focused on web application security.
-  **SANS Top 25** is a list of the most common programming errors leading to security [bugs](../B/bug.md) and provides guidance on how to avoid them through static analysis.
-  Adhering to these standards helps organizations maintain quality, reduce defects, and ensure compliance with security and safety regulations. Tools supporting [static testing](../S/static-testing.md) often incorporate these standards to provide automated checks against the defined rules and guidelines.
+  **SANS Top 25** is a list of the most common programming errors leading to security [bugs](https://naodeng.com.cn/en/wiki/bug) and provides guidance on how to avoid them through static analysis.
+  Adhering to these standards helps organizations maintain quality, reduce defects, and ensure compliance with security and safety regulations. Tools supporting [static testing](https://naodeng.com.cn/en/wiki/static-testing) often incorporate these standards to provide automated checks against the defined rules and guidelines.

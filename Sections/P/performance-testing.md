@@ -1,6 +1,5 @@
 # Performance Testing
 
-
 <!-- TOC START -->
 - [Questions about Performance Testing ?](#questions-about-performance-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -39,99 +38,99 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### What is performance testing in software testing?
 
-  [Performance testing](../P/performance-testing.md) evaluates how a system behaves under specific conditions, focusing on responsiveness, stability, scalability, and resource usage. It aims to identify performance-related deficiencies before a product goes live, ensuring that the system meets its intended service level agreements (SLAs) and provides a satisfactory experience for end-users.
-  In the context of [test automation](../T/test-automation.md), [performance testing](../P/performance-testing.md) often involves scripting and executing tests that simulate various types of load and usage patterns. Automated tests can rapidly generate and replicate multiple user interactions, making it possible to assess system performance under high demand and pinpoint issues that could lead to degradation or failure.
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) evaluates how a system behaves under specific conditions, focusing on responsiveness, stability, scalability, and resource usage. It aims to identify performance-related deficiencies before a product goes live, ensuring that the system meets its intended service level agreements (SLAs) and provides a satisfactory experience for end-users.
+  In the context of [test automation](https://naodeng.com.cn/en/wiki/test-automation), [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) often involves scripting and executing tests that simulate various types of load and usage patterns. Automated tests can rapidly generate and replicate multiple user interactions, making it possible to assess system performance under high demand and pinpoint issues that could lead to degradation or failure.
   Automated performance tests are integrated into continuous integration/continuous deployment (CI/CD) pipelines to provide ongoing feedback on the system's performance as changes are made. This integration helps teams to detect performance regressions quickly and to validate the impact of optimizations.
-  Key considerations for automating performance tests include selecting appropriate workloads, understanding the system's throughput and response time requirements, and ensuring that the [test environment](../T/test-environment.md) closely mirrors the production [setup](../S/setup.md). Results from automated performance tests should be consistently monitored and analyzed to track performance trends over time and to inform decisions about system enhancements and capacity planning.
+  Key considerations for automating performance tests include selecting appropriate workloads, understanding the system's throughput and response time requirements, and ensuring that the [test environment](https://naodeng.com.cn/en/wiki/test-environment) closely mirrors the production [setup](https://naodeng.com.cn/en/wiki/setup). Results from automated performance tests should be consistently monitored and analyzed to track performance trends over time and to inform decisions about system enhancements and capacity planning.
 
 #### Why is performance testing important?
 
-  [Performance testing](../P/performance-testing.md) is crucial as it directly influences **system reliability** and **scalability**. It ensures that applications can handle expected loads without performance degradation, which could lead to **customer dissatisfaction** and **revenue loss**. By simulating various environments and user scenarios, it identifies potential **bottlenecks** and **resource limitations**.
-  Incorporating [performance testing](../P/performance-testing.md) early in the development cycle allows for the detection and rectification of issues before they escalate into costly post-release fixes. It also aids in validating **infrastructure adequacy**, ensuring that the system meets **service level agreements (SLAs)** and can scale to accommodate growth.
-  Automated [performance testing](../P/performance-testing.md) provides the advantage of **repeatability** and **consistency** in [test execution](../T/test-execution.md), enabling continuous performance evaluation throughout the lifecycle. It allows for the integration of [performance testing](../P/performance-testing.md) into **CI/CD pipelines**, fostering a culture of **continuous improvement**.
-  [Performance testing](../P/performance-testing.md) also supports **capacity planning** by providing data on how system performance is affected as load increases. This information is critical for making informed decisions about hardware and infrastructure investments.
-  Ultimately, [performance testing](../P/performance-testing.md) is about **risk mitigation**. It helps to prevent system failures that can lead to significant **business impacts**, including **reputational damage**. By ensuring that performance criteria are met, it contributes to delivering a high-quality product that aligns with user expectations and business objectives.
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) is crucial as it directly influences **system reliability** and **scalability**. It ensures that applications can handle expected loads without performance degradation, which could lead to **customer dissatisfaction** and **revenue loss**. By simulating various environments and user scenarios, it identifies potential **bottlenecks** and **resource limitations**.
+  Incorporating [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) early in the development cycle allows for the detection and rectification of issues before they escalate into costly post-release fixes. It also aids in validating **infrastructure adequacy**, ensuring that the system meets **service level agreements (SLAs)** and can scale to accommodate growth.
+  Automated [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) provides the advantage of **repeatability** and **consistency** in [test execution](https://naodeng.com.cn/en/wiki/test-execution), enabling continuous performance evaluation throughout the lifecycle. It allows for the integration of [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) into **CI/CD pipelines**, fostering a culture of **continuous improvement**.
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) also supports **capacity planning** by providing data on how system performance is affected as load increases. This information is critical for making informed decisions about hardware and infrastructure investments.
+  Ultimately, [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) is about **risk mitigation**. It helps to prevent system failures that can lead to significant **business impacts**, including **reputational damage**. By ensuring that performance criteria are met, it contributes to delivering a high-quality product that aligns with user expectations and business objectives.
 
 #### What are the different types of performance testing?
 
-  [Performance testing](../P/performance-testing.md) encompasses various types that target different aspects of system behavior under load. Here are the different types:
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) encompasses various types that target different aspects of system behavior under load. Here are the different types:
 
-  - **[Load Testing](../L/load-testing.md)** : Simulates real-world load on any application to verify how the system behaves under normal and peak conditions.
-  - **[Stress Testing](../S/stress-testing.md)** : Determines the limits of the system by incrementally increasing the load or altering other variables like CPU or memory until it breaks.
-  - **[Endurance Testing](../E/endurance-testing.md)** : Also known as soak testing, it involves applying a significant load over an extended period to identify system issues like memory leaks.
+  - **[Load Testing](https://naodeng.com.cn/en/wiki/load-testing)** : Simulates real-world load on any application to verify how the system behaves under normal and peak conditions.
+  - **[Stress Testing](https://naodeng.com.cn/en/wiki/stress-testing)** : Determines the limits of the system by incrementally increasing the load or altering other variables like CPU or memory until it breaks.
+  - **[Endurance Testing](https://naodeng.com.cn/en/wiki/endurance-testing)** : Also known as soak testing, it involves applying a significant load over an extended period to identify system issues like memory leaks.
   - **Spike Testing** : Involves suddenly increasing or decreasing the load and observing the system's reaction, useful for simulating real-world events like a flash sale.
-  - **[Volume Testing](../V/volume-testing.md)** : Focuses on the database. It examines system performance as the database volume grows to large sizes.
-  - **[Scalability Testing](../S/scalability-testing.md)** : Determines if the application scales for an increased user load, often by incrementally adding more users or transactions and measuring the system's ability to maintain performance.
+  - **[Volume Testing](https://naodeng.com.cn/en/wiki/volume-testing)** : Focuses on the database. It examines system performance as the database volume grows to large sizes.
+  - **[Scalability Testing](https://naodeng.com.cn/en/wiki/scalability-testing)** : Determines if the application scales for an increased user load, often by incrementally adding more users or transactions and measuring the system's ability to maintain performance.
   - **Capacity Testing** : Helps in planning for future growth by understanding at what point the system's capacity will max out, ensuring that the system can handle a high volume of users or transactions without degrading performance.
   Each type targets specific performance aspects, helping to ensure that the application will perform well under various conditions that real users might experience.
 
-  - **[Load Testing](../L/load-testing.md)** : Simulates real-world load on any application to verify how the system behaves under normal and peak conditions.
-  - **[Stress Testing](../S/stress-testing.md)** : Determines the limits of the system by incrementally increasing the load or altering other variables like CPU or memory until it breaks.
-  - **[Endurance Testing](../E/endurance-testing.md)** : Also known as soak testing, it involves applying a significant load over an extended period to identify system issues like memory leaks.
+  - **[Load Testing](https://naodeng.com.cn/en/wiki/load-testing)** : Simulates real-world load on any application to verify how the system behaves under normal and peak conditions.
+  - **[Stress Testing](https://naodeng.com.cn/en/wiki/stress-testing)** : Determines the limits of the system by incrementally increasing the load or altering other variables like CPU or memory until it breaks.
+  - **[Endurance Testing](https://naodeng.com.cn/en/wiki/endurance-testing)** : Also known as soak testing, it involves applying a significant load over an extended period to identify system issues like memory leaks.
   - **Spike Testing** : Involves suddenly increasing or decreasing the load and observing the system's reaction, useful for simulating real-world events like a flash sale.
-  - **[Volume Testing](../V/volume-testing.md)** : Focuses on the database. It examines system performance as the database volume grows to large sizes.
-  - **[Scalability Testing](../S/scalability-testing.md)** : Determines if the application scales for an increased user load, often by incrementally adding more users or transactions and measuring the system's ability to maintain performance.
+  - **[Volume Testing](https://naodeng.com.cn/en/wiki/volume-testing)** : Focuses on the database. It examines system performance as the database volume grows to large sizes.
+  - **[Scalability Testing](https://naodeng.com.cn/en/wiki/scalability-testing)** : Determines if the application scales for an increased user load, often by incrementally adding more users or transactions and measuring the system's ability to maintain performance.
   - **Capacity Testing** : Helps in planning for future growth by understanding at what point the system's capacity will max out, ensuring that the system can handle a high volume of users or transactions without degrading performance.
 
 #### How does performance testing impact the user experience?
 
-  [Performance testing](../P/performance-testing.md) directly influences **user experience (UX)** by ensuring the software application behaves as expected under various conditions. It identifies potential **performance issues** such as slow response times, long load times, and system crashes that can frustrate users and lead to dissatisfaction or abandonment of the product.
-  By simulating real-world scenarios, [performance testing](../P/performance-testing.md) helps to understand how the application behaves with multiple users, high data volumes, and under stress. This ensures that users receive a consistent, responsive, and reliable experience, which is critical for maintaining user engagement and loyalty.
-  Furthermore, [performance testing](../P/performance-testing.md) aids in uncovering **scalability** challenges. It verifies that the application can handle expected user growth without degradation in performance, which is crucial for maintaining a positive UX as the user base expands.
-  Incorporating [performance testing](../P/performance-testing.md) results into **optimization efforts** ensures that the application not only meets [functional requirements](../F/functional-requirements.md) but also delivers a seamless and efficient user journey. This proactive approach to performance can prevent negative user experiences before they occur.
-  Ultimately, [performance testing](../P/performance-testing.md) is a key factor in delivering a high-quality product that meets or exceeds user expectations in terms of speed, stability, and scalability, which are all fundamental aspects of a positive user experience.
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) directly influences **user experience (UX)** by ensuring the software application behaves as expected under various conditions. It identifies potential **performance issues** such as slow response times, long load times, and system crashes that can frustrate users and lead to dissatisfaction or abandonment of the product.
+  By simulating real-world scenarios, [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) helps to understand how the application behaves with multiple users, high data volumes, and under stress. This ensures that users receive a consistent, responsive, and reliable experience, which is critical for maintaining user engagement and loyalty.
+  Furthermore, [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) aids in uncovering **scalability** challenges. It verifies that the application can handle expected user growth without degradation in performance, which is crucial for maintaining a positive UX as the user base expands.
+  Incorporating [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) results into **optimization efforts** ensures that the application not only meets [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) but also delivers a seamless and efficient user journey. This proactive approach to performance can prevent negative user experiences before they occur.
+  Ultimately, [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) is a key factor in delivering a high-quality product that meets or exceeds user expectations in terms of speed, stability, and scalability, which are all fundamental aspects of a positive user experience.
 
 #### What is the role of performance testing in the software development lifecycle?
 
-  [Performance testing](../P/performance-testing.md) plays a **crucial role** in the software development lifecycle (SDLC) by ensuring that applications meet specified performance criteria and can handle anticipated load scenarios. It is integrated at various stages of the SDLC to:
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) plays a **crucial role** in the software development lifecycle (SDLC) by ensuring that applications meet specified performance criteria and can handle anticipated load scenarios. It is integrated at various stages of the SDLC to:
 
   - **Identify performance issues early**: By conducting performance tests during the development and integration phases, teams can detect and address performance bottlenecks before they escalate into more significant problems.
   - **Support continuous integration/continuous deployment (CI/CD)**: Automated performance tests can be part of the CI/CD pipeline, allowing for regular and consistent performance evaluation with each build or release.
-  - **Validate system scalability and reliability**: [Performance testing](../P/performance-testing.md) helps in verifying if the system can scale up or down based on demand and remains reliable under varying conditions.
+  - **Validate system scalability and reliability**: [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) helps in verifying if the system can scale up or down based on demand and remains reliable under varying conditions.
   - **Ensure compliance with SLAs**: It checks whether the system adheres to service level agreements (SLAs) regarding response times, throughput, and resource utilization.
   - **Facilitate informed decision-making**: Data from performance tests guide stakeholders in making decisions about infrastructure needs, architectural changes, and feature enhancements.
-  - **Prevent costly downtime**: By identifying issues that could cause system failure under stress, [performance testing](../P/performance-testing.md) helps prevent potential outages that could be expensive in terms of both money and reputation.
+  - **Prevent costly downtime**: By identifying issues that could cause system failure under stress, [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) helps prevent potential outages that could be expensive in terms of both money and reputation.
   - **Optimize user satisfaction**: Although not directly addressing user experience, ensuring the system performs well under load indirectly contributes to a positive user experience by avoiding frustrations related to slow response times or system unavailability.
   - **Identify performance issues early**: By conducting performance tests during the development and integration phases, teams can detect and address performance bottlenecks before they escalate into more significant problems.
   - **Support continuous integration/continuous deployment (CI/CD)**: Automated performance tests can be part of the CI/CD pipeline, allowing for regular and consistent performance evaluation with each build or release.
-  - **Validate system scalability and reliability**: [Performance testing](../P/performance-testing.md) helps in verifying if the system can scale up or down based on demand and remains reliable under varying conditions.
+  - **Validate system scalability and reliability**: [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) helps in verifying if the system can scale up or down based on demand and remains reliable under varying conditions.
   - **Ensure compliance with SLAs**: It checks whether the system adheres to service level agreements (SLAs) regarding response times, throughput, and resource utilization.
   - **Facilitate informed decision-making**: Data from performance tests guide stakeholders in making decisions about infrastructure needs, architectural changes, and feature enhancements.
-  - **Prevent costly downtime**: By identifying issues that could cause system failure under stress, [performance testing](../P/performance-testing.md) helps prevent potential outages that could be expensive in terms of both money and reputation.
+  - **Prevent costly downtime**: By identifying issues that could cause system failure under stress, [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) helps prevent potential outages that could be expensive in terms of both money and reputation.
   - **Optimize user satisfaction**: Although not directly addressing user experience, ensuring the system performs well under load indirectly contributes to a positive user experience by avoiding frustrations related to slow response times or system unavailability.
 
 ### Tools and Techniques
 
 #### What tools are commonly used for performance testing?
 
-  Commonly used tools for [performance testing](../P/performance-testing.md) include:
+  Commonly used tools for [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) include:
 
-  - **[JMeter](../J/jmeter.md)**: An open-source tool designed for [load testing](../L/load-testing.md) and measuring performance. It supports various protocols such as HTTP, FTP, and SOAP.
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)**: An open-source tool designed for [load testing](https://naodeng.com.cn/en/wiki/load-testing) and measuring performance. It supports various protocols such as HTTP, FTP, and SOAP.
   - **LoadRunner**: A widely used tool from Micro Focus that simulates thousands of users to apply load on applications and measures performance.
-  - **Gatling**: An open-source [load testing](../L/load-testing.md) tool based on Scala, Akka, and Netty, with a focus on high-performance.
-  - **Locust**: An open-source tool written in Python, allowing you to write [test scenarios](../T/test-scenario.md) in Python code and execute distributed load tests.
-  - **BlazeMeter**: A cloud-based [load testing](../L/load-testing.md) service compatible with [JMeter](../J/jmeter.md), providing an easy-to-use platform for running and analyzing performance tests.
-  - **WebLOAD**: A tool that offers [load testing](../L/load-testing.md) for web applications with flexible scripting capabilities and detailed reporting.
-  - **NeoLoad**: A [performance testing](../P/performance-testing.md) tool designed for web and mobile applications, emphasizing ease of use and automation.
-  - **Silk Performer**: A tool that allows for the simulation of a wide variety of enterprise application protocols and realistic [load testing](../L/load-testing.md) scenarios.
-  - **Apache Bench (ab)**: A simple command-line tool for quick [performance testing](../P/performance-testing.md) of web servers.
-  - **k6**: An open-source, developer-centric [performance testing](../P/performance-testing.md) tool with a focus on automation and integration into the development workflow.
-  Each tool has its strengths and is chosen based on specific project requirements, such as the type of application under test, the complexity of the load [test scenarios](../T/test-scenario.md), and the preferred programming language or environment.
+  - **Gatling**: An open-source [load testing](https://naodeng.com.cn/en/wiki/load-testing) tool based on Scala, Akka, and Netty, with a focus on high-performance.
+  - **Locust**: An open-source tool written in Python, allowing you to write [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) in Python code and execute distributed load tests.
+  - **BlazeMeter**: A cloud-based [load testing](https://naodeng.com.cn/en/wiki/load-testing) service compatible with [JMeter](https://naodeng.com.cn/en/wiki/jmeter), providing an easy-to-use platform for running and analyzing performance tests.
+  - **WebLOAD**: A tool that offers [load testing](https://naodeng.com.cn/en/wiki/load-testing) for web applications with flexible scripting capabilities and detailed reporting.
+  - **NeoLoad**: A [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) tool designed for web and mobile applications, emphasizing ease of use and automation.
+  - **Silk Performer**: A tool that allows for the simulation of a wide variety of enterprise application protocols and realistic [load testing](https://naodeng.com.cn/en/wiki/load-testing) scenarios.
+  - **Apache Bench (ab)**: A simple command-line tool for quick [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) of web servers.
+  - **k6**: An open-source, developer-centric [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) tool with a focus on automation and integration into the development workflow.
+  Each tool has its strengths and is chosen based on specific project requirements, such as the type of application under test, the complexity of the load [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario), and the preferred programming language or environment.
 
-  - **[JMeter](../J/jmeter.md)**: An open-source tool designed for [load testing](../L/load-testing.md) and measuring performance. It supports various protocols such as HTTP, FTP, and SOAP.
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)**: An open-source tool designed for [load testing](https://naodeng.com.cn/en/wiki/load-testing) and measuring performance. It supports various protocols such as HTTP, FTP, and SOAP.
   - **LoadRunner**: A widely used tool from Micro Focus that simulates thousands of users to apply load on applications and measures performance.
-  - **Gatling**: An open-source [load testing](../L/load-testing.md) tool based on Scala, Akka, and Netty, with a focus on high-performance.
-  - **Locust**: An open-source tool written in Python, allowing you to write [test scenarios](../T/test-scenario.md) in Python code and execute distributed load tests.
-  - **BlazeMeter**: A cloud-based [load testing](../L/load-testing.md) service compatible with [JMeter](../J/jmeter.md), providing an easy-to-use platform for running and analyzing performance tests.
-  - **WebLOAD**: A tool that offers [load testing](../L/load-testing.md) for web applications with flexible scripting capabilities and detailed reporting.
-  - **NeoLoad**: A [performance testing](../P/performance-testing.md) tool designed for web and mobile applications, emphasizing ease of use and automation.
-  - **Silk Performer**: A tool that allows for the simulation of a wide variety of enterprise application protocols and realistic [load testing](../L/load-testing.md) scenarios.
-  - **Apache Bench (ab)**: A simple command-line tool for quick [performance testing](../P/performance-testing.md) of web servers.
-  - **k6**: An open-source, developer-centric [performance testing](../P/performance-testing.md) tool with a focus on automation and integration into the development workflow.
+  - **Gatling**: An open-source [load testing](https://naodeng.com.cn/en/wiki/load-testing) tool based on Scala, Akka, and Netty, with a focus on high-performance.
+  - **Locust**: An open-source tool written in Python, allowing you to write [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) in Python code and execute distributed load tests.
+  - **BlazeMeter**: A cloud-based [load testing](https://naodeng.com.cn/en/wiki/load-testing) service compatible with [JMeter](https://naodeng.com.cn/en/wiki/jmeter), providing an easy-to-use platform for running and analyzing performance tests.
+  - **WebLOAD**: A tool that offers [load testing](https://naodeng.com.cn/en/wiki/load-testing) for web applications with flexible scripting capabilities and detailed reporting.
+  - **NeoLoad**: A [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) tool designed for web and mobile applications, emphasizing ease of use and automation.
+  - **Silk Performer**: A tool that allows for the simulation of a wide variety of enterprise application protocols and realistic [load testing](https://naodeng.com.cn/en/wiki/load-testing) scenarios.
+  - **Apache Bench (ab)**: A simple command-line tool for quick [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) of web servers.
+  - **k6**: An open-source, developer-centric [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) tool with a focus on automation and integration into the development workflow.
 
 #### How do you choose the right tool for performance testing?
 
-  Choosing the right tool for [performance testing](../P/performance-testing.md) involves evaluating several factors:
+  Choosing the right tool for [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) involves evaluating several factors:
 
   - **Compatibility** : Ensure the tool supports the technology stack of your application (e.g., web, mobile, desktop).
   - **Test Requirements** : Match tool capabilities with the types of tests needed (load, stress, spike, etc.).
@@ -151,7 +150,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
     console.log('Tool is compatible with our JavaScript-based test scripts.');
   }
   ```
-  Ultimately, the right tool should align with your team's skills, project requirements, and organizational constraints, facilitating efficient and effective [performance testing](../P/performance-testing.md).
+  Ultimately, the right tool should align with your team's skills, project requirements, and organizational constraints, facilitating efficient and effective [performance testing](https://naodeng.com.cn/en/wiki/performance-testing).
 
   - **Compatibility** : Ensure the tool supports the technology stack of your application (e.g., web, mobile, desktop).
   - **Test Requirements** : Match tool capabilities with the types of tests needed (load, stress, spike, etc.).
@@ -166,37 +165,37 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### What are some common techniques for performance testing?
 
-  Common techniques for [performance testing](../P/performance-testing.md) include:
+  Common techniques for [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) include:
 
-  - **[Load Testing](../L/load-testing.md)**: Simulating a specific number of users to understand how the system behaves under expected load conditions.
-  - **[Stress Testing](../S/stress-testing.md)**: Incrementally increasing the load or input to the system until it reaches its breaking point to identify its upper limits.
+  - **[Load Testing](https://naodeng.com.cn/en/wiki/load-testing)**: Simulating a specific number of users to understand how the system behaves under expected load conditions.
+  - **[Stress Testing](https://naodeng.com.cn/en/wiki/stress-testing)**: Incrementally increasing the load or input to the system until it reaches its breaking point to identify its upper limits.
   - **Spike Testing**: Suddenly increasing the load significantly for a short period to see how the system copes with sudden bursts of activity.
   - **Soak Testing**: Running a system at high levels of load for prolonged periods to identify potential issues like memory leaks.
-  - **[Concurrency Testing](../C/concurrency-testing.md)**: Checking how the system performs when multiple users perform the same actions at the same time.
+  - **[Concurrency Testing](https://naodeng.com.cn/en/wiki/concurrency-testing)**: Checking how the system performs when multiple users perform the same actions at the same time.
   - **Isolation Testing**: Isolating a part of the system and subjecting it to various loads to pinpoint the cause of performance issues.
-  - **[Volume Testing](../V/volume-testing.md)**: Populating a [database](../D/database.md) with a large volume of data and measuring the system's handling of such data.
-  - **[Scalability Testing](../S/scalability-testing.md)**: Determining the system's effectiveness in "scaling up" to support an increased load by adding hardware, software, or bandwidth.
+  - **[Volume Testing](https://naodeng.com.cn/en/wiki/volume-testing)**: Populating a [database](https://naodeng.com.cn/en/wiki/database) with a large volume of data and measuring the system's handling of such data.
+  - **[Scalability Testing](https://naodeng.com.cn/en/wiki/scalability-testing)**: Determining the system's effectiveness in "scaling up" to support an increased load by adding hardware, software, or bandwidth.
   - **Configuration Testing**: Changing system configuration to determine the effects on system performance.
-  - **[Endurance Testing](../E/endurance-testing.md)**: Evaluating how the system performs with a normal workload over a long time to check for system degradation.
-  [Performance testing](../P/performance-testing.md) techniques are often combined and customized based on the specific requirements and constraints of the system under test. Automation tools can be used to simulate these scenarios, gather results, and provide insights into system performance.
+  - **[Endurance Testing](https://naodeng.com.cn/en/wiki/endurance-testing)**: Evaluating how the system performs with a normal workload over a long time to check for system degradation.
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) techniques are often combined and customized based on the specific requirements and constraints of the system under test. Automation tools can be used to simulate these scenarios, gather results, and provide insights into system performance.
 
-  - **[Load Testing](../L/load-testing.md)**: Simulating a specific number of users to understand how the system behaves under expected load conditions.
-  - **[Stress Testing](../S/stress-testing.md)**: Incrementally increasing the load or input to the system until it reaches its breaking point to identify its upper limits.
+  - **[Load Testing](https://naodeng.com.cn/en/wiki/load-testing)**: Simulating a specific number of users to understand how the system behaves under expected load conditions.
+  - **[Stress Testing](https://naodeng.com.cn/en/wiki/stress-testing)**: Incrementally increasing the load or input to the system until it reaches its breaking point to identify its upper limits.
   - **Spike Testing**: Suddenly increasing the load significantly for a short period to see how the system copes with sudden bursts of activity.
   - **Soak Testing**: Running a system at high levels of load for prolonged periods to identify potential issues like memory leaks.
-  - **[Concurrency Testing](../C/concurrency-testing.md)**: Checking how the system performs when multiple users perform the same actions at the same time.
+  - **[Concurrency Testing](https://naodeng.com.cn/en/wiki/concurrency-testing)**: Checking how the system performs when multiple users perform the same actions at the same time.
   - **Isolation Testing**: Isolating a part of the system and subjecting it to various loads to pinpoint the cause of performance issues.
-  - **[Volume Testing](../V/volume-testing.md)**: Populating a [database](../D/database.md) with a large volume of data and measuring the system's handling of such data.
-  - **[Scalability Testing](../S/scalability-testing.md)**: Determining the system's effectiveness in "scaling up" to support an increased load by adding hardware, software, or bandwidth.
+  - **[Volume Testing](https://naodeng.com.cn/en/wiki/volume-testing)**: Populating a [database](https://naodeng.com.cn/en/wiki/database) with a large volume of data and measuring the system's handling of such data.
+  - **[Scalability Testing](https://naodeng.com.cn/en/wiki/scalability-testing)**: Determining the system's effectiveness in "scaling up" to support an increased load by adding hardware, software, or bandwidth.
   - **Configuration Testing**: Changing system configuration to determine the effects on system performance.
-  - **[Endurance Testing](../E/endurance-testing.md)**: Evaluating how the system performs with a normal workload over a long time to check for system degradation.
+  - **[Endurance Testing](https://naodeng.com.cn/en/wiki/endurance-testing)**: Evaluating how the system performs with a normal workload over a long time to check for system degradation.
 
 #### How can you automate performance testing?
 
-  To automate [performance testing](../P/performance-testing.md), follow these steps:
+  To automate [performance testing](https://naodeng.com.cn/en/wiki/performance-testing), follow these steps:
 
   1. **Identify performance scenarios**: Determine which user actions to simulate for testing system performance under various conditions.
-  2. **Script creation**: Write scripts to automate these scenarios using a [performance testing](../P/performance-testing.md) tool. Use programming languages like JavaScript or domain-specific languages provided by the tool.
+  2. **Script creation**: Write scripts to automate these scenarios using a [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) tool. Use programming languages like JavaScript or domain-specific languages provided by the tool.
 
     ```
     // Example performance test script snippet
@@ -209,16 +208,16 @@ gauges a product's capability and responsiveness under varying workloads, predic
     }
     ```
 
-  3. **Environment [setup](../S/setup.md)**: Configure the [test environment](../T/test-environment.md) to closely mimic the production [setup](../S/setup.md), including hardware, software, and network configurations.
-  4. **[Test execution](../T/test-execution.md)**: Run the scripts using the [performance testing](../P/performance-testing.md) tool to simulate multiple users and collect metrics like response times, throughput, and error rates.
-  5. **Monitoring**: Use monitoring tools to observe system resources such as CPU, memory, and network usage during [test execution](../T/test-execution.md).
+  3. **Environment [setup](https://naodeng.com.cn/en/wiki/setup)**: Configure the [test environment](https://naodeng.com.cn/en/wiki/test-environment) to closely mimic the production [setup](https://naodeng.com.cn/en/wiki/setup), including hardware, software, and network configurations.
+  4. **[Test execution](https://naodeng.com.cn/en/wiki/test-execution)**: Run the scripts using the [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) tool to simulate multiple users and collect metrics like response times, throughput, and error rates.
+  5. **Monitoring**: Use monitoring tools to observe system resources such as CPU, memory, and network usage during [test execution](https://naodeng.com.cn/en/wiki/test-execution).
   6. **Results analysis**: Evaluate the data collected to identify any performance issues or bottlenecks.
   7. **Optimization**: Based on the analysis, make necessary changes to the code, configuration, or infrastructure to improve performance.
-  8. **[Regression testing](../R/regression-testing.md)**: Re-run tests to verify that performance enhancements have the desired effect without introducing new issues.
-  Automating [performance testing](../P/performance-testing.md) requires continuous integration and delivery (CI/CD) pipelines to regularly execute tests and monitor performance over time. Integrating [performance testing](../P/performance-testing.md) into the development process ensures that any performance degradation is caught and addressed early.
+  8. **[Regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**: Re-run tests to verify that performance enhancements have the desired effect without introducing new issues.
+  Automating [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) requires continuous integration and delivery (CI/CD) pipelines to regularly execute tests and monitor performance over time. Integrating [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) into the development process ensures that any performance degradation is caught and addressed early.
 
   1. **Identify performance scenarios**: Determine which user actions to simulate for testing system performance under various conditions.
-  2. **Script creation**: Write scripts to automate these scenarios using a [performance testing](../P/performance-testing.md) tool. Use programming languages like JavaScript or domain-specific languages provided by the tool.
+  2. **Script creation**: Write scripts to automate these scenarios using a [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) tool. Use programming languages like JavaScript or domain-specific languages provided by the tool.
 
     ```
     // Example performance test script snippet
@@ -231,16 +230,16 @@ gauges a product's capability and responsiveness under varying workloads, predic
     }
     ```
 
-  3. **Environment [setup](../S/setup.md)**: Configure the [test environment](../T/test-environment.md) to closely mimic the production [setup](../S/setup.md), including hardware, software, and network configurations.
-  4. **[Test execution](../T/test-execution.md)**: Run the scripts using the [performance testing](../P/performance-testing.md) tool to simulate multiple users and collect metrics like response times, throughput, and error rates.
-  5. **Monitoring**: Use monitoring tools to observe system resources such as CPU, memory, and network usage during [test execution](../T/test-execution.md).
+  3. **Environment [setup](https://naodeng.com.cn/en/wiki/setup)**: Configure the [test environment](https://naodeng.com.cn/en/wiki/test-environment) to closely mimic the production [setup](https://naodeng.com.cn/en/wiki/setup), including hardware, software, and network configurations.
+  4. **[Test execution](https://naodeng.com.cn/en/wiki/test-execution)**: Run the scripts using the [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) tool to simulate multiple users and collect metrics like response times, throughput, and error rates.
+  5. **Monitoring**: Use monitoring tools to observe system resources such as CPU, memory, and network usage during [test execution](https://naodeng.com.cn/en/wiki/test-execution).
   6. **Results analysis**: Evaluate the data collected to identify any performance issues or bottlenecks.
   7. **Optimization**: Based on the analysis, make necessary changes to the code, configuration, or infrastructure to improve performance.
-  8. **[Regression testing](../R/regression-testing.md)**: Re-run tests to verify that performance enhancements have the desired effect without introducing new issues.
+  8. **[Regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**: Re-run tests to verify that performance enhancements have the desired effect without introducing new issues.
 
 #### What is the role of load generators in performance testing?
 
-  Load generators are critical in **[performance testing](../P/performance-testing.md)** for simulating user traffic and measuring how a system behaves under various load conditions. They generate multiple virtual users and transactions to mimic real-world usage patterns, enabling testers to:
+  Load generators are critical in **[performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** for simulating user traffic and measuring how a system behaves under various load conditions. They generate multiple virtual users and transactions to mimic real-world usage patterns, enabling testers to:
 
   - **Validate scalability** : Determine if the application can handle the expected number of concurrent users.
   - **Assess resource utilization** : Monitor how system resources are consumed under load.
@@ -257,15 +256,15 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### What are the steps involved in the performance testing process?
 
-  [Performance testing](../P/performance-testing.md) follows a structured process to ensure systems meet expected benchmarks and service levels. Here's a concise outline of the steps involved:
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) follows a structured process to ensure systems meet expected benchmarks and service levels. Here's a concise outline of the steps involved:
 
   1. **Define Performance Criteria**: Establish clear performance goals, including throughput, response times, and resource utilization thresholds.
-  2. **Create [Test Environment](../T/test-environment.md)**: Set up an environment that mirrors the production system as closely as possible to ensure accurate results.
-  3. **Design Performance Tests**: Develop [test scenarios](../T/test-scenario.md) that simulate a variety of user interactions with the application.
-  4. **Configure [Test Tools](../T/test-tool.md)**: Choose and set up tools to generate load and monitor performance metrics.
-  5. **Implement Test Design**: Translate scenarios into actual [test scripts](../T/test-script.md) that can be executed by the chosen tools.
+  2. **Create [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)**: Set up an environment that mirrors the production system as closely as possible to ensure accurate results.
+  3. **Design Performance Tests**: Develop [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) that simulate a variety of user interactions with the application.
+  4. **Configure [Test Tools](https://naodeng.com.cn/en/wiki/test-tool)**: Choose and set up tools to generate load and monitor performance metrics.
+  5. **Implement Test Design**: Translate scenarios into actual [test scripts](https://naodeng.com.cn/en/wiki/test-script) that can be executed by the chosen tools.
   6. **Execute Tests**: Run tests to simulate load on the system, starting with a baseline and gradually increasing to peak load scenarios.
-  7. **Monitor & Capture Data**: Collect performance data from various system components during [test execution](../T/test-execution.md).
+  7. **Monitor & Capture Data**: Collect performance data from various system components during [test execution](https://naodeng.com.cn/en/wiki/test-execution).
   8. **Analyze Results**: Evaluate the data against performance criteria to identify any deviations or bottlenecks.
   9. **Fine-Tune System**: Based on analysis, make adjustments to the system configuration, code, or architecture to improve performance.
   10. **Retest**: After tuning, re-run tests to validate improvements and ensure no new issues have been introduced.
@@ -274,12 +273,12 @@ gauges a product's capability and responsiveness under varying workloads, predic
   Throughout this process, collaboration and communication with stakeholders are essential to align performance objectives with business goals and to ensure that the system delivers a satisfactory user experience under various conditions.
 
   1. **Define Performance Criteria**: Establish clear performance goals, including throughput, response times, and resource utilization thresholds.
-  2. **Create [Test Environment](../T/test-environment.md)**: Set up an environment that mirrors the production system as closely as possible to ensure accurate results.
-  3. **Design Performance Tests**: Develop [test scenarios](../T/test-scenario.md) that simulate a variety of user interactions with the application.
-  4. **Configure [Test Tools](../T/test-tool.md)**: Choose and set up tools to generate load and monitor performance metrics.
-  5. **Implement Test Design**: Translate scenarios into actual [test scripts](../T/test-script.md) that can be executed by the chosen tools.
+  2. **Create [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)**: Set up an environment that mirrors the production system as closely as possible to ensure accurate results.
+  3. **Design Performance Tests**: Develop [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) that simulate a variety of user interactions with the application.
+  4. **Configure [Test Tools](https://naodeng.com.cn/en/wiki/test-tool)**: Choose and set up tools to generate load and monitor performance metrics.
+  5. **Implement Test Design**: Translate scenarios into actual [test scripts](https://naodeng.com.cn/en/wiki/test-script) that can be executed by the chosen tools.
   6. **Execute Tests**: Run tests to simulate load on the system, starting with a baseline and gradually increasing to peak load scenarios.
-  7. **Monitor & Capture Data**: Collect performance data from various system components during [test execution](../T/test-execution.md).
+  7. **Monitor & Capture Data**: Collect performance data from various system components during [test execution](https://naodeng.com.cn/en/wiki/test-execution).
   8. **Analyze Results**: Evaluate the data against performance criteria to identify any deviations or bottlenecks.
   9. **Fine-Tune System**: Based on analysis, make adjustments to the system configuration, code, or architecture to improve performance.
   10. **Retest**: After tuning, re-run tests to validate improvements and ensure no new issues have been introduced.
@@ -288,26 +287,26 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### How do you plan for performance testing?
 
-  Planning for [performance testing](../P/performance-testing.md) involves several key steps to ensure that the testing is effective and provides valuable insights into the system's performance under various conditions. Here's a succinct guide:
+  Planning for [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) involves several key steps to ensure that the testing is effective and provides valuable insights into the system's performance under various conditions. Here's a succinct guide:
 
   1. **Understand the System**: Gain a deep understanding of the system architecture, technology stack, and critical components that could affect performance.
   2. **Identify Performance Criteria**: Define clear performance goals based on user expectations and business requirements, such as response times, throughput, and resource utilization.
-  3. **Develop a [Test Strategy](../T/test-strategy.md)**: Create a comprehensive [test strategy](../T/test-strategy.md) that outlines the scope, approach, resources, schedule, and risks associated with the [performance testing](../P/performance-testing.md) activities.
-  4. **Create Performance [Test Cases](../T/test-case.md)**: Design [test cases](../T/test-case.md) that simulate real-world usage scenarios, including peak, normal, and stress conditions.
-  5. **Prepare [Test Environment](../T/test-environment.md)**: Set up a [test environment](../T/test-environment.md) that closely mirrors the production environment to ensure accurate results. This includes hardware, software, network configurations, and [databases](../D/database.md).
-  6. **Implement Monitoring**: Establish monitoring for key [performance indicators](../P/performance-indicator.md) (KPIs) to track system behavior during tests.
+  3. **Develop a [Test Strategy](https://naodeng.com.cn/en/wiki/test-strategy)**: Create a comprehensive [test strategy](https://naodeng.com.cn/en/wiki/test-strategy) that outlines the scope, approach, resources, schedule, and risks associated with the [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) activities.
+  4. **Create Performance [Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Design [test cases](https://naodeng.com.cn/en/wiki/test-case) that simulate real-world usage scenarios, including peak, normal, and stress conditions.
+  5. **Prepare [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)**: Set up a [test environment](https://naodeng.com.cn/en/wiki/test-environment) that closely mirrors the production environment to ensure accurate results. This includes hardware, software, network configurations, and [databases](https://naodeng.com.cn/en/wiki/database).
+  6. **Implement Monitoring**: Establish monitoring for key [performance indicators](https://naodeng.com.cn/en/wiki/performance-indicator) (KPIs) to track system behavior during tests.
   7. **Execute Tests**: Run performance tests according to the planned scenarios and monitor the system's behavior in real-time.
   8. **Gather and Analyze Data**: Collect test results and analyze them against the defined performance criteria to identify any deviations or issues.
   9. **Report Findings**: Document the findings, including any performance bottlenecks and recommendations for improvements.
   10. **Iterate**: Use the insights gained to refine the system's performance. Repeat the testing process as necessary to validate changes and enhancements.
-  By following these steps, you can ensure a structured approach to [performance testing](../P/performance-testing.md) that aligns with project goals and delivers actionable insights.
+  By following these steps, you can ensure a structured approach to [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) that aligns with project goals and delivers actionable insights.
 
   1. **Understand the System**: Gain a deep understanding of the system architecture, technology stack, and critical components that could affect performance.
   2. **Identify Performance Criteria**: Define clear performance goals based on user expectations and business requirements, such as response times, throughput, and resource utilization.
-  3. **Develop a [Test Strategy](../T/test-strategy.md)**: Create a comprehensive [test strategy](../T/test-strategy.md) that outlines the scope, approach, resources, schedule, and risks associated with the [performance testing](../P/performance-testing.md) activities.
-  4. **Create Performance [Test Cases](../T/test-case.md)**: Design [test cases](../T/test-case.md) that simulate real-world usage scenarios, including peak, normal, and stress conditions.
-  5. **Prepare [Test Environment](../T/test-environment.md)**: Set up a [test environment](../T/test-environment.md) that closely mirrors the production environment to ensure accurate results. This includes hardware, software, network configurations, and [databases](../D/database.md).
-  6. **Implement Monitoring**: Establish monitoring for key [performance indicators](../P/performance-indicator.md) (KPIs) to track system behavior during tests.
+  3. **Develop a [Test Strategy](https://naodeng.com.cn/en/wiki/test-strategy)**: Create a comprehensive [test strategy](https://naodeng.com.cn/en/wiki/test-strategy) that outlines the scope, approach, resources, schedule, and risks associated with the [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) activities.
+  4. **Create Performance [Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Design [test cases](https://naodeng.com.cn/en/wiki/test-case) that simulate real-world usage scenarios, including peak, normal, and stress conditions.
+  5. **Prepare [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)**: Set up a [test environment](https://naodeng.com.cn/en/wiki/test-environment) that closely mirrors the production environment to ensure accurate results. This includes hardware, software, network configurations, and [databases](https://naodeng.com.cn/en/wiki/database).
+  6. **Implement Monitoring**: Establish monitoring for key [performance indicators](https://naodeng.com.cn/en/wiki/performance-indicator) (KPIs) to track system behavior during tests.
   7. **Execute Tests**: Run performance tests according to the planned scenarios and monitor the system's behavior in real-time.
   8. **Gather and Analyze Data**: Collect test results and analyze them against the defined performance criteria to identify any deviations or issues.
   9. **Report Findings**: Document the findings, including any performance bottlenecks and recommendations for improvements.
@@ -315,7 +314,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### What factors should be considered when setting performance testing objectives?
 
-  When setting [performance testing](../P/performance-testing.md) objectives, consider the following factors:
+  When setting [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) objectives, consider the following factors:
 
   - **Business Requirements** : Align objectives with business goals, such as expected user load and transaction volume.
   - **User Expectations** : Understand user tolerance for latency and throughput to set acceptable performance levels.
@@ -324,14 +323,14 @@ gauges a product's capability and responsiveness under varying workloads, predic
   - **Scalability Goals** : Define how the system should scale with increased load, both vertically and horizontally.
   - **Compliance and Regulatory Standards** : Adhere to industry-specific performance standards and regulations.
   - **Risk Assessment** : Identify critical performance risks that could impact system stability and user satisfaction.
-  - **[Test Environment](../T/test-environment.md)** : Match the test environment as closely as possible to the production environment to ensure relevant results.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment)** : Match the test environment as closely as possible to the production environment to ensure relevant results.
   - **Budget Constraints** : Balance the depth and breadth of testing against available budget and resources.
   - **Timeline** : Factor in the project timeline to allow for proper test planning, execution, and analysis.
   - **Historical Data** : Use past performance data to inform objectives and anticipate future system behavior.
   - **Technology Stack** : Consider the limitations and capabilities of the technology stack used in the application.
   - **Integration Points** : Account for external dependencies and third-party services that could affect performance.
   - **Maintenance and Monitoring** : Plan for ongoing performance monitoring and maintenance post-deployment.
-  These considerations ensure that [performance testing](../P/performance-testing.md) objectives are realistic, measurable, and aligned with the overall goals of the project.
+  These considerations ensure that [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) objectives are realistic, measurable, and aligned with the overall goals of the project.
 
   - **Business Requirements** : Align objectives with business goals, such as expected user load and transaction volume.
   - **User Expectations** : Understand user tolerance for latency and throughput to set acceptable performance levels.
@@ -340,7 +339,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
   - **Scalability Goals** : Define how the system should scale with increased load, both vertically and horizontally.
   - **Compliance and Regulatory Standards** : Adhere to industry-specific performance standards and regulations.
   - **Risk Assessment** : Identify critical performance risks that could impact system stability and user satisfaction.
-  - **[Test Environment](../T/test-environment.md)** : Match the test environment as closely as possible to the production environment to ensure relevant results.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment)** : Match the test environment as closely as possible to the production environment to ensure relevant results.
   - **Budget Constraints** : Balance the depth and breadth of testing against available budget and resources.
   - **Timeline** : Factor in the project timeline to allow for proper test planning, execution, and analysis.
   - **Historical Data** : Use past performance data to inform objectives and anticipate future system behavior.
@@ -350,7 +349,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### How do you define performance testing metrics?
 
-  [Performance testing](../P/performance-testing.md) metrics quantify the attributes of a system under test, providing objective data to assess its behavior. Key metrics include:
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) metrics quantify the attributes of a system under test, providing objective data to assess its behavior. Key metrics include:
 
   - **Response Time** : The duration between a request and the corresponding response.
   - **Throughput** : The number of transactions or operations processed per unit of time.
@@ -360,7 +359,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
   - **Hits Per Second** : The number of requests to a server in one second.
   - **Transactions Per Second (TPS)** : The completed transactions in one second.
   - **Error Rate** : The percentage of all requests that result in errors.
-  Metrics should be relevant to the system's performance objectives and provide actionable insights. They are typically gathered through monitoring tools during [test execution](../T/test-execution.md) and analyzed post-test to inform decisions on system optimization and capacity planning.
+  Metrics should be relevant to the system's performance objectives and provide actionable insights. They are typically gathered through monitoring tools during [test execution](https://naodeng.com.cn/en/wiki/test-execution) and analyzed post-test to inform decisions on system optimization and capacity planning.
 
   - **Response Time** : The duration between a request and the corresponding response.
   - **Throughput** : The number of transactions or operations processed per unit of time.
@@ -373,12 +372,12 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### What is the role of baselines in performance testing?
 
-  Baselines in [performance testing](../P/performance-testing.md) serve as a **reference point** against which future performance tests can be compared. They represent the **standard metrics** of system performance under a specific set of conditions. Establishing baselines is crucial for:
+  Baselines in [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) serve as a **reference point** against which future performance tests can be compared. They represent the **standard metrics** of system performance under a specific set of conditions. Establishing baselines is crucial for:
 
   - **Identifying Performance Trends** : Over time, baselines help in spotting performance degradation or improvement.
   - **Validating Changes** : When system updates occur, baselines assist in determining if the changes have adversely affected performance.
   - **Setting Performance Goals** : They provide a target for performance improvements and optimizations.
-  - **[Regression Testing](../R/regression-testing.md)** : Baselines ensure new features or patches haven't introduced performance regressions.
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Baselines ensure new features or patches haven't introduced performance regressions.
   To establish a baseline, you typically:
 
   1. Run performance tests under controlled conditions.
@@ -390,7 +389,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
   - **Identifying Performance Trends** : Over time, baselines help in spotting performance degradation or improvement.
   - **Validating Changes** : When system updates occur, baselines assist in determining if the changes have adversely affected performance.
   - **Setting Performance Goals** : They provide a target for performance improvements and optimizations.
-  - **[Regression Testing](../R/regression-testing.md)** : Baselines ensure new features or patches haven't introduced performance regressions.
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Baselines ensure new features or patches haven't introduced performance regressions.
   1. Run performance tests under controlled conditions.
   2. Record key performance metrics such as response times, throughput, and resource utilization.
   3. Analyze the data to ensure it reflects normal operating conditions without anomalies.
@@ -400,7 +399,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### How do you analyze performance testing results?
 
-  Analyzing [performance testing](../P/performance-testing.md) results involves several key steps:
+  Analyzing [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) results involves several key steps:
 
   1. **Aggregate Data** : Collect and consolidate data from all test runs to get a comprehensive view.
   2. **Compare Against Benchmarks** : Evaluate results against predefined performance benchmarks or SLAs.
@@ -416,7 +415,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
   12. **Generate Reports** : Create comprehensive reports for stakeholders that summarize findings and suggest improvements.
   13. **Recommend Actions** : Propose specific changes to configuration, code, or infrastructure to address identified issues.
   14. **Document Findings** : Keep a record of the analysis for future reference and to measure the impact of optimizations.
-  By following these steps, you can effectively analyze [performance testing](../P/performance-testing.md) results to ensure your system meets its performance objectives.
+  By following these steps, you can effectively analyze [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) results to ensure your system meets its performance objectives.
 
   1. **Aggregate Data** : Collect and consolidate data from all test runs to get a comprehensive view.
   2. **Compare Against Benchmarks** : Evaluate results against predefined performance benchmarks or SLAs.
@@ -435,8 +434,8 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### What are some common performance bottlenecks and how can they be identified?
 
-  Common performance bottlenecks often include **CPU limitations**, **memory leaks**, **network constraints**, **disk I/O** issues, and **[database](../D/database.md) performance** problems. Identifying these bottlenecks typically involves monitoring system resources and application performance metrics during [load testing](../L/load-testing.md).
-  To pinpoint CPU issues, observe the **CPU usage** to see if it reaches or stays at 100% during testing, which indicates a bottleneck. Memory leaks can be detected by monitoring **memory consumption** over time; a continuous increase may suggest a leak. Network-related bottlenecks can be identified by analyzing **network throughput and latency**; low throughput or high latency can signal problems. Disk I/O bottlenecks are often found by looking at **disk queue lengths** and **read/write speeds**; long queues or slow speeds can be a sign of contention. Lastly, [database](../D/database.md) performance can be assessed by examining **query execution times** and **lock contention**.
+  Common performance bottlenecks often include **CPU limitations**, **memory leaks**, **network constraints**, **disk I/O** issues, and **[database](https://naodeng.com.cn/en/wiki/database) performance** problems. Identifying these bottlenecks typically involves monitoring system resources and application performance metrics during [load testing](https://naodeng.com.cn/en/wiki/load-testing).
+  To pinpoint CPU issues, observe the **CPU usage** to see if it reaches or stays at 100% during testing, which indicates a bottleneck. Memory leaks can be detected by monitoring **memory consumption** over time; a continuous increase may suggest a leak. Network-related bottlenecks can be identified by analyzing **network throughput and latency**; low throughput or high latency can signal problems. Disk I/O bottlenecks are often found by looking at **disk queue lengths** and **read/write speeds**; long queues or slow speeds can be a sign of contention. Lastly, [database](https://naodeng.com.cn/en/wiki/database) performance can be assessed by examining **query execution times** and **lock contention**.
   Tools like **profilers**, **APM (Application Performance Management)** solutions, and **monitoring systems** can automate the collection and analysis of these metrics. Additionally, examining **log files** and using **benchmarking tools** can provide insights into system behavior under load.
 
   ```
@@ -447,7 +446,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
 #### How can performance testing results be used to optimize system performance?
 
-  [Performance testing](../P/performance-testing.md) results provide critical data that can be leveraged to **optimize system performance**. By analyzing these results, teams can pinpoint specific areas where the system is not meeting performance expectations. Here's how the results can be used:
+  [Performance testing](https://naodeng.com.cn/en/wiki/performance-testing) results provide critical data that can be leveraged to **optimize system performance**. By analyzing these results, teams can pinpoint specific areas where the system is not meeting performance expectations. Here's how the results can be used:
 
   - **Identify bottlenecks** : Detailed reports can reveal components that are slowing down the system, such as inefficient database queries or memory leaks.
   - **Resource utilization** : Metrics on CPU, memory, disk I/O, and network usage can indicate if the system is over or under-utilized, guiding resource allocation or scaling decisions.
@@ -537,7 +536,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
   To ensure effective implementation of performance improvements:
 
-  - **Integrate [performance testing](../P/performance-testing.md) early**
+  - **Integrate [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) early**
     in the development cycle. This allows for early detection and correction of performance issues.
 
   - **Automate regression performance tests**
@@ -547,10 +546,10 @@ gauges a product's capability and responsiveness under varying workloads, predic
 
     ```
     ```
-  // Example of an automated performance [test script](../T/test-script.md)
+  // Example of an automated performance [test script](https://naodeng.com.cn/en/wiki/test-script)
   describe('Performance regression suite', () => {
   test('Response time should not exceed threshold', async () => {
-  const response = await makeRequest('/[api](../A/api.md)/resource');
+  const response = await makeRequest('/[api](https://naodeng.com.cn/en/wiki/api)/resource');
   expect(response.time).toBeLessThan(200); // ms
   });
   });
@@ -568,7 +567,7 @@ gauges a product's capability and responsiveness under varying workloads, predic
   By following these steps, performance improvements can be systematically implemented and validated, ensuring they deliver the intended benefits.
   ```
 
-  - **Integrate [performance testing](../P/performance-testing.md) early**
+  - **Integrate [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) early**
     in the development cycle. This allows for early detection and correction of performance issues.
 
   - **Automate regression performance tests**

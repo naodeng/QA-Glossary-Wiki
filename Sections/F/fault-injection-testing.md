@@ -1,6 +1,5 @@
 # Fault Injection Testing
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
   - [See also:](#see-also)
@@ -31,7 +30,7 @@ Introducing faults deliberately to test the system's robustness.
 
 ## Related Terms:
 
-- [Negative Testing](../N/negative-testing.md)
+- [Negative Testing](https://naodeng.com.cn/en/wiki/negative-testing)
 
 ### See also:
 
@@ -43,7 +42,7 @@ Introducing faults deliberately to test the system's robustness.
 
 #### What is Fault Injection Testing?
 
-  [Fault Injection Testing](../F/fault-injection-testing.md) (FIT) is a method where testers deliberately introduce errors into a system to assess its robustness and error-handling capabilities. This technique simulates faults to observe how the system behaves under unexpected conditions, ensuring that it can handle and recover from failures gracefully.
+  [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) (FIT) is a method where testers deliberately introduce errors into a system to assess its robustness and error-handling capabilities. This technique simulates faults to observe how the system behaves under unexpected conditions, ensuring that it can handle and recover from failures gracefully.
   To perform FIT, testers may use tools like **Chaos Monkey**, **Jepsen**, or **Gremlin**. These tools can automate the fault injection process, allowing for the simulation of a wide range of failure scenarios. For instance, using Gremlin, a tester might write a script to shut down a service or introduce network latency:
 
   ```
@@ -51,18 +50,18 @@ Introducing faults deliberately to test the system's robustness.
   ```
   FIT is typically integrated into the testing process during the testing phase but can also be part of continuous integration pipelines. Testers write scripts or use existing tools to inject faults and then monitor the system's response, logging any issues for further investigation.
   Challenges in FIT include ensuring that the injected faults are representative of real-world scenarios and that the system can be safely returned to a normal state after testing. To overcome these challenges, testers should carefully plan their fault injection strategies and have robust rollback procedures in place.
-  Best practices for FIT include starting with a small scope, monitoring system behavior closely, and incrementally increasing the complexity of injected faults. Effectiveness is ensured by thorough documentation of [test cases](../T/test-case.md), clear criteria for success, and regular reviews of the fault injection approach to refine and adapt it as the system evolves.
+  Best practices for FIT include starting with a small scope, monitoring system behavior closely, and incrementally increasing the complexity of injected faults. Effectiveness is ensured by thorough documentation of [test cases](https://naodeng.com.cn/en/wiki/test-case), clear criteria for success, and regular reviews of the fault injection approach to refine and adapt it as the system evolves.
 
 #### Why is Fault Injection Testing important in software testing?
 
-  [Fault Injection Testing](../F/fault-injection-testing.md) is crucial because it **proactively uncovers potential weaknesses** in software that might not be detected through conventional testing methods. By intentionally introducing faults, it simulates real-world scenarios that could lead to system failures, allowing testers to observe how the software behaves under adverse conditions. This approach is particularly important for **mission-critical applications** where system resilience and robustness are paramount, such as in the fields of aerospace, automotive, and finance.
-  It helps in validating the **effectiveness of error handling** and **recovery procedures**, ensuring that the software can gracefully handle unexpected situations without catastrophic outcomes. [Fault Injection Testing](../F/fault-injection-testing.md) also aids in achieving **higher [code coverage](../C/code-coverage.md)**, especially for error-handling paths that are rarely executed under normal operation.
+  [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) is crucial because it **proactively uncovers potential weaknesses** in software that might not be detected through conventional testing methods. By intentionally introducing faults, it simulates real-world scenarios that could lead to system failures, allowing testers to observe how the software behaves under adverse conditions. This approach is particularly important for **mission-critical applications** where system resilience and robustness are paramount, such as in the fields of aerospace, automotive, and finance.
+  It helps in validating the **effectiveness of error handling** and **recovery procedures**, ensuring that the software can gracefully handle unexpected situations without catastrophic outcomes. [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) also aids in achieving **higher [code coverage](https://naodeng.com.cn/en/wiki/code-coverage)**, especially for error-handling paths that are rarely executed under normal operation.
   Moreover, it contributes to **risk management** by identifying and allowing teams to address vulnerabilities before they can be exploited in a production environment, which is essential for maintaining **security** and **reliability**. By exposing the system to faults early in the development cycle, it can lead to a more **resilient architecture** and **robust design**, reducing the likelihood of severe issues post-deployment.
-  In summary, [Fault Injection Testing](../F/fault-injection-testing.md) is a strategic approach to **anticipate and mitigate the risks** of software failure, ensuring that systems can withstand and recover from real-world disruptions, thereby maintaining service continuity and safeguarding user experience.
+  In summary, [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) is a strategic approach to **anticipate and mitigate the risks** of software failure, ensuring that systems can withstand and recover from real-world disruptions, thereby maintaining service continuity and safeguarding user experience.
 
 #### What are the key benefits of Fault Injection Testing?
 
-  Key benefits of [Fault Injection Testing](../F/fault-injection-testing.md) include:
+  Key benefits of [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) include:
 
   - **Enhanced Robustness** : By deliberately introducing faults, systems can be tested under adverse conditions, ensuring they handle unexpected scenarios gracefully.
   - **Improved Fault Tolerance** : It validates the effectiveness of fault-handling mechanisms, leading to more resilient software.
@@ -74,7 +73,7 @@ Introducing faults deliberately to test the system's robustness.
   - **Compliance with Standards** : Certain industries require fault tolerance verification, which can be achieved through fault injection.
   - **Cost Savings** : Early detection of faults can save costs associated with downtime and late-stage bug fixing in the software development lifecycle.
   - **Insights into System Behavior** : It provides a deeper understanding of how the system behaves under stress, which can inform future development and testing efforts.
-  By integrating [Fault Injection Testing](../F/fault-injection-testing.md) into the testing process, [test automation](../T/test-automation.md) engineers can ensure that software systems are not only functionally correct but also robust and dependable in the face of real-world challenges.
+  By integrating [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) into the testing process, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can ensure that software systems are not only functionally correct but also robust and dependable in the face of real-world challenges.
 
   - **Enhanced Robustness** : By deliberately introducing faults, systems can be tested under adverse conditions, ensuring they handle unexpected scenarios gracefully.
   - **Improved Fault Tolerance** : It validates the effectiveness of fault-handling mechanisms, leading to more resilient software.
@@ -89,42 +88,42 @@ Introducing faults deliberately to test the system's robustness.
 
 #### How does Fault Injection Testing improve the quality of software?
 
-  [Fault Injection Testing](../F/fault-injection-testing.md) (FIT) enhances [software quality](../S/software-quality.md) by **proactively identifying potential weaknesses** before they manifest in a production environment. By simulating faults, FIT allows engineers to verify the **robustness** and **error-handling capabilities** of a system under adverse conditions. This approach ensures that the software can gracefully handle unexpected scenarios, leading to the development of more **resilient** and **reliable** applications.
-  Through FIT, teams can uncover **hidden [bugs](../B/bug.md)** that standard testing might not expose, particularly in complex systems where interactions can lead to unpredictable behavior. It also helps in validating **system recovery** and **failover mechanisms**, ensuring that the software can recover from failures without significant downtime or data loss.
+  [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) (FIT) enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by **proactively identifying potential weaknesses** before they manifest in a production environment. By simulating faults, FIT allows engineers to verify the **robustness** and **error-handling capabilities** of a system under adverse conditions. This approach ensures that the software can gracefully handle unexpected scenarios, leading to the development of more **resilient** and **reliable** applications.
+  Through FIT, teams can uncover **hidden [bugs](https://naodeng.com.cn/en/wiki/bug)** that standard testing might not expose, particularly in complex systems where interactions can lead to unpredictable behavior. It also helps in validating **system recovery** and **failover mechanisms**, ensuring that the software can recover from failures without significant downtime or data loss.
   Moreover, FIT can be used to assess the **impact of failures** on the system's performance and behavior, which is critical for mission-critical applications where uptime and data integrity are paramount. By understanding how the system behaves under failure conditions, developers can implement more effective **contingency plans** and **improvement strategies**.
-  Incorporating FIT into the software development lifecycle promotes a **culture of quality** and **resilience** by encouraging developers to consider and plan for failure scenarios from the outset. This proactive stance on [software quality](../S/software-quality.md) can lead to a **reduction in the cost** of failure, as issues are identified and addressed early in the development process, avoiding expensive patches and downtime post-release.
+  Incorporating FIT into the software development lifecycle promotes a **culture of quality** and **resilience** by encouraging developers to consider and plan for failure scenarios from the outset. This proactive stance on [software quality](https://naodeng.com.cn/en/wiki/software-quality) can lead to a **reduction in the cost** of failure, as issues are identified and addressed early in the development process, avoiding expensive patches and downtime post-release.
 
 ### Techniques and Types
 
 #### What are the different types of Fault Injection Testing?
 
-  Different types of [Fault Injection Testing](../F/fault-injection-testing.md) include:
+  Different types of [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) include:
 
   - **Network Fault Injection**: Simulates network failures like packet loss, delays, and bandwidth limitations to test network protocols and distributed systems.
   - **System Call Fault Injection**: Intercepts and manipulates system calls to inject faults into the application, testing its response to system-level failures.
-  - **[API](../A/api.md) Fault Injection**: Alters [API](../A/api.md) responses or introduces failures to ensure the application can handle [API](../A/api.md)-related issues gracefully.
+  - **[API](https://naodeng.com.cn/en/wiki/api) Fault Injection**: Alters [API](https://naodeng.com.cn/en/wiki/api) responses or introduces failures to ensure the application can handle [API](https://naodeng.com.cn/en/wiki/api)-related issues gracefully.
   - **Exception Fault Injection**: Forces software to throw exceptions to verify exception handling mechanisms and application stability under error conditions.
   - **Resource Fault Injection**: Mimics resource scarcity scenarios such as low memory, disk space, or CPU exhaustion to evaluate software performance under constrained environments.
   - **Configuration Fault Injection**: Changes configuration settings or files to invalid or unexpected values to test application behavior with incorrect configurations.
   - **Code Fault Injection**: Introduces deliberate faults into the codebase at compile-time or runtime to assess the system's ability to detect and handle errors.
-  - **[Database](../D/database.md) Fault Injection**: Injects faults into [database](../D/database.md) operations, such as query failures or connection issues, to test [database](../D/database.md) interaction and transaction handling.
+  - **[Database](https://naodeng.com.cn/en/wiki/database) Fault Injection**: Injects faults into [database](https://naodeng.com.cn/en/wiki/database) operations, such as query failures or connection issues, to test [database](https://naodeng.com.cn/en/wiki/database) interaction and transaction handling.
   - **Electrical Fault Injection**: Applies to hardware testing, where electrical signals are manipulated to induce hardware faults and test software's response to hardware malfunctions.
   Each type targets specific aspects of a system, allowing testers to thoroughly evaluate fault tolerance and error handling capabilities.
 
   - **Network Fault Injection**: Simulates network failures like packet loss, delays, and bandwidth limitations to test network protocols and distributed systems.
   - **System Call Fault Injection**: Intercepts and manipulates system calls to inject faults into the application, testing its response to system-level failures.
-  - **[API](../A/api.md) Fault Injection**: Alters [API](../A/api.md) responses or introduces failures to ensure the application can handle [API](../A/api.md)-related issues gracefully.
+  - **[API](https://naodeng.com.cn/en/wiki/api) Fault Injection**: Alters [API](https://naodeng.com.cn/en/wiki/api) responses or introduces failures to ensure the application can handle [API](https://naodeng.com.cn/en/wiki/api)-related issues gracefully.
   - **Exception Fault Injection**: Forces software to throw exceptions to verify exception handling mechanisms and application stability under error conditions.
   - **Resource Fault Injection**: Mimics resource scarcity scenarios such as low memory, disk space, or CPU exhaustion to evaluate software performance under constrained environments.
   - **Configuration Fault Injection**: Changes configuration settings or files to invalid or unexpected values to test application behavior with incorrect configurations.
   - **Code Fault Injection**: Introduces deliberate faults into the codebase at compile-time or runtime to assess the system's ability to detect and handle errors.
-  - **[Database](../D/database.md) Fault Injection**: Injects faults into [database](../D/database.md) operations, such as query failures or connection issues, to test [database](../D/database.md) interaction and transaction handling.
+  - **[Database](https://naodeng.com.cn/en/wiki/database) Fault Injection**: Injects faults into [database](https://naodeng.com.cn/en/wiki/database) operations, such as query failures or connection issues, to test [database](https://naodeng.com.cn/en/wiki/database) interaction and transaction handling.
   - **Electrical Fault Injection**: Applies to hardware testing, where electrical signals are manipulated to induce hardware faults and test software's response to hardware malfunctions.
 
 #### What is the difference between compile-time and runtime Fault Injection Testing?
 
   Compile-time fault injection involves introducing faults into the system at the **source code** or **binary level** before the application is run. This method requires modifying the codebase or binary to insert potential defects that can mimic the behavior of real faults. It's typically used to validate the code's ability to handle errors that could be introduced during compilation or due to faulty libraries or dependencies.
-  Runtime fault injection, on the other hand, introduces faults into a system while it is **running**. This technique does not require changes to the codebase; instead, it manipulates the application's environment or state to simulate faults. This can include altering system resources, injecting exceptions, or modifying [API](../A/api.md) calls. Runtime fault injection is useful for testing the system's resilience to unexpected conditions that occur while the application is in operation.
+  Runtime fault injection, on the other hand, introduces faults into a system while it is **running**. This technique does not require changes to the codebase; instead, it manipulates the application's environment or state to simulate faults. This can include altering system resources, injecting exceptions, or modifying [API](https://naodeng.com.cn/en/wiki/api) calls. Runtime fault injection is useful for testing the system's resilience to unexpected conditions that occur while the application is in operation.
   In summary, the key difference lies in the **timing** of the fault introduction:
 
   - **Compile-time fault injection**
@@ -142,8 +141,8 @@ Introducing faults deliberately to test the system's robustness.
 
 #### What is the difference between hardware and software Fault Injection Testing?
 
-  Hardware [Fault Injection Testing](../F/fault-injection-testing.md) involves physically manipulating hardware components to induce faults, such as cutting power supply, introducing electromagnetic interference, or physically altering circuitry. This approach tests the system's resilience to hardware failures and its ability to handle unexpected hardware-related errors.
-  Software [Fault Injection Testing](../F/fault-injection-testing.md), on the other hand, simulates faults within the software system without altering the hardware. This is done by injecting faults into the application code, data streams, or operating system to mimic software failures, such as exceptions, incorrect data inputs, or [API](../A/api.md) failures.
+  Hardware [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) involves physically manipulating hardware components to induce faults, such as cutting power supply, introducing electromagnetic interference, or physically altering circuitry. This approach tests the system's resilience to hardware failures and its ability to handle unexpected hardware-related errors.
+  Software [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing), on the other hand, simulates faults within the software system without altering the hardware. This is done by injecting faults into the application code, data streams, or operating system to mimic software failures, such as exceptions, incorrect data inputs, or [API](https://naodeng.com.cn/en/wiki/api) failures.
   The **key difference** lies in the **layer** where the fault is introduced:
 
   - **Hardware Fault Injection** : Directly targets the
@@ -165,9 +164,9 @@ Introducing faults deliberately to test the system's robustness.
 
 #### What techniques are commonly used in Fault Injection Testing?
 
-  Common techniques in **[Fault Injection Testing](../F/fault-injection-testing.md)** include:
+  Common techniques in **[Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing)** include:
 
-  - **[API](../A/api.md) Fault Injection**: Intentionally manipulating [API](../A/api.md) calls to simulate failures, such as timeouts or incorrect responses.
+  - **[API](https://naodeng.com.cn/en/wiki/api) Fault Injection**: Intentionally manipulating [API](https://naodeng.com.cn/en/wiki/api) calls to simulate failures, such as timeouts or incorrect responses.
   - **Network Fault Injection**: Disrupting network communication to test system resilience, including packet loss, latency, and bandwidth limitations.
   - **System Call Fault Injection**: Altering the behavior of system calls to induce errors such as file access issues or permission denials.
   - **Resource Manipulation**: Constraining resources like CPU, memory, or disk space to validate system performance under stress.
@@ -178,7 +177,7 @@ Introducing faults deliberately to test the system's robustness.
   - **Dependency Failure Simulation**: Mimicking failures in dependent services or components to ensure the main application handles these gracefully.
   These techniques help uncover potential issues that might not be found through conventional testing methods, ensuring that the software can handle unexpected scenarios and maintain functionality under adverse conditions.
 
-  - **[API](../A/api.md) Fault Injection**: Intentionally manipulating [API](../A/api.md) calls to simulate failures, such as timeouts or incorrect responses.
+  - **[API](https://naodeng.com.cn/en/wiki/api) Fault Injection**: Intentionally manipulating [API](https://naodeng.com.cn/en/wiki/api) calls to simulate failures, such as timeouts or incorrect responses.
   - **Network Fault Injection**: Disrupting network communication to test system resilience, including packet loss, latency, and bandwidth limitations.
   - **System Call Fault Injection**: Altering the behavior of system calls to induce errors such as file access issues or permission denials.
   - **Resource Manipulation**: Constraining resources like CPU, memory, or disk space to validate system performance under stress.
@@ -192,7 +191,7 @@ Introducing faults deliberately to test the system's robustness.
 
 #### How is Fault Injection Testing implemented in a software testing process?
 
-  Implementing [Fault Injection Testing](../F/fault-injection-testing.md) (FIT) in a [software testing](../S/software-testing.md) process involves several steps:
+  Implementing [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) (FIT) in a [software testing](https://naodeng.com.cn/en/wiki/software-testing) process involves several steps:
 
   1. **Identify the scope**
     of testing, including the system components and functionalities that will be subject to fault injection.
@@ -206,7 +205,7 @@ Introducing faults deliberately to test the system's robustness.
   4. **Integrate FIT**
     into the test environment. Ensure that the fault injection mechanism can be triggered without causing permanent damage or requiring extensive recovery time.
 
-  5. **Design [test cases](../T/test-case.md)**
+  5. **Design [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that specify when and where to inject faults, as well as the expected outcomes. This often involves creating automated test scripts that can activate the fault injection mechanisms.
 
   6. **Execute the tests**
@@ -234,7 +233,7 @@ Introducing faults deliberately to test the system's robustness.
   4. **Integrate FIT**
     into the test environment. Ensure that the fault injection mechanism can be triggered without causing permanent damage or requiring extensive recovery time.
 
-  5. **Design [test cases](../T/test-case.md)**
+  5. **Design [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that specify when and where to inject faults, as well as the expected outcomes. This often involves creating automated test scripts that can activate the fault injection mechanisms.
 
   6. **Execute the tests**
@@ -251,7 +250,7 @@ Introducing faults deliberately to test the system's robustness.
 
 #### What tools are commonly used for Fault Injection Testing?
 
-  Common tools for **[Fault Injection Testing](../F/fault-injection-testing.md)** include:
+  Common tools for **[Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing)** include:
 
   - **Chaos Monkey** : Part of the Netflix Simian Army, it randomly disables production instances to ensure that the system can withstand such failures.
   - **Jepsen** : A tool for testing the safety and consistency of distributed systems.
@@ -261,7 +260,7 @@ Introducing faults deliberately to test the system's robustness.
   - **Nemesis** : Designed to stress-test distributed systems by introducing various failure scenarios.
   - **SimInject** : Allows injection of faults into simulation models to test the robustness of protocols and algorithms.
   - **FInject** : A Linux system call fault injection tool.
-  These tools enable engineers to simulate a range of failure scenarios, from server crashes and network delays to application-level faults. They can be integrated into CI/CD pipelines for [automated testing](../A/automated-testing.md), ensuring that fault tolerance mechanisms are continuously validated.
+  These tools enable engineers to simulate a range of failure scenarios, from server crashes and network delays to application-level faults. They can be integrated into CI/CD pipelines for [automated testing](https://naodeng.com.cn/en/wiki/automated-testing), ensuring that fault tolerance mechanisms are continuously validated.
 
   - **Chaos Monkey** : Part of the Netflix Simian Army, it randomly disables production instances to ensure that the system can withstand such failures.
   - **Jepsen** : A tool for testing the safety and consistency of distributed systems.
@@ -274,9 +273,9 @@ Introducing faults deliberately to test the system's robustness.
 
 #### How can Fault Injection Testing be automated?
 
-  Automating [Fault Injection Testing](../F/fault-injection-testing.md) involves scripting scenarios where faults are introduced into the system to assess its resilience and error-handling capabilities. Here's a concise guide:
+  Automating [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) involves scripting scenarios where faults are introduced into the system to assess its resilience and error-handling capabilities. Here's a concise guide:
 
-  1. **Identify [test cases](../T/test-case.md)**
+  1. **Identify [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     for fault injection based on system criticality and potential failure points.
 
   2. **Select automation tools**
@@ -307,9 +306,9 @@ Introducing faults deliberately to test the system's robustness.
 
   3. **Automate the analysis**
     of results to identify patterns and potential weaknesses in the system's fault tolerance.
-  By integrating these steps into your [test automation](../T/test-automation.md) framework, you can systematically and continuously evaluate the robustness of your software against unexpected conditions. Remember to **review and refine** your fault injection scenarios regularly to cover new features and changes in the system architecture.
+  By integrating these steps into your [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework, you can systematically and continuously evaluate the robustness of your software against unexpected conditions. Remember to **review and refine** your fault injection scenarios regularly to cover new features and changes in the system architecture.
 
-  1. **Identify [test cases](../T/test-case.md)**
+  1. **Identify [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     for fault injection based on system criticality and potential failure points.
 
   2. **Select automation tools**
@@ -329,7 +328,7 @@ Introducing faults deliberately to test the system's robustness.
 
 #### What are the steps to perform Fault Injection Testing using a specific tool?
 
-  To perform [Fault Injection Testing](../F/fault-injection-testing.md) using a specific tool, follow these steps:
+  To perform [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) using a specific tool, follow these steps:
 
   1. **Identify the target system** and the components you want to test. Determine the fault types relevant to your system's context.
   2. **Set up the testing environment** ensuring it mirrors the production environment as closely as possible to obtain accurate results.
@@ -345,8 +344,8 @@ Introducing faults deliberately to test the system's robustness.
     ```
 
   4. **Integrate the tool** with your system, which may involve instrumenting the code or setting up a proxy to intercept and modify requests.
-  5. **Create a [test plan](../T/test-plan.md)** that outlines the fault scenarios you will execute, including the expected system behavior for each fault.
-  6. **Execute the [test scenarios](../T/test-scenario.md)** using the tool to inject faults into the system. Monitor system behavior and log responses.
+  5. **Create a [test plan](https://naodeng.com.cn/en/wiki/test-plan)** that outlines the fault scenarios you will execute, including the expected system behavior for each fault.
+  6. **Execute the [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario)** using the tool to inject faults into the system. Monitor system behavior and log responses.
   7. **Analyze the results** to determine how the system handled each fault. Look for unexpected behavior or system crashes.
   8. **Refine your tests** based on the analysis. Adjust fault parameters or add new scenarios as needed.
   9. **Automate the process** if possible, to run fault injection tests as part of your regular testing cycle.
@@ -367,8 +366,8 @@ Introducing faults deliberately to test the system's robustness.
     ```
 
   4. **Integrate the tool** with your system, which may involve instrumenting the code or setting up a proxy to intercept and modify requests.
-  5. **Create a [test plan](../T/test-plan.md)** that outlines the fault scenarios you will execute, including the expected system behavior for each fault.
-  6. **Execute the [test scenarios](../T/test-scenario.md)** using the tool to inject faults into the system. Monitor system behavior and log responses.
+  5. **Create a [test plan](https://naodeng.com.cn/en/wiki/test-plan)** that outlines the fault scenarios you will execute, including the expected system behavior for each fault.
+  6. **Execute the [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario)** using the tool to inject faults into the system. Monitor system behavior and log responses.
   7. **Analyze the results** to determine how the system handled each fault. Look for unexpected behavior or system crashes.
   8. **Refine your tests** based on the analysis. Adjust fault parameters or add new scenarios as needed.
   9. **Automate the process** if possible, to run fault injection tests as part of your regular testing cycle.
@@ -378,13 +377,13 @@ Introducing faults deliberately to test the system's robustness.
 
 #### What are the common challenges faced during Fault Injection Testing?
 
-  Common challenges in [Fault Injection Testing](../F/fault-injection-testing.md) include:
+  Common challenges in [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) include:
 
   - **Identifying relevant faults** : Determining which faults to inject can be difficult, as it requires a deep understanding of the system and potential failure points.
   - **Complexity** : Modern systems are complex, and injecting faults without disrupting the entire system can be challenging.
   - **Environment replication** : Creating a test environment that accurately reflects production can be costly and time-consuming.
   - **Tool selection** : Choosing the right tools that can simulate the desired faults effectively is crucial and can be difficult given the variety of tools available.
-  - **[Test coverage](../T/test-coverage.md)** : Ensuring that the fault injection tests cover a significant portion of the possible faults without being redundant.
+  - **[Test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Ensuring that the fault injection tests cover a significant portion of the possible faults without being redundant.
   - **Interpreting results** : Analyzing the outcomes of fault injection tests requires expertise to distinguish between expected and unexpected system behavior.
   - **Time constraints** : Fault Injection Testing can be time-consuming, especially when testing for a wide range of faults.
   - **Risk of damage** : There is a risk of causing actual damage to the system or data, particularly when testing hardware components.
@@ -396,7 +395,7 @@ Introducing faults deliberately to test the system's robustness.
   - **Complexity** : Modern systems are complex, and injecting faults without disrupting the entire system can be challenging.
   - **Environment replication** : Creating a test environment that accurately reflects production can be costly and time-consuming.
   - **Tool selection** : Choosing the right tools that can simulate the desired faults effectively is crucial and can be difficult given the variety of tools available.
-  - **[Test coverage](../T/test-coverage.md)** : Ensuring that the fault injection tests cover a significant portion of the possible faults without being redundant.
+  - **[Test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Ensuring that the fault injection tests cover a significant portion of the possible faults without being redundant.
   - **Interpreting results** : Analyzing the outcomes of fault injection tests requires expertise to distinguish between expected and unexpected system behavior.
   - **Time constraints** : Fault Injection Testing can be time-consuming, especially when testing for a wide range of faults.
   - **Risk of damage** : There is a risk of causing actual damage to the system or data, particularly when testing hardware components.
@@ -405,38 +404,38 @@ Introducing faults deliberately to test the system's robustness.
 
 #### How to overcome the challenges in Fault Injection Testing?
 
-  Overcoming challenges in **[Fault Injection Testing](../F/fault-injection-testing.md)** requires a strategic approach:
+  Overcoming challenges in **[Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing)** requires a strategic approach:
 
   1. **Define Clear Objectives**: Establish what you want to achieve with fault injection, such as improving resilience or meeting specific reliability standards.
-  2. **Prioritize [Test Cases](../T/test-case.md)**: Focus on critical components that could cause the most significant impact if they fail.
+  2. **Prioritize [Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Focus on critical components that could cause the most significant impact if they fail.
   3. **Use Automation Wisely**: Automate repetitive and time-consuming tasks to increase efficiency and consistency.
   4. **Manage Complexity**: Break down complex systems into smaller, manageable units to simplify fault injection and analysis.
   5. **Monitor System Behavior**: Implement robust monitoring to observe system responses to injected faults in real-time.
   6. **Leverage Tools**: Utilize specialized fault injection tools that can simulate a wide range of faults and streamline the testing process.
   7. **Integrate with CI/CD**: Embed fault injection tests into your continuous integration and deployment pipeline to catch issues early.
-  8. **Perform [Incremental Testing](../I/incremental-testing.md)**: Start with simple fault scenarios and gradually increase complexity to avoid overwhelming the system and testers.
-  9. **Document and Review**: Keep detailed records of [test cases](../T/test-case.md), results, and system behavior to refine future tests and understand failure modes.
+  8. **Perform [Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)**: Start with simple fault scenarios and gradually increase complexity to avoid overwhelming the system and testers.
+  9. **Document and Review**: Keep detailed records of [test cases](https://naodeng.com.cn/en/wiki/test-case), results, and system behavior to refine future tests and understand failure modes.
   10. **Collaborate with Developers**: Work closely with the development team to ensure a deep understanding of the system and to design meaningful fault scenarios.
-  11. **Train Your Team**: Ensure team members are skilled in both the theory and practice of [fault injection testing](../F/fault-injection-testing.md).
+  11. **Train Your Team**: Ensure team members are skilled in both the theory and practice of [fault injection testing](https://naodeng.com.cn/en/wiki/fault-injection-testing).
   12. **Learn from Failures**: Analyze failures to improve both the system under test and the testing process itself.
-  By addressing these areas, you can mitigate the challenges associated with [fault injection testing](../F/fault-injection-testing.md) and enhance the resilience of your software.
+  By addressing these areas, you can mitigate the challenges associated with [fault injection testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) and enhance the resilience of your software.
 
   1. **Define Clear Objectives**: Establish what you want to achieve with fault injection, such as improving resilience or meeting specific reliability standards.
-  2. **Prioritize [Test Cases](../T/test-case.md)**: Focus on critical components that could cause the most significant impact if they fail.
+  2. **Prioritize [Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Focus on critical components that could cause the most significant impact if they fail.
   3. **Use Automation Wisely**: Automate repetitive and time-consuming tasks to increase efficiency and consistency.
   4. **Manage Complexity**: Break down complex systems into smaller, manageable units to simplify fault injection and analysis.
   5. **Monitor System Behavior**: Implement robust monitoring to observe system responses to injected faults in real-time.
   6. **Leverage Tools**: Utilize specialized fault injection tools that can simulate a wide range of faults and streamline the testing process.
   7. **Integrate with CI/CD**: Embed fault injection tests into your continuous integration and deployment pipeline to catch issues early.
-  8. **Perform [Incremental Testing](../I/incremental-testing.md)**: Start with simple fault scenarios and gradually increase complexity to avoid overwhelming the system and testers.
-  9. **Document and Review**: Keep detailed records of [test cases](../T/test-case.md), results, and system behavior to refine future tests and understand failure modes.
+  8. **Perform [Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)**: Start with simple fault scenarios and gradually increase complexity to avoid overwhelming the system and testers.
+  9. **Document and Review**: Keep detailed records of [test cases](https://naodeng.com.cn/en/wiki/test-case), results, and system behavior to refine future tests and understand failure modes.
   10. **Collaborate with Developers**: Work closely with the development team to ensure a deep understanding of the system and to design meaningful fault scenarios.
-  11. **Train Your Team**: Ensure team members are skilled in both the theory and practice of [fault injection testing](../F/fault-injection-testing.md).
+  11. **Train Your Team**: Ensure team members are skilled in both the theory and practice of [fault injection testing](https://naodeng.com.cn/en/wiki/fault-injection-testing).
   12. **Learn from Failures**: Analyze failures to improve both the system under test and the testing process itself.
 
 #### What are the best practices to follow while performing Fault Injection Testing?
 
-  Best practices for [Fault Injection Testing](../F/fault-injection-testing.md):
+  Best practices for [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing):
 
   - **Plan thoroughly**: Define clear objectives and scope for your fault injection tests. Identify critical components and potential failure points within the system.
   - **Use realistic scenarios**: Simulate faults that could realistically occur in production. This ensures the relevance of your tests to real-world conditions.
@@ -444,12 +443,12 @@ Introducing faults deliberately to test the system's robustness.
   - **Monitor and measure**: Collect detailed logs and metrics during testing to analyze the system's behavior and response to faults.
   - **Automate where possible**: Automate repetitive and time-consuming tasks to increase efficiency and consistency of the fault injection process.
   - **Prioritize safety**: Ensure that the testing environment is isolated from production to prevent unintended consequences.
-  - **Perform [incremental testing](../I/incremental-testing.md)**: Gradually increase the [severity](../S/severity.md) and number of faults injected to understand the limits of the system's fault tolerance.
+  - **Perform [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing)**: Gradually increase the [severity](https://naodeng.com.cn/en/wiki/severity) and number of faults injected to understand the limits of the system's fault tolerance.
   - **Review and refine**: After each test, review the results and refine your approach based on the insights gained.
   - **Document findings**: Keep a comprehensive record of the tests performed, faults injected, and the system's response for future reference and improvement.
-  - **Collaborate with developers**: Work closely with the development team to understand the system architecture and to incorporate feedback from [fault injection testing](../F/fault-injection-testing.md) into the development process.
+  - **Collaborate with developers**: Work closely with the development team to understand the system architecture and to incorporate feedback from [fault injection testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) into the development process.
   - **Stay ethical**: If testing third-party components or services, ensure compliance with legal and ethical standards to avoid unauthorized tampering or causing harm.
-  By adhering to these practices, you can enhance the reliability and robustness of your software through effective [fault injection testing](../F/fault-injection-testing.md).
+  By adhering to these practices, you can enhance the reliability and robustness of your software through effective [fault injection testing](https://naodeng.com.cn/en/wiki/fault-injection-testing).
 
   - **Plan thoroughly**: Define clear objectives and scope for your fault injection tests. Identify critical components and potential failure points within the system.
   - **Use realistic scenarios**: Simulate faults that could realistically occur in production. This ensures the relevance of your tests to real-world conditions.
@@ -457,15 +456,15 @@ Introducing faults deliberately to test the system's robustness.
   - **Monitor and measure**: Collect detailed logs and metrics during testing to analyze the system's behavior and response to faults.
   - **Automate where possible**: Automate repetitive and time-consuming tasks to increase efficiency and consistency of the fault injection process.
   - **Prioritize safety**: Ensure that the testing environment is isolated from production to prevent unintended consequences.
-  - **Perform [incremental testing](../I/incremental-testing.md)**: Gradually increase the [severity](../S/severity.md) and number of faults injected to understand the limits of the system's fault tolerance.
+  - **Perform [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing)**: Gradually increase the [severity](https://naodeng.com.cn/en/wiki/severity) and number of faults injected to understand the limits of the system's fault tolerance.
   - **Review and refine**: After each test, review the results and refine your approach based on the insights gained.
   - **Document findings**: Keep a comprehensive record of the tests performed, faults injected, and the system's response for future reference and improvement.
-  - **Collaborate with developers**: Work closely with the development team to understand the system architecture and to incorporate feedback from [fault injection testing](../F/fault-injection-testing.md) into the development process.
+  - **Collaborate with developers**: Work closely with the development team to understand the system architecture and to incorporate feedback from [fault injection testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) into the development process.
   - **Stay ethical**: If testing third-party components or services, ensure compliance with legal and ethical standards to avoid unauthorized tampering or causing harm.
 
 #### How to ensure the effectiveness of Fault Injection Testing?
 
-  To ensure the effectiveness of [Fault Injection Testing](../F/fault-injection-testing.md) (FIT), focus on the following strategies:
+  To ensure the effectiveness of [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) (FIT), focus on the following strategies:
 
   - **Define clear objectives** : Understand what you want to achieve with FIT, such as improving system resilience or identifying specific failure modes.
   - **Prioritize critical components** : Target areas that have the highest impact on system functionality or user experience.
@@ -475,7 +474,7 @@ Introducing faults deliberately to test the system's robustness.
   - **Monitor and measure** : Collect data on system behavior during tests to evaluate resilience and ensure faults are handled as expected.
   - **Review and refine** : After testing, analyze results to identify weaknesses and improve both the system and future tests.
   - **Document findings** : Keep a record of what faults were injected, how the system responded, and any corrective actions taken.
-  By adhering to these strategies, you can maximize the value of [Fault Injection Testing](../F/fault-injection-testing.md) and enhance the robustness of your software.
+  By adhering to these strategies, you can maximize the value of [Fault Injection Testing](https://naodeng.com.cn/en/wiki/fault-injection-testing) and enhance the robustness of your software.
 
   - **Define clear objectives** : Understand what you want to achieve with FIT, such as improving system resilience or identifying specific failure modes.
   - **Prioritize critical components** : Target areas that have the highest impact on system functionality or user experience.

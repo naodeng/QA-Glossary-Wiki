@@ -1,6 +1,5 @@
 # Unit Testing
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
 - [Questions about Unit Testing ?](#questions-about-unit-testing)
@@ -32,10 +31,10 @@ The practice of testing individual software units or components to validate thei
 
 ## Related Terms:
 
-- [Integration Testing](../I/integration-testing.md)
-- [Test-Driven Development](../T/test-driven-development.md)
-- [NUnit](../N/nunit.md)
-- [JUnit Testing](../J/junit-testing.md)
+- [Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)
+- [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development)
+- [NUnit](https://naodeng.com.cn/en/wiki/nunit)
+- [JUnit Testing](https://naodeng.com.cn/en/wiki/junit-testing)
 
 ## Questions about Unit Testing ?
 
@@ -43,8 +42,8 @@ The practice of testing individual software units or components to validate thei
 
 #### What is unit testing?
 
-  [Unit testing](../U/unit-testing.md) is the practice of testing the smallest testable parts of an application, typically functions or methods, in isolation from the rest of the system. These tests are written and executed by developers to ensure that a specific section of the codebase performs as intended.
-  In [unit testing](../U/unit-testing.md), each unit is tested in isolation with the use of **stubs** and **mocks** to simulate the behavior of dependent modules that are not part of the test. This allows for the detection of issues at an early stage, making them easier to address.
+  [Unit testing](https://naodeng.com.cn/en/wiki/unit-testing) is the practice of testing the smallest testable parts of an application, typically functions or methods, in isolation from the rest of the system. These tests are written and executed by developers to ensure that a specific section of the codebase performs as intended.
+  In [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), each unit is tested in isolation with the use of **stubs** and **mocks** to simulate the behavior of dependent modules that are not part of the test. This allows for the detection of issues at an early stage, making them easier to address.
   A good unit test should be:
 
   - **Focused** : It should test one function or method and do it well.
@@ -53,7 +52,7 @@ The practice of testing individual software units or components to validate thei
   - **Repeatable** : It should produce the same results every time it's run, given the same input.
   - **Self-validating** : It should clearly show whether the test has passed or failed without requiring manual analysis.
   Unit tests are typically written in the same programming language as the code they're testing and are run frequently during the development process. When a unit test fails, it indicates that there's a problem that needs to be resolved before proceeding.
-  Popular [unit testing](../U/unit-testing.md) frameworks include **JUnit** for Java, **[NUnit](../N/nunit.md)** for .NET, **unittest** for Python, and **[Jest](../J/jest.md)** for JavaScript. These tools provide a structured way to write and run unit tests, often with features for mocking and assertions.
+  Popular [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) frameworks include **JUnit** for Java, **[NUnit](https://naodeng.com.cn/en/wiki/nunit)** for .NET, **unittest** for Python, and **[Jest](https://naodeng.com.cn/en/wiki/jest)** for JavaScript. These tools provide a structured way to write and run unit tests, often with features for mocking and assertions.
 
   ```
   // Example of a simple unit test in TypeScript
@@ -71,9 +70,9 @@ The practice of testing individual software units or components to validate thei
 
 #### Why is unit testing important?
 
-  [Unit testing](../U/unit-testing.md) is crucial because it ensures that individual components of the software work as intended in isolation. By testing these components separately, developers can:
+  [Unit testing](https://naodeng.com.cn/en/wiki/unit-testing) is crucial because it ensures that individual components of the software work as intended in isolation. By testing these components separately, developers can:
 
-  - **Detect and fix [bugs](../B/bug.md) early**
+  - **Detect and fix [bugs](https://naodeng.com.cn/en/wiki/bug) early**
     in the development process, which is generally more cost-effective than finding them later in higher testing levels or after deployment.
 
   - **Refactor code**
@@ -91,11 +90,11 @@ The practice of testing individual software units or components to validate thei
   - **Speed up the development process**
     , as automated tests can be run quickly and frequently.
 
-  - **Improve [code coverage](../C/code-coverage.md)**
+  - **Improve [code coverage](https://naodeng.com.cn/en/wiki/code-coverage)**
     , as thorough unit testing can exercise all paths and conditions in the code.
   Unit tests are typically written and run by developers, often using a continuous integration system to ensure ongoing code health. When a unit test fails, it indicates that something in the codebase has changed in a way that was not expected or accounted for, prompting an immediate investigation and fix. This immediate feedback loop is essential for maintaining a robust codebase, especially in agile and fast-paced development environments.
 
-  - **Detect and fix [bugs](../B/bug.md) early**
+  - **Detect and fix [bugs](https://naodeng.com.cn/en/wiki/bug) early**
     in the development process, which is generally more cost-effective than finding them later in higher testing levels or after deployment.
 
   - **Refactor code**
@@ -113,12 +112,12 @@ The practice of testing individual software units or components to validate thei
   - **Speed up the development process**
     , as automated tests can be run quickly and frequently.
 
-  - **Improve [code coverage](../C/code-coverage.md)**
+  - **Improve [code coverage](https://naodeng.com.cn/en/wiki/code-coverage)**
     , as thorough unit testing can exercise all paths and conditions in the code.
 
 #### What are the benefits of unit testing?
 
-  [Unit testing](../U/unit-testing.md) offers several benefits that enhance the quality and [maintainability](../M/maintainability.md) of software:
+  [Unit testing](https://naodeng.com.cn/en/wiki/unit-testing) offers several benefits that enhance the quality and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of software:
 
   - **Isolation** : Tests individual components in isolation, ensuring that each part functions correctly on its own.
   - **Regression Detection** : Quickly identifies regressions when changes break existing functionality, allowing for immediate fixes.
@@ -129,7 +128,7 @@ The practice of testing individual software units or components to validate thei
   - **Development Speed** : Can speed up the development process by catching errors early, reducing the time spent on debugging and manual testing.
   - **Code Quality** : Often leads to higher code quality with fewer bugs, as developers write code considering testability and edge cases.
   - **Cost Reduction** : Reduces the cost of fixing bugs by catching them early in the development cycle, where they are generally cheaper to fix.
-  By integrating [unit testing](../U/unit-testing.md) into the development workflow, teams can achieve a more reliable, maintainable, and robust codebase, ultimately leading to a more successful software project.
+  By integrating [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) into the development workflow, teams can achieve a more reliable, maintainable, and robust codebase, ultimately leading to a more successful software project.
 
   - **Isolation** : Tests individual components in isolation, ensuring that each part functions correctly on its own.
   - **Regression Detection** : Quickly identifies regressions when changes break existing functionality, allowing for immediate fixes.
@@ -143,60 +142,60 @@ The practice of testing individual software units or components to validate thei
 
 #### What is the difference between unit testing and other types of testing?
 
-  [Unit testing](../U/unit-testing.md) is the practice of testing the smallest testable parts of an application, typically functions or methods, in isolation from the rest of the system. Other types of testing, such as [integration testing](../I/integration-testing.md), [system testing](../S/system-testing.md), and [acceptance testing](../A/acceptance-testing.md), differ in scope and focus:
+  [Unit testing](https://naodeng.com.cn/en/wiki/unit-testing) is the practice of testing the smallest testable parts of an application, typically functions or methods, in isolation from the rest of the system. Other types of testing, such as [integration testing](https://naodeng.com.cn/en/wiki/integration-testing), [system testing](https://naodeng.com.cn/en/wiki/system-testing), and [acceptance testing](https://naodeng.com.cn/en/wiki/acceptance-testing), differ in scope and focus:
 
-  - **[Integration testing](../I/integration-testing.md)** evaluates the interactions between different units or components to ensure they work together as expected. It's a level up from [unit testing](../U/unit-testing.md) and identifies issues in the interfaces and interaction between integrated components.
-  - **[System testing](../S/system-testing.md)** considers the entire system's behavior and is aimed at verifying that the full, integrated software product meets the specified requirements. It's a higher level of testing that encompasses the complete, integrated software to evaluate the system's compliance with its specified requirements.
-  - **[Acceptance testing](../A/acceptance-testing.md)** is performed to determine whether the system is ready for release. It's typically done by the end-user or client to validate the functionality and performance against the business requirements. Acceptance tests are user-oriented and focus on whether the system does what the users need it to do.
-  [Unit testing](../U/unit-testing.md) is distinct in its focus on the smallest parts of the software, while the other types of testing address more comprehensive aspects of the system, from how components work together to how the system performs in real-world scenarios. Understanding these differences helps [test automation](../T/test-automation.md) engineers design and execute tests at the appropriate level to ensure a robust and reliable software product.
+  - **[Integration testing](https://naodeng.com.cn/en/wiki/integration-testing)** evaluates the interactions between different units or components to ensure they work together as expected. It's a level up from [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) and identifies issues in the interfaces and interaction between integrated components.
+  - **[System testing](https://naodeng.com.cn/en/wiki/system-testing)** considers the entire system's behavior and is aimed at verifying that the full, integrated software product meets the specified requirements. It's a higher level of testing that encompasses the complete, integrated software to evaluate the system's compliance with its specified requirements.
+  - **[Acceptance testing](https://naodeng.com.cn/en/wiki/acceptance-testing)** is performed to determine whether the system is ready for release. It's typically done by the end-user or client to validate the functionality and performance against the business requirements. Acceptance tests are user-oriented and focus on whether the system does what the users need it to do.
+  [Unit testing](https://naodeng.com.cn/en/wiki/unit-testing) is distinct in its focus on the smallest parts of the software, while the other types of testing address more comprehensive aspects of the system, from how components work together to how the system performs in real-world scenarios. Understanding these differences helps [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers design and execute tests at the appropriate level to ensure a robust and reliable software product.
 
-  - **[Integration testing](../I/integration-testing.md)** evaluates the interactions between different units or components to ensure they work together as expected. It's a level up from [unit testing](../U/unit-testing.md) and identifies issues in the interfaces and interaction between integrated components.
-  - **[System testing](../S/system-testing.md)** considers the entire system's behavior and is aimed at verifying that the full, integrated software product meets the specified requirements. It's a higher level of testing that encompasses the complete, integrated software to evaluate the system's compliance with its specified requirements.
-  - **[Acceptance testing](../A/acceptance-testing.md)** is performed to determine whether the system is ready for release. It's typically done by the end-user or client to validate the functionality and performance against the business requirements. Acceptance tests are user-oriented and focus on whether the system does what the users need it to do.
+  - **[Integration testing](https://naodeng.com.cn/en/wiki/integration-testing)** evaluates the interactions between different units or components to ensure they work together as expected. It's a level up from [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) and identifies issues in the interfaces and interaction between integrated components.
+  - **[System testing](https://naodeng.com.cn/en/wiki/system-testing)** considers the entire system's behavior and is aimed at verifying that the full, integrated software product meets the specified requirements. It's a higher level of testing that encompasses the complete, integrated software to evaluate the system's compliance with its specified requirements.
+  - **[Acceptance testing](https://naodeng.com.cn/en/wiki/acceptance-testing)** is performed to determine whether the system is ready for release. It's typically done by the end-user or client to validate the functionality and performance against the business requirements. Acceptance tests are user-oriented and focus on whether the system does what the users need it to do.
 
 #### How does unit testing fit into the software development lifecycle?
 
-  [Unit testing](../U/unit-testing.md) is integral to the **Software Development Lifecycle (SDLC)**, typically embedded within the **coding phase**. As developers write code, they concurrently create unit tests to verify each function or module's correctness. This practice ensures that new code does not break existing functionality and adheres to specified requirements from the outset.
-  In **Agile methodologies**, [unit testing](../U/unit-testing.md) is even more critical as it supports **continuous integration (CI)** and **continuous delivery (CD)**. Developers frequently merge their changes into a shared repository, where automated builds and tests run. Unit tests serve as the first line of defense, catching issues early before they propagate to later stages or production.
-  [Unit testing](../U/unit-testing.md) also plays a role in **refactoring**. When improving or optimizing code, unit tests provide a safety net that confirms the behavior remains consistent. This allows for confident code changes and encourages cleaner, more maintainable codebases.
-  During **maintenance**, unit tests help identify the impact of changes, ensuring that [bug](../B/bug.md) fixes or feature additions do not introduce new issues. They serve as living documentation for the code's expected behavior.
-  In summary, [unit testing](../U/unit-testing.md) is woven throughout the SDLC, from initial development to maintenance, supporting quality, agility, and reliability in software projects. It enables developers to work more efficiently, with a lower risk of introducing errors, and helps maintain high code quality over the software's lifespan.
+  [Unit testing](https://naodeng.com.cn/en/wiki/unit-testing) is integral to the **Software Development Lifecycle (SDLC)**, typically embedded within the **coding phase**. As developers write code, they concurrently create unit tests to verify each function or module's correctness. This practice ensures that new code does not break existing functionality and adheres to specified requirements from the outset.
+  In **Agile methodologies**, [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) is even more critical as it supports **continuous integration (CI)** and **continuous delivery (CD)**. Developers frequently merge their changes into a shared repository, where automated builds and tests run. Unit tests serve as the first line of defense, catching issues early before they propagate to later stages or production.
+  [Unit testing](https://naodeng.com.cn/en/wiki/unit-testing) also plays a role in **refactoring**. When improving or optimizing code, unit tests provide a safety net that confirms the behavior remains consistent. This allows for confident code changes and encourages cleaner, more maintainable codebases.
+  During **maintenance**, unit tests help identify the impact of changes, ensuring that [bug](https://naodeng.com.cn/en/wiki/bug) fixes or feature additions do not introduce new issues. They serve as living documentation for the code's expected behavior.
+  In summary, [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) is woven throughout the SDLC, from initial development to maintenance, supporting quality, agility, and reliability in software projects. It enables developers to work more efficiently, with a lower risk of introducing errors, and helps maintain high code quality over the software's lifespan.
 
 ### Unit Testing Techniques
 
 #### What are the different techniques used in unit testing?
 
-  Different techniques in [unit testing](../U/unit-testing.md) include:
+  Different techniques in [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) include:
 
   - **Black-box Testing**: Focuses on the functionality of the unit without considering its internal code structure. Tests are based on the specifications and requirements.
   - **White-box Testing**: Involves looking at the structure of the code being tested. Tests are based on coverage of code statements, branches, paths, and conditions.
   - **Gray-box Testing**: A combination of both black-box and white-box testing where the tester has limited knowledge of the internal workings of the application.
   - **Positive Testing**: Ensures that the unit behaves as expected when given valid input.
-  - **[Negative Testing](../N/negative-testing.md)**: Ensures that the unit handles invalid input or conditions gracefully.
-  - **[Boundary Testing](../B/boundary-testing.md)**: Focuses on the edge conditions of the input domain, testing the boundaries between partitions.
-  - **[Equivalence Partitioning](../E/equivalence-partitioning.md)**: Divides input data into equivalent partitions that can be tested in a similar manner, reducing the total number of tests needed.
+  - **[Negative Testing](https://naodeng.com.cn/en/wiki/negative-testing)**: Ensures that the unit handles invalid input or conditions gracefully.
+  - **[Boundary Testing](https://naodeng.com.cn/en/wiki/boundary-testing)**: Focuses on the edge conditions of the input domain, testing the boundaries between partitions.
+  - **[Equivalence Partitioning](https://naodeng.com.cn/en/wiki/equivalence-partitioning)**: Divides input data into equivalent partitions that can be tested in a similar manner, reducing the total number of tests needed.
   - **State-based Testing**: Examines the behavior of a unit when it undergoes a sequence of state changes.
-  - **[Mutation Testing](../M/mutation-testing.md)**: Modifies certain parts of the code to check if existing unit tests can detect the changes; it helps in evaluating the quality of the tests.
+  - **[Mutation Testing](https://naodeng.com.cn/en/wiki/mutation-testing)**: Modifies certain parts of the code to check if existing unit tests can detect the changes; it helps in evaluating the quality of the tests.
   - **Property-based Testing**: Generates random input data based on specified properties and checks if the unit behaves correctly across a wide range of inputs.
-  - **[Error Guessing](../E/error-guessing.md)**: Relies on the tester's experience to guess the most probable areas of errors in the unit and to write tests specifically for those error-prone areas.
+  - **[Error Guessing](https://naodeng.com.cn/en/wiki/error-guessing)**: Relies on the tester's experience to guess the most probable areas of errors in the unit and to write tests specifically for those error-prone areas.
   Each technique can be used independently or in combination to ensure comprehensive coverage and robustness of unit tests.
 
   - **Black-box Testing**: Focuses on the functionality of the unit without considering its internal code structure. Tests are based on the specifications and requirements.
   - **White-box Testing**: Involves looking at the structure of the code being tested. Tests are based on coverage of code statements, branches, paths, and conditions.
   - **Gray-box Testing**: A combination of both black-box and white-box testing where the tester has limited knowledge of the internal workings of the application.
   - **Positive Testing**: Ensures that the unit behaves as expected when given valid input.
-  - **[Negative Testing](../N/negative-testing.md)**: Ensures that the unit handles invalid input or conditions gracefully.
-  - **[Boundary Testing](../B/boundary-testing.md)**: Focuses on the edge conditions of the input domain, testing the boundaries between partitions.
-  - **[Equivalence Partitioning](../E/equivalence-partitioning.md)**: Divides input data into equivalent partitions that can be tested in a similar manner, reducing the total number of tests needed.
+  - **[Negative Testing](https://naodeng.com.cn/en/wiki/negative-testing)**: Ensures that the unit handles invalid input or conditions gracefully.
+  - **[Boundary Testing](https://naodeng.com.cn/en/wiki/boundary-testing)**: Focuses on the edge conditions of the input domain, testing the boundaries between partitions.
+  - **[Equivalence Partitioning](https://naodeng.com.cn/en/wiki/equivalence-partitioning)**: Divides input data into equivalent partitions that can be tested in a similar manner, reducing the total number of tests needed.
   - **State-based Testing**: Examines the behavior of a unit when it undergoes a sequence of state changes.
-  - **[Mutation Testing](../M/mutation-testing.md)**: Modifies certain parts of the code to check if existing unit tests can detect the changes; it helps in evaluating the quality of the tests.
+  - **[Mutation Testing](https://naodeng.com.cn/en/wiki/mutation-testing)**: Modifies certain parts of the code to check if existing unit tests can detect the changes; it helps in evaluating the quality of the tests.
   - **Property-based Testing**: Generates random input data based on specified properties and checks if the unit behaves correctly across a wide range of inputs.
-  - **[Error Guessing](../E/error-guessing.md)**: Relies on the tester's experience to guess the most probable areas of errors in the unit and to write tests specifically for those error-prone areas.
+  - **[Error Guessing](https://naodeng.com.cn/en/wiki/error-guessing)**: Relies on the tester's experience to guess the most probable areas of errors in the unit and to write tests specifically for those error-prone areas.
 
 #### What is test-driven development?
 
-  [Test-Driven Development](../T/test-driven-development.md) (TDD) is a **software development process** that relies on the repetition of a very short development cycle. Developers first write an **automated [test case](../T/test-case.md)** that defines a desired improvement or new function, then produce the **minimum amount of code** to pass that test, and finally **refactor** the new code to acceptable standards.
-  TDD is primarily a **design philosophy** that emphasizes writing tests before writing the corresponding functionality in the codebase. The process starts with developing [test cases](../T/test-case.md) for the smallest unit of functionality, often at the function or method level. These tests are expected to fail initially, which is a key aspect of TDD's red-green-refactor cycle:
+  [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD) is a **software development process** that relies on the repetition of a very short development cycle. Developers first write an **automated [test case](https://naodeng.com.cn/en/wiki/test-case)** that defines a desired improvement or new function, then produce the **minimum amount of code** to pass that test, and finally **refactor** the new code to acceptable standards.
+  TDD is primarily a **design philosophy** that emphasizes writing tests before writing the corresponding functionality in the codebase. The process starts with developing [test cases](https://naodeng.com.cn/en/wiki/test-case) for the smallest unit of functionality, often at the function or method level. These tests are expected to fail initially, which is a key aspect of TDD's red-green-refactor cycle:
 
   1. **Red** : Write a failing test that reflects the desired change or new feature.
   2. **Green** : Implement the code that makes the test pass.
@@ -220,15 +219,15 @@ The practice of testing individual software units or components to validate thei
 
 #### What is behavior-driven development?
 
-  Behavior-Driven Development ([BDD](../B/bdd.md)) is an agile software development process that encourages collaboration between developers, QA, and non-technical or business participants in a software project. It focuses on obtaining a clear understanding of desired software behavior through discussion with stakeholders. [BDD](../B/bdd.md) extends [Test-Driven Development](../T/test-driven-development.md) (TDD) by writing [test cases](../T/test-case.md) in a natural language that non-programmers can read.
-  Tests in [BDD](../B/bdd.md) are based on user stories and described using a language called [Gherkin](../G/gherkin.md). [Gherkin](../G/gherkin.md) uses a set of special keywords to give structure and meaning to executable specifications. The most important keywords are:
+  Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) is an agile software development process that encourages collaboration between developers, QA, and non-technical or business participants in a software project. It focuses on obtaining a clear understanding of desired software behavior through discussion with stakeholders. [BDD](https://naodeng.com.cn/en/wiki/bdd) extends [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD) by writing [test cases](https://naodeng.com.cn/en/wiki/test-case) in a natural language that non-programmers can read.
+  Tests in [BDD](https://naodeng.com.cn/en/wiki/bdd) are based on user stories and described using a language called [Gherkin](https://naodeng.com.cn/en/wiki/gherkin). [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) uses a set of special keywords to give structure and meaning to executable specifications. The most important keywords are:
 
   - **Feature** : A notable aspect of the system.
   - **Scenario** : A specific behavior or use case.
   - **Given** : The initial context at the beginning of the scenario.
   - **When** : An event that triggers the scenario.
   - **Then** : The expected outcome, given the context and event.
-  Here's an example of a [BDD](../B/bdd.md) [test case](../T/test-case.md):
+  Here's an example of a [BDD](https://naodeng.com.cn/en/wiki/bdd) [test case](https://naodeng.com.cn/en/wiki/test-case):
 
   ```
   Feature: User login
@@ -237,7 +236,7 @@ The practice of testing individual software units or components to validate thei
     When they enter their correct username and password
     Then they should be granted access to their dashboard
   ```
-  [BDD](../B/bdd.md) tools like Cucumber, SpecFlow, or Behat parse these specifications and execute them as tests. The results inform whether the software behaves as expected. [BDD](../B/bdd.md) helps ensure that all stakeholders have a shared understanding of the requirements and that the software meets those requirements. It bridges the gap between technical and non-technical team members, fostering better communication and collaboration.
+  [BDD](https://naodeng.com.cn/en/wiki/bdd) tools like Cucumber, SpecFlow, or Behat parse these specifications and execute them as tests. The results inform whether the software behaves as expected. [BDD](https://naodeng.com.cn/en/wiki/bdd) helps ensure that all stakeholders have a shared understanding of the requirements and that the software meets those requirements. It bridges the gap between technical and non-technical team members, fostering better communication and collaboration.
 
   - **Feature** : A notable aspect of the system.
   - **Scenario** : A specific behavior or use case.
@@ -255,9 +254,9 @@ The practice of testing individual software units or components to validate thei
   - **Repeatability**: Tests should yield the same results regardless of the environment they are run in. Avoid relying on external states or data.
   - **Automatability**: Ensure that tests can be run automatically without manual steps.
   - **Speed**: Keep tests fast to maintain a quick feedback loop.
-  - **Robustness**: Tests should not break with minor changes in the unit's implementation. Test against the unit's public [API](../A/api.md) and avoid testing internal structures.
+  - **Robustness**: Tests should not break with minor changes in the unit's implementation. Test against the unit's public [API](https://naodeng.com.cn/en/wiki/api) and avoid testing internal structures.
   - **Maintenance**: Write tests that are easy to maintain. Refactor tests when necessary to keep them in sync with the codebase.
-  Here's an example of a simple unit test in TypeScript using [Jest](../J/jest.md):
+  Here's an example of a simple unit test in TypeScript using [Jest](https://naodeng.com.cn/en/wiki/jest):
 
   ```
   import { add } from './math';
@@ -273,12 +272,12 @@ The practice of testing individual software units or components to validate thei
   - **Repeatability**: Tests should yield the same results regardless of the environment they are run in. Avoid relying on external states or data.
   - **Automatability**: Ensure that tests can be run automatically without manual steps.
   - **Speed**: Keep tests fast to maintain a quick feedback loop.
-  - **Robustness**: Tests should not break with minor changes in the unit's implementation. Test against the unit's public [API](../A/api.md) and avoid testing internal structures.
+  - **Robustness**: Tests should not break with minor changes in the unit's implementation. Test against the unit's public [API](https://naodeng.com.cn/en/wiki/api) and avoid testing internal structures.
   - **Maintenance**: Write tests that are easy to maintain. Refactor tests when necessary to keep them in sync with the codebase.
 
 #### What is the role of mock objects in unit testing?
 
-  Mock objects play a crucial role in **[unit testing](../U/unit-testing.md)** by simulating the behavior of real objects. They are used to create a controlled environment where the test focuses solely on the unit of work, without external dependencies like [databases](../D/database.md), network calls, or other services.
+  Mock objects play a crucial role in **[unit testing](https://naodeng.com.cn/en/wiki/unit-testing)** by simulating the behavior of real objects. They are used to create a controlled environment where the test focuses solely on the unit of work, without external dependencies like [databases](https://naodeng.com.cn/en/wiki/database), network calls, or other services.
   By using mock objects, you can:
 
   - **Isolate**
@@ -310,7 +309,7 @@ The practice of testing individual software units or components to validate thei
     });
   });
   ```
-  In this example, `UserRepository` is mocked to focus on testing the `UserService.create` method without actually hitting the [database](../D/database.md). Mocking ensures that the test remains fast and reliable, with predictable outcomes.
+  In this example, `UserRepository` is mocked to focus on testing the `UserService.create` method without actually hitting the [database](https://naodeng.com.cn/en/wiki/database). Mocking ensures that the test remains fast and reliable, with predictable outcomes.
 
   - **Isolate**
     the unit of code being tested, ensuring that failures are due to issues within the unit itself, not in the interactions with external systems or dependencies.
@@ -328,38 +327,38 @@ The practice of testing individual software units or components to validate thei
 
 #### What are some popular unit testing tools?
 
-  Popular [unit testing](../U/unit-testing.md) tools vary by programming language and development environment. Here are some widely-used options:
+  Popular [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) tools vary by programming language and development environment. Here are some widely-used options:
 
   - **JUnit** : A staple for Java developers, offering annotations and assertions to streamline testing.
-  - **[NUnit](../N/nunit.md)** : Similar to JUnit but for the .NET framework, it supports parallel testing and has a strong community.
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)** : Similar to JUnit but for the .NET framework, it supports parallel testing and has a strong community.
   - **TestNG** : Another Java-based tool, it provides more flexible test configurations and supports data-driven testing.
   - **PHPUnit** : The go-to for PHP, it's easily integrated with CI tools and supports database testing.
   - **RSpec** : A Behavior-Driven Development (BDD) framework for Ruby, it's known for its readable syntax.
   - **MSTest** : Microsoft's test framework, integrated with Visual Studio, it's convenient for .NET developers.
   - **xUnit.net** : An open-source tool for .NET with support for theory tests and a clean execution model.
   - **pytest** : A powerful Python tool with a simple syntax, it's extensible with plugins.
-  - **[Jest](../J/jest.md)** : Popular in the JavaScript world, especially for React applications, it offers snapshot testing.
+  - **[Jest](https://naodeng.com.cn/en/wiki/jest)** : Popular in the JavaScript world, especially for React applications, it offers snapshot testing.
   - **Mocha** : Another JavaScript framework, it's flexible and supports asynchronous testing.
   - **QUnit** : Designed for jQuery, it's useful for testing JavaScript in any environment.
   - **Google Test** : For C++ developers, it's cross-platform and supports advanced features like mock objects.
-  Each tool offers unique features, such as **[code coverage](../C/code-coverage.md) analysis**, **test discovery**, and **integration with development environments**. Selecting the right tool often depends on the specific needs of the project and the preferences of the development team.
+  Each tool offers unique features, such as **[code coverage](https://naodeng.com.cn/en/wiki/code-coverage) analysis**, **test discovery**, and **integration with development environments**. Selecting the right tool often depends on the specific needs of the project and the preferences of the development team.
 
   - **JUnit** : A staple for Java developers, offering annotations and assertions to streamline testing.
-  - **[NUnit](../N/nunit.md)** : Similar to JUnit but for the .NET framework, it supports parallel testing and has a strong community.
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)** : Similar to JUnit but for the .NET framework, it supports parallel testing and has a strong community.
   - **TestNG** : Another Java-based tool, it provides more flexible test configurations and supports data-driven testing.
   - **PHPUnit** : The go-to for PHP, it's easily integrated with CI tools and supports database testing.
   - **RSpec** : A Behavior-Driven Development (BDD) framework for Ruby, it's known for its readable syntax.
   - **MSTest** : Microsoft's test framework, integrated with Visual Studio, it's convenient for .NET developers.
   - **xUnit.net** : An open-source tool for .NET with support for theory tests and a clean execution model.
   - **pytest** : A powerful Python tool with a simple syntax, it's extensible with plugins.
-  - **[Jest](../J/jest.md)** : Popular in the JavaScript world, especially for React applications, it offers snapshot testing.
+  - **[Jest](https://naodeng.com.cn/en/wiki/jest)** : Popular in the JavaScript world, especially for React applications, it offers snapshot testing.
   - **Mocha** : Another JavaScript framework, it's flexible and supports asynchronous testing.
   - **QUnit** : Designed for jQuery, it's useful for testing JavaScript in any environment.
   - **Google Test** : For C++ developers, it's cross-platform and supports advanced features like mock objects.
 
 #### How do you choose the right unit testing tool?
 
-  Choosing the right [unit testing](../U/unit-testing.md) tool involves evaluating several factors to ensure it aligns with your project's needs:
+  Choosing the right [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) tool involves evaluating several factors to ensure it aligns with your project's needs:
 
   - **Language Support** : Ensure the tool supports the programming languages used in your project.
   - **Integration** : Look for tools that integrate seamlessly with your development environment and CI/CD pipeline.
@@ -384,16 +383,16 @@ The practice of testing individual software units or components to validate thei
 
 #### What are the features of a good unit testing tool?
 
-  A good [unit testing](../U/unit-testing.md) tool should have the following features:
+  A good [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) tool should have the following features:
 
   - **Ease of Integration** : It should easily integrate with development environments and build processes.
   - **Support for Multiple Languages and Frameworks** : Compatibility with the languages and frameworks in use.
-  - **Isolation of [Test Cases](../T/test-case.md)** : Ability to mock or stub out external dependencies to ensure tests are isolated.
-  - **[Test Runners](../T/test-runner.md)** : Built-in or compatible test runners that can execute tests and report results.
+  - **Isolation of [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Ability to mock or stub out external dependencies to ensure tests are isolated.
+  - **[Test Runners](https://naodeng.com.cn/en/wiki/test-runner)** : Built-in or compatible test runners that can execute tests and report results.
   - **Assertion Library** : A comprehensive set of assertions to validate test outcomes.
-  - **[Test Coverage](../T/test-coverage.md) Analysis** : Tools to measure and report code coverage to identify untested parts of the codebase.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage) Analysis** : Tools to measure and report code coverage to identify untested parts of the codebase.
   - **Performance and Scalability** : Efficient execution of tests, even as the number of tests grows.
-  - **Parallel [Test Execution](../T/test-execution.md)** : Support for running tests in parallel to speed up the process.
+  - **Parallel [Test Execution](https://naodeng.com.cn/en/wiki/test-execution)** : Support for running tests in parallel to speed up the process.
   - **Automated Test Discovery** : Automatic detection of new and existing tests to ensure all are executed.
   - **Continuous Integration (CI) Compatibility** : Seamless integration with CI/CD pipelines for automated testing.
   - **Debugging Capabilities** : Features that help in diagnosing and fixing failing tests.
@@ -401,16 +400,16 @@ The practice of testing individual software units or components to validate thei
   - **Documentation and Community Support** : Comprehensive documentation and a strong community for troubleshooting and support.
   - **Extensibility** : Ability to extend the tool with plugins or additional frameworks as needed.
   - **Licensing and Cost** : Consideration of licensing terms and costs associated with the tool.
-  Selecting a [unit testing](../U/unit-testing.md) tool with these features will contribute to a robust and efficient [test automation](../T/test-automation.md) strategy.
+  Selecting a [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) tool with these features will contribute to a robust and efficient [test automation](https://naodeng.com.cn/en/wiki/test-automation) strategy.
 
   - **Ease of Integration** : It should easily integrate with development environments and build processes.
   - **Support for Multiple Languages and Frameworks** : Compatibility with the languages and frameworks in use.
-  - **Isolation of [Test Cases](../T/test-case.md)** : Ability to mock or stub out external dependencies to ensure tests are isolated.
-  - **[Test Runners](../T/test-runner.md)** : Built-in or compatible test runners that can execute tests and report results.
+  - **Isolation of [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Ability to mock or stub out external dependencies to ensure tests are isolated.
+  - **[Test Runners](https://naodeng.com.cn/en/wiki/test-runner)** : Built-in or compatible test runners that can execute tests and report results.
   - **Assertion Library** : A comprehensive set of assertions to validate test outcomes.
-  - **[Test Coverage](../T/test-coverage.md) Analysis** : Tools to measure and report code coverage to identify untested parts of the codebase.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage) Analysis** : Tools to measure and report code coverage to identify untested parts of the codebase.
   - **Performance and Scalability** : Efficient execution of tests, even as the number of tests grows.
-  - **Parallel [Test Execution](../T/test-execution.md)** : Support for running tests in parallel to speed up the process.
+  - **Parallel [Test Execution](https://naodeng.com.cn/en/wiki/test-execution)** : Support for running tests in parallel to speed up the process.
   - **Automated Test Discovery** : Automatic detection of new and existing tests to ensure all are executed.
   - **Continuous Integration (CI) Compatibility** : Seamless integration with CI/CD pipelines for automated testing.
   - **Debugging Capabilities** : Features that help in diagnosing and fixing failing tests.
@@ -421,10 +420,10 @@ The practice of testing individual software units or components to validate thei
 
 #### How do you use a unit testing tool?
 
-  Using a [unit testing](../U/unit-testing.md) tool typically involves the following steps:
+  Using a [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) tool typically involves the following steps:
 
-  1. **Set up your testing environment**: Install the [unit testing](../U/unit-testing.md) tool and configure it to work with your development environment.
-  2. **Create [test cases](../T/test-case.md)**: Write test methods that focus on small units of your code. Use assertions to define expected outcomes.
+  1. **Set up your testing environment**: Install the [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) tool and configure it to work with your development environment.
+  2. **Create [test cases](https://naodeng.com.cn/en/wiki/test-case)**: Write test methods that focus on small units of your code. Use assertions to define expected outcomes.
 
     ```
     function testAddition() {
@@ -432,7 +431,7 @@ The practice of testing individual software units or components to validate thei
     }
     ```
 
-  3. **Arrange, Act, and Assert (AAA) Pattern**: Structure your tests with [setup](../S/setup.md) (`Arrange`), invocation (`Act`), and [verification](../V/verification.md) (`Assert`).
+  3. **Arrange, Act, and Assert (AAA) Pattern**: Structure your tests with [setup](https://naodeng.com.cn/en/wiki/setup) (`Arrange`), invocation (`Act`), and [verification](https://naodeng.com.cn/en/wiki/verification) (`Assert`).
 
     ```
     // Arrange
@@ -443,15 +442,15 @@ The practice of testing individual software units or components to validate thei
     assertEquals(result, 4);
     ```
 
-  4. **Run tests**: Execute your tests using the tool's [test runner](../T/test-runner.md). This can often be done from the command line or within an IDE.
+  4. **Run tests**: Execute your tests using the tool's [test runner](https://naodeng.com.cn/en/wiki/test-runner). This can often be done from the command line or within an IDE.
   5. **Review test results**: Analyze the output provided by the tool to see which tests passed or failed.
   6. **Refactor and repeat**: If tests fail, refactor your code and run the tests again. Continue this process until all tests pass.
   7. **Integrate with build**: Automate your unit tests by integrating them with your build process, ensuring they are run regularly.
-  8. **Monitor [code coverage](../C/code-coverage.md)**: Use the tool's [code coverage](../C/code-coverage.md) feature to ensure that your tests are covering a significant portion of your codebase.
+  8. **Monitor [code coverage](https://naodeng.com.cn/en/wiki/code-coverage)**: Use the tool's [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) feature to ensure that your tests are covering a significant portion of your codebase.
   Remember to isolate the unit of work, mock dependencies using mock objects or frameworks, and keep your tests independent and repeatable. Regularly review and refactor tests to keep them effective and maintainable.
 
-  1. **Set up your testing environment**: Install the [unit testing](../U/unit-testing.md) tool and configure it to work with your development environment.
-  2. **Create [test cases](../T/test-case.md)**: Write test methods that focus on small units of your code. Use assertions to define expected outcomes.
+  1. **Set up your testing environment**: Install the [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) tool and configure it to work with your development environment.
+  2. **Create [test cases](https://naodeng.com.cn/en/wiki/test-case)**: Write test methods that focus on small units of your code. Use assertions to define expected outcomes.
 
     ```
     function testAddition() {
@@ -459,7 +458,7 @@ The practice of testing individual software units or components to validate thei
     }
     ```
 
-  3. **Arrange, Act, and Assert (AAA) Pattern**: Structure your tests with [setup](../S/setup.md) (`Arrange`), invocation (`Act`), and [verification](../V/verification.md) (`Assert`).
+  3. **Arrange, Act, and Assert (AAA) Pattern**: Structure your tests with [setup](https://naodeng.com.cn/en/wiki/setup) (`Arrange`), invocation (`Act`), and [verification](https://naodeng.com.cn/en/wiki/verification) (`Assert`).
 
     ```
     // Arrange
@@ -470,41 +469,41 @@ The practice of testing individual software units or components to validate thei
     assertEquals(result, 4);
     ```
 
-  4. **Run tests**: Execute your tests using the tool's [test runner](../T/test-runner.md). This can often be done from the command line or within an IDE.
+  4. **Run tests**: Execute your tests using the tool's [test runner](https://naodeng.com.cn/en/wiki/test-runner). This can often be done from the command line or within an IDE.
   5. **Review test results**: Analyze the output provided by the tool to see which tests passed or failed.
   6. **Refactor and repeat**: If tests fail, refactor your code and run the tests again. Continue this process until all tests pass.
   7. **Integrate with build**: Automate your unit tests by integrating them with your build process, ensuring they are run regularly.
-  8. **Monitor [code coverage](../C/code-coverage.md)**: Use the tool's [code coverage](../C/code-coverage.md) feature to ensure that your tests are covering a significant portion of your codebase.
+  8. **Monitor [code coverage](https://naodeng.com.cn/en/wiki/code-coverage)**: Use the tool's [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) feature to ensure that your tests are covering a significant portion of your codebase.
 
 ### Best Practices
 
 #### What are the best practices for unit testing?
 
-  Best practices for [unit testing](../U/unit-testing.md) include:
+  Best practices for [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) include:
 
   - **Write clear, descriptive test names**: Your test names should document what your test is doing. For example, `testIsEmptyListReturnedWhenNoElementsAdded()` is more informative than `testList()`.
-  - **Keep tests independent**: Each test should run independently of other tests. Avoid shared state between tests to prevent interdependencies that can cause [flaky tests](../F/flaky-test.md).
+  - **Keep tests independent**: Each test should run independently of other tests. Avoid shared state between tests to prevent interdependencies that can cause [flaky tests](https://naodeng.com.cn/en/wiki/flaky-test).
   - **Test one concept per test**: Focus on a single behavior or aspect of the unit. This makes it easier to identify what's broken when a test fails.
-  - **Use Arrange-Act-Assert (AAA) pattern**: Structure your tests with [setup](../S/setup.md) (`Arrange`), invocation of the behavior under test (`Act`), and assertions (`Assert`).
+  - **Use Arrange-Act-Assert (AAA) pattern**: Structure your tests with [setup](https://naodeng.com.cn/en/wiki/setup) (`Arrange`), invocation of the behavior under test (`Act`), and assertions (`Assert`).
   - **Assert on expected outcomes**: Ensure your tests check that the unit behaves as expected. Use meaningful assertions rather than generic ones like `assertNotNull()`.
-  - **Test boundary conditions**: Include tests for edge cases and boundary conditions to catch potential off-by-one errors and other boundary-related [bugs](../B/bug.md).
+  - **Test boundary conditions**: Include tests for edge cases and boundary conditions to catch potential off-by-one errors and other boundary-related [bugs](https://naodeng.com.cn/en/wiki/bug).
   - **Keep tests fast**: Unit tests should be quick to execute to encourage frequent test runs.
   - **Refactor tests**: Apply the same quality standards to your test code as you would to production code. Refactor tests to keep them clean and maintainable.
-  - **Use [code coverage](../C/code-coverage.md) tools**: Aim for high [code coverage](../C/code-coverage.md) but don't target 100% blindly. Focus on testing the critical paths and complex logic.
+  - **Use [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools**: Aim for high [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) but don't target 100% blindly. Focus on testing the critical paths and complex logic.
   - **Avoid testing implementation details**: Test the public interface of units. Testing implementation can lead to brittle tests that break with any refactoring.
   - **Handle expected exceptions**: If a unit is supposed to throw an exception under certain conditions, write a test to assert that the exception is thrown.
   - **Use mock objects judiciously**: Mock dependencies to isolate the unit under test, but don't overuse mocks as they can hide problems and create tightly coupled tests.
-  Remember, the goal of [unit testing](../U/unit-testing.md) is to create a reliable and maintainable [test suite](../T/test-suite.md) that provides confidence in the behavior of your units.
+  Remember, the goal of [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) is to create a reliable and maintainable [test suite](https://naodeng.com.cn/en/wiki/test-suite) that provides confidence in the behavior of your units.
 
   - **Write clear, descriptive test names**: Your test names should document what your test is doing. For example, `testIsEmptyListReturnedWhenNoElementsAdded()` is more informative than `testList()`.
-  - **Keep tests independent**: Each test should run independently of other tests. Avoid shared state between tests to prevent interdependencies that can cause [flaky tests](../F/flaky-test.md).
+  - **Keep tests independent**: Each test should run independently of other tests. Avoid shared state between tests to prevent interdependencies that can cause [flaky tests](https://naodeng.com.cn/en/wiki/flaky-test).
   - **Test one concept per test**: Focus on a single behavior or aspect of the unit. This makes it easier to identify what's broken when a test fails.
-  - **Use Arrange-Act-Assert (AAA) pattern**: Structure your tests with [setup](../S/setup.md) (`Arrange`), invocation of the behavior under test (`Act`), and assertions (`Assert`).
+  - **Use Arrange-Act-Assert (AAA) pattern**: Structure your tests with [setup](https://naodeng.com.cn/en/wiki/setup) (`Arrange`), invocation of the behavior under test (`Act`), and assertions (`Assert`).
   - **Assert on expected outcomes**: Ensure your tests check that the unit behaves as expected. Use meaningful assertions rather than generic ones like `assertNotNull()`.
-  - **Test boundary conditions**: Include tests for edge cases and boundary conditions to catch potential off-by-one errors and other boundary-related [bugs](../B/bug.md).
+  - **Test boundary conditions**: Include tests for edge cases and boundary conditions to catch potential off-by-one errors and other boundary-related [bugs](https://naodeng.com.cn/en/wiki/bug).
   - **Keep tests fast**: Unit tests should be quick to execute to encourage frequent test runs.
   - **Refactor tests**: Apply the same quality standards to your test code as you would to production code. Refactor tests to keep them clean and maintainable.
-  - **Use [code coverage](../C/code-coverage.md) tools**: Aim for high [code coverage](../C/code-coverage.md) but don't target 100% blindly. Focus on testing the critical paths and complex logic.
+  - **Use [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools**: Aim for high [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) but don't target 100% blindly. Focus on testing the critical paths and complex logic.
   - **Avoid testing implementation details**: Test the public interface of units. Testing implementation can lead to brittle tests that break with any refactoring.
   - **Handle expected exceptions**: If a unit is supposed to throw an exception under certain conditions, write a test to assert that the exception is thrown.
   - **Use mock objects judiciously**: Mock dependencies to isolate the unit under test, but don't overuse mocks as they can hide problems and create tightly coupled tests.
@@ -530,7 +529,7 @@ The practice of testing individual software units or components to validate thei
   - **Before merging a branch** : Helps maintain the stability of the main development branch.
   - **As part of a pull request review** : Prevents introducing defects into the codebase.
   - **On a scheduled basis** : Catches issues that might be missed by event-based triggers, such as nightly builds.
-  In a **[Test-Driven Development](../T/test-driven-development.md)** (TDD) environment, unit tests are run even more frequently, as they are part of the red-green-refactor cycle:
+  In a **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development)** (TDD) environment, unit tests are run even more frequently, as they are part of the red-green-refactor cycle:
 
   1. Write a failing unit test (red).
   2. Write the minimal code to pass the test (green).
@@ -576,7 +575,7 @@ The practice of testing individual software units or components to validate thei
   - **Run tests regularly**
     , ideally through continuous integration, to catch issues early.
 
-  - **Update tests before fixing [bugs](../B/bug.md)**
+  - **Update tests before fixing [bugs](https://naodeng.com.cn/en/wiki/bug)**
     to ensure they capture the bug and validate the fix.
 
   - **Document test intent**
@@ -588,7 +587,7 @@ The practice of testing individual software units or components to validate thei
   - **Review tests**
     during code reviews to ensure they adhere to best practices and are up to date.
 
-  - **Monitor [test coverage](../T/test-coverage.md)**
+  - **Monitor [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)**
     to ensure new code is being tested and to identify redundant or missing tests.
 
   - **Parameterize tests**
@@ -610,7 +609,7 @@ The practice of testing individual software units or components to validate thei
   - **Run tests regularly**
     , ideally through continuous integration, to catch issues early.
 
-  - **Update tests before fixing [bugs](../B/bug.md)**
+  - **Update tests before fixing [bugs](https://naodeng.com.cn/en/wiki/bug)**
     to ensure they capture the bug and validate the fix.
 
   - **Document test intent**
@@ -622,7 +621,7 @@ The practice of testing individual software units or components to validate thei
   - **Review tests**
     during code reviews to ensure they adhere to best practices and are up to date.
 
-  - **Monitor [test coverage](../T/test-coverage.md)**
+  - **Monitor [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)**
     to ensure new code is being tested and to identify redundant or missing tests.
 
   - **Parameterize tests**
@@ -632,7 +631,7 @@ The practice of testing individual software units or components to validate thei
 
   When a unit test fails, **immediately investigate** the cause. Follow these steps:
 
-  1. **Review the [test case](../T/test-case.md)**
+  1. **Review the [test case](https://naodeng.com.cn/en/wiki/test-case)**
     to ensure it's correctly designed and is testing what it's supposed to.
 
   2. **Run the test again**
@@ -656,7 +655,7 @@ The practice of testing individual software units or components to validate thei
   8. **Refactor the code**
     if the fix adds complexity or duplicates logic, ensuring that all tests still pass.
 
-  9. **Run the full [test suite](../T/test-suite.md)**
+  9. **Run the full [test suite](https://naodeng.com.cn/en/wiki/test-suite)**
     to confirm that the change hasn't broken anything else.
 
   10. **Commit both the fix and the test**
@@ -666,7 +665,7 @@ The practice of testing individual software units or components to validate thei
     and resolution if it's a recurring problem or could benefit the team.
   Remember, a failing unit test is a valuable signal that there's a problem in the code that needs attention. Treat it as an opportunity to improve the codebase and prevent future issues.
 
-  1. **Review the [test case](../T/test-case.md)**
+  1. **Review the [test case](https://naodeng.com.cn/en/wiki/test-case)**
     to ensure it's correctly designed and is testing what it's supposed to.
 
   2. **Run the test again**
@@ -690,7 +689,7 @@ The practice of testing individual software units or components to validate thei
   8. **Refactor the code**
     if the fix adds complexity or duplicates logic, ensuring that all tests still pass.
 
-  9. **Run the full [test suite](../T/test-suite.md)**
+  9. **Run the full [test suite](https://naodeng.com.cn/en/wiki/test-suite)**
     to confirm that the change hasn't broken anything else.
 
   10. **Commit both the fix and the test**

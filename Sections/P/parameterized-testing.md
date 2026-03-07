@@ -1,6 +1,5 @@
 # Parameterized Testing
 
-
 <!-- TOC START -->
 - [Questions about Parameterized Testing ?](#questions-about-parameterized-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -31,7 +30,7 @@ Executing the same test using varied data sets.
 
 #### What is parameterized testing in software testing?
 
-  [Parameterized testing](../P/parameterized-testing.md) involves executing the same [test case](../T/test-case.md) with varying input values. This technique allows for the externalization of input data, enabling tests to run with multiple sets of data by simply defining them once. It's particularly useful when the logic being tested should yield consistent outcomes across a range of inputs.
+  [Parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) involves executing the same [test case](https://naodeng.com.cn/en/wiki/test-case) with varying input values. This technique allows for the externalization of input data, enabling tests to run with multiple sets of data by simply defining them once. It's particularly useful when the logic being tested should yield consistent outcomes across a range of inputs.
   In practice, parameterized tests are often structured as a single test method that's fed different values from a data source. Here's an example using JUnit 5:
 
   ```
@@ -43,15 +42,15 @@ Executing the same test using varied data sets.
   ```
   In this snippet, the `testWithDifferentInputs` method will run three times with different `input` values each time.
   To pass data, most frameworks provide annotations or functions that can be used to specify the source of the parameters, such as `@ValueSource`, `@CsvSource`, `@MethodSource`, or `@ArgumentsSource` in JUnit 5.
-  When implementing parameterized tests, it's crucial to ensure that the test logic is not tied to specific data values and that the test remains clear and understandable despite the abstraction of input values. This often involves careful naming of test methods and thoughtful organization of [test data](../T/test-data.md).
+  When implementing parameterized tests, it's crucial to ensure that the test logic is not tied to specific data values and that the test remains clear and understandable despite the abstraction of input values. This often involves careful naming of test methods and thoughtful organization of [test data](https://naodeng.com.cn/en/wiki/test-data).
   For handling failures, it's important that the testing framework provides clear output indicating which set of parameters caused the test to fail, allowing for quick identification and resolution of issues.
 
 #### Why is parameterized testing important?
 
-  [Parameterized testing](../P/parameterized-testing.md) is crucial for ensuring **[test coverage](../T/test-coverage.md)** across a wide range of input values without duplicating test code. It allows for the execution of the same test logic with different inputs, leading to more efficient and scalable [test cases](../T/test-case.md). By separating test logic from data, it enables a **cleaner**, **more organized** approach to writing tests.
+  [Parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) is crucial for ensuring **[test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** across a wide range of input values without duplicating test code. It allows for the execution of the same test logic with different inputs, leading to more efficient and scalable [test cases](https://naodeng.com.cn/en/wiki/test-case). By separating test logic from data, it enables a **cleaner**, **more organized** approach to writing tests.
   In practice, parameterized tests can be used to **verify behavior** across various scenarios, including edge cases, without the need for multiple, nearly identical test methods. This not only **reduces the amount of code** but also **simplifies maintenance**; a single fix or improvement in the test logic applies to all data sets.
-  Moreover, [parameterized testing](../P/parameterized-testing.md) facilitates **data-driven testing** strategies, where [test data](../T/test-data.md) can be sourced from external files or generated at runtime, making it easier to extend [test coverage](../T/test-coverage.md). It also aids in **isolating failures**, as each data set runs as a separate instance of the test, making it clear which specific input caused the failure.
-  To implement [parameterized testing](../P/parameterized-testing.md), most testing frameworks provide annotations or functions to define the data sets and link them to the [test cases](../T/test-case.md). For example, in JUnit 5, you can use `@ParameterizedTest` along with `@ValueSource`, `@CsvSource`, or `@MethodSource` to supply the parameters.
+  Moreover, [parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) facilitates **data-driven testing** strategies, where [test data](https://naodeng.com.cn/en/wiki/test-data) can be sourced from external files or generated at runtime, making it easier to extend [test coverage](https://naodeng.com.cn/en/wiki/test-coverage). It also aids in **isolating failures**, as each data set runs as a separate instance of the test, making it clear which specific input caused the failure.
+  To implement [parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing), most testing frameworks provide annotations or functions to define the data sets and link them to the [test cases](https://naodeng.com.cn/en/wiki/test-case). For example, in JUnit 5, you can use `@ParameterizedTest` along with `@ValueSource`, `@CsvSource`, or `@MethodSource` to supply the parameters.
 
   ```
   @ParameterizedTest
@@ -60,11 +59,11 @@ Executing the same test using varied data sets.
       // Test logic here
   }
   ```
-  When handling failures, it's important to ensure that the [test reports](../T/test-report.md) clearly indicate which parameters caused the test to fail, allowing for quick identification and resolution of issues.
+  When handling failures, it's important to ensure that the [test reports](https://naodeng.com.cn/en/wiki/test-report) clearly indicate which parameters caused the test to fail, allowing for quick identification and resolution of issues.
 
 #### What are the benefits of using parameterized tests?
 
-  Parameterized tests offer several benefits that streamline the testing process and enhance [test coverage](../T/test-coverage.md):
+  Parameterized tests offer several benefits that streamline the testing process and enhance [test coverage](https://naodeng.com.cn/en/wiki/test-coverage):
 
   - **Efficiency** : By running the same test with different inputs, you reduce the amount of code needed, avoiding repetitive test cases.
   - **Clarity** : They make it clear which inputs cause a test to fail, as each data set is usually run as a separate test instance.
@@ -85,35 +84,35 @@ Executing the same test using varied data sets.
 
 #### How does parameterized testing improve the quality of software?
 
-  [Parameterized testing](../P/parameterized-testing.md) enhances [software quality](../S/software-quality.md) by enabling **comprehensive coverage** of [test scenarios](../T/test-scenario.md) through the injection of various input values. This approach ensures that functions are tested across a wide range of inputs, uncovering edge cases and potential [bugs](../B/bug.md) that might be missed with traditional [test cases](../T/test-case.md). By automating the process of running the same test with different data, it reduces the likelihood of human error and increases the **efficiency** of the testing process.
-  The use of parameterized tests also promotes **code reusability** and **[maintainability](../M/maintainability.md)**, as a single [test case](../T/test-case.md) can verify multiple paths of the code under test. This leads to a cleaner and more organized [test suite](../T/test-suite.md), making it easier to manage and update. Moreover, [parameterized testing](../P/parameterized-testing.md) can be particularly effective in identifying issues related to data handling, such as data type errors, boundary-related [bugs](../B/bug.md), and problems with data-dependent logic.
+  [Parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by enabling **comprehensive coverage** of [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) through the injection of various input values. This approach ensures that functions are tested across a wide range of inputs, uncovering edge cases and potential [bugs](https://naodeng.com.cn/en/wiki/bug) that might be missed with traditional [test cases](https://naodeng.com.cn/en/wiki/test-case). By automating the process of running the same test with different data, it reduces the likelihood of human error and increases the **efficiency** of the testing process.
+  The use of parameterized tests also promotes **code reusability** and **[maintainability](https://naodeng.com.cn/en/wiki/maintainability)**, as a single [test case](https://naodeng.com.cn/en/wiki/test-case) can verify multiple paths of the code under test. This leads to a cleaner and more organized [test suite](https://naodeng.com.cn/en/wiki/test-suite), making it easier to manage and update. Moreover, [parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) can be particularly effective in identifying issues related to data handling, such as data type errors, boundary-related [bugs](https://naodeng.com.cn/en/wiki/bug), and problems with data-dependent logic.
   Incorporating parameterized tests into a continuous integration pipeline can further improve quality by ensuring that code changes are immediately and thoroughly tested, thus catching regressions or new issues early in the development cycle. This practice aligns with **DevOps** principles and supports a more agile and responsive development process.
-  Overall, [parameterized testing](../P/parameterized-testing.md) is a powerful tool that, when used correctly, can significantly elevate the robustness and reliability of software by systematically validating behavior across a spectrum of input conditions.
+  Overall, [parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) is a powerful tool that, when used correctly, can significantly elevate the robustness and reliability of software by systematically validating behavior across a spectrum of input conditions.
 
 #### What are the key principles of parameterized testing?
 
-  [Parameterized testing](../P/parameterized-testing.md) hinges on a few key principles to ensure its effectiveness:
+  [Parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) hinges on a few key principles to ensure its effectiveness:
 
   - **Data-Driven Approach**: Tests are designed to accept input data, allowing the same test to run with different inputs, verifying the behavior across a range of values.
-  - **Separation of Concerns**: Test logic and [test data](../T/test-data.md) are kept separate, enhancing test clarity and reducing the risk of introducing errors when modifying tests.
-  - **Reusability**: A single [test case](../T/test-case.md) can cover multiple scenarios, reducing the need for writing duplicate test code and making maintenance easier.
+  - **Separation of Concerns**: Test logic and [test data](https://naodeng.com.cn/en/wiki/test-data) are kept separate, enhancing test clarity and reducing the risk of introducing errors when modifying tests.
+  - **Reusability**: A single [test case](https://naodeng.com.cn/en/wiki/test-case) can cover multiple scenarios, reducing the need for writing duplicate test code and making maintenance easier.
   - **Coverage**: By running tests with various inputs, you can cover more code paths and edge cases, leading to a more thorough examination of the software's behavior.
-  - **Flexibility**: Adding new [test cases](../T/test-case.md) often requires only the addition of new data sets, not changes to the test code itself, making it easier to extend coverage.
+  - **Flexibility**: Adding new [test cases](https://naodeng.com.cn/en/wiki/test-case) often requires only the addition of new data sets, not changes to the test code itself, making it easier to extend coverage.
   - **Scalability**: Parameterized tests can easily scale with the application, accommodating new parameters and data sets as the software evolves.
-  Implement these principles by using constructs provided by testing frameworks, such as annotations or decorators, to indicate that a test is parameterized and to specify the source of the data sets. Use [iteration](../I/iteration.md) or looping mechanisms within the test to cycle through the provided data sets, applying assertions as needed. Always ensure that each data set is clearly defined and relevant to the [test case](../T/test-case.md) to maintain the integrity and purpose of the test.
+  Implement these principles by using constructs provided by testing frameworks, such as annotations or decorators, to indicate that a test is parameterized and to specify the source of the data sets. Use [iteration](https://naodeng.com.cn/en/wiki/iteration) or looping mechanisms within the test to cycle through the provided data sets, applying assertions as needed. Always ensure that each data set is clearly defined and relevant to the [test case](https://naodeng.com.cn/en/wiki/test-case) to maintain the integrity and purpose of the test.
 
   - **Data-Driven Approach**: Tests are designed to accept input data, allowing the same test to run with different inputs, verifying the behavior across a range of values.
-  - **Separation of Concerns**: Test logic and [test data](../T/test-data.md) are kept separate, enhancing test clarity and reducing the risk of introducing errors when modifying tests.
-  - **Reusability**: A single [test case](../T/test-case.md) can cover multiple scenarios, reducing the need for writing duplicate test code and making maintenance easier.
+  - **Separation of Concerns**: Test logic and [test data](https://naodeng.com.cn/en/wiki/test-data) are kept separate, enhancing test clarity and reducing the risk of introducing errors when modifying tests.
+  - **Reusability**: A single [test case](https://naodeng.com.cn/en/wiki/test-case) can cover multiple scenarios, reducing the need for writing duplicate test code and making maintenance easier.
   - **Coverage**: By running tests with various inputs, you can cover more code paths and edge cases, leading to a more thorough examination of the software's behavior.
-  - **Flexibility**: Adding new [test cases](../T/test-case.md) often requires only the addition of new data sets, not changes to the test code itself, making it easier to extend coverage.
+  - **Flexibility**: Adding new [test cases](https://naodeng.com.cn/en/wiki/test-case) often requires only the addition of new data sets, not changes to the test code itself, making it easier to extend coverage.
   - **Scalability**: Parameterized tests can easily scale with the application, accommodating new parameters and data sets as the software evolves.
 
 ### Implementation
 
 #### How is parameterized testing implemented in different testing frameworks?
 
-  [Parameterized testing](../P/parameterized-testing.md) is implemented differently across various testing frameworks, each with its own syntax and methodologies. Here's a brief overview:
+  [Parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) is implemented differently across various testing frameworks, each with its own syntax and methodologies. Here's a brief overview:
   **JUnit (Java):**
   JUnit 5 introduces the `@ParameterizedTest` annotation. Use `@ValueSource`, `@CsvSource`, `@CsvFileSource`, or `@MethodSource` to supply the parameters.
 
@@ -158,8 +157,8 @@ Executing the same test using varied data sets.
     end
   end
   ```
-  **[NUnit](../N/nunit.md) (C#):**
-  [NUnit](../N/nunit.md) provides the `TestCase` attribute to define inline parameters and `TestCaseSource` for external data sources.
+  **[NUnit](https://naodeng.com.cn/en/wiki/nunit) (C#):**
+  [NUnit](https://naodeng.com.cn/en/wiki/nunit) provides the `TestCase` attribute to define inline parameters and `TestCaseSource` for external data sources.
 
   ```
   [Test]
@@ -175,7 +174,7 @@ Executing the same test using varied data sets.
 
   To create a parameterized test, follow these steps:
 
-  1. **Identify the [test case](../T/test-case.md)** that requires multiple sets of data inputs.
+  1. **Identify the [test case](https://naodeng.com.cn/en/wiki/test-case)** that requires multiple sets of data inputs.
   2. **Define the test method** signature to accept parameters. For example, in JUnit 5:
 
     ```
@@ -199,11 +198,11 @@ Executing the same test using varied data sets.
 
   4. **Write the test logic** within the test method, utilizing the parameters to assert expected outcomes.
   5. **Run the test** to ensure it iterates over the provided data sets.
-  6. **Refactor and clean up** the test to ensure readability and [maintainability](../M/maintainability.md).
+  6. **Refactor and clean up** the test to ensure readability and [maintainability](https://naodeng.com.cn/en/wiki/maintainability).
   7. **Review test results** for each set of parameters, ensuring that failures are clearly associated with the specific data set that caused them.
-  Remember to **validate the data source** for correctness and relevance to the [test cases](../T/test-case.md), and **handle exceptions** gracefully within the test to avoid [false negatives](../F/false-negative.md). Use **descriptive names** for [test cases](../T/test-case.md) when possible to enhance clarity in [test reports](../T/test-report.md).
+  Remember to **validate the data source** for correctness and relevance to the [test cases](https://naodeng.com.cn/en/wiki/test-case), and **handle exceptions** gracefully within the test to avoid [false negatives](https://naodeng.com.cn/en/wiki/false-negative). Use **descriptive names** for [test cases](https://naodeng.com.cn/en/wiki/test-case) when possible to enhance clarity in [test reports](https://naodeng.com.cn/en/wiki/test-report).
 
-  1. **Identify the [test case](../T/test-case.md)** that requires multiple sets of data inputs.
+  1. **Identify the [test case](https://naodeng.com.cn/en/wiki/test-case)** that requires multiple sets of data inputs.
   2. **Define the test method** signature to accept parameters. For example, in JUnit 5:
 
     ```
@@ -227,7 +226,7 @@ Executing the same test using varied data sets.
 
   4. **Write the test logic** within the test method, utilizing the parameters to assert expected outcomes.
   5. **Run the test** to ensure it iterates over the provided data sets.
-  6. **Refactor and clean up** the test to ensure readability and [maintainability](../M/maintainability.md).
+  6. **Refactor and clean up** the test to ensure readability and [maintainability](https://naodeng.com.cn/en/wiki/maintainability).
   7. **Review test results** for each set of parameters, ensuring that failures are clearly associated with the specific data set that caused them.
 
 #### How can you pass different sets of data to a parameterized test?
@@ -283,7 +282,7 @@ Executing the same test using varied data sets.
       // test code here
   }
   ```
-  Remember to **validate** the data before using it in tests to ensure it meets the expected format and type. Also, consider **refactoring** common data provisioning code into shared methods or classes to promote reusability and [maintainability](../M/maintainability.md).
+  Remember to **validate** the data before using it in tests to ensure it meets the expected format and type. Also, consider **refactoring** common data provisioning code into shared methods or classes to promote reusability and [maintainability](https://naodeng.com.cn/en/wiki/maintainability).
 
   - **External Data Sources** : Load test data from external sources like CSV files, JSON files, or databases. Use libraries or built-in support to read the data and pass it to your tests.
   - **In-Code Data Providers** : Define data directly in your test code using annotations or methods that supply data arrays or collections.
@@ -294,24 +293,24 @@ Executing the same test using varied data sets.
 
   When implementing parameterized tests, avoid these common mistakes:
 
-  - **Overcomplicating [test cases](../T/test-case.md)** : Keep tests focused and simple. Complex tests can be hard to debug and maintain.
+  - **Overcomplicating [test cases](https://naodeng.com.cn/en/wiki/test-case)** : Keep tests focused and simple. Complex tests can be hard to debug and maintain.
   - **Neglecting naming conventions** : Use descriptive names for test cases to convey the purpose and expected outcome.
   - **Ignoring test independence** : Ensure each test can run independently without relying on the state from previous tests.
   - **Failing to handle exceptions** : Properly handle exceptions within tests to avoid false positives or negatives.
   - **Not considering test performance** : Be mindful of the number of parameters and the impact on test execution time.
-  - **Hardcoding [test data](../T/test-data.md)** : Avoid hardcoding values within the test body. Use external sources like configuration files or databases.
+  - **Hardcoding [test data](https://naodeng.com.cn/en/wiki/test-data)** : Avoid hardcoding values within the test body. Use external sources like configuration files or databases.
   - **Lack of data validation** : Validate input data to ensure it's within expected ranges and formats.
   - **Forgetting to clean up** : Always clean up any state or data after test execution to prevent side effects on subsequent tests.
   - **Inadequate reporting** : Customize test reports to clearly show which parameters caused test failures.
   - **Not using data types effectively** : Ensure that the data types used in parameterized tests are appropriate for the test scenarios.
-  By steering clear of these pitfalls, you'll enhance the effectiveness and [maintainability](../M/maintainability.md) of your parameterized tests.
+  By steering clear of these pitfalls, you'll enhance the effectiveness and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of your parameterized tests.
 
-  - **Overcomplicating [test cases](../T/test-case.md)** : Keep tests focused and simple. Complex tests can be hard to debug and maintain.
+  - **Overcomplicating [test cases](https://naodeng.com.cn/en/wiki/test-case)** : Keep tests focused and simple. Complex tests can be hard to debug and maintain.
   - **Neglecting naming conventions** : Use descriptive names for test cases to convey the purpose and expected outcome.
   - **Ignoring test independence** : Ensure each test can run independently without relying on the state from previous tests.
   - **Failing to handle exceptions** : Properly handle exceptions within tests to avoid false positives or negatives.
   - **Not considering test performance** : Be mindful of the number of parameters and the impact on test execution time.
-  - **Hardcoding [test data](../T/test-data.md)** : Avoid hardcoding values within the test body. Use external sources like configuration files or databases.
+  - **Hardcoding [test data](https://naodeng.com.cn/en/wiki/test-data)** : Avoid hardcoding values within the test body. Use external sources like configuration files or databases.
   - **Lack of data validation** : Validate input data to ensure it's within expected ranges and formats.
   - **Forgetting to clean up** : Always clean up any state or data after test execution to prevent side effects on subsequent tests.
   - **Inadequate reporting** : Customize test reports to clearly show which parameters caused test failures.
@@ -319,11 +318,11 @@ Executing the same test using varied data sets.
 
 #### How can you use parameterized testing for boundary value analysis?
 
-  [Parameterized testing](../P/parameterized-testing.md) can be effectively used for **boundary value analysis (BVA)** by allowing the execution of [test cases](../T/test-case.md) with boundary values as input parameters. BVA is a technique where tests are designed to include representatives of boundary values. Since parameterized tests can run the same test logic with different inputs, they are ideal for this purpose.
-  To apply [parameterized testing](../P/parameterized-testing.md) to BVA, follow these steps:
+  [Parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) can be effectively used for **boundary value analysis (BVA)** by allowing the execution of [test cases](https://naodeng.com.cn/en/wiki/test-case) with boundary values as input parameters. BVA is a technique where tests are designed to include representatives of boundary values. Since parameterized tests can run the same test logic with different inputs, they are ideal for this purpose.
+  To apply [parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) to BVA, follow these steps:
 
   1. Identify the boundary values for the input fields under test. These typically include the upper and lower limits, just inside and just outside of the boundary.
-  2. Create a parameterized test method that accepts inputs for the [test case](../T/test-case.md).
+  2. Create a parameterized test method that accepts inputs for the [test case](https://naodeng.com.cn/en/wiki/test-case).
   3. Supply the boundary values as parameters to the test method using the data provider mechanism of your testing framework.
   For example, in a Java-based framework like JUnit, you might use the `@ParameterizedTest` annotation along with `@ValueSource`, `@CsvSource`, or `@MethodSource` to supply the boundary values:
 
@@ -334,19 +333,19 @@ Executing the same test using varied data sets.
       // Test logic here
   }
   ```
-  This approach ensures that each boundary value is tested in an isolated and repeatable manner. It also simplifies the process of adding new boundary values to the [test suite](../T/test-suite.md), as you only need to update the data provider. By leveraging parameterized tests for BVA, you can systematically verify the behavior of the software at its edge cases, which is crucial for uncovering potential defects.
+  This approach ensures that each boundary value is tested in an isolated and repeatable manner. It also simplifies the process of adding new boundary values to the [test suite](https://naodeng.com.cn/en/wiki/test-suite), as you only need to update the data provider. By leveraging parameterized tests for BVA, you can systematically verify the behavior of the software at its edge cases, which is crucial for uncovering potential defects.
 
   1. Identify the boundary values for the input fields under test. These typically include the upper and lower limits, just inside and just outside of the boundary.
-  2. Create a parameterized test method that accepts inputs for the [test case](../T/test-case.md).
+  2. Create a parameterized test method that accepts inputs for the [test case](https://naodeng.com.cn/en/wiki/test-case).
   3. Supply the boundary values as parameters to the test method using the data provider mechanism of your testing framework.
 
 ### Best Practices
 
 #### What are the best practices for parameterized testing?
 
-  Best practices for [parameterized testing](../P/parameterized-testing.md) include:
+  Best practices for [parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) include:
 
-  - **Clearly define [test cases](../T/test-case.md)** : Ensure each parameterized test case is clear and concise, focusing on a single aspect of functionality.
+  - **Clearly define [test cases](https://naodeng.com.cn/en/wiki/test-case)** : Ensure each parameterized test case is clear and concise, focusing on a single aspect of functionality.
   - **Use descriptive names** : Name test cases and parameters descriptively to convey their purpose without needing to delve into the code.
   - **Keep data close to tests** : Store test data within the test code or in an easily accessible external source to maintain context.
   - **Limit the scope of parameters** : Avoid overloading tests with parameters. Each should be relevant to the test scenario.
@@ -357,7 +356,7 @@ Executing the same test using varied data sets.
   - **Optimize data sets** : Select a representative sample of test data that covers edge cases, boundary values, and typical scenarios.
   - **Clean up after tests** : Implement teardown procedures to reset the environment after each test run to prevent state leakage.
   - **Review and refactor** : Regularly review parameterized tests to refine and optimize the test data and scenarios.
-  - **Document [test data](../T/test-data.md) sources** : If using external data sources, document their locations and how to update them.
+  - **Document [test data](https://naodeng.com.cn/en/wiki/test-data) sources** : If using external data sources, document their locations and how to update them.
 
   ```
   // Example of a well-named parameterized test in TypeScript
@@ -372,7 +371,7 @@ Executing the same test using varied data sets.
   });
   ```
 
-  - **Clearly define [test cases](../T/test-case.md)** : Ensure each parameterized test case is clear and concise, focusing on a single aspect of functionality.
+  - **Clearly define [test cases](https://naodeng.com.cn/en/wiki/test-case)** : Ensure each parameterized test case is clear and concise, focusing on a single aspect of functionality.
   - **Use descriptive names** : Name test cases and parameters descriptively to convey their purpose without needing to delve into the code.
   - **Keep data close to tests** : Store test data within the test code or in an easily accessible external source to maintain context.
   - **Limit the scope of parameters** : Avoid overloading tests with parameters. Each should be relevant to the test scenario.
@@ -383,22 +382,22 @@ Executing the same test using varied data sets.
   - **Optimize data sets** : Select a representative sample of test data that covers edge cases, boundary values, and typical scenarios.
   - **Clean up after tests** : Implement teardown procedures to reset the environment after each test run to prevent state leakage.
   - **Review and refactor** : Regularly review parameterized tests to refine and optimize the test data and scenarios.
-  - **Document [test data](../T/test-data.md) sources** : If using external data sources, document their locations and how to update them.
+  - **Document [test data](https://naodeng.com.cn/en/wiki/test-data) sources** : If using external data sources, document their locations and how to update them.
 
 #### How can you ensure that your parameterized tests are maintainable and readable?
 
   To ensure that your parameterized tests are maintainable and readable, follow these guidelines:
 
-  - **Use descriptive test names**: Include the purpose of the test and the parameter values in the test name to make it clear what each [test case](../T/test-case.md) is validating.
+  - **Use descriptive test names**: Include the purpose of the test and the parameter values in the test name to make it clear what each [test case](https://naodeng.com.cn/en/wiki/test-case) is validating.
   - **Keep tests focused**: Each test should verify a single behavior or feature. Avoid overloading tests with multiple assertions that could be split into separate tests.
-  - **Structure data clearly**: Organize [test data](../T/test-data.md) logically, using tuples, objects, or custom structures that clearly represent the parameters and expected outcomes.
-  - **Leverage data sources**: Externalize [test data](../T/test-data.md) using JSON, CSV, or other data files when dealing with large datasets. This keeps the test code clean and the data easy to manage.
-  - **Use helper functions**: Abstract complex [setup](../S/setup.md) or assertions into helper functions to reduce clutter and improve readability.
+  - **Structure data clearly**: Organize [test data](https://naodeng.com.cn/en/wiki/test-data) logically, using tuples, objects, or custom structures that clearly represent the parameters and expected outcomes.
+  - **Leverage data sources**: Externalize [test data](https://naodeng.com.cn/en/wiki/test-data) using JSON, CSV, or other data files when dealing with large datasets. This keeps the test code clean and the data easy to manage.
+  - **Use helper functions**: Abstract complex [setup](https://naodeng.com.cn/en/wiki/setup) or assertions into helper functions to reduce clutter and improve readability.
   - **Document data choices**: Comment on why certain data values are chosen, especially for boundary or edge cases, to provide context for future maintainers.
   - **Handle exceptions gracefully**: When a test fails, ensure that the error message includes details about the parameter values that caused the failure.
   - **Refactor regularly**: Periodically review and refactor tests to improve clarity and reduce duplication.
-  - **Version control [test data](../T/test-data.md)**: If using external data sources, keep them under version control to track changes and maintain synchronization with test code.
-  Here's an example of a well-structured parameterized test in TypeScript using [Jest](../J/jest.md):
+  - **Version control [test data](https://naodeng.com.cn/en/wiki/test-data)**: If using external data sources, keep them under version control to track changes and maintain synchronization with test code.
+  Here's an example of a well-structured parameterized test in TypeScript using [Jest](https://naodeng.com.cn/en/wiki/jest):
 
   ```
   describe.each([
@@ -411,21 +410,21 @@ Executing the same test using varied data sets.
     });
   });
   ```
-  This test is clear, concise, and each case is self-explanatory, promoting [maintainability](../M/maintainability.md) and readability.
+  This test is clear, concise, and each case is self-explanatory, promoting [maintainability](https://naodeng.com.cn/en/wiki/maintainability) and readability.
 
-  - **Use descriptive test names**: Include the purpose of the test and the parameter values in the test name to make it clear what each [test case](../T/test-case.md) is validating.
+  - **Use descriptive test names**: Include the purpose of the test and the parameter values in the test name to make it clear what each [test case](https://naodeng.com.cn/en/wiki/test-case) is validating.
   - **Keep tests focused**: Each test should verify a single behavior or feature. Avoid overloading tests with multiple assertions that could be split into separate tests.
-  - **Structure data clearly**: Organize [test data](../T/test-data.md) logically, using tuples, objects, or custom structures that clearly represent the parameters and expected outcomes.
-  - **Leverage data sources**: Externalize [test data](../T/test-data.md) using JSON, CSV, or other data files when dealing with large datasets. This keeps the test code clean and the data easy to manage.
-  - **Use helper functions**: Abstract complex [setup](../S/setup.md) or assertions into helper functions to reduce clutter and improve readability.
+  - **Structure data clearly**: Organize [test data](https://naodeng.com.cn/en/wiki/test-data) logically, using tuples, objects, or custom structures that clearly represent the parameters and expected outcomes.
+  - **Leverage data sources**: Externalize [test data](https://naodeng.com.cn/en/wiki/test-data) using JSON, CSV, or other data files when dealing with large datasets. This keeps the test code clean and the data easy to manage.
+  - **Use helper functions**: Abstract complex [setup](https://naodeng.com.cn/en/wiki/setup) or assertions into helper functions to reduce clutter and improve readability.
   - **Document data choices**: Comment on why certain data values are chosen, especially for boundary or edge cases, to provide context for future maintainers.
   - **Handle exceptions gracefully**: When a test fails, ensure that the error message includes details about the parameter values that caused the failure.
   - **Refactor regularly**: Periodically review and refactor tests to improve clarity and reduce duplication.
-  - **Version control [test data](../T/test-data.md)**: If using external data sources, keep them under version control to track changes and maintain synchronization with test code.
+  - **Version control [test data](https://naodeng.com.cn/en/wiki/test-data)**: If using external data sources, keep them under version control to track changes and maintain synchronization with test code.
 
 #### How can you manage large sets of test data for parameterized tests?
 
-  Managing large sets of [test data](../T/test-data.md) for parameterized tests requires organization and efficiency. Here are some strategies:
+  Managing large sets of [test data](https://naodeng.com.cn/en/wiki/test-data) for parameterized tests requires organization and efficiency. Here are some strategies:
 
   - **External Data Sources** : Store test data in external sources like CSV files, JSON files, databases, or Excel spreadsheets. Use libraries or built-in functionalities to read the data during test execution.
 
@@ -453,45 +452,45 @@ Executing the same test using varied data sets.
       assert create_user(name, email).is_successful()
   ```
 
-  - **[Test Data](../T/test-data.md) Management Tools**: Consider using specialized [test data](../T/test-data.md) management tools that can help in creating, managing, and provisioning large datasets.
-  - **Version Control**: Keep [test data](../T/test-data.md) under version control to track changes and maintain consistency across different environments.
-  - **Data Cleanup**: Implement cleanup mechanisms to remove or restore data to its original state post-[test execution](../T/test-execution.md) to ensure test independence.
-  - **Lazy Loading**: For performance, load data lazily, especially when dealing with [databases](../D/database.md) or network resources.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management Tools**: Consider using specialized [test data](https://naodeng.com.cn/en/wiki/test-data) management tools that can help in creating, managing, and provisioning large datasets.
+  - **Version Control**: Keep [test data](https://naodeng.com.cn/en/wiki/test-data) under version control to track changes and maintain consistency across different environments.
+  - **Data Cleanup**: Implement cleanup mechanisms to remove or restore data to its original state post-[test execution](https://naodeng.com.cn/en/wiki/test-execution) to ensure test independence.
+  - **Lazy Loading**: For performance, load data lazily, especially when dealing with [databases](https://naodeng.com.cn/en/wiki/database) or network resources.
   - **Data Caching**: Cache data that is expensive to compute or load, and reuse it across tests when applicable.
-  - **Modular Code**: Write modular code to handle data [setup](../S/setup.md) and retrieval, making it reusable and easier to manage.
-  By applying these strategies, [test automation](../T/test-automation.md) engineers can efficiently manage large datasets, ensuring that parameterized tests are both scalable and maintainable.
+  - **Modular Code**: Write modular code to handle data [setup](https://naodeng.com.cn/en/wiki/setup) and retrieval, making it reusable and easier to manage.
+  By applying these strategies, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can efficiently manage large datasets, ensuring that parameterized tests are both scalable and maintainable.
 
   - **External Data Sources** : Store test data in external sources like CSV files, JSON files, databases, or Excel spreadsheets. Use libraries or built-in functionalities to read the data during test execution.
   - **Data Generation Libraries** : Utilize libraries like Faker to generate realistic test data dynamically.
-  - **[Test Data](../T/test-data.md) Management Tools**: Consider using specialized [test data](../T/test-data.md) management tools that can help in creating, managing, and provisioning large datasets.
-  - **Version Control**: Keep [test data](../T/test-data.md) under version control to track changes and maintain consistency across different environments.
-  - **Data Cleanup**: Implement cleanup mechanisms to remove or restore data to its original state post-[test execution](../T/test-execution.md) to ensure test independence.
-  - **Lazy Loading**: For performance, load data lazily, especially when dealing with [databases](../D/database.md) or network resources.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management Tools**: Consider using specialized [test data](https://naodeng.com.cn/en/wiki/test-data) management tools that can help in creating, managing, and provisioning large datasets.
+  - **Version Control**: Keep [test data](https://naodeng.com.cn/en/wiki/test-data) under version control to track changes and maintain consistency across different environments.
+  - **Data Cleanup**: Implement cleanup mechanisms to remove or restore data to its original state post-[test execution](https://naodeng.com.cn/en/wiki/test-execution) to ensure test independence.
+  - **Lazy Loading**: For performance, load data lazily, especially when dealing with [databases](https://naodeng.com.cn/en/wiki/database) or network resources.
   - **Data Caching**: Cache data that is expensive to compute or load, and reuse it across tests when applicable.
-  - **Modular Code**: Write modular code to handle data [setup](../S/setup.md) and retrieval, making it reusable and easier to manage.
+  - **Modular Code**: Write modular code to handle data [setup](https://naodeng.com.cn/en/wiki/setup) and retrieval, making it reusable and easier to manage.
 
 #### What are some strategies for selecting test data for parameterized tests?
 
-  Selecting [test data](../T/test-data.md) for parameterized tests involves a strategic approach to ensure comprehensive coverage and efficient testing. Here are some strategies:
+  Selecting [test data](https://naodeng.com.cn/en/wiki/test-data) for parameterized tests involves a strategic approach to ensure comprehensive coverage and efficient testing. Here are some strategies:
 
-  - **[Equivalence Partitioning](../E/equivalence-partitioning.md)**: Divide input data into equivalence classes such that [test cases](../T/test-case.md) can be designed to cover each partition at least once.
-  - **Boundary Value Analysis**: Choose [test data](../T/test-data.md) at the edges of equivalence partitions. This often includes minimum, maximum, just inside/outside boundaries, typical values, and error values.
+  - **[Equivalence Partitioning](https://naodeng.com.cn/en/wiki/equivalence-partitioning)**: Divide input data into equivalence classes such that [test cases](https://naodeng.com.cn/en/wiki/test-case) can be designed to cover each partition at least once.
+  - **Boundary Value Analysis**: Choose [test data](https://naodeng.com.cn/en/wiki/test-data) at the edges of equivalence partitions. This often includes minimum, maximum, just inside/outside boundaries, typical values, and error values.
   - **Combinatorial Testing**: Use algorithms like pairwise testing (all pairs) to select a subset of combinations of parameter values that effectively test multi-parameter interactions with fewer tests.
-  - **[Risk-Based Testing](../R/risk-based-testing.md)**: Prioritize [test data](../T/test-data.md) based on the risk of failure and its impact. Focus on scenarios with higher risk to ensure critical functionalities are thoroughly tested.
-  - **Data-Driven Techniques**: Utilize external data sources like CSV files, [databases](../D/database.md), or [APIs](../A/api.md) to feed a wide range of [test data](../T/test-data.md) into your tests dynamically.
-  - **Randomized Testing**: Generate random data sets within the defined input domain to uncover unexpected issues. This can be particularly useful for stress and [load testing](../L/load-testing.md).
+  - **[Risk-Based Testing](https://naodeng.com.cn/en/wiki/risk-based-testing)**: Prioritize [test data](https://naodeng.com.cn/en/wiki/test-data) based on the risk of failure and its impact. Focus on scenarios with higher risk to ensure critical functionalities are thoroughly tested.
+  - **Data-Driven Techniques**: Utilize external data sources like CSV files, [databases](https://naodeng.com.cn/en/wiki/database), or [APIs](https://naodeng.com.cn/en/wiki/api) to feed a wide range of [test data](https://naodeng.com.cn/en/wiki/test-data) into your tests dynamically.
+  - **Randomized Testing**: Generate random data sets within the defined input domain to uncover unexpected issues. This can be particularly useful for stress and [load testing](https://naodeng.com.cn/en/wiki/load-testing).
   - **User Behavior Patterns**: Analyze production logs or user analytics to identify common or critical usage patterns to replicate in tests.
-  - **Regression Artifacts**: Incorporate data from previous [bug](../B/bug.md) reports or known issues to verify that fixes work across a range of inputs.
-  Remember to balance the comprehensiveness of [test data](../T/test-data.md) with the execution time and resources. Efficiently selected [test data](../T/test-data.md) can lead to a robust and maintainable [test suite](../T/test-suite.md).
+  - **Regression Artifacts**: Incorporate data from previous [bug](https://naodeng.com.cn/en/wiki/bug) reports or known issues to verify that fixes work across a range of inputs.
+  Remember to balance the comprehensiveness of [test data](https://naodeng.com.cn/en/wiki/test-data) with the execution time and resources. Efficiently selected [test data](https://naodeng.com.cn/en/wiki/test-data) can lead to a robust and maintainable [test suite](https://naodeng.com.cn/en/wiki/test-suite).
 
-  - **[Equivalence Partitioning](../E/equivalence-partitioning.md)**: Divide input data into equivalence classes such that [test cases](../T/test-case.md) can be designed to cover each partition at least once.
-  - **Boundary Value Analysis**: Choose [test data](../T/test-data.md) at the edges of equivalence partitions. This often includes minimum, maximum, just inside/outside boundaries, typical values, and error values.
+  - **[Equivalence Partitioning](https://naodeng.com.cn/en/wiki/equivalence-partitioning)**: Divide input data into equivalence classes such that [test cases](https://naodeng.com.cn/en/wiki/test-case) can be designed to cover each partition at least once.
+  - **Boundary Value Analysis**: Choose [test data](https://naodeng.com.cn/en/wiki/test-data) at the edges of equivalence partitions. This often includes minimum, maximum, just inside/outside boundaries, typical values, and error values.
   - **Combinatorial Testing**: Use algorithms like pairwise testing (all pairs) to select a subset of combinations of parameter values that effectively test multi-parameter interactions with fewer tests.
-  - **[Risk-Based Testing](../R/risk-based-testing.md)**: Prioritize [test data](../T/test-data.md) based on the risk of failure and its impact. Focus on scenarios with higher risk to ensure critical functionalities are thoroughly tested.
-  - **Data-Driven Techniques**: Utilize external data sources like CSV files, [databases](../D/database.md), or [APIs](../A/api.md) to feed a wide range of [test data](../T/test-data.md) into your tests dynamically.
-  - **Randomized Testing**: Generate random data sets within the defined input domain to uncover unexpected issues. This can be particularly useful for stress and [load testing](../L/load-testing.md).
+  - **[Risk-Based Testing](https://naodeng.com.cn/en/wiki/risk-based-testing)**: Prioritize [test data](https://naodeng.com.cn/en/wiki/test-data) based on the risk of failure and its impact. Focus on scenarios with higher risk to ensure critical functionalities are thoroughly tested.
+  - **Data-Driven Techniques**: Utilize external data sources like CSV files, [databases](https://naodeng.com.cn/en/wiki/database), or [APIs](https://naodeng.com.cn/en/wiki/api) to feed a wide range of [test data](https://naodeng.com.cn/en/wiki/test-data) into your tests dynamically.
+  - **Randomized Testing**: Generate random data sets within the defined input domain to uncover unexpected issues. This can be particularly useful for stress and [load testing](https://naodeng.com.cn/en/wiki/load-testing).
   - **User Behavior Patterns**: Analyze production logs or user analytics to identify common or critical usage patterns to replicate in tests.
-  - **Regression Artifacts**: Incorporate data from previous [bug](../B/bug.md) reports or known issues to verify that fixes work across a range of inputs.
+  - **Regression Artifacts**: Incorporate data from previous [bug](https://naodeng.com.cn/en/wiki/bug) reports or known issues to verify that fixes work across a range of inputs.
 
 #### How can you handle failures in parameterized tests?
 
@@ -502,7 +501,7 @@ Executing the same test using varied data sets.
   - **Log detailed information** : When a test fails, log parameters used so you can easily identify and reproduce the issue.
   - **Fail fast** : If a critical failure occurs that would invalidate all subsequent tests, consider failing fast to save time.
   - **Independent tests** : Design each test to run independently, ensuring that the failure of one test doesn't affect others.
-  - **Analyze [test reports](../T/test-report.md)** : Use test reports to analyze patterns in failures that might indicate a deeper issue with the test setup or the application.
+  - **Analyze [test reports](https://naodeng.com.cn/en/wiki/test-report)** : Use test reports to analyze patterns in failures that might indicate a deeper issue with the test setup or the application.
   - **Retry mechanisms** : Implement a retry logic for flaky tests, but use with caution to avoid masking real issues.
   - **Parameterized test hooks** : Utilize hooks provided by the testing framework to perform actions before or after a parameterized test, such as cleanup or setup, which can help prevent failures due to improper test environment setup.
   Here's an example of using a try-catch block to handle exceptions in a parameterized test:
@@ -525,6 +524,6 @@ Executing the same test using varied data sets.
   - **Log detailed information** : When a test fails, log parameters used so you can easily identify and reproduce the issue.
   - **Fail fast** : If a critical failure occurs that would invalidate all subsequent tests, consider failing fast to save time.
   - **Independent tests** : Design each test to run independently, ensuring that the failure of one test doesn't affect others.
-  - **Analyze [test reports](../T/test-report.md)** : Use test reports to analyze patterns in failures that might indicate a deeper issue with the test setup or the application.
+  - **Analyze [test reports](https://naodeng.com.cn/en/wiki/test-report)** : Use test reports to analyze patterns in failures that might indicate a deeper issue with the test setup or the application.
   - **Retry mechanisms** : Implement a retry logic for flaky tests, but use with caution to avoid masking real issues.
   - **Parameterized test hooks** : Utilize hooks provided by the testing framework to perform actions before or after a parameterized test, such as cleanup or setup, which can help prevent failures due to improper test environment setup.

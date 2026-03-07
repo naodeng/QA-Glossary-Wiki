@@ -348,11 +348,11 @@ async function checkAccessibility(page) {
 - **实施持续集成**（CI）流程，其中包括无障碍性测试，确保它们在每次构建时都得到运行。
 
 ```typescript
-jobs: 
-  accessibility_test: 
-    runs-on: ubuntu-latest 
-    steps: 
-      - name: Run accessibility checks 
+jobs:
+  accessibility_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run accessibility checks
         run: npm run test:accessibility
 ```
 

@@ -1,6 +1,5 @@
 # Cypress
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
   - [See also:](#see-also)
@@ -73,8 +72,8 @@ offers a comprehensive and user-friendly environment for web application testing
 
 ## Related Terms:
 
-- [Web Automation tool](../W/web-automation-tool.md)
-- [Playwright](../P/playwright.md)
+- [Web Automation tool](https://naodeng.com.cn/en/wiki/web-automation-tool)
+- [Playwright](https://naodeng.com.cn/en/wiki/playwright)
 
 ### See also:
 
@@ -87,24 +86,24 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### What is Cypress?
 
-  [Cypress](../C/cypress.md) is an **[end-to-end testing](../E/end-to-end-testing.md) framework** designed for modern web applications. It runs tests in a browser and is built on top of technologies like **JavaScript** and **[Node.js](../N/node-js.md)**. Unlike many other testing tools, [Cypress](../C/cypress.md) executes tests in the same run loop as the application, providing native access to every object without the need for a separate driver or server.
-  [Cypress](../C/cypress.md) offers a **rich interactive [test runner](../T/test-runner.md)** that allows you to see commands as they execute while also viewing the application under test. The tool provides **real-time reloads** for [test-driven development](../T/test-driven-development.md), with tests rerunning upon file save.
-  Tests in [Cypress](../C/cypress.md) are written using a **chainable [API](../A/api.md)** that works with promises, thus simplifying the handling of asynchronous operations. [Cypress](../C/cypress.md) includes **jQuery-like commands** for DOM traversal and manipulation, making it familiar to front-end developers.
-  [Cypress](../C/cypress.md) provides **automatic waiting** before performing actions or assertions, eliminating the need for explicit waits or sleeps in most cases. It also offers **spies, stubs, and clocks** to verify and control the behavior of server responses, functions, or timers.
-  The tool has a **screenshot and video recording** feature, which is handy for debugging and understanding test failures. [Cypress](../C/cypress.md) tests can be run headlessly in Continuous Integration (CI) environments or interactively during development.
-  [Cypress](../C/cypress.md)'s architecture does not use [Selenium](../S/selenium.md) or [WebDriver](../W/webdriver.md), which allows for faster execution and more control but also means it's primarily suited for testing applications that run in a browser. It supports **Chrome-family browsers** (including Electron) and **Firefox**.
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress) is an **[end-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing) framework** designed for modern web applications. It runs tests in a browser and is built on top of technologies like **JavaScript** and **[Node.js](https://naodeng.com.cn/en/wiki/node-js)**. Unlike many other testing tools, [Cypress](https://naodeng.com.cn/en/wiki/cypress) executes tests in the same run loop as the application, providing native access to every object without the need for a separate driver or server.
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress) offers a **rich interactive [test runner](https://naodeng.com.cn/en/wiki/test-runner)** that allows you to see commands as they execute while also viewing the application under test. The tool provides **real-time reloads** for [test-driven development](https://naodeng.com.cn/en/wiki/test-driven-development), with tests rerunning upon file save.
+  Tests in [Cypress](https://naodeng.com.cn/en/wiki/cypress) are written using a **chainable [API](https://naodeng.com.cn/en/wiki/api)** that works with promises, thus simplifying the handling of asynchronous operations. [Cypress](https://naodeng.com.cn/en/wiki/cypress) includes **jQuery-like commands** for DOM traversal and manipulation, making it familiar to front-end developers.
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress) provides **automatic waiting** before performing actions or assertions, eliminating the need for explicit waits or sleeps in most cases. It also offers **spies, stubs, and clocks** to verify and control the behavior of server responses, functions, or timers.
+  The tool has a **screenshot and video recording** feature, which is handy for debugging and understanding test failures. [Cypress](https://naodeng.com.cn/en/wiki/cypress) tests can be run headlessly in Continuous Integration (CI) environments or interactively during development.
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s architecture does not use [Selenium](https://naodeng.com.cn/en/wiki/selenium) or [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), which allows for faster execution and more control but also means it's primarily suited for testing applications that run in a browser. It supports **Chrome-family browsers** (including Electron) and **Firefox**.
 
 #### Why is Cypress used in testing?
 
-  [Cypress](../C/cypress.md) is used in testing primarily for its **simplicity** and **developer-friendly** approach to [end-to-end testing](../E/end-to-end-testing.md). It allows for writing **flakiness-free** tests due to its unique architecture that runs in the same run-loop as the application being tested. This results in more **reliable** and **consistent** tests compared to other tools that operate outside the browser.
-  The use of [Cypress](../C/cypress.md) is favored for its **real-time reloads**, which provide instant feedback on test code changes, enhancing productivity and reducing the time spent on writing and maintaining tests. Its **automatic waiting** mechanism eliminates the need for manual sleep or wait commands, thus reducing the complexity of [test scripts](../T/test-script.md).
-  Developers and QA engineers opt for [Cypress](../C/cypress.md) when they need **tight integration** with modern development tools and workflows, including continuous integration and version control systems. [Cypress](../C/cypress.md)'s **rich debugging capabilities** make it easier to diagnose and fix issues directly from the browser's developer tools.
-  [Cypress](../C/cypress.md)'s **screenshot and video recording** features are crucial for visualizing the state of the application at the time of test failure, facilitating quicker troubleshooting. Its **network traffic control** allows for easy stubbing and testing of edge cases without the need for backend dependencies.
-  Overall, [Cypress](../C/cypress.md) is used for its **all-in-one** testing experience, providing a robust set of tools that cater to the needs of modern web application testing, all within a single, coherent framework.
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress) is used in testing primarily for its **simplicity** and **developer-friendly** approach to [end-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing). It allows for writing **flakiness-free** tests due to its unique architecture that runs in the same run-loop as the application being tested. This results in more **reliable** and **consistent** tests compared to other tools that operate outside the browser.
+  The use of [Cypress](https://naodeng.com.cn/en/wiki/cypress) is favored for its **real-time reloads**, which provide instant feedback on test code changes, enhancing productivity and reducing the time spent on writing and maintaining tests. Its **automatic waiting** mechanism eliminates the need for manual sleep or wait commands, thus reducing the complexity of [test scripts](https://naodeng.com.cn/en/wiki/test-script).
+  Developers and QA engineers opt for [Cypress](https://naodeng.com.cn/en/wiki/cypress) when they need **tight integration** with modern development tools and workflows, including continuous integration and version control systems. [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s **rich debugging capabilities** make it easier to diagnose and fix issues directly from the browser's developer tools.
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s **screenshot and video recording** features are crucial for visualizing the state of the application at the time of test failure, facilitating quicker troubleshooting. Its **network traffic control** allows for easy stubbing and testing of edge cases without the need for backend dependencies.
+  Overall, [Cypress](https://naodeng.com.cn/en/wiki/cypress) is used for its **all-in-one** testing experience, providing a robust set of tools that cater to the needs of modern web application testing, all within a single, coherent framework.
 
 #### What are the key features of Cypress?
 
-  Key features of [Cypress](../C/cypress.md) include:
+  Key features of [Cypress](https://naodeng.com.cn/en/wiki/cypress) include:
 
   - **Real-Time Reloads** : Cypress automatically reloads tests upon detecting changes to the test code, providing immediate feedback.
   - **Time Travel** : Cypress takes snapshots as tests run, allowing you to hover over commands in the Command Log to see exactly what happened at each step.
@@ -117,10 +116,10 @@ offers a comprehensive and user-friendly environment for web application testing
   - **Parallelization** : Tests can be run in parallel across multiple machines to speed up execution time in Continuous Integration (CI).
   - **Dashboard Service** : Provides insights into tests with analytics, parallelization, and history when used with the Cypress Dashboard.
   - **Spies, Stubs, and Clocks** : Verify and control the behavior of functions, server responses, or timers.
-  - **[Accessibility Testing](../A/accessibility-testing.md)** : With plugins like
+  - **[Accessibility Testing](https://naodeng.com.cn/en/wiki/accessibility-testing)** : With plugins like
     `cypress-axe`
     , you can incorporate accessibility checks into your test suite.
-  These features are designed to streamline the testing process, making it more efficient and effective for [test automation](../T/test-automation.md) engineers.
+  These features are designed to streamline the testing process, making it more efficient and effective for [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers.
 
   - **Real-Time Reloads** : Cypress automatically reloads tests upon detecting changes to the test code, providing immediate feedback.
   - **Time Travel** : Cypress takes snapshots as tests run, allowing you to hover over commands in the Command Log to see exactly what happened at each step.
@@ -133,69 +132,69 @@ offers a comprehensive and user-friendly environment for web application testing
   - **Parallelization** : Tests can be run in parallel across multiple machines to speed up execution time in Continuous Integration (CI).
   - **Dashboard Service** : Provides insights into tests with analytics, parallelization, and history when used with the Cypress Dashboard.
   - **Spies, Stubs, and Clocks** : Verify and control the behavior of functions, server responses, or timers.
-  - **[Accessibility Testing](../A/accessibility-testing.md)** : With plugins like
+  - **[Accessibility Testing](https://naodeng.com.cn/en/wiki/accessibility-testing)** : With plugins like
     `cypress-axe`
     , you can incorporate accessibility checks into your test suite.
 
 #### How does Cypress differ from other testing tools like Selenium?
 
-  [Cypress](../C/cypress.md) differs from [Selenium](../S/selenium.md) in several key aspects:
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress) differs from [Selenium](https://naodeng.com.cn/en/wiki/selenium) in several key aspects:
 
-  - **Architecture**: [Cypress](../C/cypress.md) runs in the same run-loop as the application being tested, leading to faster execution and more consistent results. [Selenium](../S/selenium.md) operates outside the browser, which can introduce latency and flakiness.
-  - **Language Support**: [Cypress](../C/cypress.md) tests are written in JavaScript, while [Selenium](../S/selenium.md) supports multiple languages like Java, C#, Python, and Ruby.
-  - **Direct Access**: [Cypress](../C/cypress.md) has direct access to the DOM and can interact with elements more naturally. [Selenium](../S/selenium.md) requires an intermediary ([WebDriver](../W/webdriver.md)) to communicate with the browser, which can slow down interactions.
-  - **[Setup](../S/setup.md) and Configuration**: [Cypress](../C/cypress.md) is easier to set up, with no need for additional drivers or servers. [Selenium](../S/selenium.md) often requires additional [setup](../S/setup.md) for the [WebDriver](../W/webdriver.md) and browser-specific drivers.
-  - **Real-time Reloads**: [Cypress](../C/cypress.md) offers a [Test Runner](../T/test-runner.md) that automatically reloads upon test file changes, providing instant feedback. [Selenium](../S/selenium.md) does not have a built-in equivalent.
-  - **Automatic Waiting**: [Cypress](../C/cypress.md) automatically waits for commands and assertions before moving on. [Selenium](../S/selenium.md) requires explicit waits or sleep commands to manage timing issues.
-  - **[API Testing](../A/api-testing.md)**: [Cypress](../C/cypress.md) includes built-in support for [API testing](../A/api-testing.md), allowing for both front-end and back-end tests in one framework. [Selenium](../S/selenium.md) is primarily focused on browser-based testing.
-  - **Screenshots and Videos**: [Cypress](../C/cypress.md) can take screenshots and record videos natively. [Selenium](../S/selenium.md) can capture screenshots, but video recording often requires additional tools or plugins.
-  - **Debuggability**: [Cypress](../C/cypress.md) provides more informative error messages and stack traces, making debugging easier. [Selenium](../S/selenium.md)'s error messages can be less clear, making debugging more challenging.
-  - **[Cross-browser Testing](../C/cross-browser-testing.md)**: [Selenium](../S/selenium.md) supports a wider range of browsers and versions. [Cypress](../C/cypress.md)'s cross-browser support is improving but has historically been limited to fewer browsers.
-  - **Architecture**: [Cypress](../C/cypress.md) runs in the same run-loop as the application being tested, leading to faster execution and more consistent results. [Selenium](../S/selenium.md) operates outside the browser, which can introduce latency and flakiness.
-  - **Language Support**: [Cypress](../C/cypress.md) tests are written in JavaScript, while [Selenium](../S/selenium.md) supports multiple languages like Java, C#, Python, and Ruby.
-  - **Direct Access**: [Cypress](../C/cypress.md) has direct access to the DOM and can interact with elements more naturally. [Selenium](../S/selenium.md) requires an intermediary ([WebDriver](../W/webdriver.md)) to communicate with the browser, which can slow down interactions.
-  - **[Setup](../S/setup.md) and Configuration**: [Cypress](../C/cypress.md) is easier to set up, with no need for additional drivers or servers. [Selenium](../S/selenium.md) often requires additional [setup](../S/setup.md) for the [WebDriver](../W/webdriver.md) and browser-specific drivers.
-  - **Real-time Reloads**: [Cypress](../C/cypress.md) offers a [Test Runner](../T/test-runner.md) that automatically reloads upon test file changes, providing instant feedback. [Selenium](../S/selenium.md) does not have a built-in equivalent.
-  - **Automatic Waiting**: [Cypress](../C/cypress.md) automatically waits for commands and assertions before moving on. [Selenium](../S/selenium.md) requires explicit waits or sleep commands to manage timing issues.
-  - **[API Testing](../A/api-testing.md)**: [Cypress](../C/cypress.md) includes built-in support for [API testing](../A/api-testing.md), allowing for both front-end and back-end tests in one framework. [Selenium](../S/selenium.md) is primarily focused on browser-based testing.
-  - **Screenshots and Videos**: [Cypress](../C/cypress.md) can take screenshots and record videos natively. [Selenium](../S/selenium.md) can capture screenshots, but video recording often requires additional tools or plugins.
-  - **Debuggability**: [Cypress](../C/cypress.md) provides more informative error messages and stack traces, making debugging easier. [Selenium](../S/selenium.md)'s error messages can be less clear, making debugging more challenging.
-  - **[Cross-browser Testing](../C/cross-browser-testing.md)**: [Selenium](../S/selenium.md) supports a wider range of browsers and versions. [Cypress](../C/cypress.md)'s cross-browser support is improving but has historically been limited to fewer browsers.
+  - **Architecture**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) runs in the same run-loop as the application being tested, leading to faster execution and more consistent results. [Selenium](https://naodeng.com.cn/en/wiki/selenium) operates outside the browser, which can introduce latency and flakiness.
+  - **Language Support**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) tests are written in JavaScript, while [Selenium](https://naodeng.com.cn/en/wiki/selenium) supports multiple languages like Java, C#, Python, and Ruby.
+  - **Direct Access**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) has direct access to the DOM and can interact with elements more naturally. [Selenium](https://naodeng.com.cn/en/wiki/selenium) requires an intermediary ([WebDriver](https://naodeng.com.cn/en/wiki/webdriver)) to communicate with the browser, which can slow down interactions.
+  - **[Setup](https://naodeng.com.cn/en/wiki/setup) and Configuration**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) is easier to set up, with no need for additional drivers or servers. [Selenium](https://naodeng.com.cn/en/wiki/selenium) often requires additional [setup](https://naodeng.com.cn/en/wiki/setup) for the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) and browser-specific drivers.
+  - **Real-time Reloads**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) offers a [Test Runner](https://naodeng.com.cn/en/wiki/test-runner) that automatically reloads upon test file changes, providing instant feedback. [Selenium](https://naodeng.com.cn/en/wiki/selenium) does not have a built-in equivalent.
+  - **Automatic Waiting**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) automatically waits for commands and assertions before moving on. [Selenium](https://naodeng.com.cn/en/wiki/selenium) requires explicit waits or sleep commands to manage timing issues.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) includes built-in support for [API testing](https://naodeng.com.cn/en/wiki/api-testing), allowing for both front-end and back-end tests in one framework. [Selenium](https://naodeng.com.cn/en/wiki/selenium) is primarily focused on browser-based testing.
+  - **Screenshots and Videos**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) can take screenshots and record videos natively. [Selenium](https://naodeng.com.cn/en/wiki/selenium) can capture screenshots, but video recording often requires additional tools or plugins.
+  - **Debuggability**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) provides more informative error messages and stack traces, making debugging easier. [Selenium](https://naodeng.com.cn/en/wiki/selenium)'s error messages can be less clear, making debugging more challenging.
+  - **[Cross-browser Testing](https://naodeng.com.cn/en/wiki/cross-browser-testing)**: [Selenium](https://naodeng.com.cn/en/wiki/selenium) supports a wider range of browsers and versions. [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s cross-browser support is improving but has historically been limited to fewer browsers.
+  - **Architecture**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) runs in the same run-loop as the application being tested, leading to faster execution and more consistent results. [Selenium](https://naodeng.com.cn/en/wiki/selenium) operates outside the browser, which can introduce latency and flakiness.
+  - **Language Support**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) tests are written in JavaScript, while [Selenium](https://naodeng.com.cn/en/wiki/selenium) supports multiple languages like Java, C#, Python, and Ruby.
+  - **Direct Access**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) has direct access to the DOM and can interact with elements more naturally. [Selenium](https://naodeng.com.cn/en/wiki/selenium) requires an intermediary ([WebDriver](https://naodeng.com.cn/en/wiki/webdriver)) to communicate with the browser, which can slow down interactions.
+  - **[Setup](https://naodeng.com.cn/en/wiki/setup) and Configuration**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) is easier to set up, with no need for additional drivers or servers. [Selenium](https://naodeng.com.cn/en/wiki/selenium) often requires additional [setup](https://naodeng.com.cn/en/wiki/setup) for the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) and browser-specific drivers.
+  - **Real-time Reloads**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) offers a [Test Runner](https://naodeng.com.cn/en/wiki/test-runner) that automatically reloads upon test file changes, providing instant feedback. [Selenium](https://naodeng.com.cn/en/wiki/selenium) does not have a built-in equivalent.
+  - **Automatic Waiting**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) automatically waits for commands and assertions before moving on. [Selenium](https://naodeng.com.cn/en/wiki/selenium) requires explicit waits or sleep commands to manage timing issues.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) includes built-in support for [API testing](https://naodeng.com.cn/en/wiki/api-testing), allowing for both front-end and back-end tests in one framework. [Selenium](https://naodeng.com.cn/en/wiki/selenium) is primarily focused on browser-based testing.
+  - **Screenshots and Videos**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) can take screenshots and record videos natively. [Selenium](https://naodeng.com.cn/en/wiki/selenium) can capture screenshots, but video recording often requires additional tools or plugins.
+  - **Debuggability**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) provides more informative error messages and stack traces, making debugging easier. [Selenium](https://naodeng.com.cn/en/wiki/selenium)'s error messages can be less clear, making debugging more challenging.
+  - **[Cross-browser Testing](https://naodeng.com.cn/en/wiki/cross-browser-testing)**: [Selenium](https://naodeng.com.cn/en/wiki/selenium) supports a wider range of browsers and versions. [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s cross-browser support is improving but has historically been limited to fewer browsers.
 
 #### What types of testing can be performed using Cypress?
 
-  Using [Cypress](../C/cypress.md), testers can perform various types of testing, including:
+  Using [Cypress](https://naodeng.com.cn/en/wiki/cypress), testers can perform various types of testing, including:
 
-  - **[End-to-End Testing](../E/end-to-end-testing.md) (E2E)** : Simulating real user scenarios from start to finish, ensuring the application behaves as expected in a production-like environment.
-  - **[Integration Testing](../I/integration-testing.md)** : Testing the interactions between application layers or between different microservices to verify they work together correctly.
-  - **[Unit Testing](../U/unit-testing.md)** : Although not its primary use case, Cypress can be used to test individual functions or components in isolation.
+  - **[End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing) (E2E)** : Simulating real user scenarios from start to finish, ensuring the application behaves as expected in a production-like environment.
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)** : Testing the interactions between application layers or between different microservices to verify they work together correctly.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)** : Although not its primary use case, Cypress can be used to test individual functions or components in isolation.
   - **Component Testing** : Verifying the functionality and rendering of individual components, especially useful in modern JavaScript frameworks like React, Angular, or Vue.
-  - **[Visual Regression Testing](../V/visual-regression-testing.md)** : By integrating with tools like Percy or Applitools, Cypress can capture screenshots and compare them to baseline images to detect visual changes.
-  - **[Accessibility Testing](../A/accessibility-testing.md)** : With plugins like
+  - **[Visual Regression Testing](https://naodeng.com.cn/en/wiki/visual-regression-testing)** : By integrating with tools like Percy or Applitools, Cypress can capture screenshots and compare them to baseline images to detect visual changes.
+  - **[Accessibility Testing](https://naodeng.com.cn/en/wiki/accessibility-testing)** : With plugins like
     `cypress-axe`
     , testers can incorporate accessibility checks into their test suites to ensure compliance with standards like WCAG.
 
-  - **[API Testing](../A/api-testing.md)** : Although Cypress is primarily a browser-based tool, it can be used to test REST or GraphQL APIs by sending HTTP requests and asserting the responses.
-  - **[Performance Testing](../P/performance-testing.md)** : While not a full-fledged performance testing tool, Cypress can capture performance metrics like page load times and use assertions to flag performance regressions.
-  [Cypress](../C/cypress.md)'s versatility allows it to cover a broad range of testing needs within a single framework, streamlining the development and testing workflow.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)** : Although Cypress is primarily a browser-based tool, it can be used to test REST or GraphQL APIs by sending HTTP requests and asserting the responses.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)** : While not a full-fledged performance testing tool, Cypress can capture performance metrics like page load times and use assertions to flag performance regressions.
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s versatility allows it to cover a broad range of testing needs within a single framework, streamlining the development and testing workflow.
 
-  - **[End-to-End Testing](../E/end-to-end-testing.md) (E2E)** : Simulating real user scenarios from start to finish, ensuring the application behaves as expected in a production-like environment.
-  - **[Integration Testing](../I/integration-testing.md)** : Testing the interactions between application layers or between different microservices to verify they work together correctly.
-  - **[Unit Testing](../U/unit-testing.md)** : Although not its primary use case, Cypress can be used to test individual functions or components in isolation.
+  - **[End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing) (E2E)** : Simulating real user scenarios from start to finish, ensuring the application behaves as expected in a production-like environment.
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)** : Testing the interactions between application layers or between different microservices to verify they work together correctly.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)** : Although not its primary use case, Cypress can be used to test individual functions or components in isolation.
   - **Component Testing** : Verifying the functionality and rendering of individual components, especially useful in modern JavaScript frameworks like React, Angular, or Vue.
-  - **[Visual Regression Testing](../V/visual-regression-testing.md)** : By integrating with tools like Percy or Applitools, Cypress can capture screenshots and compare them to baseline images to detect visual changes.
-  - **[Accessibility Testing](../A/accessibility-testing.md)** : With plugins like
+  - **[Visual Regression Testing](https://naodeng.com.cn/en/wiki/visual-regression-testing)** : By integrating with tools like Percy or Applitools, Cypress can capture screenshots and compare them to baseline images to detect visual changes.
+  - **[Accessibility Testing](https://naodeng.com.cn/en/wiki/accessibility-testing)** : With plugins like
     `cypress-axe`
     , testers can incorporate accessibility checks into their test suites to ensure compliance with standards like WCAG.
 
-  - **[API Testing](../A/api-testing.md)** : Although Cypress is primarily a browser-based tool, it can be used to test REST or GraphQL APIs by sending HTTP requests and asserting the responses.
-  - **[Performance Testing](../P/performance-testing.md)** : While not a full-fledged performance testing tool, Cypress can capture performance metrics like page load times and use assertions to flag performance regressions.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)** : Although Cypress is primarily a browser-based tool, it can be used to test REST or GraphQL APIs by sending HTTP requests and asserting the responses.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)** : While not a full-fledged performance testing tool, Cypress can capture performance metrics like page load times and use assertions to flag performance regressions.
 
 ### Installation and Setup
 
 #### How to install Cypress?
 
-  To install [Cypress](../C/cypress.md), ensure you have **[Node.js](../N/node-js.md)** (version 12 or above) and **npm** (version 6 or above) installed on your system. Open your terminal or command prompt and follow these steps:
+  To install [Cypress](https://naodeng.com.cn/en/wiki/cypress), ensure you have **[Node.js](https://naodeng.com.cn/en/wiki/node-js)** (version 12 or above) and **npm** (version 6 or above) installed on your system. Open your terminal or command prompt and follow these steps:
 
   1. Navigate to your project directory:
 
@@ -203,7 +202,7 @@ offers a comprehensive and user-friendly environment for web application testing
     cd /your/project/path
     ```
 
-  2. Install [Cypress](../C/cypress.md) as a dev dependency using npm:
+  2. Install [Cypress](https://naodeng.com.cn/en/wiki/cypress) as a dev dependency using npm:
     Alternatively, you can use `yarn` if you prefer:
 
     ```
@@ -214,7 +213,7 @@ offers a comprehensive and user-friendly environment for web application testing
     yarn add cypress --dev
     ```
 
-  3. After installation, you can open [Cypress](../C/cypress.md) for the first time with:
+  3. After installation, you can open [Cypress](https://naodeng.com.cn/en/wiki/cypress) for the first time with:
     Or, if you're using yarn:
 
     ```
@@ -224,13 +223,13 @@ offers a comprehensive and user-friendly environment for web application testing
     ```
     yarn run cypress open
     ```
-  This will open the [Cypress](../C/cypress.md) [Test Runner](../T/test-runner.md) and create a `cypress` folder in your project directory, which contains the default configuration and sample tests.
-  For continuous integration systems or to run [Cypress](../C/cypress.md) tests headlessly, use the `cypress run` command:
+  This will open the [Cypress](https://naodeng.com.cn/en/wiki/cypress) [Test Runner](https://naodeng.com.cn/en/wiki/test-runner) and create a `cypress` folder in your project directory, which contains the default configuration and sample tests.
+  For continuous integration systems or to run [Cypress](https://naodeng.com.cn/en/wiki/cypress) tests headlessly, use the `cypress run` command:
 
   ```
   npx cypress run
   ```
-  Remember to add [Cypress](../C/cypress.md) commands to the `scripts` section of your `package.json` for easier execution:
+  Remember to add [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands to the `scripts` section of your `package.json` for easier execution:
 
   ```
   "scripts": {
@@ -248,7 +247,7 @@ offers a comprehensive and user-friendly environment for web application testing
   ```
   npm run cypress:run
   ```
-  Ensure you have the necessary permissions to install new packages on your system. If you encounter any issues, refer to the official [Cypress](../C/cypress.md) documentation for troubleshooting.
+  Ensure you have the necessary permissions to install new packages on your system. If you encounter any issues, refer to the official [Cypress](https://naodeng.com.cn/en/wiki/cypress) documentation for troubleshooting.
 
   1. Navigate to your project directory:
 
@@ -256,7 +255,7 @@ offers a comprehensive and user-friendly environment for web application testing
     cd /your/project/path
     ```
 
-  2. Install [Cypress](../C/cypress.md) as a dev dependency using npm:
+  2. Install [Cypress](https://naodeng.com.cn/en/wiki/cypress) as a dev dependency using npm:
     Alternatively, you can use `yarn` if you prefer:
 
     ```
@@ -267,7 +266,7 @@ offers a comprehensive and user-friendly environment for web application testing
     yarn add cypress --dev
     ```
 
-  3. After installation, you can open [Cypress](../C/cypress.md) for the first time with:
+  3. After installation, you can open [Cypress](https://naodeng.com.cn/en/wiki/cypress) for the first time with:
     Or, if you're using yarn:
 
     ```
@@ -280,9 +279,9 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### What are the system requirements for Cypress?
 
-  [Cypress](../C/cypress.md) is compatible with **Windows, macOS, and Linux** operating systems. The specific system requirements include:
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress) is compatible with **Windows, macOS, and Linux** operating systems. The specific system requirements include:
 
-  - **[Node.js](../N/node-js.md)** : Version 12 or above.
+  - **[Node.js](https://naodeng.com.cn/en/wiki/node-js)** : Version 12 or above.
   - **npm**
     (usually comes with Node.js) or
     **Yarn**
@@ -308,15 +307,15 @@ offers a comprehensive and user-friendly environment for web application testing
 
   - **Memory and CPU** : Sufficient resources to run the Electron browser, especially when running multiple tests in parallel. At least 2GB of RAM is recommended.
   - **Screen resolution** : A minimum screen resolution of 1280x720 is recommended for viewing the Cypress Test Runner.
-  Ensure your system has **write permissions** to the directory where [Cypress](../C/cypress.md) is installed and runs tests.
-  For **Linux users**, you may need to install additional dependencies if they are not already present on your system. [Cypress](../C/cypress.md) provides a command that can be run to install these dependencies:
+  Ensure your system has **write permissions** to the directory where [Cypress](https://naodeng.com.cn/en/wiki/cypress) is installed and runs tests.
+  For **Linux users**, you may need to install additional dependencies if they are not already present on your system. [Cypress](https://naodeng.com.cn/en/wiki/cypress) provides a command that can be run to install these dependencies:
 
   ```
   sudo apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
   ```
-  **Note**: [Cypress](../C/cypress.md) is a desktop application that is installed on your computer, so it requires the above prerequisites to be met for the installation and execution of tests.
+  **Note**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) is a desktop application that is installed on your computer, so it requires the above prerequisites to be met for the installation and execution of tests.
 
-  - **[Node.js](../N/node-js.md)** : Version 12 or above.
+  - **[Node.js](https://naodeng.com.cn/en/wiki/node-js)** : Version 12 or above.
   - **npm**
     (usually comes with Node.js) or
     **Yarn**
@@ -345,7 +344,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to set up a project in Cypress?
 
-  To set up a project in [Cypress](../C/cypress.md), follow these steps:
+  To set up a project in [Cypress](https://naodeng.com.cn/en/wiki/cypress), follow these steps:
 
   1. **Create a new directory** for your project if you haven't already, and navigate into it using your terminal or command prompt.
 
@@ -360,13 +359,13 @@ offers a comprehensive and user-friendly environment for web application testing
     npm init -y
     ```
 
-  3. **Install [Cypress](../C/cypress.md)** via npm by running:
+  3. **Install [Cypress](https://naodeng.com.cn/en/wiki/cypress)** via npm by running:
 
     ```
     npm install cypress --save-dev
     ```
 
-  4. **Open [Cypress](../C/cypress.md)** for the first time to scaffold the default directory structure and files by executing:
+  4. **Open [Cypress](https://naodeng.com.cn/en/wiki/cypress)** for the first time to scaffold the default directory structure and files by executing:
     This command generates a `cypress` folder containing example tests and a `cypress.json` file for configuration.
 
     ```
@@ -386,9 +385,9 @@ offers a comprehensive and user-friendly environment for web application testing
     ```
 
   6. **Organize your test files** within the `cypress/integration` directory. You may create subdirectories to group related tests.
-  7. **Write your tests** using the `describe` and `it` functions provided by [Cypress](../C/cypress.md), and save them with a `.spec.js` or `.spec.ts` extension.
-  8. **Run your tests** either using `npx cypress open` to open the [Cypress](../C/cypress.md) [Test Runner](../T/test-runner.md) or `npx cypress run` to execute tests in headless mode.
-  Remember to **add the `node_modules` directory to your `.gitignore` file** to avoid committing dependencies to version control. Also, consider setting up scripts in your `package.json` for common [Cypress](../C/cypress.md) commands.
+  7. **Write your tests** using the `describe` and `it` functions provided by [Cypress](https://naodeng.com.cn/en/wiki/cypress), and save them with a `.spec.js` or `.spec.ts` extension.
+  8. **Run your tests** either using `npx cypress open` to open the [Cypress](https://naodeng.com.cn/en/wiki/cypress) [Test Runner](https://naodeng.com.cn/en/wiki/test-runner) or `npx cypress run` to execute tests in headless mode.
+  Remember to **add the `node_modules` directory to your `.gitignore` file** to avoid committing dependencies to version control. Also, consider setting up scripts in your `package.json` for common [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands.
 
   1. **Create a new directory** for your project if you haven't already, and navigate into it using your terminal or command prompt.
 
@@ -403,13 +402,13 @@ offers a comprehensive and user-friendly environment for web application testing
     npm init -y
     ```
 
-  3. **Install [Cypress](../C/cypress.md)** via npm by running:
+  3. **Install [Cypress](https://naodeng.com.cn/en/wiki/cypress)** via npm by running:
 
     ```
     npm install cypress --save-dev
     ```
 
-  4. **Open [Cypress](../C/cypress.md)** for the first time to scaffold the default directory structure and files by executing:
+  4. **Open [Cypress](https://naodeng.com.cn/en/wiki/cypress)** for the first time to scaffold the default directory structure and files by executing:
     This command generates a `cypress` folder containing example tests and a `cypress.json` file for configuration.
 
     ```
@@ -429,12 +428,12 @@ offers a comprehensive and user-friendly environment for web application testing
     ```
 
   6. **Organize your test files** within the `cypress/integration` directory. You may create subdirectories to group related tests.
-  7. **Write your tests** using the `describe` and `it` functions provided by [Cypress](../C/cypress.md), and save them with a `.spec.js` or `.spec.ts` extension.
-  8. **Run your tests** either using `npx cypress open` to open the [Cypress](../C/cypress.md) [Test Runner](../T/test-runner.md) or `npx cypress run` to execute tests in headless mode.
+  7. **Write your tests** using the `describe` and `it` functions provided by [Cypress](https://naodeng.com.cn/en/wiki/cypress), and save them with a `.spec.js` or `.spec.ts` extension.
+  8. **Run your tests** either using `npx cypress open` to open the [Cypress](https://naodeng.com.cn/en/wiki/cypress) [Test Runner](https://naodeng.com.cn/en/wiki/test-runner) or `npx cypress run` to execute tests in headless mode.
 
 #### How to configure Cypress for a specific environment?
 
-  To configure [Cypress](../C/cypress.md) for a specific environment, you'll need to set environment variables and potentially adjust your `cypress.json` configuration file. Here's a succinct guide:
+  To configure [Cypress](https://naodeng.com.cn/en/wiki/cypress) for a specific environment, you'll need to set environment variables and potentially adjust your `cypress.json` configuration file. Here's a succinct guide:
 
   1. **Environment Variables**: Define environment-specific variables using the `env` key in your `cypress.json` file or by passing them via the command line.
     Alternatively, use the command line to override:
@@ -451,7 +450,7 @@ offers a comprehensive and user-friendly environment for web application testing
     npx cypress run --env apiUrl=https://api.staging.example.com
     ```
 
-  2. **Configuration Files**: For more complex [setups](../S/setup.md), consider having separate configuration files for each environment, like `cypress.staging.json` and `cypress.production.json`. Use the `--config-file` flag to specify the configuration file when running tests.
+  2. **Configuration Files**: For more complex [setups](https://naodeng.com.cn/en/wiki/setup), consider having separate configuration files for each environment, like `cypress.staging.json` and `cypress.production.json`. Use the `--config-file` flag to specify the configuration file when running tests.
 
     ```
     npx cypress run --config-file cypress.staging.json
@@ -469,7 +468,7 @@ offers a comprehensive and user-friendly environment for web application testing
     };
     ```
 
-  4. **[Cypress](../C/cypress.md).env()**: Access environment variables in your tests using `Cypress.env('variableName')`.
+  4. **[Cypress](https://naodeng.com.cn/en/wiki/cypress).env()**: Access environment variables in your tests using `Cypress.env('variableName')`.
 
     ```
     const apiUrl = Cypress.env('apiUrl');
@@ -491,7 +490,7 @@ offers a comprehensive and user-friendly environment for web application testing
     npx cypress run --env apiUrl=https://api.staging.example.com
     ```
 
-  2. **Configuration Files**: For more complex [setups](../S/setup.md), consider having separate configuration files for each environment, like `cypress.staging.json` and `cypress.production.json`. Use the `--config-file` flag to specify the configuration file when running tests.
+  2. **Configuration Files**: For more complex [setups](https://naodeng.com.cn/en/wiki/setup), consider having separate configuration files for each environment, like `cypress.staging.json` and `cypress.production.json`. Use the `--config-file` flag to specify the configuration file when running tests.
 
     ```
     npx cypress run --config-file cypress.staging.json
@@ -509,7 +508,7 @@ offers a comprehensive and user-friendly environment for web application testing
     };
     ```
 
-  4. **[Cypress](../C/cypress.md).env()**: Access environment variables in your tests using `Cypress.env('variableName')`.
+  4. **[Cypress](https://naodeng.com.cn/en/wiki/cypress).env()**: Access environment variables in your tests using `Cypress.env('variableName')`.
 
     ```
     const apiUrl = Cypress.env('apiUrl');
@@ -519,16 +518,16 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to write a basic test in Cypress?
 
-  To write a basic test in [Cypress](../C/cypress.md), follow these steps:
+  To write a basic test in [Cypress](https://naodeng.com.cn/en/wiki/cypress), follow these steps:
 
-  1. **Create a new test file** in your [Cypress](../C/cypress.md) integration folder, typically with a `.spec.js` extension, for example, `login.spec.js`.
-  2. **Start by requiring [Cypress](../C/cypress.md)** at the top of your test file:
+  1. **Create a new test file** in your [Cypress](https://naodeng.com.cn/en/wiki/cypress) integration folder, typically with a `.spec.js` extension, for example, `login.spec.js`.
+  2. **Start by requiring [Cypress](https://naodeng.com.cn/en/wiki/cypress)** at the top of your test file:
 
   ```
   /// <reference types="cypress" />
   ```
 
-  1. **Describe your [test suite](../T/test-suite.md)**
+  1. **Describe your [test suite](https://naodeng.com.cn/en/wiki/test-suite)**
     using the
     `describe`
     function, providing a title and a callback function to contain your tests:
@@ -539,7 +538,7 @@ offers a comprehensive and user-friendly environment for web application testing
   });
   ```
 
-  1. **Write individual [test cases](../T/test-case.md)**
+  1. **Write individual [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     within the
     `describe`
     block using the
@@ -577,14 +576,14 @@ offers a comprehensive and user-friendly environment for web application testing
     .
   Remember to **keep tests isolated** and **independent** for reliability. Use `beforeEach` or `before` hooks if you need to set up state before each test or once before all tests in the suite, respectively.
 
-  1. **Create a new test file** in your [Cypress](../C/cypress.md) integration folder, typically with a `.spec.js` extension, for example, `login.spec.js`.
-  2. **Start by requiring [Cypress](../C/cypress.md)** at the top of your test file:
-  1. **Describe your [test suite](../T/test-suite.md)**
+  1. **Create a new test file** in your [Cypress](https://naodeng.com.cn/en/wiki/cypress) integration folder, typically with a `.spec.js` extension, for example, `login.spec.js`.
+  2. **Start by requiring [Cypress](https://naodeng.com.cn/en/wiki/cypress)** at the top of your test file:
+  1. **Describe your [test suite](https://naodeng.com.cn/en/wiki/test-suite)**
     using the
     `describe`
     function, providing a title and a callback function to contain your tests:
 
-  1. **Write individual [test cases](../T/test-case.md)**
+  1. **Write individual [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     within the
     `describe`
     block using the
@@ -607,7 +606,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### What is the structure of a Cypress test?
 
-  A [Cypress](../C/cypress.md) test typically follows a structure that includes importing necessary dependencies, describing [test suites](../T/test-suite.md), defining [test cases](../T/test-case.md), and implementing test steps with assertions. Here's an example of a basic [Cypress](../C/cypress.md) test structure:
+  A [Cypress](https://naodeng.com.cn/en/wiki/cypress) test typically follows a structure that includes importing necessary dependencies, describing [test suites](https://naodeng.com.cn/en/wiki/test-suite), defining [test cases](https://naodeng.com.cn/en/wiki/test-case), and implementing test steps with assertions. Here's an example of a basic [Cypress](https://naodeng.com.cn/en/wiki/cypress) test structure:
 
   ```
   // Import the Cypress module
@@ -690,7 +689,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to run a test in Cypress?
 
-  To run a test in [Cypress](../C/cypress.md), follow these steps:
+  To run a test in [Cypress](https://naodeng.com.cn/en/wiki/cypress), follow these steps:
 
   1. Open your terminal or command prompt.
   2. Navigate to your project directory where Cypress is installed.
@@ -702,7 +701,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
   1. The Cypress Test Runner GUI will launch, displaying a list of your test files.
   2. Click on the test file you want to run. Cypress will execute the tests in that file and display the results in real-time.
-  Alternatively, to run tests headlessly without opening the [Test Runner](../T/test-runner.md) GUI:
+  Alternatively, to run tests headlessly without opening the [Test Runner](https://naodeng.com.cn/en/wiki/test-runner) GUI:
 
   1. Use the following command in your terminal:
 
@@ -727,7 +726,7 @@ offers a comprehensive and user-friendly environment for web application testing
   npx cypress run --config video=false
   ```
   This command will run tests without recording a video.
-  For parallel [test execution](../T/test-execution.md) and load balancing across multiple machines or CI containers, use the [Cypress](../C/cypress.md) Dashboard service, which requires additional [setup](../S/setup.md) and configuration.
+  For parallel [test execution](https://naodeng.com.cn/en/wiki/test-execution) and load balancing across multiple machines or CI containers, use the [Cypress](https://naodeng.com.cn/en/wiki/cypress) Dashboard service, which requires additional [setup](https://naodeng.com.cn/en/wiki/setup) and configuration.
 
   1. Open your terminal or command prompt.
   2. Navigate to your project directory where Cypress is installed.
@@ -739,8 +738,8 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to use assertions in Cypress?
 
-  Using assertions in [Cypress](../C/cypress.md) is crucial for verifying that the application under test behaves as expected. [Cypress](../C/cypress.md) uses Chai for assertions, which provides `expect`, `assert`, and `should` syntax.
-  **Expect** and **should** are [BDD](../B/bdd.md) (Behavior-Driven Development) style assertions, while **assert** is TDD ([Test-Driven Development](../T/test-driven-development.md)) style. Here's how you can use them:
+  Using assertions in [Cypress](https://naodeng.com.cn/en/wiki/cypress) is crucial for verifying that the application under test behaves as expected. [Cypress](https://naodeng.com.cn/en/wiki/cypress) uses Chai for assertions, which provides `expect`, `assert`, and `should` syntax.
+  **Expect** and **should** are [BDD](https://naodeng.com.cn/en/wiki/bdd) (Behavior-Driven Development) style assertions, while **assert** is TDD ([Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development)) style. Here's how you can use them:
   **Expect:**
 
   ```
@@ -759,7 +758,7 @@ offers a comprehensive and user-friendly environment for web application testing
   assert.equal(variable, value, 'Optional message');
   assert.isTrue(condition, 'Optional message');
   ```
-  [Cypress](../C/cypress.md) assertions are automatically retried until they pass or time out, which is defined by the `defaultCommandTimeout` configuration.
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress) assertions are automatically retried until they pass or time out, which is defined by the `defaultCommandTimeout` configuration.
   Chain assertions for more complex checks:
 
   ```
@@ -774,7 +773,7 @@ offers a comprehensive and user-friendly environment for web application testing
     expect(response.body).to.have.property('data');
   });
   ```
-  Remember to leverage [Cypress](../C/cypress.md)'s built-in assertions for common conditions, such as visibility or existence of elements, which simplifies the syntax and improves readability:
+  Remember to leverage [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s built-in assertions for common conditions, such as visibility or existence of elements, which simplifies the syntax and improves readability:
 
   ```
   cy.get(selector).should('be.visible');
@@ -784,7 +783,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to handle events in Cypress?
 
-  Handling events in [Cypress](../C/cypress.md) is straightforward due to its jQuery-like syntax. To interact with elements and handle events, you can use [Cypress](../C/cypress.md) commands that simulate user actions.
+  Handling events in [Cypress](https://naodeng.com.cn/en/wiki/cypress) is straightforward due to its jQuery-like syntax. To interact with elements and handle events, you can use [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands that simulate user actions.
   For example, to handle a click event, you would use the `.click()` command:
 
   ```
@@ -800,7 +799,7 @@ offers a comprehensive and user-friendly environment for web application testing
   ```
   cy.get('input').type('Hello, World!');
   ```
-  To handle more complex events like hover, [Cypress](../C/cypress.md) does not natively support the `hover` event as a user would experience it. Instead, you can trigger the same functionality using the `.trigger()` command:
+  To handle more complex events like hover, [Cypress](https://naodeng.com.cn/en/wiki/cypress) does not natively support the `hover` event as a user would experience it. Instead, you can trigger the same functionality using the `.trigger()` command:
 
   ```
   cy.get('div').trigger('mouseover');
@@ -811,7 +810,7 @@ offers a comprehensive and user-friendly environment for web application testing
   cy.wait(1000); // Waits for 1 second
   cy.get('button').click();
   ```
-  Remember that [Cypress](../C/cypress.md) automatically waits for elements to exist and will retry commands until the elements are actionable. This means you often don't need to manually handle events that depend on previous actions or asynchronous operations.
+  Remember that [Cypress](https://naodeng.com.cn/en/wiki/cypress) automatically waits for elements to exist and will retry commands until the elements are actionable. This means you often don't need to manually handle events that depend on previous actions or asynchronous operations.
   For custom events or more complex scenarios, you can define custom commands using `Cypress.Commands.add()` to encapsulate reusable event handling logic:
 
   ```
@@ -825,7 +824,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to use fixtures in Cypress?
 
-  Using fixtures in [Cypress](../C/cypress.md) is a way to manage [test data](../T/test-data.md) separately from [test scripts](../T/test-script.md), allowing you to load static data that can be used across multiple tests. Here's how to use fixtures in [Cypress](../C/cypress.md):
+  Using fixtures in [Cypress](https://naodeng.com.cn/en/wiki/cypress) is a way to manage [test data](https://naodeng.com.cn/en/wiki/test-data) separately from [test scripts](https://naodeng.com.cn/en/wiki/test-script), allowing you to load static data that can be used across multiple tests. Here's how to use fixtures in [Cypress](https://naodeng.com.cn/en/wiki/cypress):
 
   1. **Create a fixture file** : Place a JSON file inside the
     `cypress/fixtures`
@@ -913,13 +912,13 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How does Cypress handle asynchronous operations?
 
-  [Cypress](../C/cypress.md) handles asynchronous operations by automatically waiting for commands and assertions before moving on to the next step. This means that it will wait for elements to become visible, for animations to complete, and for network requests to finish before executing the next command. There's no need to add explicit waits or sleeps in your tests.
-  For example, when you use a command to get an element, [Cypress](../C/cypress.md) will continuously retry this command until the element is found or a timeout is reached. This applies to most commands in [Cypress](../C/cypress.md):
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress) handles asynchronous operations by automatically waiting for commands and assertions before moving on to the next step. This means that it will wait for elements to become visible, for animations to complete, and for network requests to finish before executing the next command. There's no need to add explicit waits or sleeps in your tests.
+  For example, when you use a command to get an element, [Cypress](https://naodeng.com.cn/en/wiki/cypress) will continuously retry this command until the element is found or a timeout is reached. This applies to most commands in [Cypress](https://naodeng.com.cn/en/wiki/cypress):
 
   ```
   cy.get('.some-element') // Cypress will wait for this element to exist
   ```
-  When dealing with network requests, [Cypress](../C/cypress.md) provides `cy.wait()` to wait for a specific request to complete:
+  When dealing with network requests, [Cypress](https://naodeng.com.cn/en/wiki/cypress) provides `cy.wait()` to wait for a specific request to complete:
 
   ```
   cy.wait('@yourRequestAlias')
@@ -932,8 +931,8 @@ offers a comprehensive and user-friendly environment for web application testing
       expect(response.body).to.have.property('success', true);
     });
   ```
-  [Cypress](../C/cypress.md) ensures that the test does not proceed until the asynchronous operation inside `.then()` is completed.
-  For assertions, [Cypress](../C/cypress.md) uses a retry-and-timeout mechanism. Assertions will re-run until they pass or until a specified timeout is reached:
+  [Cypress](https://naodeng.com.cn/en/wiki/cypress) ensures that the test does not proceed until the asynchronous operation inside `.then()` is completed.
+  For assertions, [Cypress](https://naodeng.com.cn/en/wiki/cypress) uses a retry-and-timeout mechanism. Assertions will re-run until they pass or until a specified timeout is reached:
 
   ```
   cy.get('.list-item').should('have.length', 5) // Retries until the condition is met or timeout
@@ -942,7 +941,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to use custom commands in Cypress?
 
-  Using custom commands in [Cypress](../C/cypress.md) can enhance your [test suite](../T/test-suite.md) by encapsulating repetitive tasks. To define a custom command, add a function to the `Cypress.Commands.add` method in the `commands.js` file located in the `cypress/support` directory.
+  Using custom commands in [Cypress](https://naodeng.com.cn/en/wiki/cypress) can enhance your [test suite](https://naodeng.com.cn/en/wiki/test-suite) by encapsulating repetitive tasks. To define a custom command, add a function to the `Cypress.Commands.add` method in the `commands.js` file located in the `cypress/support` directory.
 
   ```
   Cypress.Commands.add('login', (email, password) => {
@@ -957,7 +956,7 @@ offers a comprehensive and user-friendly environment for web application testing
   cy.login('user@example.com', 'password123');
   ```
   **Parameters** can be passed to custom commands just like any other function. In the example above, `email` and `password` are the parameters.
-  **Chaining** is supported by custom commands. Return `cy` from your custom command to continue chaining [Cypress](../C/cypress.md) commands:
+  **Chaining** is supported by custom commands. Return `cy` from your custom command to continue chaining [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands:
 
   ```
   Cypress.Commands.add('fillForm', data => {
@@ -979,7 +978,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to handle network requests in Cypress?
 
-  Handling network requests in [Cypress](../C/cypress.md) can be achieved using the `cy.intercept()` method. This allows you to listen to, modify, or mock network requests and responses.
+  Handling network requests in [Cypress](https://naodeng.com.cn/en/wiki/cypress) can be achieved using the `cy.intercept()` method. This allows you to listen to, modify, or mock network requests and responses.
   **Intercepting a GET request:**
 
   ```
@@ -1026,7 +1025,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to work with cookies and local storage in Cypress?
 
-  Working with cookies and local storage in [Cypress](../C/cypress.md) is straightforward due to its built-in commands.
+  Working with cookies and local storage in [Cypress](https://naodeng.com.cn/en/wiki/cypress) is straightforward due to its built-in commands.
   **Cookies:**
   To get a cookie by name:
 
@@ -1079,11 +1078,11 @@ offers a comprehensive and user-friendly environment for web application testing
   ```
   cy.clearLocalStorage(/cart/)
   ```
-  Remember, these commands are asynchronous and return promises, so they should be used with [Cypress](../C/cypress.md)'s chaining mechanism. Also, local storage operations are typically performed in the context of the application under test, so ensure the correct page is loaded before attempting to interact with local storage.
+  Remember, these commands are asynchronous and return promises, so they should be used with [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s chaining mechanism. Also, local storage operations are typically performed in the context of the application under test, so ensure the correct page is loaded before attempting to interact with local storage.
 
 #### How to handle iframes in Cypress?
 
-  Handling iframes in [Cypress](../C/cypress.md) requires a few additional steps because [Cypress](../C/cypress.md) commands are designed to operate within the same-origin context. Here's a succinct guide:
+  Handling iframes in [Cypress](https://naodeng.com.cn/en/wiki/cypress) requires a few additional steps because [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands are designed to operate within the same-origin context. Here's a succinct guide:
 
   1. **Target the iframe**
     - Use
@@ -1111,7 +1110,7 @@ offers a comprehensive and user-friendly environment for web application testing
   ```
   Remember that for cross-origin iframes, you'll need to set `"chromeWebSecurity": false` in your `cypress.json` configuration file to bypass these restrictions. However, this is not recommended for security reasons and should only be used when absolutely necessary.
   If you're dealing with multiple nested iframes, you'll need to repeat the process for each level of iframe nesting, ensuring that you target the correct iframe at each level.
-  Keep in mind that [Cypress](../C/cypress.md) best practices recommend avoiding iframes when possible, as they add complexity to your tests. If you have control over the application, consider alternatives to iframes that are more test-friendly.
+  Keep in mind that [Cypress](https://naodeng.com.cn/en/wiki/cypress) best practices recommend avoiding iframes when possible, as they add complexity to your tests. If you have control over the application, consider alternatives to iframes that are more test-friendly.
 
   1. **Target the iframe**
     - Use
@@ -1128,7 +1127,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to use plugins in Cypress?
 
-  Using plugins in [Cypress](../C/cypress.md) enhances its capabilities by extending its core functionality. To use a plugin, follow these steps:
+  Using plugins in [Cypress](https://naodeng.com.cn/en/wiki/cypress) enhances its capabilities by extending its core functionality. To use a plugin, follow these steps:
 
   1. **Install the plugin** via npm. For example, to install the `cypress-file-upload` plugin, run:
 
@@ -1136,7 +1135,7 @@ offers a comprehensive and user-friendly environment for web application testing
     npm install --save-dev cypress-file-upload
     ```
 
-  2. **Include the plugin** in your project's `cypress/plugins/index.js` file. This is where you modify or extend the internal behavior of [Cypress](../C/cypress.md). For instance:
+  2. **Include the plugin** in your project's `cypress/plugins/index.js` file. This is where you modify or extend the internal behavior of [Cypress](https://naodeng.com.cn/en/wiki/cypress). For instance:
 
     ```
     module.exports = (on, config) => {
@@ -1155,7 +1154,7 @@ offers a comprehensive and user-friendly environment for web application testing
     ```
     cy.get('input[type="file"]').attachFile('file.json');
     ```
-  Remember to **check the plugin's documentation** for specific usage instructions and compatibility with your version of [Cypress](../C/cypress.md). Some plugins may require additional configuration or initialization steps.
+  Remember to **check the plugin's documentation** for specific usage instructions and compatibility with your version of [Cypress](https://naodeng.com.cn/en/wiki/cypress). Some plugins may require additional configuration or initialization steps.
   Plugins can provide a variety of functionalities, such as custom commands, improved reporting, or integration with other tools. Always **ensure that the plugin is actively maintained** and well-suited for your needs before adding it to your project.
 
   1. **Install the plugin** via npm. For example, to install the `cypress-file-upload` plugin, run:
@@ -1164,7 +1163,7 @@ offers a comprehensive and user-friendly environment for web application testing
     npm install --save-dev cypress-file-upload
     ```
 
-  2. **Include the plugin** in your project's `cypress/plugins/index.js` file. This is where you modify or extend the internal behavior of [Cypress](../C/cypress.md). For instance:
+  2. **Include the plugin** in your project's `cypress/plugins/index.js` file. This is where you modify or extend the internal behavior of [Cypress](https://naodeng.com.cn/en/wiki/cypress). For instance:
 
     ```
     module.exports = (on, config) => {
@@ -1188,7 +1187,7 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### What are some best practices for writing tests in Cypress?
 
-  When writing tests in [Cypress](../C/cypress.md), consider the following best practices:
+  When writing tests in [Cypress](https://naodeng.com.cn/en/wiki/cypress), consider the following best practices:
 
   - **Organize tests logically**
     using
@@ -1203,10 +1202,10 @@ offers a comprehensive and user-friendly environment for web application testing
   - **Keep tests isolated and independent**
     to avoid inter-test dependencies that can cause flakiness.
 
-  - **Employ [Page Object Model](../P/page-object-model.md)**
+  - **Employ [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model)**
     or similar patterns to abstract element selectors and page interactions, enhancing maintainability.
 
-  - **Utilize [Cypress](../C/cypress.md)'s built-in retry-ability**
+  - **Utilize [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s built-in retry-ability**
     for commands and assertions to handle dynamic content and reduce flakiness.
 
   - **Avoid using arbitrary waits**
@@ -1214,7 +1213,7 @@ offers a comprehensive and user-friendly environment for web application testing
     `cy.wait()`
     with a fixed time); instead, rely on Cypress's automatic waiting for elements to exist, be visible, be clickable, etc.
 
-  - **Leverage [Cypress](../C/cypress.md) aliases**
+  - **Leverage [Cypress](https://naodeng.com.cn/en/wiki/cypress) aliases**
     with
     `cy.as()`
     for reusing elements or responses in a chain of commands.
@@ -1245,7 +1244,7 @@ offers a comprehensive and user-friendly environment for web application testing
     });
   });
   ```
-  Remember to **review and refactor tests regularly** to adapt to application changes and improve [test suite](../T/test-suite.md) reliability and performance.
+  Remember to **review and refactor tests regularly** to adapt to application changes and improve [test suite](https://naodeng.com.cn/en/wiki/test-suite) reliability and performance.
 
   - **Organize tests logically**
     using
@@ -1260,10 +1259,10 @@ offers a comprehensive and user-friendly environment for web application testing
   - **Keep tests isolated and independent**
     to avoid inter-test dependencies that can cause flakiness.
 
-  - **Employ [Page Object Model](../P/page-object-model.md)**
+  - **Employ [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model)**
     or similar patterns to abstract element selectors and page interactions, enhancing maintainability.
 
-  - **Utilize [Cypress](../C/cypress.md)'s built-in retry-ability**
+  - **Utilize [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s built-in retry-ability**
     for commands and assertions to handle dynamic content and reduce flakiness.
 
   - **Avoid using arbitrary waits**
@@ -1271,7 +1270,7 @@ offers a comprehensive and user-friendly environment for web application testing
     `cy.wait()`
     with a fixed time); instead, rely on Cypress's automatic waiting for elements to exist, be visible, be clickable, etc.
 
-  - **Leverage [Cypress](../C/cypress.md) aliases**
+  - **Leverage [Cypress](https://naodeng.com.cn/en/wiki/cypress) aliases**
     with
     `cy.as()`
     for reusing elements or responses in a chain of commands.
@@ -1293,12 +1292,12 @@ offers a comprehensive and user-friendly environment for web application testing
 
 #### How to debug tests in Cypress?
 
-  Debugging tests in [Cypress](../C/cypress.md) can be approached systematically:
+  Debugging tests in [Cypress](https://naodeng.com.cn/en/wiki/cypress) can be approached systematically:
 
-  1. **Use the [Cypress](../C/cypress.md) [Test Runner](../T/test-runner.md)**: It provides a visual representation of [test execution](../T/test-execution.md). You can see commands as they run and inspect the state of the application at each step.
-  2. **Time Travel**: [Cypress](../C/cypress.md) takes snapshots as your tests run. Hover over commands in the Command Log to see exactly what happened at each step.
-  3. **Real-Time Reloads**: [Cypress](../C/cypress.md) automatically reloads whenever you make changes to your tests. You can see test results instantly.
-  4. **Console Output**: Check the browser's developer console for logs. [Cypress](../C/cypress.md) commands log additional information here, which can be useful for debugging.
+  1. **Use the [Cypress](https://naodeng.com.cn/en/wiki/cypress) [Test Runner](https://naodeng.com.cn/en/wiki/test-runner)**: It provides a visual representation of [test execution](https://naodeng.com.cn/en/wiki/test-execution). You can see commands as they run and inspect the state of the application at each step.
+  2. **Time Travel**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) takes snapshots as your tests run. Hover over commands in the Command Log to see exactly what happened at each step.
+  3. **Real-Time Reloads**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) automatically reloads whenever you make changes to your tests. You can see test results instantly.
+  4. **Console Output**: Check the browser's developer console for logs. [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands log additional information here, which can be useful for debugging.
   5. **`.debug()` Command**: Insert `.debug()` into your chain of commands to inspect the state of the DOM at that point. It will cause the browser's debugger to kick in.
 
     ```
@@ -1313,16 +1312,16 @@ offers a comprehensive and user-friendly environment for web application testing
     });
     ```
 
-  7. **Network Requests**: Inspect network requests in the [Test Runner](../T/test-runner.md)'s Command Log to ensure [API](../A/api.md) calls are being made as expected and with the correct data.
-  8. **Error Messages**: Read error messages carefully. [Cypress](../C/cypress.md) provides descriptive error messages that can guide you to the source of the problem.
-  9. **[Cypress](../C/cypress.md) Logs**: Enable verbose logging by setting `Cypress.config('log', true)` to get more detailed information about the [test execution](../T/test-execution.md).
-  10. **Retry-ability**: Understand that [Cypress](../C/cypress.md) commands automatically retry until they succeed or time out. If a test is failing because an assertion is running before the application is ready, consider adding waits or assertions for intermediate states.
-  By combining these tools and techniques, you can effectively debug your [Cypress](../C/cypress.md) tests and resolve issues more quickly.
+  7. **Network Requests**: Inspect network requests in the [Test Runner](https://naodeng.com.cn/en/wiki/test-runner)'s Command Log to ensure [API](https://naodeng.com.cn/en/wiki/api) calls are being made as expected and with the correct data.
+  8. **Error Messages**: Read error messages carefully. [Cypress](https://naodeng.com.cn/en/wiki/cypress) provides descriptive error messages that can guide you to the source of the problem.
+  9. **[Cypress](https://naodeng.com.cn/en/wiki/cypress) Logs**: Enable verbose logging by setting `Cypress.config('log', true)` to get more detailed information about the [test execution](https://naodeng.com.cn/en/wiki/test-execution).
+  10. **Retry-ability**: Understand that [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands automatically retry until they succeed or time out. If a test is failing because an assertion is running before the application is ready, consider adding waits or assertions for intermediate states.
+  By combining these tools and techniques, you can effectively debug your [Cypress](https://naodeng.com.cn/en/wiki/cypress) tests and resolve issues more quickly.
 
-  1. **Use the [Cypress](../C/cypress.md) [Test Runner](../T/test-runner.md)**: It provides a visual representation of [test execution](../T/test-execution.md). You can see commands as they run and inspect the state of the application at each step.
-  2. **Time Travel**: [Cypress](../C/cypress.md) takes snapshots as your tests run. Hover over commands in the Command Log to see exactly what happened at each step.
-  3. **Real-Time Reloads**: [Cypress](../C/cypress.md) automatically reloads whenever you make changes to your tests. You can see test results instantly.
-  4. **Console Output**: Check the browser's developer console for logs. [Cypress](../C/cypress.md) commands log additional information here, which can be useful for debugging.
+  1. **Use the [Cypress](https://naodeng.com.cn/en/wiki/cypress) [Test Runner](https://naodeng.com.cn/en/wiki/test-runner)**: It provides a visual representation of [test execution](https://naodeng.com.cn/en/wiki/test-execution). You can see commands as they run and inspect the state of the application at each step.
+  2. **Time Travel**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) takes snapshots as your tests run. Hover over commands in the Command Log to see exactly what happened at each step.
+  3. **Real-Time Reloads**: [Cypress](https://naodeng.com.cn/en/wiki/cypress) automatically reloads whenever you make changes to your tests. You can see test results instantly.
+  4. **Console Output**: Check the browser's developer console for logs. [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands log additional information here, which can be useful for debugging.
   5. **`.debug()` Command**: Insert `.debug()` into your chain of commands to inspect the state of the DOM at that point. It will cause the browser's debugger to kick in.
 
     ```
@@ -1337,14 +1336,14 @@ offers a comprehensive and user-friendly environment for web application testing
     });
     ```
 
-  7. **Network Requests**: Inspect network requests in the [Test Runner](../T/test-runner.md)'s Command Log to ensure [API](../A/api.md) calls are being made as expected and with the correct data.
-  8. **Error Messages**: Read error messages carefully. [Cypress](../C/cypress.md) provides descriptive error messages that can guide you to the source of the problem.
-  9. **[Cypress](../C/cypress.md) Logs**: Enable verbose logging by setting `Cypress.config('log', true)` to get more detailed information about the [test execution](../T/test-execution.md).
-  10. **Retry-ability**: Understand that [Cypress](../C/cypress.md) commands automatically retry until they succeed or time out. If a test is failing because an assertion is running before the application is ready, consider adding waits or assertions for intermediate states.
+  7. **Network Requests**: Inspect network requests in the [Test Runner](https://naodeng.com.cn/en/wiki/test-runner)'s Command Log to ensure [API](https://naodeng.com.cn/en/wiki/api) calls are being made as expected and with the correct data.
+  8. **Error Messages**: Read error messages carefully. [Cypress](https://naodeng.com.cn/en/wiki/cypress) provides descriptive error messages that can guide you to the source of the problem.
+  9. **[Cypress](https://naodeng.com.cn/en/wiki/cypress) Logs**: Enable verbose logging by setting `Cypress.config('log', true)` to get more detailed information about the [test execution](https://naodeng.com.cn/en/wiki/test-execution).
+  10. **Retry-ability**: Understand that [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands automatically retry until they succeed or time out. If a test is failing because an assertion is running before the application is ready, consider adding waits or assertions for intermediate states.
 
 #### How to handle common errors in Cypress?
 
-  Handling common errors in [Cypress](../C/cypress.md) involves understanding the error messages and applying appropriate fixes or workarounds. Here are some strategies:
+  Handling common errors in [Cypress](https://naodeng.com.cn/en/wiki/cypress) involves understanding the error messages and applying appropriate fixes or workarounds. Here are some strategies:
   **Timeout Errors**: Increase default timeout settings using `cy.wait()` or globally in `cypress.json` if elements take longer to load.
 
   ```
@@ -1362,7 +1361,7 @@ offers a comprehensive and user-friendly environment for web application testing
     "chromeWebSecurity": false
   }
   ```
-  **[Flaky Tests](../F/flaky-test.md)**: Address flakiness by using `.retry()` for assertions or commands that might fail due to timing issues.
+  **[Flaky Tests](https://naodeng.com.cn/en/wiki/flaky-test)**: Address flakiness by using `.retry()` for assertions or commands that might fail due to timing issues.
 
   ```
   cy.get('.some-element').should('exist').retry()
@@ -1384,20 +1383,20 @@ offers a comprehensive and user-friendly environment for web application testing
     // handle error
   })
   ```
-  **[Cypress](../C/cypress.md) Command Queue Errors**: Remember that [Cypress](../C/cypress.md) commands are asynchronous and queued. Avoid using traditional async/await with [Cypress](../C/cypress.md) commands.
-  For more complex or persistent errors, consult the [Cypress](../C/cypress.md) documentation or community forums for specific solutions and troubleshooting tips.
+  **[Cypress](https://naodeng.com.cn/en/wiki/cypress) Command Queue Errors**: Remember that [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands are asynchronous and queued. Avoid using traditional async/await with [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands.
+  For more complex or persistent errors, consult the [Cypress](https://naodeng.com.cn/en/wiki/cypress) documentation or community forums for specific solutions and troubleshooting tips.
 
 #### How to optimize test execution time in Cypress?
 
-  To optimize [test execution](../T/test-execution.md) time in [Cypress](../C/cypress.md), consider the following strategies:
+  To optimize [test execution](https://naodeng.com.cn/en/wiki/test-execution) time in [Cypress](https://naodeng.com.cn/en/wiki/cypress), consider the following strategies:
 
-  - **Run tests in parallel**: Utilize [Cypress](../C/cypress.md) Dashboard Service to run tests simultaneously across multiple machines. This can significantly reduce the overall [test suite](../T/test-suite.md) execution time.
+  - **Run tests in parallel**: Utilize [Cypress](https://naodeng.com.cn/en/wiki/cypress) Dashboard Service to run tests simultaneously across multiple machines. This can significantly reduce the overall [test suite](https://naodeng.com.cn/en/wiki/test-suite) execution time.
 
     ```
     cypress run --record --key <record_key> --parallel
     ```
 
-  - **Selective [test execution](../T/test-execution.md)**: Use `.only` to run specific tests or [test suites](../T/test-suite.md) during development to avoid running the entire suite.
+  - **Selective [test execution](https://naodeng.com.cn/en/wiki/test-execution)**: Use `.only` to run specific tests or [test suites](https://naodeng.com.cn/en/wiki/test-suite) during development to avoid running the entire suite.
 
     ```
     describe.only('My Test Suite', () => {
@@ -1408,7 +1407,7 @@ offers a comprehensive and user-friendly environment for web application testing
     });
     ```
 
-  - **Test retries**: Implement test retries to handle [flaky tests](../F/flaky-test.md) without rerunning the entire suite.
+  - **Test retries**: Implement test retries to handle [flaky tests](https://naodeng.com.cn/en/wiki/flaky-test) without rerunning the entire suite.
 
     ```
     // Global level
@@ -1419,31 +1418,31 @@ offers a comprehensive and user-friendly environment for web application testing
     });
     ```
 
-  - **Smart waiting**: Use [Cypress](../C/cypress.md)'s automatic waiting for elements and assertions to avoid unnecessary waits and timeouts.
+  - **Smart waiting**: Use [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s automatic waiting for elements and assertions to avoid unnecessary waits and timeouts.
   - **Stubbing and intercepting**: Replace actual network calls with stubs using `cy.intercept()` to save time spent on real network requests.
 
     ```
     cy.intercept('GET', '/users', { fixture: 'users.json' });
     ```
 
-  - **Avoid unnecessary UI actions**: Use direct [API](../A/api.md) calls to set up application state instead of going through UI workflows.
+  - **Avoid unnecessary UI actions**: Use direct [API](https://naodeng.com.cn/en/wiki/api) calls to set up application state instead of going through UI workflows.
 
     ```
     cy.request('POST', '/login', { username: 'user', password: 'pass' });
     ```
 
   - **Cache resources**: Cache data that doesn't change often between tests to avoid reloading.
-  - **Optimize selectors**: Use efficient selectors to reduce the time [Cypress](../C/cypress.md) spends querying the DOM.
-  - **Batch actions**: Group actions or commands that can be executed together to minimize the number of yieldable [Cypress](../C/cypress.md) commands.
-  By implementing these strategies, you can achieve faster feedback cycles and more efficient [test execution](../T/test-execution.md) in [Cypress](../C/cypress.md).
+  - **Optimize selectors**: Use efficient selectors to reduce the time [Cypress](https://naodeng.com.cn/en/wiki/cypress) spends querying the DOM.
+  - **Batch actions**: Group actions or commands that can be executed together to minimize the number of yieldable [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands.
+  By implementing these strategies, you can achieve faster feedback cycles and more efficient [test execution](https://naodeng.com.cn/en/wiki/test-execution) in [Cypress](https://naodeng.com.cn/en/wiki/cypress).
 
-  - **Run tests in parallel**: Utilize [Cypress](../C/cypress.md) Dashboard Service to run tests simultaneously across multiple machines. This can significantly reduce the overall [test suite](../T/test-suite.md) execution time.
+  - **Run tests in parallel**: Utilize [Cypress](https://naodeng.com.cn/en/wiki/cypress) Dashboard Service to run tests simultaneously across multiple machines. This can significantly reduce the overall [test suite](https://naodeng.com.cn/en/wiki/test-suite) execution time.
 
     ```
     cypress run --record --key <record_key> --parallel
     ```
 
-  - **Selective [test execution](../T/test-execution.md)**: Use `.only` to run specific tests or [test suites](../T/test-suite.md) during development to avoid running the entire suite.
+  - **Selective [test execution](https://naodeng.com.cn/en/wiki/test-execution)**: Use `.only` to run specific tests or [test suites](https://naodeng.com.cn/en/wiki/test-suite) during development to avoid running the entire suite.
 
     ```
     describe.only('My Test Suite', () => {
@@ -1454,7 +1453,7 @@ offers a comprehensive and user-friendly environment for web application testing
     });
     ```
 
-  - **Test retries**: Implement test retries to handle [flaky tests](../F/flaky-test.md) without rerunning the entire suite.
+  - **Test retries**: Implement test retries to handle [flaky tests](https://naodeng.com.cn/en/wiki/flaky-test) without rerunning the entire suite.
 
     ```
     // Global level
@@ -1465,19 +1464,19 @@ offers a comprehensive and user-friendly environment for web application testing
     });
     ```
 
-  - **Smart waiting**: Use [Cypress](../C/cypress.md)'s automatic waiting for elements and assertions to avoid unnecessary waits and timeouts.
+  - **Smart waiting**: Use [Cypress](https://naodeng.com.cn/en/wiki/cypress)'s automatic waiting for elements and assertions to avoid unnecessary waits and timeouts.
   - **Stubbing and intercepting**: Replace actual network calls with stubs using `cy.intercept()` to save time spent on real network requests.
 
     ```
     cy.intercept('GET', '/users', { fixture: 'users.json' });
     ```
 
-  - **Avoid unnecessary UI actions**: Use direct [API](../A/api.md) calls to set up application state instead of going through UI workflows.
+  - **Avoid unnecessary UI actions**: Use direct [API](https://naodeng.com.cn/en/wiki/api) calls to set up application state instead of going through UI workflows.
 
     ```
     cy.request('POST', '/login', { username: 'user', password: 'pass' });
     ```
 
   - **Cache resources**: Cache data that doesn't change often between tests to avoid reloading.
-  - **Optimize selectors**: Use efficient selectors to reduce the time [Cypress](../C/cypress.md) spends querying the DOM.
-  - **Batch actions**: Group actions or commands that can be executed together to minimize the number of yieldable [Cypress](../C/cypress.md) commands.
+  - **Optimize selectors**: Use efficient selectors to reduce the time [Cypress](https://naodeng.com.cn/en/wiki/cypress) spends querying the DOM.
+  - **Batch actions**: Group actions or commands that can be executed together to minimize the number of yieldable [Cypress](https://naodeng.com.cn/en/wiki/cypress) commands.

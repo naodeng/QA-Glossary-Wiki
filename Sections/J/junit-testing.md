@@ -1,6 +1,5 @@
 # JUnit Testing
 
-
 <!-- TOC START -->
 - [Questions about JUnit Testing ?](#questions-about-junit-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -37,8 +36,8 @@ JUnit is a Java testing framework enabling developers to craft and run automated
 
 #### What is JUnit testing?
 
-  JUnit is a **[unit testing](../U/unit-testing.md) framework** for Java, designed to streamline the testing process by providing annotations and assertions to create [test cases](../T/test-case.md). It's an essential tool for developers to **validate each unit of the software** independently from the rest of the application.
-  A basic JUnit [test case](../T/test-case.md) is structured using the `@Test` annotation to indicate a test method. Here's an example:
+  JUnit is a **[unit testing](https://naodeng.com.cn/en/wiki/unit-testing) framework** for Java, designed to streamline the testing process by providing annotations and assertions to create [test cases](https://naodeng.com.cn/en/wiki/test-case). It's an essential tool for developers to **validate each unit of the software** independently from the rest of the application.
+  A basic JUnit [test case](https://naodeng.com.cn/en/wiki/test-case) is structured using the `@Test` annotation to indicate a test method. Here's an example:
 
   ```
   import static org.junit.Assert.*;
@@ -52,7 +51,7 @@ JUnit is a Java testing framework enabling developers to craft and run automated
       }
   }
   ```
-  To handle [setup](../S/setup.md) and cleanup operations, JUnit provides `@Before` and `@After` annotations, respectively, which correspond to the `setup()` and `teardown()` methods. These are executed before and after each test method.
+  To handle [setup](https://naodeng.com.cn/en/wiki/setup) and cleanup operations, JUnit provides `@Before` and `@After` annotations, respectively, which correspond to the `setup()` and `teardown()` methods. These are executed before and after each test method.
 
   ```
   import org.junit.After;
@@ -69,31 +68,31 @@ JUnit is a Java testing framework enabling developers to craft and run automated
       }
   }
   ```
-  JUnit also supports **exception testing** with the `expected` attribute of the `@Test` annotation and the `assertThrows` method. Additionally, **parameterized tests** allow running the same test with different inputs, and **[test suites](../T/test-suite.md)** enable grouping of multiple test classes.
+  JUnit also supports **exception testing** with the `expected` attribute of the `@Test` annotation and the `assertThrows` method. Additionally, **parameterized tests** allow running the same test with different inputs, and **[test suites](https://naodeng.com.cn/en/wiki/test-suite)** enable grouping of multiple test classes.
   To run tests from the command line, use build tools like Maven or Gradle, or the JUnit console launcher. Mocking frameworks, such as Mockito, integrate with JUnit to simulate objects and behaviors for isolated testing.
-  **[Code coverage](../C/code-coverage.md)** tools, like JaCoCo, can be used alongside JUnit to measure the extent of code exercised by tests, ensuring thorough testing.
+  **[Code coverage](https://naodeng.com.cn/en/wiki/code-coverage)** tools, like JaCoCo, can be used alongside JUnit to measure the extent of code exercised by tests, ensuring thorough testing.
 
 #### Why is JUnit testing important in software development?
 
-  [JUnit testing](../J/junit-testing.md) is crucial in software development for several reasons:
+  [JUnit testing](https://naodeng.com.cn/en/wiki/junit-testing) is crucial in software development for several reasons:
 
   - **Ensures Regression Safety**: Automated JUnit tests quickly identify unintended side effects or regressions in functionality after code changes, safeguarding the stability of the software.
   - **Facilitates Continuous Integration**: JUnit tests are integral to CI/CD pipelines, allowing for automated builds and testing, which leads to faster feedback and release cycles.
-  - **Promotes [Test-Driven Development](../T/test-driven-development.md) (TDD)**: JUnit is conducive to TDD practices, where tests are written before the actual code, ensuring that development is focused on meeting requirements and improving design.
+  - **Promotes [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**: JUnit is conducive to TDD practices, where tests are written before the actual code, ensuring that development is focused on meeting requirements and improving design.
   - **Documentation**: JUnit tests act as live documentation that provides insights into the expected behavior of the system, making it easier for developers to understand and maintain the codebase.
   - **Refactoring Confidence**: With a comprehensive suite of JUnit tests, developers can refactor code with confidence, knowing that tests will catch any discrepancies from expected behavior.
   - **Debugging Aid**: When tests fail, they pinpoint the source of the problem, reducing the time spent on debugging.
-  - **Quality Metrics**: JUnit tests contribute to various quality metrics, such as [code coverage](../C/code-coverage.md), which can be used to assess and improve the quality of the software.
+  - **Quality Metrics**: JUnit tests contribute to various quality metrics, such as [code coverage](https://naodeng.com.cn/en/wiki/code-coverage), which can be used to assess and improve the quality of the software.
   - **Developer Productivity**: Automating repetitive testing tasks with JUnit frees developers to focus on more complex and creative aspects of software development.
-  In summary, [JUnit testing](../J/junit-testing.md) is an indispensable part of modern software development, providing a safety net that enables rapid and reliable delivery of high-quality software.
+  In summary, [JUnit testing](https://naodeng.com.cn/en/wiki/junit-testing) is an indispensable part of modern software development, providing a safety net that enables rapid and reliable delivery of high-quality software.
 
   - **Ensures Regression Safety**: Automated JUnit tests quickly identify unintended side effects or regressions in functionality after code changes, safeguarding the stability of the software.
   - **Facilitates Continuous Integration**: JUnit tests are integral to CI/CD pipelines, allowing for automated builds and testing, which leads to faster feedback and release cycles.
-  - **Promotes [Test-Driven Development](../T/test-driven-development.md) (TDD)**: JUnit is conducive to TDD practices, where tests are written before the actual code, ensuring that development is focused on meeting requirements and improving design.
+  - **Promotes [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**: JUnit is conducive to TDD practices, where tests are written before the actual code, ensuring that development is focused on meeting requirements and improving design.
   - **Documentation**: JUnit tests act as live documentation that provides insights into the expected behavior of the system, making it easier for developers to understand and maintain the codebase.
   - **Refactoring Confidence**: With a comprehensive suite of JUnit tests, developers can refactor code with confidence, knowing that tests will catch any discrepancies from expected behavior.
   - **Debugging Aid**: When tests fail, they pinpoint the source of the problem, reducing the time spent on debugging.
-  - **Quality Metrics**: JUnit tests contribute to various quality metrics, such as [code coverage](../C/code-coverage.md), which can be used to assess and improve the quality of the software.
+  - **Quality Metrics**: JUnit tests contribute to various quality metrics, such as [code coverage](https://naodeng.com.cn/en/wiki/code-coverage), which can be used to assess and improve the quality of the software.
   - **Developer Productivity**: Automating repetitive testing tasks with JUnit frees developers to focus on more complex and creative aspects of software development.
 
 #### What are the key features of JUnit testing?
@@ -101,11 +100,11 @@ JUnit is a Java testing framework enabling developers to craft and run automated
   JUnit's key features include:
 
   - **Annotation-based test configuration**: Annotations like `@Test`, `@Before`, `@After`, `@BeforeClass`, and `@AfterClass` provide a clear and concise way to set up tests and their environment.
-  - **[Test runners](../T/test-runner.md)**: Enable execution of tests and provide feedback on the test results. The JUnit runner can be integrated with various build tools and IDEs.
-  - **Fixtures**: Methods annotated with `@Before` and `@After` help in creating a consistent [test environment](../T/test-environment.md) by running code before and after each test.
-  - **[Test suites](../T/test-suite.md)**: Group multiple test classes together using `@RunWith` and `@Suite` annotations.
+  - **[Test runners](https://naodeng.com.cn/en/wiki/test-runner)**: Enable execution of tests and provide feedback on the test results. The JUnit runner can be integrated with various build tools and IDEs.
+  - **Fixtures**: Methods annotated with `@Before` and `@After` help in creating a consistent [test environment](https://naodeng.com.cn/en/wiki/test-environment) by running code before and after each test.
+  - **[Test suites](https://naodeng.com.cn/en/wiki/test-suite)**: Group multiple test classes together using `@RunWith` and `@Suite` annotations.
   - **Parameterized tests**: Allow running the same test with different sets of parameters using the `@Parameterized` runner.
-  - **Assumptions**: Provide conditional [test execution](../T/test-execution.md) based on certain conditions using `Assume` methods.
+  - **Assumptions**: Provide conditional [test execution](https://naodeng.com.cn/en/wiki/test-execution) based on certain conditions using `Assume` methods.
   - **Rules**: Offer a flexible way to add behavior to test methods or test classes, like handling temporary folders or expected exceptions.
   - **Hamcrest matchers**: Provide a library of matcher objects for more readable assertions.
   - **Timeouts**: Specify a time limit for a test to run, ensuring tests do not hang indefinitely.
@@ -113,14 +112,14 @@ JUnit is a Java testing framework enabling developers to craft and run automated
   - **Test discovery**: Automatically detects and runs tests based on naming conventions and annotations.
   - **IDE Integration**: Seamlessly integrates with popular IDEs for running and debugging tests.
   - **Plugins and Extensions**: Support for extending functionality through third-party libraries and custom runners.
-  JUnit's design and features facilitate a structured and maintainable approach to [unit testing](../U/unit-testing.md), making it a cornerstone tool for Java developers.
+  JUnit's design and features facilitate a structured and maintainable approach to [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), making it a cornerstone tool for Java developers.
 
   - **Annotation-based test configuration**: Annotations like `@Test`, `@Before`, `@After`, `@BeforeClass`, and `@AfterClass` provide a clear and concise way to set up tests and their environment.
-  - **[Test runners](../T/test-runner.md)**: Enable execution of tests and provide feedback on the test results. The JUnit runner can be integrated with various build tools and IDEs.
-  - **Fixtures**: Methods annotated with `@Before` and `@After` help in creating a consistent [test environment](../T/test-environment.md) by running code before and after each test.
-  - **[Test suites](../T/test-suite.md)**: Group multiple test classes together using `@RunWith` and `@Suite` annotations.
+  - **[Test runners](https://naodeng.com.cn/en/wiki/test-runner)**: Enable execution of tests and provide feedback on the test results. The JUnit runner can be integrated with various build tools and IDEs.
+  - **Fixtures**: Methods annotated with `@Before` and `@After` help in creating a consistent [test environment](https://naodeng.com.cn/en/wiki/test-environment) by running code before and after each test.
+  - **[Test suites](https://naodeng.com.cn/en/wiki/test-suite)**: Group multiple test classes together using `@RunWith` and `@Suite` annotations.
   - **Parameterized tests**: Allow running the same test with different sets of parameters using the `@Parameterized` runner.
-  - **Assumptions**: Provide conditional [test execution](../T/test-execution.md) based on certain conditions using `Assume` methods.
+  - **Assumptions**: Provide conditional [test execution](https://naodeng.com.cn/en/wiki/test-execution) based on certain conditions using `Assume` methods.
   - **Rules**: Offer a flexible way to add behavior to test methods or test classes, like handling temporary folders or expected exceptions.
   - **Hamcrest matchers**: Provide a library of matcher objects for more readable assertions.
   - **Timeouts**: Specify a time limit for a test to run, ensuring tests do not hang indefinitely.
@@ -131,30 +130,30 @@ JUnit is a Java testing framework enabling developers to craft and run automated
 
 #### How does JUnit testing improve the quality of code?
 
-  [JUnit testing](../J/junit-testing.md) enhances code quality by enforcing a **disciplined approach** to writing and maintaining code. It encourages developers to write **testable, modular**, and **maintainable** code, as tests need to be able to run in isolation and without dependencies on external systems. This often leads to a **better software design** and adherence to **SOLID principles**.
-  The practice of **[Test-Driven Development](../T/test-driven-development.md) (TDD)**, often supported by JUnit, ensures that code is written with testing in mind, which typically results in fewer [bugs](../B/bug.md). Writing tests first helps in understanding the requirements before the implementation, which can lead to more **robust and reliable** code.
+  [JUnit testing](https://naodeng.com.cn/en/wiki/junit-testing) enhances code quality by enforcing a **disciplined approach** to writing and maintaining code. It encourages developers to write **testable, modular**, and **maintainable** code, as tests need to be able to run in isolation and without dependencies on external systems. This often leads to a **better software design** and adherence to **SOLID principles**.
+  The practice of **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**, often supported by JUnit, ensures that code is written with testing in mind, which typically results in fewer [bugs](https://naodeng.com.cn/en/wiki/bug). Writing tests first helps in understanding the requirements before the implementation, which can lead to more **robust and reliable** code.
   JUnit tests serve as **documentation** for the expected behavior of the code, making it easier for others to understand the functionality and for developers to **refactor** with confidence. When code changes, JUnit tests can quickly indicate if the change has **broken existing functionality**, allowing for **immediate correction**.
-  [Automated testing](../A/automated-testing.md) with JUnit also facilitates **continuous integration** and **continuous delivery** practices, where tests are run automatically on code check-ins, ensuring that new changes do not introduce regressions.
+  [Automated testing](https://naodeng.com.cn/en/wiki/automated-testing) with JUnit also facilitates **continuous integration** and **continuous delivery** practices, where tests are run automatically on code check-ins, ensuring that new changes do not introduce regressions.
   Lastly, JUnit tests can be integrated into **build tools** and **IDEs**, providing immediate feedback during the development process and reducing the time spent on debugging and fixing errors, which contributes to a more efficient development cycle and higher code quality overall.
 
 #### What is the role of assertions in JUnit testing?
 
-  Assertions in JUnit play a critical role in validating the expected outcomes of [test cases](../T/test-case.md). They are used to **assert** that a certain condition is true. If the condition is false, the test fails, indicating that the code did not behave as expected.
-  Here's a basic example of an assertion in a JUnit [test case](../T/test-case.md):
+  Assertions in JUnit play a critical role in validating the expected outcomes of [test cases](https://naodeng.com.cn/en/wiki/test-case). They are used to **assert** that a certain condition is true. If the condition is false, the test fails, indicating that the code did not behave as expected.
+  Here's a basic example of an assertion in a JUnit [test case](https://naodeng.com.cn/en/wiki/test-case):
 
   ```
   assertEquals("Expected text", actualText);
   ```
   In this line, `assertEquals` checks if `actualText` matches the string `"Expected text"`. If not, the test will fail.
-  Assertions help in pinpointing defects by comparing the [actual results](../A/actual-result.md) of a code execution against the [expected results](../E/expected-result.md). They serve as the **core checkpoints** of [test automation](../T/test-automation.md), providing a means to automate the [verification](../V/verification.md) process. Without assertions, a [test case](../T/test-case.md) would not be able to confirm the correctness of the code under test, rendering the test ineffective.
-  JUnit provides a variety of assertion methods, such as `assertTrue`, `assertNull`, `assertThrows`, and more, each designed for specific scenarios. These methods enhance the readability and [maintainability](../M/maintainability.md) of tests, allowing automation engineers to write concise and expressive [test cases](../T/test-case.md).
+  Assertions help in pinpointing defects by comparing the [actual results](https://naodeng.com.cn/en/wiki/actual-result) of a code execution against the [expected results](https://naodeng.com.cn/en/wiki/expected-result). They serve as the **core checkpoints** of [test automation](https://naodeng.com.cn/en/wiki/test-automation), providing a means to automate the [verification](https://naodeng.com.cn/en/wiki/verification) process. Without assertions, a [test case](https://naodeng.com.cn/en/wiki/test-case) would not be able to confirm the correctness of the code under test, rendering the test ineffective.
+  JUnit provides a variety of assertion methods, such as `assertTrue`, `assertNull`, `assertThrows`, and more, each designed for specific scenarios. These methods enhance the readability and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of tests, allowing automation engineers to write concise and expressive [test cases](https://naodeng.com.cn/en/wiki/test-case).
   Effective use of assertions is key to ensuring that tests are robust and provide meaningful feedback on the code's functionality. They are essential for continuous integration processes, where automated tests must reliably detect any regressions or issues introduced by new changes.
 
 ### JUnit Test Cases
 
 #### How do you write a basic JUnit test case?
 
-  To write a basic JUnit [test case](../T/test-case.md), follow these steps:
+  To write a basic JUnit [test case](https://naodeng.com.cn/en/wiki/test-case), follow these steps:
 
   1. **Import**
     the necessary JUnit packages:
@@ -198,7 +197,7 @@ JUnit is a Java testing framework enabling developers to craft and run automated
 
   1. **Run the test**
     using your IDE's built-in JUnit test runner or from the command line.
-  Here's a complete example of a basic JUnit [test case](../T/test-case.md):
+  Here's a complete example of a basic JUnit [test case](https://naodeng.com.cn/en/wiki/test-case):
 
   ```
   import static org.junit.Assert.*;
@@ -264,9 +263,9 @@ JUnit is a Java testing framework enabling developers to craft and run automated
 
 #### How can you use setup() and teardown() methods in JUnit?
 
-  In JUnit, `setup()` and `teardown()` methods are utilized to prepare and clean up the [test environment](../T/test-environment.md) before and after each [test case](../T/test-case.md), respectively. These methods are annotated with `@BeforeEach` and `@AfterEach` in JUnit 5 (formerly `@Before` and `@After` in JUnit 4).
+  In JUnit, `setup()` and `teardown()` methods are utilized to prepare and clean up the [test environment](https://naodeng.com.cn/en/wiki/test-environment) before and after each [test case](https://naodeng.com.cn/en/wiki/test-case), respectively. These methods are annotated with `@BeforeEach` and `@AfterEach` in JUnit 5 (formerly `@Before` and `@After` in JUnit 4).
   **`@BeforeEach`** (or `@Before`):
-  This method runs before each [test execution](../T/test-execution.md), ensuring that a fresh context is provided for every [test case](../T/test-case.md). It's ideal for initializing common objects or configuring a known state.
+  This method runs before each [test execution](https://naodeng.com.cn/en/wiki/test-execution), ensuring that a fresh context is provided for every [test case](https://naodeng.com.cn/en/wiki/test-case). It's ideal for initializing common objects or configuring a known state.
 
   ```
   @BeforeEach
@@ -283,11 +282,11 @@ JUnit is a Java testing framework enabling developers to craft and run automated
       // Cleanup code here
   }
   ```
-  Using `setup()` and `teardown()` methods ensures that tests are isolated and do not interfere with each other, which is crucial for achieving accurate and reliable test results. They help maintain a predictable test state and can reduce code duplication across [test cases](../T/test-case.md).
+  Using `setup()` and `teardown()` methods ensures that tests are isolated and do not interfere with each other, which is crucial for achieving accurate and reliable test results. They help maintain a predictable test state and can reduce code duplication across [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
 #### What is the purpose of @Test annotation in JUnit?
 
-  The `@Test` annotation in JUnit is used to **indicate** that a method is a **[test case](../T/test-case.md)**. When JUnit runs, it **searches** for methods annotated with `@Test` and **executes** them as individual tests. This annotation is essential for **separating** test methods from helper methods or [setup](../S/setup.md)/teardown methods within the [test class](../T/test-class.md).
+  The `@Test` annotation in JUnit is used to **indicate** that a method is a **[test case](https://naodeng.com.cn/en/wiki/test-case)**. When JUnit runs, it **searches** for methods annotated with `@Test` and **executes** them as individual tests. This annotation is essential for **separating** test methods from helper methods or [setup](https://naodeng.com.cn/en/wiki/setup)/teardown methods within the [test class](https://naodeng.com.cn/en/wiki/test-class).
   Here's a simple example of a JUnit test method using the `@Test` annotation:
 
   ```
@@ -300,8 +299,8 @@ JUnit is a Java testing framework enabling developers to craft and run automated
       }
   }
   ```
-  In this example, the `testAddition` method will be **recognized** and **run** by JUnit as a [test case](../T/test-case.md) because it is annotated with `@Test`. Without this annotation, JUnit would not know which methods to run as tests.
-  Additionally, the `@Test` annotation can be used with **optional parameters** such as `expected` to **test for expected exceptions**, or `timeout` to **fail** a test if it takes longer than a specified number of milliseconds. This provides a way to handle more **complex [test scenarios](../T/test-scenario.md)** with additional behavior specifications.
+  In this example, the `testAddition` method will be **recognized** and **run** by JUnit as a [test case](https://naodeng.com.cn/en/wiki/test-case) because it is annotated with `@Test`. Without this annotation, JUnit would not know which methods to run as tests.
+  Additionally, the `@Test` annotation can be used with **optional parameters** such as `expected` to **test for expected exceptions**, or `timeout` to **fail** a test if it takes longer than a specified number of milliseconds. This provides a way to handle more **complex [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario)** with additional behavior specifications.
 
 #### How do you test exceptions in JUnit?
 
@@ -333,7 +332,7 @@ JUnit is a Java testing framework enabling developers to craft and run automated
 
 #### What is parameterized testing in JUnit?
 
-  [Parameterized testing](../P/parameterized-testing.md) in JUnit allows you to run the same test multiple times with different inputs. This technique is useful when you want to test a function with various sets of data without writing multiple [test cases](../T/test-case.md).
+  [Parameterized testing](https://naodeng.com.cn/en/wiki/parameterized-testing) in JUnit allows you to run the same test multiple times with different inputs. This technique is useful when you want to test a function with various sets of data without writing multiple [test cases](https://naodeng.com.cn/en/wiki/test-case).
   JUnit 5 introduces the `@ParameterizedTest` annotation to denote a parameterized test. To supply the different values, you can use various sources such as `@ValueSource`, `@EnumSource`, `@MethodSource`, or `@CsvSource`. These annotations are placed above the test method and provide the arguments for each invocation of the parameterized test.
   Here's an example using `@ValueSource` to pass different integers to a test method:
 
@@ -356,16 +355,16 @@ JUnit is a Java testing framework enabling developers to craft and run automated
       return Stream.of("apple", "banana", "cherry");
   }
   ```
-  Parameterized tests help to **reduce code duplication** and can make it easier to **identify edge cases** by clearly separating the data set from the logic of the test. They are an essential tool for achieving thorough [test coverage](../T/test-coverage.md) when dealing with functions that should behave consistently across a range of inputs.
+  Parameterized tests help to **reduce code duplication** and can make it easier to **identify edge cases** by clearly separating the data set from the logic of the test. They are an essential tool for achieving thorough [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) when dealing with functions that should behave consistently across a range of inputs.
 
 #### How can you use JUnit for integration testing?
 
-  JUnit can be effectively used for [integration testing](../I/integration-testing.md) by leveraging its flexibility to test the interactions between different layers and components of an application. To conduct integration tests with JUnit:
+  JUnit can be effectively used for [integration testing](https://naodeng.com.cn/en/wiki/integration-testing) by leveraging its flexibility to test the interactions between different layers and components of an application. To conduct integration tests with JUnit:
 
-  1. **Combine individual units**: Create [test cases](../T/test-case.md) that bring together multiple units of work to verify their correct interaction. This can include testing [database](../D/database.md) interactions, network calls, or the integration between modules.
-  2. **Use `@Before` and `@After` annotations**: Utilize these annotations to set up and tear down necessary preconditions and [postconditions](../P/postcondition.md) for the integration tests, such as starting a server or establishing a [database](../D/database.md) connection.
-  3. **Mock external dependencies**: If the integration test involves external services, use mocking frameworks like Mockito to simulate those services. This isolates the [test environment](../T/test-environment.md) and ensures that tests are not dependent on external factors.
-  4. **Test transactional behavior**: When testing [database](../D/database.md) interactions, use `@Transactional` to ensure that tests run within a transaction that can be rolled back after the test, maintaining [database](../D/database.md) integrity.
+  1. **Combine individual units**: Create [test cases](https://naodeng.com.cn/en/wiki/test-case) that bring together multiple units of work to verify their correct interaction. This can include testing [database](https://naodeng.com.cn/en/wiki/database) interactions, network calls, or the integration between modules.
+  2. **Use `@Before` and `@After` annotations**: Utilize these annotations to set up and tear down necessary preconditions and [postconditions](https://naodeng.com.cn/en/wiki/postcondition) for the integration tests, such as starting a server or establishing a [database](https://naodeng.com.cn/en/wiki/database) connection.
+  3. **Mock external dependencies**: If the integration test involves external services, use mocking frameworks like Mockito to simulate those services. This isolates the [test environment](https://naodeng.com.cn/en/wiki/test-environment) and ensures that tests are not dependent on external factors.
+  4. **Test transactional behavior**: When testing [database](https://naodeng.com.cn/en/wiki/database) interactions, use `@Transactional` to ensure that tests run within a transaction that can be rolled back after the test, maintaining [database](https://naodeng.com.cn/en/wiki/database) integrity.
   5. **Leverage Spring's testing support**: If using Spring, take advantage of the Spring Test Context Framework which provides annotations like `@SpringBootTest` to load the application context and test the integration of Spring components.
   6. **Run with build tools**: Integrate JUnit tests into your build process with tools like Maven or Gradle to automatically run integration tests as part of your continuous integration pipeline.
 
@@ -382,19 +381,19 @@ JUnit is a Java testing framework enabling developers to craft and run automated
       }
   }
   ```
-  By following these practices, you can use JUnit to perform comprehensive [integration testing](../I/integration-testing.md), ensuring that the combined parts of your application work together as expected.
+  By following these practices, you can use JUnit to perform comprehensive [integration testing](https://naodeng.com.cn/en/wiki/integration-testing), ensuring that the combined parts of your application work together as expected.
 
-  1. **Combine individual units**: Create [test cases](../T/test-case.md) that bring together multiple units of work to verify their correct interaction. This can include testing [database](../D/database.md) interactions, network calls, or the integration between modules.
-  2. **Use `@Before` and `@After` annotations**: Utilize these annotations to set up and tear down necessary preconditions and [postconditions](../P/postcondition.md) for the integration tests, such as starting a server or establishing a [database](../D/database.md) connection.
-  3. **Mock external dependencies**: If the integration test involves external services, use mocking frameworks like Mockito to simulate those services. This isolates the [test environment](../T/test-environment.md) and ensures that tests are not dependent on external factors.
-  4. **Test transactional behavior**: When testing [database](../D/database.md) interactions, use `@Transactional` to ensure that tests run within a transaction that can be rolled back after the test, maintaining [database](../D/database.md) integrity.
+  1. **Combine individual units**: Create [test cases](https://naodeng.com.cn/en/wiki/test-case) that bring together multiple units of work to verify their correct interaction. This can include testing [database](https://naodeng.com.cn/en/wiki/database) interactions, network calls, or the integration between modules.
+  2. **Use `@Before` and `@After` annotations**: Utilize these annotations to set up and tear down necessary preconditions and [postconditions](https://naodeng.com.cn/en/wiki/postcondition) for the integration tests, such as starting a server or establishing a [database](https://naodeng.com.cn/en/wiki/database) connection.
+  3. **Mock external dependencies**: If the integration test involves external services, use mocking frameworks like Mockito to simulate those services. This isolates the [test environment](https://naodeng.com.cn/en/wiki/test-environment) and ensures that tests are not dependent on external factors.
+  4. **Test transactional behavior**: When testing [database](https://naodeng.com.cn/en/wiki/database) interactions, use `@Transactional` to ensure that tests run within a transaction that can be rolled back after the test, maintaining [database](https://naodeng.com.cn/en/wiki/database) integrity.
   5. **Leverage Spring's testing support**: If using Spring, take advantage of the Spring Test Context Framework which provides annotations like `@SpringBootTest` to load the application context and test the integration of Spring components.
   6. **Run with build tools**: Integrate JUnit tests into your build process with tools like Maven or Gradle to automatically run integration tests as part of your continuous integration pipeline.
 
 #### What is the concept of test suites in JUnit?
 
-  In JUnit, a **[test suite](../T/test-suite.md)** is a collection of [test cases](../T/test-case.md), [test suites](../T/test-suite.md), or both, bundled together to run tests in an aggregated form. [Test suites](../T/test-suite.md) facilitate the organization and execution of related tests, making it easier to manage and understand the scope of testing efforts.
-  To define a [test suite](../T/test-suite.md), you use the `@RunWith` and `@Suite` annotations. The `@Suite` annotation allows you to specify the classes that are part of the suite. Here's a simple example:
+  In JUnit, a **[test suite](https://naodeng.com.cn/en/wiki/test-suite)** is a collection of [test cases](https://naodeng.com.cn/en/wiki/test-case), [test suites](https://naodeng.com.cn/en/wiki/test-suite), or both, bundled together to run tests in an aggregated form. [Test suites](https://naodeng.com.cn/en/wiki/test-suite) facilitate the organization and execution of related tests, making it easier to manage and understand the scope of testing efforts.
+  To define a [test suite](https://naodeng.com.cn/en/wiki/test-suite), you use the `@RunWith` and `@Suite` annotations. The `@Suite` annotation allows you to specify the classes that are part of the suite. Here's a simple example:
 
   ```
   import org.junit.runner.RunWith;
@@ -408,8 +407,8 @@ JUnit is a Java testing framework enabling developers to craft and run automated
       // This class remains empty, it is used only as a holder for the above annotations
   }
   ```
-  Running a [test suite](../T/test-suite.md) executes all tests within the specified classes. This approach is particularly useful when you want to group tests logically, such as by feature or layer (e.g., unit tests, integration tests, etc.). It also allows for easy inclusion or exclusion of tests from the build process.
-  [Test suites](../T/test-suite.md) can also nest other suites, enabling a hierarchical structure that can mirror the project's architecture or functional areas. This hierarchical organization helps in managing complex [test scenarios](../T/test-scenario.md) and can be leveraged to run a specific subset of tests, such as smoke tests or regression tests, depending on the needs of the development cycle.
+  Running a [test suite](https://naodeng.com.cn/en/wiki/test-suite) executes all tests within the specified classes. This approach is particularly useful when you want to group tests logically, such as by feature or layer (e.g., unit tests, integration tests, etc.). It also allows for easy inclusion or exclusion of tests from the build process.
+  [Test suites](https://naodeng.com.cn/en/wiki/test-suite) can also nest other suites, enabling a hierarchical structure that can mirror the project's architecture or functional areas. This hierarchical organization helps in managing complex [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) and can be leveraged to run a specific subset of tests, such as smoke tests or regression tests, depending on the needs of the development cycle.
 
 #### How can you run JUnit tests from the command line?
 
@@ -423,7 +422,7 @@ JUnit is a Java testing framework enabling developers to craft and run automated
     ```
 
   2. **Run the tests** using the `java` command with the `org.junit.runner.JUnitCore` runner. Pass your test classes as arguments:
-    Again, replace `junit-4.12.jar` with your JUnit jar file, and `YourTestClass` with the name of your [test class](../T/test-class.md).
+    Again, replace `junit-4.12.jar` with your JUnit jar file, and `YourTestClass` with the name of your [test class](https://naodeng.com.cn/en/wiki/test-class).
 
     ```
     java -cp .:junit-4.12.jar:test org.junit.runner.JUnitCore YourTestClass
@@ -444,7 +443,7 @@ JUnit is a Java testing framework enabling developers to craft and run automated
     ```
 
   2. **Run the tests** using the `java` command with the `org.junit.runner.JUnitCore` runner. Pass your test classes as arguments:
-    Again, replace `junit-4.12.jar` with your JUnit jar file, and `YourTestClass` with the name of your [test class](../T/test-class.md).
+    Again, replace `junit-4.12.jar` with your JUnit jar file, and `YourTestClass` with the name of your [test class](https://naodeng.com.cn/en/wiki/test-class).
 
     ```
     java -cp .:junit-4.12.jar:test org.junit.runner.JUnitCore YourTestClass
@@ -527,13 +526,13 @@ JUnit is a Java testing framework enabling developers to craft and run automated
 
   - **Write clear and descriptive test method names**: Use a naming convention that conveys the purpose of the test, such as `shouldReturnTrueWhenConditionMet()`.
   - **Keep tests focused**: Test one aspect per test method. Avoid multiple assertions unrelated to each other.
-  - **Use the Arrange-Act-Assert pattern**: Structure your test code into sections: [setup](../S/setup.md) (arrange), invocation of the method under test (act), and assertions (assert).
+  - **Use the Arrange-Act-Assert pattern**: Structure your test code into sections: [setup](https://naodeng.com.cn/en/wiki/setup) (arrange), invocation of the method under test (act), and assertions (assert).
   - **Minimize test dependencies**: Each test should run independently without relying on other tests or a specific order.
-  - **Mock external dependencies**: Use mocking frameworks like Mockito to isolate the unit of work and avoid interactions with [databases](../D/database.md), networks, or other services.
+  - **Mock external dependencies**: Use mocking frameworks like Mockito to isolate the unit of work and avoid interactions with [databases](https://naodeng.com.cn/en/wiki/database), networks, or other services.
   - **Ensure repeatability**: Tests should produce the same results regardless of the environment they are run in.
   - **Utilize parameterized tests**: When testing the same code with different inputs, use parameterized tests to avoid code duplication.
   - **Clean up resources**: If your tests allocate resources like files or network connections, release them after the test runs, preferably in a `@After` or `@AfterEach` method.
-  - **Avoid logic in tests**: Keep tests straightforward; any logic might introduce [bugs](../B/bug.md) to the tests themselves.
+  - **Avoid logic in tests**: Keep tests straightforward; any logic might introduce [bugs](https://naodeng.com.cn/en/wiki/bug) to the tests themselves.
   - **Use assertions effectively**: Prefer specific assertions (`assertEquals`, `assertNotNull`) over general ones (`assertTrue`) for better error messages.
   - **Document non-obvious test logic**: If a test contains something non-trivial, add comments to explain why it's necessary.
   - **Review test code as production code**: Apply the same code review standards to test code to maintain quality.
@@ -555,13 +554,13 @@ JUnit is a Java testing framework enabling developers to craft and run automated
 
   - **Write clear and descriptive test method names**: Use a naming convention that conveys the purpose of the test, such as `shouldReturnTrueWhenConditionMet()`.
   - **Keep tests focused**: Test one aspect per test method. Avoid multiple assertions unrelated to each other.
-  - **Use the Arrange-Act-Assert pattern**: Structure your test code into sections: [setup](../S/setup.md) (arrange), invocation of the method under test (act), and assertions (assert).
+  - **Use the Arrange-Act-Assert pattern**: Structure your test code into sections: [setup](https://naodeng.com.cn/en/wiki/setup) (arrange), invocation of the method under test (act), and assertions (assert).
   - **Minimize test dependencies**: Each test should run independently without relying on other tests or a specific order.
-  - **Mock external dependencies**: Use mocking frameworks like Mockito to isolate the unit of work and avoid interactions with [databases](../D/database.md), networks, or other services.
+  - **Mock external dependencies**: Use mocking frameworks like Mockito to isolate the unit of work and avoid interactions with [databases](https://naodeng.com.cn/en/wiki/database), networks, or other services.
   - **Ensure repeatability**: Tests should produce the same results regardless of the environment they are run in.
   - **Utilize parameterized tests**: When testing the same code with different inputs, use parameterized tests to avoid code duplication.
   - **Clean up resources**: If your tests allocate resources like files or network connections, release them after the test runs, preferably in a `@After` or `@AfterEach` method.
-  - **Avoid logic in tests**: Keep tests straightforward; any logic might introduce [bugs](../B/bug.md) to the tests themselves.
+  - **Avoid logic in tests**: Keep tests straightforward; any logic might introduce [bugs](https://naodeng.com.cn/en/wiki/bug) to the tests themselves.
   - **Use assertions effectively**: Prefer specific assertions (`assertEquals`, `assertNotNull`) over general ones (`assertTrue`) for better error messages.
   - **Document non-obvious test logic**: If a test contains something non-trivial, add comments to explain why it's necessary.
   - **Review test code as production code**: Apply the same code review standards to test code to maintain quality.
@@ -603,7 +602,7 @@ JUnit is a Java testing framework enabling developers to craft and run automated
   - **Review test code**
     in code reviews just as you would production code, to catch potential issues and improve test quality.
 
-  - **Measure [code coverage](../C/code-coverage.md)**
+  - **Measure [code coverage](https://naodeng.com.cn/en/wiki/code-coverage)**
     but aim for meaningful tests over hitting arbitrary coverage numbers. Coverage is a guideline, not a goal in itself.
 
   ```
@@ -647,7 +646,7 @@ JUnit is a Java testing framework enabling developers to craft and run automated
   - **Review test code**
     in code reviews just as you would production code, to catch potential issues and improve test quality.
 
-  - **Measure [code coverage](../C/code-coverage.md)**
+  - **Measure [code coverage](https://naodeng.com.cn/en/wiki/code-coverage)**
     but aim for meaningful tests over hitting arbitrary coverage numbers. Coverage is a guideline, not a goal in itself.
 
 #### What are common mistakes to avoid when writing JUnit tests?
@@ -693,37 +692,37 @@ JUnit is a Java testing framework enabling developers to craft and run automated
 
   To improve the performance of your JUnit tests, consider the following strategies:
 
-  - **Minimize I/O operations**: Accessing files, [databases](../D/database.md), or networks can slow down tests. Use mocking or stubbing to simulate I/O operations where possible.
-  - **Use in-memory [databases](../D/database.md)**: For [database](../D/database.md)-related tests, in-memory [databases](../D/database.md) like H2 can significantly reduce [test execution](../T/test-execution.md) time compared to traditional [databases](../D/database.md).
-  - **Parallel execution**: JUnit 5 supports parallel [test execution](../T/test-execution.md). Enable this feature to run tests concurrently, reducing overall execution time.
+  - **Minimize I/O operations**: Accessing files, [databases](https://naodeng.com.cn/en/wiki/database), or networks can slow down tests. Use mocking or stubbing to simulate I/O operations where possible.
+  - **Use in-memory [databases](https://naodeng.com.cn/en/wiki/database)**: For [database](https://naodeng.com.cn/en/wiki/database)-related tests, in-memory [databases](https://naodeng.com.cn/en/wiki/database) like H2 can significantly reduce [test execution](https://naodeng.com.cn/en/wiki/test-execution) time compared to traditional [databases](https://naodeng.com.cn/en/wiki/database).
+  - **Parallel execution**: JUnit 5 supports parallel [test execution](https://naodeng.com.cn/en/wiki/test-execution). Enable this feature to run tests concurrently, reducing overall execution time.
   - **Selective testing**: Use JUnit's filtering options to run only a subset of tests when working on specific areas of the codebase.
-  - **Avoid unnecessary [setup](../S/setup.md)/teardown**: Keep `@BeforeEach`/`@AfterEach` methods lean. Perform [setup](../S/setup.md) and teardown only when necessary for the given test context.
+  - **Avoid unnecessary [setup](https://naodeng.com.cn/en/wiki/setup)/teardown**: Keep `@BeforeEach`/`@AfterEach` methods lean. Perform [setup](https://naodeng.com.cn/en/wiki/setup) and teardown only when necessary for the given test context.
   - **Profile tests**: Use profiling tools to identify and optimize slow tests. Address performance bottlenecks such as inefficient algorithms or excessive object creation.
   - **Test prioritization**: Prioritize and run critical tests more frequently. Less critical or stable tests can be run less often.
-  - **Use @TestInstance(Lifecycle.PER_CLASS)**: Reduce test instance creation overhead by using `@TestInstance(Lifecycle.PER_CLASS)` to share [setup](../S/setup.md) among tests in the same class.
-  - **Leverage test fixtures**: Reuse test fixtures across tests when possible to reduce [setup](../S/setup.md) time.
+  - **Use @TestInstance(Lifecycle.PER_CLASS)**: Reduce test instance creation overhead by using `@TestInstance(Lifecycle.PER_CLASS)` to share [setup](https://naodeng.com.cn/en/wiki/setup) among tests in the same class.
+  - **Leverage test fixtures**: Reuse test fixtures across tests when possible to reduce [setup](https://naodeng.com.cn/en/wiki/setup) time.
   - **Asynchronous testing**: For testing asynchronous code, use JUnit's support for testing futures and promises to avoid thread sleeps.
   - **Keep tests focused**: Write small, focused tests that only test one aspect of the code. This makes tests run faster and helps in quicker identification of issues.
   By applying these techniques, you can make your JUnit tests more efficient and reduce the feedback loop for developers.
 
-  - **Minimize I/O operations**: Accessing files, [databases](../D/database.md), or networks can slow down tests. Use mocking or stubbing to simulate I/O operations where possible.
-  - **Use in-memory [databases](../D/database.md)**: For [database](../D/database.md)-related tests, in-memory [databases](../D/database.md) like H2 can significantly reduce [test execution](../T/test-execution.md) time compared to traditional [databases](../D/database.md).
-  - **Parallel execution**: JUnit 5 supports parallel [test execution](../T/test-execution.md). Enable this feature to run tests concurrently, reducing overall execution time.
+  - **Minimize I/O operations**: Accessing files, [databases](https://naodeng.com.cn/en/wiki/database), or networks can slow down tests. Use mocking or stubbing to simulate I/O operations where possible.
+  - **Use in-memory [databases](https://naodeng.com.cn/en/wiki/database)**: For [database](https://naodeng.com.cn/en/wiki/database)-related tests, in-memory [databases](https://naodeng.com.cn/en/wiki/database) like H2 can significantly reduce [test execution](https://naodeng.com.cn/en/wiki/test-execution) time compared to traditional [databases](https://naodeng.com.cn/en/wiki/database).
+  - **Parallel execution**: JUnit 5 supports parallel [test execution](https://naodeng.com.cn/en/wiki/test-execution). Enable this feature to run tests concurrently, reducing overall execution time.
   - **Selective testing**: Use JUnit's filtering options to run only a subset of tests when working on specific areas of the codebase.
-  - **Avoid unnecessary [setup](../S/setup.md)/teardown**: Keep `@BeforeEach`/`@AfterEach` methods lean. Perform [setup](../S/setup.md) and teardown only when necessary for the given test context.
+  - **Avoid unnecessary [setup](https://naodeng.com.cn/en/wiki/setup)/teardown**: Keep `@BeforeEach`/`@AfterEach` methods lean. Perform [setup](https://naodeng.com.cn/en/wiki/setup) and teardown only when necessary for the given test context.
   - **Profile tests**: Use profiling tools to identify and optimize slow tests. Address performance bottlenecks such as inefficient algorithms or excessive object creation.
   - **Test prioritization**: Prioritize and run critical tests more frequently. Less critical or stable tests can be run less often.
-  - **Use @TestInstance(Lifecycle.PER_CLASS)**: Reduce test instance creation overhead by using `@TestInstance(Lifecycle.PER_CLASS)` to share [setup](../S/setup.md) among tests in the same class.
-  - **Leverage test fixtures**: Reuse test fixtures across tests when possible to reduce [setup](../S/setup.md) time.
+  - **Use @TestInstance(Lifecycle.PER_CLASS)**: Reduce test instance creation overhead by using `@TestInstance(Lifecycle.PER_CLASS)` to share [setup](https://naodeng.com.cn/en/wiki/setup) among tests in the same class.
+  - **Leverage test fixtures**: Reuse test fixtures across tests when possible to reduce [setup](https://naodeng.com.cn/en/wiki/setup) time.
   - **Asynchronous testing**: For testing asynchronous code, use JUnit's support for testing futures and promises to avoid thread sleeps.
   - **Keep tests focused**: Write small, focused tests that only test one aspect of the code. This makes tests run faster and helps in quicker identification of issues.
 
 #### What is the role of code coverage in JUnit testing and how can you measure it?
 
-  [Code coverage](../C/code-coverage.md) is a metric used to evaluate the effectiveness of tests by determining the percentage of code executed during a test run. In [JUnit testing](../J/junit-testing.md), it helps identify untested parts of the codebase, ensuring that the tests are comprehensive.
-  To measure [code coverage](../C/code-coverage.md) in JUnit, you can use tools like **JaCoCo**, **Cobertura**, or **Clover**. These tools integrate with the build process and provide reports on various coverage criteria such as line, branch, and instruction coverage.
+  [Code coverage](https://naodeng.com.cn/en/wiki/code-coverage) is a metric used to evaluate the effectiveness of tests by determining the percentage of code executed during a test run. In [JUnit testing](https://naodeng.com.cn/en/wiki/junit-testing), it helps identify untested parts of the codebase, ensuring that the tests are comprehensive.
+  To measure [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) in JUnit, you can use tools like **JaCoCo**, **Cobertura**, or **Clover**. These tools integrate with the build process and provide reports on various coverage criteria such as line, branch, and instruction coverage.
   For example, with **JaCoCo**, you can configure it in your Maven or Gradle build file. After running your JUnit tests, JaCoCo generates a report that can be viewed in a web browser or integrated into continuous integration systems.
-  Here's a basic [setup](../S/setup.md) in a Maven `pom.xml` file:
+  Here's a basic [setup](https://naodeng.com.cn/en/wiki/setup) in a Maven `pom.xml` file:
 
   ```
   <plugin>
@@ -747,4 +746,4 @@ JUnit is a Java testing framework enabling developers to craft and run automated
   </plugin>
   ```
   After running your tests with `mvn test`, you can find the coverage report in `target/site/jacoco/`.
-  **Interpreting the report** is crucial; high coverage can indicate good [test coverage](../T/test-coverage.md), but it doesn't guarantee the absence of [bugs](../B/bug.md) or that all edge cases are tested. Conversely, areas with low coverage can signal the need for additional tests. It's important to aim for meaningful coverage that tests the application's behavior rather than striving for an arbitrary percentage.
+  **Interpreting the report** is crucial; high coverage can indicate good [test coverage](https://naodeng.com.cn/en/wiki/test-coverage), but it doesn't guarantee the absence of [bugs](https://naodeng.com.cn/en/wiki/bug) or that all edge cases are tested. Conversely, areas with low coverage can signal the need for additional tests. It's important to aim for meaningful coverage that tests the application's behavior rather than striving for an arbitrary percentage.

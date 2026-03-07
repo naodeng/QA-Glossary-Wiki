@@ -1,6 +1,5 @@
 # Release Testing
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
 - [Questions about Release Testing ?](#questions-about-release-testing)
@@ -36,8 +35,8 @@ evaluates a new software version to determine its readiness for release, examini
 
 ## Related Terms:
 
-- [Regression Testing](../R/regression-testing.md)
-- [Retesting](../R/retesting.md)
+- [Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)
+- [Retesting](https://naodeng.com.cn/en/wiki/retesting)
 
 ## Questions about Release Testing ?
 
@@ -45,34 +44,34 @@ evaluates a new software version to determine its readiness for release, examini
 
 #### What is release testing?
 
-  [Release testing](../R/release-testing.md) is the final validation of software before it's delivered to customers or deployed to production. It's a comprehensive assessment that ensures the product meets quality standards and requirements. This phase typically involves a combination of manual and automated tests to verify functionality, performance, security, and usability.
-  **[Release testing](../R/release-testing.md)** is critical because it's the last line of defense against [bugs](../B/bug.md) and issues that could negatively impact user experience or system stability. It's a culmination of all previous testing efforts and focuses on ensuring that changes made during the development cycle haven't introduced new problems.
-  To determine the scope, consider the changes made since the last release, risk assessments, and critical areas of the application. Use a mix of **regression tests** and **new feature [verifications](../V/verification.md)** to cover the breadth of the software.
-  Managing and tracking issues during this phase is crucial. Employ tools like [JIRA](../J/jira.md) or Trello for issue tracking and prioritize [bugs](../B/bug.md) based on [severity](../S/severity.md) and impact. Address critical issues immediately to avoid delays in the release schedule.
-  For best practices, automate where possible to speed up the process and ensure consistency. However, don't overlook the value of exploratory [manual testing](../M/manual-testing.md) to catch unexpected issues.
-  When choosing tools for [release testing](../R/release-testing.md), opt for those that integrate well with your existing CI/CD pipeline and support the technologies used in your project. Balance the pros and cons of automated tools, considering factors like cost, learning curve, and maintenance overhead.
+  [Release testing](https://naodeng.com.cn/en/wiki/release-testing) is the final validation of software before it's delivered to customers or deployed to production. It's a comprehensive assessment that ensures the product meets quality standards and requirements. This phase typically involves a combination of manual and automated tests to verify functionality, performance, security, and usability.
+  **[Release testing](https://naodeng.com.cn/en/wiki/release-testing)** is critical because it's the last line of defense against [bugs](https://naodeng.com.cn/en/wiki/bug) and issues that could negatively impact user experience or system stability. It's a culmination of all previous testing efforts and focuses on ensuring that changes made during the development cycle haven't introduced new problems.
+  To determine the scope, consider the changes made since the last release, risk assessments, and critical areas of the application. Use a mix of **regression tests** and **new feature [verifications](https://naodeng.com.cn/en/wiki/verification)** to cover the breadth of the software.
+  Managing and tracking issues during this phase is crucial. Employ tools like [JIRA](https://naodeng.com.cn/en/wiki/jira) or Trello for issue tracking and prioritize [bugs](https://naodeng.com.cn/en/wiki/bug) based on [severity](https://naodeng.com.cn/en/wiki/severity) and impact. Address critical issues immediately to avoid delays in the release schedule.
+  For best practices, automate where possible to speed up the process and ensure consistency. However, don't overlook the value of exploratory [manual testing](https://naodeng.com.cn/en/wiki/manual-testing) to catch unexpected issues.
+  When choosing tools for [release testing](https://naodeng.com.cn/en/wiki/release-testing), opt for those that integrate well with your existing CI/CD pipeline and support the technologies used in your project. Balance the pros and cons of automated tools, considering factors like cost, learning curve, and maintenance overhead.
   Lastly, if a critical issue is found, assess the impact, prioritize the fix, and retest thoroughly. Keep communication open with stakeholders to manage expectations and ensure a smooth release process.
 
 #### Why is release testing important in software development?
 
-  [Release testing](../R/release-testing.md) is crucial in software development as it serves as the final validation before a product reaches the end user. It ensures that all components and features work together seamlessly in the production environment, which may differ from development or staging environments where earlier testing phases occur. This phase helps to **identify any last-minute defects** that could impact user experience or cause system failures, which are critical to address before public availability.
-  Moreover, [release testing](../R/release-testing.md) verifies that the product meets **business requirements** and **regulatory standards**, which is essential for maintaining company reputation and avoiding legal issues. It also provides a **safety net** against potential issues that might have been introduced during integration or missed in previous testing stages.
-  In the context of [test automation](../T/test-automation.md), [release testing](../R/release-testing.md) often involves **regression tests** and **smoke tests** to quickly assess the stability of a release candidate. Automated tests can be run on various configurations and platforms to ensure compatibility and functionality, which is especially important for products with a wide user base.
-  Ultimately, [release testing](../R/release-testing.md) acts as a **gatekeeper**, ensuring that only high-quality, thoroughly vetted software is delivered to customers, thereby reducing the risk of post-release hotfixes and patches that can be costly and damaging to the product's reputation. It's a critical step in the **risk management** and **[quality assurance](../Q/quality-assurance.md)** processes of software development.
+  [Release testing](https://naodeng.com.cn/en/wiki/release-testing) is crucial in software development as it serves as the final validation before a product reaches the end user. It ensures that all components and features work together seamlessly in the production environment, which may differ from development or staging environments where earlier testing phases occur. This phase helps to **identify any last-minute defects** that could impact user experience or cause system failures, which are critical to address before public availability.
+  Moreover, [release testing](https://naodeng.com.cn/en/wiki/release-testing) verifies that the product meets **business requirements** and **regulatory standards**, which is essential for maintaining company reputation and avoiding legal issues. It also provides a **safety net** against potential issues that might have been introduced during integration or missed in previous testing stages.
+  In the context of [test automation](https://naodeng.com.cn/en/wiki/test-automation), [release testing](https://naodeng.com.cn/en/wiki/release-testing) often involves **regression tests** and **smoke tests** to quickly assess the stability of a release candidate. Automated tests can be run on various configurations and platforms to ensure compatibility and functionality, which is especially important for products with a wide user base.
+  Ultimately, [release testing](https://naodeng.com.cn/en/wiki/release-testing) acts as a **gatekeeper**, ensuring that only high-quality, thoroughly vetted software is delivered to customers, thereby reducing the risk of post-release hotfixes and patches that can be costly and damaging to the product's reputation. It's a critical step in the **risk management** and **[quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance)** processes of software development.
 
 #### What are the key components of release testing?
 
-  Key components of [release testing](../R/release-testing.md) include:
+  Key components of [release testing](https://naodeng.com.cn/en/wiki/release-testing) include:
 
-  - **[Test Environment](../T/test-environment.md)** : A stable and isolated environment that mirrors production to ensure accurate results.
-  - **[Test Data](../T/test-data.md)** : Relevant and sufficient data for comprehensive testing scenarios.
-  - **[Test Cases](../T/test-case.md)** : A set of conditions under which a tester will determine whether an application is working correctly.
-  - **[Test Plan](../T/test-plan.md)** : A document detailing the scope, approach, resources, and schedule of intended test activities.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment)** : A stable and isolated environment that mirrors production to ensure accurate results.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data)** : Relevant and sufficient data for comprehensive testing scenarios.
+  - **[Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : A set of conditions under which a tester will determine whether an application is working correctly.
+  - **[Test Plan](https://naodeng.com.cn/en/wiki/test-plan)** : A document detailing the scope, approach, resources, and schedule of intended test activities.
   - **Regression Tests** : To verify that new changes haven't adversely affected existing functionalities.
   - **Smoke Testing** : A quick set of tests to check the critical functionalities of the application before proceeding to more detailed testing.
-  - **[Performance Testing](../P/performance-testing.md)** : To ensure the application performs well under expected workload scenarios.
-  - **[Security Testing](../S/security-testing.md)** : To validate the application's security features and identify potential vulnerabilities.
-  - **[User Acceptance Testing](../U/user-acceptance-testing.md) (UAT)** : Conducted with real users to ensure the system meets their requirements.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)** : To ensure the application performs well under expected workload scenarios.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)** : To validate the application's security features and identify potential vulnerabilities.
+  - **[User Acceptance Testing](https://naodeng.com.cn/en/wiki/user-acceptance-testing) (UAT)** : Conducted with real users to ensure the system meets their requirements.
   - **Defect Tracking System** : A tool to report, track, and manage defects found during testing.
   - **Release Notes** : Documentation that includes information about the new features, changes, bug fixes, and known issues in the release.
   - **Sign-off** : Formal agreement that the application meets the required standards and is ready for production.
@@ -82,137 +81,137 @@ evaluates a new software version to determine its readiness for release, examini
   - **Rollback Procedures**: Defined steps to revert to a previous version if the release introduces critical issues.
   - **Monitoring Tools**: Systems to monitor the application's performance and stability post-release.
   ```
-  These components ensure a thorough and efficient [release testing](../R/release-testing.md) process, leading to a stable and reliable software deployment.
+  These components ensure a thorough and efficient [release testing](https://naodeng.com.cn/en/wiki/release-testing) process, leading to a stable and reliable software deployment.
 
-  - **[Test Environment](../T/test-environment.md)** : A stable and isolated environment that mirrors production to ensure accurate results.
-  - **[Test Data](../T/test-data.md)** : Relevant and sufficient data for comprehensive testing scenarios.
-  - **[Test Cases](../T/test-case.md)** : A set of conditions under which a tester will determine whether an application is working correctly.
-  - **[Test Plan](../T/test-plan.md)** : A document detailing the scope, approach, resources, and schedule of intended test activities.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment)** : A stable and isolated environment that mirrors production to ensure accurate results.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data)** : Relevant and sufficient data for comprehensive testing scenarios.
+  - **[Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : A set of conditions under which a tester will determine whether an application is working correctly.
+  - **[Test Plan](https://naodeng.com.cn/en/wiki/test-plan)** : A document detailing the scope, approach, resources, and schedule of intended test activities.
   - **Regression Tests** : To verify that new changes haven't adversely affected existing functionalities.
   - **Smoke Testing** : A quick set of tests to check the critical functionalities of the application before proceeding to more detailed testing.
-  - **[Performance Testing](../P/performance-testing.md)** : To ensure the application performs well under expected workload scenarios.
-  - **[Security Testing](../S/security-testing.md)** : To validate the application's security features and identify potential vulnerabilities.
-  - **[User Acceptance Testing](../U/user-acceptance-testing.md) (UAT)** : Conducted with real users to ensure the system meets their requirements.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)** : To ensure the application performs well under expected workload scenarios.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)** : To validate the application's security features and identify potential vulnerabilities.
+  - **[User Acceptance Testing](https://naodeng.com.cn/en/wiki/user-acceptance-testing) (UAT)** : Conducted with real users to ensure the system meets their requirements.
   - **Defect Tracking System** : A tool to report, track, and manage defects found during testing.
   - **Release Notes** : Documentation that includes information about the new features, changes, bug fixes, and known issues in the release.
   - **Sign-off** : Formal agreement that the application meets the required standards and is ready for production.
 
 #### How does release testing differ from other types of testing?
 
-  [Release testing](../R/release-testing.md) differs from other types of testing primarily in its **scope** and **objectives**. While [unit testing](../U/unit-testing.md) focuses on individual components and [integration testing](../I/integration-testing.md) ensures that these components work together, [release testing](../R/release-testing.md) is a **final validation** before the software is delivered to users. It encompasses a comprehensive assessment of the product's functionality, performance, security, and usability to ensure it meets the release criteria.
-  Unlike continuous testing, which occurs throughout the development process, [release testing](../R/release-testing.md) is typically conducted at the **end of the development cycle**. It's a more **formalized** and **high-level** testing phase, often involving **[regression testing](../R/regression-testing.md)** to verify that new changes haven't adversely affected existing functionality.
-  [Release testing](../R/release-testing.md) also has a unique focus on **non-[functional requirements](../F/functional-requirements.md)**, such as [load testing](../L/load-testing.md) and [stress testing](../S/stress-testing.md), to ensure the software can handle real-world use. It's the last line of defense to catch any critical issues that could impact the user experience or cause system failure.
-  In terms of **automation**, [release testing](../R/release-testing.md) leverages automated [test suites](../T/test-suite.md) that cover a wide range of application scenarios, including those that may not have been fully tested during earlier testing phases. Automated tests for [release testing](../R/release-testing.md) are often more **comprehensive** and **complex**, simulating user behavior and system interactions more closely to the production environment.
-  Given its critical role in the software delivery process, [release testing](../R/release-testing.md) requires careful planning and execution, with a focus on **risk assessment** and **mitigation** to ensure a smooth and successful release.
+  [Release testing](https://naodeng.com.cn/en/wiki/release-testing) differs from other types of testing primarily in its **scope** and **objectives**. While [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) focuses on individual components and [integration testing](https://naodeng.com.cn/en/wiki/integration-testing) ensures that these components work together, [release testing](https://naodeng.com.cn/en/wiki/release-testing) is a **final validation** before the software is delivered to users. It encompasses a comprehensive assessment of the product's functionality, performance, security, and usability to ensure it meets the release criteria.
+  Unlike continuous testing, which occurs throughout the development process, [release testing](https://naodeng.com.cn/en/wiki/release-testing) is typically conducted at the **end of the development cycle**. It's a more **formalized** and **high-level** testing phase, often involving **[regression testing](https://naodeng.com.cn/en/wiki/regression-testing)** to verify that new changes haven't adversely affected existing functionality.
+  [Release testing](https://naodeng.com.cn/en/wiki/release-testing) also has a unique focus on **non-[functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements)**, such as [load testing](https://naodeng.com.cn/en/wiki/load-testing) and [stress testing](https://naodeng.com.cn/en/wiki/stress-testing), to ensure the software can handle real-world use. It's the last line of defense to catch any critical issues that could impact the user experience or cause system failure.
+  In terms of **automation**, [release testing](https://naodeng.com.cn/en/wiki/release-testing) leverages automated [test suites](https://naodeng.com.cn/en/wiki/test-suite) that cover a wide range of application scenarios, including those that may not have been fully tested during earlier testing phases. Automated tests for [release testing](https://naodeng.com.cn/en/wiki/release-testing) are often more **comprehensive** and **complex**, simulating user behavior and system interactions more closely to the production environment.
+  Given its critical role in the software delivery process, [release testing](https://naodeng.com.cn/en/wiki/release-testing) requires careful planning and execution, with a focus on **risk assessment** and **mitigation** to ensure a smooth and successful release.
 
 #### What is the role of release testing in the software development lifecycle?
 
-  [Release testing](../R/release-testing.md) serves as the **final validation** of software functionality, performance, and stability before it is delivered to end-users. It is a critical phase in the software development lifecycle (SDLC) that ensures the product meets the defined release criteria and is ready for deployment.
+  [Release testing](https://naodeng.com.cn/en/wiki/release-testing) serves as the **final validation** of software functionality, performance, and stability before it is delivered to end-users. It is a critical phase in the software development lifecycle (SDLC) that ensures the product meets the defined release criteria and is ready for deployment.
   In this phase, the software is tested in an environment that closely mirrors the production setting, which includes hardware, network configurations, and other system software. This helps to identify any last-minute issues that could impact the user experience or cause system failures post-release.
-  [Release testing](../R/release-testing.md) typically involves a combination of manual and automated tests, including **[regression testing](../R/regression-testing.md)**, **[performance testing](../P/performance-testing.md)**, and **[security testing](../S/security-testing.md)**. The focus is on verifying that new features work as intended, existing functionality remains unaffected by recent changes, and no critical [bugs](../B/bug.md) are present.
-  The role of [release testing](../R/release-testing.md) is to provide **confidence** in the quality of the release candidate and to ensure that it is ready for market launch. It acts as a gatekeeper, preventing defects from reaching the customer and potentially damaging the reputation of the organization.
-  To execute [release testing](../R/release-testing.md) effectively, [test automation](../T/test-automation.md) engineers must have a clear understanding of the release requirements, prioritize [test cases](../T/test-case.md) based on risk, and leverage automation to expedite the testing process. They must also be prepared to act quickly if critical issues are identified, either by addressing the defects or by making informed decisions about the release schedule.
+  [Release testing](https://naodeng.com.cn/en/wiki/release-testing) typically involves a combination of manual and automated tests, including **[regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**, **[performance testing](https://naodeng.com.cn/en/wiki/performance-testing)**, and **[security testing](https://naodeng.com.cn/en/wiki/security-testing)**. The focus is on verifying that new features work as intended, existing functionality remains unaffected by recent changes, and no critical [bugs](https://naodeng.com.cn/en/wiki/bug) are present.
+  The role of [release testing](https://naodeng.com.cn/en/wiki/release-testing) is to provide **confidence** in the quality of the release candidate and to ensure that it is ready for market launch. It acts as a gatekeeper, preventing defects from reaching the customer and potentially damaging the reputation of the organization.
+  To execute [release testing](https://naodeng.com.cn/en/wiki/release-testing) effectively, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers must have a clear understanding of the release requirements, prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case) based on risk, and leverage automation to expedite the testing process. They must also be prepared to act quickly if critical issues are identified, either by addressing the defects or by making informed decisions about the release schedule.
 
 ### Process and Techniques
 
 #### What are the steps involved in the release testing process?
 
-  Given the context, the steps involved in the [release testing](../R/release-testing.md) process are as follows:
+  Given the context, the steps involved in the [release testing](https://naodeng.com.cn/en/wiki/release-testing) process are as follows:
 
-  1. **Finalize [Test Environment](../T/test-environment.md)**: Ensure the [test environment](../T/test-environment.md) closely mirrors the production environment to avoid environment-specific issues.
+  1. **Finalize [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)**: Ensure the [test environment](https://naodeng.com.cn/en/wiki/test-environment) closely mirrors the production environment to avoid environment-specific issues.
   2. **Smoke Testing**: Quickly run a subset of tests to confirm the stability of the build before proceeding to more detailed testing.
-  3. **[Regression Testing](../R/regression-testing.md)**: Execute a comprehensive set of automated tests to verify that existing functionality remains unaffected by new changes.
-  4. **Feature [Verification](../V/verification.md)**: Focus on new features, enhancements, and [bug](../B/bug.md) fixes included in the release to ensure they work as expected.
-  5. **[Performance Testing](../P/performance-testing.md)**: Assess system performance under various conditions to ensure it meets performance criteria.
-  6. **[Security Testing](../S/security-testing.md)**: Conduct security checks to identify any vulnerabilities introduced in the new release.
-  7. **[Usability Testing](../U/usability-testing.md)**: Validate the user experience for any UI changes or new features.
+  3. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: Execute a comprehensive set of automated tests to verify that existing functionality remains unaffected by new changes.
+  4. **Feature [Verification](https://naodeng.com.cn/en/wiki/verification)**: Focus on new features, enhancements, and [bug](https://naodeng.com.cn/en/wiki/bug) fixes included in the release to ensure they work as expected.
+  5. **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: Assess system performance under various conditions to ensure it meets performance criteria.
+  6. **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Conduct security checks to identify any vulnerabilities introduced in the new release.
+  7. **[Usability Testing](https://naodeng.com.cn/en/wiki/usability-testing)**: Validate the user experience for any UI changes or new features.
   8. **Compliance Testing**: Ensure the release complies with relevant standards and regulations.
-  9. **Manual [Exploratory Testing](../E/exploratory-testing.md)**: Perform unscripted tests to uncover issues that automated tests may miss.
-  10. **Issue [Verification](../V/verification.md)**: Re-test fixed issues to confirm they have been resolved.
-  11. **[Sanity Testing](../S/sanity-testing.md)**: Conduct a final check to ensure the core functionalities work before signing off the release.
+  9. **Manual [Exploratory Testing](https://naodeng.com.cn/en/wiki/exploratory-testing)**: Perform unscripted tests to uncover issues that automated tests may miss.
+  10. **Issue [Verification](https://naodeng.com.cn/en/wiki/verification)**: Re-test fixed issues to confirm they have been resolved.
+  11. **[Sanity Testing](https://naodeng.com.cn/en/wiki/sanity-testing)**: Conduct a final check to ensure the core functionalities work before signing off the release.
   12. **Documentation Review**: Update and review documentation to reflect changes in the release.
   13. **Sign-off**: Obtain approval from stakeholders based on the test results and readiness criteria.
   14. **Release Deployment**: Deploy the build to production.
-  15. **Post-[Release Testing](../R/release-testing.md)**: Monitor the application in production for any immediate issues.
+  15. **Post-[Release Testing](https://naodeng.com.cn/en/wiki/release-testing)**: Monitor the application in production for any immediate issues.
   16. **Retrospective**: Review the release process to identify improvements for future releases.
-  1. **Finalize [Test Environment](../T/test-environment.md)**: Ensure the [test environment](../T/test-environment.md) closely mirrors the production environment to avoid environment-specific issues.
+  1. **Finalize [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)**: Ensure the [test environment](https://naodeng.com.cn/en/wiki/test-environment) closely mirrors the production environment to avoid environment-specific issues.
   2. **Smoke Testing**: Quickly run a subset of tests to confirm the stability of the build before proceeding to more detailed testing.
-  3. **[Regression Testing](../R/regression-testing.md)**: Execute a comprehensive set of automated tests to verify that existing functionality remains unaffected by new changes.
-  4. **Feature [Verification](../V/verification.md)**: Focus on new features, enhancements, and [bug](../B/bug.md) fixes included in the release to ensure they work as expected.
-  5. **[Performance Testing](../P/performance-testing.md)**: Assess system performance under various conditions to ensure it meets performance criteria.
-  6. **[Security Testing](../S/security-testing.md)**: Conduct security checks to identify any vulnerabilities introduced in the new release.
-  7. **[Usability Testing](../U/usability-testing.md)**: Validate the user experience for any UI changes or new features.
+  3. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: Execute a comprehensive set of automated tests to verify that existing functionality remains unaffected by new changes.
+  4. **Feature [Verification](https://naodeng.com.cn/en/wiki/verification)**: Focus on new features, enhancements, and [bug](https://naodeng.com.cn/en/wiki/bug) fixes included in the release to ensure they work as expected.
+  5. **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: Assess system performance under various conditions to ensure it meets performance criteria.
+  6. **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Conduct security checks to identify any vulnerabilities introduced in the new release.
+  7. **[Usability Testing](https://naodeng.com.cn/en/wiki/usability-testing)**: Validate the user experience for any UI changes or new features.
   8. **Compliance Testing**: Ensure the release complies with relevant standards and regulations.
-  9. **Manual [Exploratory Testing](../E/exploratory-testing.md)**: Perform unscripted tests to uncover issues that automated tests may miss.
-  10. **Issue [Verification](../V/verification.md)**: Re-test fixed issues to confirm they have been resolved.
-  11. **[Sanity Testing](../S/sanity-testing.md)**: Conduct a final check to ensure the core functionalities work before signing off the release.
+  9. **Manual [Exploratory Testing](https://naodeng.com.cn/en/wiki/exploratory-testing)**: Perform unscripted tests to uncover issues that automated tests may miss.
+  10. **Issue [Verification](https://naodeng.com.cn/en/wiki/verification)**: Re-test fixed issues to confirm they have been resolved.
+  11. **[Sanity Testing](https://naodeng.com.cn/en/wiki/sanity-testing)**: Conduct a final check to ensure the core functionalities work before signing off the release.
   12. **Documentation Review**: Update and review documentation to reflect changes in the release.
   13. **Sign-off**: Obtain approval from stakeholders based on the test results and readiness criteria.
   14. **Release Deployment**: Deploy the build to production.
-  15. **Post-[Release Testing](../R/release-testing.md)**: Monitor the application in production for any immediate issues.
+  15. **Post-[Release Testing](https://naodeng.com.cn/en/wiki/release-testing)**: Monitor the application in production for any immediate issues.
   16. **Retrospective**: Review the release process to identify improvements for future releases.
 
 #### What techniques are commonly used in release testing?
 
-  Common techniques in [release testing](../R/release-testing.md) include:
+  Common techniques in [release testing](https://naodeng.com.cn/en/wiki/release-testing) include:
 
   - **Smoke Testing** : A quick set of tests to ensure the most important functions work.
-  - **[Regression Testing](../R/regression-testing.md)** : Automated tests to verify that new changes haven't adversely affected existing functionality.
-  - **[Risk-Based Testing](../R/risk-based-testing.md)** : Prioritizing testing based on the potential risk of failure.
-  - **[Sanity Testing](../S/sanity-testing.md)** : Checking that a particular function or bug fix works as expected.
-  - **[Exploratory Testing](../E/exploratory-testing.md)** : Unscripted testing to explore application behavior.
-  - **[Performance Testing](../P/performance-testing.md)** : Assessing the system's performance under load.
-  - **[Security Testing](../S/security-testing.md)** : Identifying vulnerabilities within the application.
-  - **[Usability Testing](../U/usability-testing.md)** : Ensuring the application is user-friendly and meets UX standards.
-  - **[Compatibility Testing](../C/compatibility-testing.md)** : Checking the software's performance across different environments and platforms.
-  - **[API Testing](../A/api-testing.md)** : Validating the functionality, reliability, performance, and security of the application's API.
-  - **[Database](../D/database.md) Testing** : Verifying the integrity of database updates and data retrieval.
-  - **[User Acceptance Testing](../U/user-acceptance-testing.md) (UAT)** : Conducted with real users to ensure the software meets their requirements and is ready for deployment.
-  These techniques are often supported by continuous integration/continuous deployment (CI/CD) pipelines, which automate the build, deploy, and test processes, enabling frequent and reliable [release testing](../R/release-testing.md).
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Automated tests to verify that new changes haven't adversely affected existing functionality.
+  - **[Risk-Based Testing](https://naodeng.com.cn/en/wiki/risk-based-testing)** : Prioritizing testing based on the potential risk of failure.
+  - **[Sanity Testing](https://naodeng.com.cn/en/wiki/sanity-testing)** : Checking that a particular function or bug fix works as expected.
+  - **[Exploratory Testing](https://naodeng.com.cn/en/wiki/exploratory-testing)** : Unscripted testing to explore application behavior.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)** : Assessing the system's performance under load.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)** : Identifying vulnerabilities within the application.
+  - **[Usability Testing](https://naodeng.com.cn/en/wiki/usability-testing)** : Ensuring the application is user-friendly and meets UX standards.
+  - **[Compatibility Testing](https://naodeng.com.cn/en/wiki/compatibility-testing)** : Checking the software's performance across different environments and platforms.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)** : Validating the functionality, reliability, performance, and security of the application's API.
+  - **[Database](https://naodeng.com.cn/en/wiki/database) Testing** : Verifying the integrity of database updates and data retrieval.
+  - **[User Acceptance Testing](https://naodeng.com.cn/en/wiki/user-acceptance-testing) (UAT)** : Conducted with real users to ensure the software meets their requirements and is ready for deployment.
+  These techniques are often supported by continuous integration/continuous deployment (CI/CD) pipelines, which automate the build, deploy, and test processes, enabling frequent and reliable [release testing](https://naodeng.com.cn/en/wiki/release-testing).
 
   - **Smoke Testing** : A quick set of tests to ensure the most important functions work.
-  - **[Regression Testing](../R/regression-testing.md)** : Automated tests to verify that new changes haven't adversely affected existing functionality.
-  - **[Risk-Based Testing](../R/risk-based-testing.md)** : Prioritizing testing based on the potential risk of failure.
-  - **[Sanity Testing](../S/sanity-testing.md)** : Checking that a particular function or bug fix works as expected.
-  - **[Exploratory Testing](../E/exploratory-testing.md)** : Unscripted testing to explore application behavior.
-  - **[Performance Testing](../P/performance-testing.md)** : Assessing the system's performance under load.
-  - **[Security Testing](../S/security-testing.md)** : Identifying vulnerabilities within the application.
-  - **[Usability Testing](../U/usability-testing.md)** : Ensuring the application is user-friendly and meets UX standards.
-  - **[Compatibility Testing](../C/compatibility-testing.md)** : Checking the software's performance across different environments and platforms.
-  - **[API Testing](../A/api-testing.md)** : Validating the functionality, reliability, performance, and security of the application's API.
-  - **[Database](../D/database.md) Testing** : Verifying the integrity of database updates and data retrieval.
-  - **[User Acceptance Testing](../U/user-acceptance-testing.md) (UAT)** : Conducted with real users to ensure the software meets their requirements and is ready for deployment.
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Automated tests to verify that new changes haven't adversely affected existing functionality.
+  - **[Risk-Based Testing](https://naodeng.com.cn/en/wiki/risk-based-testing)** : Prioritizing testing based on the potential risk of failure.
+  - **[Sanity Testing](https://naodeng.com.cn/en/wiki/sanity-testing)** : Checking that a particular function or bug fix works as expected.
+  - **[Exploratory Testing](https://naodeng.com.cn/en/wiki/exploratory-testing)** : Unscripted testing to explore application behavior.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)** : Assessing the system's performance under load.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)** : Identifying vulnerabilities within the application.
+  - **[Usability Testing](https://naodeng.com.cn/en/wiki/usability-testing)** : Ensuring the application is user-friendly and meets UX standards.
+  - **[Compatibility Testing](https://naodeng.com.cn/en/wiki/compatibility-testing)** : Checking the software's performance across different environments and platforms.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)** : Validating the functionality, reliability, performance, and security of the application's API.
+  - **[Database](https://naodeng.com.cn/en/wiki/database) Testing** : Verifying the integrity of database updates and data retrieval.
+  - **[User Acceptance Testing](https://naodeng.com.cn/en/wiki/user-acceptance-testing) (UAT)** : Conducted with real users to ensure the software meets their requirements and is ready for deployment.
 
 #### How do you determine the scope of release testing?
 
-  Determining the scope of [release testing](../R/release-testing.md) involves evaluating the **changes made** to the software and the **impact** these changes could have on the product. Consider the following factors:
+  Determining the scope of [release testing](https://naodeng.com.cn/en/wiki/release-testing) involves evaluating the **changes made** to the software and the **impact** these changes could have on the product. Consider the following factors:
 
   - **Feature Additions and Modifications** : Identify new features and changes to existing features. Focus on areas with the most significant updates or complexity.
-  - **[Bug](../B/bug.md) Fixes** : Review the list of resolved issues and ensure tests cover the corrected functionality.
+  - **[Bug](https://naodeng.com.cn/en/wiki/bug) Fixes** : Review the list of resolved issues and ensure tests cover the corrected functionality.
   - **Risk Assessment** : Perform a risk analysis to prioritize testing based on potential impact and likelihood of failure.
   - **Dependencies** : Evaluate changes in third-party libraries or services that could affect the software.
   - **Resource Availability** : Align the scope with the available time, personnel, and tools.
-  - **[Test Coverage](../T/test-coverage.md)** : Analyze existing test coverage to identify gaps that need to be addressed.
-  - **Non-[Functional Requirements](../F/functional-requirements.md)** : Include performance, security, and usability aspects that may be affected by the release.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Analyze existing test coverage to identify gaps that need to be addressed.
+  - **Non-[Functional Requirements](https://naodeng.com.cn/en/wiki/functional-requirements)** : Include performance, security, and usability aspects that may be affected by the release.
   - **Customer Feedback** : Incorporate feedback from previous releases to focus on areas of user concern.
   - **Regulatory Compliance** : Ensure all regulatory requirements are met and tested for the release.
-  Use a combination of **manual and automated tests** to cover the scope effectively. Automated regression tests can quickly verify that existing functionality remains unaffected, while [exploratory testing](../E/exploratory-testing.md) can be used to assess new features and complex areas. Prioritize [test cases](../T/test-case.md) based on the factors above to ensure a thorough and efficient [release testing](../R/release-testing.md) process.
+  Use a combination of **manual and automated tests** to cover the scope effectively. Automated regression tests can quickly verify that existing functionality remains unaffected, while [exploratory testing](https://naodeng.com.cn/en/wiki/exploratory-testing) can be used to assess new features and complex areas. Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case) based on the factors above to ensure a thorough and efficient [release testing](https://naodeng.com.cn/en/wiki/release-testing) process.
 
   - **Feature Additions and Modifications** : Identify new features and changes to existing features. Focus on areas with the most significant updates or complexity.
-  - **[Bug](../B/bug.md) Fixes** : Review the list of resolved issues and ensure tests cover the corrected functionality.
+  - **[Bug](https://naodeng.com.cn/en/wiki/bug) Fixes** : Review the list of resolved issues and ensure tests cover the corrected functionality.
   - **Risk Assessment** : Perform a risk analysis to prioritize testing based on potential impact and likelihood of failure.
   - **Dependencies** : Evaluate changes in third-party libraries or services that could affect the software.
   - **Resource Availability** : Align the scope with the available time, personnel, and tools.
-  - **[Test Coverage](../T/test-coverage.md)** : Analyze existing test coverage to identify gaps that need to be addressed.
-  - **Non-[Functional Requirements](../F/functional-requirements.md)** : Include performance, security, and usability aspects that may be affected by the release.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Analyze existing test coverage to identify gaps that need to be addressed.
+  - **Non-[Functional Requirements](https://naodeng.com.cn/en/wiki/functional-requirements)** : Include performance, security, and usability aspects that may be affected by the release.
   - **Customer Feedback** : Incorporate feedback from previous releases to focus on areas of user concern.
   - **Regulatory Compliance** : Ensure all regulatory requirements are met and tested for the release.
 
 #### What are some best practices for conducting release testing?
 
-  Best practices for conducting [release testing](../R/release-testing.md) include:
+  Best practices for conducting [release testing](https://naodeng.com.cn/en/wiki/release-testing) include:
 
-  - **Prioritize [test cases](../T/test-case.md)**
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     based on risk and impact. Focus on critical functionalities that affect the end-user experience.
 
   - **Automate regression tests**
@@ -233,7 +232,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Leverage feature toggles**
     to control the visibility of new features and facilitate easier rollback if needed.
 
-  - **Conduct [exploratory testing](../E/exploratory-testing.md)**
+  - **Conduct [exploratory testing](https://naodeng.com.cn/en/wiki/exploratory-testing)**
     alongside structured tests to uncover unexpected issues.
 
   - **Gather metrics**
@@ -242,10 +241,10 @@ evaluates a new software version to determine its readiness for release, examini
   - **Communicate effectively**
     with all stakeholders about the status, risks, and decisions related to the release.
 
-  - **Review and update [test cases](../T/test-case.md)**
+  - **Review and update [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     regularly to reflect changes in the application and user behavior.
 
-  - **Conduct post-[release testing](../R/release-testing.md)**
+  - **Conduct post-[release testing](https://naodeng.com.cn/en/wiki/release-testing)**
     to verify the deployment and catch any issues that slipped through earlier stages.
 
   ```
@@ -262,7 +261,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Document lessons learned**
     after each release to improve future testing cycles.
 
-  - **Prioritize [test cases](../T/test-case.md)**
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     based on risk and impact. Focus on critical functionalities that affect the end-user experience.
 
   - **Automate regression tests**
@@ -283,7 +282,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Leverage feature toggles**
     to control the visibility of new features and facilitate easier rollback if needed.
 
-  - **Conduct [exploratory testing](../E/exploratory-testing.md)**
+  - **Conduct [exploratory testing](https://naodeng.com.cn/en/wiki/exploratory-testing)**
     alongside structured tests to uncover unexpected issues.
 
   - **Gather metrics**
@@ -292,10 +291,10 @@ evaluates a new software version to determine its readiness for release, examini
   - **Communicate effectively**
     with all stakeholders about the status, risks, and decisions related to the release.
 
-  - **Review and update [test cases](../T/test-case.md)**
+  - **Review and update [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     regularly to reflect changes in the application and user behavior.
 
-  - **Conduct post-[release testing](../R/release-testing.md)**
+  - **Conduct post-[release testing](https://naodeng.com.cn/en/wiki/release-testing)**
     to verify the deployment and catch any issues that slipped through earlier stages.
 
   - **Document lessons learned**
@@ -303,7 +302,7 @@ evaluates a new software version to determine its readiness for release, examini
 
 #### How do you manage and track issues found during release testing?
 
-  Managing and tracking issues found during [release testing](../R/release-testing.md) is crucial to ensure that defects are addressed before the software is deployed. Here's a succinct approach:
+  Managing and tracking issues found during [release testing](https://naodeng.com.cn/en/wiki/release-testing) is crucial to ensure that defects are addressed before the software is deployed. Here's a succinct approach:
 
   - **Utilize an issue tracking system**
     like JIRA, Bugzilla, or GitHub Issues. Ensure every defect is logged with a unique identifier.
@@ -314,7 +313,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Assign clear ownership**
     for each issue to team members for accountability.
 
-  - **Integrate your [test automation](../T/test-automation.md) framework**
+  - **Integrate your [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework**
     with the issue tracker to automatically create tickets for new defects.
 
   - $
@@ -326,7 +325,7 @@ evaluates a new software version to determine its readiness for release, examini
   issueTracker.createIssue({
   title: testResult.title,
   description: testResult.description,
-  [severity](../S/severity.md): determineSeverity(testResult),
+  [severity](https://naodeng.com.cn/en/wiki/severity): determineSeverity(testResult),
   component: testResult.component
   });
   }
@@ -350,7 +349,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Assign clear ownership**
     for each issue to team members for accountability.
 
-  - **Integrate your [test automation](../T/test-automation.md) framework**
+  - **Integrate your [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework**
     with the issue tracker to automatically create tickets for new defects.
 
   - $
@@ -362,19 +361,19 @@ evaluates a new software version to determine its readiness for release, examini
 
 #### What tools are commonly used for release testing?
 
-  Common tools for [release testing](../R/release-testing.md) include:
+  Common tools for [release testing](https://naodeng.com.cn/en/wiki/release-testing) include:
 
-  - **[Selenium](../S/selenium.md)** : An open-source tool for automating web browsers. It supports multiple languages and browsers.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : An open-source tool for automating web browsers. It supports multiple languages and browsers.
   - **Jenkins** : A continuous integration tool that can orchestrate and automate release testing workflows.
-  - **[JIRA](../J/jira.md)** : Issue tracking tool often used to manage and track defects found during release testing.
+  - **[JIRA](https://naodeng.com.cn/en/wiki/jira)** : Issue tracking tool often used to manage and track defects found during release testing.
   - **TestRail** : A test management tool for organizing test cases, plans, and runs.
   - **Git** : Version control system used to manage code changes and collaborate between team members.
   - **Docker** : Containerization platform that can be used to create consistent testing environments.
   - **Appium** : An open-source tool for automating mobile applications on iOS and Android platforms.
-  - **[Postman](../P/postman.md)** : A tool for API testing, which is crucial for backend release testing.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)** : A tool for API testing, which is crucial for backend release testing.
   - **LoadRunner**
     or
-    **[JMeter](../J/jmeter.md)** : Performance testing tools used to simulate user load and measure system performance.
+    **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : Performance testing tools used to simulate user load and measure system performance.
 
   - **SonarQube** : Static code analysis tool to detect code quality issues before release.
 
@@ -392,61 +391,61 @@ evaluates a new software version to determine its readiness for release, examini
     }
   })();
   ```
-  These tools help automate repetitive tasks, ensure consistency across testing environments, manage [test cases](../T/test-case.md) and defects, and provide insights into code quality and performance. Choosing the right tools depends on the project requirements, technology stack, and team expertise.
+  These tools help automate repetitive tasks, ensure consistency across testing environments, manage [test cases](https://naodeng.com.cn/en/wiki/test-case) and defects, and provide insights into code quality and performance. Choosing the right tools depends on the project requirements, technology stack, and team expertise.
 
-  - **[Selenium](../S/selenium.md)** : An open-source tool for automating web browsers. It supports multiple languages and browsers.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : An open-source tool for automating web browsers. It supports multiple languages and browsers.
   - **Jenkins** : A continuous integration tool that can orchestrate and automate release testing workflows.
-  - **[JIRA](../J/jira.md)** : Issue tracking tool often used to manage and track defects found during release testing.
+  - **[JIRA](https://naodeng.com.cn/en/wiki/jira)** : Issue tracking tool often used to manage and track defects found during release testing.
   - **TestRail** : A test management tool for organizing test cases, plans, and runs.
   - **Git** : Version control system used to manage code changes and collaborate between team members.
   - **Docker** : Containerization platform that can be used to create consistent testing environments.
   - **Appium** : An open-source tool for automating mobile applications on iOS and Android platforms.
-  - **[Postman](../P/postman.md)** : A tool for API testing, which is crucial for backend release testing.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)** : A tool for API testing, which is crucial for backend release testing.
   - **LoadRunner**
     or
-    **[JMeter](../J/jmeter.md)** : Performance testing tools used to simulate user load and measure system performance.
+    **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : Performance testing tools used to simulate user load and measure system performance.
 
   - **SonarQube** : Static code analysis tool to detect code quality issues before release.
 
 #### How do these tools help in the release testing process?
 
-  [Automated testing](../A/automated-testing.md) tools streamline the **[release testing](../R/release-testing.md) process** by executing predefined [test cases](../T/test-case.md) efficiently and consistently. They **reduce human error** and **save time**, allowing for more frequent and thorough testing cycles. These tools can quickly identify regressions and new [bugs](../B/bug.md) introduced by recent changes, ensuring that the software is stable before release.
+  [Automated testing](https://naodeng.com.cn/en/wiki/automated-testing) tools streamline the **[release testing](https://naodeng.com.cn/en/wiki/release-testing) process** by executing predefined [test cases](https://naodeng.com.cn/en/wiki/test-case) efficiently and consistently. They **reduce human error** and **save time**, allowing for more frequent and thorough testing cycles. These tools can quickly identify regressions and new [bugs](https://naodeng.com.cn/en/wiki/bug) introduced by recent changes, ensuring that the software is stable before release.
   By integrating with **continuous integration/continuous deployment (CI/CD) pipelines**, automated tools can trigger tests upon each code commit, providing immediate feedback to developers. This integration helps in maintaining a high-quality codebase and reduces the risk of last-minute surprises during the release phase.
-  Automated tools also facilitate **[non-functional testing](../N/non-functional-testing.md)** such as performance, load, and [stress testing](../S/stress-testing.md), which are crucial for evaluating the system's behavior under production-like circumstances. They can simulate multiple users and transactions, providing insights into the system's scalability and reliability.
-  Moreover, these tools support **test reporting and documentation**, generating detailed logs and reports that help in tracking the [test coverage](../T/test-coverage.md) and outcomes. This documentation is vital for audit trails and compliance purposes.
-  Automated tools can be programmed to perform **complex [test scenarios](../T/test-scenario.md)** that would be difficult to execute manually. They can interact with various interfaces and simulate real-world user interactions, ensuring that the application behaves as expected in different environments.
-  In summary, [automated testing](../A/automated-testing.md) tools are essential for an efficient and effective [release testing](../R/release-testing.md) process, providing rapid feedback, ensuring consistent [test execution](../T/test-execution.md), and ultimately contributing to the delivery of a high-quality product.
+  Automated tools also facilitate **[non-functional testing](https://naodeng.com.cn/en/wiki/non-functional-testing)** such as performance, load, and [stress testing](https://naodeng.com.cn/en/wiki/stress-testing), which are crucial for evaluating the system's behavior under production-like circumstances. They can simulate multiple users and transactions, providing insights into the system's scalability and reliability.
+  Moreover, these tools support **test reporting and documentation**, generating detailed logs and reports that help in tracking the [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and outcomes. This documentation is vital for audit trails and compliance purposes.
+  Automated tools can be programmed to perform **complex [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario)** that would be difficult to execute manually. They can interact with various interfaces and simulate real-world user interactions, ensuring that the application behaves as expected in different environments.
+  In summary, [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) tools are essential for an efficient and effective [release testing](https://naodeng.com.cn/en/wiki/release-testing) process, providing rapid feedback, ensuring consistent [test execution](https://naodeng.com.cn/en/wiki/test-execution), and ultimately contributing to the delivery of a high-quality product.
 
 #### What are the pros and cons of using automated tools for release testing?
 
-  Pros of Automated Tools for [Release Testing](../R/release-testing.md):
+  Pros of Automated Tools for [Release Testing](https://naodeng.com.cn/en/wiki/release-testing):
 
   - **Efficiency** : Automated tools can execute tests much faster than manual testing, allowing for more tests to be run in a shorter time frame.
   - **Repeatability** : Tests can be run repeatedly with consistent accuracy, which is crucial for release testing to ensure reliability.
   - **Cost-Effectiveness** : Over time, automated testing can be more cost-effective as the same set of tests can be reused across different versions of the software.
   - **Coverage** : Automation can increase the depth and scope of tests to improve coverage, including stress, load, and performance testing.
-  - **Early [Bug](../B/bug.md) Detection** : Automated tests can be integrated into the CI/CD pipeline, allowing for early detection of issues.
-  Cons of Automated Tools for [Release Testing](../R/release-testing.md):
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection** : Automated tests can be integrated into the CI/CD pipeline, allowing for early detection of issues.
+  Cons of Automated Tools for [Release Testing](https://naodeng.com.cn/en/wiki/release-testing):
 
-  - **Initial [Setup](../S/setup.md) Cost** : There is an upfront investment in setting up automated testing environments and scripts.
+  - **Initial [Setup](https://naodeng.com.cn/en/wiki/setup) Cost** : There is an upfront investment in setting up automated testing environments and scripts.
   - **Maintenance** : Test scripts require regular updates to cope with changes in the software, which can be time-consuming.
   - **Learning Curve** : Teams may need to learn new tools and scripting languages, which can delay the initial implementation.
-  - **[False Positives](../F/false-positive.md)/Negatives** : Automated tests may produce false positives or negatives if not designed or maintained properly.
+  - **[False Positives](https://naodeng.com.cn/en/wiki/false-positive)/Negatives** : Automated tests may produce false positives or negatives if not designed or maintained properly.
   - **Limited Human Insight** : Automation lacks the qualitative feedback that manual testers provide, potentially missing usability issues or other non-functional aspects that are harder to quantify.
   - **Efficiency** : Automated tools can execute tests much faster than manual testing, allowing for more tests to be run in a shorter time frame.
   - **Repeatability** : Tests can be run repeatedly with consistent accuracy, which is crucial for release testing to ensure reliability.
   - **Cost-Effectiveness** : Over time, automated testing can be more cost-effective as the same set of tests can be reused across different versions of the software.
   - **Coverage** : Automation can increase the depth and scope of tests to improve coverage, including stress, load, and performance testing.
-  - **Early [Bug](../B/bug.md) Detection** : Automated tests can be integrated into the CI/CD pipeline, allowing for early detection of issues.
-  - **Initial [Setup](../S/setup.md) Cost** : There is an upfront investment in setting up automated testing environments and scripts.
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection** : Automated tests can be integrated into the CI/CD pipeline, allowing for early detection of issues.
+  - **Initial [Setup](https://naodeng.com.cn/en/wiki/setup) Cost** : There is an upfront investment in setting up automated testing environments and scripts.
   - **Maintenance** : Test scripts require regular updates to cope with changes in the software, which can be time-consuming.
   - **Learning Curve** : Teams may need to learn new tools and scripting languages, which can delay the initial implementation.
-  - **[False Positives](../F/false-positive.md)/Negatives** : Automated tests may produce false positives or negatives if not designed or maintained properly.
+  - **[False Positives](https://naodeng.com.cn/en/wiki/false-positive)/Negatives** : Automated tests may produce false positives or negatives if not designed or maintained properly.
   - **Limited Human Insight** : Automation lacks the qualitative feedback that manual testers provide, potentially missing usability issues or other non-functional aspects that are harder to quantify.
 
 #### How do you choose the right tools for release testing?
 
-  Choosing the right tools for [release testing](../R/release-testing.md) involves evaluating several factors to ensure they align with your project's needs:
+  Choosing the right tools for [release testing](https://naodeng.com.cn/en/wiki/release-testing) involves evaluating several factors to ensure they align with your project's needs:
 
   - **Compatibility** : Ensure the tool supports the technologies used in your project (e.g., programming languages, frameworks, and platforms).
   - **Integration** : Look for tools that integrate smoothly with your existing CI/CD pipeline and other development tools.
@@ -458,7 +457,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Customization** : The ability to customize the tool can be crucial for adapting to specific testing needs.
   - **Performance** : Evaluate the tool's performance and ensure it doesn't become a bottleneck in your release process.
   - **Reliability** : Choose tools with a proven track record of reliability to avoid disruptions during release testing.
-  By carefully assessing these criteria, you can select tools that enhance the efficiency and effectiveness of your [release testing](../R/release-testing.md) efforts. Remember to periodically review your choice of tools to ensure they continue to meet the evolving demands of your software development lifecycle.
+  By carefully assessing these criteria, you can select tools that enhance the efficiency and effectiveness of your [release testing](https://naodeng.com.cn/en/wiki/release-testing) efforts. Remember to periodically review your choice of tools to ensure they continue to meet the evolving demands of your software development lifecycle.
 
   - **Compatibility** : Ensure the tool supports the technologies used in your project (e.g., programming languages, frameworks, and platforms).
   - **Integration** : Look for tools that integrate smoothly with your existing CI/CD pipeline and other development tools.
@@ -473,10 +472,10 @@ evaluates a new software version to determine its readiness for release, examini
 
 #### What role does technology play in release testing?
 
-  Technology plays a **crucial role** in [release testing](../R/release-testing.md) by enabling automation, providing **real-time insights**, and ensuring **consistency** and **repeatability**. Automation tools can execute a suite of tests quickly and efficiently, often outside of business hours, to **maximize [test coverage](../T/test-coverage.md)** and **minimize human error**. Continuous Integration (CI) and Continuous Deployment (CD) pipelines integrate [release testing](../R/release-testing.md) into the **software delivery process**, allowing for **frequent and reliable releases**.
-  Technologies such as **virtualization** and **containerization** help create consistent environments for [release testing](../R/release-testing.md), ensuring that tests run in a **controlled and isolated** manner. This is critical for validating the software in conditions that mimic production environments.
-  **Monitoring and analytics tools** track the performance and behavior of the application during [release testing](../R/release-testing.md), providing **immediate feedback** on issues. This enables teams to address problems before they impact users.
-  In summary, technology enhances [release testing](../R/release-testing.md) by:
+  Technology plays a **crucial role** in [release testing](https://naodeng.com.cn/en/wiki/release-testing) by enabling automation, providing **real-time insights**, and ensuring **consistency** and **repeatability**. Automation tools can execute a suite of tests quickly and efficiently, often outside of business hours, to **maximize [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** and **minimize human error**. Continuous Integration (CI) and Continuous Deployment (CD) pipelines integrate [release testing](https://naodeng.com.cn/en/wiki/release-testing) into the **software delivery process**, allowing for **frequent and reliable releases**.
+  Technologies such as **virtualization** and **containerization** help create consistent environments for [release testing](https://naodeng.com.cn/en/wiki/release-testing), ensuring that tests run in a **controlled and isolated** manner. This is critical for validating the software in conditions that mimic production environments.
+  **Monitoring and analytics tools** track the performance and behavior of the application during [release testing](https://naodeng.com.cn/en/wiki/release-testing), providing **immediate feedback** on issues. This enables teams to address problems before they impact users.
+  In summary, technology enhances [release testing](https://naodeng.com.cn/en/wiki/release-testing) by:
 
   - **Automating repetitive tasks**
     to save time and reduce errors.
@@ -484,7 +483,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Integrating testing into the CI/CD pipeline**
     for faster feedback loops.
 
-  - **Creating consistent [test environments](../T/test-environment.md)**
+  - **Creating consistent [test environments](https://naodeng.com.cn/en/wiki/test-environment)**
     with virtualization and containerization.
 
   - **Providing analytics**
@@ -520,7 +519,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Integrating testing into the CI/CD pipeline**
     for faster feedback loops.
 
-  - **Creating consistent [test environments](../T/test-environment.md)**
+  - **Creating consistent [test environments](https://naodeng.com.cn/en/wiki/test-environment)**
     with virtualization and containerization.
 
   - **Providing analytics**
@@ -530,15 +529,15 @@ evaluates a new software version to determine its readiness for release, examini
 
 #### What are some common challenges faced during release testing?
 
-  Common challenges during [release testing](../R/release-testing.md) include:
+  Common challenges during [release testing](https://naodeng.com.cn/en/wiki/release-testing) include:
 
   - **Environment inconsistencies** : Differences between testing and production environments can cause unexpected issues.
   - **Data complexities** : Ensuring test data is representative of production data without compromising security or privacy.
   - **Time constraints** : Release deadlines may limit the thoroughness of testing.
   - **Resource allocation** : Balancing the need for skilled testers against other project demands.
-  - **Regression [bugs](../B/bug.md)** : New code can inadvertently affect existing functionality.
-  - **[Test coverage](../T/test-coverage.md)** : Achieving sufficient coverage to ensure all features and bug fixes are verified.
-  - **[Flaky tests](../F/flaky-test.md)** : Non-deterministic tests can lead to false positives or negatives, undermining confidence in results.
+  - **Regression [bugs](https://naodeng.com.cn/en/wiki/bug)** : New code can inadvertently affect existing functionality.
+  - **[Test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Achieving sufficient coverage to ensure all features and bug fixes are verified.
+  - **[Flaky tests](https://naodeng.com.cn/en/wiki/flaky-test)** : Non-deterministic tests can lead to false positives or negatives, undermining confidence in results.
   - **Integration issues** : Challenges in testing the interaction between various components, especially in microservices architectures.
   - **Performance bottlenecks** : Identifying and resolving performance issues that only become apparent under production-like load.
   - **Deployment problems** : Issues that arise only when the application is deployed in the production environment.
@@ -559,20 +558,20 @@ evaluates a new software version to determine its readiness for release, examini
   - Prioritizing test cases based on risk and impact.
   - Allocating dedicated resources for release testing.
   - Employing
-    **automated [regression testing](../R/regression-testing.md)**
+    **automated [regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**
     .
 
   - Utilizing
-    **[code coverage](../C/code-coverage.md) tools**
+    **[code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools**
     to identify untested areas.
 
   - Addressing flaky tests by improving test stability and reliability.
   - Conducting
-    **integrated and [end-to-end testing](../E/end-to-end-testing.md)**
+    **integrated and [end-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**
     .
 
   - Performing
-    **load and [stress testing](../S/stress-testing.md)**
+    **load and [stress testing](https://naodeng.com.cn/en/wiki/stress-testing)**
     .
 
   - Practicing
@@ -595,9 +594,9 @@ evaluates a new software version to determine its readiness for release, examini
   - **Data complexities** : Ensuring test data is representative of production data without compromising security or privacy.
   - **Time constraints** : Release deadlines may limit the thoroughness of testing.
   - **Resource allocation** : Balancing the need for skilled testers against other project demands.
-  - **Regression [bugs](../B/bug.md)** : New code can inadvertently affect existing functionality.
-  - **[Test coverage](../T/test-coverage.md)** : Achieving sufficient coverage to ensure all features and bug fixes are verified.
-  - **[Flaky tests](../F/flaky-test.md)** : Non-deterministic tests can lead to false positives or negatives, undermining confidence in results.
+  - **Regression [bugs](https://naodeng.com.cn/en/wiki/bug)** : New code can inadvertently affect existing functionality.
+  - **[Test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Achieving sufficient coverage to ensure all features and bug fixes are verified.
+  - **[Flaky tests](https://naodeng.com.cn/en/wiki/flaky-test)** : Non-deterministic tests can lead to false positives or negatives, undermining confidence in results.
   - **Integration issues** : Challenges in testing the interaction between various components, especially in microservices architectures.
   - **Performance bottlenecks** : Identifying and resolving performance issues that only become apparent under production-like load.
   - **Deployment problems** : Issues that arise only when the application is deployed in the production environment.
@@ -616,20 +615,20 @@ evaluates a new software version to determine its readiness for release, examini
   - Prioritizing test cases based on risk and impact.
   - Allocating dedicated resources for release testing.
   - Employing
-    **automated [regression testing](../R/regression-testing.md)**
+    **automated [regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**
     .
 
   - Utilizing
-    **[code coverage](../C/code-coverage.md) tools**
+    **[code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools**
     to identify untested areas.
 
   - Addressing flaky tests by improving test stability and reliability.
   - Conducting
-    **integrated and [end-to-end testing](../E/end-to-end-testing.md)**
+    **integrated and [end-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**
     .
 
   - Performing
-    **load and [stress testing](../S/stress-testing.md)**
+    **load and [stress testing](https://naodeng.com.cn/en/wiki/stress-testing)**
     .
 
   - Practicing
@@ -650,11 +649,11 @@ evaluates a new software version to determine its readiness for release, examini
 
 #### How can these challenges be mitigated?
 
-  Mitigating challenges in [release testing](../R/release-testing.md) involves strategic planning and efficient execution. Here are some methods:
+  Mitigating challenges in [release testing](https://naodeng.com.cn/en/wiki/release-testing) involves strategic planning and efficient execution. Here are some methods:
 
   - **Prioritize tests** : Focus on critical areas first, based on risk and impact.
   - **Automate where possible** : Use automation to handle repetitive, time-consuming tasks.
-  - **Maintain [test environments](../T/test-environment.md)** : Ensure they mirror production as closely as possible to avoid environment-specific issues.
+  - **Maintain [test environments](https://naodeng.com.cn/en/wiki/test-environment)** : Ensure they mirror production as closely as possible to avoid environment-specific issues.
   - **Use version control** : Keep tests and related artifacts in version control for better collaboration and tracking.
   - **Implement continuous integration** : Run tests automatically on code check-ins to catch issues early.
   - $
@@ -683,7 +682,7 @@ evaluates a new software version to determine its readiness for release, examini
 
   - **Prioritize tests** : Focus on critical areas first, based on risk and impact.
   - **Automate where possible** : Use automation to handle repetitive, time-consuming tasks.
-  - **Maintain [test environments](../T/test-environment.md)** : Ensure they mirror production as closely as possible to avoid environment-specific issues.
+  - **Maintain [test environments](https://naodeng.com.cn/en/wiki/test-environment)** : Ensure they mirror production as closely as possible to avoid environment-specific issues.
   - **Use version control** : Keep tests and related artifacts in version control for better collaboration and tracking.
   - **Implement continuous integration** : Run tests automatically on code check-ins to catch issues early.
   - $
@@ -693,7 +692,7 @@ evaluates a new software version to determine its readiness for release, examini
 
 #### What are some examples of problems that might be discovered during release testing?
 
-  During [release testing](../R/release-testing.md), various problems can be uncovered that might not have been detected in earlier testing phases. Examples include:
+  During [release testing](https://naodeng.com.cn/en/wiki/release-testing), various problems can be uncovered that might not have been detected in earlier testing phases. Examples include:
 
   - **Integration issues** : Problems when components interact, especially if they were developed separately or updated since integration testing.
   - **Performance bottlenecks** : Sluggish response times or reduced throughput under production-like load.
@@ -720,7 +719,7 @@ evaluates a new software version to determine its readiness for release, examini
 
 #### How do you handle a situation where a critical issue is found during release testing?
 
-  When a critical issue is discovered during [release testing](../R/release-testing.md), **immediate action** is required:
+  When a critical issue is discovered during [release testing](https://naodeng.com.cn/en/wiki/release-testing), **immediate action** is required:
 
   1. **Communicate**
     the issue to all stakeholders, including the development team, project managers, and business owners.
@@ -737,7 +736,7 @@ evaluates a new software version to determine its readiness for release, examini
   5. **Develop and test the fix**
     in a separate environment to ensure it does not introduce new issues.
 
-  6. **Perform [regression testing](../R/regression-testing.md)**
+  6. **Perform [regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**
     to confirm that the fix resolves the issue without affecting other areas of the application.
 
   7. **Update automated tests**
@@ -765,7 +764,7 @@ evaluates a new software version to determine its readiness for release, examini
   5. **Develop and test the fix**
     in a separate environment to ensure it does not introduce new issues.
 
-  6. **Perform [regression testing](../R/regression-testing.md)**
+  6. **Perform [regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**
     to confirm that the fix resolves the issue without affecting other areas of the application.
 
   7. **Update automated tests**
@@ -779,9 +778,9 @@ evaluates a new software version to determine its readiness for release, examini
 
 #### What strategies can be used to ensure effective and efficient release testing?
 
-  To ensure effective and efficient [release testing](../R/release-testing.md), consider the following strategies:
+  To ensure effective and efficient [release testing](https://naodeng.com.cn/en/wiki/release-testing), consider the following strategies:
 
-  - **Prioritize [test cases](../T/test-case.md)**
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     based on risk and impact. Focus on critical functionalities that affect the end-user experience directly.
 
   - Implement
@@ -804,7 +803,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Leverage service virtualization**
     to simulate dependent systems that might not be available for testing, ensuring the testing environment is as close to production as possible.
 
-  - **Optimize [test data](../T/test-data.md) management**
+  - **Optimize [test data](https://naodeng.com.cn/en/wiki/test-data) management**
     to ensure tests have the necessary data in the right state, which is crucial for accurate testing.
 
   - **Review and refine**
@@ -813,11 +812,11 @@ evaluates a new software version to determine its readiness for release, examini
   - **Collaborate with developers**
     to ensure that unit tests and integration tests are comprehensive, reducing the burden on release testing.
 
-  - **Conduct [exploratory testing](../E/exploratory-testing.md)**
+  - **Conduct [exploratory testing](https://naodeng.com.cn/en/wiki/exploratory-testing)**
     alongside automated tests to catch issues that automated tests may miss.
-  By applying these strategies, you can streamline your [release testing](../R/release-testing.md) process, making it more robust and responsive to the needs of the development lifecycle.
+  By applying these strategies, you can streamline your [release testing](https://naodeng.com.cn/en/wiki/release-testing) process, making it more robust and responsive to the needs of the development lifecycle.
 
-  - **Prioritize [test cases](../T/test-case.md)**
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     based on risk and impact. Focus on critical functionalities that affect the end-user experience directly.
 
   - Implement
@@ -840,7 +839,7 @@ evaluates a new software version to determine its readiness for release, examini
   - **Leverage service virtualization**
     to simulate dependent systems that might not be available for testing, ensuring the testing environment is as close to production as possible.
 
-  - **Optimize [test data](../T/test-data.md) management**
+  - **Optimize [test data](https://naodeng.com.cn/en/wiki/test-data) management**
     to ensure tests have the necessary data in the right state, which is crucial for accurate testing.
 
   - **Review and refine**
@@ -849,5 +848,5 @@ evaluates a new software version to determine its readiness for release, examini
   - **Collaborate with developers**
     to ensure that unit tests and integration tests are comprehensive, reducing the burden on release testing.
 
-  - **Conduct [exploratory testing](../E/exploratory-testing.md)**
+  - **Conduct [exploratory testing](https://naodeng.com.cn/en/wiki/exploratory-testing)**
     alongside automated tests to catch issues that automated tests may miss.

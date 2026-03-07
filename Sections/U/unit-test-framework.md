@@ -1,6 +1,5 @@
 # Unit Test Framework
 
-
 <!-- TOC START -->
 - [Questions about Unit Test Framework ?](#questions-about-unit-test-framework)
   - [Basics and Importance](#basics-and-importance)
@@ -28,8 +27,8 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
 #### What is a Unit Test Framework?
 
-  A **[Unit Test Framework](../U/unit-test-framework.md)** is a software library designed to support the execution and reporting of unit tests. These frameworks provide a structured way to write [test cases](../T/test-case.md) for individual units of code, typically functions or methods, and to verify that they behave as expected.
-  [Unit test frameworks](../U/unit-test-framework.md) usually offer:
+  A **[Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework)** is a software library designed to support the execution and reporting of unit tests. These frameworks provide a structured way to write [test cases](https://naodeng.com.cn/en/wiki/test-case) for individual units of code, typically functions or methods, and to verify that they behave as expected.
+  [Unit test frameworks](https://naodeng.com.cn/en/wiki/unit-test-framework) usually offer:
 
   - **Assertions**
     to validate test outcomes, such as
@@ -40,10 +39,10 @@ Tools designed for creating and executing unit tests, offering foundational stru
     `assertRaises`
     .
 
-  - **[Test runners](../T/test-runner.md)**
+  - **[Test runners](https://naodeng.com.cn/en/wiki/test-runner)**
     that automate the process of executing tests and reporting results.
 
-  - **[Setup](../S/setup.md) and teardown mechanisms**
+  - **[Setup](https://naodeng.com.cn/en/wiki/setup) and teardown mechanisms**
     for preparing the test environment and cleaning up afterwards, often with
     `setUp`
     and
@@ -60,8 +59,8 @@ Tools designed for creating and executing unit tests, offering foundational stru
     assertEqual(result, 3);
   });
   ```
-  Frameworks may also support **test discovery**, automatically finding and running tests according to naming conventions or configurations, and **test fixtures** for sharing common [test data](../T/test-data.md) or state.
-  Popular [unit test frameworks](../U/unit-test-framework.md) include **JUnit** for Java, **[NUnit](../N/nunit.md)** for .NET, **unittest** for Python, and **[Jest](../J/jest.md)** for JavaScript. Each framework has its own syntax and features, but they all serve the same fundamental purpose of facilitating [unit testing](../U/unit-testing.md) in software development.
+  Frameworks may also support **test discovery**, automatically finding and running tests according to naming conventions or configurations, and **test fixtures** for sharing common [test data](https://naodeng.com.cn/en/wiki/test-data) or state.
+  Popular [unit test frameworks](https://naodeng.com.cn/en/wiki/unit-test-framework) include **JUnit** for Java, **[NUnit](https://naodeng.com.cn/en/wiki/nunit)** for .NET, **unittest** for Python, and **[Jest](https://naodeng.com.cn/en/wiki/jest)** for JavaScript. Each framework has its own syntax and features, but they all serve the same fundamental purpose of facilitating [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) in software development.
 
   - **Assertions**
     to validate test outcomes, such as
@@ -72,10 +71,10 @@ Tools designed for creating and executing unit tests, offering foundational stru
     `assertRaises`
     .
 
-  - **[Test runners](../T/test-runner.md)**
+  - **[Test runners](https://naodeng.com.cn/en/wiki/test-runner)**
     that automate the process of executing tests and reporting results.
 
-  - **[Setup](../S/setup.md) and teardown mechanisms**
+  - **[Setup](https://naodeng.com.cn/en/wiki/setup) and teardown mechanisms**
     for preparing the test environment and cleaning up afterwards, often with
     `setUp`
     and
@@ -87,7 +86,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
 #### Why is a Unit Test Framework important in software development?
 
-  A **[Unit Test Framework](../U/unit-test-framework.md)** is crucial in software development for several reasons:
+  A **[Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework)** is crucial in software development for several reasons:
 
   - **Streamlines the testing process** : It provides a structured way to create, organize, and execute tests, saving time and effort.
   - **Consistency** : Ensures tests are written and executed in a consistent manner, which is vital for reliable results.
@@ -97,7 +96,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
   - **Isolation** : Helps in isolating the unit of work from dependencies, ensuring that each component is tested independently.
   - **Integration** : Easily integrates with build tools and CI/CD pipelines, enhancing the development workflow.
   - **Metrics** : Provides valuable metrics such as code coverage, which can guide development and maintenance efforts.
-  By leveraging a [unit test framework](../U/unit-test-framework.md), [test automation](../T/test-automation.md) engineers can ensure that the software is tested thoroughly and efficiently, leading to higher quality and more maintainable code. It's an indispensable tool in the modern software development lifecycle.
+  By leveraging a [unit test framework](https://naodeng.com.cn/en/wiki/unit-test-framework), [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can ensure that the software is tested thoroughly and efficiently, leading to higher quality and more maintainable code. It's an indispensable tool in the modern software development lifecycle.
 
   ```
   // Example of a simple unit test using a hypothetical framework
@@ -108,7 +107,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
     });
   });
   ```
-  Adopting a [unit test framework](../U/unit-test-framework.md) aligns with best practices and is a testament to a team's commitment to [software quality](../S/software-quality.md) and agility.
+  Adopting a [unit test framework](https://naodeng.com.cn/en/wiki/unit-test-framework) aligns with best practices and is a testament to a team's commitment to [software quality](https://naodeng.com.cn/en/wiki/software-quality) and agility.
 
   - **Streamlines the testing process** : It provides a structured way to create, organize, and execute tests, saving time and effort.
   - **Consistency** : Ensures tests are written and executed in a consistent manner, which is vital for reliable results.
@@ -121,17 +120,17 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
 #### What are the key components of a Unit Test Framework?
 
-  Key components of a [Unit Test Framework](../U/unit-test-framework.md) include:
+  Key components of a [Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework) include:
 
-  - **[Test Runner](../T/test-runner.md)**: Executes tests and provides the results. It can be a command-line tool or integrated within an IDE.
-  - **[Test Cases](../T/test-case.md)**: Encapsulate individual tests. They are usually methods/functions that assert whether a certain piece of code behaves as expected.
-  - **Test Fixtures**: Set up the conditions that tests run under. They can include [setup](../S/setup.md) and teardown methods to initialize and clean up the [test environment](../T/test-environment.md).
-  - **Assertions**: Validate the outcome of a [test case](../T/test-case.md). They compare the [actual result](../A/actual-result.md) with the [expected result](../E/expected-result.md) and throw an error if the test fails.
+  - **[Test Runner](https://naodeng.com.cn/en/wiki/test-runner)**: Executes tests and provides the results. It can be a command-line tool or integrated within an IDE.
+  - **[Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Encapsulate individual tests. They are usually methods/functions that assert whether a certain piece of code behaves as expected.
+  - **Test Fixtures**: Set up the conditions that tests run under. They can include [setup](https://naodeng.com.cn/en/wiki/setup) and teardown methods to initialize and clean up the [test environment](https://naodeng.com.cn/en/wiki/test-environment).
+  - **Assertions**: Validate the outcome of a [test case](https://naodeng.com.cn/en/wiki/test-case). They compare the [actual result](https://naodeng.com.cn/en/wiki/actual-result) with the [expected result](https://naodeng.com.cn/en/wiki/expected-result) and throw an error if the test fails.
   - **Mocking Tools**: Simulate the behavior of complex real objects to isolate the unit of work. Useful for testing code in isolation.
-  - **[Test Suites](../T/test-suite.md)**: Group multiple [test cases](../T/test-case.md), making it easier to manage and execute related tests together.
-  - **[Test Reports](../T/test-report.md)**: Generate detailed information about the [test execution](../T/test-execution.md), including which tests passed, failed, or were skipped.
-  - **Annotations**: Provide a way to add metadata to test methods, such as categorizing tests or marking methods as [test cases](../T/test-case.md).
-  Example of a simple [test case](../T/test-case.md) using a hypothetical framework:
+  - **[Test Suites](https://naodeng.com.cn/en/wiki/test-suite)**: Group multiple [test cases](https://naodeng.com.cn/en/wiki/test-case), making it easier to manage and execute related tests together.
+  - **[Test Reports](https://naodeng.com.cn/en/wiki/test-report)**: Generate detailed information about the [test execution](https://naodeng.com.cn/en/wiki/test-execution), including which tests passed, failed, or were skipped.
+  - **Annotations**: Provide a way to add metadata to test methods, such as categorizing tests or marking methods as [test cases](https://naodeng.com.cn/en/wiki/test-case).
+  Example of a simple [test case](https://naodeng.com.cn/en/wiki/test-case) using a hypothetical framework:
 
   ```
   @Test
@@ -143,40 +142,40 @@ Tools designed for creating and executing unit tests, offering foundational stru
   ```
   These components work together to provide a comprehensive testing environment that automates the execution and validation of unit tests, ensuring that individual units of code work correctly before integration.
 
-  - **[Test Runner](../T/test-runner.md)**: Executes tests and provides the results. It can be a command-line tool or integrated within an IDE.
-  - **[Test Cases](../T/test-case.md)**: Encapsulate individual tests. They are usually methods/functions that assert whether a certain piece of code behaves as expected.
-  - **Test Fixtures**: Set up the conditions that tests run under. They can include [setup](../S/setup.md) and teardown methods to initialize and clean up the [test environment](../T/test-environment.md).
-  - **Assertions**: Validate the outcome of a [test case](../T/test-case.md). They compare the [actual result](../A/actual-result.md) with the [expected result](../E/expected-result.md) and throw an error if the test fails.
+  - **[Test Runner](https://naodeng.com.cn/en/wiki/test-runner)**: Executes tests and provides the results. It can be a command-line tool or integrated within an IDE.
+  - **[Test Cases](https://naodeng.com.cn/en/wiki/test-case)**: Encapsulate individual tests. They are usually methods/functions that assert whether a certain piece of code behaves as expected.
+  - **Test Fixtures**: Set up the conditions that tests run under. They can include [setup](https://naodeng.com.cn/en/wiki/setup) and teardown methods to initialize and clean up the [test environment](https://naodeng.com.cn/en/wiki/test-environment).
+  - **Assertions**: Validate the outcome of a [test case](https://naodeng.com.cn/en/wiki/test-case). They compare the [actual result](https://naodeng.com.cn/en/wiki/actual-result) with the [expected result](https://naodeng.com.cn/en/wiki/expected-result) and throw an error if the test fails.
   - **Mocking Tools**: Simulate the behavior of complex real objects to isolate the unit of work. Useful for testing code in isolation.
-  - **[Test Suites](../T/test-suite.md)**: Group multiple [test cases](../T/test-case.md), making it easier to manage and execute related tests together.
-  - **[Test Reports](../T/test-report.md)**: Generate detailed information about the [test execution](../T/test-execution.md), including which tests passed, failed, or were skipped.
-  - **Annotations**: Provide a way to add metadata to test methods, such as categorizing tests or marking methods as [test cases](../T/test-case.md).
+  - **[Test Suites](https://naodeng.com.cn/en/wiki/test-suite)**: Group multiple [test cases](https://naodeng.com.cn/en/wiki/test-case), making it easier to manage and execute related tests together.
+  - **[Test Reports](https://naodeng.com.cn/en/wiki/test-report)**: Generate detailed information about the [test execution](https://naodeng.com.cn/en/wiki/test-execution), including which tests passed, failed, or were skipped.
+  - **Annotations**: Provide a way to add metadata to test methods, such as categorizing tests or marking methods as [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
 #### How does a Unit Test Framework contribute to the quality of software?
 
-  A [Unit Test Framework](../U/unit-test-framework.md) significantly enhances [software quality](../S/software-quality.md) by providing a structured approach to **assert correctness** of individual code units. It facilitates **early detection of defects**, which is crucial since issues caught earlier are generally less costly to fix. By enabling **[test automation](../T/test-automation.md)**, developers can run tests frequently, ensuring that new changes do not break existing functionality, a practice known as **[regression testing](../R/regression-testing.md)**.
+  A [Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework) significantly enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by providing a structured approach to **assert correctness** of individual code units. It facilitates **early detection of defects**, which is crucial since issues caught earlier are generally less costly to fix. By enabling **[test automation](https://naodeng.com.cn/en/wiki/test-automation)**, developers can run tests frequently, ensuring that new changes do not break existing functionality, a practice known as **[regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**.
   The framework's support for **test isolation** ensures that tests for each unit are independent, pinpointing the exact location of a defect. This is often achieved through **mocking** and **stubbing**, which are essential for testing units in isolation from their dependencies.
-  Moreover, the framework's ability to produce **[test reports](../T/test-report.md)** and **metrics** offers insights into [test coverage](../T/test-coverage.md) and the health of the codebase, guiding developers towards areas that may require additional testing or refactoring.
-  Incorporating a [Unit Test Framework](../U/unit-test-framework.md) into a **continuous integration/continuous deployment (CI/CD)** pipeline ensures that tests are run automatically on every code check-in, further bolstering the software's reliability.
+  Moreover, the framework's ability to produce **[test reports](https://naodeng.com.cn/en/wiki/test-report)** and **metrics** offers insights into [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and the health of the codebase, guiding developers towards areas that may require additional testing or refactoring.
+  Incorporating a [Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework) into a **continuous integration/continuous deployment (CI/CD)** pipeline ensures that tests are run automatically on every code check-in, further bolstering the software's reliability.
   Lastly, the framework's support for **parameterized tests** and **data-driven testing** allows for more comprehensive and thorough testing scenarios, covering a wider range of input conditions.
-  By establishing a culture of writing and maintaining a robust suite of unit tests, a [Unit Test Framework](../U/unit-test-framework.md) helps maintain high code quality, facilitates refactoring, and provides documentation for the expected behavior of the system.
+  By establishing a culture of writing and maintaining a robust suite of unit tests, a [Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework) helps maintain high code quality, facilitates refactoring, and provides documentation for the expected behavior of the system.
 
 ### Working with Unit Test Framework
 
 #### How do you set up a Unit Test Framework?
 
-  To set up a [Unit Test Framework](../U/unit-test-framework.md), follow these steps:
+  To set up a [Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework), follow these steps:
 
-  1. **Choose a framework** suitable for your language and project needs, such as JUnit for Java, [NUnit](../N/nunit.md) for .NET, or [Jest](../J/jest.md) for JavaScript.
-  2. **Install the framework** using your project's dependency management tool. For example, in a [Node.js](../N/node-js.md) project, you would run:
+  1. **Choose a framework** suitable for your language and project needs, such as JUnit for Java, [NUnit](https://naodeng.com.cn/en/wiki/nunit) for .NET, or [Jest](https://naodeng.com.cn/en/wiki/jest) for JavaScript.
+  2. **Install the framework** using your project's dependency management tool. For example, in a [Node.js](https://naodeng.com.cn/en/wiki/node-js) project, you would run:
 
     ```
     npm install --save-dev jest
     ```
 
-  3. **Configure the framework** if necessary. This may involve creating a configuration file where you can specify options like test directories, mock settings, and reporters. For [Jest](../J/jest.md), you might create a `jest.config.js` file.
-  4. **Set up your environment**. Ensure that your development environment is ready for testing. This might include setting up any necessary [databases](../D/database.md), environment variables, or other services your tests depend on.
-  5. **Write a sample test** to verify the [setup](../S/setup.md). Create a test file following your framework's conventions, like `example.test.js`, and write a simple [test case](../T/test-case.md):
+  3. **Configure the framework** if necessary. This may involve creating a configuration file where you can specify options like test directories, mock settings, and reporters. For [Jest](https://naodeng.com.cn/en/wiki/jest), you might create a `jest.config.js` file.
+  4. **Set up your environment**. Ensure that your development environment is ready for testing. This might include setting up any necessary [databases](https://naodeng.com.cn/en/wiki/database), environment variables, or other services your tests depend on.
+  5. **Write a sample test** to verify the [setup](https://naodeng.com.cn/en/wiki/setup). Create a test file following your framework's conventions, like `example.test.js`, and write a simple [test case](https://naodeng.com.cn/en/wiki/test-case):
 
     ```
     test('true should be true', () => {
@@ -195,18 +194,18 @@ Tools designed for creating and executing unit tests, offering foundational stru
     npm test
     ```
 
-  7. **Integrate with your build tool**. Automate [test execution](../T/test-execution.md) by adding a script in your `package.json` or build configuration to run tests as part of your build process.
-  8. **Commit the configuration** and tests to your version control system to share the [setup](../S/setup.md) with your team and ensure consistency across development environments.
-  1. **Choose a framework** suitable for your language and project needs, such as JUnit for Java, [NUnit](../N/nunit.md) for .NET, or [Jest](../J/jest.md) for JavaScript.
-  2. **Install the framework** using your project's dependency management tool. For example, in a [Node.js](../N/node-js.md) project, you would run:
+  7. **Integrate with your build tool**. Automate [test execution](https://naodeng.com.cn/en/wiki/test-execution) by adding a script in your `package.json` or build configuration to run tests as part of your build process.
+  8. **Commit the configuration** and tests to your version control system to share the [setup](https://naodeng.com.cn/en/wiki/setup) with your team and ensure consistency across development environments.
+  1. **Choose a framework** suitable for your language and project needs, such as JUnit for Java, [NUnit](https://naodeng.com.cn/en/wiki/nunit) for .NET, or [Jest](https://naodeng.com.cn/en/wiki/jest) for JavaScript.
+  2. **Install the framework** using your project's dependency management tool. For example, in a [Node.js](https://naodeng.com.cn/en/wiki/node-js) project, you would run:
 
     ```
     npm install --save-dev jest
     ```
 
-  3. **Configure the framework** if necessary. This may involve creating a configuration file where you can specify options like test directories, mock settings, and reporters. For [Jest](../J/jest.md), you might create a `jest.config.js` file.
-  4. **Set up your environment**. Ensure that your development environment is ready for testing. This might include setting up any necessary [databases](../D/database.md), environment variables, or other services your tests depend on.
-  5. **Write a sample test** to verify the [setup](../S/setup.md). Create a test file following your framework's conventions, like `example.test.js`, and write a simple [test case](../T/test-case.md):
+  3. **Configure the framework** if necessary. This may involve creating a configuration file where you can specify options like test directories, mock settings, and reporters. For [Jest](https://naodeng.com.cn/en/wiki/jest), you might create a `jest.config.js` file.
+  4. **Set up your environment**. Ensure that your development environment is ready for testing. This might include setting up any necessary [databases](https://naodeng.com.cn/en/wiki/database), environment variables, or other services your tests depend on.
+  5. **Write a sample test** to verify the [setup](https://naodeng.com.cn/en/wiki/setup). Create a test file following your framework's conventions, like `example.test.js`, and write a simple [test case](https://naodeng.com.cn/en/wiki/test-case):
 
     ```
     test('true should be true', () => {
@@ -225,23 +224,23 @@ Tools designed for creating and executing unit tests, offering foundational stru
     npm test
     ```
 
-  7. **Integrate with your build tool**. Automate [test execution](../T/test-execution.md) by adding a script in your `package.json` or build configuration to run tests as part of your build process.
-  8. **Commit the configuration** and tests to your version control system to share the [setup](../S/setup.md) with your team and ensure consistency across development environments.
+  7. **Integrate with your build tool**. Automate [test execution](https://naodeng.com.cn/en/wiki/test-execution) by adding a script in your `package.json` or build configuration to run tests as part of your build process.
+  8. **Commit the configuration** and tests to your version control system to share the [setup](https://naodeng.com.cn/en/wiki/setup) with your team and ensure consistency across development environments.
 
 #### What are the steps to write a unit test using a Unit Test Framework?
 
-  To write a unit test using a [Unit Test Framework](../U/unit-test-framework.md), follow these steps:
+  To write a unit test using a [Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework), follow these steps:
 
   1. **Identify the unit** of code (function, method) you want to test. Ensure it's isolated from dependencies.
   2. **Create a test file** corresponding to the source file. Name it to reflect the unit being tested, typically by adding `Test` or `Spec` to the file name.
-  3. **Import the [unit test framework](../U/unit-test-framework.md)** and any necessary testing utilities into your test file.
-  4. **Write the [test case](../T/test-case.md)(s)** within the test file. Structure each case with a clear, descriptive name indicating what it tests.
+  3. **Import the [unit test framework](https://naodeng.com.cn/en/wiki/unit-test-framework)** and any necessary testing utilities into your test file.
+  4. **Write the [test case](https://naodeng.com.cn/en/wiki/test-case)(s)** within the test file. Structure each case with a clear, descriptive name indicating what it tests.
   5. **Arrange** your test by setting up any required data or state.
   6. **Act** by invoking the unit with the arranged data.
-  7. **Assert** the expected outcome. Use the framework's assertion methods to compare the [actual result](../A/actual-result.md) with the [expected result](../E/expected-result.md).
+  7. **Assert** the expected outcome. Use the framework's assertion methods to compare the [actual result](https://naodeng.com.cn/en/wiki/actual-result) with the [expected result](https://naodeng.com.cn/en/wiki/expected-result).
   8. **Clean up** any resources if necessary, using teardown methods provided by the framework.
   9. **Annotate** the test with the framework's decorators or attributes if needed, to specify test metadata like categories or expected exceptions.
-  Here's an example in TypeScript using [Jest](../J/jest.md):
+  Here's an example in TypeScript using [Jest](https://naodeng.com.cn/en/wiki/jest):
 
   ```
   import { add } from './math';
@@ -260,22 +259,22 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
   1. **Identify the unit** of code (function, method) you want to test. Ensure it's isolated from dependencies.
   2. **Create a test file** corresponding to the source file. Name it to reflect the unit being tested, typically by adding `Test` or `Spec` to the file name.
-  3. **Import the [unit test framework](../U/unit-test-framework.md)** and any necessary testing utilities into your test file.
-  4. **Write the [test case](../T/test-case.md)(s)** within the test file. Structure each case with a clear, descriptive name indicating what it tests.
+  3. **Import the [unit test framework](https://naodeng.com.cn/en/wiki/unit-test-framework)** and any necessary testing utilities into your test file.
+  4. **Write the [test case](https://naodeng.com.cn/en/wiki/test-case)(s)** within the test file. Structure each case with a clear, descriptive name indicating what it tests.
   5. **Arrange** your test by setting up any required data or state.
   6. **Act** by invoking the unit with the arranged data.
-  7. **Assert** the expected outcome. Use the framework's assertion methods to compare the [actual result](../A/actual-result.md) with the [expected result](../E/expected-result.md).
+  7. **Assert** the expected outcome. Use the framework's assertion methods to compare the [actual result](https://naodeng.com.cn/en/wiki/actual-result) with the [expected result](https://naodeng.com.cn/en/wiki/expected-result).
   8. **Clean up** any resources if necessary, using teardown methods provided by the framework.
   9. **Annotate** the test with the framework's decorators or attributes if needed, to specify test metadata like categories or expected exceptions.
 
 #### How do you run a unit test using a Unit Test Framework?
 
-  To run a unit test using a **[Unit Test Framework](../U/unit-test-framework.md)**, follow these general steps:
+  To run a unit test using a **[Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework)**, follow these general steps:
 
   1. **Navigate** to your project directory in the terminal or command prompt.
-  2. Ensure that the [unit test framework](../U/unit-test-framework.md) is **installed** and **configured** properly.
-  3. Use the **[test runner](../T/test-runner.md)** command specific to your framework. For example, in a JavaScript project using [Jest](../J/jest.md), you would run:
-    For a C# project using [NUnit](../N/nunit.md), you might use:
+  2. Ensure that the [unit test framework](https://naodeng.com.cn/en/wiki/unit-test-framework) is **installed** and **configured** properly.
+  3. Use the **[test runner](https://naodeng.com.cn/en/wiki/test-runner)** command specific to your framework. For example, in a JavaScript project using [Jest](https://naodeng.com.cn/en/wiki/jest), you would run:
+    For a C# project using [NUnit](https://naodeng.com.cn/en/wiki/nunit), you might use:
 
     ```
     jest
@@ -297,7 +296,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
     jest --testNamePattern="MyTestSuite"
     ```
 
-  6. To run tests with **additional options**, such as in **watch mode** or with **[code coverage](../C/code-coverage.md)**, append the relevant flags:
+  6. To run tests with **additional options**, such as in **watch mode** or with **[code coverage](https://naodeng.com.cn/en/wiki/code-coverage)**, append the relevant flags:
 
     ```
     jest --watch
@@ -309,9 +308,9 @@ Tools designed for creating and executing unit tests, offering foundational stru
   Remember to **refactor** your tests when necessary and keep them **maintainable** and **readable**. Regularly running your unit tests ensures that your codebase remains **stable** and **regression-free**.
 
   1. **Navigate** to your project directory in the terminal or command prompt.
-  2. Ensure that the [unit test framework](../U/unit-test-framework.md) is **installed** and **configured** properly.
-  3. Use the **[test runner](../T/test-runner.md)** command specific to your framework. For example, in a JavaScript project using [Jest](../J/jest.md), you would run:
-    For a C# project using [NUnit](../N/nunit.md), you might use:
+  2. Ensure that the [unit test framework](https://naodeng.com.cn/en/wiki/unit-test-framework) is **installed** and **configured** properly.
+  3. Use the **[test runner](https://naodeng.com.cn/en/wiki/test-runner)** command specific to your framework. For example, in a JavaScript project using [Jest](https://naodeng.com.cn/en/wiki/jest), you would run:
+    For a C# project using [NUnit](https://naodeng.com.cn/en/wiki/nunit), you might use:
 
     ```
     jest
@@ -333,7 +332,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
     jest --testNamePattern="MyTestSuite"
     ```
 
-  6. To run tests with **additional options**, such as in **watch mode** or with **[code coverage](../C/code-coverage.md)**, append the relevant flags:
+  6. To run tests with **additional options**, such as in **watch mode** or with **[code coverage](https://naodeng.com.cn/en/wiki/code-coverage)**, append the relevant flags:
 
     ```
     jest --watch
@@ -345,7 +344,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
 #### How can you debug a unit test using a Unit Test Framework?
 
-  Debugging a unit test using a [Unit Test Framework](../U/unit-test-framework.md) typically involves the following steps:
+  Debugging a unit test using a [Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework) typically involves the following steps:
 
   1. **Set a breakpoint**
     in the test code or the code under test where you want to inspect the behavior.
@@ -375,7 +374,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
   9. **Repeat the process**
     as needed until the root cause of the test failure or unexpected behavior is identified and resolved.
-  Here's an example of a command to start a [Node.js](../N/node-js.md) test in debug mode:
+  Here's an example of a command to start a [Node.js](https://naodeng.com.cn/en/wiki/node-js) test in debug mode:
 
   ```
   node --inspect-brk node_modules/.bin/jest --runInBand my-test.spec.js
@@ -415,7 +414,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
 #### What are some advanced features of a Unit Test Framework?
 
-  Advanced features of a [Unit Test Framework](../U/unit-test-framework.md) may include:
+  Advanced features of a [Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework) may include:
 
   - **Parameterized Tests** : Allows running the same test with different inputs, enhancing coverage and reducing code duplication.
 
@@ -428,8 +427,8 @@ Tools designed for creating and executing unit tests, offering foundational stru
     ```
 
   - **Mocking and Stubbing** : Facilitates the simulation of complex dependencies or external systems, enabling isolated testing of units.
-  - **[Test Suites](../T/test-suite.md)** : Groups multiple test cases, allowing for organized execution and reporting.
-  - **[Code Coverage](../C/code-coverage.md) Analysis** : Measures the extent to which the codebase is tested, identifying untested paths.
+  - **[Test Suites](https://naodeng.com.cn/en/wiki/test-suite)** : Groups multiple test cases, allowing for organized execution and reporting.
+  - **[Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Analysis** : Measures the extent to which the codebase is tested, identifying untested paths.
   - **Data-driven Testing** : Supports external data sources like CSV, XML, or databases for inputs, making tests more flexible and maintainable.
   - **Asynchronous Testing** : Provides mechanisms to test code that executes asynchronously, ensuring correct behavior of callbacks and promises.
   - **Test Hooks** : Offers setup (
@@ -463,8 +462,8 @@ Tools designed for creating and executing unit tests, offering foundational stru
     ```
 
   - **Mocking and Stubbing** : Facilitates the simulation of complex dependencies or external systems, enabling isolated testing of units.
-  - **[Test Suites](../T/test-suite.md)** : Groups multiple test cases, allowing for organized execution and reporting.
-  - **[Code Coverage](../C/code-coverage.md) Analysis** : Measures the extent to which the codebase is tested, identifying untested paths.
+  - **[Test Suites](https://naodeng.com.cn/en/wiki/test-suite)** : Groups multiple test cases, allowing for organized execution and reporting.
+  - **[Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Analysis** : Measures the extent to which the codebase is tested, identifying untested paths.
   - **Data-driven Testing** : Supports external data sources like CSV, XML, or databases for inputs, making tests more flexible and maintainable.
   - **Asynchronous Testing** : Provides mechanisms to test code that executes asynchronously, ensuring correct behavior of callbacks and promises.
   - **Test Hooks** : Offers setup (
@@ -488,7 +487,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
 #### How can you integrate a Unit Test Framework with other software development tools?
 
-  Integrating a **[Unit Test Framework](../U/unit-test-framework.md)** with other development tools can streamline the development process and enhance the overall [software quality](../S/software-quality.md). Here's how to achieve this integration:
+  Integrating a **[Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework)** with other development tools can streamline the development process and enhance the overall [software quality](https://naodeng.com.cn/en/wiki/software-quality). Here's how to achieve this integration:
 
   - **Continuous Integration (CI) Systems** : Use hooks or plugins to trigger unit tests on commits or pull requests. For example, in Jenkins, you can use the
     `Jenkinsfile`
@@ -508,7 +507,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
     ```
 
   - **Integrated Development Environments (IDEs)** : Configure your IDE to run unit tests within the development environment. Most modern IDEs like Visual Studio or IntelliJ IDEA have built-in support or plugins for popular unit test frameworks.
-  - **[Code Coverage](../C/code-coverage.md) Tools** : Connect tools like Istanbul or JaCoCo to measure the coverage of your unit tests. This can often be configured within your test scripts or CI configuration.
+  - **[Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Tools** : Connect tools like Istanbul or JaCoCo to measure the coverage of your unit tests. This can often be configured within your test scripts or CI configuration.
 
     ```
     "scripts": {
@@ -533,7 +532,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
     ```
 
   - **Code Quality Platforms** : Connect with platforms like SonarQube to analyze the test results and code quality post-test execution.
-  By integrating the [unit test framework](../U/unit-test-framework.md) with these tools, you ensure that tests are an integral part of the development workflow, leading to early detection of issues and maintaining code quality.
+  By integrating the [unit test framework](https://naodeng.com.cn/en/wiki/unit-test-framework) with these tools, you ensure that tests are an integral part of the development workflow, leading to early detection of issues and maintaining code quality.
 
   - **Continuous Integration (CI) Systems** : Use hooks or plugins to trigger unit tests on commits or pull requests. For example, in Jenkins, you can use the
     `Jenkinsfile`
@@ -553,7 +552,7 @@ Tools designed for creating and executing unit tests, offering foundational stru
     ```
 
   - **Integrated Development Environments (IDEs)** : Configure your IDE to run unit tests within the development environment. Most modern IDEs like Visual Studio or IntelliJ IDEA have built-in support or plugins for popular unit test frameworks.
-  - **[Code Coverage](../C/code-coverage.md) Tools** : Connect tools like Istanbul or JaCoCo to measure the coverage of your unit tests. This can often be configured within your test scripts or CI configuration.
+  - **[Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Tools** : Connect tools like Istanbul or JaCoCo to measure the coverage of your unit tests. This can often be configured within your test scripts or CI configuration.
 
     ```
     "scripts": {
@@ -581,44 +580,10 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
 #### How can you automate unit testing using a Unit Test Framework?
 
-  To automate [unit testing](../U/unit-testing.md) with a [Unit Test Framework](../U/unit-test-framework.md), follow these steps:
+  To automate [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) with a [Unit Test Framework](https://naodeng.com.cn/en/wiki/unit-test-framework), follow these steps:
 
-  1. **Identify the [test cases](../T/test-case.md)** for the unit you want to test. Focus on the expected behavior, edge cases, and error conditions.
-  2. **Create [test suites](../T/test-suite.md) and [test cases](../T/test-case.md)** using the framework's conventions. For example, in JUnit, you would annotate methods with `@Test`.
-
-    ```
-    @Test
-    public void shouldReturnTrueForValidInput() {
-        assertTrue(myClass.isValid("validInput"));
-    }
-    ```
-
-  3. **Mock dependencies** if necessary, using mocking frameworks like Mockito or Moq to isolate the unit from external interactions.
-
-    ```
-    @Mock
-    MyDependency myDependency;
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.initMocks(this);
-        when(myDependency.someMethod()).thenReturn(someValue);
-    }
-    ```
-
-  4. **Assert outcomes** to verify that the unit behaves as expected. Use assertion methods provided by the framework.
-
-    ```
-    assertEquals(expectedValue, actualValue);
-    ```
-
-  5. **Parameterize tests** if you need to run the same test logic with different inputs, using features like JUnit's `@ParameterizedTest`.
-  6. **Organize tests** into categories or tags if the framework supports it, to group and run related tests together.
-  7. **Automate [test execution](../T/test-execution.md)** as part of your build process or CI/CD pipeline. Use tools like Maven, Gradle, or Jenkins to trigger the tests.
-  8. **Review [test reports](../T/test-report.md)** generated by the framework to analyze pass/fail status and coverage metrics.
-  By following these steps, you can efficiently automate [unit testing](../U/unit-testing.md), ensuring that your code is thoroughly tested and reliable.
-
-  1. **Identify the [test cases](../T/test-case.md)** for the unit you want to test. Focus on the expected behavior, edge cases, and error conditions.
-  2. **Create [test suites](../T/test-suite.md) and [test cases](../T/test-case.md)** using the framework's conventions. For example, in JUnit, you would annotate methods with `@Test`.
+  1. **Identify the [test cases](https://naodeng.com.cn/en/wiki/test-case)** for the unit you want to test. Focus on the expected behavior, edge cases, and error conditions.
+  2. **Create [test suites](https://naodeng.com.cn/en/wiki/test-suite) and [test cases](https://naodeng.com.cn/en/wiki/test-case)** using the framework's conventions. For example, in JUnit, you would annotate methods with `@Test`.
 
     ```
     @Test
@@ -647,12 +612,46 @@ Tools designed for creating and executing unit tests, offering foundational stru
 
   5. **Parameterize tests** if you need to run the same test logic with different inputs, using features like JUnit's `@ParameterizedTest`.
   6. **Organize tests** into categories or tags if the framework supports it, to group and run related tests together.
-  7. **Automate [test execution](../T/test-execution.md)** as part of your build process or CI/CD pipeline. Use tools like Maven, Gradle, or Jenkins to trigger the tests.
-  8. **Review [test reports](../T/test-report.md)** generated by the framework to analyze pass/fail status and coverage metrics.
+  7. **Automate [test execution](https://naodeng.com.cn/en/wiki/test-execution)** as part of your build process or CI/CD pipeline. Use tools like Maven, Gradle, or Jenkins to trigger the tests.
+  8. **Review [test reports](https://naodeng.com.cn/en/wiki/test-report)** generated by the framework to analyze pass/fail status and coverage metrics.
+  By following these steps, you can efficiently automate [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), ensuring that your code is thoroughly tested and reliable.
+
+  1. **Identify the [test cases](https://naodeng.com.cn/en/wiki/test-case)** for the unit you want to test. Focus on the expected behavior, edge cases, and error conditions.
+  2. **Create [test suites](https://naodeng.com.cn/en/wiki/test-suite) and [test cases](https://naodeng.com.cn/en/wiki/test-case)** using the framework's conventions. For example, in JUnit, you would annotate methods with `@Test`.
+
+    ```
+    @Test
+    public void shouldReturnTrueForValidInput() {
+        assertTrue(myClass.isValid("validInput"));
+    }
+    ```
+
+  3. **Mock dependencies** if necessary, using mocking frameworks like Mockito or Moq to isolate the unit from external interactions.
+
+    ```
+    @Mock
+    MyDependency myDependency;
+    @BeforeEach
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
+        when(myDependency.someMethod()).thenReturn(someValue);
+    }
+    ```
+
+  4. **Assert outcomes** to verify that the unit behaves as expected. Use assertion methods provided by the framework.
+
+    ```
+    assertEquals(expectedValue, actualValue);
+    ```
+
+  5. **Parameterize tests** if you need to run the same test logic with different inputs, using features like JUnit's `@ParameterizedTest`.
+  6. **Organize tests** into categories or tags if the framework supports it, to group and run related tests together.
+  7. **Automate [test execution](https://naodeng.com.cn/en/wiki/test-execution)** as part of your build process or CI/CD pipeline. Use tools like Maven, Gradle, or Jenkins to trigger the tests.
+  8. **Review [test reports](https://naodeng.com.cn/en/wiki/test-report)** generated by the framework to analyze pass/fail status and coverage metrics.
 
 #### What are some best practices when using a Unit Test Framework?
 
-  Follow **[Test-Driven Development](../T/test-driven-development.md) (TDD)** principles by writing tests before implementing functionality to ensure your code meets the intended design and behaves as expected.
+  Follow **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** principles by writing tests before implementing functionality to ensure your code meets the intended design and behaves as expected.
   Adhere to the **FIRST principles** for effective unit tests:
 
   - **Fast** : Tests should run quickly to encourage frequent test execution.
@@ -664,8 +663,8 @@ Tools designed for creating and executing unit tests, offering foundational stru
   **Isolate tests** by mocking dependencies to ensure that tests are not affected by external factors and to test components in isolation.
   **Assert one concept per test** to make tests easier to understand and debug.
   **Keep tests and production code separate** to maintain clean codebases and avoid deploying test code to production.
-  **Refactor tests** when necessary to improve readability and [maintainability](../M/maintainability.md) without changing the behavior.
-  **Use [code coverage](../C/code-coverage.md) tools** to identify untested parts of the codebase, but don't aim for 100% coverage at the expense of test quality.
+  **Refactor tests** when necessary to improve readability and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) without changing the behavior.
+  **Use [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools** to identify untested parts of the codebase, but don't aim for 100% coverage at the expense of test quality.
   **Review test code** as part of the code review process to ensure tests are well-designed and maintainable.
   **Integrate unit tests into the continuous integration/continuous deployment (CI/CD) pipeline** to automatically run tests on code check-ins and ensure that new changes do not break existing functionality.
 

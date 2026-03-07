@@ -1,6 +1,5 @@
 # Selenium IDE
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
 - [Questions about Selenium IDE ?](#questions-about-selenium-ide)
@@ -36,9 +35,9 @@ enhances your testing environment with tools for logging in, item searching, and
 
 ## Related Terms:
 
-- [WebDriver](../W/webdriver.md)
-- [Web Automation](../W/web-automation.md)
-- [Web Test Automation Tools](../W/web-test-automation-tools.md)
+- [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)
+- [Web Automation](https://naodeng.com.cn/en/wiki/web-automation)
+- [Web Test Automation Tools](https://naodeng.com.cn/en/wiki/web-test-automation-tools)
 
 ## Questions about Selenium IDE ?
 
@@ -46,25 +45,25 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### What is Selenium IDE?
 
-  [Selenium IDE](../S/selenium-ide.md) (Integrated Development Environment) is an open-source record and playback tool for creating automated [test cases](../T/test-case.md). It's a browser extension available for Firefox and Chrome that enables testers to develop tests quickly through its user-friendly interface without needing to write extensive [test scripts](../T/test-script.md).
-  The tool allows for **simple test creation** with commands and parameters entered through a GUI. Testers can **record user interactions** with the web application and play them back to test for regressions. [Selenium IDE](../S/selenium-ide.md) also supports **editing** of recorded tests, enabling refinement and customization.
-  For more complex [test scenarios](../T/test-scenario.md), **control flow structures** such as loops and conditionals can be implemented. [Selenium IDE](../S/selenium-ide.md) supports **extensions**, allowing testers to write their own scripts to extend its capabilities.
-  While primarily a tool for creating quick tests, [Selenium IDE](../S/selenium-ide.md) can also serve as a **prototyping tool** for [test cases](../T/test-case.md) that can be later exported to [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md) for more complex testing scenarios.
-  The tool's simplicity and ease of use make it an accessible option for those new to [test automation](../T/test-automation.md), while its extensibility appeals to more experienced engineers looking to speed up test creation for web applications.
+  [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) (Integrated Development Environment) is an open-source record and playback tool for creating automated [test cases](https://naodeng.com.cn/en/wiki/test-case). It's a browser extension available for Firefox and Chrome that enables testers to develop tests quickly through its user-friendly interface without needing to write extensive [test scripts](https://naodeng.com.cn/en/wiki/test-script).
+  The tool allows for **simple test creation** with commands and parameters entered through a GUI. Testers can **record user interactions** with the web application and play them back to test for regressions. [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) also supports **editing** of recorded tests, enabling refinement and customization.
+  For more complex [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario), **control flow structures** such as loops and conditionals can be implemented. [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) supports **extensions**, allowing testers to write their own scripts to extend its capabilities.
+  While primarily a tool for creating quick tests, [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) can also serve as a **prototyping tool** for [test cases](https://naodeng.com.cn/en/wiki/test-case) that can be later exported to [Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) for more complex testing scenarios.
+  The tool's simplicity and ease of use make it an accessible option for those new to [test automation](https://naodeng.com.cn/en/wiki/test-automation), while its extensibility appeals to more experienced engineers looking to speed up test creation for web applications.
 
 #### Why is Selenium IDE important in software testing?
 
-  [Selenium IDE](../S/selenium-ide.md) plays a crucial role in [software testing](../S/software-testing.md) by enabling rapid [test case](../T/test-case.md) creation through its **record-and-playback** feature. This allows testers to quickly generate automated [test scripts](../T/test-script.md) without writing code from scratch. It serves as an excellent tool for **prototyping** and **learning**, helping new testers understand [Selenium](../S/selenium.md) commands and automation logic.
-  As a **browser extension**, it's readily accessible and easy to use for quick checks and debugging. It supports **fast [iteration](../I/iteration.md)** over [test cases](../T/test-case.md), which is vital in agile and iterative development environments. Testers can swiftly modify and re-run tests, facilitating immediate feedback on the changes made.
-  [Selenium IDE](../S/selenium-ide.md) also acts as a **gateway** to more advanced [Selenium](../S/selenium.md) tools. It allows exporting of tests to [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md) formats, enabling test engineers to scale and enhance tests with programming logic and integrate them into CI/CD pipelines.
+  [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) plays a crucial role in [software testing](https://naodeng.com.cn/en/wiki/software-testing) by enabling rapid [test case](https://naodeng.com.cn/en/wiki/test-case) creation through its **record-and-playback** feature. This allows testers to quickly generate automated [test scripts](https://naodeng.com.cn/en/wiki/test-script) without writing code from scratch. It serves as an excellent tool for **prototyping** and **learning**, helping new testers understand [Selenium](https://naodeng.com.cn/en/wiki/selenium) commands and automation logic.
+  As a **browser extension**, it's readily accessible and easy to use for quick checks and debugging. It supports **fast [iteration](https://naodeng.com.cn/en/wiki/iteration)** over [test cases](https://naodeng.com.cn/en/wiki/test-case), which is vital in agile and iterative development environments. Testers can swiftly modify and re-run tests, facilitating immediate feedback on the changes made.
+  [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) also acts as a **gateway** to more advanced [Selenium](https://naodeng.com.cn/en/wiki/selenium) tools. It allows exporting of tests to [Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) formats, enabling test engineers to scale and enhance tests with programming logic and integrate them into CI/CD pipelines.
   Moreover, it's a **free and open-source** tool, making it an accessible option for teams of all sizes. Its simplicity and ease of use make it an important tool for both novice and experienced testers to validate web application functionality quickly. It helps in maintaining the quality of software by allowing continuous testing, which is a cornerstone of modern software development practices.
 
 #### What are the key features of Selenium IDE?
 
-  Key features of [Selenium IDE](../S/selenium-ide.md) include:
+  Key features of [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) include:
 
   - **Record and Playback** : Allows users to record interactions with the browser and play them back to automate testing.
-  - **Autocomplete for [Selenium](../S/selenium.md) commands** : Suggests common commands as you type, speeding up test case development.
+  - **Autocomplete for [Selenium](https://naodeng.com.cn/en/wiki/selenium) commands** : Suggests common commands as you type, speeding up test case development.
   - **Locator Strategies** : Offers multiple strategies for locating elements (e.g., id, name, XPath), which can be used in tests.
   - **Built-in Debugger** : Provides step-by-step debugging tools to troubleshoot tests.
   - **Control Flow Structures** : Supports loops and conditionals for more complex test logic.
@@ -75,10 +74,10 @@ enhances your testing environment with tools for logging in, item searching, and
   - **Command-line Runner** : Enables running tests from the command line for integration into CI/CD pipelines.
   - **Parallel Execution** : Supports running tests in parallel to reduce execution time.
   - **Screenshots on Failure** : Can automatically capture screenshots when a test fails for easier debugging.
-  These features make [Selenium IDE](../S/selenium-ide.md) a versatile and user-friendly tool for creating and running browser tests without the need for extensive programming knowledge.
+  These features make [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) a versatile and user-friendly tool for creating and running browser tests without the need for extensive programming knowledge.
 
   - **Record and Playback** : Allows users to record interactions with the browser and play them back to automate testing.
-  - **Autocomplete for [Selenium](../S/selenium.md) commands** : Suggests common commands as you type, speeding up test case development.
+  - **Autocomplete for [Selenium](https://naodeng.com.cn/en/wiki/selenium) commands** : Suggests common commands as you type, speeding up test case development.
   - **Locator Strategies** : Offers multiple strategies for locating elements (e.g., id, name, XPath), which can be used in tests.
   - **Built-in Debugger** : Provides step-by-step debugging tools to troubleshoot tests.
   - **Control Flow Structures** : Supports loops and conditionals for more complex test logic.
@@ -92,15 +91,15 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How does Selenium IDE differ from other testing tools?
 
-  [Selenium IDE](../S/selenium-ide.md) stands out from other testing tools primarily due to its **browser extension** nature, enabling users to **record, edit, and playback** tests directly in the browser. Unlike many tools that require extensive programming knowledge, [Selenium IDE](../S/selenium-ide.md) offers a **no-code/low-code** approach with an easy-to-use interface, making it accessible for beginners or non-developers.
-  It is unique in its **native support for Selenese**, [Selenium](../S/selenium.md)'s own scripting language, though it also allows for **JavaScript** execution for complex scenarios. [Selenium IDE](../S/selenium-ide.md)'s **record-and-playback** feature is particularly distinctive, as it allows rapid test creation without writing code from scratch.
-  Another differentiating factor is its **tight integration with [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**. Tests recorded in [Selenium IDE](../S/selenium-ide.md) can be exported to [WebDriver](../W/webdriver.md) code, which is not a common feature among other record-and-playback tools. This enables a smooth transition from simple test creation to more advanced, programmatically driven [test automation](../T/test-automation.md) frameworks.
-  [Selenium IDE](../S/selenium-ide.md) also supports **plugins**, which can extend its capabilities beyond the out-of-the-box features. This extensibility is not always available in other testing tools, especially those that are closed-source or have a more rigid architecture.
-  Lastly, being part of the [Selenium](../S/selenium.md) suite, it benefits from a **large community** and ecosystem, providing a wealth of resources, shared knowledge, and support that many other tools lack. This community-driven aspect can be a significant advantage for users seeking assistance or looking to extend the tool's functionality.
+  [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) stands out from other testing tools primarily due to its **browser extension** nature, enabling users to **record, edit, and playback** tests directly in the browser. Unlike many tools that require extensive programming knowledge, [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) offers a **no-code/low-code** approach with an easy-to-use interface, making it accessible for beginners or non-developers.
+  It is unique in its **native support for Selenese**, [Selenium](https://naodeng.com.cn/en/wiki/selenium)'s own scripting language, though it also allows for **JavaScript** execution for complex scenarios. [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)'s **record-and-playback** feature is particularly distinctive, as it allows rapid test creation without writing code from scratch.
+  Another differentiating factor is its **tight integration with [Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)**. Tests recorded in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) can be exported to [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) code, which is not a common feature among other record-and-playback tools. This enables a smooth transition from simple test creation to more advanced, programmatically driven [test automation](https://naodeng.com.cn/en/wiki/test-automation) frameworks.
+  [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) also supports **plugins**, which can extend its capabilities beyond the out-of-the-box features. This extensibility is not always available in other testing tools, especially those that are closed-source or have a more rigid architecture.
+  Lastly, being part of the [Selenium](https://naodeng.com.cn/en/wiki/selenium) suite, it benefits from a **large community** and ecosystem, providing a wealth of resources, shared knowledge, and support that many other tools lack. This community-driven aspect can be a significant advantage for users seeking assistance or looking to extend the tool's functionality.
 
 #### What are the advantages and disadvantages of using Selenium IDE?
 
-  **Advantages of [Selenium IDE](../S/selenium-ide.md):**
+  **Advantages of [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide):**
 
   - **Ease of Use:**
     Simple interface for creating automated tests without needing to write code.
@@ -120,12 +119,12 @@ enhances your testing environment with tools for logging in, item searching, and
   - **Extensibility:**
     Ability to extend functionality with user-created scripts and plugins.
 
-  - **No [Setup](../S/setup.md) Required:**
+  - **No [Setup](https://naodeng.com.cn/en/wiki/setup) Required:**
     As a browser extension, it doesn't require complex environment setups.
 
   - **Export Capabilities:**
     Tests can be exported to various programming languages for use with Selenium WebDriver.
-  **Disadvantages of [Selenium IDE](../S/selenium-ide.md):**
+  **Disadvantages of [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide):**
 
   - **Limited to Browser Testing:**
     Only suitable for web applications and cannot test desktop or mobile apps.
@@ -145,7 +144,7 @@ enhances your testing environment with tools for logging in, item searching, and
   - **Dependent on UI:**
     Changes in the UI may necessitate re-recording or editing tests.
 
-  - **No Built-in [Test Management](../T/test-management.md):**
+  - **No Built-in [Test Management](https://naodeng.com.cn/en/wiki/test-management):**
     Lacks features for managing and organizing large numbers of tests.
 
   - **Limited Support for Advanced Actions:**
@@ -169,7 +168,7 @@ enhances your testing environment with tools for logging in, item searching, and
   - **Extensibility:**
     Ability to extend functionality with user-created scripts and plugins.
 
-  - **No [Setup](../S/setup.md) Required:**
+  - **No [Setup](https://naodeng.com.cn/en/wiki/setup) Required:**
     As a browser extension, it doesn't require complex environment setups.
 
   - **Export Capabilities:**
@@ -193,7 +192,7 @@ enhances your testing environment with tools for logging in, item searching, and
   - **Dependent on UI:**
     Changes in the UI may necessitate re-recording or editing tests.
 
-  - **No Built-in [Test Management](../T/test-management.md):**
+  - **No Built-in [Test Management](https://naodeng.com.cn/en/wiki/test-management):**
     Lacks features for managing and organizing large numbers of tests.
 
   - **Limited Support for Advanced Actions:**
@@ -203,9 +202,9 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How do you install Selenium IDE?
 
-  To install [Selenium IDE](../S/selenium-ide.md), follow these steps:
+  To install [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide), follow these steps:
 
-  1. Open the web browser where you want to add the [Selenium IDE](../S/selenium-ide.md) extension. **[Selenium IDE](../S/selenium-ide.md)** is available for **Chrome** and **Firefox**.
+  1. Open the web browser where you want to add the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) extension. **[Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)** is available for **Chrome** and **Firefox**.
   2. Navigate to the browser's extension or add-on store:
     - For Chrome, visit the
       [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
@@ -223,15 +222,15 @@ enhances your testing environment with tools for logging in, item searching, and
       [Firefox Add-ons](https://addons.mozilla.org/)
       .
 
-  3. In the search bar, type **"[Selenium IDE](../S/selenium-ide.md)"** and press Enter.
-  4. Locate the official [Selenium IDE](../S/selenium-ide.md) extension from the search results. Ensure it's the correct one by checking the developer's name or the number of users and reviews.
+  3. In the search bar, type **"[Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)"** and press Enter.
+  4. Locate the official [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) extension from the search results. Ensure it's the correct one by checking the developer's name or the number of users and reviews.
   5. Click on the extension and then select **"Add to browser"** or **"Add to Chrome/Firefox"**. The exact wording may vary depending on the browser.
   6. A confirmation dialog will appear. Confirm the installation by clicking **"Add extension"** or **"Add"**.
-  7. Once the installation is complete, the [Selenium IDE](../S/selenium-ide.md) icon will appear in your browser's toolbar.
-  8. Click on the [Selenium IDE](../S/selenium-ide.md) icon to launch the tool.
-  Remember, [Selenium IDE](../S/selenium-ide.md) is a browser extension, so it must be installed on each browser where you intend to use it. If you're using a different browser version or a browser not mentioned here, the steps may vary slightly, but the general process remains the same.
+  7. Once the installation is complete, the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) icon will appear in your browser's toolbar.
+  8. Click on the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) icon to launch the tool.
+  Remember, [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) is a browser extension, so it must be installed on each browser where you intend to use it. If you're using a different browser version or a browser not mentioned here, the steps may vary slightly, but the general process remains the same.
 
-  1. Open the web browser where you want to add the [Selenium IDE](../S/selenium-ide.md) extension. **[Selenium IDE](../S/selenium-ide.md)** is available for **Chrome** and **Firefox**.
+  1. Open the web browser where you want to add the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) extension. **[Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)** is available for **Chrome** and **Firefox**.
   2. Navigate to the browser's extension or add-on store:
     - For Chrome, visit the
       [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
@@ -249,16 +248,16 @@ enhances your testing environment with tools for logging in, item searching, and
       [Firefox Add-ons](https://addons.mozilla.org/)
       .
 
-  3. In the search bar, type **"[Selenium IDE](../S/selenium-ide.md)"** and press Enter.
-  4. Locate the official [Selenium IDE](../S/selenium-ide.md) extension from the search results. Ensure it's the correct one by checking the developer's name or the number of users and reviews.
+  3. In the search bar, type **"[Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)"** and press Enter.
+  4. Locate the official [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) extension from the search results. Ensure it's the correct one by checking the developer's name or the number of users and reviews.
   5. Click on the extension and then select **"Add to browser"** or **"Add to Chrome/Firefox"**. The exact wording may vary depending on the browser.
   6. A confirmation dialog will appear. Confirm the installation by clicking **"Add extension"** or **"Add"**.
-  7. Once the installation is complete, the [Selenium IDE](../S/selenium-ide.md) icon will appear in your browser's toolbar.
-  8. Click on the [Selenium IDE](../S/selenium-ide.md) icon to launch the tool.
+  7. Once the installation is complete, the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) icon will appear in your browser's toolbar.
+  8. Click on the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) icon to launch the tool.
 
 #### What are the system requirements for Selenium IDE?
 
-  [Selenium IDE](../S/selenium-ide.md) is an integrated development environment for [Selenium](../S/selenium.md) scripts. It is implemented as an extension for the Chrome and Firefox browsers. To use [Selenium IDE](../S/selenium-ide.md), you need:
+  [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) is an integrated development environment for [Selenium](https://naodeng.com.cn/en/wiki/selenium) scripts. It is implemented as an extension for the Chrome and Firefox browsers. To use [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide), you need:
 
   - **Google Chrome**
     or
@@ -279,12 +278,12 @@ enhances your testing environment with tools for logging in, item searching, and
     and
     **CPU**
     resources to run your chosen browser smoothly, as Selenium IDE will run within it.
-  To install the [Selenium IDE](../S/selenium-ide.md):
+  To install the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide):
 
   1. Navigate to the Chrome Web Store or Firefox Browser Add-ons page.
   2. Search for "Selenium IDE".
   3. Click "Add to Chrome" or "Add to Firefox" to install the extension.
-  Ensure your browser is up to date to avoid compatibility issues. No additional drivers or server [setups](../S/setup.md) are required for the IDE itself, as it runs directly within the browser. However, if you plan to use [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md) for more complex tests, you'll need to meet the [WebDriver](../W/webdriver.md)'s specific system requirements.
+  Ensure your browser is up to date to avoid compatibility issues. No additional drivers or server [setups](https://naodeng.com.cn/en/wiki/setup) are required for the IDE itself, as it runs directly within the browser. However, if you plan to use [Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) for more complex tests, you'll need to meet the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)'s specific system requirements.
 
   - **Google Chrome**
     or
@@ -312,44 +311,44 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How do you set up Selenium IDE for the first time?
 
-  To set up [Selenium IDE](../S/selenium-ide.md) for the first time, follow these steps:
+  To set up [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) for the first time, follow these steps:
 
-  1. **Install [Selenium IDE](../S/selenium-ide.md)**: Ensure you have installed the [Selenium IDE](../S/selenium-ide.md) extension for your preferred browser (e.g., Chrome or Firefox) from the respective web store.
-  2. **Launch [Selenium IDE](../S/selenium-ide.md)**: Click on the [Selenium IDE](../S/selenium-ide.md) icon in your browser's extension toolbar to open the IDE.
-  3. **Set up Project**: When you launch [Selenium IDE](../S/selenium-ide.md) for the first time, you'll be prompted to create a new project. Enter a **project name** and click 'OK'.
+  1. **Install [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)**: Ensure you have installed the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) extension for your preferred browser (e.g., Chrome or Firefox) from the respective web store.
+  2. **Launch [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)**: Click on the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) icon in your browser's extension toolbar to open the IDE.
+  3. **Set up Project**: When you launch [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) for the first time, you'll be prompted to create a new project. Enter a **project name** and click 'OK'.
   4. **Configure Base URL**: Set the **Base URL** to the web application you want to test. This will be the starting point for your tests.
   5. **Adjust Settings**: Access the settings by clicking on the gear icon. Here, you can configure various options like:
-    - **[Test Execution](../T/test-execution.md) Delay** : Set the delay between commands.
+    - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Delay** : Set the delay between commands.
     - **Default Timeout** : Adjust how long Selenium IDE waits for elements.
     - **Clipboard Options** : Manage how locators are copied to the clipboard.
-    - **[Test Execution](../T/test-execution.md) Delay** : Set the delay between commands.
+    - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Delay** : Set the delay between commands.
     - **Default Timeout** : Adjust how long Selenium IDE waits for elements.
     - **Clipboard Options** : Manage how locators are copied to the clipboard.
   6. **Record or Create Test**: You can either **record** a new test by clicking the 'Record' button and performing actions in the browser, or **create** a test manually by adding commands in the IDE.
   7. **Save Project**: After creating your first test, save your project by clicking on 'File' > 'Save Project'. Choose a location on your computer to store the project files.
-  8. **Run Test**: To execute your test, click the 'Run' button. [Selenium IDE](../S/selenium-ide.md) will perform the actions in the browser and report the results.
+  8. **Run Test**: To execute your test, click the 'Run' button. [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) will perform the actions in the browser and report the results.
   Remember to periodically **save your project** as you make changes and create new tests.
 
-  1. **Install [Selenium IDE](../S/selenium-ide.md)**: Ensure you have installed the [Selenium IDE](../S/selenium-ide.md) extension for your preferred browser (e.g., Chrome or Firefox) from the respective web store.
-  2. **Launch [Selenium IDE](../S/selenium-ide.md)**: Click on the [Selenium IDE](../S/selenium-ide.md) icon in your browser's extension toolbar to open the IDE.
-  3. **Set up Project**: When you launch [Selenium IDE](../S/selenium-ide.md) for the first time, you'll be prompted to create a new project. Enter a **project name** and click 'OK'.
+  1. **Install [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)**: Ensure you have installed the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) extension for your preferred browser (e.g., Chrome or Firefox) from the respective web store.
+  2. **Launch [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)**: Click on the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) icon in your browser's extension toolbar to open the IDE.
+  3. **Set up Project**: When you launch [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) for the first time, you'll be prompted to create a new project. Enter a **project name** and click 'OK'.
   4. **Configure Base URL**: Set the **Base URL** to the web application you want to test. This will be the starting point for your tests.
   5. **Adjust Settings**: Access the settings by clicking on the gear icon. Here, you can configure various options like:
-    - **[Test Execution](../T/test-execution.md) Delay** : Set the delay between commands.
+    - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Delay** : Set the delay between commands.
     - **Default Timeout** : Adjust how long Selenium IDE waits for elements.
     - **Clipboard Options** : Manage how locators are copied to the clipboard.
-    - **[Test Execution](../T/test-execution.md) Delay** : Set the delay between commands.
+    - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Delay** : Set the delay between commands.
     - **Default Timeout** : Adjust how long Selenium IDE waits for elements.
     - **Clipboard Options** : Manage how locators are copied to the clipboard.
   6. **Record or Create Test**: You can either **record** a new test by clicking the 'Record' button and performing actions in the browser, or **create** a test manually by adding commands in the IDE.
   7. **Save Project**: After creating your first test, save your project by clicking on 'File' > 'Save Project'. Choose a location on your computer to store the project files.
-  8. **Run Test**: To execute your test, click the 'Run' button. [Selenium IDE](../S/selenium-ide.md) will perform the actions in the browser and report the results.
+  8. **Run Test**: To execute your test, click the 'Run' button. [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) will perform the actions in the browser and report the results.
 
 #### What are the steps to configure Selenium IDE on different browsers?
 
-  To configure [Selenium IDE](../S/selenium-ide.md) on different browsers, follow these steps:
+  To configure [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) on different browsers, follow these steps:
 
-  1. **Install the [Selenium IDE](../S/selenium-ide.md) extension**:
+  1. **Install the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) extension**:
     - For
       **Chrome** : Visit the Chrome Web Store and search for Selenium IDE. Click "Add to Chrome" to install.
 
@@ -370,18 +369,18 @@ enhances your testing environment with tools for logging in, item searching, and
     - **Firefox** : Similar to Chrome, check the add-on options by clicking the menu button, selecting "Add-ons," finding Selenium IDE, and choosing "Options."
     - **Chrome** : By default, Selenium IDE should be ready to use. However, check the extension settings by right-clicking the icon and selecting "Options" to ensure it's configured to your preferences.
     - **Firefox** : Similar to Chrome, check the add-on options by clicking the menu button, selecting "Add-ons," finding Selenium IDE, and choosing "Options."
-  4. **Set up [WebDriver](../W/webdriver.md)** (for [cross-browser testing](../C/cross-browser-testing.md)):
+  4. **Set up [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)** (for [cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing)):
     - While Selenium IDE is primarily for Chrome and Firefox, you can run tests in other browsers using WebDriver. Download the corresponding WebDriver for your target browser (e.g., geckodriver for Firefox, chromedriver for Chrome) and ensure it's in your system's PATH.
     - While Selenium IDE is primarily for Chrome and Firefox, you can run tests in other browsers using WebDriver. Download the corresponding WebDriver for your target browser (e.g., geckodriver for Firefox, chromedriver for Chrome) and ensure it's in your system's PATH.
-  5. **Configure [WebDriver](../W/webdriver.md) in [Selenium IDE](../S/selenium-ide.md)**:
+  5. **Configure [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)**:
     - Open Selenium IDE, go to the project settings, and specify the path to the WebDriver executable if it's not in the PATH environment variable.
     - Open Selenium IDE, go to the project settings, and specify the path to the WebDriver executable if it's not in the PATH environment variable.
   6. **Test the configuration**:
     - Create a simple test case and execute it to ensure Selenium IDE interacts correctly with the browser.
     - Create a simple test case and execute it to ensure Selenium IDE interacts correctly with the browser.
-  Remember, [Selenium IDE](../S/selenium-ide.md) is primarily a record-and-playback tool for Chrome and Firefox. For comprehensive [cross-browser testing](../C/cross-browser-testing.md), consider using [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md) with a programming language and a testing framework.
+  Remember, [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) is primarily a record-and-playback tool for Chrome and Firefox. For comprehensive [cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing), consider using [Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) with a programming language and a testing framework.
 
-  1. **Install the [Selenium IDE](../S/selenium-ide.md) extension**:
+  1. **Install the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) extension**:
     - For
       **Chrome** : Visit the Chrome Web Store and search for Selenium IDE. Click "Add to Chrome" to install.
 
@@ -402,10 +401,10 @@ enhances your testing environment with tools for logging in, item searching, and
     - **Firefox** : Similar to Chrome, check the add-on options by clicking the menu button, selecting "Add-ons," finding Selenium IDE, and choosing "Options."
     - **Chrome** : By default, Selenium IDE should be ready to use. However, check the extension settings by right-clicking the icon and selecting "Options" to ensure it's configured to your preferences.
     - **Firefox** : Similar to Chrome, check the add-on options by clicking the menu button, selecting "Add-ons," finding Selenium IDE, and choosing "Options."
-  4. **Set up [WebDriver](../W/webdriver.md)** (for [cross-browser testing](../C/cross-browser-testing.md)):
+  4. **Set up [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)** (for [cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing)):
     - While Selenium IDE is primarily for Chrome and Firefox, you can run tests in other browsers using WebDriver. Download the corresponding WebDriver for your target browser (e.g., geckodriver for Firefox, chromedriver for Chrome) and ensure it's in your system's PATH.
     - While Selenium IDE is primarily for Chrome and Firefox, you can run tests in other browsers using WebDriver. Download the corresponding WebDriver for your target browser (e.g., geckodriver for Firefox, chromedriver for Chrome) and ensure it's in your system's PATH.
-  5. **Configure [WebDriver](../W/webdriver.md) in [Selenium IDE](../S/selenium-ide.md)**:
+  5. **Configure [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)**:
     - Open Selenium IDE, go to the project settings, and specify the path to the WebDriver executable if it's not in the PATH environment variable.
     - Open Selenium IDE, go to the project settings, and specify the path to the WebDriver executable if it's not in the PATH environment variable.
   6. **Test the configuration**:
@@ -416,18 +415,18 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How do you create a test case in Selenium IDE?
 
-  Creating a [test case](../T/test-case.md) in [Selenium IDE](../S/selenium-ide.md) involves a few straightforward steps:
+  Creating a [test case](https://naodeng.com.cn/en/wiki/test-case) in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) involves a few straightforward steps:
 
-  1. **Open [Selenium IDE](../S/selenium-ide.md)** : Launch the IDE from your browser.
+  1. **Open [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)** : Launch the IDE from your browser.
   2. **Create a New Project** : If you haven't already, create a new project by clicking on 'Create a new project' and providing a name.
-  3. **Add a New [Test Case](../T/test-case.md)** : Inside your project, click on 'Add a new test' to create a new test case.
-  4. **Name Your [Test Case](../T/test-case.md)** : Give your test case a descriptive name that reflects its purpose.
+  3. **Add a New [Test Case](https://naodeng.com.cn/en/wiki/test-case)** : Inside your project, click on 'Add a new test' to create a new test case.
+  4. **Name Your [Test Case](https://naodeng.com.cn/en/wiki/test-case)** : Give your test case a descriptive name that reflects its purpose.
   5. **Record Actions** : Click on the 'Record' button at the bottom right of the IDE and perform the actions on the browser that you want to test. Selenium IDE will capture these actions as commands.
   6. **Add Assertions** : To verify the outcomes, add assertions by right-clicking on the page during recording and selecting the appropriate assertion from the context menu.
   7. **Stop Recording** : Click the 'Record' button again to stop recording.
   8. **Edit Commands** : You can manually edit, add, or delete commands in the test steps.
-  9. **Save [Test Case](../T/test-case.md)** : Ensure your test case is saved before running it.
-  To run the [test case](../T/test-case.md), click on the 'Run current test' button. The IDE will execute each step and provide real-time feedback on the success or failure of each command.
+  9. **Save [Test Case](https://naodeng.com.cn/en/wiki/test-case)** : Ensure your test case is saved before running it.
+  To run the [test case](https://naodeng.com.cn/en/wiki/test-case), click on the 'Run current test' button. The IDE will execute each step and provide real-time feedback on the success or failure of each command.
   Here's an example of adding a command manually:
 
   ```
@@ -435,21 +434,21 @@ enhances your testing environment with tools for logging in, item searching, and
   Target: id=submitButton
   Value:
   ```
-  Remember to save your project after creating or modifying [test cases](../T/test-case.md) to avoid losing your work.
+  Remember to save your project after creating or modifying [test cases](https://naodeng.com.cn/en/wiki/test-case) to avoid losing your work.
 
-  1. **Open [Selenium IDE](../S/selenium-ide.md)** : Launch the IDE from your browser.
+  1. **Open [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)** : Launch the IDE from your browser.
   2. **Create a New Project** : If you haven't already, create a new project by clicking on 'Create a new project' and providing a name.
-  3. **Add a New [Test Case](../T/test-case.md)** : Inside your project, click on 'Add a new test' to create a new test case.
-  4. **Name Your [Test Case](../T/test-case.md)** : Give your test case a descriptive name that reflects its purpose.
+  3. **Add a New [Test Case](https://naodeng.com.cn/en/wiki/test-case)** : Inside your project, click on 'Add a new test' to create a new test case.
+  4. **Name Your [Test Case](https://naodeng.com.cn/en/wiki/test-case)** : Give your test case a descriptive name that reflects its purpose.
   5. **Record Actions** : Click on the 'Record' button at the bottom right of the IDE and perform the actions on the browser that you want to test. Selenium IDE will capture these actions as commands.
   6. **Add Assertions** : To verify the outcomes, add assertions by right-clicking on the page during recording and selecting the appropriate assertion from the context menu.
   7. **Stop Recording** : Click the 'Record' button again to stop recording.
   8. **Edit Commands** : You can manually edit, add, or delete commands in the test steps.
-  9. **Save [Test Case](../T/test-case.md)** : Ensure your test case is saved before running it.
+  9. **Save [Test Case](https://naodeng.com.cn/en/wiki/test-case)** : Ensure your test case is saved before running it.
 
 #### What is the process to record and playback a test in Selenium IDE?
 
-  To record a test in [Selenium IDE](../S/selenium-ide.md), follow these steps:
+  To record a test in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide), follow these steps:
 
   1. Open Selenium IDE from your browser.
   2. Click on the
@@ -469,8 +468,8 @@ enhances your testing environment with tools for logging in, item searching, and
 
   3. Selenium IDE will replay the recorded actions in the browser.
   4. Monitor the test run to ensure it executes as expected. The IDE will highlight each step as it runs and will mark each step as passed or failed.
-  Remember to save your [test case](../T/test-case.md) after recording for future use or modification. Use the **'Save'** or **'Save As'** options from the file menu to do this.
-  For more complex tests, you may need to edit the recorded steps to add assertions, loops, or conditional logic. This can be done in the command editor within [Selenium IDE](../S/selenium-ide.md).
+  Remember to save your [test case](https://naodeng.com.cn/en/wiki/test-case) after recording for future use or modification. Use the **'Save'** or **'Save As'** options from the file menu to do this.
+  For more complex tests, you may need to edit the recorded steps to add assertions, loops, or conditional logic. This can be done in the command editor within [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide).
 
   1. Open Selenium IDE from your browser.
   2. Click on the
@@ -492,30 +491,30 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How do you debug a test case in Selenium IDE?
 
-  Debugging a [test case](../T/test-case.md) in [Selenium IDE](../S/selenium-ide.md) involves identifying and fixing issues that cause the test to fail or behave unexpectedly. To debug a [test case](../T/test-case.md):
+  Debugging a [test case](https://naodeng.com.cn/en/wiki/test-case) in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) involves identifying and fixing issues that cause the test to fail or behave unexpectedly. To debug a [test case](https://naodeng.com.cn/en/wiki/test-case):
 
-  1. **Use Breakpoints**: Set breakpoints by clicking on the line number beside the command you want to investigate. The [test execution](../T/test-execution.md) will pause at this point, allowing you to inspect the state of the application under test.
+  1. **Use Breakpoints**: Set breakpoints by clicking on the line number beside the command you want to investigate. The [test execution](https://naodeng.com.cn/en/wiki/test-execution) will pause at this point, allowing you to inspect the state of the application under test.
   2. **Step Over Commands**: Use the 'Step over' button to execute commands one by one. This helps to isolate the exact command causing the issue.
   3. **Inspect Variables**: Check the values of variables at different points in the test. Use the 'Execute script' command with `return` statements to output variable values to the log.
   4. **Check Logs**: Review the log messages in the Log pane for errors or warnings that can provide clues about the failure.
   5. **Use `echo` Command**: Insert `echo` commands before and after the suspected command to print out values and messages in the log, which can help trace the execution flow.
   6. **Verify Locators**: Ensure that the locators used are correct and the elements they refer to are present and interactable at the time of execution.
-  7. **Adjust Speed**: Slow down the [test execution](../T/test-execution.md) using the 'Set speed' command to observe the interactions with the application more closely.
+  7. **Adjust Speed**: Slow down the [test execution](https://naodeng.com.cn/en/wiki/test-execution) using the 'Set speed' command to observe the interactions with the application more closely.
   8. **Review Test Steps**: Ensure that the test steps are in the correct order and that there are no missing or redundant steps.
-  By methodically stepping through the test, inspecting variables, and analyzing the output, you can identify and resolve issues within your [Selenium IDE](../S/selenium-ide.md) [test cases](../T/test-case.md).
+  By methodically stepping through the test, inspecting variables, and analyzing the output, you can identify and resolve issues within your [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
-  1. **Use Breakpoints**: Set breakpoints by clicking on the line number beside the command you want to investigate. The [test execution](../T/test-execution.md) will pause at this point, allowing you to inspect the state of the application under test.
+  1. **Use Breakpoints**: Set breakpoints by clicking on the line number beside the command you want to investigate. The [test execution](https://naodeng.com.cn/en/wiki/test-execution) will pause at this point, allowing you to inspect the state of the application under test.
   2. **Step Over Commands**: Use the 'Step over' button to execute commands one by one. This helps to isolate the exact command causing the issue.
   3. **Inspect Variables**: Check the values of variables at different points in the test. Use the 'Execute script' command with `return` statements to output variable values to the log.
   4. **Check Logs**: Review the log messages in the Log pane for errors or warnings that can provide clues about the failure.
   5. **Use `echo` Command**: Insert `echo` commands before and after the suspected command to print out values and messages in the log, which can help trace the execution flow.
   6. **Verify Locators**: Ensure that the locators used are correct and the elements they refer to are present and interactable at the time of execution.
-  7. **Adjust Speed**: Slow down the [test execution](../T/test-execution.md) using the 'Set speed' command to observe the interactions with the application more closely.
+  7. **Adjust Speed**: Slow down the [test execution](https://naodeng.com.cn/en/wiki/test-execution) using the 'Set speed' command to observe the interactions with the application more closely.
   8. **Review Test Steps**: Ensure that the test steps are in the correct order and that there are no missing or redundant steps.
 
 #### What are the different types of locators in Selenium IDE and how are they used?
 
-  In [Selenium IDE](../S/selenium-ide.md), locators are used to find and match the elements on a web page that you want to interact with. Here are the different types of locators:
+  In [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide), locators are used to find and match the elements on a web page that you want to interact with. Here are the different types of locators:
 
   - **ID** : Locates an element by its unique identifier. Example:
     `id=login-button`
@@ -548,7 +547,7 @@ enhances your testing environment with tools for logging in, item searching, and
   - **Class Name** : Locates elements by the class attribute. Example:
     `class=btn btn-primary`
     .
-  Locators are used within [Selenium IDE](../S/selenium-ide.md) commands to specify which element to act upon. For example, to click a button with an ID of `submit`, you would use the command `click` with the target `id=submit`.
+  Locators are used within [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) commands to specify which element to act upon. For example, to click a button with an ID of `submit`, you would use the command `click` with the target `id=submit`.
   Choosing the right locator depends on the specific context and the element's attributes. **ID** and **Name** are typically preferred for their simplicity and performance, but when they're not available, **CSS Selector** and **XPath** provide more flexibility. It's important to use the most reliable and least brittle locator to ensure test stability.
 
   - **ID** : Locates an element by its unique identifier. Example:
@@ -585,7 +584,7 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How do you handle dynamic elements in Selenium IDE?
 
-  Handling dynamic elements in [Selenium IDE](../S/selenium-ide.md) involves strategies that allow your tests to interact with elements that may change their attributes or position in the DOM. Here are some methods:
+  Handling dynamic elements in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) involves strategies that allow your tests to interact with elements that may change their attributes or position in the DOM. Here are some methods:
 
   - **CSS Selectors** : Use CSS selectors that target elements based on their structural characteristics rather than attributes that may change. For example, use a parent-child relationship or nth-child selectors.
 
@@ -636,7 +635,7 @@ enhances your testing environment with tools for logging in, item searching, and
   ```
   click | css=input[id^='dynamic_']
   ```
-  By combining these strategies, you can create robust tests in [Selenium IDE](../S/selenium-ide.md) that can handle dynamic elements effectively.
+  By combining these strategies, you can create robust tests in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) that can handle dynamic elements effectively.
 
   - **CSS Selectors** : Use CSS selectors that target elements based on their structural characteristics rather than attributes that may change. For example, use a parent-child relationship or nth-child selectors.
   - **XPath** : Craft XPath expressions that are less likely to change. Avoid absolute XPaths and use relative ones with features like
@@ -663,7 +662,7 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How do you import and export test cases in Selenium IDE?
 
-  To **import [test cases](../T/test-case.md)** in [Selenium IDE](../S/selenium-ide.md):
+  To **import [test cases](https://naodeng.com.cn/en/wiki/test-case)** in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide):
 
   1. Open Selenium IDE.
   2. Click on the
@@ -679,8 +678,8 @@ enhances your testing environment with tools for logging in, item searching, and
   4. Select the file and click
     **Open**
     .
-  [Test cases](../T/test-case.md) are typically saved as part of a `.side` project file, which contains all the tests for a project. Individual [test cases](../T/test-case.md) cannot be imported separately as they are not standalone files.
-  To **export [test cases](../T/test-case.md)** from [Selenium IDE](../S/selenium-ide.md):
+  [Test cases](https://naodeng.com.cn/en/wiki/test-case) are typically saved as part of a `.side` project file, which contains all the tests for a project. Individual [test cases](https://naodeng.com.cn/en/wiki/test-case) cannot be imported separately as they are not standalone files.
+  To **export [test cases](https://naodeng.com.cn/en/wiki/test-case)** from [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide):
 
   1. Open the project with the test case you want to export.
   2. Right-click on the test case in the test case panel.
@@ -693,7 +692,7 @@ enhances your testing environment with tools for logging in, item searching, and
   6. Click
     **Save**
     .
-  [Selenium IDE](../S/selenium-ide.md) allows exporting [test cases](../T/test-case.md) to various programming languages and testing frameworks, enabling integration with other tools and version control systems. Remember that exporting to a specific language/framework will generate code that may require additional editing to run successfully outside of [Selenium IDE](../S/selenium-ide.md).
+  [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) allows exporting [test cases](https://naodeng.com.cn/en/wiki/test-case) to various programming languages and testing frameworks, enabling integration with other tools and version control systems. Remember that exporting to a specific language/framework will generate code that may require additional editing to run successfully outside of [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide).
 
   1. Open Selenium IDE.
   2. Click on the
@@ -726,7 +725,7 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### What is Selenese and how is it used in Selenium IDE?
 
-  Selenese is the **language** used to write [test scripts](../T/test-script.md) in [Selenium IDE](../S/selenium-ide.md). It consists of a set of commands that instruct the browser to perform certain actions, like clicking a button, entering text, or verifying the presence of an element. These commands are categorized into three types:
+  Selenese is the **language** used to write [test scripts](https://naodeng.com.cn/en/wiki/test-script) in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide). It consists of a set of commands that instruct the browser to perform certain actions, like clicking a button, entering text, or verifying the presence of an element. These commands are categorized into three types:
 
   - **Actions** : Commands that generally manipulate the state of the application, such as
     `click`
@@ -745,13 +744,13 @@ enhances your testing environment with tools for logging in, item searching, and
     or
     `verifyElementPresent`
     .
-  Selenese is used within the [Selenium IDE](../S/selenium-ide.md) through a simple interface where commands can be entered manually or recorded using the IDE's record function. Here's an example of a basic Selenese script that navigates to a website and verifies the title:
+  Selenese is used within the [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) through a simple interface where commands can be entered manually or recorded using the IDE's record function. Here's an example of a basic Selenese script that navigates to a website and verifies the title:
 
   ```
   open | https://www.example.com
   assertTitle | Example Domain
   ```
-  Experienced [test automation](../T/test-automation.md) engineers use Selenese to create [test cases](../T/test-case.md) quickly without the need for a programming language. However, for more complex test logic, users can extend the capabilities of [Selenium IDE](../S/selenium-ide.md) by using **JavaScript** with Selenese, allowing for conditional logic, loops, and more sophisticated [test scenarios](../T/test-scenario.md).
+  Experienced [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers use Selenese to create [test cases](https://naodeng.com.cn/en/wiki/test-case) quickly without the need for a programming language. However, for more complex test logic, users can extend the capabilities of [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) by using **JavaScript** with Selenese, allowing for conditional logic, loops, and more sophisticated [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario).
 
   - **Actions** : Commands that generally manipulate the state of the application, such as
     `click`
@@ -773,7 +772,7 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How do you handle pop-ups and alerts in Selenium IDE?
 
-  In [Selenium IDE](../S/selenium-ide.md), handling pop-ups and alerts involves using built-in commands that interact with JavaScript pop-ups, such as `alert`, `confirm`, and `prompt`. Here's how to manage them:
+  In [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide), handling pop-ups and alerts involves using built-in commands that interact with JavaScript pop-ups, such as `alert`, `confirm`, and `prompt`. Here's how to manage them:
 
   - **Alerts** : Use the
     `assertAlert`
@@ -808,7 +807,7 @@ enhances your testing environment with tools for logging in, item searching, and
   ```
   answer on next prompt | The input value
   ```
-  Remember to place these commands in the correct sequence in your test steps, as they need to be executed before the actual pop-up or alert is triggered by the web application. [Selenium IDE](../S/selenium-ide.md) will wait for the pop-up or alert to appear before executing the next step, ensuring synchronization between the test and the application state.
+  Remember to place these commands in the correct sequence in your test steps, as they need to be executed before the actual pop-up or alert is triggered by the web application. [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) will wait for the pop-up or alert to appear before executing the next step, ensuring synchronization between the test and the application state.
 
   - **Alerts** : Use the
     `assertAlert`
@@ -832,14 +831,14 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How do you perform data-driven testing in Selenium IDE?
 
-  To perform data-driven testing in [Selenium IDE](../S/selenium-ide.md), you'll need to use external data sources like CSV or JSON files and the `execute script` command to iterate over the data. Here's a step-by-step guide:
+  To perform data-driven testing in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide), you'll need to use external data sources like CSV or JSON files and the `execute script` command to iterate over the data. Here's a step-by-step guide:
 
-  1. **Prepare your data file**: Create a CSV or JSON file with the [test data](../T/test-data.md).
+  1. **Prepare your data file**: Create a CSV or JSON file with the [test data](https://naodeng.com.cn/en/wiki/test-data).
   2. **Load the file into your test**: Use the `loadVars` command from the `data-driven` plugin to load your data file.
   3. **Iterate over the data**: Use the `times` or `while` loop commands to iterate over each row or object in your data file.
   4. **Access data in your tests**: Reference the data in your test steps using `${variableName}` syntax, where `variableName` corresponds to the column name in your CSV or the property name in your JSON object.
   5. **Execute your test**: Use the `execute script` command to run your test with the current set of data.
-  6. **End the [iteration](../I/iteration.md)**: Use the `endLoadVars` command after your test steps to move to the next set of data.
+  6. **End the [iteration](https://naodeng.com.cn/en/wiki/iteration)**: Use the `endLoadVars` command after your test steps to move to the next set of data.
   Here's an example of how you might use a CSV file in your test:
 
   ```
@@ -852,16 +851,16 @@ enhances your testing environment with tools for logging in, item searching, and
   ```
   In this example, `username` and `password` are column names in the `data.csv` file. The `while` loop continues until the end of the file (`!${!eof}`) is reached, executing the test steps with each set of data.
 
-  1. **Prepare your data file**: Create a CSV or JSON file with the [test data](../T/test-data.md).
+  1. **Prepare your data file**: Create a CSV or JSON file with the [test data](https://naodeng.com.cn/en/wiki/test-data).
   2. **Load the file into your test**: Use the `loadVars` command from the `data-driven` plugin to load your data file.
   3. **Iterate over the data**: Use the `times` or `while` loop commands to iterate over each row or object in your data file.
   4. **Access data in your tests**: Reference the data in your test steps using `${variableName}` syntax, where `variableName` corresponds to the column name in your CSV or the property name in your JSON object.
   5. **Execute your test**: Use the `execute script` command to run your test with the current set of data.
-  6. **End the [iteration](../I/iteration.md)**: Use the `endLoadVars` command after your test steps to move to the next set of data.
+  6. **End the [iteration](https://naodeng.com.cn/en/wiki/iteration)**: Use the `endLoadVars` command after your test steps to move to the next set of data.
 
 #### What is the role of JavaScript in Selenium IDE?
 
-  JavaScript plays a crucial role in [Selenium IDE](../S/selenium-ide.md) as it allows for the **extension of [test scripts](../T/test-script.md)** beyond the built-in capabilities of the IDE. [Test automation](../T/test-automation.md) engineers can use JavaScript to:
+  JavaScript plays a crucial role in [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) as it allows for the **extension of [test scripts](https://naodeng.com.cn/en/wiki/test-script)** beyond the built-in capabilities of the IDE. [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can use JavaScript to:
 
   - **Manipulate web page elements**
     dynamically during test execution, which is particularly useful for handling complex scenarios that are not directly supported by the standard commands.
@@ -869,12 +868,12 @@ enhances your testing environment with tools for logging in, item searching, and
   - **Create custom functions**
     to perform specific actions or calculations that are not part of the default Selenium IDE commands.
 
-  - **Access browser [APIs](../A/api.md)**
+  - **Access browser [APIs](https://naodeng.com.cn/en/wiki/api)**
     to interact with browser-level events, storage, or features that may be necessary for certain tests.
 
   - **Implement control structures**
     like loops and conditional statements, enabling more sophisticated test logic and flow control within the IDE environment.
-  Here's an example of using JavaScript in a [Selenium IDE](../S/selenium-ide.md) [test case](../T/test-case.md):
+  Here's an example of using JavaScript in a [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) [test case](https://naodeng.com.cn/en/wiki/test-case):
 
   ```
   // Store the title of the page in a variable
@@ -882,7 +881,7 @@ enhances your testing environment with tools for logging in, item searching, and
   // Use the stored title in a test command
   selenium.type("id=titleField", title);
   ```
-  By embedding JavaScript directly into [test cases](../T/test-case.md) or by referencing external JavaScript files, engineers can significantly enhance the capabilities of [Selenium IDE](../S/selenium-ide.md), making it a more powerful and flexible tool for [automated testing](../A/automated-testing.md).
+  By embedding JavaScript directly into [test cases](https://naodeng.com.cn/en/wiki/test-case) or by referencing external JavaScript files, engineers can significantly enhance the capabilities of [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide), making it a more powerful and flexible tool for [automated testing](https://naodeng.com.cn/en/wiki/automated-testing).
 
   - **Manipulate web page elements**
     dynamically during test execution, which is particularly useful for handling complex scenarios that are not directly supported by the standard commands.
@@ -890,7 +889,7 @@ enhances your testing environment with tools for logging in, item searching, and
   - **Create custom functions**
     to perform specific actions or calculations that are not part of the default Selenium IDE commands.
 
-  - **Access browser [APIs](../A/api.md)**
+  - **Access browser [APIs](https://naodeng.com.cn/en/wiki/api)**
     to interact with browser-level events, storage, or features that may be necessary for certain tests.
 
   - **Implement control structures**
@@ -898,15 +897,15 @@ enhances your testing environment with tools for logging in, item searching, and
 
 #### How do you integrate Selenium IDE with other testing tools?
 
-  Integrating [Selenium IDE](../S/selenium-ide.md) with other testing tools can enhance its capabilities and enable continuous integration (CI) workflows. Here's how to achieve integration:
-  **Export Tests**: [Selenium IDE](../S/selenium-ide.md) allows exporting tests in various programming languages. Export tests and integrate them with test frameworks like JUnit, TestNG, or [NUnit](../N/nunit.md) for further customization and execution.
-  **[Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md)**: For complex [test scenarios](../T/test-scenario.md), convert [Selenium IDE](../S/selenium-ide.md) tests to [WebDriver](../W/webdriver.md) code. [WebDriver](../W/webdriver.md) can be integrated with tools like Maven or Gradle for dependency management and build processes.
-  **CI/CD Tools**: Integrate with CI/CD tools like Jenkins, Bamboo, or GitLab CI. Use plugins or write custom scripts to trigger [Selenium](../S/selenium.md) tests as part of the build pipeline.
-  **[API Testing](../A/api-testing.md) Tools**: Combine with tools like [Postman](../P/postman.md) or Rest-Assured for [API testing](../A/api-testing.md). Use [Selenium IDE](../S/selenium-ide.md) for UI tests and [API](../A/api.md) tools for backend validation.
-  **[Performance Testing](../P/performance-testing.md) Tools**: Integrate with [JMeter](../J/jmeter.md) or Gatling for [performance testing](../P/performance-testing.md). Convert functional tests into performance [test scripts](../T/test-script.md).
+  Integrating [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) with other testing tools can enhance its capabilities and enable continuous integration (CI) workflows. Here's how to achieve integration:
+  **Export Tests**: [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) allows exporting tests in various programming languages. Export tests and integrate them with test frameworks like JUnit, TestNG, or [NUnit](https://naodeng.com.cn/en/wiki/nunit) for further customization and execution.
+  **[Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)**: For complex [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario), convert [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) tests to [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) code. [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) can be integrated with tools like Maven or Gradle for dependency management and build processes.
+  **CI/CD Tools**: Integrate with CI/CD tools like Jenkins, Bamboo, or GitLab CI. Use plugins or write custom scripts to trigger [Selenium](https://naodeng.com.cn/en/wiki/selenium) tests as part of the build pipeline.
+  **[API Testing](https://naodeng.com.cn/en/wiki/api-testing) Tools**: Combine with tools like [Postman](https://naodeng.com.cn/en/wiki/postman) or Rest-Assured for [API testing](https://naodeng.com.cn/en/wiki/api-testing). Use [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) for UI tests and [API](https://naodeng.com.cn/en/wiki/api) tools for backend validation.
+  **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing) Tools**: Integrate with [JMeter](https://naodeng.com.cn/en/wiki/jmeter) or Gatling for [performance testing](https://naodeng.com.cn/en/wiki/performance-testing). Convert functional tests into performance [test scripts](https://naodeng.com.cn/en/wiki/test-script).
   **Version Control Systems**: Store tests in version control systems like Git. This enables collaboration and version tracking.
-  **[Test Management](../T/test-management.md) Tools**: Link with [test management](../T/test-management.md) tools like TestRail or Zephyr to manage [test cases](../T/test-case.md) and report results.
-  **Custom Scripts**: Use custom scripts to connect [Selenium IDE](../S/selenium-ide.md) with other tools. Leverage programming languages like Python or JavaScript to create integration scripts.
+  **[Test Management](https://naodeng.com.cn/en/wiki/test-management) Tools**: Link with [test management](https://naodeng.com.cn/en/wiki/test-management) tools like TestRail or Zephyr to manage [test cases](https://naodeng.com.cn/en/wiki/test-case) and report results.
+  **Custom Scripts**: Use custom scripts to connect [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) with other tools. Leverage programming languages like Python or JavaScript to create integration scripts.
   **Plugins and Add-ons**: Explore plugins or add-ons that might already provide integration capabilities with your desired tools.
-  **Docker**: Containerize tests using Docker for consistent [test environments](../T/test-environment.md) and easy integration with CI/CD pipelines.
-  By leveraging these integration points, [Selenium IDE](../S/selenium-ide.md) can be part of a comprehensive testing strategy, working in tandem with other tools to cover all aspects of software quality assurance .
+  **Docker**: Containerize tests using Docker for consistent [test environments](https://naodeng.com.cn/en/wiki/test-environment) and easy integration with CI/CD pipelines.
+  By leveraging these integration points, [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide) can be part of a comprehensive testing strategy, working in tandem with other tools to cover all aspects of software quality assurance .

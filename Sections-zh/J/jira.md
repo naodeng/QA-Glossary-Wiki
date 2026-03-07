@@ -1,8 +1,5 @@
 # Jira
 
-
-
-
 <!-- TOC START -->
 - [# 另请参阅：](##-另请参阅：)
 - [# 基础知识和重要性](##-基础知识和重要性)
@@ -56,9 +53,9 @@ Scrum
 
 # # 相关术语：
 
-- [Bug tracking tool](../B/bug-tracking-tool.md)
-- [Change Requests](../C/change-requests.md)
-- [Incident Management](../I/incident-management.md)
+- [Bug tracking tool](https://naodeng.com.cn/wiki/bug-tracking-tool)
+- [Change Requests](https://naodeng.com.cn/wiki/change-requests)
+- [Incident Management](https://naodeng.com.cn/wiki/incident-management)
 
 ## # 另请参阅：
 
@@ -71,26 +68,26 @@ Scrum
 
 ### # Jira 是什么以及它的用途是什么？
 
-[Jira](../J/jira.md) 是 Atlassian 开发的 **项目管理** 和 **问题跟踪** 工具。它主要旨在帮助团队管理和跟踪工作进度，特别是在软件开发和测试方面。 [Jira](../J/jira.md) 使用户能够创建、分配任务、[bugs](../B/bug.md) 和功能请求并确定优先级，这些请求在平台内通常称为“问题”。
-  团队使用[Jira](../J/jira.md) 将他们的工作组织到项目中，其中可以通过反映团队流程的可定制工作流程对问题进行分类和跟踪。这些工作流程定义了问题在被视为完成之前必须经历的阶段。
-  [Jira](../J/jira.md) 的灵活性使其能够根据各种项目管理风格进行定制，包括**敏捷**、**[Scrum](../S/scrum.md)** 和 **看板**，使其成为采用不同方法的团队的多功能工具。
-  该平台支持通过自定义字段进行广泛的定制，使团队能够捕获与其项目相关的特定信息。此外，[Jira](../J/jira.md) 还提供了丰富的[APIs](../A/api.md) 集和充满插件的市场，使其能够与众多其他软件工具无缝集成，包括持续集成/持续部署 (CI/CD) 管道、[test automation](../T/test-automation.md) 框架等。
-  对于[test automation](../T/test-automation.md) 工程师来说，[Jira](../J/jira.md) 对于跟踪[automated testing](../A/automated-testing.md) 期间发现的缺陷、管理自动化[test cases](../T/test-case.md) 以及将代码提交和构建信息链接到问题特别有用，从而提供开发和测试生命周期的全面视图。
+[Jira](https://naodeng.com.cn/wiki/jira) 是 Atlassian 开发的 **项目管理** 和 **问题跟踪** 工具。它主要旨在帮助团队管理和跟踪工作进度，特别是在软件开发和测试方面。 [Jira](https://naodeng.com.cn/wiki/jira) 使用户能够创建、分配任务、[bugs](https://naodeng.com.cn/wiki/bug) 和功能请求并确定优先级，这些请求在平台内通常称为“问题”。
+  团队使用[Jira](https://naodeng.com.cn/wiki/jira) 将他们的工作组织到项目中，其中可以通过反映团队流程的可定制工作流程对问题进行分类和跟踪。这些工作流程定义了问题在被视为完成之前必须经历的阶段。
+  [Jira](https://naodeng.com.cn/wiki/jira) 的灵活性使其能够根据各种项目管理风格进行定制，包括**敏捷**、**[Scrum](https://naodeng.com.cn/wiki/scrum)** 和 **看板**，使其成为采用不同方法的团队的多功能工具。
+  该平台支持通过自定义字段进行广泛的定制，使团队能够捕获与其项目相关的特定信息。此外，[Jira](https://naodeng.com.cn/wiki/jira) 还提供了丰富的[APIs](https://naodeng.com.cn/wiki/api) 集和充满插件的市场，使其能够与众多其他软件工具无缝集成，包括持续集成/持续部署 (CI/CD) 管道、[test automation](https://naodeng.com.cn/wiki/test-automation) 框架等。
+  对于[test automation](https://naodeng.com.cn/wiki/test-automation) 工程师来说，[Jira](https://naodeng.com.cn/wiki/jira) 对于跟踪[automated testing](https://naodeng.com.cn/wiki/automated-testing) 期间发现的缺陷、管理自动化[test cases](https://naodeng.com.cn/wiki/test-case) 以及将代码提交和构建信息链接到问题特别有用，从而提供开发和测试生命周期的全面视图。
 
 ### # 为什么Jira 在软件开发中很重要？
 
-[Jira](../J/jira.md) 在软件开发中至关重要，因为它的**集中跟踪系统**使团队能够监控软件生命周期的各个方面。它充当单一事实来源，确保所有团队成员（从开发人员到项目经理）在任务的当前状态、优先级和依赖性上保持一致。这种一致性对于在整个开发过程中保持**效率**和**透明度**至关重要。
-  借助[Jira](../J/jira.md)，团队可以**跟踪需求**到相应的问题，从而实现更好的**需求管理**并确保不会遗漏任何内容。这种可追溯性对于维持高质量标准和审计目的至关重要，特别是在受监管的行业中。
-  此外，[Jira](../J/jira.md) 的**报告功能**提供对**指标**的深入了解，例如速度、燃尽图和冲刺进度，这对于**持续改进**非常宝贵。这些指标帮助团队随着时间的推移调整和优化他们的流程。
-  对于[test automation](../T/test-automation.md) 工程师来说，[Jira](../J/jira.md) 的重要性在于它能够**将自动化测试结果**与问题联系起来，提供对代码更改影响的即时可见性并促进**快速反馈周期**。 [test automation](../T/test-automation.md) 和问题跟踪之间的这种连接简化了 **[bug](../B/bug.md) 解决过程**，使其更快、更高效。
-  总之，[Jira](../J/jira.md) 是一个基石工具，支持软件开发活动的**协调**、**跟踪**和**管理**，直接有助于及时、可预测地交付高质量软件。
+[Jira](https://naodeng.com.cn/wiki/jira) 在软件开发中至关重要，因为它的**集中跟踪系统**使团队能够监控软件生命周期的各个方面。它充当单一事实来源，确保所有团队成员（从开发人员到项目经理）在任务的当前状态、优先级和依赖性上保持一致。这种一致性对于在整个开发过程中保持**效率**和**透明度**至关重要。
+  借助[Jira](https://naodeng.com.cn/wiki/jira)，团队可以**跟踪需求**到相应的问题，从而实现更好的**需求管理**并确保不会遗漏任何内容。这种可追溯性对于维持高质量标准和审计目的至关重要，特别是在受监管的行业中。
+  此外，[Jira](https://naodeng.com.cn/wiki/jira) 的**报告功能**提供对**指标**的深入了解，例如速度、燃尽图和冲刺进度，这对于**持续改进**非常宝贵。这些指标帮助团队随着时间的推移调整和优化他们的流程。
+  对于[test automation](https://naodeng.com.cn/wiki/test-automation) 工程师来说，[Jira](https://naodeng.com.cn/wiki/jira) 的重要性在于它能够**将自动化测试结果**与问题联系起来，提供对代码更改影响的即时可见性并促进**快速反馈周期**。 [test automation](https://naodeng.com.cn/wiki/test-automation) 和问题跟踪之间的这种连接简化了 **[bug](https://naodeng.com.cn/wiki/bug) 解决过程**，使其更快、更高效。
+  总之，[Jira](https://naodeng.com.cn/wiki/jira) 是一个基石工具，支持软件开发活动的**协调**、**跟踪**和**管理**，直接有助于及时、可预测地交付高质量软件。
 
 ### # Jira 的主要功能是什么？
 
-[Jira](../J/jira.md) 的主要功能包括：
+[Jira](https://naodeng.com.cn/wiki/jira) 的主要功能包括：
 
 - **可定制的仪表板**：使用小工具定制您的视图，以跟踪各种指标和项目状态。
-  - **[Scrum](../S/scrum.md) 和看板**：使用支持敏捷方法的看板可视化工作。
+  - **[Scrum](https://naodeng.com.cn/wiki/scrum) 和看板**：使用支持敏捷方法的看板可视化工作。
   - **报告和分析**：通过内置报告（如燃尽图、冲刺报告和速度图）获得见解。
   - **高级搜索 (JQL)**：使用 Jira 查询语言进行强大且精确的问题搜索。
   - **权限和安全**：通过详细的项目权限和问题安全级别控制访问。
@@ -109,10 +106,10 @@ Scrum
   - **版本管理**：跟踪版本并将问题与产品版本相关联。
   - **组件管理**：按组件组织问题以便更好地分类。
   - **路线图**：通过即将进行的工作和依赖关系的可视化时间表来规划和跟踪项目。
-  这些功能与与各种开发和测试工具集成的能力相结合，使 [Jira](../J/jira.md) 成为管理软件[test automation](../T/test-automation.md) 项目的多功能平台。
+  这些功能与与各种开发和测试工具集成的能力相结合，使 [Jira](https://naodeng.com.cn/wiki/jira) 成为管理软件[test automation](https://naodeng.com.cn/wiki/test-automation) 项目的多功能平台。
 
 - **可定制的仪表板**：使用小工具定制您的视图，以跟踪各种指标和项目状态。
-  - **[Scrum](../S/scrum.md) 和看板**：使用支持敏捷方法的看板可视化工作。
+  - **[Scrum](https://naodeng.com.cn/wiki/scrum) 和看板**：使用支持敏捷方法的看板可视化工作。
   - **报告和分析**：通过内置报告（如燃尽图、冲刺报告和速度图）获得见解。
   - **高级搜索 (JQL)**：使用 Jira 查询语言进行强大且精确的问题搜索。
   - **权限和安全**：通过详细的项目权限和问题安全级别控制访问。
@@ -128,40 +125,40 @@ Scrum
 
 ### # Jira 如何改善团队协作？
 
-[Jira](../J/jira.md) 通过提供用于跟踪和管理任务的**集中式平台**来增强团队协作。通过**实时更新**，团队成员可以随时了解问题的变化，确保每个人都在同一页面上。 **评论和@提及**允许在任务背景下进行直接沟通，从而促进清晰且有重点的讨论。
-  可定制的**仪表板**和**过滤器**使团队成员能够快速访问相关信息，而**共享板**反映项目的当前状态，提高透明度。 [Jira](../J/jira.md) 的 **权限方案** 确保敏感信息受到保护，但协作不会受到阻碍。
-  与 Git 等**版本控制系统**集成，允许开发人员将提交和拉取请求链接到 [Jira](../J/jira.md) 问题，为代码更改提供上下文并促进跨职能理解。此外，**自动通知**使团队能够在问题更新、评论和状态更改方面保持一致。
-  通过使用[Jira](../J/jira.md)，团队可以简化他们的**工作流程管理**，每个成员都清楚自己的职责和任务进度。这可以实现更高效的协作，因为可以快速识别和解决瓶颈，并有效管理依赖关系。
-  从本质上讲，[Jira](../J/jira.md) 充当协作中心，协调团队工作并改善沟通，这对于软件[test automation](../T/test-automation.md) 项目的成功至关重要。
+[Jira](https://naodeng.com.cn/wiki/jira) 通过提供用于跟踪和管理任务的**集中式平台**来增强团队协作。通过**实时更新**，团队成员可以随时了解问题的变化，确保每个人都在同一页面上。 **评论和@提及**允许在任务背景下进行直接沟通，从而促进清晰且有重点的讨论。
+  可定制的**仪表板**和**过滤器**使团队成员能够快速访问相关信息，而**共享板**反映项目的当前状态，提高透明度。 [Jira](https://naodeng.com.cn/wiki/jira) 的 **权限方案** 确保敏感信息受到保护，但协作不会受到阻碍。
+  与 Git 等**版本控制系统**集成，允许开发人员将提交和拉取请求链接到 [Jira](https://naodeng.com.cn/wiki/jira) 问题，为代码更改提供上下文并促进跨职能理解。此外，**自动通知**使团队能够在问题更新、评论和状态更改方面保持一致。
+  通过使用[Jira](https://naodeng.com.cn/wiki/jira)，团队可以简化他们的**工作流程管理**，每个成员都清楚自己的职责和任务进度。这可以实现更高效的协作，因为可以快速识别和解决瓶颈，并有效管理依赖关系。
+  从本质上讲，[Jira](https://naodeng.com.cn/wiki/jira) 充当协作中心，协调团队工作并改善沟通，这对于软件[test automation](https://naodeng.com.cn/wiki/test-automation) 项目的成功至关重要。
 
 ## # 功能
 
 ### # Jira 中的问题跟踪如何工作？
 
-[Jira](../J/jira.md) 中的问题跟踪通过代表任务、[bugs](../B/bug.md)、用户故事或任何工作项的 **问题** 系统进行操作。每个问题都分配有一个唯一的标识符，使其易于跟踪。以下是该过程的简要概述：
+[Jira](https://naodeng.com.cn/wiki/jira) 中的问题跟踪通过代表任务、[bugs](https://naodeng.com.cn/wiki/bug)、用户故事或任何工作项的 **问题** 系统进行操作。每个问题都分配有一个唯一的标识符，使其易于跟踪。以下是该过程的简要概述：
 
-- **创建**：用户创建问题，填写摘要、描述、问题类型和[priority](../P/priority.md)等字段。自定义字段也可用于特定项目需求。
+- **创建**：用户创建问题，填写摘要、描述、问题类型和[priority](https://naodeng.com.cn/wiki/priority)等字段。自定义字段也可用于特定项目需求。
   - **分类**：对新创建的问题进行分类，对它们进行审查并确定优先级。在此阶段，可以将它们分配给适当的团队成员或待办事项。
   - **工作流程进展**：问题通过反映任务状态的预定义工作流程移动（例如，待办事项、进行中、已完成）。状态之间的转换可以具有条件、验证器和后置函数来强制执行流程规则。
   - **更新和沟通**：团队成员通过评论、更改日志和附件更新问题，以便让每个人都了解情况。可以配置电子邮件通知以进行更新。
   - **链接和可追溯性**：问题可以链接到其他问题、拉取请求或文档，从而提供可追溯性。这对于理解依赖性和影响至关重要。
   - **解决和结束**：工作完成后，问题就得到解决，表明任务已得到解决。如果需要进一步的工作，可以重新开放。
-  - **报告和分析**：[Jira](../J/jira.md) 的报告工具允许团队分析趋势、瓶颈和项目健康状况的问题。
+  - **报告和分析**：[Jira](https://naodeng.com.cn/wiki/jira) 的报告工具允许团队分析趋势、瓶颈和项目健康状况的问题。
   在整个过程中，可以设置**自动化规则**来处理重复性任务，例如根据特定标准分配问题或在满足某些条件时转换问题。这简化了工作流程并减少了手动开销。
 
-- **创建**：用户创建问题，填写摘要、描述、问题类型和[priority](../P/priority.md)等字段。自定义字段也可用于特定项目需求。
+- **创建**：用户创建问题，填写摘要、描述、问题类型和[priority](https://naodeng.com.cn/wiki/priority)等字段。自定义字段也可用于特定项目需求。
   - **分类**：对新创建的问题进行分类，对它们进行审查并确定优先级。在此阶段，可以将它们分配给适当的团队成员或待办事项。
   - **工作流程进展**：问题通过反映任务状态的预定义工作流程移动（例如，待办事项、进行中、已完成）。状态之间的转换可以具有条件、验证器和后置函数来强制执行流程规则。
   - **更新和沟通**：团队成员通过评论、更改日志和附件更新问题，以便让每个人都了解情况。可以配置电子邮件通知以进行更新。
   - **链接和可追溯性**：问题可以链接到其他问题、拉取请求或文档，从而提供可追溯性。这对于理解依赖性和影响至关重要。
   - **解决和结束**：工作完成后，问题就得到解决，表明任务已得到解决。如果需要进一步的工作，可以重新开放。
-  - **报告和分析**：[Jira](../J/jira.md) 的报告工具允许团队分析趋势、瓶颈和项目健康状况的问题。
+  - **报告和分析**：[Jira](https://naodeng.com.cn/wiki/jira) 的报告工具允许团队分析趋势、瓶颈和项目健康状况的问题。
 
 ### # Jira 中有哪些不同类型的问题？
 
-在[Jira](../J/jira.md) 中，**问题**代表可以在平台内跟踪和管理的不同类型的工作或任务。最常见的问题类型包括：
+在[Jira](https://naodeng.com.cn/wiki/jira) 中，**问题**代表可以在平台内跟踪和管理的不同类型的工作或任务。最常见的问题类型包括：
 
-- **[Bug](../B/bug.md)** ：损害或阻止产品功能的问题。
+- **[Bug](https://naodeng.com.cn/wiki/bug)** ：损害或阻止产品功能的问题。
   - **故事**：从最终用户的角度提出的特性或功能请求。
   - **史诗**：可以分解为较小故事的大型作品。
   - **任务**：需要完成但不一定适合错误或故事类别的工作项。
@@ -169,9 +166,9 @@ Scrum
   - **改进**：增强现有特性或功能的建议。
   - **新功能**：对产品中当前不存在的新功能的请求。
   - **变更请求**：修改产品或系统的正式提案。
-  每个问题类型都可以使用**字段**进行进一步自定义，例如[priority](../P/priority.md)、状态、受让人以及特定于项目需求的自定义字段。可以定制工作流程以匹配每种问题类型的生命周期，确保流程符合团队的实践。自动化工程师可以利用这些问题类型来跟踪自动化测试结果、管理[test environments](../T/test-environment.md)以及在自动化e2e测试期间发现的[bugs](../B/bug.md)文档。 [Jira](../J/jira.md) 的灵活性允许将这些问题类型无缝集成到更广泛的软件开发环境和[test automation](../T/test-automation.md) 工作流程中。
+  每个问题类型都可以使用**字段**进行进一步自定义，例如[priority](https://naodeng.com.cn/wiki/priority)、状态、受让人以及特定于项目需求的自定义字段。可以定制工作流程以匹配每种问题类型的生命周期，确保流程符合团队的实践。自动化工程师可以利用这些问题类型来跟踪自动化测试结果、管理[test environments](https://naodeng.com.cn/wiki/test-environment)以及在自动化e2e测试期间发现的[bugs](https://naodeng.com.cn/wiki/bug)文档。 [Jira](https://naodeng.com.cn/wiki/jira) 的灵活性允许将这些问题类型无缝集成到更广泛的软件开发环境和[test automation](https://naodeng.com.cn/wiki/test-automation) 工作流程中。
 
-- **[Bug](../B/bug.md)** ：损害或阻止产品功能的问题。
+- **[Bug](https://naodeng.com.cn/wiki/bug)** ：损害或阻止产品功能的问题。
   - **故事**：从最终用户的角度提出的特性或功能请求。
   - **史诗**：可以分解为较小故事的大型作品。
   - **任务**：需要完成但不一定适合错误或故事类别的工作项。
@@ -182,7 +179,7 @@ Scrum
 
 ### # 如何在 Jira 中自定义工作流程？
 
-在 [Jira](../J/jira.md) 中自定义工作流程涉及修改问题在其生命周期中经历的阶段和转换。要自定义工作流程：
+在 [Jira](https://naodeng.com.cn/wiki/jira) 中自定义工作流程涉及修改问题在其生命周期中经历的阶段和转换。要自定义工作流程：
 
 1. **导航**
     前往Jira 设置（齿轮图标）>
@@ -224,7 +221,7 @@ Scrum
 - 通过添加或删除转换期间显示的字段来自定义**工作流程屏幕**。
   - 使用**工作流程方案**将您的工作流程应用于特定项目。
   请记住**发布**工作流程以进行更改。如果它是新的工作流程，您需要将其与工作流程方案关联，然后将该方案应用到您的项目。
-  对于自动化，请考虑利用 **[Jira](../J/jira.md) 的 REST [API](../A/api.md)** 或 **webhooks** 在使用后期函数的转换过程中触发外部 [test automation](../T/test-automation.md) 工具。
+  对于自动化，请考虑利用 **[Jira](https://naodeng.com.cn/wiki/jira) 的 REST [API](https://naodeng.com.cn/wiki/api)** 或 **webhooks** 在使用后期函数的转换过程中触发外部 [test automation](https://naodeng.com.cn/wiki/test-automation) 工具。
   Webhook 的 JSON 格式的 post 函数示例：
 
   ```
@@ -238,7 +235,7 @@ Scrum
     ]
   }
   ```
-当问题在“TEST”项目中转换为“测试中”状态时，此 [setup](../S/setup.md) 可以在您的 [test automation](../T/test-automation.md) 工具中触发事件。
+当问题在“TEST”项目中转换为“测试中”状态时，此 [setup](https://naodeng.com.cn/wiki/setup) 可以在您的 [test automation](https://naodeng.com.cn/wiki/test-automation) 工具中触发事件。
 
 1. **导航**
     前往Jira 设置（齿轮图标）>
@@ -281,7 +278,7 @@ Scrum
 
 ### # Jira 中有哪些不同类型的字段以及如何使用它们？
 
-[Jira](../J/jira.md) 字段是捕获特定信息的问题中的可自定义元素。以下是不同的类型：
+[Jira](https://naodeng.com.cn/wiki/jira) 字段是捕获特定信息的问题中的可自定义元素。以下是不同的类型：
 
 - **系统字段**：由Jira预定义，包括
     *总结*
@@ -314,7 +311,7 @@ Scrum
   - **报告**：通过Jira 仪表板和报告生成见解。
   - **自动化**：基于字段值的触发规则，对于测试自动化工作流程至关重要。
   - **集成**：与外部工具交换数据，增强端到端测试自动化。
-  可以根据项目或问题上下文将字段设置为**必填**、**隐藏**或**可选**，并且可以使用**默认值**进行配置。它们还用于**屏幕**来定义在问题创建或转换等各种操作期间显示的内容。自定义字段可有效简化数据输入并确保问题之间的一致性，从而有助于高效的 [test automation](../T/test-automation.md) 管理。
+  可以根据项目或问题上下文将字段设置为**必填**、**隐藏**或**可选**，并且可以使用**默认值**进行配置。它们还用于**屏幕**来定义在问题创建或转换等各种操作期间显示的内容。自定义字段可有效简化数据输入并确保问题之间的一致性，从而有助于高效的 [test automation](https://naodeng.com.cn/wiki/test-automation) 管理。
 
 - **系统字段**：由Jira预定义，包括
     *总结*
@@ -351,8 +348,8 @@ Scrum
 
 ### # Jira 如何与其他软件工具集成？
 
-[Jira](../J/jira.md) 通过 **插件**、**[APIs](../A/api.md)** 和 **webhooks** 与各种软件工具集成。这些集成允许跨不同平台的无缝数据交换和流程自动化。
-  对于**版本控制**，[Jira](../J/jira.md) 与 **Git**、**Bitbucket** 和 **GitHub** 等工具连接，将提交和分支链接到问题以进行跟踪。使用 [Jira](../J/jira.md) REST [API](../A/api.md) 或市场插件（如 *Bitbucket for Jira*）来设置此集成。
+[Jira](https://naodeng.com.cn/wiki/jira) 通过 **插件**、**[APIs](https://naodeng.com.cn/wiki/api)** 和 **webhooks** 与各种软件工具集成。这些集成允许跨不同平台的无缝数据交换和流程自动化。
+  对于**版本控制**，[Jira](https://naodeng.com.cn/wiki/jira) 与 **Git**、**Bitbucket** 和 **GitHub** 等工具连接，将提交和分支链接到问题以进行跟踪。使用 [Jira](https://naodeng.com.cn/wiki/jira) REST [API](https://naodeng.com.cn/wiki/api) 或市场插件（如 *Bitbucket for Jira*）来设置此集成。
 
   ```
   // Example API call to link a Jira issue with a Git commit
@@ -367,10 +364,10 @@ Scrum
     }]
   }
   ```
-对于**持续集成/持续部署 (CI/CD)**，[Jira](../J/jira.md) 与 **Jenkins**、**Bamboo** 和 **CircleCI** 等工具集成。 *Jenkins Integration for Jira* 等插件可自动将构建和部署信息流返回到 [Jira](../J/jira.md) 问题。
-  对于 **[test management](../T/test-management.md)**，[Jira](../J/jira.md) 与 **Zephyr** 和 **TestRail** 等工具连接。这些集成允许将[test cases](../T/test-case.md)、结果和报告与[Jira](../J/jira.md) 问题同步，从而提供测试活动的全面视图。
-  对于**通信**，[Jira](../J/jira.md) 与 **Slack**、**Microsoft Teams** 和 **Confluence** 集成。在聊天工具中设置通知和问题预览或在 Confluence 文档中链接 [Jira](../J/jira.md) 问题以增强协作。
-  对于**自动化工具**，[Jira](../J/jira.md) 与 **[Selenium](../S/selenium.md)**、**[Cypress](../C/cypress.md)** 和 **Appium** 配合使用进行 e2e 测试。使用[Jira](../J/jira.md) 的[API](../A/api.md) 根据测试结果创建、更新和转换问题，从而促进自动问题跟踪。
+对于**持续集成/持续部署 (CI/CD)**，[Jira](https://naodeng.com.cn/wiki/jira) 与 **Jenkins**、**Bamboo** 和 **CircleCI** 等工具集成。 *Jenkins Integration for Jira* 等插件可自动将构建和部署信息流返回到 [Jira](https://naodeng.com.cn/wiki/jira) 问题。
+  对于 **[test management](https://naodeng.com.cn/wiki/test-management)**，[Jira](https://naodeng.com.cn/wiki/jira) 与 **Zephyr** 和 **TestRail** 等工具连接。这些集成允许将[test cases](https://naodeng.com.cn/wiki/test-case)、结果和报告与[Jira](https://naodeng.com.cn/wiki/jira) 问题同步，从而提供测试活动的全面视图。
+  对于**通信**，[Jira](https://naodeng.com.cn/wiki/jira) 与 **Slack**、**Microsoft Teams** 和 **Confluence** 集成。在聊天工具中设置通知和问题预览或在 Confluence 文档中链接 [Jira](https://naodeng.com.cn/wiki/jira) 问题以增强协作。
+  对于**自动化工具**，[Jira](https://naodeng.com.cn/wiki/jira) 与 **[Selenium](https://naodeng.com.cn/wiki/selenium)**、**[Cypress](https://naodeng.com.cn/wiki/cypress)** 和 **Appium** 配合使用进行 e2e 测试。使用[Jira](https://naodeng.com.cn/wiki/jira) 的[API](https://naodeng.com.cn/wiki/api) 根据测试结果创建、更新和转换问题，从而促进自动问题跟踪。
 
   ```
   // Example code to transition a Jira issue based on test result
@@ -385,9 +382,9 @@ Scrum
 
 ### # Jira 集成了哪些常见工具？
 
-[Jira](../J/jira.md) 与各种工具集成以简化[test automation](../T/test-automation.md) 流程。以下是一些常见的集成：
+[Jira](https://naodeng.com.cn/wiki/jira) 与各种工具集成以简化[test automation](https://naodeng.com.cn/wiki/test-automation) 流程。以下是一些常见的集成：
 
-- **[Test Management](../T/test-management.md) 工具**：通过诸如此类的集成来增强测试计划、执行和报告
+- **[Test Management](https://naodeng.com.cn/wiki/test-management) 工具**：通过诸如此类的集成来增强测试计划、执行和报告
     **和风**
     和
     **测试轨道**
@@ -410,9 +407,9 @@ Scrum
     将提交、分支和拉取请求链接到Jira 问题。
 
 - **自动化框架**：与框架集成，例如
-    **[Selenium](../S/selenium.md)**
+    **[Selenium](https://naodeng.com.cn/wiki/selenium)**
     ,
-    **[Cypress](../C/cypress.md)**
+    **[Cypress](https://naodeng.com.cn/wiki/cypress)**
     , 或
     **Appium**
     通过中介服务或插件进行测试结果同步。
@@ -434,15 +431,15 @@ Scrum
     和
     **微软团队**
     集成允许在聊天渠道内进行问题更新和通知。
-  要设置这些集成，您通常使用 [Jira](../J/jira.md) 的 **应用程序链接**、**市场应用程序** 或 **Webhooks** 进行实时数据交换。例如，要连接 CI 工具：
+  要设置这些集成，您通常使用 [Jira](https://naodeng.com.cn/wiki/jira) 的 **应用程序链接**、**市场应用程序** 或 **Webhooks** 进行实时数据交换。例如，要连接 CI 工具：
 
   ```
   // In Jira, navigate to 'Settings' > 'Applications' > 'Application Links'
   // Enter the URL of your CI tool and follow the setup wizard
   ```
-利用这些集成，[test automation](../T/test-automation.md) 工程师可以创建一个有凝聚力的生态系统，从而增强软件开发生命周期的可见性、可追溯性和效率。
+利用这些集成，[test automation](https://naodeng.com.cn/wiki/test-automation) 工程师可以创建一个有凝聚力的生态系统，从而增强软件开发生命周期的可见性、可追溯性和效率。
 
-- **[Test Management](../T/test-management.md) 工具**：通过集成增强测试计划、执行和报告
+- **[Test Management](https://naodeng.com.cn/wiki/test-management) 工具**：通过集成增强测试计划、执行和报告
     **和风**
     和
     **测试轨道**
@@ -465,9 +462,9 @@ Scrum
     将提交、分支和拉取请求链接到Jira 问题。
 
 - **自动化框架**：与框架集成，例如
-    **[Selenium](../S/selenium.md)**
+    **[Selenium](https://naodeng.com.cn/wiki/selenium)**
     ,
-    **[Cypress](../C/cypress.md)**
+    **[Cypress](https://naodeng.com.cn/wiki/cypress)**
     , 或
     **Appium**
     通过中介服务或插件进行测试结果同步。
@@ -492,10 +489,10 @@ Scrum
 
 ### # Jira 集成如何增强软件自动化？
 
-将[Jira](../J/jira.md) 与软件[test automation](../T/test-automation.md) 集成可通过**简化自动化测试与问题和任务跟踪之间的通信**来增强流程。当测试失败时，集成可以自动创建[Jira](../J/jira.md)问题，确保缺陷被**立即捕获**并正确分类。这减少了报告的手动开销，并允许**更快的响应时间**。
-  此外，集成支持**可追溯性**，将自动化测试结果链接到特定的[Jira](../J/jira.md) 问题。这提供了从需求到测试和结果的清晰审计跟踪，这对于维持复杂系统的质量至关重要。与[Jira](../J/jira.md) 集成的[Test management](../T/test-management.md) 工具可以更新[test cases](../T/test-case.md) 并直接生成[Jira](../J/jira.md)，从而提供[test coverage](../T/test-coverage.md) 和质量指标的**集中视图**。
-  自动化结果还可以触发[Jira](../J/jira.md)工作流程，例如在所有测试通过后将任务移至“准备审核”状态。这**实现了工作流程自动化**，减少了手动步骤和潜在的人为错误。
-  此外，[Jira](../J/jira.md) 仪表板可以自定义，包括来自自动化测试的**实时报告**，使团队能够立即了解应用程序的运行状况。这支持**数据驱动的决策**，并有助于根据实际测试结果确定 [bug](../B/bug.md) 修复的优先级。
+将[Jira](https://naodeng.com.cn/wiki/jira) 与软件[test automation](https://naodeng.com.cn/wiki/test-automation) 集成可通过**简化自动化测试与问题和任务跟踪之间的通信**来增强流程。当测试失败时，集成可以自动创建[Jira](https://naodeng.com.cn/wiki/jira)问题，确保缺陷被**立即捕获**并正确分类。这减少了报告的手动开销，并允许**更快的响应时间**。
+  此外，集成支持**可追溯性**，将自动化测试结果链接到特定的[Jira](https://naodeng.com.cn/wiki/jira) 问题。这提供了从需求到测试和结果的清晰审计跟踪，这对于维持复杂系统的质量至关重要。与[Jira](https://naodeng.com.cn/wiki/jira) 集成的[Test management](https://naodeng.com.cn/wiki/test-management) 工具可以更新[test cases](https://naodeng.com.cn/wiki/test-case) 并直接生成[Jira](https://naodeng.com.cn/wiki/jira)，从而提供[test coverage](https://naodeng.com.cn/wiki/test-coverage) 和质量指标的**集中视图**。
+  自动化结果还可以触发[Jira](https://naodeng.com.cn/wiki/jira)工作流程，例如在所有测试通过后将任务移至“准备审核”状态。这**实现了工作流程自动化**，减少了手动步骤和潜在的人为错误。
+  此外，[Jira](https://naodeng.com.cn/wiki/jira) 仪表板可以自定义，包括来自自动化测试的**实时报告**，使团队能够立即了解应用程序的运行状况。这支持**数据驱动的决策**，并有助于根据实际测试结果确定 [bug](https://naodeng.com.cn/wiki/bug) 修复的优先级。
 
   ```
   // Example of an API call to create a Jira issue from an automated test script
@@ -513,14 +510,14 @@ Scrum
     }
   };
   ```
-通过自动化测试和问题管理之间的反馈循环，[Jira](../J/jira.md) 集成**提高了软件[test automation](../T/test-automation.md) 的效率**并**提高了质量**。
+通过自动化测试和问题管理之间的反馈循环，[Jira](https://naodeng.com.cn/wiki/jira) 集成**提高了软件[test automation](https://naodeng.com.cn/wiki/test-automation) 的效率**并**提高了质量**。
 
 ### # Jira 如何与自动化工具结合使用进行 e2e 测试？
 
-通过利用其**[APIs](../A/api.md)** 和**集成功能**，[Jira](../J/jira.md) 可以有效地与自动化工具一起用于端到端 (e2e) 测试。自动化框架可以通过 **webhooks** 或 **CI/CD 管道** 直接从 [Jira](../J/jira.md) 问题触发 e2e 测试。例如，当开发人员将工单移至“准备测试”状态时，它可以自动在自动化工具中启动相应的 e2e 测试。
-  可以使用**[API](../A/api.md) 调用**将自动化测试的结果发送回[Jira](../J/jira.md)，以更新问题的状态、评论或附件。这创建了一个无缝反馈循环，测试结果在[Jira](../J/jira.md)问题本身中可见，有助于快速决策和[bug](../B/bug.md)解决。
-  此外，[Jira](../J/jira.md) 的 **自定义字段** 可用于存储测试运行的元数据，例如 [test environment](../T/test-environment.md) 信息或内部版本号。这些数据可以包含在[Jira](../J/jira.md) 的仪表板和报告中，以增强对[test automation](../T/test-automation.md) 流程的可见性。
-  以下示例说明了如何使用TypeScript 中的[Jira](../J/jira.md) 的REST [API](../A/api.md) 来更新[Jira](../J/jira.md) 问题的测试结果：
+通过利用其**[APIs](https://naodeng.com.cn/wiki/api)** 和**集成功能**，[Jira](https://naodeng.com.cn/wiki/jira) 可以有效地与自动化工具一起用于端到端 (e2e) 测试。自动化框架可以通过 **webhooks** 或 **CI/CD 管道** 直接从 [Jira](https://naodeng.com.cn/wiki/jira) 问题触发 e2e 测试。例如，当开发人员将工单移至“准备测试”状态时，它可以自动在自动化工具中启动相应的 e2e 测试。
+  可以使用**[API](https://naodeng.com.cn/wiki/api) 调用**将自动化测试的结果发送回[Jira](https://naodeng.com.cn/wiki/jira)，以更新问题的状态、评论或附件。这创建了一个无缝反馈循环，测试结果在[Jira](https://naodeng.com.cn/wiki/jira)问题本身中可见，有助于快速决策和[bug](https://naodeng.com.cn/wiki/bug)解决。
+  此外，[Jira](https://naodeng.com.cn/wiki/jira) 的 **自定义字段** 可用于存储测试运行的元数据，例如 [test environment](https://naodeng.com.cn/wiki/test-environment) 信息或内部版本号。这些数据可以包含在[Jira](https://naodeng.com.cn/wiki/jira) 的仪表板和报告中，以增强对[test automation](https://naodeng.com.cn/wiki/test-automation) 流程的可见性。
+  以下示例说明了如何使用TypeScript 中的[Jira](https://naodeng.com.cn/wiki/jira) 的REST [API](https://naodeng.com.cn/wiki/api) 来更新[Jira](https://naodeng.com.cn/wiki/jira) 问题的测试结果：
 
   ```
   import axios from 'axios';
@@ -541,13 +538,13 @@ Scrum
     return response.data;
   };
   ```
-通过将 [Jira](../J/jira.md) 与 e2e [test automation](../T/test-automation.md) 工具集成，团队可以**跟踪 [test coverage](../T/test-coverage.md)**、**监控测试结果**，并在用户故事和任务的背景下**简化 [bug](../B/bug.md) 跟踪**，从而增强整个 [quality assurance](../Q/quality-assurance.md) 流程。
+通过将 [Jira](https://naodeng.com.cn/wiki/jira) 与 e2e [test automation](https://naodeng.com.cn/wiki/test-automation) 工具集成，团队可以**跟踪 [test coverage](https://naodeng.com.cn/wiki/test-coverage)**、**监控测试结果**，并在用户故事和任务的背景下**简化 [bug](https://naodeng.com.cn/wiki/bug) 跟踪**，从而增强整个 [quality assurance](https://naodeng.com.cn/wiki/quality-assurance) 流程。
 
 ## # 高级用法
 
 ### # 如何使用 Jira 进行敏捷项目管理？
 
-使用 **[Jira](../J/jira.md)** 进行敏捷项目管理涉及利用其功能来规划、跟踪和发布软件。方法如下：
+使用 **[Jira](https://naodeng.com.cn/wiki/jira)** 进行敏捷项目管理涉及利用其功能来规划、跟踪和发布软件。方法如下：
 
 - **冲刺**：将工作组织成冲刺，这是必须完成特定工作并准备好进行审查的固定时间段。
   - **待办事项整理**：优先考虑并管理您的产品待办事项，创建用户故事和任务，并使用故事点或时间估计来估计工作量。
@@ -557,12 +554,12 @@ Scrum
   - **史诗管理**：将相关的用户故事分组到史诗下，以跟踪更大功能或计划的进度。
   - **发布计划**：通过将问题分配给版本并跟踪完成进度来计划发布。
   - **敏捷报告**：利用速度图、冲刺报告和累积流程图等一系列报告来分析团队绩效和项目进度。
-  与自动化工具集成，直接从 [Jira](../J/jira.md) 问题触发构建、测试和部署，并根据测试结果或部署成功更新问题状态。使用 [Jira](../J/jira.md) 查询语言 (JQL) 创建过滤器和仪表板，提供对测试进度和质量指标的实时洞察。
+  与自动化工具集成，直接从 [Jira](https://naodeng.com.cn/wiki/jira) 问题触发构建、测试和部署，并根据测试结果或部署成功更新问题状态。使用 [Jira](https://naodeng.com.cn/wiki/jira) 查询语言 (JQL) 创建过滤器和仪表板，提供对测试进度和质量指标的实时洞察。
 
   ```
   status = "In Progress" AND project = "AUT" AND assignee = currentUser()
   ```
-请记住定期审查和调整您的[Jira](../J/jira.md) [setup](../S/setup.md) 以反映团队敏捷流程中的变化。
+请记住定期审查和调整您的[Jira](https://naodeng.com.cn/wiki/jira) [setup](https://naodeng.com.cn/wiki/setup) 以反映团队敏捷流程中的变化。
 
 - **冲刺**：将工作组织成冲刺，这是必须完成特定工作并准备好进行审查的固定时间段。
   - **待办事项整理**：优先考虑并管理您的产品待办事项，创建用户故事和任务，并使用故事点或时间估计来估计工作量。
@@ -575,50 +572,50 @@ Scrum
 
 #### Jira 有哪些对软件自动化有用的高级功能？
 
-[Jira](../J/jira.md) 对软件 [test automation](../T/test-automation.md) 有用的高级功能包括：
+[Jira](https://naodeng.com.cn/wiki/jira) 对软件 [test automation](https://naodeng.com.cn/wiki/test-automation) 有用的高级功能包括：
 
-- **自动化规则**：创建自定义规则以自动执行重复性任务，例如测试完成后转换问题或将 [bugs](../B/bug.md) 分配给开发人员。
+- **自动化规则**：创建自定义规则以自动执行重复性任务，例如测试完成后转换问题或将 [bugs](https://naodeng.com.cn/wiki/bug) 分配给开发人员。
 
     ```
     when Issue transitioned to 'Done'
     then Assign issue to DEVELOPER
     ```
-- **CI/CD 集成**：将 [Jira](../J/jira.md) 与 CI/CD 工具（如 Jenkins 或 Bamboo）连接，以直接在问题中跟踪构建和部署状态。
-  - **[Test Management](../T/test-management.md) 附加组件**：利用 Zephyr 或 Xray 等附加组件来增强 [test case management](../T/test-case-management.md)、执行跟踪和详细报告。
-  - **智能提交**：使用智能提交语法将提交、分支和拉取请求链接到 [Jira](../J/jira.md) 问题以实现可追溯性。
+- **CI/CD 集成**：将 [Jira](https://naodeng.com.cn/wiki/jira) 与 CI/CD 工具（如 Jenkins 或 Bamboo）连接，以直接在问题中跟踪构建和部署状态。
+  - **[Test Management](https://naodeng.com.cn/wiki/test-management) 附加组件**：利用 Zephyr 或 Xray 等附加组件来增强 [test case management](https://naodeng.com.cn/wiki/test-case-management)、执行跟踪和详细报告。
+  - **智能提交**：使用智能提交语法将提交、分支和拉取请求链接到 [Jira](https://naodeng.com.cn/wiki/jira) 问题以实现可追溯性。
 
     ```
     git commit -m "PROJ-123 add login test - #done #comment Test added"
     ```
-- **高级搜索 (JQL)**：使用 [Jira](../J/jira.md) 查询语言进行复杂搜索，例如查找自动化测试失败的所有问题。
+- **高级搜索 (JQL)**：使用 [Jira](https://naodeng.com.cn/wiki/jira) 查询语言进行复杂搜索，例如查找自动化测试失败的所有问题。
   - **自定义仪表板**：使用小工具配置仪表板以监控自动化结果、冲刺运行状况或版本发布进度。
-  - **REST [API](../A/api.md)**：通过REST [API](../A/api.md) 将自定义自动化框架或工具与[Jira](../J/jira.md) 集成，以实现测试结果和问题的无缝同步。
+  - **REST [API](https://naodeng.com.cn/wiki/api)**：通过REST [API](https://naodeng.com.cn/wiki/api) 将自定义自动化框架或工具与[Jira](https://naodeng.com.cn/wiki/jira) 集成，以实现测试结果和问题的无缝同步。
   - **实时通知**：通过电子邮件、Slack 或其他消息平台设置通知，以提醒团队有关自动化测试结果或问题更新。
-  - **版本控制**：跟踪 [test case](../T/test-case.md) 版本和随时间的变化，确保测试与应用程序版本保持同步。
+  - **版本控制**：跟踪 [test case](https://naodeng.com.cn/wiki/test-case) 版本和随时间的变化，确保测试与应用程序版本保持同步。
   - **批量更改**：对问题执行批量操作以更新测试状态或在自动化运行后重新分配任务。
-  - **自动化规则**：创建自定义规则以自动执行重复性任务，例如测试完成后转换问题或将 [bugs](../B/bug.md) 分配给开发人员。
+  - **自动化规则**：创建自定义规则以自动执行重复性任务，例如测试完成后转换问题或将 [bugs](https://naodeng.com.cn/wiki/bug) 分配给开发人员。
 
     ```
     when Issue transitioned to 'Done'
     then Assign issue to DEVELOPER
     ```
-- **CI/CD 集成**：将 [Jira](../J/jira.md) 与 CI/CD 工具（如 Jenkins 或 Bamboo）连接，以直接在问题中跟踪构建和部署状态。
-  - **[Test Management](../T/test-management.md) 附加组件**：利用 Zephyr 或 Xray 等附加组件来增强 [test case management](../T/test-case-management.md)、执行跟踪和详细报告。
-  - **智能提交**：使用智能提交语法将提交、分支和拉取请求链接到 [Jira](../J/jira.md) 问题以实现可追溯性。
+- **CI/CD 集成**：将 [Jira](https://naodeng.com.cn/wiki/jira) 与 CI/CD 工具（如 Jenkins 或 Bamboo）连接，以直接在问题中跟踪构建和部署状态。
+  - **[Test Management](https://naodeng.com.cn/wiki/test-management) 附加组件**：利用 Zephyr 或 Xray 等附加组件来增强 [test case management](https://naodeng.com.cn/wiki/test-case-management)、执行跟踪和详细报告。
+  - **智能提交**：使用智能提交语法将提交、分支和拉取请求链接到 [Jira](https://naodeng.com.cn/wiki/jira) 问题以实现可追溯性。
 
     ```
     git commit -m "PROJ-123 add login test - #done #comment Test added"
     ```
-- **高级搜索 (JQL)**：使用 [Jira](../J/jira.md) 查询语言进行复杂搜索，例如查找自动化测试失败的所有问题。
+- **高级搜索 (JQL)**：使用 [Jira](https://naodeng.com.cn/wiki/jira) 查询语言进行复杂搜索，例如查找自动化测试失败的所有问题。
   - **自定义仪表板**：使用小工具配置仪表板以监控自动化结果、冲刺运行状况或版本发布进度。
-  - **REST [API](../A/api.md)**：通过REST [API](../A/api.md) 将自定义自动化框架或工具与[Jira](../J/jira.md) 集成，以实现测试结果和问题的无缝同步。
+  - **REST [API](https://naodeng.com.cn/wiki/api)**：通过REST [API](https://naodeng.com.cn/wiki/api) 将自定义自动化框架或工具与[Jira](https://naodeng.com.cn/wiki/jira) 集成，以实现测试结果和问题的无缝同步。
   - **实时通知**：通过电子邮件、Slack 或其他消息平台设置通知，以提醒团队有关自动化测试结果或问题更新。
-  - **版本控制**：跟踪 [test case](../T/test-case.md) 版本和随时间的变化，确保测试与应用程序版本保持同步。
+  - **版本控制**：跟踪 [test case](https://naodeng.com.cn/wiki/test-case) 版本和随时间的变化，确保测试与应用程序版本保持同步。
   - **批量更改**：对问题执行批量操作以更新测试状态或在自动化运行后重新分配任务。
 
 ### # 如何使用Jira 跟踪软件开发进度？
 
-要跟踪 [Jira](../J/jira.md) 中的软件开发进度，请利用 **仪表板** 和 **板** 功能。仪表板提供了项目指标和状态报告的可定制概述，而面板（尤其是敏捷项目中的面板）提供了工作流程的可视化表示。
+要跟踪 [Jira](https://naodeng.com.cn/wiki/jira) 中的软件开发进度，请利用 **仪表板** 和 **板** 功能。仪表板提供了项目指标和状态报告的可定制概述，而面板（尤其是敏捷项目中的面板）提供了工作流程的可视化表示。
   **仪表板**可以配备各种**小工具**来显示：
 
 - **燃尽图/燃尽图**
@@ -632,16 +629,16 @@ Scrum
 
 - **累积流程图**
     可视化问题状态随时间的分布情况，突出显示瓶颈。
-  **板**有两种风格：**[Scrum](../S/scrum.md)** 和 **看板**。
+  **板**有两种风格：**[Scrum](https://naodeng.com.cn/wiki/scrum)** 和 **看板**。
 
-- **[Scrum](../S/scrum.md) 板**
+- **[Scrum](https://naodeng.com.cn/wiki/scrum) 板**
     用于冲刺，显示当前冲刺中的问题并允许您开始、完成和发布冲刺。
 
 - **看板**
     提供连续的流程，其中的列代表开发过程中的各个阶段。可以设置 WIP（正在进行中的工作）限制以防止阶段超载。
   使用 **过滤器** 根据特定条件（例如受让人、状态或冲刺）创建问题的自定义视图。过滤器可以保存和共享。
-  板上的**快速过滤器**允许您进一步细化可见问题，例如仅显示 [bugs](../B/bug.md) 或特定功能的任务。
-  [Jira](../J/jira.md) 中的 **报告** 部分提供了预构建的报告，可以更深入地了解问题生命周期、版本报告和时间跟踪等各个方面。
+  板上的**快速过滤器**允许您进一步细化可见问题，例如仅显示 [bugs](https://naodeng.com.cn/wiki/bug) 或特定功能的任务。
+  [Jira](https://naodeng.com.cn/wiki/jira) 中的 **报告** 部分提供了预构建的报告，可以更深入地了解问题生命周期、版本报告和时间跟踪等各个方面。
   通过工作流程中的**转换后功能**自动更新状态，以减少手动工作并确保实时跟踪。
   定期检查和调整主板的配置和仪表板小工具，以确保它们反映与项目当前状态最相关的信息。
 
@@ -657,7 +654,7 @@ Scrum
 - **累积流程图**
     可视化问题状态随时间的分布情况，突出显示瓶颈。
 
-- **[Scrum](../S/scrum.md) 板**
+- **[Scrum](https://naodeng.com.cn/wiki/scrum) 板**
     用于冲刺，显示当前冲刺中的问题并允许您开始、完成和发布冲刺。
 
 - **看板**
@@ -665,7 +662,7 @@ Scrum
 
 ### # 有效使用 Jira 有哪些最佳实践？
 
-要有效使用[Jira](../J/jira.md)：
+要有效使用[Jira](https://naodeng.com.cn/wiki/jira)：
 
 - **定义清晰的命名约定**
     对于问题、史诗和冲刺，以确保一致性和易于理解。
@@ -673,7 +670,7 @@ Scrum
 - **利用过滤器和仪表板**
     快速访问相关信息并监控关键指标。
 
-- **利用 [Jira](../J/jira.md) 查询语言 (JQL)**
+- **利用 [Jira](https://naodeng.com.cn/wiki/jira) 查询语言 (JQL)**
     创建可以保存和共享的高级搜索。
 
 - **自动化重复任务**
@@ -705,7 +702,7 @@ Scrum
 
 - **跟踪花费的时间**
     深入了解工作量估算的准确性和团队生产力。
-  通过坚持这些实践，团队可以最大限度地发挥 [Jira](../J/jira.md) 对 [test automation](../T/test-automation.md) 和整体项目管理的好处。
+  通过坚持这些实践，团队可以最大限度地发挥 [Jira](https://naodeng.com.cn/wiki/jira) 对 [test automation](https://naodeng.com.cn/wiki/test-automation) 和整体项目管理的好处。
 
 - **定义清晰的命名约定**
     对于问题、史诗和冲刺，以确保一致性和易于理解。
@@ -713,7 +710,7 @@ Scrum
 - **利用过滤器和仪表板**
     快速访问相关信息并监控关键指标。
 
-- **利用 [Jira](../J/jira.md) 查询语言 (JQL)**
+- **利用 [Jira](https://naodeng.com.cn/wiki/jira) 查询语言 (JQL)**
     创建可以保存和共享的高级搜索。
 
 - **自动化重复任务**

@@ -1,6 +1,5 @@
 # Reviewer
 
-
 <!-- TOC START -->
 - [Questions about Reviewer ?](#questions-about-reviewer)
   - [Basics and Importance](#basics-and-importance)
@@ -39,22 +38,22 @@ bugs
 
 #### What is the role of a reviewer in software automation?
 
-  In software [test automation](../T/test-automation.md), a [reviewer](../R/reviewer.md)'s role extends beyond basic responsibilities to ensure the quality and reliability of automated tests. [Reviewers](../R/reviewer.md) bring **critical analysis** to [test cases](../T/test-case.md), scrutinizing them for **accuracy**, **relevance**, and **completeness**. They leverage their **technical expertise** to assess the robustness of [test scripts](../T/test-script.md), ensuring they align with the software's architecture and business requirements.
-  [Reviewers](../R/reviewer.md) must possess a **deep understanding** of the software being tested and the **automation tools** in use. This knowledge enables them to provide **insightful feedback** and **recommend improvements** to the automation strategy. They are instrumental in **maintaining [test suites](../T/test-suite.md)**, keeping them **up-to-date** with changing requirements.
-  When issues arise, [reviewers](../R/reviewer.md) are tasked with **validating [bugs](../B/bug.md)** and ensuring they are **documented** and **communicated** effectively to the development team. They follow a **systematic approach** to reproduce issues, often using **debugging techniques** to pinpoint the root cause.
-  [Reviewers](../R/reviewer.md) utilize a variety of **tools and platforms**, such as [Selenium](../S/selenium.md), Appium, or [Cypress](../C/cypress.md), to enhance the testing process. They are adept at overcoming challenges like **[flaky tests](../F/flaky-test.md)** or **environment inconsistencies** by implementing **best practices** and **innovative solutions**.
-  In essence, [reviewers](../R/reviewer.md) act as **gatekeepers** of [test automation](../T/test-automation.md) quality, applying their skills to **optimize** the testing process and **ensure** that the end-to-end (e2e) testing delivers **reliable** and **actionable results**.
+  In software [test automation](https://naodeng.com.cn/en/wiki/test-automation), a [reviewer](https://naodeng.com.cn/en/wiki/reviewer)'s role extends beyond basic responsibilities to ensure the quality and reliability of automated tests. [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) bring **critical analysis** to [test cases](https://naodeng.com.cn/en/wiki/test-case), scrutinizing them for **accuracy**, **relevance**, and **completeness**. They leverage their **technical expertise** to assess the robustness of [test scripts](https://naodeng.com.cn/en/wiki/test-script), ensuring they align with the software's architecture and business requirements.
+  [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) must possess a **deep understanding** of the software being tested and the **automation tools** in use. This knowledge enables them to provide **insightful feedback** and **recommend improvements** to the automation strategy. They are instrumental in **maintaining [test suites](https://naodeng.com.cn/en/wiki/test-suite)**, keeping them **up-to-date** with changing requirements.
+  When issues arise, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) are tasked with **validating [bugs](https://naodeng.com.cn/en/wiki/bug)** and ensuring they are **documented** and **communicated** effectively to the development team. They follow a **systematic approach** to reproduce issues, often using **debugging techniques** to pinpoint the root cause.
+  [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) utilize a variety of **tools and platforms**, such as [Selenium](https://naodeng.com.cn/en/wiki/selenium), Appium, or [Cypress](https://naodeng.com.cn/en/wiki/cypress), to enhance the testing process. They are adept at overcoming challenges like **[flaky tests](https://naodeng.com.cn/en/wiki/flaky-test)** or **environment inconsistencies** by implementing **best practices** and **innovative solutions**.
+  In essence, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) act as **gatekeepers** of [test automation](https://naodeng.com.cn/en/wiki/test-automation) quality, applying their skills to **optimize** the testing process and **ensure** that the end-to-end (e2e) testing delivers **reliable** and **actionable results**.
 
 #### Why is a reviewer important in e2e testing?
 
-  A [reviewer](../R/reviewer.md) is crucial in **end-to-end (e2e) testing** to ensure the **accuracy** and **quality** of [test cases](../T/test-case.md) and the software being tested. They bring a **fresh perspective** to the [test scenarios](../T/test-scenario.md), often catching **oversights** or **misinterpretations** of the requirements that the original author might miss. By critically evaluating [test plans](../T/test-plan.md) and cases, [reviewers](../R/reviewer.md) help to **validate** the testing strategy and **confirm** that all critical user flows are covered.
-  [Reviewers](../R/reviewer.md) also play a key role in **maintaining test standards** and **best practices**, ensuring that the automation scripts are **reliable**, **maintainable**, and **efficient**. Their technical expertise allows them to suggest **optimizations** and **improvements** in the [test automation](../T/test-automation.md) code, which can lead to more **effective** and **scalable** [test suites](../T/test-suite.md).
-  When issues or [bugs](../B/bug.md) are identified, [reviewers](../R/reviewer.md) help to **triage** and **prioritize** them, facilitating a **structured approach** to issue resolution. They ensure that the defects are **documented** clearly and that the **impact** on the system is well understood, aiding in a swift and appropriate response.
-  In summary, the [reviewer](../R/reviewer.md)'s role is to **enhance the testing process** by ensuring comprehensive coverage, maintaining high standards, and fostering a **collaborative approach** to [quality assurance](../Q/quality-assurance.md) in e2e testing.
+  A [reviewer](https://naodeng.com.cn/en/wiki/reviewer) is crucial in **end-to-end (e2e) testing** to ensure the **accuracy** and **quality** of [test cases](https://naodeng.com.cn/en/wiki/test-case) and the software being tested. They bring a **fresh perspective** to the [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario), often catching **oversights** or **misinterpretations** of the requirements that the original author might miss. By critically evaluating [test plans](https://naodeng.com.cn/en/wiki/test-plan) and cases, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) help to **validate** the testing strategy and **confirm** that all critical user flows are covered.
+  [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) also play a key role in **maintaining test standards** and **best practices**, ensuring that the automation scripts are **reliable**, **maintainable**, and **efficient**. Their technical expertise allows them to suggest **optimizations** and **improvements** in the [test automation](https://naodeng.com.cn/en/wiki/test-automation) code, which can lead to more **effective** and **scalable** [test suites](https://naodeng.com.cn/en/wiki/test-suite).
+  When issues or [bugs](https://naodeng.com.cn/en/wiki/bug) are identified, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) help to **triage** and **prioritize** them, facilitating a **structured approach** to issue resolution. They ensure that the defects are **documented** clearly and that the **impact** on the system is well understood, aiding in a swift and appropriate response.
+  In summary, the [reviewer](https://naodeng.com.cn/en/wiki/reviewer)'s role is to **enhance the testing process** by ensuring comprehensive coverage, maintaining high standards, and fostering a **collaborative approach** to [quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance) in e2e testing.
 
 #### What are the basic responsibilities of a reviewer in software testing?
 
-  Basic responsibilities of a [reviewer](../R/reviewer.md) in software [test automation](../T/test-automation.md) include:
+  Basic responsibilities of a [reviewer](https://naodeng.com.cn/en/wiki/reviewer) in software [test automation](https://naodeng.com.cn/en/wiki/test-automation) include:
 
   - **Verifying**
     the accuracy and completeness of test cases and scripts against specified requirements and design documents.
@@ -131,7 +130,7 @@ bugs
 
 #### What skills are required to be an effective reviewer in software automation?
 
-  To be an effective [reviewer](../R/reviewer.md) in software [test automation](../T/test-automation.md), certain skills are essential:
+  To be an effective [reviewer](https://naodeng.com.cn/en/wiki/reviewer) in software [test automation](https://naodeng.com.cn/en/wiki/test-automation), certain skills are essential:
 
   - **Critical thinking**
     to evaluate test cases, scripts, and results for completeness and effectiveness.
@@ -226,23 +225,23 @@ bugs
 
 #### What qualifications are typically required for a reviewer in e2e testing?
 
-  Typically, a [reviewer](../R/reviewer.md) in end-to-end (e2e) testing should possess the following qualifications:
+  Typically, a [reviewer](https://naodeng.com.cn/en/wiki/reviewer) in end-to-end (e2e) testing should possess the following qualifications:
 
   - **Professional experience**
     in software testing, with a focus on e2e test scenarios.
 
   - A solid understanding of
-    **[software development life cycle](../S/software-development-life-cycle.md)**
+    **[software development life cycle](https://naodeng.com.cn/en/wiki/software-development-life-cycle)**
     (SDLC) and
     **testing methodologies**
     .
 
   - Proficiency in
-    **[test automation](../T/test-automation.md) tools**
+    **[test automation](https://naodeng.com.cn/en/wiki/test-automation) tools**
     and frameworks relevant to e2e testing, such as Selenium, Cypress, or Playwright.
 
   - Ability to write and review
-    **[test scripts](../T/test-script.md)**
+    **[test scripts](https://naodeng.com.cn/en/wiki/test-script)**
     in programming languages commonly used in test automation, like JavaScript, Python, or Java.
 
   - Familiarity with
@@ -259,7 +258,7 @@ bugs
     like JIRA or Bugzilla, to document and track defects.
 
   - Understanding of
-    **[quality assurance](../Q/quality-assurance.md) metrics**
+    **[quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance) metrics**
     and how to use them to evaluate the effectiveness of testing.
 
   - Excellent
@@ -269,23 +268,23 @@ bugs
   - A background in
     **risk management**
     to prioritize testing efforts based on potential impact.
-  [Reviewers](../R/reviewer.md) should also be adept at working in **agile environments**, adapting to rapid changes, and maintaining a high level of detail orientation to ensure comprehensive e2e [test coverage](../T/test-coverage.md).
+  [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) should also be adept at working in **agile environments**, adapting to rapid changes, and maintaining a high level of detail orientation to ensure comprehensive e2e [test coverage](https://naodeng.com.cn/en/wiki/test-coverage).
 
   - **Professional experience**
     in software testing, with a focus on e2e test scenarios.
 
   - A solid understanding of
-    **[software development life cycle](../S/software-development-life-cycle.md)**
+    **[software development life cycle](https://naodeng.com.cn/en/wiki/software-development-life-cycle)**
     (SDLC) and
     **testing methodologies**
     .
 
   - Proficiency in
-    **[test automation](../T/test-automation.md) tools**
+    **[test automation](https://naodeng.com.cn/en/wiki/test-automation) tools**
     and frameworks relevant to e2e testing, such as Selenium, Cypress, or Playwright.
 
   - Ability to write and review
-    **[test scripts](../T/test-script.md)**
+    **[test scripts](https://naodeng.com.cn/en/wiki/test-script)**
     in programming languages commonly used in test automation, like JavaScript, Python, or Java.
 
   - Familiarity with
@@ -302,7 +301,7 @@ bugs
     like JIRA or Bugzilla, to document and track defects.
 
   - Understanding of
-    **[quality assurance](../Q/quality-assurance.md) metrics**
+    **[quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance) metrics**
     and how to use them to evaluate the effectiveness of testing.
 
   - Excellent
@@ -315,15 +314,15 @@ bugs
 
 #### How does a reviewer's technical knowledge contribute to the e2e testing process?
 
-  A [reviewer](../R/reviewer.md)'s **technical knowledge** is pivotal in **e2e testing** as it directly influences the **quality** and **effectiveness** of the [test scenarios](../T/test-scenario.md). With a deep understanding of the system architecture and technology stack, a [reviewer](../R/reviewer.md) can:
+  A [reviewer](https://naodeng.com.cn/en/wiki/reviewer)'s **technical knowledge** is pivotal in **e2e testing** as it directly influences the **quality** and **effectiveness** of the [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario). With a deep understanding of the system architecture and technology stack, a [reviewer](https://naodeng.com.cn/en/wiki/reviewer) can:
 
   - **Identify critical integration points**
     and ensure they are adequately tested.
 
-  - **Optimize [test coverage](../T/test-coverage.md)**
+  - **Optimize [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)**
     by recognizing system components that might be affected by changes, thus preventing over-testing or under-testing.
 
-  - **Enhance [test scripts](../T/test-script.md)**
+  - **Enhance [test scripts](https://naodeng.com.cn/en/wiki/test-script)**
     by incorporating advanced techniques and best practices that align with the application's technical nuances.
 
   - **Troubleshoot issues**
@@ -331,7 +330,7 @@ bugs
 
   - **Assess test results**
     with a keen eye, distinguishing between genuine defects and false positives caused by environmental issues or test data inconsistencies.
-  Technical expertise also enables a [reviewer](../R/reviewer.md) to:
+  Technical expertise also enables a [reviewer](https://naodeng.com.cn/en/wiki/reviewer) to:
 
   - **Refine automated tests**
     for better reliability and maintainability, using patterns like Page Object Model (POM) or Screenplay Pattern.
@@ -357,15 +356,15 @@ bugs
     }
   }
   ```
-  In essence, a [reviewer](../R/reviewer.md)'s technical acumen is instrumental in crafting **robust**, **scalable**, and **efficient** e2e tests that align with the application's complexity and technological demands.
+  In essence, a [reviewer](https://naodeng.com.cn/en/wiki/reviewer)'s technical acumen is instrumental in crafting **robust**, **scalable**, and **efficient** e2e tests that align with the application's complexity and technological demands.
 
   - **Identify critical integration points**
     and ensure they are adequately tested.
 
-  - **Optimize [test coverage](../T/test-coverage.md)**
+  - **Optimize [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)**
     by recognizing system components that might be affected by changes, thus preventing over-testing or under-testing.
 
-  - **Enhance [test scripts](../T/test-script.md)**
+  - **Enhance [test scripts](https://naodeng.com.cn/en/wiki/test-script)**
     by incorporating advanced techniques and best practices that align with the application's technical nuances.
 
   - **Troubleshoot issues**
@@ -384,14 +383,14 @@ bugs
 
 #### What is the process a reviewer follows in e2e testing?
 
-  The process a [reviewer](../R/reviewer.md) follows in e2e testing typically involves:
+  The process a [reviewer](https://naodeng.com.cn/en/wiki/reviewer) follows in e2e testing typically involves:
 
-  1. **Reviewing [test plans](../T/test-plan.md) and cases** : Ensuring they align with user stories and acceptance criteria.
-  2. **Analyzing [test environments](../T/test-environment.md)** : Confirming they mirror production settings.
+  1. **Reviewing [test plans](https://naodeng.com.cn/en/wiki/test-plan) and cases** : Ensuring they align with user stories and acceptance criteria.
+  2. **Analyzing [test environments](https://naodeng.com.cn/en/wiki/test-environment)** : Confirming they mirror production settings.
   3. **Evaluating automated scripts** : Checking for adherence to coding standards and best practices.
-  4. **Monitoring [test execution](../T/test-execution.md)** : Observing runs for unexpected behavior or failures.
-  5. **Assessing [test coverage](../T/test-coverage.md)** : Verifying that all features have been thoroughly tested.
-  6. **Validating [bug](../B/bug.md) reports** : Ensuring issues are accurately documented and reproducible.
+  4. **Monitoring [test execution](https://naodeng.com.cn/en/wiki/test-execution)** : Observing runs for unexpected behavior or failures.
+  5. **Assessing [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Verifying that all features have been thoroughly tested.
+  6. **Validating [bug](https://naodeng.com.cn/en/wiki/bug) reports** : Ensuring issues are accurately documented and reproducible.
   7. **Collaborating with developers** : Discussing findings and potential fixes.
   8. **Reviewing test results** : Interpreting logs and reports to confirm the software's readiness.
   9. **Ensuring traceability** : Mapping tests to requirements for coverage confirmation.
@@ -409,14 +408,14 @@ bugs
     });
   });
   ```
-  In this example, the [reviewer](../R/reviewer.md) would ensure the script is clean, maintainable, and accurately reflects the user journey from login to dashboard access.
+  In this example, the [reviewer](https://naodeng.com.cn/en/wiki/reviewer) would ensure the script is clean, maintainable, and accurately reflects the user journey from login to dashboard access.
 
-  1. **Reviewing [test plans](../T/test-plan.md) and cases** : Ensuring they align with user stories and acceptance criteria.
-  2. **Analyzing [test environments](../T/test-environment.md)** : Confirming they mirror production settings.
+  1. **Reviewing [test plans](https://naodeng.com.cn/en/wiki/test-plan) and cases** : Ensuring they align with user stories and acceptance criteria.
+  2. **Analyzing [test environments](https://naodeng.com.cn/en/wiki/test-environment)** : Confirming they mirror production settings.
   3. **Evaluating automated scripts** : Checking for adherence to coding standards and best practices.
-  4. **Monitoring [test execution](../T/test-execution.md)** : Observing runs for unexpected behavior or failures.
-  5. **Assessing [test coverage](../T/test-coverage.md)** : Verifying that all features have been thoroughly tested.
-  6. **Validating [bug](../B/bug.md) reports** : Ensuring issues are accurately documented and reproducible.
+  4. **Monitoring [test execution](https://naodeng.com.cn/en/wiki/test-execution)** : Observing runs for unexpected behavior or failures.
+  5. **Assessing [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Verifying that all features have been thoroughly tested.
+  6. **Validating [bug](https://naodeng.com.cn/en/wiki/bug) reports** : Ensuring issues are accurately documented and reproducible.
   7. **Collaborating with developers** : Discussing findings and potential fixes.
   8. **Reviewing test results** : Interpreting logs and reports to confirm the software's readiness.
   9. **Ensuring traceability** : Mapping tests to requirements for coverage confirmation.
@@ -424,40 +423,40 @@ bugs
 
 #### What techniques does a reviewer use to ensure thorough testing?
 
-  To ensure thorough testing, [reviewers](../R/reviewer.md) employ various techniques:
+  To ensure thorough testing, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) employ various techniques:
 
   - **Code Review** : Scrutinize test scripts for logic errors, adherence to coding standards, and optimization opportunities.
-  - **[Risk-Based Testing](../R/risk-based-testing.md)** : Prioritize test cases based on potential impact and likelihood of defects.
-  - **[Test Coverage](../T/test-coverage.md) Analysis** : Use tools to measure the extent of testing, ensuring all paths and conditions are covered.
+  - **[Risk-Based Testing](https://naodeng.com.cn/en/wiki/risk-based-testing)** : Prioritize test cases based on potential impact and likelihood of defects.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage) Analysis** : Use tools to measure the extent of testing, ensuring all paths and conditions are covered.
   - **Heuristic Evaluation** : Apply experience-based techniques to identify potential problem areas not covered by existing tests.
   - **Peer Review** : Collaborate with other engineers to gain different perspectives and uncover issues that might be overlooked.
   - **Static Analysis Tools** : Utilize these tools to detect potential vulnerabilities and code quality issues before runtime.
-  - **[Test Data](../T/test-data.md) Review** : Ensure test data is representative of production data to catch edge cases and data-driven bugs.
-  - **Automated [Regression Testing](../R/regression-testing.md)** : Continuously run regression tests to catch new defects in previously tested code.
-  - **[Exploratory Testing](../E/exploratory-testing.md)** : Supplement automated tests with manual exploration to identify issues that scripted tests may miss.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Review** : Ensure test data is representative of production data to catch edge cases and data-driven bugs.
+  - **Automated [Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Continuously run regression tests to catch new defects in previously tested code.
+  - **[Exploratory Testing](https://naodeng.com.cn/en/wiki/exploratory-testing)** : Supplement automated tests with manual exploration to identify issues that scripted tests may miss.
   - **Performance Monitoring** : Track system performance during tests to identify potential bottlenecks and scalability issues.
-  - **[Test Environment](../T/test-environment.md) Review** : Verify that the test environment closely mirrors production to ensure accurate test results.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment) Review** : Verify that the test environment closely mirrors production to ensure accurate test results.
   - **Feedback Loop** : Implement a system for rapid feedback on test results to enable quick iteration and resolution of issues.
-  By integrating these techniques, [reviewers](../R/reviewer.md) can enhance the effectiveness and thoroughness of the [test automation](../T/test-automation.md) process.
+  By integrating these techniques, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) can enhance the effectiveness and thoroughness of the [test automation](https://naodeng.com.cn/en/wiki/test-automation) process.
 
   - **Code Review** : Scrutinize test scripts for logic errors, adherence to coding standards, and optimization opportunities.
-  - **[Risk-Based Testing](../R/risk-based-testing.md)** : Prioritize test cases based on potential impact and likelihood of defects.
-  - **[Test Coverage](../T/test-coverage.md) Analysis** : Use tools to measure the extent of testing, ensuring all paths and conditions are covered.
+  - **[Risk-Based Testing](https://naodeng.com.cn/en/wiki/risk-based-testing)** : Prioritize test cases based on potential impact and likelihood of defects.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage) Analysis** : Use tools to measure the extent of testing, ensuring all paths and conditions are covered.
   - **Heuristic Evaluation** : Apply experience-based techniques to identify potential problem areas not covered by existing tests.
   - **Peer Review** : Collaborate with other engineers to gain different perspectives and uncover issues that might be overlooked.
   - **Static Analysis Tools** : Utilize these tools to detect potential vulnerabilities and code quality issues before runtime.
-  - **[Test Data](../T/test-data.md) Review** : Ensure test data is representative of production data to catch edge cases and data-driven bugs.
-  - **Automated [Regression Testing](../R/regression-testing.md)** : Continuously run regression tests to catch new defects in previously tested code.
-  - **[Exploratory Testing](../E/exploratory-testing.md)** : Supplement automated tests with manual exploration to identify issues that scripted tests may miss.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Review** : Ensure test data is representative of production data to catch edge cases and data-driven bugs.
+  - **Automated [Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Continuously run regression tests to catch new defects in previously tested code.
+  - **[Exploratory Testing](https://naodeng.com.cn/en/wiki/exploratory-testing)** : Supplement automated tests with manual exploration to identify issues that scripted tests may miss.
   - **Performance Monitoring** : Track system performance during tests to identify potential bottlenecks and scalability issues.
-  - **[Test Environment](../T/test-environment.md) Review** : Verify that the test environment closely mirrors production to ensure accurate test results.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment) Review** : Verify that the test environment closely mirrors production to ensure accurate test results.
   - **Feedback Loop** : Implement a system for rapid feedback on test results to enable quick iteration and resolution of issues.
 
 #### How does a reviewer handle issues or bugs found during e2e testing?
 
-  When a [reviewer](../R/reviewer.md) encounters **[bugs](../B/bug.md)** during end-to-end (e2e) testing, they typically follow a **structured approach** to ensure these issues are addressed effectively:
+  When a [reviewer](https://naodeng.com.cn/en/wiki/reviewer) encounters **[bugs](https://naodeng.com.cn/en/wiki/bug)** during end-to-end (e2e) testing, they typically follow a **structured approach** to ensure these issues are addressed effectively:
 
-  1. **Document** the [bug](../B/bug.md) with clear and concise details, including steps to reproduce, expected vs. [actual results](../A/actual-result.md), and screenshots or videos if applicable.
+  1. **Document** the [bug](https://naodeng.com.cn/en/wiki/bug) with clear and concise details, including steps to reproduce, expected vs. [actual results](https://naodeng.com.cn/en/wiki/actual-result), and screenshots or videos if applicable.
 
     ```
     - **Issue**: Login fails with correct credentials
@@ -470,14 +469,14 @@ bugs
     - **Attachments**: Screenshot of the error
     ```
 
-  2. **Prioritize** the issue based on its [severity](../S/severity.md) and impact on the application's functionality.
-  3. **Log** the [bug](../B/bug.md) in the project's issue tracking system, such as [JIRA](../J/jira.md) or GitHub Issues, for visibility and tracking.
+  2. **Prioritize** the issue based on its [severity](https://naodeng.com.cn/en/wiki/severity) and impact on the application's functionality.
+  3. **Log** the [bug](https://naodeng.com.cn/en/wiki/bug) in the project's issue tracking system, such as [JIRA](https://naodeng.com.cn/en/wiki/jira) or GitHub Issues, for visibility and tracking.
   4. **Communicate** the findings to the relevant stakeholders, including developers and project managers, to facilitate prompt resolution.
   5. **Collaborate** with the development team to ensure they understand the issue and have all necessary information to fix it.
-  6. **Verify** fixes once developers have resolved the issues, ensuring that the [bug](../B/bug.md) is no longer present and that no new issues have been introduced.
-  7. **Update** [test cases](../T/test-case.md) and automation scripts if necessary to include the [bug](../B/bug.md) scenario, strengthening the [test suite](../T/test-suite.md) against future regressions.
+  6. **Verify** fixes once developers have resolved the issues, ensuring that the [bug](https://naodeng.com.cn/en/wiki/bug) is no longer present and that no new issues have been introduced.
+  7. **Update** [test cases](https://naodeng.com.cn/en/wiki/test-case) and automation scripts if necessary to include the [bug](https://naodeng.com.cn/en/wiki/bug) scenario, strengthening the [test suite](https://naodeng.com.cn/en/wiki/test-suite) against future regressions.
   8. **Monitor** the issue post-release, if applicable, to ensure the fix is effective in the production environment.
-  1. **Document** the [bug](../B/bug.md) with clear and concise details, including steps to reproduce, expected vs. [actual results](../A/actual-result.md), and screenshots or videos if applicable.
+  1. **Document** the [bug](https://naodeng.com.cn/en/wiki/bug) with clear and concise details, including steps to reproduce, expected vs. [actual results](https://naodeng.com.cn/en/wiki/actual-result), and screenshots or videos if applicable.
 
     ```
     - **Issue**: Login fails with correct credentials
@@ -490,19 +489,19 @@ bugs
     - **Attachments**: Screenshot of the error
     ```
 
-  2. **Prioritize** the issue based on its [severity](../S/severity.md) and impact on the application's functionality.
-  3. **Log** the [bug](../B/bug.md) in the project's issue tracking system, such as [JIRA](../J/jira.md) or GitHub Issues, for visibility and tracking.
+  2. **Prioritize** the issue based on its [severity](https://naodeng.com.cn/en/wiki/severity) and impact on the application's functionality.
+  3. **Log** the [bug](https://naodeng.com.cn/en/wiki/bug) in the project's issue tracking system, such as [JIRA](https://naodeng.com.cn/en/wiki/jira) or GitHub Issues, for visibility and tracking.
   4. **Communicate** the findings to the relevant stakeholders, including developers and project managers, to facilitate prompt resolution.
   5. **Collaborate** with the development team to ensure they understand the issue and have all necessary information to fix it.
-  6. **Verify** fixes once developers have resolved the issues, ensuring that the [bug](../B/bug.md) is no longer present and that no new issues have been introduced.
-  7. **Update** [test cases](../T/test-case.md) and automation scripts if necessary to include the [bug](../B/bug.md) scenario, strengthening the [test suite](../T/test-suite.md) against future regressions.
+  6. **Verify** fixes once developers have resolved the issues, ensuring that the [bug](https://naodeng.com.cn/en/wiki/bug) is no longer present and that no new issues have been introduced.
+  7. **Update** [test cases](https://naodeng.com.cn/en/wiki/test-case) and automation scripts if necessary to include the [bug](https://naodeng.com.cn/en/wiki/bug) scenario, strengthening the [test suite](https://naodeng.com.cn/en/wiki/test-suite) against future regressions.
   8. **Monitor** the issue post-release, if applicable, to ensure the fix is effective in the production environment.
 
 ### Tools and Technologies
 
 #### What tools does a reviewer typically use in software automation?
 
-  [Reviewers](../R/reviewer.md) in software [test automation](../T/test-automation.md) typically utilize a variety of tools to facilitate their review process. These include:
+  [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) in software [test automation](https://naodeng.com.cn/en/wiki/test-automation) typically utilize a variety of tools to facilitate their review process. These include:
 
   - **Version Control Systems**
     (VCS) like Git, for tracking changes in test scripts and collaborating with team members.
@@ -516,21 +515,21 @@ bugs
   - **Static Code Analysis Tools**
     to detect potential issues in code quality or adherence to coding standards, examples include SonarQube and ESLint.
 
-  - **[Test Management](../T/test-management.md) Tools**
+  - **[Test Management](https://naodeng.com.cn/en/wiki/test-management) Tools**
     such as TestRail or Zephyr, which help in organizing test cases, plans, and runs, and in tracking the status of testing activities.
 
   - **Issue Tracking Systems**
     like JIRA or Bugzilla, for documenting and following up on bugs and issues found during testing.
 
-  - **[Automated Testing](../A/automated-testing.md) Frameworks**
+  - **[Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing) Frameworks**
     and tools (e.g., Selenium, Appium, Cypress) to execute test cases and scripts.
 
-  - **[Performance Testing](../P/performance-testing.md) Tools**
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing) Tools**
     such as JMeter or LoadRunner, to review performance-related test results.
 
-  - **[Security Testing](../S/security-testing.md) Tools**
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing) Tools**
     like OWASP ZAP or Fortify, to ensure that security testing is part of the review process.
-  These tools help [reviewers](../R/reviewer.md) to efficiently manage code quality, collaborate with team members, track issues, and ensure that the software meets the required standards before it is released.
+  These tools help [reviewers](https://naodeng.com.cn/en/wiki/reviewer) to efficiently manage code quality, collaborate with team members, track issues, and ensure that the software meets the required standards before it is released.
 
   - **Version Control Systems**
     (VCS) like Git, for tracking changes in test scripts and collaborating with team members.
@@ -544,28 +543,28 @@ bugs
   - **Static Code Analysis Tools**
     to detect potential issues in code quality or adherence to coding standards, examples include SonarQube and ESLint.
 
-  - **[Test Management](../T/test-management.md) Tools**
+  - **[Test Management](https://naodeng.com.cn/en/wiki/test-management) Tools**
     such as TestRail or Zephyr, which help in organizing test cases, plans, and runs, and in tracking the status of testing activities.
 
   - **Issue Tracking Systems**
     like JIRA or Bugzilla, for documenting and following up on bugs and issues found during testing.
 
-  - **[Automated Testing](../A/automated-testing.md) Frameworks**
+  - **[Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing) Frameworks**
     and tools (e.g., Selenium, Appium, Cypress) to execute test cases and scripts.
 
-  - **[Performance Testing](../P/performance-testing.md) Tools**
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing) Tools**
     such as JMeter or LoadRunner, to review performance-related test results.
 
-  - **[Security Testing](../S/security-testing.md) Tools**
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing) Tools**
     like OWASP ZAP or Fortify, to ensure that security testing is part of the review process.
 
 #### How does a reviewer use technology to improve the e2e testing process?
 
-  [Reviewers](../R/reviewer.md) leverage technology to enhance the end-to-end (e2e) testing process by integrating **Continuous Integration/Continuous Deployment (CI/CD) pipelines**. This allows for automated [test execution](../T/test-execution.md) upon code commits, ensuring immediate feedback on the impact of changes.
-  Utilizing **test orchestration tools** like Jenkins or GitLab CI, [reviewers](../R/reviewer.md) can manage [test suites](../T/test-suite.md) and environments, scheduling tests for optimal coverage and resource utilization. They also employ **containerization** technologies such as Docker to create consistent [test environments](../T/test-environment.md), reducing the "works on my machine" problem.
-  **Cloud-based testing platforms** like [BrowserStack](../B/browserstack.md) or Sauce Labs provide access to a multitude of browser and OS combinations, ensuring that e2e tests cover the full spectrum of user scenarios. [Reviewers](../R/reviewer.md) use **monitoring and logging tools** to track [test executions](../T/test-execution.md) in real-time, gaining insights into failures and system performance.
-  **AI and machine learning** are increasingly used to identify patterns in test results, predicting potential problem areas and optimizing [test suites](../T/test-suite.md) for [risk-based testing](../R/risk-based-testing.md). [Reviewers](../R/reviewer.md) also implement **code quality tools** such as SonarQube to enforce coding standards and prevent defects early in the development cycle.
-  To streamline issue tracking and collaboration, [reviewers](../R/reviewer.md) integrate **issue tracking systems** like [JIRA](../J/jira.md) with [test management](../T/test-management.md) tools, enabling traceability from [test cases](../T/test-case.md) to defects.
+  [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) leverage technology to enhance the end-to-end (e2e) testing process by integrating **Continuous Integration/Continuous Deployment (CI/CD) pipelines**. This allows for automated [test execution](https://naodeng.com.cn/en/wiki/test-execution) upon code commits, ensuring immediate feedback on the impact of changes.
+  Utilizing **test orchestration tools** like Jenkins or GitLab CI, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) can manage [test suites](https://naodeng.com.cn/en/wiki/test-suite) and environments, scheduling tests for optimal coverage and resource utilization. They also employ **containerization** technologies such as Docker to create consistent [test environments](https://naodeng.com.cn/en/wiki/test-environment), reducing the "works on my machine" problem.
+  **Cloud-based testing platforms** like [BrowserStack](https://naodeng.com.cn/en/wiki/browserstack) or Sauce Labs provide access to a multitude of browser and OS combinations, ensuring that e2e tests cover the full spectrum of user scenarios. [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) use **monitoring and logging tools** to track [test executions](https://naodeng.com.cn/en/wiki/test-execution) in real-time, gaining insights into failures and system performance.
+  **AI and machine learning** are increasingly used to identify patterns in test results, predicting potential problem areas and optimizing [test suites](https://naodeng.com.cn/en/wiki/test-suite) for [risk-based testing](https://naodeng.com.cn/en/wiki/risk-based-testing). [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) also implement **code quality tools** such as SonarQube to enforce coding standards and prevent defects early in the development cycle.
+  To streamline issue tracking and collaboration, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) integrate **issue tracking systems** like [JIRA](https://naodeng.com.cn/en/wiki/jira) with [test management](https://naodeng.com.cn/en/wiki/test-management) tools, enabling traceability from [test cases](https://naodeng.com.cn/en/wiki/test-case) to defects.
 
   ```
   // Example of a CI pipeline script snippet for automated e2e testing
@@ -586,48 +585,48 @@ bugs
     }
   }
   ```
-  By harnessing these technologies, [reviewers](../R/reviewer.md) ensure that the e2e testing process is efficient, reliable, and aligned with modern software development practices.
+  By harnessing these technologies, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) ensure that the e2e testing process is efficient, reliable, and aligned with modern software development practices.
 
 #### What are some common software platforms a reviewer might use in their work?
 
-  [Reviewers](../R/reviewer.md) in software [test automation](../T/test-automation.md) often utilize a variety of platforms to manage and execute tests, track [bugs](../B/bug.md), and collaborate with team members. Some common platforms include:
+  [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) in software [test automation](https://naodeng.com.cn/en/wiki/test-automation) often utilize a variety of platforms to manage and execute tests, track [bugs](https://naodeng.com.cn/en/wiki/bug), and collaborate with team members. Some common platforms include:
 
-  - **[Test Management](../T/test-management.md) Tools**: Platforms like TestRail, Zephyr, and qTest help [reviewers](../R/reviewer.md) organize [test cases](../T/test-case.md), plan test runs, and report on testing progress.
-  - **Issue Tracking Systems**: [JIRA](../J/jira.md), Bugzilla, and Redmine are widely used for tracking defects and managing issues that arise during testing.
-  - **Continuous Integration/Continuous Deployment (CI/CD) Tools**: Jenkins, GitLab CI, and CircleCI automate the build, test, and deployment processes, allowing [reviewers](../R/reviewer.md) to integrate testing into the CI/CD pipeline.
-  - **Version Control Systems**: Git and Subversion (SVN) are essential for maintaining different versions of [test scripts](../T/test-script.md) and collaborating on code changes.
-  - **[Automated Testing](../A/automated-testing.md) Frameworks**: [Selenium](../S/selenium.md), Appium, and [Cypress](../C/cypress.md) provide the infrastructure for writing and running automated [test scripts](../T/test-script.md).
-  - **[Performance Testing](../P/performance-testing.md) Tools**: LoadRunner, [JMeter](../J/jmeter.md), and Gatling help [reviewers](../R/reviewer.md) assess the performance and scalability of applications under test.
-  - **[API Testing](../A/api-testing.md) Tools**: [Postman](../P/postman.md) and SoapUI are used for testing [APIs](../A/api.md) and web services.
-  - **Mobile Testing Platforms**: [BrowserStack](../B/browserstack.md) and Sauce Labs offer cloud-based platforms for testing mobile applications across various devices and operating systems.
+  - **[Test Management](https://naodeng.com.cn/en/wiki/test-management) Tools**: Platforms like TestRail, Zephyr, and qTest help [reviewers](https://naodeng.com.cn/en/wiki/reviewer) organize [test cases](https://naodeng.com.cn/en/wiki/test-case), plan test runs, and report on testing progress.
+  - **Issue Tracking Systems**: [JIRA](https://naodeng.com.cn/en/wiki/jira), Bugzilla, and Redmine are widely used for tracking defects and managing issues that arise during testing.
+  - **Continuous Integration/Continuous Deployment (CI/CD) Tools**: Jenkins, GitLab CI, and CircleCI automate the build, test, and deployment processes, allowing [reviewers](https://naodeng.com.cn/en/wiki/reviewer) to integrate testing into the CI/CD pipeline.
+  - **Version Control Systems**: Git and Subversion (SVN) are essential for maintaining different versions of [test scripts](https://naodeng.com.cn/en/wiki/test-script) and collaborating on code changes.
+  - **[Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing) Frameworks**: [Selenium](https://naodeng.com.cn/en/wiki/selenium), Appium, and [Cypress](https://naodeng.com.cn/en/wiki/cypress) provide the infrastructure for writing and running automated [test scripts](https://naodeng.com.cn/en/wiki/test-script).
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing) Tools**: LoadRunner, [JMeter](https://naodeng.com.cn/en/wiki/jmeter), and Gatling help [reviewers](https://naodeng.com.cn/en/wiki/reviewer) assess the performance and scalability of applications under test.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing) Tools**: [Postman](https://naodeng.com.cn/en/wiki/postman) and SoapUI are used for testing [APIs](https://naodeng.com.cn/en/wiki/api) and web services.
+  - **Mobile Testing Platforms**: [BrowserStack](https://naodeng.com.cn/en/wiki/browserstack) and Sauce Labs offer cloud-based platforms for testing mobile applications across various devices and operating systems.
   - **Collaboration Tools**: Confluence, Slack, and Microsoft Teams facilitate communication and documentation sharing among testing teams.
-  These platforms support [reviewers](../R/reviewer.md) in ensuring that tests are comprehensive, issues are tracked and resolved efficiently, and the overall quality of the software is maintained throughout the development lifecycle.
+  These platforms support [reviewers](https://naodeng.com.cn/en/wiki/reviewer) in ensuring that tests are comprehensive, issues are tracked and resolved efficiently, and the overall quality of the software is maintained throughout the development lifecycle.
 
-  - **[Test Management](../T/test-management.md) Tools**: Platforms like TestRail, Zephyr, and qTest help [reviewers](../R/reviewer.md) organize [test cases](../T/test-case.md), plan test runs, and report on testing progress.
-  - **Issue Tracking Systems**: [JIRA](../J/jira.md), Bugzilla, and Redmine are widely used for tracking defects and managing issues that arise during testing.
-  - **Continuous Integration/Continuous Deployment (CI/CD) Tools**: Jenkins, GitLab CI, and CircleCI automate the build, test, and deployment processes, allowing [reviewers](../R/reviewer.md) to integrate testing into the CI/CD pipeline.
-  - **Version Control Systems**: Git and Subversion (SVN) are essential for maintaining different versions of [test scripts](../T/test-script.md) and collaborating on code changes.
-  - **[Automated Testing](../A/automated-testing.md) Frameworks**: [Selenium](../S/selenium.md), Appium, and [Cypress](../C/cypress.md) provide the infrastructure for writing and running automated [test scripts](../T/test-script.md).
-  - **[Performance Testing](../P/performance-testing.md) Tools**: LoadRunner, [JMeter](../J/jmeter.md), and Gatling help [reviewers](../R/reviewer.md) assess the performance and scalability of applications under test.
-  - **[API Testing](../A/api-testing.md) Tools**: [Postman](../P/postman.md) and SoapUI are used for testing [APIs](../A/api.md) and web services.
-  - **Mobile Testing Platforms**: [BrowserStack](../B/browserstack.md) and Sauce Labs offer cloud-based platforms for testing mobile applications across various devices and operating systems.
+  - **[Test Management](https://naodeng.com.cn/en/wiki/test-management) Tools**: Platforms like TestRail, Zephyr, and qTest help [reviewers](https://naodeng.com.cn/en/wiki/reviewer) organize [test cases](https://naodeng.com.cn/en/wiki/test-case), plan test runs, and report on testing progress.
+  - **Issue Tracking Systems**: [JIRA](https://naodeng.com.cn/en/wiki/jira), Bugzilla, and Redmine are widely used for tracking defects and managing issues that arise during testing.
+  - **Continuous Integration/Continuous Deployment (CI/CD) Tools**: Jenkins, GitLab CI, and CircleCI automate the build, test, and deployment processes, allowing [reviewers](https://naodeng.com.cn/en/wiki/reviewer) to integrate testing into the CI/CD pipeline.
+  - **Version Control Systems**: Git and Subversion (SVN) are essential for maintaining different versions of [test scripts](https://naodeng.com.cn/en/wiki/test-script) and collaborating on code changes.
+  - **[Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing) Frameworks**: [Selenium](https://naodeng.com.cn/en/wiki/selenium), Appium, and [Cypress](https://naodeng.com.cn/en/wiki/cypress) provide the infrastructure for writing and running automated [test scripts](https://naodeng.com.cn/en/wiki/test-script).
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing) Tools**: LoadRunner, [JMeter](https://naodeng.com.cn/en/wiki/jmeter), and Gatling help [reviewers](https://naodeng.com.cn/en/wiki/reviewer) assess the performance and scalability of applications under test.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing) Tools**: [Postman](https://naodeng.com.cn/en/wiki/postman) and SoapUI are used for testing [APIs](https://naodeng.com.cn/en/wiki/api) and web services.
+  - **Mobile Testing Platforms**: [BrowserStack](https://naodeng.com.cn/en/wiki/browserstack) and Sauce Labs offer cloud-based platforms for testing mobile applications across various devices and operating systems.
   - **Collaboration Tools**: Confluence, Slack, and Microsoft Teams facilitate communication and documentation sharing among testing teams.
 
 ### Challenges and Solutions
 
 #### What challenges does a reviewer often face in e2e testing?
 
-  [Reviewers](../R/reviewer.md) in **end-to-end (e2e) testing** often face challenges such as:
+  [Reviewers](https://naodeng.com.cn/en/wiki/reviewer) in **end-to-end (e2e) testing** often face challenges such as:
 
   - **Flakiness** : Tests can be unreliable, passing and failing intermittently due to timing issues, external dependencies, or network instability.
   - **Complexity** : E2e tests cover the full stack, which can be intricate and multifaceted, making it difficult to pinpoint the root cause of issues.
-  - **[Test Data](../T/test-data.md) Management** : Ensuring the availability of appropriate test data that mimics real-world scenarios without compromising sensitive information.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management** : Ensuring the availability of appropriate test data that mimics real-world scenarios without compromising sensitive information.
   - **Environment Consistency** : Differences between testing, staging, and production environments can lead to false positives or negatives.
   - **Resource Intensiveness** : E2e tests can be resource-heavy, requiring significant computational power and time, which can slow down the development cycle.
   - **Maintenance Overhead** : As the application evolves, tests need to be updated frequently to remain effective, which can be time-consuming.
   - **Cross-Browser/Device Testing** : Ensuring consistent behavior across various browsers and devices adds to the complexity.
   - **Visibility and Communication** : Providing clear feedback and results to the development team, especially when dealing with intermittent issues.
-  To address these challenges, [reviewers](../R/reviewer.md) often employ strategies such as:
+  To address these challenges, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) often employ strategies such as:
 
   - Prioritizing and focusing on critical user journeys.
   - Implementing robust
@@ -643,11 +642,11 @@ bugs
     to stabilize external dependencies.
 
   - Ensuring
-    **[test environment](../T/test-environment.md) parity**
+    **[test environment](https://naodeng.com.cn/en/wiki/test-environment) parity**
     with production.
 
   - Adopting
-    **[test data](../T/test-data.md) generation**
+    **[test data](https://naodeng.com.cn/en/wiki/test-data) generation**
     tools and anonymization techniques.
 
   - Utilizing
@@ -655,7 +654,7 @@ bugs
     (CI) to run tests frequently and catch issues early.
 
   - Implementing
-    **[cross-browser testing](../C/cross-browser-testing.md) tools**
+    **[cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing) tools**
     to automate across different platforms.
 
   - Enhancing communication with
@@ -666,7 +665,7 @@ bugs
 
   - **Flakiness** : Tests can be unreliable, passing and failing intermittently due to timing issues, external dependencies, or network instability.
   - **Complexity** : E2e tests cover the full stack, which can be intricate and multifaceted, making it difficult to pinpoint the root cause of issues.
-  - **[Test Data](../T/test-data.md) Management** : Ensuring the availability of appropriate test data that mimics real-world scenarios without compromising sensitive information.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management** : Ensuring the availability of appropriate test data that mimics real-world scenarios without compromising sensitive information.
   - **Environment Consistency** : Differences between testing, staging, and production environments can lead to false positives or negatives.
   - **Resource Intensiveness** : E2e tests can be resource-heavy, requiring significant computational power and time, which can slow down the development cycle.
   - **Maintenance Overhead** : As the application evolves, tests need to be updated frequently to remain effective, which can be time-consuming.
@@ -686,11 +685,11 @@ bugs
     to stabilize external dependencies.
 
   - Ensuring
-    **[test environment](../T/test-environment.md) parity**
+    **[test environment](https://naodeng.com.cn/en/wiki/test-environment) parity**
     with production.
 
   - Adopting
-    **[test data](../T/test-data.md) generation**
+    **[test data](https://naodeng.com.cn/en/wiki/test-data) generation**
     tools and anonymization techniques.
 
   - Utilizing
@@ -698,7 +697,7 @@ bugs
     (CI) to run tests frequently and catch issues early.
 
   - Implementing
-    **[cross-browser testing](../C/cross-browser-testing.md) tools**
+    **[cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing) tools**
     to automate across different platforms.
 
   - Enhancing communication with
@@ -709,7 +708,7 @@ bugs
 
 #### How does a reviewer overcome these challenges?
 
-  To overcome challenges in e2e testing, [reviewers](../R/reviewer.md) should:
+  To overcome challenges in e2e testing, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) should:
 
   - **Prioritize tests**
     based on risk and impact, focusing on critical functionalities first.
@@ -728,7 +727,7 @@ bugs
     **modular test design**
     to create reusable components, reducing maintenance and improving scalability.
 
-  - **Automate [test data](../T/test-data.md) generation**
+  - **Automate [test data](https://naodeng.com.cn/en/wiki/test-data) generation**
     and management to ensure tests have the necessary data without manual intervention.
 
   - Utilize
@@ -748,7 +747,7 @@ bugs
   - Foster a
     **culture of collaboration**
     between developers, testers, and other stakeholders to enhance communication and address issues promptly.
-  By adopting these strategies, [reviewers](../R/reviewer.md) can effectively manage the complexities of e2e testing in software automation.
+  By adopting these strategies, [reviewers](https://naodeng.com.cn/en/wiki/reviewer) can effectively manage the complexities of e2e testing in software automation.
 
   - **Prioritize tests**
     based on risk and impact, focusing on critical functionalities first.
@@ -767,7 +766,7 @@ bugs
     **modular test design**
     to create reusable components, reducing maintenance and improving scalability.
 
-  - **Automate [test data](../T/test-data.md) generation**
+  - **Automate [test data](https://naodeng.com.cn/en/wiki/test-data) generation**
     and management to ensure tests have the necessary data without manual intervention.
 
   - Utilize
@@ -790,27 +789,27 @@ bugs
 
 #### What solutions has the industry developed to support reviewers in e2e testing?
 
-  To support [reviewers](../R/reviewer.md) in **end-to-end (e2e) testing**, the industry has developed various solutions:
+  To support [reviewers](https://naodeng.com.cn/en/wiki/reviewer) in **end-to-end (e2e) testing**, the industry has developed various solutions:
 
   - **Automated Test Frameworks** : Tools like Selenium, Cypress, and Playwright enable automation of browser-based tests, simulating real user interactions.
   - **Continuous Integration (CI) Systems** : Platforms like Jenkins, CircleCI, and GitHub Actions allow tests to be run automatically with every code change, providing immediate feedback.
-  - **[Test Management](../T/test-management.md) Tools** : Applications such as TestRail and Zephyr track test cases, results, and facilitate collaboration among team members.
-  - **[Bug](../B/bug.md) Tracking Systems** : JIRA, Bugzilla, and similar tools help reviewers manage and prioritize issues discovered during testing.
+  - **[Test Management](https://naodeng.com.cn/en/wiki/test-management) Tools** : Applications such as TestRail and Zephyr track test cases, results, and facilitate collaboration among team members.
+  - **[Bug](https://naodeng.com.cn/en/wiki/bug) Tracking Systems** : JIRA, Bugzilla, and similar tools help reviewers manage and prioritize issues discovered during testing.
   - **Version Control Integration** : Git and other version control systems are integrated with testing tools to link test results with code changes.
   - **Reporting and Analytics** : Dashboards and reporting tools within testing frameworks provide insights into test coverage, pass/fail rates, and trends over time.
   - **Cloud-Based Testing Services** : Services like BrowserStack and Sauce Labs offer cloud-based platforms for testing on a wide range of devices and browsers.
-  - **Performance and [Load Testing](../L/load-testing.md) Tools** : Tools like JMeter and LoadRunner simulate high traffic and analyze system performance under load.
+  - **Performance and [Load Testing](https://naodeng.com.cn/en/wiki/load-testing) Tools** : Tools like JMeter and LoadRunner simulate high traffic and analyze system performance under load.
   - **Code Quality Tools** : Static code analyzers and linters such as SonarQube and ESLint help maintain code quality, which is crucial for reliable e2e tests.
   - **Mocking and Service Virtualization** : Tools like WireMock and Mountebank allow simulation of external services to test edge cases and error conditions without relying on actual third-party systems.
   These solutions streamline the review process, ensuring that e2e tests are efficient, reliable, and provide valuable feedback to the development team.
 
   - **Automated Test Frameworks** : Tools like Selenium, Cypress, and Playwright enable automation of browser-based tests, simulating real user interactions.
   - **Continuous Integration (CI) Systems** : Platforms like Jenkins, CircleCI, and GitHub Actions allow tests to be run automatically with every code change, providing immediate feedback.
-  - **[Test Management](../T/test-management.md) Tools** : Applications such as TestRail and Zephyr track test cases, results, and facilitate collaboration among team members.
-  - **[Bug](../B/bug.md) Tracking Systems** : JIRA, Bugzilla, and similar tools help reviewers manage and prioritize issues discovered during testing.
+  - **[Test Management](https://naodeng.com.cn/en/wiki/test-management) Tools** : Applications such as TestRail and Zephyr track test cases, results, and facilitate collaboration among team members.
+  - **[Bug](https://naodeng.com.cn/en/wiki/bug) Tracking Systems** : JIRA, Bugzilla, and similar tools help reviewers manage and prioritize issues discovered during testing.
   - **Version Control Integration** : Git and other version control systems are integrated with testing tools to link test results with code changes.
   - **Reporting and Analytics** : Dashboards and reporting tools within testing frameworks provide insights into test coverage, pass/fail rates, and trends over time.
   - **Cloud-Based Testing Services** : Services like BrowserStack and Sauce Labs offer cloud-based platforms for testing on a wide range of devices and browsers.
-  - **Performance and [Load Testing](../L/load-testing.md) Tools** : Tools like JMeter and LoadRunner simulate high traffic and analyze system performance under load.
+  - **Performance and [Load Testing](https://naodeng.com.cn/en/wiki/load-testing) Tools** : Tools like JMeter and LoadRunner simulate high traffic and analyze system performance under load.
   - **Code Quality Tools** : Static code analyzers and linters such as SonarQube and ESLint help maintain code quality, which is crucial for reliable e2e tests.
   - **Mocking and Service Virtualization** : Tools like WireMock and Mountebank allow simulation of external services to test edge cases and error conditions without relying on actual third-party systems.

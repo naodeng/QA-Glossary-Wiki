@@ -1,6 +1,5 @@
 # Future Proof Testing
 
-
 <!-- TOC START -->
 - [Questions about Future Proof Testing ?](#questions-about-future-proof-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -33,21 +32,21 @@ Future-proof testing ensures a software application can adapt to future technolo
 
 #### What is future proof testing?
 
-  [Future proof testing](../F/future-proof-testing.md) ensures that your [test automation](../T/test-automation.md) framework remains **effective**, **relevant**, and **maintainable** as technologies and requirements evolve. It involves creating tests that are **resilient to changes** in the software and its environment, reducing the need for frequent updates.
-  To achieve this, focus on **abstraction** and **modularity**. Design your tests to interact with the application through well-defined interfaces, such as page objects in [web testing](../W/web-testing.md), which encapsulate the underlying page structure. This way, changes to the UI only require updates in one place.
-  Leverage **data-driven** and **keyword-driven** approaches to separate test logic from [test data](../T/test-data.md), allowing non-technical stakeholders to update tests without diving into code. Use **[BDD](../B/bdd.md) frameworks** like Cucumber to express tests in natural language, making them understandable and editable by anyone on the team.
+  [Future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) ensures that your [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework remains **effective**, **relevant**, and **maintainable** as technologies and requirements evolve. It involves creating tests that are **resilient to changes** in the software and its environment, reducing the need for frequent updates.
+  To achieve this, focus on **abstraction** and **modularity**. Design your tests to interact with the application through well-defined interfaces, such as page objects in [web testing](https://naodeng.com.cn/en/wiki/web-testing), which encapsulate the underlying page structure. This way, changes to the UI only require updates in one place.
+  Leverage **data-driven** and **keyword-driven** approaches to separate test logic from [test data](https://naodeng.com.cn/en/wiki/test-data), allowing non-technical stakeholders to update tests without diving into code. Use **[BDD](https://naodeng.com.cn/en/wiki/bdd) frameworks** like Cucumber to express tests in natural language, making them understandable and editable by anyone on the team.
   Incorporate **version control** and **continuous integration** to manage changes and ensure tests are always in sync with the application. Opt for tools that support a wide range of technologies and platforms, and are actively maintained.
-  Regularly **refactor** your test code to improve clarity and reduce complexity. Keep an eye on **[test execution](../T/test-execution.md) times** and optimize where necessary to maintain fast feedback loops.
+  Regularly **refactor** your test code to improve clarity and reduce complexity. Keep an eye on **[test execution](https://naodeng.com.cn/en/wiki/test-execution) times** and optimize where necessary to maintain fast feedback loops.
   Stay informed on industry trends through **communities**, **conferences**, and **online resources**. Experiment with new tools in isolated pilots before rolling them out across your projects.
-  Remember, [future proof testing](../F/future-proof-testing.md) is not a one-time effort but a continuous process of **adaptation** and **improvement**.
+  Remember, [future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) is not a one-time effort but a continuous process of **adaptation** and **improvement**.
 
 #### Why is future proof testing important in software automation?
 
-  [Future proof testing](../F/future-proof-testing.md) in software automation is crucial for maintaining the **longevity** and **relevance** of [test suites](../T/test-suite.md) amidst evolving software landscapes. It ensures that automated tests remain **robust** and **flexible** to accommodate changes in technology, frameworks, and application features without requiring significant rework. This approach minimizes the need for constant maintenance, reducing the **time** and **cost** associated with adapting to new requirements or environments.
-  By focusing on **modularity**, **reusability**, and **scalability**, future proof tests can easily integrate with new functionalities and systems. It involves abstracting [test cases](../T/test-case.md) to a level where changes in the UI or [API](../A/api.md) do not necessitate a complete overhaul of the [test scripts](../T/test-script.md).
-  Leveraging **data-driven** and **keyword-driven** approaches, alongside **[BDD](../B/bdd.md) frameworks**, can further decouple test logic from [test data](../T/test-data.md), enhancing the adaptability of the [test suite](../T/test-suite.md). Additionally, incorporating **version control** and **continuous integration** practices ensures that tests evolve in tandem with the application codebase.
-  Staying abreast of **industry trends** and **best practices** is also a part of future proofing, as it enables the anticipation of shifts in technology that could impact testing strategies. Regular **refactoring** and **optimization** of test code contribute to a sustainable [test automation](../T/test-automation.md) framework that can withstand the test of time.
-  In summary, [future proof testing](../F/future-proof-testing.md) is about building a foundation that supports **continuous improvement** and **integration** with emerging technologies, ensuring that the [test automation](../T/test-automation.md) efforts deliver lasting value.
+  [Future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) in software automation is crucial for maintaining the **longevity** and **relevance** of [test suites](https://naodeng.com.cn/en/wiki/test-suite) amidst evolving software landscapes. It ensures that automated tests remain **robust** and **flexible** to accommodate changes in technology, frameworks, and application features without requiring significant rework. This approach minimizes the need for constant maintenance, reducing the **time** and **cost** associated with adapting to new requirements or environments.
+  By focusing on **modularity**, **reusability**, and **scalability**, future proof tests can easily integrate with new functionalities and systems. It involves abstracting [test cases](https://naodeng.com.cn/en/wiki/test-case) to a level where changes in the UI or [API](https://naodeng.com.cn/en/wiki/api) do not necessitate a complete overhaul of the [test scripts](https://naodeng.com.cn/en/wiki/test-script).
+  Leveraging **data-driven** and **keyword-driven** approaches, alongside **[BDD](https://naodeng.com.cn/en/wiki/bdd) frameworks**, can further decouple test logic from [test data](https://naodeng.com.cn/en/wiki/test-data), enhancing the adaptability of the [test suite](https://naodeng.com.cn/en/wiki/test-suite). Additionally, incorporating **version control** and **continuous integration** practices ensures that tests evolve in tandem with the application codebase.
+  Staying abreast of **industry trends** and **best practices** is also a part of future proofing, as it enables the anticipation of shifts in technology that could impact testing strategies. Regular **refactoring** and **optimization** of test code contribute to a sustainable [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework that can withstand the test of time.
+  In summary, [future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) is about building a foundation that supports **continuous improvement** and **integration** with emerging technologies, ensuring that the [test automation](https://naodeng.com.cn/en/wiki/test-automation) efforts deliver lasting value.
 
 #### What are the key elements of future proof testing?
 
@@ -89,16 +88,16 @@ Future-proof testing ensures a software application can adapt to future technolo
 
 #### How does future proof testing contribute to the overall quality of a software product?
 
-  [Future proof testing](../F/future-proof-testing.md) enhances [software quality](../S/software-quality.md) by ensuring that [test suites](../T/test-suite.md) remain **effective** and **relevant** over time, despite changes in technology, software features, and user requirements. By focusing on **[maintainability](../M/maintainability.md)**, **scalability**, and **flexibility**, [future proof testing](../F/future-proof-testing.md) minimizes the risk of defects slipping through as the product evolves. This approach supports **continuous integration** and **continuous delivery** (CI/CD) practices, allowing for rapid and reliable deployment of high-quality software.
-  Incorporating **modular test design**, **data-driven testing**, and **keyword-driven testing** enables easier updates to tests when changes occur. **Automation frameworks** that support these methodologies can be quickly adapted to new requirements. Additionally, leveraging **abstraction layers**, such as [page object models](../P/page-object-model.md), separates [test scripts](../T/test-script.md) from the UI, reducing the impact of UI changes on the test code.
-  By ensuring that tests are **resilient to change**, [future proof testing](../F/future-proof-testing.md) reduces the need for frequent test rewrites, saving time and resources. It also helps maintain a **consistent level of [test coverage](../T/test-coverage.md)** over time, which is crucial for identifying regression issues early.
-  Ultimately, [future proof testing](../F/future-proof-testing.md) contributes to a **robust [quality assurance](../Q/quality-assurance.md) process**, ensuring that the software remains reliable, functional, and user-friendly, even as it undergoes continuous development and maintenance. This leads to a better product that meets user expectations and stands the test of time.
+  [Future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by ensuring that [test suites](https://naodeng.com.cn/en/wiki/test-suite) remain **effective** and **relevant** over time, despite changes in technology, software features, and user requirements. By focusing on **[maintainability](https://naodeng.com.cn/en/wiki/maintainability)**, **scalability**, and **flexibility**, [future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) minimizes the risk of defects slipping through as the product evolves. This approach supports **continuous integration** and **continuous delivery** (CI/CD) practices, allowing for rapid and reliable deployment of high-quality software.
+  Incorporating **modular test design**, **data-driven testing**, and **keyword-driven testing** enables easier updates to tests when changes occur. **Automation frameworks** that support these methodologies can be quickly adapted to new requirements. Additionally, leveraging **abstraction layers**, such as [page object models](https://naodeng.com.cn/en/wiki/page-object-model), separates [test scripts](https://naodeng.com.cn/en/wiki/test-script) from the UI, reducing the impact of UI changes on the test code.
+  By ensuring that tests are **resilient to change**, [future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) reduces the need for frequent test rewrites, saving time and resources. It also helps maintain a **consistent level of [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** over time, which is crucial for identifying regression issues early.
+  Ultimately, [future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) contributes to a **robust [quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance) process**, ensuring that the software remains reliable, functional, and user-friendly, even as it undergoes continuous development and maintenance. This leads to a better product that meets user expectations and stands the test of time.
 
 ### Techniques and Strategies
 
 #### What are some techniques used in future proof testing?
 
-  To ensure your [test automation](../T/test-automation.md) is **future-proof**, consider these techniques:
+  To ensure your [test automation](https://naodeng.com.cn/en/wiki/test-automation) is **future-proof**, consider these techniques:
 
   - **Modular Design** : Create tests with reusable components or modules. This allows for easier updates and scalability.
 
@@ -118,7 +117,7 @@ Future-proof testing ensures a software application can adapt to future technolo
   });
   ```
 
-  - **Behavior-Driven Development ([BDD](../B/bdd.md))** : Use domain-specific language to express tests, making them understandable to non-technical stakeholders and resistant to changes in implementation.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** : Use domain-specific language to express tests, making them understandable to non-technical stakeholders and resistant to changes in implementation.
 
   ```
   // Example of a BDD scenario
@@ -128,7 +127,7 @@ Future-proof testing ensures a software application can adapt to future technolo
     Then I should be redirected to the dashboard
   ```
 
-  - **[Page Object Model](../P/page-object-model.md) (POM)** : Abstract UI structure and interactions into page objects to minimize the impact of UI changes on tests.
+  - **[Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM)** : Abstract UI structure and interactions into page objects to minimize the impact of UI changes on tests.
 
   ```
   // Example of a page object
@@ -145,47 +144,47 @@ Future-proof testing ensures a software application can adapt to future technolo
   ```
 
   - **Continuous Integration (CI)**: Integrate tests into a CI pipeline to catch issues early and ensure tests are run against the most current version of the software.
-  - **Version Control for Test Artifacts**: Use version control systems for [test cases](../T/test-case.md) and data, ensuring historical context and easy rollback if necessary.
-  - **[Test Environment](../T/test-environment.md) Management**: Automate the [setup](../S/setup.md) and teardown of [test environments](../T/test-environment.md) to reduce dependency on specific configurations.
-  - **Non-[UI Testing](../U/ui-testing.md)**: Focus on service layer testing ([APIs](../A/api.md), microservices) which tend to be more stable than UI.
+  - **Version Control for Test Artifacts**: Use version control systems for [test cases](https://naodeng.com.cn/en/wiki/test-case) and data, ensuring historical context and easy rollback if necessary.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment) Management**: Automate the [setup](https://naodeng.com.cn/en/wiki/setup) and teardown of [test environments](https://naodeng.com.cn/en/wiki/test-environment) to reduce dependency on specific configurations.
+  - **Non-[UI Testing](https://naodeng.com.cn/en/wiki/ui-testing)**: Focus on service layer testing ([APIs](https://naodeng.com.cn/en/wiki/api), microservices) which tend to be more stable than UI.
   - **Cross-Functional Tests**: Design tests that cover multiple aspects of the application, reducing the need for numerous individual tests.
   - **Regular Refactoring**: Periodically review and update tests to improve efficiency and remove redundancies.
-  By applying these techniques, you can create a robust and adaptable [test automation](../T/test-automation.md) suite that stands the test of time.
+  By applying these techniques, you can create a robust and adaptable [test automation](https://naodeng.com.cn/en/wiki/test-automation) suite that stands the test of time.
 
   - **Modular Design** : Create tests with reusable components or modules. This allows for easier updates and scalability.
   - **Data-Driven Testing** : Externalize test data from scripts. This allows tests to be data agnostic and easily updated.
-  - **Behavior-Driven Development ([BDD](../B/bdd.md))** : Use domain-specific language to express tests, making them understandable to non-technical stakeholders and resistant to changes in implementation.
-  - **[Page Object Model](../P/page-object-model.md) (POM)** : Abstract UI structure and interactions into page objects to minimize the impact of UI changes on tests.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** : Use domain-specific language to express tests, making them understandable to non-technical stakeholders and resistant to changes in implementation.
+  - **[Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM)** : Abstract UI structure and interactions into page objects to minimize the impact of UI changes on tests.
   - **Continuous Integration (CI)**: Integrate tests into a CI pipeline to catch issues early and ensure tests are run against the most current version of the software.
-  - **Version Control for Test Artifacts**: Use version control systems for [test cases](../T/test-case.md) and data, ensuring historical context and easy rollback if necessary.
-  - **[Test Environment](../T/test-environment.md) Management**: Automate the [setup](../S/setup.md) and teardown of [test environments](../T/test-environment.md) to reduce dependency on specific configurations.
-  - **Non-[UI Testing](../U/ui-testing.md)**: Focus on service layer testing ([APIs](../A/api.md), microservices) which tend to be more stable than UI.
+  - **Version Control for Test Artifacts**: Use version control systems for [test cases](https://naodeng.com.cn/en/wiki/test-case) and data, ensuring historical context and easy rollback if necessary.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment) Management**: Automate the [setup](https://naodeng.com.cn/en/wiki/setup) and teardown of [test environments](https://naodeng.com.cn/en/wiki/test-environment) to reduce dependency on specific configurations.
+  - **Non-[UI Testing](https://naodeng.com.cn/en/wiki/ui-testing)**: Focus on service layer testing ([APIs](https://naodeng.com.cn/en/wiki/api), microservices) which tend to be more stable than UI.
   - **Cross-Functional Tests**: Design tests that cover multiple aspects of the application, reducing the need for numerous individual tests.
   - **Regular Refactoring**: Periodically review and update tests to improve efficiency and remove redundancies.
 
 #### How can I develop a future proof testing strategy?
 
-  To develop a **future-proof testing strategy**, focus on creating a **flexible**, **scalable**, and **maintainable** framework. Begin by choosing a **modular architecture** for your [test scripts](../T/test-script.md), such as the [Page Object Model](../P/page-object-model.md) (POM), which separates the test logic from the UI definitions. This abstraction allows for easier updates when the application UI changes.
-  Implement **data-driven testing** to separate [test data](../T/test-data.md) from the scripts, enabling you to easily update [test cases](../T/test-case.md) without altering the code. Use **external data sources** like CSV files, [databases](../D/database.md), or [APIs](../A/api.md) to feed [test data](../T/test-data.md) into your automation suite.
+  To develop a **future-proof testing strategy**, focus on creating a **flexible**, **scalable**, and **maintainable** framework. Begin by choosing a **modular architecture** for your [test scripts](https://naodeng.com.cn/en/wiki/test-script), such as the [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM), which separates the test logic from the UI definitions. This abstraction allows for easier updates when the application UI changes.
+  Implement **data-driven testing** to separate [test data](https://naodeng.com.cn/en/wiki/test-data) from the scripts, enabling you to easily update [test cases](https://naodeng.com.cn/en/wiki/test-case) without altering the code. Use **external data sources** like CSV files, [databases](https://naodeng.com.cn/en/wiki/database), or [APIs](https://naodeng.com.cn/en/wiki/api) to feed [test data](https://naodeng.com.cn/en/wiki/test-data) into your automation suite.
   Leverage **continuous integration/continuous deployment (CI/CD)** pipelines to automatically trigger test runs on code commits, ensuring immediate feedback on the impact of changes. Integrate your tests with **version control systems** like Git to track changes and collaborate efficiently.
-  Incorporate **containerization** with tools like Docker to ensure consistent [test environments](../T/test-environment.md), reducing the "works on my machine" problem. This also aids in scaling your tests horizontally as needed.
+  Incorporate **containerization** with tools like Docker to ensure consistent [test environments](https://naodeng.com.cn/en/wiki/test-environment), reducing the "works on my machine" problem. This also aids in scaling your tests horizontally as needed.
   Utilize **cloud-based services** for cross-browser and cross-platform testing to cover a wide range of environments without maintaining a large in-house lab.
   Regularly **refactor your test code** to improve readability and reduce complexity. Keep your dependencies up-to-date and remove deprecated methods and classes.
   Finally, invest in **upskilling your team** to stay abreast of new testing methodologies and tools. Encourage a culture of **continuous learning** and **knowledge sharing** to collectively enhance your testing strategy.
 
 #### What role does automation play in future proof testing?
 
-  Automation plays a **critical role** in [future proof testing](../F/future-proof-testing.md) by enabling **scalability**, **efficiency**, and **consistency**. It supports the rapid evolution of software by allowing tests to be **repeated quickly** and **reliably** as changes are made. Automated tests can be easily **updated** or **extended** to cover new features or changes in the software, ensuring that the testing strategy remains **relevant** over time.
+  Automation plays a **critical role** in [future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) by enabling **scalability**, **efficiency**, and **consistency**. It supports the rapid evolution of software by allowing tests to be **repeated quickly** and **reliably** as changes are made. Automated tests can be easily **updated** or **extended** to cover new features or changes in the software, ensuring that the testing strategy remains **relevant** over time.
   By leveraging automation, teams can execute a larger volume of tests within a shorter timeframe, which is essential for **continuous integration** and **delivery pipelines**. This helps in identifying potential issues early and reduces the time to market for software products.
-  Automation also facilitates the use of **advanced testing techniques** such as **data-driven testing**, where tests are dynamically fed with different datasets, and **parallel execution**, where multiple tests run simultaneously, increasing [test coverage](../T/test-coverage.md) and reducing execution time.
-  Moreover, automation frameworks can integrate with **emerging technologies** like AI and ML to create more intelligent and adaptive [test scripts](../T/test-script.md) that can predict and react to future changes in the application under test.
-  In summary, automation is the backbone of a robust [future proof testing](../F/future-proof-testing.md) strategy, providing the agility and adaptability needed to keep pace with the ever-changing software development landscape. It ensures that the testing process remains effective and efficient, even as the software and its environment evolve.
+  Automation also facilitates the use of **advanced testing techniques** such as **data-driven testing**, where tests are dynamically fed with different datasets, and **parallel execution**, where multiple tests run simultaneously, increasing [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and reducing execution time.
+  Moreover, automation frameworks can integrate with **emerging technologies** like AI and ML to create more intelligent and adaptive [test scripts](https://naodeng.com.cn/en/wiki/test-script) that can predict and react to future changes in the application under test.
+  In summary, automation is the backbone of a robust [future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) strategy, providing the agility and adaptability needed to keep pace with the ever-changing software development landscape. It ensures that the testing process remains effective and efficient, even as the software and its environment evolve.
 
 #### How can I ensure my testing strategy is adaptable to future changes?
 
   To ensure your testing strategy remains **adaptable** to future changes:
 
-  - **Abstract [test cases](../T/test-case.md)** from the underlying automation framework and application UI. Use design patterns like [Page Object Model](../P/page-object-model.md) (POM) to separate test logic from UI specifics.
+  - **Abstract [test cases](https://naodeng.com.cn/en/wiki/test-case)** from the underlying automation framework and application UI. Use design patterns like [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) to separate test logic from UI specifics.
 
     ```
     class LoginPage {
@@ -205,16 +204,16 @@ Future-proof testing ensures a software application can adapt to future technolo
     }
     ```
 
-  - Implement **data-driven tests** to separate [test data](../T/test-data.md) from [test scripts](../T/test-script.md), allowing easy updates to [test cases](../T/test-case.md) without altering the code.
+  - Implement **data-driven tests** to separate [test data](https://naodeng.com.cn/en/wiki/test-data) from [test scripts](https://naodeng.com.cn/en/wiki/test-script), allowing easy updates to [test cases](https://naodeng.com.cn/en/wiki/test-case) without altering the code.
   - Use **configuration files** to manage environment and test run parameters, enabling quick adjustments for different scenarios.
-  - **Modularize [test scripts](../T/test-script.md)** to create reusable components, reducing maintenance and making it easier to update individual parts.
+  - **Modularize [test scripts](https://naodeng.com.cn/en/wiki/test-script)** to create reusable components, reducing maintenance and making it easier to update individual parts.
   - Employ **continuous integration/continuous deployment (CI/CD)** practices to automatically run tests against new code changes, ensuring immediate feedback and adaptability.
   - **Review and refactor tests regularly** to remove redundancies, update for new features, and improve efficiency.
   - **Stay informed** about updates in the software's domain, potential changes in user behavior, and shifts in technology to anticipate and plan for future adaptations.
   - **Foster collaboration** between developers, testers, and business stakeholders to ensure a shared understanding of the software's evolution and its impact on testing.
   By focusing on these practices, your testing strategy can remain robust and flexible, accommodating future developments with minimal disruption.
 
-  - **Abstract [test cases](../T/test-case.md)** from the underlying automation framework and application UI. Use design patterns like [Page Object Model](../P/page-object-model.md) (POM) to separate test logic from UI specifics.
+  - **Abstract [test cases](https://naodeng.com.cn/en/wiki/test-case)** from the underlying automation framework and application UI. Use design patterns like [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) to separate test logic from UI specifics.
 
     ```
     class LoginPage {
@@ -234,9 +233,9 @@ Future-proof testing ensures a software application can adapt to future technolo
     }
     ```
 
-  - Implement **data-driven tests** to separate [test data](../T/test-data.md) from [test scripts](../T/test-script.md), allowing easy updates to [test cases](../T/test-case.md) without altering the code.
+  - Implement **data-driven tests** to separate [test data](https://naodeng.com.cn/en/wiki/test-data) from [test scripts](https://naodeng.com.cn/en/wiki/test-script), allowing easy updates to [test cases](https://naodeng.com.cn/en/wiki/test-case) without altering the code.
   - Use **configuration files** to manage environment and test run parameters, enabling quick adjustments for different scenarios.
-  - **Modularize [test scripts](../T/test-script.md)** to create reusable components, reducing maintenance and making it easier to update individual parts.
+  - **Modularize [test scripts](https://naodeng.com.cn/en/wiki/test-script)** to create reusable components, reducing maintenance and making it easier to update individual parts.
   - Employ **continuous integration/continuous deployment (CI/CD)** practices to automatically run tests against new code changes, ensuring immediate feedback and adaptability.
   - **Review and refactor tests regularly** to remove redundancies, update for new features, and improve efficiency.
   - **Stay informed** about updates in the software's domain, potential changes in user behavior, and shifts in technology to anticipate and plan for future adaptations.
@@ -246,11 +245,11 @@ Future-proof testing ensures a software application can adapt to future technolo
 
 #### What tools are commonly used in future proof testing?
 
-  Common tools for **[future proof testing](../F/future-proof-testing.md)** include:
+  Common tools for **[future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing)** include:
 
-  - **[Selenium](../S/selenium.md)** : An open-source framework for web automation testing, supporting multiple languages and browsers.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : An open-source framework for web automation testing, supporting multiple languages and browsers.
   - **Appium** : Extends Selenium's framework to mobile applications, ensuring tests can adapt to mobile platform changes.
-  - **[Cypress](../C/cypress.md)** : A JavaScript-based end-to-end testing framework that runs in-browser, offering real-time reloads and consistent results.
+  - **[Cypress](https://naodeng.com.cn/en/wiki/cypress)** : A JavaScript-based end-to-end testing framework that runs in-browser, offering real-time reloads and consistent results.
   - **TestComplete** : A GUI test automation tool that supports desktop, mobile, and web applications.
   - **JUnit**
     /
@@ -260,10 +259,10 @@ Future-proof testing ensures a software application can adapt to future technolo
     for Python,
     **Mocha**
     /
-    **[Jest](../J/jest.md)**
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     for JavaScript: Unit testing frameworks that encourage modular and maintainable test code.
 
-  - **[Postman](../P/postman.md)** : For API testing, ensuring backend services are tested against future API changes.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)** : For API testing, ensuring backend services are tested against future API changes.
   - **Docker** : Containerization helps create consistent environments, reducing the "it works on my machine" problem.
   - **Jenkins**
     /
@@ -276,11 +275,11 @@ Future-proof testing ensures a software application can adapt to future technolo
     **Playwright** : Node libraries for browser automation, particularly useful for headless testing and scraping.
 
   - **Robot Framework** : A keyword-driven test automation framework that simplifies writing tests, making them more maintainable.
-  Incorporate these tools within a robust testing strategy to ensure adaptability and [maintainability](../M/maintainability.md). Regularly review and update your toolset to align with emerging technologies and industry trends.
+  Incorporate these tools within a robust testing strategy to ensure adaptability and [maintainability](https://naodeng.com.cn/en/wiki/maintainability). Regularly review and update your toolset to align with emerging technologies and industry trends.
 
-  - **[Selenium](../S/selenium.md)** : An open-source framework for web automation testing, supporting multiple languages and browsers.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : An open-source framework for web automation testing, supporting multiple languages and browsers.
   - **Appium** : Extends Selenium's framework to mobile applications, ensuring tests can adapt to mobile platform changes.
-  - **[Cypress](../C/cypress.md)** : A JavaScript-based end-to-end testing framework that runs in-browser, offering real-time reloads and consistent results.
+  - **[Cypress](https://naodeng.com.cn/en/wiki/cypress)** : A JavaScript-based end-to-end testing framework that runs in-browser, offering real-time reloads and consistent results.
   - **TestComplete** : A GUI test automation tool that supports desktop, mobile, and web applications.
   - **JUnit**
     /
@@ -290,10 +289,10 @@ Future-proof testing ensures a software application can adapt to future technolo
     for Python,
     **Mocha**
     /
-    **[Jest](../J/jest.md)**
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     for JavaScript: Unit testing frameworks that encourage modular and maintainable test code.
 
-  - **[Postman](../P/postman.md)** : For API testing, ensuring backend services are tested against future API changes.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)** : For API testing, ensuring backend services are tested against future API changes.
   - **Docker** : Containerization helps create consistent environments, reducing the "it works on my machine" problem.
   - **Jenkins**
     /
@@ -309,8 +308,8 @@ Future-proof testing ensures a software application can adapt to future technolo
 
 #### How can emerging technologies like AI and machine learning be incorporated into future proof testing?
 
-  Incorporating **AI and machine learning** into [test automation](../T/test-automation.md) involves leveraging these technologies to enhance the adaptability and efficiency of testing processes. AI can be used to **generate and optimize [test cases](../T/test-case.md)**, reducing the manual effort required to maintain [test suites](../T/test-suite.md). Machine learning algorithms can analyze application data to predict where defects are likely to occur, allowing for **targeted testing**.
-  **Self-healing tests** are another application, where AI identifies changes in the UI and adjusts [test scripts](../T/test-script.md) accordingly, minimizing the need for manual updates. Additionally, **natural language processing (NLP)** can be used to convert user stories into automated [test cases](../T/test-case.md), streamlining the transition from requirements to testing.
+  Incorporating **AI and machine learning** into [test automation](https://naodeng.com.cn/en/wiki/test-automation) involves leveraging these technologies to enhance the adaptability and efficiency of testing processes. AI can be used to **generate and optimize [test cases](https://naodeng.com.cn/en/wiki/test-case)**, reducing the manual effort required to maintain [test suites](https://naodeng.com.cn/en/wiki/test-suite). Machine learning algorithms can analyze application data to predict where defects are likely to occur, allowing for **targeted testing**.
+  **Self-healing tests** are another application, where AI identifies changes in the UI and adjusts [test scripts](https://naodeng.com.cn/en/wiki/test-script) accordingly, minimizing the need for manual updates. Additionally, **natural language processing (NLP)** can be used to convert user stories into automated [test cases](https://naodeng.com.cn/en/wiki/test-case), streamlining the transition from requirements to testing.
   To integrate AI and machine learning, consider the following steps:
 
   1. **Identify repetitive tasks**
@@ -327,7 +326,7 @@ Future-proof testing ensures a software application can adapt to future technolo
 
   5. **Incorporate AI-based tools**
     that support continuous learning and improvement of test processes.
-  By adopting these AI-driven approaches, [test automation](../T/test-automation.md) can become more **proactive**, **efficient**, and **adaptable** to changes, ensuring that it remains robust in the face of evolving software landscapes.
+  By adopting these AI-driven approaches, [test automation](https://naodeng.com.cn/en/wiki/test-automation) can become more **proactive**, **efficient**, and **adaptable** to changes, ensuring that it remains robust in the face of evolving software landscapes.
 
   1. **Identify repetitive tasks**
     that can be automated using AI, such as test case generation or result analysis.
@@ -346,14 +345,14 @@ Future-proof testing ensures a software application can adapt to future technolo
 
 #### What should I consider when choosing tools for future proof testing?
 
-  When selecting tools for **[future proof testing](../F/future-proof-testing.md)**, consider the following:
+  When selecting tools for **[future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing)**, consider the following:
 
-  - **Integration Capabilities**: Choose tools that integrate seamlessly with your existing tech stack and CI/CD pipeline. Look for tools that offer [APIs](../A/api.md) and plugins for popular development and deployment platforms.
+  - **Integration Capabilities**: Choose tools that integrate seamlessly with your existing tech stack and CI/CD pipeline. Look for tools that offer [APIs](https://naodeng.com.cn/en/wiki/api) and plugins for popular development and deployment platforms.
   - **Language and Framework Support**: Opt for tools that support multiple programming languages and frameworks to accommodate future projects without the need to switch tools.
   - **Community and Vendor Support**: Tools with strong community and vendor support are more likely to evolve and stay up-to-date with industry trends.
   - **Scalability**: Ensure the tool can handle increased workloads and can scale with your project's growth.
   - **Flexibility**: Select tools that allow customization and scripting to adapt to new testing scenarios.
-  - **Maintenance and Upkeep**: Consider the ease of updating [test cases](../T/test-case.md) and the tool itself. Tools that facilitate easy maintenance will save time in the long run.
+  - **Maintenance and Upkeep**: Consider the ease of updating [test cases](https://naodeng.com.cn/en/wiki/test-case) and the tool itself. Tools that facilitate easy maintenance will save time in the long run.
   - **Cost**: Evaluate the total cost of ownership, including licensing, training, and infrastructure requirements.
   - **Reporting and Analytics**: Effective tools provide comprehensive reporting and analytics features to track the progress and effectiveness of your tests.
   - **Cross-Platform Testing**: With the proliferation of devices and platforms, choose tools that support cross-platform testing.
@@ -361,12 +360,12 @@ Future-proof testing ensures a software application can adapt to future technolo
   - **Security**: Ensure the tool complies with security standards and can handle sensitive data appropriately.
   Remember, the goal is to select tools that will remain relevant and effective as technologies and testing practices evolve.
 
-  - **Integration Capabilities**: Choose tools that integrate seamlessly with your existing tech stack and CI/CD pipeline. Look for tools that offer [APIs](../A/api.md) and plugins for popular development and deployment platforms.
+  - **Integration Capabilities**: Choose tools that integrate seamlessly with your existing tech stack and CI/CD pipeline. Look for tools that offer [APIs](https://naodeng.com.cn/en/wiki/api) and plugins for popular development and deployment platforms.
   - **Language and Framework Support**: Opt for tools that support multiple programming languages and frameworks to accommodate future projects without the need to switch tools.
   - **Community and Vendor Support**: Tools with strong community and vendor support are more likely to evolve and stay up-to-date with industry trends.
   - **Scalability**: Ensure the tool can handle increased workloads and can scale with your project's growth.
   - **Flexibility**: Select tools that allow customization and scripting to adapt to new testing scenarios.
-  - **Maintenance and Upkeep**: Consider the ease of updating [test cases](../T/test-case.md) and the tool itself. Tools that facilitate easy maintenance will save time in the long run.
+  - **Maintenance and Upkeep**: Consider the ease of updating [test cases](https://naodeng.com.cn/en/wiki/test-case) and the tool itself. Tools that facilitate easy maintenance will save time in the long run.
   - **Cost**: Evaluate the total cost of ownership, including licensing, training, and infrastructure requirements.
   - **Reporting and Analytics**: Effective tools provide comprehensive reporting and analytics features to track the progress and effectiveness of your tests.
   - **Cross-Platform Testing**: With the proliferation of devices and platforms, choose tools that support cross-platform testing.
@@ -375,7 +374,7 @@ Future-proof testing ensures a software application can adapt to future technolo
 
 #### How can I stay updated on the latest tools and technologies for future proof testing?
 
-  To stay updated on the latest tools and technologies for **[future proof testing](../F/future-proof-testing.md)**, consider the following approaches:
+  To stay updated on the latest tools and technologies for **[future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing)**, consider the following approaches:
 
   - **Subscribe**
     to industry newsletters and blogs that focus on software testing and automation. Websites like TechBeacon, Ministry of Testing, and StickyMinds offer valuable insights.
@@ -430,10 +429,10 @@ Future-proof testing ensures a software application can adapt to future technolo
 
 #### What are some common challenges in future proof testing?
 
-  Common challenges in **[future proof testing](../F/future-proof-testing.md)** include:
+  Common challenges in **[future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing)** include:
 
   - **Maintaining Test Relevance** : As software evolves, tests can become outdated. Keeping tests aligned with current features and user requirements is a continuous effort.
-  - **[Test Data](../T/test-data.md) Management** : Generating and managing test data that remains valid over time is complex, especially with changing data schemas and integrations.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management** : Generating and managing test data that remains valid over time is complex, especially with changing data schemas and integrations.
   - **Environment Stability** : Ensuring consistent test environments that mimic production can be difficult, particularly with the introduction of new technologies and platforms.
   - **Tool Selection** : Choosing tools that will remain supported and updated over time is challenging, given the rapid pace of technological change.
   - **Balancing Speed and Coverage** : Achieving a fast feedback loop while maintaining comprehensive test coverage is a delicate balance that requires constant tuning.
@@ -442,10 +441,10 @@ Future-proof testing ensures a software application can adapt to future technolo
   - **Integration with CI/CD** : Integrating automated tests into continuous integration and delivery pipelines requires careful planning to avoid bottlenecks.
   - **Keeping Skills Current** : Test engineers must continually update their skills to leverage new testing methodologies and tools effectively.
   - **Cost Management** : Balancing the cost of maintaining a robust test suite against the benefits it provides can be difficult, especially as projects grow.
-  To overcome these challenges, focus on **continuous learning**, **adopting best practices**, **leveraging analytics** to identify [flaky tests](../F/flaky-test.md), **investing in scalable tools**, and **maintaining clear communication** with development teams to ensure tests remain relevant and valuable.
+  To overcome these challenges, focus on **continuous learning**, **adopting best practices**, **leveraging analytics** to identify [flaky tests](https://naodeng.com.cn/en/wiki/flaky-test), **investing in scalable tools**, and **maintaining clear communication** with development teams to ensure tests remain relevant and valuable.
 
   - **Maintaining Test Relevance** : As software evolves, tests can become outdated. Keeping tests aligned with current features and user requirements is a continuous effort.
-  - **[Test Data](../T/test-data.md) Management** : Generating and managing test data that remains valid over time is complex, especially with changing data schemas and integrations.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management** : Generating and managing test data that remains valid over time is complex, especially with changing data schemas and integrations.
   - **Environment Stability** : Ensuring consistent test environments that mimic production can be difficult, particularly with the introduction of new technologies and platforms.
   - **Tool Selection** : Choosing tools that will remain supported and updated over time is challenging, given the rapid pace of technological change.
   - **Balancing Speed and Coverage** : Achieving a fast feedback loop while maintaining comprehensive test coverage is a delicate balance that requires constant tuning.
@@ -457,7 +456,7 @@ Future-proof testing ensures a software application can adapt to future technolo
 
 #### How can I overcome these challenges?
 
-  To overcome challenges in **[future proof testing](../F/future-proof-testing.md)**, consider the following strategies:
+  To overcome challenges in **[future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing)**, consider the following strategies:
 
   - **Refactor Tests Regularly** : Maintain a clean codebase by refactoring tests to improve readability and reduce complexity. Use the DRY (Don't Repeat Yourself) principle to avoid duplication.
 
@@ -468,31 +467,31 @@ Future-proof testing ensures a software application can adapt to future technolo
   }
   ```
 
-  - **Leverage Modular Design**: Design tests in modular fashion, separating [test data](../T/test-data.md) from logic. This allows for easier updates when changes occur.
+  - **Leverage Modular Design**: Design tests in modular fashion, separating [test data](https://naodeng.com.cn/en/wiki/test-data) from logic. This allows for easier updates when changes occur.
   - **Implement Continuous Integration (CI)**: Integrate your tests into a CI pipeline to catch issues early and often, ensuring your tests evolve with the codebase.
-  - **Use Version Control**: Track changes in [test scripts](../T/test-script.md) with version control systems like Git to manage updates and collaborate effectively.
+  - **Use Version Control**: Track changes in [test scripts](https://naodeng.com.cn/en/wiki/test-script) with version control systems like Git to manage updates and collaborate effectively.
   - **Prioritize Test Maintenance**: Allocate time for regular test maintenance to address flakiness and adapt to new features.
-  - **Embrace [Shift-Left Testing](../S/shift-left-testing.md)**: Involve testing early in the development process to identify potential future issues sooner.
-  - **Adopt Test Design Patterns**: Utilize patterns like [Page Object Model](../P/page-object-model.md) (POM) to create an abstraction layer between tests and UI, making tests less brittle.
+  - **Embrace [Shift-Left Testing](https://naodeng.com.cn/en/wiki/shift-left-testing)**: Involve testing early in the development process to identify potential future issues sooner.
+  - **Adopt Test Design Patterns**: Utilize patterns like [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) to create an abstraction layer between tests and UI, making tests less brittle.
   - **Stay Informed**: Keep abreast of industry trends and updates in testing frameworks to leverage new features that enhance test stability and coverage.
   - **Invest in Training**: Ensure the team is well-versed in best practices and new technologies through regular training sessions.
   - **Collaborate with Developers**: Work closely with developers to understand changes and design tests that are resilient to refactoring.
-  By focusing on these strategies, you can mitigate common challenges and maintain a robust, [future proof testing](../F/future-proof-testing.md) suite.
+  By focusing on these strategies, you can mitigate common challenges and maintain a robust, [future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) suite.
 
   - **Refactor Tests Regularly** : Maintain a clean codebase by refactoring tests to improve readability and reduce complexity. Use the DRY (Don't Repeat Yourself) principle to avoid duplication.
-  - **Leverage Modular Design**: Design tests in modular fashion, separating [test data](../T/test-data.md) from logic. This allows for easier updates when changes occur.
+  - **Leverage Modular Design**: Design tests in modular fashion, separating [test data](https://naodeng.com.cn/en/wiki/test-data) from logic. This allows for easier updates when changes occur.
   - **Implement Continuous Integration (CI)**: Integrate your tests into a CI pipeline to catch issues early and often, ensuring your tests evolve with the codebase.
-  - **Use Version Control**: Track changes in [test scripts](../T/test-script.md) with version control systems like Git to manage updates and collaborate effectively.
+  - **Use Version Control**: Track changes in [test scripts](https://naodeng.com.cn/en/wiki/test-script) with version control systems like Git to manage updates and collaborate effectively.
   - **Prioritize Test Maintenance**: Allocate time for regular test maintenance to address flakiness and adapt to new features.
-  - **Embrace [Shift-Left Testing](../S/shift-left-testing.md)**: Involve testing early in the development process to identify potential future issues sooner.
-  - **Adopt Test Design Patterns**: Utilize patterns like [Page Object Model](../P/page-object-model.md) (POM) to create an abstraction layer between tests and UI, making tests less brittle.
+  - **Embrace [Shift-Left Testing](https://naodeng.com.cn/en/wiki/shift-left-testing)**: Involve testing early in the development process to identify potential future issues sooner.
+  - **Adopt Test Design Patterns**: Utilize patterns like [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) to create an abstraction layer between tests and UI, making tests less brittle.
   - **Stay Informed**: Keep abreast of industry trends and updates in testing frameworks to leverage new features that enhance test stability and coverage.
   - **Invest in Training**: Ensure the team is well-versed in best practices and new technologies through regular training sessions.
   - **Collaborate with Developers**: Work closely with developers to understand changes and design tests that are resilient to refactoring.
 
 #### What are some examples of successful future proof testing?
 
-  Examples of successful [future proof testing](../F/future-proof-testing.md) often involve strategies that anticipate and adapt to changes in technology, requirements, and user behavior. Here are a few:
+  Examples of successful [future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) often involve strategies that anticipate and adapt to changes in technology, requirements, and user behavior. Here are a few:
 
   - **Decoupling tests from implementation details** : By focusing on behavior rather than how it's implemented, tests remain valid even when the underlying code changes. For instance, using page objects in UI tests to separate test logic from UI structure.
 
@@ -517,14 +516,14 @@ Future-proof testing ensures a software application can adapt to future technolo
   });
   ```
 
-  - **[API](../A/api.md) versioning tests** : Ensuring that tests check for API version compatibility can prevent failures when services are updated.
+  - **[API](https://naodeng.com.cn/en/wiki/api) versioning tests** : Ensuring that tests check for API version compatibility can prevent failures when services are updated.
 
   ```
   const response = await apiClient.get('/users', { headers: { 'Accept-Version': '1.0' } });
   assert(response.status, 200);
   ```
 
-  - **Cross-platform and [cross-browser testing](../C/cross-browser-testing.md)** : Using tools like Selenium WebDriver to run tests across multiple browsers and platforms ensures that applications work as expected in diverse environments.
+  - **Cross-platform and [cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing)** : Using tools like Selenium WebDriver to run tests across multiple browsers and platforms ensures that applications work as expected in diverse environments.
 
   ```
   const browsers = ['chrome', 'firefox', 'safari'];
@@ -545,7 +544,7 @@ Future-proof testing ensures a software application can adapt to future technolo
       - runTests
   ```
 
-  - **Performance and [load testing](../L/load-testing.md)** : Regularly running performance tests can detect regressions and ensure that the application scales with user demand.
+  - **Performance and [load testing](https://naodeng.com.cn/en/wiki/load-testing)** : Regularly running performance tests can detect regressions and ensure that the application scales with user demand.
 
   ```
   const loadTestConfig = {
@@ -554,20 +553,20 @@ Future-proof testing ensures a software application can adapt to future technolo
   };
   runLoadTest(loadTestConfig);
   ```
-  By implementing these strategies, [test automation](../T/test-automation.md) remains robust against future developments and continues to provide value over time.
+  By implementing these strategies, [test automation](https://naodeng.com.cn/en/wiki/test-automation) remains robust against future developments and continues to provide value over time.
 
   - **Decoupling tests from implementation details** : By focusing on behavior rather than how it's implemented, tests remain valid even when the underlying code changes. For instance, using page objects in UI tests to separate test logic from UI structure.
   - **Data-driven testing** : Externalizing test data and using it to drive tests can ensure that tests are not hard-coded and can easily be extended for additional scenarios.
-  - **[API](../A/api.md) versioning tests** : Ensuring that tests check for API version compatibility can prevent failures when services are updated.
-  - **Cross-platform and [cross-browser testing](../C/cross-browser-testing.md)** : Using tools like Selenium WebDriver to run tests across multiple browsers and platforms ensures that applications work as expected in diverse environments.
+  - **[API](https://naodeng.com.cn/en/wiki/api) versioning tests** : Ensuring that tests check for API version compatibility can prevent failures when services are updated.
+  - **Cross-platform and [cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing)** : Using tools like Selenium WebDriver to run tests across multiple browsers and platforms ensures that applications work as expected in diverse environments.
   - **Continuous Integration (CI) pipelines** : Integrating tests into CI/CD pipelines ensures that they are run regularly and can catch issues early.
-  - **Performance and [load testing](../L/load-testing.md)** : Regularly running performance tests can detect regressions and ensure that the application scales with user demand.
+  - **Performance and [load testing](https://naodeng.com.cn/en/wiki/load-testing)** : Regularly running performance tests can detect regressions and ensure that the application scales with user demand.
 
 #### How can I measure the effectiveness of my future proof testing strategy?
 
-  To measure the effectiveness of your **[future proof testing](../F/future-proof-testing.md) strategy**, consider these metrics:
+  To measure the effectiveness of your **[future proof testing](https://naodeng.com.cn/en/wiki/future-proof-testing) strategy**, consider these metrics:
 
-  - **[Test Coverage](../T/test-coverage.md)**: Use tools to track the percentage of code your tests cover. High coverage indicates a robust strategy.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Use tools to track the percentage of code your tests cover. High coverage indicates a robust strategy.
 
     ```
     // Example of a code coverage tool command
@@ -576,7 +575,7 @@ Future-proof testing ensures a software application can adapt to future technolo
 
   - **Defect Escape Rate**: Monitor the number of issues found post-release. A low rate suggests effective testing.
   - **Test Maintenance Effort**: Track the time and resources spent on updating tests. Less effort implies a more future-proof approach.
-  - **Automation ROI**: Calculate the return on investment for your automated tests by comparing the cost of [manual testing](../M/manual-testing.md) versus automation over time.
+  - **Automation ROI**: Calculate the return on investment for your automated tests by comparing the cost of [manual testing](https://naodeng.com.cn/en/wiki/manual-testing) versus automation over time.
   - **Time to Market**: Measure how quickly new features can be tested and released. Shorter cycles can indicate a successful strategy.
   - **Flakiness Index**: Keep an eye on the consistency of test results. Lower flakiness means more reliable and future-proof tests.
   - **Adaptability Score**: Assess how well your tests handle new changes. A high score means your strategy is adaptable.
@@ -584,7 +583,7 @@ Future-proof testing ensures a software application can adapt to future technolo
   - **Feedback Loop Efficiency**: Measure the speed of your testing feedback loop. Faster feedback suggests a more effective strategy.
   By tracking these metrics, you can quantify the success of your testing strategy and make data-driven improvements. Remember, the goal is to create a testing framework that remains robust against future changes while minimizing maintenance and maximizing reliability and efficiency.
 
-  - **[Test Coverage](../T/test-coverage.md)**: Use tools to track the percentage of code your tests cover. High coverage indicates a robust strategy.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Use tools to track the percentage of code your tests cover. High coverage indicates a robust strategy.
 
     ```
     // Example of a code coverage tool command
@@ -593,7 +592,7 @@ Future-proof testing ensures a software application can adapt to future technolo
 
   - **Defect Escape Rate**: Monitor the number of issues found post-release. A low rate suggests effective testing.
   - **Test Maintenance Effort**: Track the time and resources spent on updating tests. Less effort implies a more future-proof approach.
-  - **Automation ROI**: Calculate the return on investment for your automated tests by comparing the cost of [manual testing](../M/manual-testing.md) versus automation over time.
+  - **Automation ROI**: Calculate the return on investment for your automated tests by comparing the cost of [manual testing](https://naodeng.com.cn/en/wiki/manual-testing) versus automation over time.
   - **Time to Market**: Measure how quickly new features can be tested and released. Shorter cycles can indicate a successful strategy.
   - **Flakiness Index**: Keep an eye on the consistency of test results. Lower flakiness means more reliable and future-proof tests.
   - **Adaptability Score**: Assess how well your tests handle new changes. A high score means your strategy is adaptable.

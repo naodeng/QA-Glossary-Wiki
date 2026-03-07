@@ -1,6 +1,5 @@
 # Page Object Model
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
 - [Questions about Page Object Model ?](#questions-about-page-object-model)
@@ -29,9 +28,9 @@ Page Object Model
 
 ## Related Terms:
 
-- [Web Automation](../W/web-automation.md)
-- [Selenium IDE](../S/selenium-ide.md)
-- [WebDriver](../W/webdriver.md)
+- [Web Automation](https://naodeng.com.cn/en/wiki/web-automation)
+- [Selenium IDE](https://naodeng.com.cn/en/wiki/selenium-ide)
+- [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)
 
 ## Questions about Page Object Model ?
 
@@ -39,8 +38,8 @@ Page Object Model
 
 #### What is the Page Object Model in automation testing?
 
-  The **[Page Object Model](../P/page-object-model.md) (POM)** is a design pattern in automation testing that encapsulates the properties and behaviors of a web page within a class. Each page class serves as an interface to a web page, and all interactions with that page go through the page object, hiding the underlying [Selenium](../S/selenium.md) calls.
-  Here's a basic example in Java using [Selenium](../S/selenium.md):
+  The **[Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM)** is a design pattern in automation testing that encapsulates the properties and behaviors of a web page within a class. Each page class serves as an interface to a web page, and all interactions with that page go through the page object, hiding the underlying [Selenium](https://naodeng.com.cn/en/wiki/selenium) calls.
+  Here's a basic example in Java using [Selenium](https://naodeng.com.cn/en/wiki/selenium):
 
   ```
   public class LoginPage {
@@ -62,8 +61,8 @@ Page Object Model
       }
   }
   ```
-  In this model, tests interact with the page objects rather than directly with the web elements. This abstraction reduces code duplication and improves [maintainability](../M/maintainability.md). When a page changes, only the page object needs to be updated, not the tests that interact with it.
-  To interact with a page object, a test would instantiate the page object with a reference to the [WebDriver](../W/webdriver.md) and use its methods to perform actions:
+  In this model, tests interact with the page objects rather than directly with the web elements. This abstraction reduces code duplication and improves [maintainability](https://naodeng.com.cn/en/wiki/maintainability). When a page changes, only the page object needs to be updated, not the tests that interact with it.
+  To interact with a page object, a test would instantiate the page object with a reference to the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) and use its methods to perform actions:
 
   ```
   LoginPage loginPage = new LoginPage(driver);
@@ -75,26 +74,26 @@ Page Object Model
 
 #### Why is the Page Object Model considered a good practice in automation testing?
 
-  The [Page Object Model](../P/page-object-model.md) (POM) is considered a good practice in automation testing due to its **enhancement of test maintenance** and **reduction in code duplication**. By encapsulating page information away from the actual tests, it allows for a **clear separation of concerns**. This means that changes to the UI only require updates in the page object classes, not in the tests themselves, making the tests more **resilient to changes** in the application UI.
-  Moreover, POM promotes **better organization** of code and **improves readability**, as the model encourages a modular approach to scripting. [Test cases](../T/test-case.md) become more **understandable** and **easier to navigate** because they interact with methods that represent the page, rather than directly with the UI elements.
+  The [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) is considered a good practice in automation testing due to its **enhancement of test maintenance** and **reduction in code duplication**. By encapsulating page information away from the actual tests, it allows for a **clear separation of concerns**. This means that changes to the UI only require updates in the page object classes, not in the tests themselves, making the tests more **resilient to changes** in the application UI.
+  Moreover, POM promotes **better organization** of code and **improves readability**, as the model encourages a modular approach to scripting. [Test cases](https://naodeng.com.cn/en/wiki/test-case) become more **understandable** and **easier to navigate** because they interact with methods that represent the page, rather than directly with the UI elements.
   Using POM also facilitates **team collaboration**. As the model provides a single repository for the services or operations offered by the page, multiple test engineers can work on the automation scripts without stepping on each other's toes.
-  Lastly, POM can be easily **integrated with other design patterns**, such as Singleton or Factory, to further enhance the efficiency and scalability of the [test automation](../T/test-automation.md) framework. This integration can lead to more **robust and flexible** test architectures that can handle complex [test scenarios](../T/test-scenario.md) with ease.
-  In essence, POM is a cornerstone of modern [test automation](../T/test-automation.md) strategies, offering a structured and maintainable approach that aligns with good software design principles.
+  Lastly, POM can be easily **integrated with other design patterns**, such as Singleton or Factory, to further enhance the efficiency and scalability of the [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework. This integration can lead to more **robust and flexible** test architectures that can handle complex [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) with ease.
+  In essence, POM is a cornerstone of modern [test automation](https://naodeng.com.cn/en/wiki/test-automation) strategies, offering a structured and maintainable approach that aligns with good software design principles.
 
 #### What are the benefits of using the Page Object Model?
 
-  The **[Page Object Model](../P/page-object-model.md) (POM)** offers several benefits for [test automation](../T/test-automation.md):
+  The **[Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM)** offers several benefits for [test automation](https://naodeng.com.cn/en/wiki/test-automation):
 
-  - **[Maintainability](../M/maintainability.md)** : By encapsulating page details, POM reduces the maintenance effort. Changes in UI only require updates in page object classes, not in tests.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : By encapsulating page details, POM reduces the maintenance effort. Changes in UI only require updates in page object classes, not in tests.
   - **Readability** : Tests become more readable due to the clear separation of page actions and assertions. This makes it easier for new team members to understand the code.
   - **Reusability** : Page methods can be reused across multiple tests, reducing code duplication.
   - **Reduced Flakiness** : Centralizing element locators and interactions can lead to more stable tests as changes to these elements only need to be updated in one place.
   - **Better Collaboration** : Clear structure allows developers and testers to work more efficiently together on the test codebase.
   - **Ease of Reporting** : With methods representing page actions, it's simpler to generate meaningful test reports and logs.
   - **Scalability** : POM supports scaling the test suite by adding new page objects and tests without a significant increase in complexity.
-  By leveraging POM, [test automation](../T/test-automation.md) engineers can build a robust, scalable, and maintainable [test suite](../T/test-suite.md) that can adapt to changes in the application's UI with minimal impact on the existing tests.
+  By leveraging POM, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can build a robust, scalable, and maintainable [test suite](https://naodeng.com.cn/en/wiki/test-suite) that can adapt to changes in the application's UI with minimal impact on the existing tests.
 
-  - **[Maintainability](../M/maintainability.md)** : By encapsulating page details, POM reduces the maintenance effort. Changes in UI only require updates in page object classes, not in tests.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : By encapsulating page details, POM reduces the maintenance effort. Changes in UI only require updates in page object classes, not in tests.
   - **Readability** : Tests become more readable due to the clear separation of page actions and assertions. This makes it easier for new team members to understand the code.
   - **Reusability** : Page methods can be reused across multiple tests, reducing code duplication.
   - **Reduced Flakiness** : Centralizing element locators and interactions can lead to more stable tests as changes to these elements only need to be updated in one place.
@@ -104,18 +103,18 @@ Page Object Model
 
 #### How does the Page Object Model improve the maintainability of test code?
 
-  The [Page Object Model](../P/page-object-model.md) (POM) enhances [maintainability](../M/maintainability.md) of test code by **encapsulating** the UI structure and behaviors within page objects. This separation means changes to the UI only require updates in one place, reducing the risk of duplicating code and making it easier to manage.
+  The [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) enhances [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of test code by **encapsulating** the UI structure and behaviors within page objects. This separation means changes to the UI only require updates in one place, reducing the risk of duplicating code and making it easier to manage.
   By abstracting page details, POM allows tests to be **readable** and **understandable**, resembling domain-specific language. This clarity makes it straightforward for anyone to update tests when necessary.
   POM promotes **reusability**. Common elements and functionalities shared across pages can be abstracted into base or utility classes, from which page objects can inherit or consume. This approach minimizes the effort needed to write and maintain tests for similar UI components.
   With POM, tests are less brittle to changes in the UI. Since locators and interactions with the UI are confined to page objects, any modifications in the page structure require changes only in the page object classes, not in the tests themselves. This **decoupling** ensures that the test logic remains stable and unaffected by UI changes.
-  Lastly, POM supports **parallel development**. [Test automation](../T/test-automation.md) engineers can develop and maintain page objects simultaneously with the development of the application's UI, allowing for continuous integration and testing.
-  In summary, POM improves [maintainability](../M/maintainability.md) by centralizing changes, enhancing readability, promoting reusability, reducing brittleness, and supporting parallel development efforts.
+  Lastly, POM supports **parallel development**. [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can develop and maintain page objects simultaneously with the development of the application's UI, allowing for continuous integration and testing.
+  In summary, POM improves [maintainability](https://naodeng.com.cn/en/wiki/maintainability) by centralizing changes, enhancing readability, promoting reusability, reducing brittleness, and supporting parallel development efforts.
 
 ### Implementation
 
 #### How is the Page Object Model implemented in Selenium?
 
-  Implementing the [Page Object Model](../P/page-object-model.md) (POM) in [Selenium](../S/selenium.md) involves creating a separate class file for each web page. Each class encapsulates the web page's structure and behaviors, providing methods to interact with its elements.
+  Implementing the [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) in [Selenium](https://naodeng.com.cn/en/wiki/selenium) involves creating a separate class file for each web page. Each class encapsulates the web page's structure and behaviors, providing methods to interact with its elements.
   Here's a step-by-step guide:
 
   1. **Identify the elements** on the web page using locators such as ID, name, CSS selector, or XPath.
@@ -170,7 +169,7 @@ Page Object Model
     private By loginButton = By.id("login");
     ```
 
-  - **Constructor**: Initializes the page object, often ensuring the page is in the expected state. May use **[WebDriver](../W/webdriver.md)** as a parameter.
+  - **Constructor**: Initializes the page object, often ensuring the page is in the expected state. May use **[WebDriver](https://naodeng.com.cn/en/wiki/webdriver)** as a parameter.
 
     ```
     public LoginPage(WebDriver driver) {
@@ -194,7 +193,7 @@ Page Object Model
     }
     ```
 
-  - **Assertions**: Methods that allow [verification](../V/verification.md) of the state of the page or certain elements, ensuring the page behaves as expected after an action.
+  - **Assertions**: Methods that allow [verification](https://naodeng.com.cn/en/wiki/verification) of the state of the page or certain elements, ensuring the page behaves as expected after an action.
 
     ```
     public boolean isLoginButtonVisible() {
@@ -220,7 +219,7 @@ Page Object Model
     private By loginButton = By.id("login");
     ```
 
-  - **Constructor**: Initializes the page object, often ensuring the page is in the expected state. May use **[WebDriver](../W/webdriver.md)** as a parameter.
+  - **Constructor**: Initializes the page object, often ensuring the page is in the expected state. May use **[WebDriver](https://naodeng.com.cn/en/wiki/webdriver)** as a parameter.
 
     ```
     public LoginPage(WebDriver driver) {
@@ -244,7 +243,7 @@ Page Object Model
     }
     ```
 
-  - **Assertions**: Methods that allow [verification](../V/verification.md) of the state of the page or certain elements, ensuring the page behaves as expected after an action.
+  - **Assertions**: Methods that allow [verification](https://naodeng.com.cn/en/wiki/verification) of the state of the page or certain elements, ensuring the page behaves as expected after an action.
 
     ```
     public boolean isLoginButtonVisible() {
@@ -265,7 +264,7 @@ Page Object Model
 
 #### How do you handle dynamic elements in a Page Object Model?
 
-  Handling dynamic elements in a [Page Object Model](../P/page-object-model.md) (POM) involves strategies that allow your tests to interact with elements that may not have consistent identifiers or that may change state between test runs. Here are some approaches:
+  Handling dynamic elements in a [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) involves strategies that allow your tests to interact with elements that may not have consistent identifiers or that may change state between test runs. Here are some approaches:
 
   - **Use of Waits** : Implement explicit waits to handle elements that appear after a certain condition or time. This ensures that the elements are interactable when your test tries to access them.
 
@@ -311,8 +310,8 @@ Page Object Model
 
 #### How can you use the Page Factory class in the Page Object Model?
 
-  Using the **Page Factory** class in the [Page Object Model](../P/page-object-model.md) (POM) involves initializing elements in a manner that supports the POM's design principles. Page Factory provides an `initElements` method to initialize all WebElement fields annotated with `@FindBy`, `@FindBys`, or `@FindAll` annotations.
-  Here's a basic example in Java using [Selenium](../S/selenium.md)'s PageFactory:
+  Using the **Page Factory** class in the [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) involves initializing elements in a manner that supports the POM's design principles. Page Factory provides an `initElements` method to initialize all WebElement fields annotated with `@FindBy`, `@FindBys`, or `@FindAll` annotations.
+  Here's a basic example in Java using [Selenium](https://naodeng.com.cn/en/wiki/selenium)'s PageFactory:
 
   ```
   import org.openqa.selenium.WebDriver;
@@ -346,17 +345,17 @@ Page Object Model
   **Page Factory** is particularly useful for:
 
   - **Readability** : It clearly separates the page structure from the test logic.
-  - **[Maintainability](../M/maintainability.md)** : Changes to element locators only require updates in one place.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : Changes to element locators only require updates in one place.
   - **Reusability** : Commonly used elements and interactions can be encapsulated in methods for reuse across tests.
   - **Readability** : It clearly separates the page structure from the test logic.
-  - **[Maintainability](../M/maintainability.md)** : Changes to element locators only require updates in one place.
+  - **[Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : Changes to element locators only require updates in one place.
   - **Reusability** : Commonly used elements and interactions can be encapsulated in methods for reuse across tests.
 
 ### Advanced Concepts
 
 #### How can the Page Object Model be used with other design patterns like Singleton or Factory?
 
-  The **[Page Object Model](../P/page-object-model.md) (POM)** can be enhanced by integrating it with other design patterns like **Singleton** and **Factory** to improve test maintenance and scalability.
+  The **[Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM)** can be enhanced by integrating it with other design patterns like **Singleton** and **Factory** to improve test maintenance and scalability.
   **Singleton** ensures a class has only one instance and provides a global point of access to it. In POM, Singleton can manage the instantiation of browser sessions. By using Singleton for browser instances, you ensure that tests do not inadvertently spawn multiple browser windows.
 
   ```
@@ -385,11 +384,11 @@ Page Object Model
       }
   }
   ```
-  By combining POM with Factory, you can dynamically create page objects during runtime, which is particularly useful when dealing with multiple pages that share similar features. Singleton, when used with POM, ensures that the [WebDriver](../W/webdriver.md) instance is reused efficiently, reducing resource consumption and speeding up [test execution](../T/test-execution.md). Together, these patterns contribute to a more robust, maintainable, and scalable [test automation](../T/test-automation.md) framework.
+  By combining POM with Factory, you can dynamically create page objects during runtime, which is particularly useful when dealing with multiple pages that share similar features. Singleton, when used with POM, ensures that the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance is reused efficiently, reducing resource consumption and speeding up [test execution](https://naodeng.com.cn/en/wiki/test-execution). Together, these patterns contribute to a more robust, maintainable, and scalable [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework.
 
 #### How can you handle page navigation in the Page Object Model?
 
-  Handling page navigation in the **[Page Object Model](../P/page-object-model.md) (POM)** involves encapsulating the navigation logic within the page objects themselves. This approach maintains the separation of concerns and keeps tests clean and readable.
+  Handling page navigation in the **[Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM)** involves encapsulating the navigation logic within the page objects themselves. This approach maintains the separation of concerns and keeps tests clean and readable.
   Here's a general strategy:
 
   - **Define methods**
@@ -397,7 +396,7 @@ Page Object Model
 
   - **Return a new page object**
     instance that represents the destination page. This allows for a fluent interface and chaining of actions in your tests.
-  For example, in a [Selenium](../S/selenium.md)-based [test automation](../T/test-automation.md) framework:
+  For example, in a [Selenium](https://naodeng.com.cn/en/wiki/selenium)-based [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework:
 
   ```
   public class HomePage {
@@ -431,7 +430,7 @@ Page Object Model
 
 #### What is the role of abstraction in the Page Object Model?
 
-  Abstraction in the [Page Object Model](../P/page-object-model.md) (POM) serves to separate the **implementation details** of web pages from the tests that use them. By abstracting web page interactions into **high-level methods**, POM allows [test scripts](../T/test-script.md) to interact with page elements without knowing about the underlying HTML or CSS. This encapsulation means that changes to the page structure require updates only in the page object classes, not in the tests themselves.
+  Abstraction in the [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) serves to separate the **implementation details** of web pages from the tests that use them. By abstracting web page interactions into **high-level methods**, POM allows [test scripts](https://naodeng.com.cn/en/wiki/test-script) to interact with page elements without knowing about the underlying HTML or CSS. This encapsulation means that changes to the page structure require updates only in the page object classes, not in the tests themselves.
   For example, consider a login page with username and password fields. Instead of writing code to interact with these fields directly in the test, you would create a method in the page object:
 
   ```
@@ -448,12 +447,12 @@ Page Object Model
   LoginPage loginPage = new LoginPage(driver);
   HomePage homePage = loginPage.login("user", "pass");
   ```
-  This abstraction makes tests **easier to read and maintain**, as they focus on the **behavior** being tested rather than the **mechanics** of the user interface. It also reduces **code duplication**, as common interactions are centralized in page object methods. When UI changes occur, you only need to update the page object, not the tests, ensuring **robustness** and **scalability** of your [test suite](../T/test-suite.md).
+  This abstraction makes tests **easier to read and maintain**, as they focus on the **behavior** being tested rather than the **mechanics** of the user interface. It also reduces **code duplication**, as common interactions are centralized in page object methods. When UI changes occur, you only need to update the page object, not the tests, ensuring **robustness** and **scalability** of your [test suite](https://naodeng.com.cn/en/wiki/test-suite).
 
 #### How can you handle multiple windows or frames using the Page Object Model?
 
-  Handling multiple windows or frames in the [Page Object Model](../P/page-object-model.md) (POM) involves creating separate page objects for each window or frame. This encapsulates the interactions within each context, maintaining the POM's principles of modularity and reusability.
-  For **switching between windows**, you can use [WebDriver](../W/webdriver.md)'s `switchTo().window()` method. Store the window handles and switch to the desired window before interacting with elements within that window.
+  Handling multiple windows or frames in the [Page Object Model](https://naodeng.com.cn/en/wiki/page-object-model) (POM) involves creating separate page objects for each window or frame. This encapsulates the interactions within each context, maintaining the POM's principles of modularity and reusability.
+  For **switching between windows**, you can use [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)'s `switchTo().window()` method. Store the window handles and switch to the desired window before interacting with elements within that window.
 
   ```
   Set<String> windowHandles = driver.getWindowHandles();
@@ -464,7 +463,7 @@ Page Object Model
       }
   }
   ```
-  For **handling frames or iframes**, use [WebDriver](../W/webdriver.md)'s `switchTo().frame()` method. You can switch to a frame by index, name, or WebElement. After switching, interact with the frame's contents through its dedicated page object.
+  For **handling frames or iframes**, use [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)'s `switchTo().frame()` method. You can switch to a frame by index, name, or WebElement. After switching, interact with the frame's contents through its dedicated page object.
 
   ```
   driver.switchTo().frame("frameName");
@@ -472,4 +471,4 @@ Page Object Model
   driver.switchTo().defaultContent(); // Switch back to the main page
   ```
   Remember to switch back to the main content or the original window after the interactions are complete to maintain a stable state for subsequent actions. This can be done using `driver.switchTo().defaultContent()` for frames or by switching to the original window handle for windows.
-  By encapsulating window and frame handling within page objects, you maintain a clean separation of concerns and improve the [maintainability](../M/maintainability.md) of your test code.
+  By encapsulating window and frame handling within page objects, you maintain a clean separation of concerns and improve the [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of your test code.

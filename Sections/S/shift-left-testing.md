@@ -1,6 +1,5 @@
 # Shift-left Testing
 
-
 <!-- TOC START -->
 - [Questions about Shift-left Testing ?](#questions-about-shift-left-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -39,82 +38,82 @@ integrates testing early in the software development process. By testing frequen
 
 #### What is shift-left testing?
 
-  [Shift-left testing](../S/shift-left-testing.md) is the practice of integrating testing activities earlier into the software development lifecycle (SDLC). It emphasizes **prevention over detection** by identifying and addressing issues before they escalate into larger problems. This approach advocates for testing to be conducted **concurrently with development** rather than as a subsequent phase.
-  To implement [shift-left testing](../S/shift-left-testing.md), teams often adopt **[Test-Driven Development](../T/test-driven-development.md) (TDD)** and **Behavior-Driven Development ([BDD](../B/bdd.md))** methodologies. These involve writing tests before the actual code, ensuring that code is developed with testing in mind from the outset. Additionally, **[unit testing](../U/unit-testing.md)** is heavily utilized, with developers writing and running tests for individual units of code as they are developed.
+  [Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) is the practice of integrating testing activities earlier into the software development lifecycle (SDLC). It emphasizes **prevention over detection** by identifying and addressing issues before they escalate into larger problems. This approach advocates for testing to be conducted **concurrently with development** rather than as a subsequent phase.
+  To implement [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing), teams often adopt **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** and **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** methodologies. These involve writing tests before the actual code, ensuring that code is developed with testing in mind from the outset. Additionally, **[unit testing](https://naodeng.com.cn/en/wiki/unit-testing)** is heavily utilized, with developers writing and running tests for individual units of code as they are developed.
   **Collaboration** between developers, testers, and operations is crucial. Developers take on more testing responsibilities, while testers are involved earlier in the development process, contributing to requirements and design discussions. This collaboration is facilitated by **pair programming** and **mob programming** practices.
-  Incorporating **automation** is key to [shift-left testing](../S/shift-left-testing.md). Automated [test suites](../T/test-suite.md) are built and expanded upon from the beginning of the project. These automated tests are integrated into the **CI/CD pipeline**, ensuring that code is continuously tested with each commit.
+  Incorporating **automation** is key to [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing). Automated [test suites](https://naodeng.com.cn/en/wiki/test-suite) are built and expanded upon from the beginning of the project. These automated tests are integrated into the **CI/CD pipeline**, ensuring that code is continuously tested with each commit.
   To overcome challenges such as increased workload for developers and potential resistance to cultural change, teams should focus on **incremental adoption** of shift-left practices and ensure **adequate training** and **resource allocation**. It's also important to maintain a balance with shift-right testing, where monitoring and testing in production environments are used to capture feedback from real-world use.
 
 #### Why is shift-left testing important in software development?
 
-  [Shift-left testing](../S/shift-left-testing.md) is crucial in software development for **early defect detection** and **mitigation**. By integrating testing into earlier stages of the development lifecycle, teams can identify and address issues when they are less complex and costly to fix. This approach promotes a **culture of quality**, where developers are encouraged to consider testability and quality from the outset, rather than as an afterthought.
+  [Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) is crucial in software development for **early defect detection** and **mitigation**. By integrating testing into earlier stages of the development lifecycle, teams can identify and address issues when they are less complex and costly to fix. This approach promotes a **culture of quality**, where developers are encouraged to consider testability and quality from the outset, rather than as an afterthought.
   Incorporating shift-left practices means that testing is no longer a final hurdle but an ongoing aspect of development. This **continuous feedback loop** enhances collaboration between developers and testers, leading to a more **cohesive and efficient team dynamic**. As a result, the development process becomes more proactive rather than reactive, reducing the risk of significant defects or issues late in the cycle.
-  Moreover, [shift-left testing](../S/shift-left-testing.md) aligns well with **modern development practices** such as Agile and DevOps, where rapid [iteration](../I/iteration.md) and continuous delivery are key. It enables teams to maintain the pace of delivery without compromising on quality, by ensuring that testing keeps up with the speed of development.
-  To effectively implement [shift-left testing](../S/shift-left-testing.md), teams often rely on **automation** to handle repetitive and detailed [test cases](../T/test-case.md), allowing human testers to focus on more complex and high-value testing activities. This strategic use of resources not only improves efficiency but also leverages the strengths of both automated tools and human insight.
-  In summary, [shift-left testing](../S/shift-left-testing.md) is a strategic approach that fosters **early [quality assurance](../Q/quality-assurance.md)**, **team collaboration**, and **efficient resource utilization**, all of which are essential for delivering high-quality software in a timely manner.
+  Moreover, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) aligns well with **modern development practices** such as Agile and DevOps, where rapid [iteration](https://naodeng.com.cn/en/wiki/iteration) and continuous delivery are key. It enables teams to maintain the pace of delivery without compromising on quality, by ensuring that testing keeps up with the speed of development.
+  To effectively implement [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing), teams often rely on **automation** to handle repetitive and detailed [test cases](https://naodeng.com.cn/en/wiki/test-case), allowing human testers to focus on more complex and high-value testing activities. This strategic use of resources not only improves efficiency but also leverages the strengths of both automated tools and human insight.
+  In summary, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) is a strategic approach that fosters **early [quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance)**, **team collaboration**, and **efficient resource utilization**, all of which are essential for delivering high-quality software in a timely manner.
 
 #### What are the benefits of shift-left testing?
 
-  [Shift-left testing](../S/shift-left-testing.md) offers several benefits that enhance the overall efficiency and effectiveness of the software development lifecycle (SDLC):
+  [Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) offers several benefits that enhance the overall efficiency and effectiveness of the software development lifecycle (SDLC):
 
-  - **Early [Bug](../B/bug.md) Detection** : Bugs are identified earlier in the development process, reducing the cost and effort of fixing them compared to later stages.
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection** : Bugs are identified earlier in the development process, reducing the cost and effort of fixing them compared to later stages.
   - **Improved Collaboration** : Encourages closer collaboration between developers, testers, and operations, fostering better communication and understanding of the project goals and requirements.
-  - **Increased [Test Coverage](../T/test-coverage.md)** : Allows for more thorough test coverage as testing starts earlier and can be conducted alongside development.
+  - **Increased [Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Allows for more thorough test coverage as testing starts earlier and can be conducted alongside development.
   - **Faster Feedback Loop** : Provides rapid feedback to developers on the quality and functionality of their code, enabling quicker iterations and refinements.
   - **Reduced Time to Market** : Accelerates the delivery of features and bug fixes by integrating testing into the earlier stages of development, thus shortening the release cycle.
-  - **Enhanced [Quality Assurance](../Q/quality-assurance.md)** : Promotes a quality-first mindset that permeates the entire SDLC, leading to higher quality software products.
+  - **Enhanced [Quality Assurance](https://naodeng.com.cn/en/wiki/quality-assurance)** : Promotes a quality-first mindset that permeates the entire SDLC, leading to higher quality software products.
   - **Cost Savings** : Cuts down on the costs associated with late-stage defect remediation and potential downtime caused by post-deployment issues.
   - **Risk Mitigation** : Helps in identifying and mitigating risks early, which can prevent project delays and ensure compliance with industry standards and regulations.
-  By incorporating these benefits into the SDLC, [shift-left testing](../S/shift-left-testing.md) significantly contributes to a more robust, efficient, and reliable software development process.
+  By incorporating these benefits into the SDLC, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) significantly contributes to a more robust, efficient, and reliable software development process.
 
-  - **Early [Bug](../B/bug.md) Detection** : Bugs are identified earlier in the development process, reducing the cost and effort of fixing them compared to later stages.
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection** : Bugs are identified earlier in the development process, reducing the cost and effort of fixing them compared to later stages.
   - **Improved Collaboration** : Encourages closer collaboration between developers, testers, and operations, fostering better communication and understanding of the project goals and requirements.
-  - **Increased [Test Coverage](../T/test-coverage.md)** : Allows for more thorough test coverage as testing starts earlier and can be conducted alongside development.
+  - **Increased [Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Allows for more thorough test coverage as testing starts earlier and can be conducted alongside development.
   - **Faster Feedback Loop** : Provides rapid feedback to developers on the quality and functionality of their code, enabling quicker iterations and refinements.
   - **Reduced Time to Market** : Accelerates the delivery of features and bug fixes by integrating testing into the earlier stages of development, thus shortening the release cycle.
-  - **Enhanced [Quality Assurance](../Q/quality-assurance.md)** : Promotes a quality-first mindset that permeates the entire SDLC, leading to higher quality software products.
+  - **Enhanced [Quality Assurance](https://naodeng.com.cn/en/wiki/quality-assurance)** : Promotes a quality-first mindset that permeates the entire SDLC, leading to higher quality software products.
   - **Cost Savings** : Cuts down on the costs associated with late-stage defect remediation and potential downtime caused by post-deployment issues.
   - **Risk Mitigation** : Helps in identifying and mitigating risks early, which can prevent project delays and ensure compliance with industry standards and regulations.
 
 #### How does shift-left testing improve the quality of software products?
 
-  [Shift-left testing](../S/shift-left-testing.md) enhances [software quality](../S/software-quality.md) by embedding testing early and often in the development lifecycle. This proactive approach allows for **early defect detection** and resolution, which is more cost-effective and less time-consuming than fixing issues later in the cycle. By integrating testing into the initial stages of development, teams can ensure that code is robust from the outset, leading to a **reduction in the number of [bugs](../B/bug.md)** that make it to production.
+  [Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by embedding testing early and often in the development lifecycle. This proactive approach allows for **early defect detection** and resolution, which is more cost-effective and less time-consuming than fixing issues later in the cycle. By integrating testing into the initial stages of development, teams can ensure that code is robust from the outset, leading to a **reduction in the number of [bugs](https://naodeng.com.cn/en/wiki/bug)** that make it to production.
   Incorporating shift-left practices, developers gain immediate feedback on their code, fostering a **culture of quality** and shared responsibility for the product's reliability. This collaboration between developers and testers results in a more thorough understanding of the codebase and its potential vulnerabilities, contributing to a **higher overall software integrity**.
-  Moreover, [shift-left testing](../S/shift-left-testing.md) encourages the use of **[automated testing](../A/automated-testing.md) frameworks** and tools, which provide rapid and repeatable validation of new features and [regression testing](../R/regression-testing.md). Automation not only speeds up the testing process but also ensures consistency and accuracy in [test execution](../T/test-execution.md), leading to a more stable and reliable product.
-  By focusing on quality from the beginning, [shift-left testing](../S/shift-left-testing.md) minimizes the risk of late-stage surprises and ensures that the software is built with a **strong foundation of quality**, ultimately leading to a superior product that meets user needs and expectations.
+  Moreover, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) encourages the use of **[automated testing](https://naodeng.com.cn/en/wiki/automated-testing) frameworks** and tools, which provide rapid and repeatable validation of new features and [regression testing](https://naodeng.com.cn/en/wiki/regression-testing). Automation not only speeds up the testing process but also ensures consistency and accuracy in [test execution](https://naodeng.com.cn/en/wiki/test-execution), leading to a more stable and reliable product.
+  By focusing on quality from the beginning, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) minimizes the risk of late-stage surprises and ensures that the software is built with a **strong foundation of quality**, ultimately leading to a superior product that meets user needs and expectations.
 
 #### What are the key principles of shift-left testing?
 
-  [Shift-left testing](../S/shift-left-testing.md) is underpinned by several key principles:
+  [Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) is underpinned by several key principles:
 
   - **Early Testing** : Begin testing as soon as possible in the development lifecycle, ideally during the requirements and design phases.
   - **Collaboration** : Foster a collaborative environment where developers, testers, and business analysts work together to understand requirements and create test cases.
-  - **[Test Automation](../T/test-automation.md)** : Leverage automation to run tests frequently and consistently, allowing for rapid feedback and regression testing.
+  - **[Test Automation](https://naodeng.com.cn/en/wiki/test-automation)** : Leverage automation to run tests frequently and consistently, allowing for rapid feedback and regression testing.
   - **Continuous Testing** : Integrate testing into the continuous integration pipeline to ensure that new code is tested as it is written.
   - **Prevention Over Detection** : Focus on preventing defects rather than detecting them later in the cycle, which is more costly and time-consuming.
   - **Quality Ownership** : Encourage all team members to take responsibility for quality, not just testers.
   - **Feedback Loops** : Implement short feedback loops to quickly identify and address issues, leading to more efficient resolution.
-  - **[Incremental Testing](../I/incremental-testing.md)** : Test incrementally alongside development to avoid the accumulation of untested code, which can lead to increased risk.
+  - **[Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)** : Test incrementally alongside development to avoid the accumulation of untested code, which can lead to increased risk.
   - **Shift-Left Mindset** : Cultivate a mindset that values early testing and quality considerations from the outset of the project.
-  By adhering to these principles, [shift-left testing](../S/shift-left-testing.md) aims to improve [software quality](../S/software-quality.md), reduce time to market, and lower overall project costs.
+  By adhering to these principles, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) aims to improve [software quality](https://naodeng.com.cn/en/wiki/software-quality), reduce time to market, and lower overall project costs.
 
   - **Early Testing** : Begin testing as soon as possible in the development lifecycle, ideally during the requirements and design phases.
   - **Collaboration** : Foster a collaborative environment where developers, testers, and business analysts work together to understand requirements and create test cases.
-  - **[Test Automation](../T/test-automation.md)** : Leverage automation to run tests frequently and consistently, allowing for rapid feedback and regression testing.
+  - **[Test Automation](https://naodeng.com.cn/en/wiki/test-automation)** : Leverage automation to run tests frequently and consistently, allowing for rapid feedback and regression testing.
   - **Continuous Testing** : Integrate testing into the continuous integration pipeline to ensure that new code is tested as it is written.
   - **Prevention Over Detection** : Focus on preventing defects rather than detecting them later in the cycle, which is more costly and time-consuming.
   - **Quality Ownership** : Encourage all team members to take responsibility for quality, not just testers.
   - **Feedback Loops** : Implement short feedback loops to quickly identify and address issues, leading to more efficient resolution.
-  - **[Incremental Testing](../I/incremental-testing.md)** : Test incrementally alongside development to avoid the accumulation of untested code, which can lead to increased risk.
+  - **[Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)** : Test incrementally alongside development to avoid the accumulation of untested code, which can lead to increased risk.
   - **Shift-Left Mindset** : Cultivate a mindset that values early testing and quality considerations from the outset of the project.
 
 ### Implementation and Strategies
 
 #### How is shift-left testing implemented in a software development process?
 
-  [Shift-left testing](../S/shift-left-testing.md) is implemented by integrating testing activities early into the software development lifecycle (SDLC). Here's how to do it:
+  [Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) is implemented by integrating testing activities early into the software development lifecycle (SDLC). Here's how to do it:
 
-  1. **Embed testing in the requirements phase**: Collaborate with stakeholders to define testable requirements. Use **Behavior-Driven Development ([BDD](../B/bdd.md))** frameworks like Cucumber to write executable specifications.
+  1. **Embed testing in the requirements phase**: Collaborate with stakeholders to define testable requirements. Use **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** frameworks like Cucumber to write executable specifications.
 
     ```
     Feature: User login
@@ -124,7 +123,7 @@ integrates testing early in the software development process. By testing frequen
         Then they are granted access to the dashboard
     ```
 
-  2. **Introduce [unit testing](../U/unit-testing.md)**: Encourage developers to write unit tests alongside their code. Employ test frameworks such as JUnit for Java or Mocha for JavaScript.
+  2. **Introduce [unit testing](https://naodeng.com.cn/en/wiki/unit-testing)**: Encourage developers to write unit tests alongside their code. Employ test frameworks such as JUnit for Java or Mocha for JavaScript.
 
     ```
     describe('Calculator', () => {
@@ -134,7 +133,7 @@ integrates testing early in the software development process. By testing frequen
     });
     ```
 
-  3. **Implement [Test-Driven Development](../T/test-driven-development.md) (TDD)**: Write tests before writing the code that makes the tests pass. This ensures code is designed to be testable from the start.
+  3. **Implement [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**: Write tests before writing the code that makes the tests pass. This ensures code is designed to be testable from the start.
   4. **Automate the build process**: Use tools like Jenkins or GitHub Actions to automate builds and run tests on every commit, ensuring immediate feedback on code changes.
 
     ```
@@ -150,10 +149,10 @@ integrates testing early in the software development process. By testing frequen
 
   5. **Integrate static code analysis**: Incorporate tools like SonarQube to analyze code for potential issues before it's merged into the main branch.
   6. **Facilitate collaboration**: Use pair programming and code reviews to foster a quality-focused culture where testing is a shared responsibility.
-  7. **Monitor and measure**: Track key metrics like [test coverage](../T/test-coverage.md) and defect rates to continuously improve the testing process.
+  7. **Monitor and measure**: Track key metrics like [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and defect rates to continuously improve the testing process.
   By shifting testing left, you ensure that defects are caught and addressed early, reducing the cost and effort of fixing them later in the SDLC.
 
-  1. **Embed testing in the requirements phase**: Collaborate with stakeholders to define testable requirements. Use **Behavior-Driven Development ([BDD](../B/bdd.md))** frameworks like Cucumber to write executable specifications.
+  1. **Embed testing in the requirements phase**: Collaborate with stakeholders to define testable requirements. Use **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** frameworks like Cucumber to write executable specifications.
 
     ```
     Feature: User login
@@ -163,7 +162,7 @@ integrates testing early in the software development process. By testing frequen
         Then they are granted access to the dashboard
     ```
 
-  2. **Introduce [unit testing](../U/unit-testing.md)**: Encourage developers to write unit tests alongside their code. Employ test frameworks such as JUnit for Java or Mocha for JavaScript.
+  2. **Introduce [unit testing](https://naodeng.com.cn/en/wiki/unit-testing)**: Encourage developers to write unit tests alongside their code. Employ test frameworks such as JUnit for Java or Mocha for JavaScript.
 
     ```
     describe('Calculator', () => {
@@ -173,7 +172,7 @@ integrates testing early in the software development process. By testing frequen
     });
     ```
 
-  3. **Implement [Test-Driven Development](../T/test-driven-development.md) (TDD)**: Write tests before writing the code that makes the tests pass. This ensures code is designed to be testable from the start.
+  3. **Implement [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**: Write tests before writing the code that makes the tests pass. This ensures code is designed to be testable from the start.
   4. **Automate the build process**: Use tools like Jenkins or GitHub Actions to automate builds and run tests on every commit, ensuring immediate feedback on code changes.
 
     ```
@@ -189,15 +188,15 @@ integrates testing early in the software development process. By testing frequen
 
   5. **Integrate static code analysis**: Incorporate tools like SonarQube to analyze code for potential issues before it's merged into the main branch.
   6. **Facilitate collaboration**: Use pair programming and code reviews to foster a quality-focused culture where testing is a shared responsibility.
-  7. **Monitor and measure**: Track key metrics like [test coverage](../T/test-coverage.md) and defect rates to continuously improve the testing process.
+  7. **Monitor and measure**: Track key metrics like [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and defect rates to continuously improve the testing process.
 
 #### What are some strategies for successful shift-left testing?
 
-  To ensure successful **[shift-left testing](../S/shift-left-testing.md)**, consider the following strategies:
+  To ensure successful **[shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing)**, consider the following strategies:
 
   - **Embed Testing Early**: Integrate testing into the initial stages of development. Encourage developers to write unit tests and participate in test design.
   - **Collaboration**: Foster a collaborative environment where developers and testers work closely. Use pair programming and joint design sessions to share knowledge and responsibilities.
-  - **[Test-Driven Development](../T/test-driven-development.md) (TDD)**: Adopt TDD practices where tests are written before the code, ensuring that code is designed to pass tests from the outset.
+  - **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**: Adopt TDD practices where tests are written before the code, ensuring that code is designed to pass tests from the outset.
   - **Automate Wisely**: Focus on automating the right tests at the right level. Prioritize unit and integration tests that can run quickly and provide fast feedback.
   - $
 
@@ -222,7 +221,7 @@ integrates testing early in the software development process. By testing frequen
 
   - **Embed Testing Early**: Integrate testing into the initial stages of development. Encourage developers to write unit tests and participate in test design.
   - **Collaboration**: Foster a collaborative environment where developers and testers work closely. Use pair programming and joint design sessions to share knowledge and responsibilities.
-  - **[Test-Driven Development](../T/test-driven-development.md) (TDD)**: Adopt TDD practices where tests are written before the code, ensuring that code is designed to pass tests from the outset.
+  - **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**: Adopt TDD practices where tests are written before the code, ensuring that code is designed to pass tests from the outset.
   - **Automate Wisely**: Focus on automating the right tests at the right level. Prioritize unit and integration tests that can run quickly and provide fast feedback.
   - $
 
@@ -231,9 +230,9 @@ integrates testing early in the software development process. By testing frequen
 
 #### How does shift-left testing fit into Agile and DevOps methodologies?
 
-  [Shift-left testing](../S/shift-left-testing.md) seamlessly integrates with **Agile** and **DevOps** by embedding testing early and often in the software development lifecycle. In Agile, it aligns with the iterative development model, ensuring that testing occurs concurrently with development, thus enabling rapid feedback and continuous improvement. This approach supports Agile's emphasis on **incremental quality** and **user-centric products**.
-  Within **DevOps**, [shift-left testing](../S/shift-left-testing.md) is a natural fit as it enhances the **collaboration** between development, testing, and operations. It contributes to the **CI/CD pipeline** by automating tests and running them as part of the integration process, which helps in identifying defects earlier. This practice not only reduces the time to deployment but also maintains the stability and reliability of the software in production.
-  By incorporating [shift-left testing](../S/shift-left-testing.md), both Agile and DevOps benefit from **reduced time-to-market**, **lower costs**, and **improved product quality**. It encourages a **preventative approach** to quality, rather than a reactive one, fostering a culture of shared responsibility for quality across the entire team.
+  [Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) seamlessly integrates with **Agile** and **DevOps** by embedding testing early and often in the software development lifecycle. In Agile, it aligns with the iterative development model, ensuring that testing occurs concurrently with development, thus enabling rapid feedback and continuous improvement. This approach supports Agile's emphasis on **incremental quality** and **user-centric products**.
+  Within **DevOps**, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) is a natural fit as it enhances the **collaboration** between development, testing, and operations. It contributes to the **CI/CD pipeline** by automating tests and running them as part of the integration process, which helps in identifying defects earlier. This practice not only reduces the time to deployment but also maintains the stability and reliability of the software in production.
+  By incorporating [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing), both Agile and DevOps benefit from **reduced time-to-market**, **lower costs**, and **improved product quality**. It encourages a **preventative approach** to quality, rather than a reactive one, fostering a culture of shared responsibility for quality across the entire team.
 
   ```
   // Example of a CI pipeline script incorporating shift-left testing
@@ -256,62 +255,62 @@ integrates testing early in the software development process. By testing frequen
       }
   }
   ```
-  In essence, [shift-left testing](../S/shift-left-testing.md) is a strategic enabler for Agile and DevOps, promoting **early testing**, **automation**, and **cross-functional team collaboration** to achieve high-quality software delivery at speed.
+  In essence, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) is a strategic enabler for Agile and DevOps, promoting **early testing**, **automation**, and **cross-functional team collaboration** to achieve high-quality software delivery at speed.
 
 #### What are the challenges in implementing shift-left testing and how can they be overcome?
 
-  Implementing [shift-left testing](../S/shift-left-testing.md) presents several challenges, including:
+  Implementing [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) presents several challenges, including:
 
-  - **Cultural resistance**: Developers and testers may be accustomed to traditional testing models. Overcome this by fostering a collaborative culture and providing training on the benefits and practices of [shift-left testing](../S/shift-left-testing.md).
+  - **Cultural resistance**: Developers and testers may be accustomed to traditional testing models. Overcome this by fostering a collaborative culture and providing training on the benefits and practices of [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing).
   - **Skill gaps**: Shift-left requires developers to have testing skills and testers to understand coding. Address this by cross-training team members and encouraging continuous learning.
-  - **Tool integration**: Existing tools may not support early testing. Select and integrate tools that facilitate shift-left, such as those that enable [test automation](../T/test-automation.md) within the development environment.
+  - **Tool integration**: Existing tools may not support early testing. Select and integrate tools that facilitate shift-left, such as those that enable [test automation](https://naodeng.com.cn/en/wiki/test-automation) within the development environment.
   - **Process adaptation**: Shift-left requires changes to the development process. Implement incremental changes and use retrospectives to refine the process.
   - **Quality ownership**: There may be confusion about who is responsible for quality. Clarify roles and emphasize that quality is a collective responsibility.
-  - **[Test environment](../T/test-environment.md) [setup](../S/setup.md)**: Early testing needs stable environments. Automate environment provisioning and use containerization to ensure consistency.
-  - **[Test data](../T/test-data.md) management**: Access to appropriate [test data](../T/test-data.md) can be a hurdle. Utilize [test data](../T/test-data.md) management tools and techniques to provide relevant data for early testing stages.
+  - **[Test environment](https://naodeng.com.cn/en/wiki/test-environment) [setup](https://naodeng.com.cn/en/wiki/setup)**: Early testing needs stable environments. Automate environment provisioning and use containerization to ensure consistency.
+  - **[Test data](https://naodeng.com.cn/en/wiki/test-data) management**: Access to appropriate [test data](https://naodeng.com.cn/en/wiki/test-data) can be a hurdle. Utilize [test data](https://naodeng.com.cn/en/wiki/test-data) management tools and techniques to provide relevant data for early testing stages.
   - **Continuous feedback**: Shift-left relies on rapid feedback, which can be overwhelming. Implement robust monitoring and alerting to manage feedback effectively.
-  By addressing these challenges with targeted strategies, [shift-left testing](../S/shift-left-testing.md) can be successfully integrated into the software development lifecycle, enhancing early defect detection and improving overall product quality.
+  By addressing these challenges with targeted strategies, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) can be successfully integrated into the software development lifecycle, enhancing early defect detection and improving overall product quality.
 
-  - **Cultural resistance**: Developers and testers may be accustomed to traditional testing models. Overcome this by fostering a collaborative culture and providing training on the benefits and practices of [shift-left testing](../S/shift-left-testing.md).
+  - **Cultural resistance**: Developers and testers may be accustomed to traditional testing models. Overcome this by fostering a collaborative culture and providing training on the benefits and practices of [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing).
   - **Skill gaps**: Shift-left requires developers to have testing skills and testers to understand coding. Address this by cross-training team members and encouraging continuous learning.
-  - **Tool integration**: Existing tools may not support early testing. Select and integrate tools that facilitate shift-left, such as those that enable [test automation](../T/test-automation.md) within the development environment.
+  - **Tool integration**: Existing tools may not support early testing. Select and integrate tools that facilitate shift-left, such as those that enable [test automation](https://naodeng.com.cn/en/wiki/test-automation) within the development environment.
   - **Process adaptation**: Shift-left requires changes to the development process. Implement incremental changes and use retrospectives to refine the process.
   - **Quality ownership**: There may be confusion about who is responsible for quality. Clarify roles and emphasize that quality is a collective responsibility.
-  - **[Test environment](../T/test-environment.md) [setup](../S/setup.md)**: Early testing needs stable environments. Automate environment provisioning and use containerization to ensure consistency.
-  - **[Test data](../T/test-data.md) management**: Access to appropriate [test data](../T/test-data.md) can be a hurdle. Utilize [test data](../T/test-data.md) management tools and techniques to provide relevant data for early testing stages.
+  - **[Test environment](https://naodeng.com.cn/en/wiki/test-environment) [setup](https://naodeng.com.cn/en/wiki/setup)**: Early testing needs stable environments. Automate environment provisioning and use containerization to ensure consistency.
+  - **[Test data](https://naodeng.com.cn/en/wiki/test-data) management**: Access to appropriate [test data](https://naodeng.com.cn/en/wiki/test-data) can be a hurdle. Utilize [test data](https://naodeng.com.cn/en/wiki/test-data) management tools and techniques to provide relevant data for early testing stages.
   - **Continuous feedback**: Shift-left relies on rapid feedback, which can be overwhelming. Implement robust monitoring and alerting to manage feedback effectively.
 
 #### How does shift-left testing impact the roles of developers and testers?
 
-  [Shift-left testing](../S/shift-left-testing.md) redefines the roles of **developers** and **testers** by promoting closer collaboration and shared responsibility for [quality assurance](../Q/quality-assurance.md). Developers are encouraged to take on more **testing duties**, incorporating unit tests and integration tests early in the development cycle. This proactive approach to testing requires developers to have a stronger focus on testability and to be equipped with skills in writing and maintaining automated tests.
-  Testers, on the other hand, become more involved in the **upstream activities** of the software development lifecycle. They engage in requirements analysis, design discussions, and contribute to the creation of [test scenarios](../T/test-scenario.md) from the outset. Their role shifts towards being quality advocates and test architects, designing test frameworks and guiding developers on testing best practices.
-  Both roles must adapt to a more **iterative and incremental** development process, with testers often working on refining [test automation](../T/test-automation.md) in parallel with feature development. The boundary between developer and tester roles becomes blurred, fostering a culture where everyone is responsible for quality.
-  In essence, [shift-left testing](../S/shift-left-testing.md) leads to a **cross-pollination of skills** where developers gain deeper insights into testing methodologies, and testers acquire a stronger understanding of the codebase and development practices. This synergy enhances the team's ability to identify and address defects early, reducing the cost and effort of fixing [bugs](../B/bug.md) in later stages.
+  [Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) redefines the roles of **developers** and **testers** by promoting closer collaboration and shared responsibility for [quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance). Developers are encouraged to take on more **testing duties**, incorporating unit tests and integration tests early in the development cycle. This proactive approach to testing requires developers to have a stronger focus on testability and to be equipped with skills in writing and maintaining automated tests.
+  Testers, on the other hand, become more involved in the **upstream activities** of the software development lifecycle. They engage in requirements analysis, design discussions, and contribute to the creation of [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) from the outset. Their role shifts towards being quality advocates and test architects, designing test frameworks and guiding developers on testing best practices.
+  Both roles must adapt to a more **iterative and incremental** development process, with testers often working on refining [test automation](https://naodeng.com.cn/en/wiki/test-automation) in parallel with feature development. The boundary between developer and tester roles becomes blurred, fostering a culture where everyone is responsible for quality.
+  In essence, [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) leads to a **cross-pollination of skills** where developers gain deeper insights into testing methodologies, and testers acquire a stronger understanding of the codebase and development practices. This synergy enhances the team's ability to identify and address defects early, reducing the cost and effort of fixing [bugs](https://naodeng.com.cn/en/wiki/bug) in later stages.
 
 ### Tools and Techniques
 
 #### What tools are commonly used in shift-left testing?
 
-  Common tools used in **[shift-left testing](../S/shift-left-testing.md)** include:
+  Common tools used in **[shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing)** include:
 
-  - **[Unit Testing](../U/unit-testing.md) Frameworks** : Tools like JUnit, NUnit, and TestNG enable developers to write and run unit tests, which are integral to shift-left methodologies.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing) Frameworks** : Tools like JUnit, NUnit, and TestNG enable developers to write and run unit tests, which are integral to shift-left methodologies.
   - **Mocking Frameworks** : Mockito, Moq, and Sinon.js help simulate the behavior of complex objects to test components in isolation.
   - **Static Code Analysis Tools** : SonarQube and ESLint analyze code for potential issues before runtime.
   - **Integrated Development Environments (IDEs)** : IDEs such as Visual Studio and IntelliJ IDEA often have built-in testing and debugging tools that support shift-left practices.
-  - **Behavior-Driven Development ([BDD](../B/bdd.md)) Tools** : Cucumber and SpecFlow facilitate BDD, allowing the definition of application behavior in plain language.
-  - **[Test Automation](../T/test-automation.md) Frameworks** : Selenium, Appium, and Cypress provide capabilities for automating functional tests early in the development cycle.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) Tools** : Cucumber and SpecFlow facilitate BDD, allowing the definition of application behavior in plain language.
+  - **[Test Automation](https://naodeng.com.cn/en/wiki/test-automation) Frameworks** : Selenium, Appium, and Cypress provide capabilities for automating functional tests early in the development cycle.
   - **Continuous Integration Tools** : Jenkins, CircleCI, and GitHub Actions automate the build and test process, reinforcing the shift-left approach.
   - **Version Control Systems (VCS)** : Git and Subversion support shift-left by integrating code changes and testing frequently.
   - **Infrastructure as Code (IaC) Tools** : Terraform and Ansible enable the creation of test environments that can be versioned and controlled like application code.
   - **Service Virtualization** : Tools like WireMock and Mountebank allow the simulation of service dependencies for testing in a controlled environment.
   These tools help embed testing early in the development lifecycle, ensuring that issues are identified and addressed sooner.
 
-  - **[Unit Testing](../U/unit-testing.md) Frameworks** : Tools like JUnit, NUnit, and TestNG enable developers to write and run unit tests, which are integral to shift-left methodologies.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing) Frameworks** : Tools like JUnit, NUnit, and TestNG enable developers to write and run unit tests, which are integral to shift-left methodologies.
   - **Mocking Frameworks** : Mockito, Moq, and Sinon.js help simulate the behavior of complex objects to test components in isolation.
   - **Static Code Analysis Tools** : SonarQube and ESLint analyze code for potential issues before runtime.
   - **Integrated Development Environments (IDEs)** : IDEs such as Visual Studio and IntelliJ IDEA often have built-in testing and debugging tools that support shift-left practices.
-  - **Behavior-Driven Development ([BDD](../B/bdd.md)) Tools** : Cucumber and SpecFlow facilitate BDD, allowing the definition of application behavior in plain language.
-  - **[Test Automation](../T/test-automation.md) Frameworks** : Selenium, Appium, and Cypress provide capabilities for automating functional tests early in the development cycle.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) Tools** : Cucumber and SpecFlow facilitate BDD, allowing the definition of application behavior in plain language.
+  - **[Test Automation](https://naodeng.com.cn/en/wiki/test-automation) Frameworks** : Selenium, Appium, and Cypress provide capabilities for automating functional tests early in the development cycle.
   - **Continuous Integration Tools** : Jenkins, CircleCI, and GitHub Actions automate the build and test process, reinforcing the shift-left approach.
   - **Version Control Systems (VCS)** : Git and Subversion support shift-left by integrating code changes and testing frequently.
   - **Infrastructure as Code (IaC) Tools** : Terraform and Ansible enable the creation of test environments that can be versioned and controlled like application code.
@@ -319,9 +318,9 @@ integrates testing early in the software development process. By testing frequen
 
 #### What techniques are effective in shift-left testing?
 
-  Effective techniques in **[shift-left testing](../S/shift-left-testing.md)** include:
+  Effective techniques in **[shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing)** include:
 
-  - **[Test-Driven Development](../T/test-driven-development.md) (TDD)** : Writing tests before code ensures that testing is an integral part of the development process.
+  - **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** : Writing tests before code ensures that testing is an integral part of the development process.
 
     ```
     describe('Calculator', () => {
@@ -331,7 +330,7 @@ integrates testing early in the software development process. By testing frequen
     });
     ```
 
-  - **Behavior-Driven Development ([BDD](../B/bdd.md))** : Using human-readable descriptions to define the behavior of applications aligns developers and testers on expectations.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** : Using human-readable descriptions to define the behavior of applications aligns developers and testers on expectations.
 
     ```
     Feature: User login
@@ -344,7 +343,7 @@ integrates testing early in the software development process. By testing frequen
   - **Pair Programming** : Developers work together, with one writing code and the other writing corresponding tests, promoting immediate feedback and quality.
   - **Code Reviews** : Regularly reviewing code for testability encourages developers to consider testing early in the cycle.
   - **Static Code Analysis** : Tools that analyze code without executing it can identify potential issues before runtime.
-  - **[Unit Testing](../U/unit-testing.md) Frameworks** : Utilizing frameworks like JUnit, NUnit, or pytest for creating and running tests efficiently.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing) Frameworks** : Utilizing frameworks like JUnit, NUnit, or pytest for creating and running tests efficiently.
   - **Mocking and Service Virtualization** : Simulating components and services that are not yet available for testing.
   - **Continuous Testing** : Integrating automated tests into the CI/CD pipeline to run with every build.
 
@@ -362,9 +361,9 @@ integrates testing early in the software development process. By testing frequen
     ```
 
   - **Component Testing** : Isolating and testing individual components early in the development process.
-  By applying these techniques, [test automation](../T/test-automation.md) engineers can ensure that testing is an integral part of the development lifecycle, leading to earlier defect detection and resolution.
+  By applying these techniques, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can ensure that testing is an integral part of the development lifecycle, leading to earlier defect detection and resolution.
 
-  - **[Test-Driven Development](../T/test-driven-development.md) (TDD)** : Writing tests before code ensures that testing is an integral part of the development process.
+  - **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** : Writing tests before code ensures that testing is an integral part of the development process.
 
     ```
     describe('Calculator', () => {
@@ -374,7 +373,7 @@ integrates testing early in the software development process. By testing frequen
     });
     ```
 
-  - **Behavior-Driven Development ([BDD](../B/bdd.md))** : Using human-readable descriptions to define the behavior of applications aligns developers and testers on expectations.
+  - **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** : Using human-readable descriptions to define the behavior of applications aligns developers and testers on expectations.
 
     ```
     Feature: User login
@@ -387,7 +386,7 @@ integrates testing early in the software development process. By testing frequen
   - **Pair Programming** : Developers work together, with one writing code and the other writing corresponding tests, promoting immediate feedback and quality.
   - **Code Reviews** : Regularly reviewing code for testability encourages developers to consider testing early in the cycle.
   - **Static Code Analysis** : Tools that analyze code without executing it can identify potential issues before runtime.
-  - **[Unit Testing](../U/unit-testing.md) Frameworks** : Utilizing frameworks like JUnit, NUnit, or pytest for creating and running tests efficiently.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing) Frameworks** : Utilizing frameworks like JUnit, NUnit, or pytest for creating and running tests efficiently.
   - **Mocking and Service Virtualization** : Simulating components and services that are not yet available for testing.
   - **Continuous Testing** : Integrating automated tests into the CI/CD pipeline to run with every build.
 
@@ -408,10 +407,10 @@ integrates testing early in the software development process. By testing frequen
 
 #### How does automation play a role in shift-left testing?
 
-  Automation plays a crucial role in **[shift-left testing](../S/shift-left-testing.md)** by enabling early and frequent testing, which is fundamental to this approach. By integrating automated tests into the **development pipeline**, teams can run tests as soon as code is committed, ensuring immediate feedback on the impact of changes.
+  Automation plays a crucial role in **[shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing)** by enabling early and frequent testing, which is fundamental to this approach. By integrating automated tests into the **development pipeline**, teams can run tests as soon as code is committed, ensuring immediate feedback on the impact of changes.
   Automated tests, especially **unit tests** and **integration tests**, can be executed much faster and more frequently than manual tests, which is essential for shift-left's emphasis on continuous testing. This allows for the detection and resolution of defects early in the development cycle, reducing the cost and effort of fixing them later.
   Moreover, automation supports the creation of a **repeatable and consistent** testing process. It ensures that the same tests are run in the same way every time, which is vital for identifying new issues quickly. Automated tests can also be easily shared and reused across different environments and stages of the development process, promoting collaboration between developers and testers.
-  To implement automation in [shift-left testing](../S/shift-left-testing.md), teams often use tools that support **[Test-Driven Development](../T/test-driven-development.md) (TDD)**, **Behavior-Driven Development ([BDD](../B/bdd.md))**, and **Continuous Integration (CI)**. These tools help to codify requirements as automated tests and integrate them into the build process.
+  To implement automation in [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing), teams often use tools that support **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**, **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))**, and **Continuous Integration (CI)**. These tools help to codify requirements as automated tests and integrate them into the build process.
 
   ```
   // Example of an automated unit test in TypeScript
@@ -423,11 +422,11 @@ integrates testing early in the software development process. By testing frequen
     });
   });
   ```
-  In summary, automation is the backbone of [shift-left testing](../S/shift-left-testing.md), providing the speed, frequency, and reliability needed to test early and often, aligning with the core principles of this approach.
+  In summary, automation is the backbone of [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing), providing the speed, frequency, and reliability needed to test early and often, aligning with the core principles of this approach.
 
 #### How can shift-left testing be integrated with continuous integration and continuous delivery (CI/CD)?
 
-  Integrating **[shift-left testing](../S/shift-left-testing.md)** with **CI/CD** involves embedding testing early and often in the development pipeline. This is achieved by automating tests and ensuring they are run as part of the **continuous integration** process. Here's how to do it:
+  Integrating **[shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing)** with **CI/CD** involves embedding testing early and often in the development pipeline. This is achieved by automating tests and ensuring they are run as part of the **continuous integration** process. Here's how to do it:
 
   1. **Automate Unit Tests**: Write and automate unit tests that run with every code commit. Use a CI server like Jenkins, CircleCI, or GitHub Actions to trigger these tests.
 
@@ -476,7 +475,7 @@ integrates testing early in the software development process. By testing frequen
 
 #### What are some best practices for shift-left testing?
 
-  Best practices for [shift-left testing](../S/shift-left-testing.md) include:
+  Best practices for [shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) include:
 
   - **Embedding testing expertise**
     within development teams to ensure a shared responsibility for quality.
@@ -484,7 +483,7 @@ integrates testing early in the software development process. By testing frequen
   - **Automating unit tests**
     to validate individual components early and often. Use frameworks like JUnit or NUnit for efficiency.
 
-  - **Leveraging [Test-Driven Development](../T/test-driven-development.md) (TDD)**
+  - **Leveraging [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**
     where tests are written before the code, ensuring code meets the requirements from the start.
 
   - **Pair programming**
@@ -511,7 +510,7 @@ integrates testing early in the software development process. By testing frequen
   - **Collaborating with product owners**
     to define clear acceptance criteria that can be translated into automated tests.
 
-  - **Ensuring adequate [test data](../T/test-data.md) management**
+  - **Ensuring adequate [test data](https://naodeng.com.cn/en/wiki/test-data) management**
     to provide reliable and realistic test scenarios.
 
   - **Regularly revisiting and refactoring tests**
@@ -524,7 +523,7 @@ integrates testing early in the software development process. By testing frequen
   - **Automating unit tests**
     to validate individual components early and often. Use frameworks like JUnit or NUnit for efficiency.
 
-  - **Leveraging [Test-Driven Development](../T/test-driven-development.md) (TDD)**
+  - **Leveraging [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**
     where tests are written before the code, ensuring code meets the requirements from the start.
 
   - **Pair programming**
@@ -551,7 +550,7 @@ integrates testing early in the software development process. By testing frequen
   - **Collaborating with product owners**
     to define clear acceptance criteria that can be translated into automated tests.
 
-  - **Ensuring adequate [test data](../T/test-data.md) management**
+  - **Ensuring adequate [test data](https://naodeng.com.cn/en/wiki/test-data) management**
     to provide reliable and realistic test scenarios.
 
   - **Regularly revisiting and refactoring tests**
@@ -561,15 +560,15 @@ integrates testing early in the software development process. By testing frequen
 
 #### What is the difference between shift-left and shift-right testing?
 
-  Shift-left and shift-right testing are complementary approaches to [software testing](../S/software-testing.md) that focus on different stages of the software development lifecycle (SDLC).
-  **[Shift-left testing](../S/shift-left-testing.md)** is the practice of integrating testing early into the development process. It emphasizes prevention over detection, with the goal of identifying and fixing issues as soon as possible. This approach typically involves developers in the testing process, encouraging them to write unit tests and conduct [integration testing](../I/integration-testing.md) before the software reaches the QA team.
+  Shift-left and shift-right testing are complementary approaches to [software testing](https://naodeng.com.cn/en/wiki/software-testing) that focus on different stages of the software development lifecycle (SDLC).
+  **[Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing)** is the practice of integrating testing early into the development process. It emphasizes prevention over detection, with the goal of identifying and fixing issues as soon as possible. This approach typically involves developers in the testing process, encouraging them to write unit tests and conduct [integration testing](https://naodeng.com.cn/en/wiki/integration-testing) before the software reaches the QA team.
   In contrast, **shift-right testing** extends testing beyond the traditional confines of the pre-release phase and into the post-release stage. It focuses on adding testing activities later in the lifecycle, including monitoring and gathering feedback from the production environment. Shift-right testing aims to ensure the software performs well under real-world conditions and usage patterns, which can be difficult to replicate in pre-release tests.
-  While shift-left emphasizes early [bug](../B/bug.md) detection and prevention, shift-right recognizes the importance of real user feedback and the need to test in production-like environments. Shift-right can involve techniques like [A/B testing](../A/a-b-testing.md), canary releases, and feature flagging to assess the software's performance and stability in the live environment.
-  Combining both approaches provides a more holistic view of the [software quality](../S/software-quality.md), ensuring thorough pre-[release testing](../R/release-testing.md) while also adapting to real-world feedback and usage after deployment. This dual strategy can lead to more resilient, user-friendly, and high-quality software products.
+  While shift-left emphasizes early [bug](https://naodeng.com.cn/en/wiki/bug) detection and prevention, shift-right recognizes the importance of real user feedback and the need to test in production-like environments. Shift-right can involve techniques like [A/B testing](https://naodeng.com.cn/en/wiki/a-b-testing), canary releases, and feature flagging to assess the software's performance and stability in the live environment.
+  Combining both approaches provides a more holistic view of the [software quality](https://naodeng.com.cn/en/wiki/software-quality), ensuring thorough pre-[release testing](https://naodeng.com.cn/en/wiki/release-testing) while also adapting to real-world feedback and usage after deployment. This dual strategy can lead to more resilient, user-friendly, and high-quality software products.
 
 #### When should shift-left testing be used over shift-right testing?
 
-  [Shift-left testing](../S/shift-left-testing.md) should be used when the goal is to **detect and resolve defects early** in the software development lifecycle (SDLC). It is particularly beneficial in scenarios where:
+  [Shift-left testing](https://naodeng.com.cn/en/wiki/shift-left-testing) should be used when the goal is to **detect and resolve defects early** in the software development lifecycle (SDLC). It is particularly beneficial in scenarios where:
 
   - **Early feedback**
     is crucial for the development process.
@@ -604,7 +603,7 @@ integrates testing early in the software development process. By testing frequen
     .
 
   - There is a need to focus on
-    **non-[functional requirements](../F/functional-requirements.md)**
+    **non-[functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements)**
     such as performance, security, and usability that are best evaluated in a deployed state.
 
   - The application requires
@@ -649,7 +648,7 @@ integrates testing early in the software development process. By testing frequen
     .
 
   - There is a need to focus on
-    **non-[functional requirements](../F/functional-requirements.md)**
+    **non-[functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements)**
     such as performance, security, and usability that are best evaluated in a deployed state.
 
   - The application requires
@@ -663,9 +662,9 @@ integrates testing early in the software development process. By testing frequen
 
 #### What are the advantages and disadvantages of shift-left testing compared to shift-right testing?
 
-  **Advantages of [Shift-Left Testing](../S/shift-left-testing.md):**
+  **Advantages of [Shift-Left Testing](https://naodeng.com.cn/en/wiki/shift-left-testing):**
 
-  - **Early [Bug](../B/bug.md) Detection:**
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection:**
     Issues are identified earlier in the development cycle, reducing the cost and effort of fixing them.
 
   - **Improved Design:**
@@ -677,9 +676,9 @@ integrates testing early in the software development process. By testing frequen
   - **Faster Release Cycles:**
     Accelerates time-to-market by catching and resolving issues sooner.
 
-  - **Enhanced [Test Coverage](../T/test-coverage.md):**
+  - **Enhanced [Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage):**
     Allows for more thorough test coverage since testing starts earlier in the lifecycle.
-  **Disadvantages of [Shift-Left Testing](../S/shift-left-testing.md):**
+  **Disadvantages of [Shift-Left Testing](https://naodeng.com.cn/en/wiki/shift-left-testing):**
 
   - **Increased Initial Effort:**
     Requires more upfront work from developers and testers to plan and execute tests.
@@ -704,7 +703,7 @@ integrates testing early in the software development process. By testing frequen
     Focuses on performance and scalability, which are critical in production environments.
   **Disadvantages of Shift-Right Testing:**
 
-  - **Later [Bug](../B/bug.md) Detection:**
+  - **Later [Bug](https://naodeng.com.cn/en/wiki/bug) Detection:**
     Bugs are found later, which can be more costly and time-consuming to fix.
 
   - **Risk of Poor User Experience:**
@@ -713,7 +712,7 @@ integrates testing early in the software development process. By testing frequen
   - **Delayed Feedback Loop:**
     The feedback loop is longer, potentially delaying the resolution of issues and the release of the software.
 
-  - **Early [Bug](../B/bug.md) Detection:**
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection:**
     Issues are identified earlier in the development cycle, reducing the cost and effort of fixing them.
 
   - **Improved Design:**
@@ -725,7 +724,7 @@ integrates testing early in the software development process. By testing frequen
   - **Faster Release Cycles:**
     Accelerates time-to-market by catching and resolving issues sooner.
 
-  - **Enhanced [Test Coverage](../T/test-coverage.md):**
+  - **Enhanced [Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage):**
     Allows for more thorough test coverage since testing starts earlier in the lifecycle.
 
   - **Increased Initial Effort:**
@@ -749,7 +748,7 @@ integrates testing early in the software development process. By testing frequen
   - **Performance Insights:**
     Focuses on performance and scalability, which are critical in production environments.
 
-  - **Later [Bug](../B/bug.md) Detection:**
+  - **Later [Bug](https://naodeng.com.cn/en/wiki/bug) Detection:**
     Bugs are found later, which can be more costly and time-consuming to fix.
 
   - **Risk of Poor User Experience:**
@@ -761,8 +760,8 @@ integrates testing early in the software development process. By testing frequen
 #### How can shift-left and shift-right testing be combined in a testing strategy?
 
   Combining **shift-left** and **shift-right** testing strategies creates a comprehensive approach that ensures quality throughout the software development lifecycle (SDLC). To integrate both, start by embedding testing early in the development process (shift-left) and continue testing post-release (shift-right).
-  Incorporate **unit tests**, **integration tests**, and **[API](../A/api.md) tests** during the development phase. Use **[test-driven development](../T/test-driven-development.md) (TDD)** and **behavior-driven development ([BDD](../B/bdd.md))** to facilitate this. Automate these tests to run with every build, ensuring immediate feedback through **CI/CD pipelines**.
-  For shift-right, focus on **monitoring** and **observability** in production to gather real user data. Implement **canary releases** and **feature flags** to test new features' performance and stability in the live environment. Use **[A/B testing](../A/a-b-testing.md)** to make data-driven decisions about feature rollouts.
+  Incorporate **unit tests**, **integration tests**, and **[API](https://naodeng.com.cn/en/wiki/api) tests** during the development phase. Use **[test-driven development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** and **behavior-driven development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** to facilitate this. Automate these tests to run with every build, ensuring immediate feedback through **CI/CD pipelines**.
+  For shift-right, focus on **monitoring** and **observability** in production to gather real user data. Implement **canary releases** and **feature flags** to test new features' performance and stability in the live environment. Use **[A/B testing](https://naodeng.com.cn/en/wiki/a-b-testing)** to make data-driven decisions about feature rollouts.
   Leverage **automation** in both strategies to execute repetitive and complex tests efficiently. Automated tests should be designed to be reusable and adaptable to both pre-deployment and post-deployment testing.
   To ensure a seamless transition between shift-left and shift-right, maintain a shared repository of tests and results, and encourage continuous communication between development, QA, and operations teams. This collaboration is crucial for addressing issues quickly and effectively.
   In summary, combine shift-left's proactive defect prevention with shift-right's user-centric testing to cover the full spectrum of the software's quality. This holistic approach leads to a robust, reliable, and user-validated product.
@@ -779,7 +778,7 @@ integrates testing early in the software development process. By testing frequen
   - **Technology Stack** : Consider whether your stack supports the necessary tools and environments for either approach, such as test automation frameworks for shift-left or monitoring tools for shift-right.
   - **User Experience** : Shift-right can provide direct insights into user experience and performance issues that might not be caught in pre-production testing.
   - **Compliance and Regulation** : Industries with strict compliance requirements might favor shift-left to ensure all checks are completed before release.
-  Ultimately, the choice may not be binary. Combining both approaches can lead to a more robust testing strategy, leveraging the strengths of each to improve overall [software quality](../S/software-quality.md) and reliability.
+  Ultimately, the choice may not be binary. Combining both approaches can lead to a more robust testing strategy, leveraging the strengths of each to improve overall [software quality](https://naodeng.com.cn/en/wiki/software-quality) and reliability.
 
   - **Project Phase** : Shift-left is more suited to early development stages, focusing on preventing defects. Shift-right is applicable post-release, emphasizing real-world usage and feedback.
   - **Feedback Loop** : Shift-left aims for rapid feedback during development. Shift-right relies on monitoring and feedback from users in production.

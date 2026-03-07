@@ -1,6 +1,5 @@
 # Functional Requirements
 
-
 <!-- TOC START -->
 - [Questions about Functional Requirements ?](#questions-about-functional-requirements)
   - [Basics and Importance](#basics-and-importance)
@@ -33,20 +32,20 @@ define the expected behavior of a software system or application, specifying wha
 
 #### What are functional requirements?
 
-  [Functional requirements](../F/functional-requirements.md) describe **what** a system should do, detailing the behaviors, functions, and features the system must possess. These requirements are derived from user needs, business objectives, or regulatory standards and are typically articulated in terms of **user stories**, **[use cases](../U/use-case.md)**, or **system requirements**.
-  To ensure clarity and precision, [functional requirements](../F/functional-requirements.md) should be:
+  [Functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) describe **what** a system should do, detailing the behaviors, functions, and features the system must possess. These requirements are derived from user needs, business objectives, or regulatory standards and are typically articulated in terms of **user stories**, **[use cases](https://naodeng.com.cn/en/wiki/use-case)**, or **system requirements**.
+  To ensure clarity and precision, [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) should be:
 
   - **Specific** : Clearly define the function or feature without ambiguity.
   - **Measurable** : Include criteria that can be used to measure the fulfillment of the requirement.
   - **Testable** : Be verifiable through tests, inspections, or analysis.
-  In [test automation](../T/test-automation.md), [functional requirements](../F/functional-requirements.md) serve as the foundation for designing [test cases](../T/test-case.md) and scripts. They guide the development of **automated tests** that validate whether the system behaves as expected under various conditions.
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) serve as the foundation for designing [test cases](https://naodeng.com.cn/en/wiki/test-case) and scripts. They guide the development of **automated tests** that validate whether the system behaves as expected under various conditions.
   For instance, consider a functional requirement for an e-commerce platform:
 
   ```
   The system shall allow users to add items to their shopping cart.
   ```
   An automated test would simulate a user adding an item to their cart and verify that the item appears in the cart, the quantity is correct, and the price is updated accordingly.
-  [Functional requirements](../F/functional-requirements.md) are often managed using tools like **[JIRA](../J/jira.md)**, **Confluence**, or **Trello**, which facilitate collaboration and tracking changes over time. They are essential for maintaining alignment between stakeholders and ensuring that the final product meets the intended purpose and user needs.
+  [Functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) are often managed using tools like **[JIRA](https://naodeng.com.cn/en/wiki/jira)**, **Confluence**, or **Trello**, which facilitate collaboration and tracking changes over time. They are essential for maintaining alignment between stakeholders and ensuring that the final product meets the intended purpose and user needs.
 
   - **Specific** : Clearly define the function or feature without ambiguity.
   - **Measurable** : Include criteria that can be used to measure the fulfillment of the requirement.
@@ -54,24 +53,24 @@ define the expected behavior of a software system or application, specifying wha
 
 #### Why are functional requirements important in software development?
 
-  [Functional requirements](../F/functional-requirements.md) are crucial in software development as they outline **what** the system should do, guiding the design, development, and testing processes. They provide a clear understanding of the expected behaviors and functionalities, ensuring that developers and stakeholders are aligned on the software's objectives.
-  For [test automation](../T/test-automation.md) engineers, [functional requirements](../F/functional-requirements.md) serve as the foundation for creating **[test cases](../T/test-case.md)** and **scripts**. They enable engineers to write automated tests that reflect user needs and ensure that each function of the software performs as intended. Without well-defined [functional requirements](../F/functional-requirements.md), creating effective and comprehensive [test suites](../T/test-suite.md) is challenging, potentially leading to gaps in [test coverage](../T/test-coverage.md) and uncaught defects.
-  Moreover, [functional requirements](../F/functional-requirements.md) help in establishing **acceptance criteria** for the software. They are used to measure the software's completeness and to determine whether it is ready for release. In agile environments, [functional requirements](../F/functional-requirements.md) often evolve, and automated tests must be **maintained** and **updated** accordingly to stay relevant and effective.
-  In summary, [functional requirements](../F/functional-requirements.md) are essential for developing quality software and form the basis for systematic and efficient [test automation](../T/test-automation.md), ultimately leading to a product that meets user expectations and performs reliably in real-world scenarios.
+  [Functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) are crucial in software development as they outline **what** the system should do, guiding the design, development, and testing processes. They provide a clear understanding of the expected behaviors and functionalities, ensuring that developers and stakeholders are aligned on the software's objectives.
+  For [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers, [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) serve as the foundation for creating **[test cases](https://naodeng.com.cn/en/wiki/test-case)** and **scripts**. They enable engineers to write automated tests that reflect user needs and ensure that each function of the software performs as intended. Without well-defined [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements), creating effective and comprehensive [test suites](https://naodeng.com.cn/en/wiki/test-suite) is challenging, potentially leading to gaps in [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and uncaught defects.
+  Moreover, [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) help in establishing **acceptance criteria** for the software. They are used to measure the software's completeness and to determine whether it is ready for release. In agile environments, [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) often evolve, and automated tests must be **maintained** and **updated** accordingly to stay relevant and effective.
+  In summary, [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) are essential for developing quality software and form the basis for systematic and efficient [test automation](https://naodeng.com.cn/en/wiki/test-automation), ultimately leading to a product that meets user expectations and performs reliably in real-world scenarios.
 
 #### How do functional requirements differ from non-functional requirements?
 
-  [Functional requirements](../F/functional-requirements.md) specify **what** a system should do, detailing behaviors, functions, and features. They describe user interactions and system processes, such as "The system shall allow users to log in using a username and password."
-  Non-[functional requirements](../F/functional-requirements.md) (NFRs), on the other hand, define **how** a system should perform, focusing on system attributes and qualities. They cover aspects like performance, security, reliability, and usability. For instance, an NFR might state, "The system shall handle 1000 concurrent users without performance degradation."
-  While [functional requirements](../F/functional-requirements.md) are about specific operations and functionalities of the software, non-[functional requirements](../F/functional-requirements.md) are concerned with the user experience and operational characteristics. NFRs are often more challenging to measure and verify as they tend to be less concrete than [functional requirements](../F/functional-requirements.md).
-  In [test automation](../T/test-automation.md), while [functional requirements](../F/functional-requirements.md) lead to the creation of [test cases](../T/test-case.md) to verify specific features, NFRs guide the development of performance and security tests, among others. It's crucial to consider both to ensure a comprehensive testing strategy that aligns with user expectations and system requirements.
+  [Functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) specify **what** a system should do, detailing behaviors, functions, and features. They describe user interactions and system processes, such as "The system shall allow users to log in using a username and password."
+  Non-[functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) (NFRs), on the other hand, define **how** a system should perform, focusing on system attributes and qualities. They cover aspects like performance, security, reliability, and usability. For instance, an NFR might state, "The system shall handle 1000 concurrent users without performance degradation."
+  While [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) are about specific operations and functionalities of the software, non-[functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) are concerned with the user experience and operational characteristics. NFRs are often more challenging to measure and verify as they tend to be less concrete than [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements).
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), while [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) lead to the creation of [test cases](https://naodeng.com.cn/en/wiki/test-case) to verify specific features, NFRs guide the development of performance and security tests, among others. It's crucial to consider both to ensure a comprehensive testing strategy that aligns with user expectations and system requirements.
 
 #### What is the role of functional requirements in e2e testing?
 
-  In **end-to-end (e2e) testing**, [functional requirements](../F/functional-requirements.md) serve as the blueprint for creating [test scenarios](../T/test-scenario.md) that simulate real-world usage of the application from start to finish. They define the expected behavior of the system, which e2e tests must validate to ensure that all parts of the application work together as intended.
+  In **end-to-end (e2e) testing**, [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) serve as the blueprint for creating [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) that simulate real-world usage of the application from start to finish. They define the expected behavior of the system, which e2e tests must validate to ensure that all parts of the application work together as intended.
   E2e tests use these requirements to:
 
-  - **Design [test cases](../T/test-case.md)**
+  - **Design [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that cover the full scope of application features.
 
   - **Ensure coverage**
@@ -85,7 +84,7 @@ define the expected behavior of a software system or application, specifying wha
 
   - **Assess release readiness**
     by confirming that the application performs as expected in an environment that closely mirrors production.
-  For automation engineers, [functional requirements](../F/functional-requirements.md) are crucial for scripting e2e tests. They guide the selection of appropriate automation tools and frameworks and inform the design of [test suites](../T/test-suite.md) that are maintainable and scalable.
+  For automation engineers, [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) are crucial for scripting e2e tests. They guide the selection of appropriate automation tools and frameworks and inform the design of [test suites](https://naodeng.com.cn/en/wiki/test-suite) that are maintainable and scalable.
 
   ```
   // Example of an e2e test pseudocode based on functional requirements
@@ -99,9 +98,9 @@ define the expected behavior of a software system or application, specifying wha
     });
   });
   ```
-  By aligning e2e tests with [functional requirements](../F/functional-requirements.md), [test automation](../T/test-automation.md) engineers ensure that the software delivers the intended value to end-users and meets the business objectives.
+  By aligning e2e tests with [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements), [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers ensure that the software delivers the intended value to end-users and meets the business objectives.
 
-  - **Design [test cases](../T/test-case.md)**
+  - **Design [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that cover the full scope of application features.
 
   - **Ensure coverage**
@@ -120,22 +119,22 @@ define the expected behavior of a software system or application, specifying wha
 
 #### How are functional requirements identified?
 
-  [Functional requirements](../F/functional-requirements.md) are identified through a combination of **stakeholder interviews**, **user stories**, **[use cases](../U/use-case.md)**, and **business process modeling**. Stakeholders, including customers, end-users, and business analysts, provide insights into the desired behavior of the system.
+  [Functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) are identified through a combination of **stakeholder interviews**, **user stories**, **[use cases](https://naodeng.com.cn/en/wiki/use-case)**, and **business process modeling**. Stakeholders, including customers, end-users, and business analysts, provide insights into the desired behavior of the system.
   **User stories** are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. They typically follow a simple template: "As a [type of user], I want [an action] so that [a benefit/a value]."
-  **[Use cases](../U/use-case.md)** offer a more detailed look at how users interact with the system, outlining the steps taken to achieve a specific goal. They help in understanding the system's [functional requirements](../F/functional-requirements.md) by providing a sequence of events and expected outcomes.
+  **[Use cases](https://naodeng.com.cn/en/wiki/use-case)** offer a more detailed look at how users interact with the system, outlining the steps taken to achieve a specific goal. They help in understanding the system's [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) by providing a sequence of events and expected outcomes.
   **Business process modeling** involves creating diagrams that represent the business processes the software must support, which helps in identifying the necessary functionality to facilitate these processes.
-  Additionally, reviewing existing **documentation** and **system analysis** can uncover [functional requirements](../F/functional-requirements.md). This might include analyzing current systems for improvements or changes needed in the new system.
-  **Prototyping** can also be a method to identify [functional requirements](../F/functional-requirements.md) by building a working model of the system or its parts to understand the required functionality better.
-  Lastly, **feedback from iterative development** can refine and identify additional [functional requirements](../F/functional-requirements.md) as the project progresses. Agile methodologies, in particular, encourage continuous feedback and [iteration](../I/iteration.md), which can help in surfacing [functional requirements](../F/functional-requirements.md) that may not have been initially evident.
+  Additionally, reviewing existing **documentation** and **system analysis** can uncover [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements). This might include analyzing current systems for improvements or changes needed in the new system.
+  **Prototyping** can also be a method to identify [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) by building a working model of the system or its parts to understand the required functionality better.
+  Lastly, **feedback from iterative development** can refine and identify additional [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) as the project progresses. Agile methodologies, in particular, encourage continuous feedback and [iteration](https://naodeng.com.cn/en/wiki/iteration), which can help in surfacing [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) that may not have been initially evident.
 
 #### What is the process of documenting functional requirements?
 
-  Documenting [functional requirements](../F/functional-requirements.md) is a systematic process that translates user needs into written specifications. To start, **gather information** from stakeholders through interviews, workshops, or questionnaires. Next, **define clear and concise requirements**; each should be complete, unambiguous, and testable. Use **user stories** or **[use cases](../U/use-case.md)** for a narrative approach, or **structured templates** for a more formal specification.
-  **Specify acceptance criteria** for each requirement, detailing the conditions that must be met for the requirement to be considered fulfilled. This is crucial for [test automation](../T/test-automation.md), as it guides the development of [test cases](../T/test-case.md).
+  Documenting [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) is a systematic process that translates user needs into written specifications. To start, **gather information** from stakeholders through interviews, workshops, or questionnaires. Next, **define clear and concise requirements**; each should be complete, unambiguous, and testable. Use **user stories** or **[use cases](https://naodeng.com.cn/en/wiki/use-case)** for a narrative approach, or **structured templates** for a more formal specification.
+  **Specify acceptance criteria** for each requirement, detailing the conditions that must be met for the requirement to be considered fulfilled. This is crucial for [test automation](https://naodeng.com.cn/en/wiki/test-automation), as it guides the development of [test cases](https://naodeng.com.cn/en/wiki/test-case).
   **Organize requirements** logically, grouping related functionalities to streamline understanding and testing. Employ **diagrams or models** when necessary to visualize complex interactions or data flows.
   **Review and revise** the documented requirements with stakeholders to ensure accuracy and completeness. This iterative process helps to refine the specifications and align expectations.
   **Version control** is essential to track changes and maintain the integrity of the document throughout the software development lifecycle.
-  Finally, **communicate the documented requirements** to the development and testing teams. Clear documentation ensures that everyone is aligned and that [test automation](../T/test-automation.md) strategies can be effectively designed and implemented.
+  Finally, **communicate the documented requirements** to the development and testing teams. Clear documentation ensures that everyone is aligned and that [test automation](https://naodeng.com.cn/en/wiki/test-automation) strategies can be effectively designed and implemented.
   Here's an example of a functional requirement in Markdown format:
 
   ```
@@ -146,25 +145,25 @@ define the expected behavior of a software system or application, specifying wha
     - Error message displayed for invalid credentials.
     - Account lockout after three consecutive failed attempts.
   ```
-  This format ensures that the requirement is easily understood and actionable for [test automation](../T/test-automation.md) engineers.
+  This format ensures that the requirement is easily understood and actionable for [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers.
 
 #### What are some common tools or methods used for documenting functional requirements?
 
-  Common tools and methods for documenting [functional requirements](../F/functional-requirements.md) include:
+  Common tools and methods for documenting [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) include:
 
   - **User Stories** : Captured in tools like
-    **[JIRA](../J/jira.md)**
+    **[JIRA](https://naodeng.com.cn/en/wiki/jira)**
     ,
     **Trello**
     , or
     **Azure DevOps**
     , they describe features from an end-user perspective.
 
-  - **[Use Cases](../U/use-case.md)** : Detailed narratives that explain how a system interacts with external entities; often managed in tools like
+  - **[Use Cases](https://naodeng.com.cn/en/wiki/use-case)** : Detailed narratives that explain how a system interacts with external entities; often managed in tools like
     **Sparx Systems Enterprise Architect**
     .
 
-  - **[Requirements Management Tools](../R/requirements-management-tool.md)** : Such as
+  - **[Requirements Management Tools](https://naodeng.com.cn/en/wiki/requirements-management-tool)** : Such as
     **IBM Rational DOORS**
     or
     **Helix RM**
@@ -201,21 +200,21 @@ define the expected behavior of a software system or application, specifying wha
     or
     **Visio**
     to represent system behaviors and interactions.
-  These methods facilitate clear, structured, and accessible documentation of [functional requirements](../F/functional-requirements.md), which is crucial for effective [test automation](../T/test-automation.md). They enable automation engineers to create [test cases](../T/test-case.md) that align with the documented expectations of the software's functionality.
+  These methods facilitate clear, structured, and accessible documentation of [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements), which is crucial for effective [test automation](https://naodeng.com.cn/en/wiki/test-automation). They enable automation engineers to create [test cases](https://naodeng.com.cn/en/wiki/test-case) that align with the documented expectations of the software's functionality.
 
   - **User Stories** : Captured in tools like
-    **[JIRA](../J/jira.md)**
+    **[JIRA](https://naodeng.com.cn/en/wiki/jira)**
     ,
     **Trello**
     , or
     **Azure DevOps**
     , they describe features from an end-user perspective.
 
-  - **[Use Cases](../U/use-case.md)** : Detailed narratives that explain how a system interacts with external entities; often managed in tools like
+  - **[Use Cases](https://naodeng.com.cn/en/wiki/use-case)** : Detailed narratives that explain how a system interacts with external entities; often managed in tools like
     **Sparx Systems Enterprise Architect**
     .
 
-  - **[Requirements Management Tools](../R/requirements-management-tool.md)** : Such as
+  - **[Requirements Management Tools](https://naodeng.com.cn/en/wiki/requirements-management-tool)** : Such as
     **IBM Rational DOORS**
     or
     **Helix RM**
@@ -257,7 +256,7 @@ define the expected behavior of a software system or application, specifying wha
 
   Key elements to include in a functional requirement document are:
 
-  - **User Stories or [Use Cases](../U/use-case.md)** : Brief narratives describing interactions between the user and the system.
+  - **User Stories or [Use Cases](https://naodeng.com.cn/en/wiki/use-case)** : Brief narratives describing interactions between the user and the system.
   - **Business Rules** : Define operations, definitions, and constraints that apply to the system.
   - **Functional Hierarchies** : Organized list of functions and their sub-functions.
   - **Data Flow Diagrams** : Visual representations of data movement in the system.
@@ -265,16 +264,16 @@ define the expected behavior of a software system or application, specifying wha
   - **External Interfaces** : Specify how the system interacts with external systems and users.
   - **User Interface Mockups** : Preliminary designs of the UI to guide understanding of functionality.
   - **Acceptance Criteria** : Specific conditions under which a user story is considered complete.
-  - **[Priority](../P/priority.md) and Criticality** : Indicate the importance and impact of each requirement.
+  - **[Priority](https://naodeng.com.cn/en/wiki/priority) and Criticality** : Indicate the importance and impact of each requirement.
   - **Performance Criteria** : Outline expected performance levels for functionality.
   - **Security Requirements** : Detail security features and compliance with standards.
   - **Error Handling and Recovery** : Define system behavior under error conditions.
   - **Audit Trails** : Requirements for tracking and logging system activity.
   - **Regulatory Requirements** : Ensure compliance with applicable laws and regulations.
-  - **Scalability and [Maintainability](../M/maintainability.md)** : Considerations for future growth and ease of updates.
+  - **Scalability and [Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : Considerations for future growth and ease of updates.
   Each requirement should be **clear**, **concise**, and **testable**, with a unique identifier for easy reference. It's crucial to involve stakeholders in the creation process to ensure all needs are captured and understood. Regular reviews and updates are necessary to adapt to changes during the software development lifecycle.
 
-  - **User Stories or [Use Cases](../U/use-case.md)** : Brief narratives describing interactions between the user and the system.
+  - **User Stories or [Use Cases](https://naodeng.com.cn/en/wiki/use-case)** : Brief narratives describing interactions between the user and the system.
   - **Business Rules** : Define operations, definitions, and constraints that apply to the system.
   - **Functional Hierarchies** : Organized list of functions and their sub-functions.
   - **Data Flow Diagrams** : Visual representations of data movement in the system.
@@ -282,26 +281,26 @@ define the expected behavior of a software system or application, specifying wha
   - **External Interfaces** : Specify how the system interacts with external systems and users.
   - **User Interface Mockups** : Preliminary designs of the UI to guide understanding of functionality.
   - **Acceptance Criteria** : Specific conditions under which a user story is considered complete.
-  - **[Priority](../P/priority.md) and Criticality** : Indicate the importance and impact of each requirement.
+  - **[Priority](https://naodeng.com.cn/en/wiki/priority) and Criticality** : Indicate the importance and impact of each requirement.
   - **Performance Criteria** : Outline expected performance levels for functionality.
   - **Security Requirements** : Detail security features and compliance with standards.
   - **Error Handling and Recovery** : Define system behavior under error conditions.
   - **Audit Trails** : Requirements for tracking and logging system activity.
   - **Regulatory Requirements** : Ensure compliance with applicable laws and regulations.
-  - **Scalability and [Maintainability](../M/maintainability.md)** : Considerations for future growth and ease of updates.
+  - **Scalability and [Maintainability](https://naodeng.com.cn/en/wiki/maintainability)** : Considerations for future growth and ease of updates.
 
 ### Verification and Validation
 
 #### How are functional requirements verified and validated?
 
-  [Functional requirements](../F/functional-requirements.md) are verified and validated through a combination of **[manual testing](../M/manual-testing.md)** and **[automated testing](../A/automated-testing.md)**. [Verification](../V/verification.md) ensures the product is built correctly, aligning with specified requirements, while validation confirms the right product is built, fulfilling user needs.
-  **Automated [test scripts](../T/test-script.md)** are written to match [functional requirements](../F/functional-requirements.md). These scripts use assertions to check if the software behaves as expected. For example:
+  [Functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) are verified and validated through a combination of **[manual testing](https://naodeng.com.cn/en/wiki/manual-testing)** and **[automated testing](https://naodeng.com.cn/en/wiki/automated-testing)**. [Verification](https://naodeng.com.cn/en/wiki/verification) ensures the product is built correctly, aligning with specified requirements, while validation confirms the right product is built, fulfilling user needs.
+  **Automated [test scripts](https://naodeng.com.cn/en/wiki/test-script)** are written to match [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements). These scripts use assertions to check if the software behaves as expected. For example:
 
   ```
   expect(actualOutput).toEqual(expectedOutput);
   ```
   **Unit tests** verify individual components or functions, while **integration tests** ensure that multiple components work together. **System tests** validate the entire system's functionality.
-  **Behavior-driven development ([BDD](../B/bdd.md))** frameworks like Cucumber or SpecFlow allow writing tests in natural language, directly linking them to [functional requirements](../F/functional-requirements.md):
+  **Behavior-driven development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** frameworks like Cucumber or SpecFlow allow writing tests in natural language, directly linking them to [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements):
 
   ```
   Feature: User login
@@ -310,14 +309,14 @@ define the expected behavior of a software system or application, specifying wha
       When the user enters valid credentials
       Then the user is redirected to the dashboard
   ```
-  **[Exploratory testing](../E/exploratory-testing.md)** complements automation by allowing testers to validate requirements in ways that scripts might not cover, ensuring a human perspective.
-  **Code reviews** and **pair programming** are practices that help in early [verification](../V/verification.md) of requirements by scrutinizing the code against the expected functionality.
-  **Continuous Integration (CI)** systems run automated tests on new code submissions, providing immediate feedback on the [verification](../V/verification.md) status of [functional requirements](../F/functional-requirements.md).
-  To overcome challenges in validation, maintain **traceability** between requirements, tests, and code. Use **[test coverage](../T/test-coverage.md) tools** to ensure all requirements are tested. Regularly **review and update [test cases](../T/test-case.md)** to adapt to evolving requirements. Engage **stakeholders** for [acceptance testing](../A/acceptance-testing.md) to validate the software against real-world scenarios and expectations.
+  **[Exploratory testing](https://naodeng.com.cn/en/wiki/exploratory-testing)** complements automation by allowing testers to validate requirements in ways that scripts might not cover, ensuring a human perspective.
+  **Code reviews** and **pair programming** are practices that help in early [verification](https://naodeng.com.cn/en/wiki/verification) of requirements by scrutinizing the code against the expected functionality.
+  **Continuous Integration (CI)** systems run automated tests on new code submissions, providing immediate feedback on the [verification](https://naodeng.com.cn/en/wiki/verification) status of [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements).
+  To overcome challenges in validation, maintain **traceability** between requirements, tests, and code. Use **[test coverage](https://naodeng.com.cn/en/wiki/test-coverage) tools** to ensure all requirements are tested. Regularly **review and update [test cases](https://naodeng.com.cn/en/wiki/test-case)** to adapt to evolving requirements. Engage **stakeholders** for [acceptance testing](https://naodeng.com.cn/en/wiki/acceptance-testing) to validate the software against real-world scenarios and expectations.
 
 #### What role does e2e testing play in the verification of functional requirements?
 
-  End-to-end (E2E) testing plays a crucial role in verifying that **[functional requirements](../F/functional-requirements.md)** are met. It involves testing the complete flow of an application from start to finish, ensuring that all integrated components function together as expected. E2E tests simulate real user scenarios, covering not only the application's front-end but also its backend, [database](../D/database.md), and interactions with other services.
+  End-to-end (E2E) testing plays a crucial role in verifying that **[functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements)** are met. It involves testing the complete flow of an application from start to finish, ensuring that all integrated components function together as expected. E2E tests simulate real user scenarios, covering not only the application's front-end but also its backend, [database](https://naodeng.com.cn/en/wiki/database), and interactions with other services.
   By automating E2E tests, you can:
 
   - **Validate critical paths**
@@ -331,7 +330,7 @@ define the expected behavior of a software system or application, specifying wha
 
   - **Reduce risk**
     of regressions by running tests after each deployment.
-  E2E testing should focus on the most **common and critical user flows** to effectively verify that the application meets its [functional requirements](../F/functional-requirements.md). Automated E2E tests can be integrated into continuous integration and deployment pipelines, providing rapid feedback on the impact of code changes.
+  E2E testing should focus on the most **common and critical user flows** to effectively verify that the application meets its [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements). Automated E2E tests can be integrated into continuous integration and deployment pipelines, providing rapid feedback on the impact of code changes.
 
   ```
   // Example of an E2E test case in TypeScript using a testing framework
@@ -344,7 +343,7 @@ define the expected behavior of a software system or application, specifying wha
     });
   });
   ```
-  In summary, E2E testing ensures that the application behaves as intended from the user's perspective, which is the ultimate validation of [functional requirements](../F/functional-requirements.md).
+  In summary, E2E testing ensures that the application behaves as intended from the user's perspective, which is the ultimate validation of [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements).
 
   - **Validate critical paths**
     , such as user registration, login, data processing, and payment systems, which are essential for application functionality.
@@ -360,26 +359,26 @@ define the expected behavior of a software system or application, specifying wha
 
 #### What are some common challenges in validating functional requirements and how can they be overcome?
 
-  Validating [functional requirements](../F/functional-requirements.md) often presents challenges such as **ambiguous specifications**, **complex dependencies**, **[test environment](../T/test-environment.md) discrepancies**, and **data management issues**. Overcoming these requires a strategic approach:
+  Validating [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) often presents challenges such as **ambiguous specifications**, **complex dependencies**, **[test environment](https://naodeng.com.cn/en/wiki/test-environment) discrepancies**, and **data management issues**. Overcoming these requires a strategic approach:
 
-  - **Ambiguity**: Ensure requirements are clear and testable. Collaborate with stakeholders to refine any vague requirements. Utilize Behavior-Driven Development ([BDD](../B/bdd.md)) frameworks like Cucumber to create executable specifications.
+  - **Ambiguity**: Ensure requirements are clear and testable. Collaborate with stakeholders to refine any vague requirements. Utilize Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) frameworks like Cucumber to create executable specifications.
   - **Dependencies**: Mock or stub out external systems and services to isolate the system under test. Tools like WireMock or Mockito can simulate these dependencies.
   - **Environment Discrepancies**: Maintain consistency across environments using containerization tools like Docker, and infrastructure as code with tools like Terraform.
-  - **Data Management**: Implement a strategy for [test data](../T/test-data.md) creation and cleanup. Use [database](../D/database.md) versioning tools such as Liquibase or Flyway to manage schema changes and ensure data integrity.
-  Automating the validation process with Continuous Integration (CI) pipelines can help catch issues early. Tools like Jenkins or GitHub Actions can automate the execution of [test suites](../T/test-suite.md) against new code changes.
-  Additionally, regularly review and update [test cases](../T/test-case.md) to align with evolving requirements. Pairing with domain experts during [test case](../T/test-case.md) review sessions can provide valuable insights and ensure coverage of business-critical paths.
+  - **Data Management**: Implement a strategy for [test data](https://naodeng.com.cn/en/wiki/test-data) creation and cleanup. Use [database](https://naodeng.com.cn/en/wiki/database) versioning tools such as Liquibase or Flyway to manage schema changes and ensure data integrity.
+  Automating the validation process with Continuous Integration (CI) pipelines can help catch issues early. Tools like Jenkins or GitHub Actions can automate the execution of [test suites](https://naodeng.com.cn/en/wiki/test-suite) against new code changes.
+  Additionally, regularly review and update [test cases](https://naodeng.com.cn/en/wiki/test-case) to align with evolving requirements. Pairing with domain experts during [test case](https://naodeng.com.cn/en/wiki/test-case) review sessions can provide valuable insights and ensure coverage of business-critical paths.
   Remember, effective communication and collaboration between developers, testers, and business stakeholders are crucial in overcoming these challenges.
 
-  - **Ambiguity**: Ensure requirements are clear and testable. Collaborate with stakeholders to refine any vague requirements. Utilize Behavior-Driven Development ([BDD](../B/bdd.md)) frameworks like Cucumber to create executable specifications.
+  - **Ambiguity**: Ensure requirements are clear and testable. Collaborate with stakeholders to refine any vague requirements. Utilize Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) frameworks like Cucumber to create executable specifications.
   - **Dependencies**: Mock or stub out external systems and services to isolate the system under test. Tools like WireMock or Mockito can simulate these dependencies.
   - **Environment Discrepancies**: Maintain consistency across environments using containerization tools like Docker, and infrastructure as code with tools like Terraform.
-  - **Data Management**: Implement a strategy for [test data](../T/test-data.md) creation and cleanup. Use [database](../D/database.md) versioning tools such as Liquibase or Flyway to manage schema changes and ensure data integrity.
+  - **Data Management**: Implement a strategy for [test data](https://naodeng.com.cn/en/wiki/test-data) creation and cleanup. Use [database](https://naodeng.com.cn/en/wiki/database) versioning tools such as Liquibase or Flyway to manage schema changes and ensure data integrity.
 
 ### Real-world Applications
 
 #### Can you provide some examples of functional requirements in real-world software applications?
 
-  Examples of [functional requirements](../F/functional-requirements.md) in real-world software applications include:
+  Examples of [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) in real-world software applications include:
 
   - **User Authentication**: Users must be able to log in using a username and password. After three unsuccessful attempts, the account should be locked for 10 minutes.
 
@@ -472,18 +471,18 @@ define the expected behavior of a software system or application, specifying wha
 
 #### How do functional requirements evolve over the lifecycle of a software project?
 
-  [Functional requirements](../F/functional-requirements.md) evolve through various stages of a software project, adapting to changes in business needs, user feedback, and technical discoveries.
+  [Functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) evolve through various stages of a software project, adapting to changes in business needs, user feedback, and technical discoveries.
   **Initial Development**: Requirements are gathered and defined, often with high-level details. They are subject to change as stakeholders refine their vision.
   **Design Phase**: Requirements become more detailed as system architecture is designed. Dependencies and system interactions are identified, potentially altering requirements.
   **Implementation**: As developers build features, unforeseen technical constraints may necessitate requirement adjustments. Continuous integration and regular code reviews help maintain alignment with requirements.
-  **Testing**: During unit, integration, and [system testing](../S/system-testing.md), discrepancies between expected and actual behavior can lead to requirement refinements to better reflect what can be realistically implemented and tested.
-  **[User Acceptance Testing](../U/user-acceptance-testing.md) (UAT)**: Real-world usage and feedback may reveal gaps or misinterpretations in the requirements, prompting updates to ensure the software meets user needs.
-  **Maintenance**: Post-release, requirements evolve with [bug](../B/bug.md) fixes, enhancements, and adaptations to changing market or regulatory conditions.
-  Throughout the lifecycle, **agile methodologies** encourage iterative refinement of requirements, while **change management processes** ensure that any evolution is systematically addressed. Effective communication among developers, testers, and stakeholders is crucial to manage the evolution of [functional requirements](../F/functional-requirements.md).
+  **Testing**: During unit, integration, and [system testing](https://naodeng.com.cn/en/wiki/system-testing), discrepancies between expected and actual behavior can lead to requirement refinements to better reflect what can be realistically implemented and tested.
+  **[User Acceptance Testing](https://naodeng.com.cn/en/wiki/user-acceptance-testing) (UAT)**: Real-world usage and feedback may reveal gaps or misinterpretations in the requirements, prompting updates to ensure the software meets user needs.
+  **Maintenance**: Post-release, requirements evolve with [bug](https://naodeng.com.cn/en/wiki/bug) fixes, enhancements, and adaptations to changing market or regulatory conditions.
+  Throughout the lifecycle, **agile methodologies** encourage iterative refinement of requirements, while **change management processes** ensure that any evolution is systematically addressed. Effective communication among developers, testers, and stakeholders is crucial to manage the evolution of [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements).
 
 #### What are some common mistakes or pitfalls in defining functional requirements and how can they be avoided?
 
-  Common mistakes in defining [functional requirements](../F/functional-requirements.md) include **vagueness**, **over-complexity**, **lack of clarity**, and **inconsistency**. These can lead to misinterpretation, scope creep, and challenges in [test automation](../T/test-automation.md).
+  Common mistakes in defining [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) include **vagueness**, **over-complexity**, **lack of clarity**, and **inconsistency**. These can lead to misinterpretation, scope creep, and challenges in [test automation](https://naodeng.com.cn/en/wiki/test-automation).
   To avoid these pitfalls:
 
   - **Be Specific** : Use precise language and clear definitions. Avoid ambiguous terms that can be interpreted in multiple ways.
@@ -493,7 +492,7 @@ define the expected behavior of a software system or application, specifying wha
   - **Use Models and Diagrams** : Supplement textual requirements with models such as use case diagrams or user stories to provide additional context and clarity.
   - **Maintain Consistency** : Ensure that all requirements are consistent with each other and with the overall system objectives. Inconsistencies can lead to errors in test automation scripts.
   - **Change Management** : Implement a robust change management process to handle requirement modifications efficiently and ensure that changes are reflected in the test automation strategy.
-  By focusing on these strategies, [test automation](../T/test-automation.md) engineers can ensure that [functional requirements](../F/functional-requirements.md) are well-defined, clear, and testable, leading to more effective and efficient [test automation](../T/test-automation.md).
+  By focusing on these strategies, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can ensure that [functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements) are well-defined, clear, and testable, leading to more effective and efficient [test automation](https://naodeng.com.cn/en/wiki/test-automation).
 
   - **Be Specific** : Use precise language and clear definitions. Avoid ambiguous terms that can be interpreted in multiple ways.
   - **Prioritize Simplicity** : Break down complex requirements into simpler, manageable parts. Complex requirements can be difficult to test and automate.

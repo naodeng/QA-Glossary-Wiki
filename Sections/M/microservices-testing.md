@@ -1,6 +1,5 @@
 # Microservices Testing
 
-
 <!-- TOC START -->
 - [Questions about Microservices Testing ?](#questions-about-microservices-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -32,19 +31,19 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
 #### What is microservices testing?
 
-  [Microservices testing](../M/microservices-testing.md) involves validating individual, independently deployable services within a distributed system. Each service encapsulates a specific business functionality and communicates over a network, necessitating a testing approach that ensures both the correctness of individual services and their interactions.
-  **Isolation testing** is crucial, focusing on a single microservice in a controlled environment. This includes [unit testing](../U/unit-testing.md) for internal logic and [integration testing](../I/integration-testing.md) with [databases](../D/database.md) or other infrastructure components.
+  [Microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing) involves validating individual, independently deployable services within a distributed system. Each service encapsulates a specific business functionality and communicates over a network, necessitating a testing approach that ensures both the correctness of individual services and their interactions.
+  **Isolation testing** is crucial, focusing on a single microservice in a controlled environment. This includes [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) for internal logic and [integration testing](https://naodeng.com.cn/en/wiki/integration-testing) with [databases](https://naodeng.com.cn/en/wiki/database) or other infrastructure components.
   **Consumer-driven contract testing** is essential for verifying interactions between services. It ensures that any changes to a service do not break the contracts established with its consumers.
-  **[End-to-end testing](../E/end-to-end-testing.md)** validates the system as a whole, ensuring all services work together as expected. However, due to its complexity and resource-intensive nature, it's typically executed less frequently.
+  **[End-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)** validates the system as a whole, ensuring all services work together as expected. However, due to its complexity and resource-intensive nature, it's typically executed less frequently.
   **Service virtualization** is employed to simulate service behavior, allowing testing of service interactions without the need for all services to be active or developed.
   **Docker** containers are often used to create consistent, isolated environments for testing services, while **CI/CD pipelines** automate the testing process, providing rapid feedback on the health of the system.
-  Commonly used tools include **JUnit**, **TestNG**, **RestAssured**, **Mockito**, and **WireMock** for unit and [integration testing](../I/integration-testing.md), and **Pact** or **Spring Cloud Contract** for contract testing.
+  Commonly used tools include **JUnit**, **TestNG**, **RestAssured**, **Mockito**, and **WireMock** for unit and [integration testing](https://naodeng.com.cn/en/wiki/integration-testing), and **Pact** or **Spring Cloud Contract** for contract testing.
   To ensure data consistency, techniques like transactional tests or using test doubles for external services are applied. Handling service dependencies involves stubbing or mocking those services to focus on the service under test.
-  Challenges include dealing with service interdependencies, maintaining [test environments](../T/test-environment.md), and ensuring adequate [test coverage](../T/test-coverage.md) across services and their interactions.
+  Challenges include dealing with service interdependencies, maintaining [test environments](https://naodeng.com.cn/en/wiki/test-environment), and ensuring adequate [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) across services and their interactions.
 
 #### Why is testing important in a microservices architecture?
 
-  Testing is crucial in a **microservices architecture** due to its distributed nature. Each microservice is an independent unit that must function correctly within a larger ecosystem. **Isolation** of services means that a failure in one can lead to cascading effects throughout the system. Testing ensures that each service meets its **functional** and **non-[functional requirements](../F/functional-requirements.md)**, maintaining the overall **system integrity** and **reliability**.
+  Testing is crucial in a **microservices architecture** due to its distributed nature. Each microservice is an independent unit that must function correctly within a larger ecosystem. **Isolation** of services means that a failure in one can lead to cascading effects throughout the system. Testing ensures that each service meets its **functional** and **non-[functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements)**, maintaining the overall **system integrity** and **reliability**.
   In microservices, services often communicate over networks, which introduces **latency** and **fault tolerance** as critical concerns. Testing verifies that services can handle network issues gracefully. **Autonomy** of microservices also implies that they can be developed, deployed, and scaled independently. Testing validates that these operations do not disrupt the services themselves or their consumers.
   Moreover, microservices are typically developed using different **languages** and **frameworks**. Testing is essential to ensure that these heterogeneous services interact seamlessly. It also helps in verifying **security** protocols between services, as microservices architectures can be more vulnerable to attacks if not properly secured.
   Finally, testing provides confidence in the **continuous delivery** process. As microservices are often updated frequently, automated tests must guarantee that new changes do not break existing functionality. This is vital for maintaining a **fast-paced delivery cycle** without sacrificing quality.
@@ -54,18 +53,18 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
   Monolithic testing typically involves a **single, unified codebase**, where components are tightly coupled and tested as a whole. This often means:
 
-  - **[Integration testing](../I/integration-testing.md)**
+  - **[Integration testing](https://naodeng.com.cn/en/wiki/integration-testing)**
     is straightforward, as all components are within the same environment.
 
-  - **[End-to-end testing](../E/end-to-end-testing.md)**
+  - **[End-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**
     can be done without much concern for network calls or remote service failures.
 
-  - **Test [setup](../S/setup.md)**
+  - **Test [setup](https://naodeng.com.cn/en/wiki/setup)**
     is simpler, with a single environment to configure.
 
-  - **[Test data](../T/test-data.md) management**
+  - **[Test data](https://naodeng.com.cn/en/wiki/test-data) management**
     is centralized, reducing the complexity of maintaining consistency across services.
-  In contrast, [microservices testing](../M/microservices-testing.md) deals with a **distributed system** where services are loosely coupled and can be developed, deployed, and scaled independently. This leads to:
+  In contrast, [microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing) deals with a **distributed system** where services are loosely coupled and can be developed, deployed, and scaled independently. This leads to:
 
   - **Increased complexity**
     in setting up testing environments, as each service may have its own dependencies and configuration.
@@ -84,18 +83,18 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
   - **CI/CD pipelines**
     playing a significant role in automating the testing process, as they enable continuous testing and deployment of individual services.
-  Overall, [microservices testing](../M/microservices-testing.md) requires a more granular approach, with a focus on individual service functionality, inter-service communication, and maintaining a stable system despite the independent deployment of services.
+  Overall, [microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing) requires a more granular approach, with a focus on individual service functionality, inter-service communication, and maintaining a stable system despite the independent deployment of services.
 
-  - **[Integration testing](../I/integration-testing.md)**
+  - **[Integration testing](https://naodeng.com.cn/en/wiki/integration-testing)**
     is straightforward, as all components are within the same environment.
 
-  - **[End-to-end testing](../E/end-to-end-testing.md)**
+  - **[End-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**
     can be done without much concern for network calls or remote service failures.
 
-  - **Test [setup](../S/setup.md)**
+  - **Test [setup](https://naodeng.com.cn/en/wiki/setup)**
     is simpler, with a single environment to configure.
 
-  - **[Test data](../T/test-data.md) management**
+  - **[Test data](https://naodeng.com.cn/en/wiki/test-data) management**
     is centralized, reducing the complexity of maintaining consistency across services.
 
   - **Increased complexity**
@@ -123,29 +122,29 @@ evaluates each individual microservice's functionality, ensuring they cohesively
   Different strategies for testing microservices focus on validating individual services, their interactions, and the overall system behavior:
 
   - **Component Testing**: Isolates a single microservice to test its functionality, ignoring its dependencies by using stubs or mocks.
-  - **[Integration Testing](../I/integration-testing.md)**: Verifies the interactions between microservices or with external systems, ensuring that the [APIs](../A/api.md) and communication protocols work as expected.
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Verifies the interactions between microservices or with external systems, ensuring that the [APIs](https://naodeng.com.cn/en/wiki/api) and communication protocols work as expected.
   - **Contract Testing**: Ensures that the communication contract between services is maintained, often using tools like Pact.
-  - **[End-to-End Testing](../E/end-to-end-testing.md)**: Validates the entire system's workflow, from the user interface through all the microservices to data storage, ensuring the system meets the defined requirements.
+  - **[End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**: Validates the entire system's workflow, from the user interface through all the microservices to data storage, ensuring the system meets the defined requirements.
   - **Consumer-Driven Contract Testing**: Involves creating contracts from the consumer's perspective to ensure services meet their expectations.
-  - **[Performance Testing](../P/performance-testing.md)**: Assesses the system's behavior under load, checking for response times, throughput, and resource utilization.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: Assesses the system's behavior under load, checking for response times, throughput, and resource utilization.
   - **Chaos Testing**: Introduces failures into the system to test its resilience and the effectiveness of its fallback mechanisms.
-  - **[Security Testing](../S/security-testing.md)**: Identifies vulnerabilities within the microservices and their communication channels.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Identifies vulnerabilities within the microservices and their communication channels.
   - **Observability Testing**: Ensures that the system's logging, monitoring, and alerting mechanisms are effective for diagnosing issues.
   Each strategy plays a crucial role in ensuring a robust and reliable microservices architecture, and they are often used in combination to achieve comprehensive coverage.
 
   - **Component Testing**: Isolates a single microservice to test its functionality, ignoring its dependencies by using stubs or mocks.
-  - **[Integration Testing](../I/integration-testing.md)**: Verifies the interactions between microservices or with external systems, ensuring that the [APIs](../A/api.md) and communication protocols work as expected.
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Verifies the interactions between microservices or with external systems, ensuring that the [APIs](https://naodeng.com.cn/en/wiki/api) and communication protocols work as expected.
   - **Contract Testing**: Ensures that the communication contract between services is maintained, often using tools like Pact.
-  - **[End-to-End Testing](../E/end-to-end-testing.md)**: Validates the entire system's workflow, from the user interface through all the microservices to data storage, ensuring the system meets the defined requirements.
+  - **[End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**: Validates the entire system's workflow, from the user interface through all the microservices to data storage, ensuring the system meets the defined requirements.
   - **Consumer-Driven Contract Testing**: Involves creating contracts from the consumer's perspective to ensure services meet their expectations.
-  - **[Performance Testing](../P/performance-testing.md)**: Assesses the system's behavior under load, checking for response times, throughput, and resource utilization.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: Assesses the system's behavior under load, checking for response times, throughput, and resource utilization.
   - **Chaos Testing**: Introduces failures into the system to test its resilience and the effectiveness of its fallback mechanisms.
-  - **[Security Testing](../S/security-testing.md)**: Identifies vulnerabilities within the microservices and their communication channels.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Identifies vulnerabilities within the microservices and their communication channels.
   - **Observability Testing**: Ensures that the system's logging, monitoring, and alerting mechanisms are effective for diagnosing issues.
 
 #### How does contract testing work in microservices?
 
-  Contract testing is a technique used in microservices to ensure that the interactions between different services work as expected. It focuses on verifying that the **[API](../A/api.md) contracts**—the expectations of both the consumer and provider of a service—are met.
+  Contract testing is a technique used in microservices to ensure that the interactions between different services work as expected. It focuses on verifying that the **[API](https://naodeng.com.cn/en/wiki/api) contracts**—the expectations of both the consumer and provider of a service—are met.
   Here's how it works:
 
   1. **Define Contracts** : Each service's team writes a contract defining the expected requests and responses for their service's API.
@@ -188,7 +187,7 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
 #### What is the role of service virtualization in microservices testing?
 
-  Service virtualization plays a critical role in **[microservices testing](../M/microservices-testing.md)** by simulating the behavior of certain components within a distributed system. This allows testers to:
+  Service virtualization plays a critical role in **[microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing)** by simulating the behavior of certain components within a distributed system. This allows testers to:
 
   - **Isolate**
     the microservice under test, ensuring that tests are not affected by the instability or unavailability of dependent services.
@@ -204,7 +203,7 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
   - **Reduce costs**
     associated with setting up and maintaining full-scale test environments, as virtualized services require fewer resources.
-  By using service virtualization, [test automation](../T/test-automation.md) engineers can achieve a higher level of **[test coverage](../T/test-coverage.md)** and **confidence** in the microservice's functionality, even in complex scenarios that would be challenging to replicate with actual services. It is an essential technique for ensuring that microservices can reliably communicate and function within a distributed system, regardless of the state or availability of their dependencies.
+  By using service virtualization, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can achieve a higher level of **[test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** and **confidence** in the microservice's functionality, even in complex scenarios that would be challenging to replicate with actual services. It is an essential technique for ensuring that microservices can reliably communicate and function within a distributed system, regardless of the state or availability of their dependencies.
 
   - **Isolate**
     the microservice under test, ensuring that tests are not affected by the instability or unavailability of dependent services.
@@ -223,7 +222,7 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
 #### What is the purpose of end-to-end testing in a microservices architecture?
 
-  [End-to-end testing](../E/end-to-end-testing.md) in a microservices architecture ensures that the entire application, from the front-end to the back-end, functions correctly as a cohesive unit. It validates the integrated workflows and data integrity across all services, simulating real-world user scenarios. This type of testing is crucial because it:
+  [End-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing) in a microservices architecture ensures that the entire application, from the front-end to the back-end, functions correctly as a cohesive unit. It validates the integrated workflows and data integrity across all services, simulating real-world user scenarios. This type of testing is crucial because it:
 
   - **Verifies user experience** : Ensures that the system meets the business requirements and user expectations.
   - **Detects system-wide issues** : Identifies problems that arise from the interactions between microservices, which might not be caught in isolation.
@@ -242,13 +241,13 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
 #### What tools are commonly used for microservices testing?
 
-  Common tools for [microservices testing](../M/microservices-testing.md) include:
+  Common tools for [microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing) include:
 
-  - **[Postman](../P/postman.md)**
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)**
     and
     **Insomnia** : For API testing, allowing manual and automated requests to microservices endpoints.
 
-  - **[JMeter](../J/jmeter.md)** : For performance testing, simulating various load scenarios on microservices.
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : For performance testing, simulating various load scenarios on microservices.
   - **WireMock**
     and
     **Mountebank** : For service virtualization, mocking external services during testing.
@@ -256,7 +255,7 @@ evaluates each individual microservice's functionality, ensuring they cohesively
   - **RestAssured** : For testing RESTful APIs in Java, offering a domain-specific language.
   - **Pact** : For contract testing, ensuring compatibility between service consumers and providers.
   - **Cucumber** : For behavior-driven development (BDD), defining tests in natural language.
-  - **[Selenium](../S/selenium.md)** : For end-to-end testing of web applications that interact with microservices.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : For end-to-end testing of web applications that interact with microservices.
   - **TestContainers** : For creating disposable instances of databases or services in Docker containers during integration tests.
   - **Kubernetes** : When used with testing frameworks, it can orchestrate complex test environments.
   - **Gatling** : For advanced performance and load testing, with support for complex scenarios.
@@ -264,13 +263,13 @@ evaluates each individual microservice's functionality, ensuring they cohesively
   - **Jaeger**
     and
     **Zipkin** : For distributed tracing, helping to monitor and troubleshoot transactions across microservices.
-  These tools are integrated into various stages of the development and deployment pipeline, aiding in the continuous testing and delivery of microservices. They are chosen based on the specific needs of the testing strategy, such as [API](../A/api.md) validation, [load testing](../L/load-testing.md), service virtualization, or end-to-end [verification](../V/verification.md).
+  These tools are integrated into various stages of the development and deployment pipeline, aiding in the continuous testing and delivery of microservices. They are chosen based on the specific needs of the testing strategy, such as [API](https://naodeng.com.cn/en/wiki/api) validation, [load testing](https://naodeng.com.cn/en/wiki/load-testing), service virtualization, or end-to-end [verification](https://naodeng.com.cn/en/wiki/verification).
 
-  - **[Postman](../P/postman.md)**
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)**
     and
     **Insomnia** : For API testing, allowing manual and automated requests to microservices endpoints.
 
-  - **[JMeter](../J/jmeter.md)** : For performance testing, simulating various load scenarios on microservices.
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : For performance testing, simulating various load scenarios on microservices.
   - **WireMock**
     and
     **Mountebank** : For service virtualization, mocking external services during testing.
@@ -278,7 +277,7 @@ evaluates each individual microservice's functionality, ensuring they cohesively
   - **RestAssured** : For testing RESTful APIs in Java, offering a domain-specific language.
   - **Pact** : For contract testing, ensuring compatibility between service consumers and providers.
   - **Cucumber** : For behavior-driven development (BDD), defining tests in natural language.
-  - **[Selenium](../S/selenium.md)** : For end-to-end testing of web applications that interact with microservices.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : For end-to-end testing of web applications that interact with microservices.
   - **TestContainers** : For creating disposable instances of databases or services in Docker containers during integration tests.
   - **Kubernetes** : When used with testing frameworks, it can orchestrate complex test environments.
   - **Gatling** : For advanced performance and load testing, with support for complex scenarios.
@@ -289,7 +288,7 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
 #### How can Docker be used in microservices testing?
 
-  Docker simplifies [microservices testing](../M/microservices-testing.md) by creating **isolated environments** that mimic production systems. It allows you to package a microservice and its dependencies into a container, which can be run consistently across different environments. Here's how Docker can be utilized:
+  Docker simplifies [microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing) by creating **isolated environments** that mimic production systems. It allows you to package a microservice and its dependencies into a container, which can be run consistently across different environments. Here's how Docker can be utilized:
 
   - **Isolation** : Each microservice can be tested in isolation within its container, reducing interference from other services.
   - **Consistency** : Docker ensures that the microservice runs the same way, regardless of where it is deployed, which is crucial for reliable testing.
@@ -315,7 +314,7 @@ evaluates each individual microservice's functionality, ensuring they cohesively
         POSTGRES_USER: user
         POSTGRES_PASSWORD: password
   ```
-  This `docker-compose.yml` file defines a web service that depends on a PostgreSQL [database](../D/database.md). You can run `docker-compose up` to start the services and execute tests against this environment.
+  This `docker-compose.yml` file defines a web service that depends on a PostgreSQL [database](https://naodeng.com.cn/en/wiki/database). You can run `docker-compose up` to start the services and execute tests against this environment.
 
   - **Isolation** : Each microservice can be tested in isolation within its container, reducing interference from other services.
   - **Consistency** : Docker ensures that the microservice runs the same way, regardless of where it is deployed, which is crucial for reliable testing.
@@ -326,10 +325,10 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
 #### What is the role of CI/CD pipelines in microservices testing?
 
-  CI/CD pipelines play a crucial role in [microservices testing](../M/microservices-testing.md) by enabling **continuous integration** and **continuous delivery**. These pipelines automate the process of building, testing, and deploying microservices, ensuring that changes are validated and released efficiently and reliably.
+  CI/CD pipelines play a crucial role in [microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing) by enabling **continuous integration** and **continuous delivery**. These pipelines automate the process of building, testing, and deploying microservices, ensuring that changes are validated and released efficiently and reliably.
   In the context of microservices, CI/CD pipelines facilitate:
 
-  - **[Automated Testing](../A/automated-testing.md)** : Upon code commit, pipelines automatically run a suite of tests, including unit, integration, and API tests, to validate the functionality and interactions of microservices.
+  - **[Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing)** : Upon code commit, pipelines automatically run a suite of tests, including unit, integration, and API tests, to validate the functionality and interactions of microservices.
   - **Rapid Feedback** : Developers receive immediate feedback on their changes, allowing for quick identification and resolution of issues.
   - **Deployment Automation** : Pipelines can deploy microservices to various environments, supporting testing in conditions that closely mimic production.
   - **Version Control** : They manage versions of microservices, ensuring compatibility and traceability of changes.
@@ -338,7 +337,7 @@ evaluates each individual microservice's functionality, ensuring they cohesively
   - **Rollback Mechanisms** : In case of a failed test or deployment, pipelines can automatically roll back to the last stable version, minimizing downtime.
   By integrating these practices, CI/CD pipelines enhance the quality and reliability of microservices, supporting a more agile and responsive development process.
 
-  - **[Automated Testing](../A/automated-testing.md)** : Upon code commit, pipelines automatically run a suite of tests, including unit, integration, and API tests, to validate the functionality and interactions of microservices.
+  - **[Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing)** : Upon code commit, pipelines automatically run a suite of tests, including unit, integration, and API tests, to validate the functionality and interactions of microservices.
   - **Rapid Feedback** : Developers receive immediate feedback on their changes, allowing for quick identification and resolution of issues.
   - **Deployment Automation** : Pipelines can deploy microservices to various environments, supporting testing in conditions that closely mimic production.
   - **Version Control** : They manage versions of microservices, ensuring compatibility and traceability of changes.
@@ -350,41 +349,41 @@ evaluates each individual microservice's functionality, ensuring they cohesively
 
 #### What are the common challenges in microservices testing?
 
-  [Microservices testing](../M/microservices-testing.md) presents unique challenges due to the distributed nature of the architecture. **Service isolation** is difficult because each service has its own dependencies, which can lead to a complex web of interactions. Testing in isolation without the full context can miss issues that only arise when all services are integrated.
+  [Microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing) presents unique challenges due to the distributed nature of the architecture. **Service isolation** is difficult because each service has its own dependencies, which can lead to a complex web of interactions. Testing in isolation without the full context can miss issues that only arise when all services are integrated.
   **Network complexity** increases with the number of services, making it harder to predict and test all possible communication paths and failures. Network latency and fault tolerance become critical aspects to test.
-  **Data management** is another challenge. With each microservice potentially managing its own [database](../D/database.md), ensuring data consistency and integrity across services during testing requires careful planning and tooling.
+  **Data management** is another challenge. With each microservice potentially managing its own [database](https://naodeng.com.cn/en/wiki/database), ensuring data consistency and integrity across services during testing requires careful planning and tooling.
   **Versioning** of services can lead to compatibility issues. Ensuring that tests are valid for multiple versions of a service and that they can handle version updates is essential.
   **Observability** is crucial but challenging in a microservices environment. Understanding the state of the system and diagnosing failures requires comprehensive logging, monitoring, and tracing capabilities.
-  **[Performance testing](../P/performance-testing.md)** must account for the overhead of inter-service communication and the potential for bottlenecks in service interactions, which can be difficult to simulate and measure accurately.
-  Lastly, **[test data](../T/test-data.md) provisioning** and **environment management** become more complex. Creating realistic [test environments](../T/test-environment.md) that closely mimic production can be resource-intensive and time-consuming.
+  **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** must account for the overhead of inter-service communication and the potential for bottlenecks in service interactions, which can be difficult to simulate and measure accurately.
+  Lastly, **[test data](https://naodeng.com.cn/en/wiki/test-data) provisioning** and **environment management** become more complex. Creating realistic [test environments](https://naodeng.com.cn/en/wiki/test-environment) that closely mimic production can be resource-intensive and time-consuming.
   Addressing these challenges often requires a combination of advanced tooling, careful test design, and a robust CI/CD pipeline to ensure that microservices are tested thoroughly and efficiently.
 
 #### How can you ensure data consistency in microservices testing?
 
-  Ensuring data consistency in [microservices testing](../M/microservices-testing.md) involves several practices:
+  Ensuring data consistency in [microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing) involves several practices:
 
-  - **Isolate [test environments](../T/test-environment.md)** : Use dedicated environments for testing to avoid cross-contamination of data.
+  - **Isolate [test environments](https://naodeng.com.cn/en/wiki/test-environment)** : Use dedicated environments for testing to avoid cross-contamination of data.
   - **Mock external services** : Implement mocks or stubs for services that are not under test to maintain data control.
   - **Use test doubles** : Apply test doubles for components that interact with databases or external services to ensure predictable and consistent data.
-  - **[Database](../D/database.md) sandboxing** : Create isolated database instances or schemas for each test or test suite to prevent data clashes.
+  - **[Database](https://naodeng.com.cn/en/wiki/database) sandboxing** : Create isolated database instances or schemas for each test or test suite to prevent data clashes.
   - **Transactional tests** : Wrap tests in transactions that roll back changes after test execution, maintaining a clean state.
   - **Data versioning** : Implement version control for test data to revert to known states and track changes.
   - **Data seeding** : Automate the process of loading known datasets before test execution to ensure a consistent starting point.
-  - **State [verification](../V/verification.md)** : Include assertions to verify the state of the system and data after test execution.
-  By adhering to these practices, [test automation](../T/test-automation.md) engineers can achieve reliable and consistent data states, which is crucial for accurate [microservices testing](../M/microservices-testing.md).
+  - **State [verification](https://naodeng.com.cn/en/wiki/verification)** : Include assertions to verify the state of the system and data after test execution.
+  By adhering to these practices, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can achieve reliable and consistent data states, which is crucial for accurate [microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing).
 
-  - **Isolate [test environments](../T/test-environment.md)** : Use dedicated environments for testing to avoid cross-contamination of data.
+  - **Isolate [test environments](https://naodeng.com.cn/en/wiki/test-environment)** : Use dedicated environments for testing to avoid cross-contamination of data.
   - **Mock external services** : Implement mocks or stubs for services that are not under test to maintain data control.
   - **Use test doubles** : Apply test doubles for components that interact with databases or external services to ensure predictable and consistent data.
-  - **[Database](../D/database.md) sandboxing** : Create isolated database instances or schemas for each test or test suite to prevent data clashes.
+  - **[Database](https://naodeng.com.cn/en/wiki/database) sandboxing** : Create isolated database instances or schemas for each test or test suite to prevent data clashes.
   - **Transactional tests** : Wrap tests in transactions that roll back changes after test execution, maintaining a clean state.
   - **Data versioning** : Implement version control for test data to revert to known states and track changes.
   - **Data seeding** : Automate the process of loading known datasets before test execution to ensure a consistent starting point.
-  - **State [verification](../V/verification.md)** : Include assertions to verify the state of the system and data after test execution.
+  - **State [verification](https://naodeng.com.cn/en/wiki/verification)** : Include assertions to verify the state of the system and data after test execution.
 
 #### How can you handle service dependencies in microservices testing?
 
-  Handling service dependencies in [microservices testing](../M/microservices-testing.md) involves isolating the service under test from its dependencies to ensure the reliability and speed of tests. Here are some strategies:
+  Handling service dependencies in [microservices testing](https://naodeng.com.cn/en/wiki/microservices-testing) involves isolating the service under test from its dependencies to ensure the reliability and speed of tests. Here are some strategies:
 
   - **Stubbing and Mocking**: Create lightweight implementations of dependent services that mimic the behavior of real services. This can be done in code using libraries like Sinon.js for JavaScript or Moq for .NET.
 

@@ -1,6 +1,5 @@
 # System Integration Testing
 
-
 <!-- TOC START -->
 - [Questions about System Integration Testing ?](#questions-about-system-integration-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -39,54 +38,54 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### What is System Integration Testing?
 
-  [System Integration Testing](../S/system-integration-testing.md) (SIT) is a testing phase where different system components, modules, or services are integrated and tested as a group to uncover defects in the interactions between integrated units. It occurs after **[unit testing](../U/unit-testing.md)** and before **[system testing](../S/system-testing.md)**. SIT ensures that the integrated components function together as intended and that data flows correctly between them.
-  During SIT, testers focus on the **interfaces** and **data flow** between modules. They verify that the system behaves according to the integration specifications and that it can handle tasks in a real-world scenario as a cohesive unit. This includes testing [APIs](../A/api.md), web services, microservices, [database](../D/database.md) connections, and other interaction points.
-  [Test cases](../T/test-case.md) for SIT are derived from the **integration design** and **requirements specifications**. They often involve **end-to-end scenarios** that cover multiple components and can include both **positive** and **negative** [test cases](../T/test-case.md) to ensure robustness.
-  SIT can be performed in various environments, such as **development**, **test**, or **staging** environments, depending on the organization's infrastructure and practices. It's crucial to have a **controlled [test environment](../T/test-environment.md)** that closely mimics the production environment to ensure accurate results.
-  For effective SIT, testers may need access to **logs**, **monitoring tools**, and **debugging capabilities** to trace issues back to their source. The use of **[test data](../T/test-data.md) management** strategies is also important to ensure that tests are repeatable and that data sets are representative of production data.
+  [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) is a testing phase where different system components, modules, or services are integrated and tested as a group to uncover defects in the interactions between integrated units. It occurs after **[unit testing](https://naodeng.com.cn/en/wiki/unit-testing)** and before **[system testing](https://naodeng.com.cn/en/wiki/system-testing)**. SIT ensures that the integrated components function together as intended and that data flows correctly between them.
+  During SIT, testers focus on the **interfaces** and **data flow** between modules. They verify that the system behaves according to the integration specifications and that it can handle tasks in a real-world scenario as a cohesive unit. This includes testing [APIs](https://naodeng.com.cn/en/wiki/api), web services, microservices, [database](https://naodeng.com.cn/en/wiki/database) connections, and other interaction points.
+  [Test cases](https://naodeng.com.cn/en/wiki/test-case) for SIT are derived from the **integration design** and **requirements specifications**. They often involve **end-to-end scenarios** that cover multiple components and can include both **positive** and **negative** [test cases](https://naodeng.com.cn/en/wiki/test-case) to ensure robustness.
+  SIT can be performed in various environments, such as **development**, **test**, or **staging** environments, depending on the organization's infrastructure and practices. It's crucial to have a **controlled [test environment](https://naodeng.com.cn/en/wiki/test-environment)** that closely mimics the production environment to ensure accurate results.
+  For effective SIT, testers may need access to **logs**, **monitoring tools**, and **debugging capabilities** to trace issues back to their source. The use of **[test data](https://naodeng.com.cn/en/wiki/test-data) management** strategies is also important to ensure that tests are repeatable and that data sets are representative of production data.
 
 #### Why is System Integration Testing important?
 
-  [System Integration Testing](../S/system-integration-testing.md) (SIT) is crucial because it ensures that various system components or applications, when combined, function cohesively and meet the intended requirements. It validates the interactions between modules and detects interface defects, which are critical to resolving before deployment. SIT helps to verify that integrated units work together seamlessly, providing confidence in the stability and reliability of the overall system. This testing phase is essential for identifying issues that unit tests, which focus on individual components, cannot catch. By conducting SIT, teams can uncover and address integration and data flow issues early, reducing the risk of costly fixes post-release. It also supports compliance with specified integration and data exchange standards, which is particularly important in systems that must adhere to industry regulations.
+  [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) is crucial because it ensures that various system components or applications, when combined, function cohesively and meet the intended requirements. It validates the interactions between modules and detects interface defects, which are critical to resolving before deployment. SIT helps to verify that integrated units work together seamlessly, providing confidence in the stability and reliability of the overall system. This testing phase is essential for identifying issues that unit tests, which focus on individual components, cannot catch. By conducting SIT, teams can uncover and address integration and data flow issues early, reducing the risk of costly fixes post-release. It also supports compliance with specified integration and data exchange standards, which is particularly important in systems that must adhere to industry regulations.
 
 #### What are the key differences between System Integration Testing and Unit Testing?
 
-  [Unit Testing](../U/unit-testing.md) and [System Integration Testing](../S/system-integration-testing.md) (SIT) differ primarily in scope, granularity, and objectives.
-  **[Unit Testing](../U/unit-testing.md)** focuses on the smallest parts of the software, typically individual functions or methods. It is conducted early in the development cycle and aims to ensure that each unit operates correctly in isolation. [Test cases](../T/test-case.md) are written and executed by developers, often using frameworks like JUnit or [NUnit](../N/nunit.md). Mock objects and test doubles are commonly employed to simulate the behavior of dependencies.
-  In contrast, **[System Integration Testing](../S/system-integration-testing.md)** evaluates the interactions between integrated units or systems. SIT checks that modules or services work together as intended, identifying interface defects and data flow issues. It is performed after [unit testing](../U/unit-testing.md), often by a separate QA team. SIT requires a more complex [setup](../S/setup.md), including the configuration of the actual environment where the components interact.
-  While unit tests are **white-box** (internal structure known to testers), SIT can be **black-box** (focusing on inputs and outputs without knowledge of internal workings). Unit tests are automated for rapid feedback, whereas SIT may combine automated and [manual testing](../M/manual-testing.md) due to the complexity of interactions.
-  In summary, [unit testing](../U/unit-testing.md) is about ensuring the correctness of individual components, while SIT verifies the functionality and reliability of their interactions. Both are critical, but they serve different purposes and are conducted at different stages of the software development lifecycle.
+  [Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing) and [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) differ primarily in scope, granularity, and objectives.
+  **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)** focuses on the smallest parts of the software, typically individual functions or methods. It is conducted early in the development cycle and aims to ensure that each unit operates correctly in isolation. [Test cases](https://naodeng.com.cn/en/wiki/test-case) are written and executed by developers, often using frameworks like JUnit or [NUnit](https://naodeng.com.cn/en/wiki/nunit). Mock objects and test doubles are commonly employed to simulate the behavior of dependencies.
+  In contrast, **[System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing)** evaluates the interactions between integrated units or systems. SIT checks that modules or services work together as intended, identifying interface defects and data flow issues. It is performed after [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), often by a separate QA team. SIT requires a more complex [setup](https://naodeng.com.cn/en/wiki/setup), including the configuration of the actual environment where the components interact.
+  While unit tests are **white-box** (internal structure known to testers), SIT can be **black-box** (focusing on inputs and outputs without knowledge of internal workings). Unit tests are automated for rapid feedback, whereas SIT may combine automated and [manual testing](https://naodeng.com.cn/en/wiki/manual-testing) due to the complexity of interactions.
+  In summary, [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) is about ensuring the correctness of individual components, while SIT verifies the functionality and reliability of their interactions. Both are critical, but they serve different purposes and are conducted at different stages of the software development lifecycle.
 
 #### What are the benefits of System Integration Testing?
 
-  Benefits of [System Integration Testing](../S/system-integration-testing.md) (SIT) include:
+  Benefits of [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) include:
 
   - **Ensures Interoperability** : Validates that different system modules or services work together as intended.
   - **Detects Interface Defects** : Identifies issues related to data exchange and interaction between integrated components.
   - **Verifies Functional Compliance** : Confirms that the system meets specified requirements when components are combined.
-  - **Facilitates [Regression Testing](../R/regression-testing.md)** : Helps in checking that new code changes do not adversely affect existing integrated components.
+  - **Facilitates [Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Helps in checking that new code changes do not adversely affect existing integrated components.
   - **Reduces Risk of Failures** : By testing early in the integration phase, it minimizes the risk of system failures in production.
   - **Improves Quality** : Leads to a higher quality product by focusing on the interaction between integrated units.
-  - **Supports [Incremental Testing](../I/incremental-testing.md)** : Allows for testing in stages, which is beneficial for identifying issues in complex systems.
-  - **Enables [End-to-End Testing](../E/end-to-end-testing.md) Scenarios** : Provides a way to execute and validate end-to-end workflows that span multiple system components.
+  - **Supports [Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)** : Allows for testing in stages, which is beneficial for identifying issues in complex systems.
+  - **Enables [End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing) Scenarios** : Provides a way to execute and validate end-to-end workflows that span multiple system components.
   - **Clarifies Dependencies** : Helps in understanding and managing the dependencies between different system modules.
-  - **Aids in [Verification](../V/verification.md) of Non-[functional Requirements](../F/functional-requirements.md)** : Such as performance, reliability, and scalability, which are difficult to assess at a unit level.
-  By focusing on these benefits, SIT contributes to delivering a robust and reliable software system that aligns with both functional and non-[functional requirements](../F/functional-requirements.md).
+  - **Aids in [Verification](https://naodeng.com.cn/en/wiki/verification) of Non-[functional Requirements](https://naodeng.com.cn/en/wiki/functional-requirements)** : Such as performance, reliability, and scalability, which are difficult to assess at a unit level.
+  By focusing on these benefits, SIT contributes to delivering a robust and reliable software system that aligns with both functional and non-[functional requirements](https://naodeng.com.cn/en/wiki/functional-requirements).
 
   - **Ensures Interoperability** : Validates that different system modules or services work together as intended.
   - **Detects Interface Defects** : Identifies issues related to data exchange and interaction between integrated components.
   - **Verifies Functional Compliance** : Confirms that the system meets specified requirements when components are combined.
-  - **Facilitates [Regression Testing](../R/regression-testing.md)** : Helps in checking that new code changes do not adversely affect existing integrated components.
+  - **Facilitates [Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Helps in checking that new code changes do not adversely affect existing integrated components.
   - **Reduces Risk of Failures** : By testing early in the integration phase, it minimizes the risk of system failures in production.
   - **Improves Quality** : Leads to a higher quality product by focusing on the interaction between integrated units.
-  - **Supports [Incremental Testing](../I/incremental-testing.md)** : Allows for testing in stages, which is beneficial for identifying issues in complex systems.
-  - **Enables [End-to-End Testing](../E/end-to-end-testing.md) Scenarios** : Provides a way to execute and validate end-to-end workflows that span multiple system components.
+  - **Supports [Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)** : Allows for testing in stages, which is beneficial for identifying issues in complex systems.
+  - **Enables [End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing) Scenarios** : Provides a way to execute and validate end-to-end workflows that span multiple system components.
   - **Clarifies Dependencies** : Helps in understanding and managing the dependencies between different system modules.
-  - **Aids in [Verification](../V/verification.md) of Non-[functional Requirements](../F/functional-requirements.md)** : Such as performance, reliability, and scalability, which are difficult to assess at a unit level.
+  - **Aids in [Verification](https://naodeng.com.cn/en/wiki/verification) of Non-[functional Requirements](https://naodeng.com.cn/en/wiki/functional-requirements)** : Such as performance, reliability, and scalability, which are difficult to assess at a unit level.
 
 #### What are the potential consequences of skipping System Integration Testing?
 
-  Skipping [System Integration Testing](../S/system-integration-testing.md) (SIT) can lead to several negative outcomes:
+  Skipping [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) can lead to several negative outcomes:
 
   - **Undetected Integration Issues** : Without SIT, integration defects between modules or systems may remain undiscovered, potentially causing failures in production.
   - **Increased Risk** : The risk of system failures and business disruption escalates, as the system's ability to operate under real-world scenarios is not thoroughly tested.
@@ -111,24 +110,24 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### What are the different techniques used in System Integration Testing?
 
-  Different techniques in [System Integration Testing](../S/system-integration-testing.md) (SIT) include:
+  Different techniques in [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) include:
 
   - **Big Bang Integration**: All components or systems are integrated simultaneously, after which everything is tested as a whole. This approach is less common due to the high complexity and difficulty in isolating defects.
   - **Incremental Integration**: Systems or components are integrated one at a time until the entire system is integrated. This can be further divided into:
-    - **[Top-Down Integration](../T/top-down-integration.md)** : Integration testing starts from the top-level modules and progresses down the hierarchy, using
+    - **[Top-Down Integration](https://naodeng.com.cn/en/wiki/top-down-integration)** : Integration testing starts from the top-level modules and progresses down the hierarchy, using
       **stubs**
       for lower-level modules not yet integrated.
 
-    - **[Bottom-Up Integration](../B/bottom-up-integration.md)** : Begins with the lowest or innermost components and progresses upward, using
+    - **[Bottom-Up Integration](https://naodeng.com.cn/en/wiki/bottom-up-integration)** : Begins with the lowest or innermost components and progresses upward, using
       **drivers**
       to simulate higher-level modules not yet integrated.
 
     - **Functional Incremental Integration** : Integration and testing are based on the functionality or functionality groups, which might not adhere strictly to top-down or bottom-up approaches.
-    - **[Top-Down Integration](../T/top-down-integration.md)** : Integration testing starts from the top-level modules and progresses down the hierarchy, using
+    - **[Top-Down Integration](https://naodeng.com.cn/en/wiki/top-down-integration)** : Integration testing starts from the top-level modules and progresses down the hierarchy, using
       **stubs**
       for lower-level modules not yet integrated.
 
-    - **[Bottom-Up Integration](../B/bottom-up-integration.md)** : Begins with the lowest or innermost components and progresses upward, using
+    - **[Bottom-Up Integration](https://naodeng.com.cn/en/wiki/bottom-up-integration)** : Begins with the lowest or innermost components and progresses upward, using
       **drivers**
       to simulate higher-level modules not yet integrated.
 
@@ -141,20 +140,20 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
   - **Big Bang Integration**: All components or systems are integrated simultaneously, after which everything is tested as a whole. This approach is less common due to the high complexity and difficulty in isolating defects.
   - **Incremental Integration**: Systems or components are integrated one at a time until the entire system is integrated. This can be further divided into:
-    - **[Top-Down Integration](../T/top-down-integration.md)** : Integration testing starts from the top-level modules and progresses down the hierarchy, using
+    - **[Top-Down Integration](https://naodeng.com.cn/en/wiki/top-down-integration)** : Integration testing starts from the top-level modules and progresses down the hierarchy, using
       **stubs**
       for lower-level modules not yet integrated.
 
-    - **[Bottom-Up Integration](../B/bottom-up-integration.md)** : Begins with the lowest or innermost components and progresses upward, using
+    - **[Bottom-Up Integration](https://naodeng.com.cn/en/wiki/bottom-up-integration)** : Begins with the lowest or innermost components and progresses upward, using
       **drivers**
       to simulate higher-level modules not yet integrated.
 
     - **Functional Incremental Integration** : Integration and testing are based on the functionality or functionality groups, which might not adhere strictly to top-down or bottom-up approaches.
-    - **[Top-Down Integration](../T/top-down-integration.md)** : Integration testing starts from the top-level modules and progresses down the hierarchy, using
+    - **[Top-Down Integration](https://naodeng.com.cn/en/wiki/top-down-integration)** : Integration testing starts from the top-level modules and progresses down the hierarchy, using
       **stubs**
       for lower-level modules not yet integrated.
 
-    - **[Bottom-Up Integration](../B/bottom-up-integration.md)** : Begins with the lowest or innermost components and progresses upward, using
+    - **[Bottom-Up Integration](https://naodeng.com.cn/en/wiki/bottom-up-integration)** : Begins with the lowest or innermost components and progresses upward, using
       **drivers**
       to simulate higher-level modules not yet integrated.
 
@@ -166,7 +165,7 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### What is the difference between top-down and bottom-up approaches in System Integration Testing?
 
-  In **[System Integration Testing](../S/system-integration-testing.md) (SIT)**, the **top-down** and **bottom-up** approaches are strategies for combining modules and components into a cohesive system.
+  In **[System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT)**, the **top-down** and **bottom-up** approaches are strategies for combining modules and components into a cohesive system.
   The **top-down approach** starts with high-level modules and progressively integrates lower-level modules using **stubs** to simulate the behavior of the lower-level modules not yet integrated. This method allows for early validation of major functionalities and user interfaces, but may delay the testing of lower-level components and their interactions.
 
   ```
@@ -197,7 +196,7 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### What is sandwich testing in System Integration Testing?
 
-  Sandwich testing, also known as **hybrid [integration testing](../I/integration-testing.md)**, combines both the **top-down** and **bottom-up** approaches to [System Integration Testing](../S/system-integration-testing.md). It is executed by testing the middle layers of a system's architecture first, then progressively integrating and testing the higher and lower levels simultaneously. This method allows for testing the interaction between various integrated components in the middle of the system while stubs and drivers are used to simulate the behavior of the upper and lower levels until they are ready for integration.
+  Sandwich testing, also known as **hybrid [integration testing](https://naodeng.com.cn/en/wiki/integration-testing)**, combines both the **top-down** and **bottom-up** approaches to [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing). It is executed by testing the middle layers of a system's architecture first, then progressively integrating and testing the higher and lower levels simultaneously. This method allows for testing the interaction between various integrated components in the middle of the system while stubs and drivers are used to simulate the behavior of the upper and lower levels until they are ready for integration.
   In sandwich testing, the system is viewed as having three layers:
 
   1. **Top layer**
@@ -218,7 +217,7 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### What is the role of stubs and drivers in System Integration Testing?
 
-  Stubs and drivers are essential components in **[System Integration Testing](../S/system-integration-testing.md) (SIT)**, particularly when employing **incremental [integration testing](../I/integration-testing.md)** strategies such as top-down or bottom-up approaches.
+  Stubs and drivers are essential components in **[System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT)**, particularly when employing **incremental [integration testing](https://naodeng.com.cn/en/wiki/integration-testing)** strategies such as top-down or bottom-up approaches.
   **Stubs** are used in top-down integration testing . They simulate lower-level modules that have not yet been developed or integrated. Stubs provide predetermined responses to the calls made by the higher-level modules, allowing testers to isolate and test the upper layers of the software stack without waiting for all components to be completed.
 
   ```
@@ -237,19 +236,19 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### How is risk-based testing applied in System Integration Testing?
 
-  [Risk-based testing](../R/risk-based-testing.md) in [System Integration Testing](../S/system-integration-testing.md) (SIT) involves prioritizing [test scenarios](../T/test-scenario.md) based on the **risk** of potential defects and their impact on the system. This strategy ensures that the most critical integration paths and functionalities are tested first, optimizing the testing effort for potential issues that could cause the greatest harm to the project or end-users.
-  To apply [risk-based testing](../R/risk-based-testing.md) in SIT:
+  [Risk-based testing](https://naodeng.com.cn/en/wiki/risk-based-testing) in [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) involves prioritizing [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) based on the **risk** of potential defects and their impact on the system. This strategy ensures that the most critical integration paths and functionalities are tested first, optimizing the testing effort for potential issues that could cause the greatest harm to the project or end-users.
+  To apply [risk-based testing](https://naodeng.com.cn/en/wiki/risk-based-testing) in SIT:
 
   1. **Identify Risks** : Determine which integrations are most crucial and which potential defects would have the highest impact on operations, data integrity, security, or user experience.
   2. **Assess and Rank Risks** : Evaluate the likelihood of each risk occurring and the severity of its impact. Use a risk matrix to prioritize testing efforts.
-  3. **Design [Test Cases](../T/test-case.md)** : Create test cases that target the high-risk areas first. Ensure these test cases are thorough and cover various scenarios, including edge cases.
+  3. **Design [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Create test cases that target the high-risk areas first. Ensure these test cases are thorough and cover various scenarios, including edge cases.
   4. **Execute Tests** : Run the tests, starting with the highest priority ones. Automated test scripts can be particularly useful here for efficiency and consistency.
   5. **Review and Adjust** : As testing progresses, continuously reassess risks based on findings. Adjust the testing focus if new risks emerge or if initial risk assessments change.
   By focusing on the most significant risks during SIT, teams can better allocate their time and resources, reduce the likelihood of high-impact defects slipping through, and increase the overall robustness of the system before it goes into production.
 
   1. **Identify Risks** : Determine which integrations are most crucial and which potential defects would have the highest impact on operations, data integrity, security, or user experience.
   2. **Assess and Rank Risks** : Evaluate the likelihood of each risk occurring and the severity of its impact. Use a risk matrix to prioritize testing efforts.
-  3. **Design [Test Cases](../T/test-case.md)** : Create test cases that target the high-risk areas first. Ensure these test cases are thorough and cover various scenarios, including edge cases.
+  3. **Design [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Create test cases that target the high-risk areas first. Ensure these test cases are thorough and cover various scenarios, including edge cases.
   4. **Execute Tests** : Run the tests, starting with the highest priority ones. Automated test scripts can be particularly useful here for efficiency and consistency.
   5. **Review and Adjust** : As testing progresses, continuously reassess risks based on findings. Adjust the testing focus if new risks emerge or if initial risk assessments change.
 
@@ -257,43 +256,43 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### What tools are commonly used for System Integration Testing?
 
-  Common tools for [System Integration Testing](../S/system-integration-testing.md) (SIT) include:
+  Common tools for [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) include:
 
-  - **[Selenium](../S/selenium.md)**: An open-source tool for automating web browsers. It supports multiple languages and browsers.
-  - **[Postman](../P/postman.md)**: Widely used for [API testing](../A/api-testing.md), allowing testers to send HTTP requests and analyze responses.
-  - **SoapUI**: A tool for testing SOAP and REST web services, focusing on [API testing](../A/api-testing.md).
-  - **[JMeter](../J/jmeter.md)**: An Apache project used for [performance testing](../P/performance-testing.md) and analyzing and measuring the performance of various services.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)**: An open-source tool for automating web browsers. It supports multiple languages and browsers.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)**: Widely used for [API testing](https://naodeng.com.cn/en/wiki/api-testing), allowing testers to send HTTP requests and analyze responses.
+  - **SoapUI**: A tool for testing SOAP and REST web services, focusing on [API testing](https://naodeng.com.cn/en/wiki/api-testing).
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)**: An Apache project used for [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) and analyzing and measuring the performance of various services.
   - **TestComplete**: A commercial tool that supports desktop, mobile, and web application testing.
-  - **Rational Integration Tester (IBM)**: Designed for continuous integration and [system integration testing](../S/system-integration-testing.md), especially in complex environments.
+  - **Rational Integration Tester (IBM)**: Designed for continuous integration and [system integration testing](https://naodeng.com.cn/en/wiki/system-integration-testing), especially in complex environments.
   - **Tosca Testsuite (Tricentis)**: A continuous testing platform that supports a wide range of technologies and platforms.
-  - **HP Unified [Functional Testing](../F/functional-testing.md) (UFT)**: A widely recognized tool for functional and [regression testing](../R/regression-testing.md), with a feature set that supports SIT.
-  - **Ranorex**: A GUI [test automation](../T/test-automation.md) framework that supports desktop, web, and mobile applications.
+  - **HP Unified [Functional Testing](https://naodeng.com.cn/en/wiki/functional-testing) (UFT)**: A widely recognized tool for functional and [regression testing](https://naodeng.com.cn/en/wiki/regression-testing), with a feature set that supports SIT.
+  - **Ranorex**: A GUI [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework that supports desktop, web, and mobile applications.
   - **SpecFlow**: A tool based on Cucumber, it allows writing tests in a natural language style, integrated with .NET.
-  - **FitNesse**: A wiki-based framework for [acceptance testing](../A/acceptance-testing.md) that allows testers to create and edit tests in a wiki.
-  - **Jenkins**: While primarily a CI/CD tool, Jenkins can be used to automate SIT by orchestrating [test suites](../T/test-suite.md) and managing [test environments](../T/test-environment.md).
+  - **FitNesse**: A wiki-based framework for [acceptance testing](https://naodeng.com.cn/en/wiki/acceptance-testing) that allows testers to create and edit tests in a wiki.
+  - **Jenkins**: While primarily a CI/CD tool, Jenkins can be used to automate SIT by orchestrating [test suites](https://naodeng.com.cn/en/wiki/test-suite) and managing [test environments](https://naodeng.com.cn/en/wiki/test-environment).
   These tools can be used in isolation or combined to create a robust SIT framework, depending on the specific requirements of the system under test. Automation in SIT is crucial for ensuring that integrated components work together as expected, and these tools facilitate this process.
 
-  - **[Selenium](../S/selenium.md)**: An open-source tool for automating web browsers. It supports multiple languages and browsers.
-  - **[Postman](../P/postman.md)**: Widely used for [API testing](../A/api-testing.md), allowing testers to send HTTP requests and analyze responses.
-  - **SoapUI**: A tool for testing SOAP and REST web services, focusing on [API testing](../A/api-testing.md).
-  - **[JMeter](../J/jmeter.md)**: An Apache project used for [performance testing](../P/performance-testing.md) and analyzing and measuring the performance of various services.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)**: An open-source tool for automating web browsers. It supports multiple languages and browsers.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)**: Widely used for [API testing](https://naodeng.com.cn/en/wiki/api-testing), allowing testers to send HTTP requests and analyze responses.
+  - **SoapUI**: A tool for testing SOAP and REST web services, focusing on [API testing](https://naodeng.com.cn/en/wiki/api-testing).
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)**: An Apache project used for [performance testing](https://naodeng.com.cn/en/wiki/performance-testing) and analyzing and measuring the performance of various services.
   - **TestComplete**: A commercial tool that supports desktop, mobile, and web application testing.
-  - **Rational Integration Tester (IBM)**: Designed for continuous integration and [system integration testing](../S/system-integration-testing.md), especially in complex environments.
+  - **Rational Integration Tester (IBM)**: Designed for continuous integration and [system integration testing](https://naodeng.com.cn/en/wiki/system-integration-testing), especially in complex environments.
   - **Tosca Testsuite (Tricentis)**: A continuous testing platform that supports a wide range of technologies and platforms.
-  - **HP Unified [Functional Testing](../F/functional-testing.md) (UFT)**: A widely recognized tool for functional and [regression testing](../R/regression-testing.md), with a feature set that supports SIT.
-  - **Ranorex**: A GUI [test automation](../T/test-automation.md) framework that supports desktop, web, and mobile applications.
+  - **HP Unified [Functional Testing](https://naodeng.com.cn/en/wiki/functional-testing) (UFT)**: A widely recognized tool for functional and [regression testing](https://naodeng.com.cn/en/wiki/regression-testing), with a feature set that supports SIT.
+  - **Ranorex**: A GUI [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework that supports desktop, web, and mobile applications.
   - **SpecFlow**: A tool based on Cucumber, it allows writing tests in a natural language style, integrated with .NET.
-  - **FitNesse**: A wiki-based framework for [acceptance testing](../A/acceptance-testing.md) that allows testers to create and edit tests in a wiki.
-  - **Jenkins**: While primarily a CI/CD tool, Jenkins can be used to automate SIT by orchestrating [test suites](../T/test-suite.md) and managing [test environments](../T/test-environment.md).
+  - **FitNesse**: A wiki-based framework for [acceptance testing](https://naodeng.com.cn/en/wiki/acceptance-testing) that allows testers to create and edit tests in a wiki.
+  - **Jenkins**: While primarily a CI/CD tool, Jenkins can be used to automate SIT by orchestrating [test suites](https://naodeng.com.cn/en/wiki/test-suite) and managing [test environments](https://naodeng.com.cn/en/wiki/test-environment).
 
 #### How can automation be applied in System Integration Testing?
 
-  Automation in [System Integration Testing](../S/system-integration-testing.md) (SIT) can streamline the process of verifying interactions between different system modules. To apply automation in SIT:
+  Automation in [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) can streamline the process of verifying interactions between different system modules. To apply automation in SIT:
 
   - **Identify critical integration paths**
     that are frequently used and prone to defects. Automate these paths to ensure they are consistently tested.
 
-  - **Create automated [test suites](../T/test-suite.md)**
+  - **Create automated [test suites](https://naodeng.com.cn/en/wiki/test-suite)**
     that focus on data flow, API contracts, and end-to-end tasks that mimic user scenarios across integrated components.
 
   - Use
@@ -311,17 +310,17 @@ is a technique to evaluate the entirety of a software application. It checks if 
   - **Leverage test orchestration tools**
     to manage dependencies, control test execution order, and handle complex test data setups.
 
-  - **Automate environment [setup](../S/setup.md) and tear-down**
+  - **Automate environment [setup](https://naodeng.com.cn/en/wiki/setup) and tear-down**
     to ensure consistent test conditions and efficient use of resources.
 
   - **Integrate automated SIT results**
     into dashboards and reporting tools for quick visibility into the health of the system integration.
-  By automating repetitive and time-consuming tasks, engineers can focus on more complex integration scenarios and ensure a robust integration [test suite](../T/test-suite.md). Remember to maintain and update automated tests as the system evolves to keep them effective and relevant.
+  By automating repetitive and time-consuming tasks, engineers can focus on more complex integration scenarios and ensure a robust integration [test suite](https://naodeng.com.cn/en/wiki/test-suite). Remember to maintain and update automated tests as the system evolves to keep them effective and relevant.
 
   - **Identify critical integration paths**
     that are frequently used and prone to defects. Automate these paths to ensure they are consistently tested.
 
-  - **Create automated [test suites](../T/test-suite.md)**
+  - **Create automated [test suites](https://naodeng.com.cn/en/wiki/test-suite)**
     that focus on data flow, API contracts, and end-to-end tasks that mimic user scenarios across integrated components.
 
   - Use
@@ -339,7 +338,7 @@ is a technique to evaluate the entirety of a software application. It checks if 
   - **Leverage test orchestration tools**
     to manage dependencies, control test execution order, and handle complex test data setups.
 
-  - **Automate environment [setup](../S/setup.md) and tear-down**
+  - **Automate environment [setup](https://naodeng.com.cn/en/wiki/setup) and tear-down**
     to ensure consistent test conditions and efficient use of resources.
 
   - **Integrate automated SIT results**
@@ -347,20 +346,20 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### What are the benefits and drawbacks of using automated tools for System Integration Testing?
 
-  Benefits of Automated Tools for [System Integration Testing](../S/system-integration-testing.md):
+  Benefits of Automated Tools for [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing):
 
   - **Efficiency** : Automated tests execute much faster than manual tests, allowing for more tests to be run in less time.
   - **Consistency** : Automation ensures tests are performed the same way every time, reducing human error.
   - **Reusability** : Test scripts can be reused across different versions of the software, saving time in test creation.
   - **Coverage** : Automation can increase the depth and scope of tests, improving the likelihood of finding defects.
-  - **[Non-functional Testing](../N/non-functional-testing.md)** : Automated tools can simulate thousands of virtual users for performance testing, which is not feasible manually.
-  Drawbacks of Automated Tools for [System Integration Testing](../S/system-integration-testing.md):
+  - **[Non-functional Testing](https://naodeng.com.cn/en/wiki/non-functional-testing)** : Automated tools can simulate thousands of virtual users for performance testing, which is not feasible manually.
+  Drawbacks of Automated Tools for [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing):
 
   - **Initial Investment** : High upfront costs for tools and setting up the test environment.
   - **Maintenance** : Test scripts require regular updates to keep pace with software changes, which can be time-consuming.
   - **Learning Curve** : Teams need time to learn and adapt to new tools.
-  - **Complex [Setup](../S/setup.md)** : Creating test environments and data for system integration testing can be complex.
-  - **[False Positives](../F/false-positive.md)/Negatives** : Automated tests may produce misleading results if not designed or interpreted correctly.
+  - **Complex [Setup](https://naodeng.com.cn/en/wiki/setup)** : Creating test environments and data for system integration testing can be complex.
+  - **[False Positives](https://naodeng.com.cn/en/wiki/false-positive)/Negatives** : Automated tests may produce misleading results if not designed or interpreted correctly.
   - **Limited Scope** : Some aspects of integration, such as user experience or visual issues, are better assessed manually.
 
   ```
@@ -382,17 +381,17 @@ is a technique to evaluate the entirety of a software application. It checks if 
   - **Consistency** : Automation ensures tests are performed the same way every time, reducing human error.
   - **Reusability** : Test scripts can be reused across different versions of the software, saving time in test creation.
   - **Coverage** : Automation can increase the depth and scope of tests, improving the likelihood of finding defects.
-  - **[Non-functional Testing](../N/non-functional-testing.md)** : Automated tools can simulate thousands of virtual users for performance testing, which is not feasible manually.
+  - **[Non-functional Testing](https://naodeng.com.cn/en/wiki/non-functional-testing)** : Automated tools can simulate thousands of virtual users for performance testing, which is not feasible manually.
   - **Initial Investment** : High upfront costs for tools and setting up the test environment.
   - **Maintenance** : Test scripts require regular updates to keep pace with software changes, which can be time-consuming.
   - **Learning Curve** : Teams need time to learn and adapt to new tools.
-  - **Complex [Setup](../S/setup.md)** : Creating test environments and data for system integration testing can be complex.
-  - **[False Positives](../F/false-positive.md)/Negatives** : Automated tests may produce misleading results if not designed or interpreted correctly.
+  - **Complex [Setup](https://naodeng.com.cn/en/wiki/setup)** : Creating test environments and data for system integration testing can be complex.
+  - **[False Positives](https://naodeng.com.cn/en/wiki/false-positive)/Negatives** : Automated tests may produce misleading results if not designed or interpreted correctly.
   - **Limited Scope** : Some aspects of integration, such as user experience or visual issues, are better assessed manually.
 
 #### What role does virtualization play in System Integration Testing?
 
-  Virtualization plays a **crucial role** in [System Integration Testing](../S/system-integration-testing.md) (SIT) by providing a **flexible** and **controlled environment** for testing the interactions between different system components. It allows [test automation](../T/test-automation.md) engineers to create and manage multiple virtual machines (VMs) that mimic the production environment, enabling them to:
+  Virtualization plays a **crucial role** in [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) by providing a **flexible** and **controlled environment** for testing the interactions between different system components. It allows [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers to create and manage multiple virtual machines (VMs) that mimic the production environment, enabling them to:
 
   - **Isolate tests**
     to reduce the risk of environmental inconsistencies affecting the results.
@@ -408,7 +407,7 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
   - **Integrate with CI/CD pipelines**
     , automating the provisioning and teardown of virtual environments as part of the testing workflow.
-  By leveraging virtualization, engineers can ensure that SIT is both **efficient** and **representative** of the actual deployment scenario, thus enhancing the reliability of the [integration testing](../I/integration-testing.md) process.
+  By leveraging virtualization, engineers can ensure that SIT is both **efficient** and **representative** of the actual deployment scenario, thus enhancing the reliability of the [integration testing](https://naodeng.com.cn/en/wiki/integration-testing) process.
 
   - **Isolate tests**
     to reduce the risk of environmental inconsistencies affecting the results.
@@ -427,90 +426,90 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### How can continuous integration tools aid in System Integration Testing?
 
-  Continuous Integration (CI) tools streamline **[System Integration Testing](../S/system-integration-testing.md) (SIT)** by automating the build and deployment processes. They enable frequent integration of code changes, ensuring that the integrated system is tested regularly, which is crucial for early detection of defects.
-  CI tools facilitate **automated [test execution](../T/test-execution.md)** as part of the build pipeline. Once developers commit code to the version control system, CI tools can automatically trigger SIT suites, allowing for immediate feedback on the impact of changes.
-  **Parallel [test execution](../T/test-execution.md)** is another advantage, as CI tools can distribute tests across multiple servers or containers, reducing the time required for SIT.
-  **Environment management** is simplified with CI tools, which can provision or spin up necessary [test environments](../T/test-environment.md) on demand, ensuring that tests run in a consistent, controlled setting.
+  Continuous Integration (CI) tools streamline **[System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT)** by automating the build and deployment processes. They enable frequent integration of code changes, ensuring that the integrated system is tested regularly, which is crucial for early detection of defects.
+  CI tools facilitate **automated [test execution](https://naodeng.com.cn/en/wiki/test-execution)** as part of the build pipeline. Once developers commit code to the version control system, CI tools can automatically trigger SIT suites, allowing for immediate feedback on the impact of changes.
+  **Parallel [test execution](https://naodeng.com.cn/en/wiki/test-execution)** is another advantage, as CI tools can distribute tests across multiple servers or containers, reducing the time required for SIT.
+  **Environment management** is simplified with CI tools, which can provision or spin up necessary [test environments](https://naodeng.com.cn/en/wiki/test-environment) on demand, ensuring that tests run in a consistent, controlled setting.
   CI tools often come with **plugins and integrations** for test frameworks, code quality analyzers, and reporting tools, which enhance the SIT process by providing comprehensive insights into the health of the system.
   **Artifact management** is handled efficiently, with CI tools storing the build artifacts that are to be tested, ensuring that SIT is always performed on the correct version of the system.
   Lastly, CI tools support **continuous feedback mechanisms**. Automated notifications about the SIT results can be sent to the team, enabling quick response to issues.
-  In summary, CI tools support SIT by automating repetitive tasks, managing [test environments](../T/test-environment.md), ensuring consistent testing against the latest builds, and providing rapid feedback to the development team.
+  In summary, CI tools support SIT by automating repetitive tasks, managing [test environments](https://naodeng.com.cn/en/wiki/test-environment), ensuring consistent testing against the latest builds, and providing rapid feedback to the development team.
 
 ### Best Practices and Challenges
 
 #### What are some best practices for conducting System Integration Testing?
 
-  Best practices for conducting [System Integration Testing](../S/system-integration-testing.md) (SIT) include:
+  Best practices for conducting [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) include:
 
   - **Define clear objectives** : Establish what you aim to achieve with SIT to focus your efforts effectively.
-  - **Create a detailed [test plan](../T/test-plan.md)** : This should outline the scope, approach, resources, schedule, and deliverables.
-  - **Prioritize [test cases](../T/test-case.md)** : Focus on critical integrations first, based on risk and importance.
+  - **Create a detailed [test plan](https://naodeng.com.cn/en/wiki/test-plan)** : This should outline the scope, approach, resources, schedule, and deliverables.
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)** : Focus on critical integrations first, based on risk and importance.
   - **Use version control** : Keep track of different configurations and ensure reproducibility.
   - **Automate where possible** : Automate repetitive and data-intensive tests to save time and reduce human error.
-  - **[Test environment](../T/test-environment.md)** : Ensure it closely mirrors the production environment to catch environment-specific issues.
+  - **[Test environment](https://naodeng.com.cn/en/wiki/test-environment)** : Ensure it closely mirrors the production environment to catch environment-specific issues.
   - **Data management** : Use realistic data sets for testing to simulate real-world scenarios accurately.
   - **Monitor and measure** : Implement logging and monitoring to track system behavior and performance under test.
   - **Collaborate with stakeholders** : Regularly communicate with developers, business analysts, and end-users to align expectations and share insights.
   - **Iterative testing** : Test iteratively, especially when new components or changes are introduced.
   - **Error handling** : Test how the system handles failures and ensure graceful degradation.
-  - **[Performance testing](../P/performance-testing.md)** : Include load and stress testing to evaluate system behavior under high demand.
-  - **[Security testing](../S/security-testing.md)** : Verify that integrations do not introduce security vulnerabilities.
+  - **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** : Include load and stress testing to evaluate system behavior under high demand.
+  - **[Security testing](https://naodeng.com.cn/en/wiki/security-testing)** : Verify that integrations do not introduce security vulnerabilities.
   - **Documentation** : Keep thorough records of test cases, results, and any anomalies for future reference and compliance.
   - **Review and Retest** : After fixes or changes, retest to confirm that the issue is resolved and no new issues have been introduced.
-  By adhering to these practices, you can enhance the effectiveness of your [System Integration Testing](../S/system-integration-testing.md) and ensure a more reliable integration of system components.
+  By adhering to these practices, you can enhance the effectiveness of your [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) and ensure a more reliable integration of system components.
 
   - **Define clear objectives** : Establish what you aim to achieve with SIT to focus your efforts effectively.
-  - **Create a detailed [test plan](../T/test-plan.md)** : This should outline the scope, approach, resources, schedule, and deliverables.
-  - **Prioritize [test cases](../T/test-case.md)** : Focus on critical integrations first, based on risk and importance.
+  - **Create a detailed [test plan](https://naodeng.com.cn/en/wiki/test-plan)** : This should outline the scope, approach, resources, schedule, and deliverables.
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)** : Focus on critical integrations first, based on risk and importance.
   - **Use version control** : Keep track of different configurations and ensure reproducibility.
   - **Automate where possible** : Automate repetitive and data-intensive tests to save time and reduce human error.
-  - **[Test environment](../T/test-environment.md)** : Ensure it closely mirrors the production environment to catch environment-specific issues.
+  - **[Test environment](https://naodeng.com.cn/en/wiki/test-environment)** : Ensure it closely mirrors the production environment to catch environment-specific issues.
   - **Data management** : Use realistic data sets for testing to simulate real-world scenarios accurately.
   - **Monitor and measure** : Implement logging and monitoring to track system behavior and performance under test.
   - **Collaborate with stakeholders** : Regularly communicate with developers, business analysts, and end-users to align expectations and share insights.
   - **Iterative testing** : Test iteratively, especially when new components or changes are introduced.
   - **Error handling** : Test how the system handles failures and ensure graceful degradation.
-  - **[Performance testing](../P/performance-testing.md)** : Include load and stress testing to evaluate system behavior under high demand.
-  - **[Security testing](../S/security-testing.md)** : Verify that integrations do not introduce security vulnerabilities.
+  - **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** : Include load and stress testing to evaluate system behavior under high demand.
+  - **[Security testing](https://naodeng.com.cn/en/wiki/security-testing)** : Verify that integrations do not introduce security vulnerabilities.
   - **Documentation** : Keep thorough records of test cases, results, and any anomalies for future reference and compliance.
   - **Review and Retest** : After fixes or changes, retest to confirm that the issue is resolved and no new issues have been introduced.
 
 #### What are common challenges faced during System Integration Testing and how can they be mitigated?
 
-  Common challenges in [System Integration Testing](../S/system-integration-testing.md) (SIT) include:
+  Common challenges in [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) include:
 
   - **Complex Dependencies**: SIT involves multiple systems with intricate dependencies, making it difficult to isolate issues. Mitigation involves creating a detailed **integration map** that outlines all dependencies and interactions.
   - **Environment Discrepancies**: Differences between test and production environments can lead to false test results. Use **containerization** and **infrastructure as code** to mirror production environments closely.
-  - **Data Management**: [Test data](../T/test-data.md) must be representative and consistent across systems. Implement a **centralized [test data](../T/test-data.md) management** strategy to ensure data integrity and relevance.
-  - **Intermittent Issues**: [Flaky tests](../F/flaky-test.md) can occur due to timing and network variability. Introduce **retries** for network calls and use **synchronization** mechanisms to handle timing issues.
+  - **Data Management**: [Test data](https://naodeng.com.cn/en/wiki/test-data) must be representative and consistent across systems. Implement a **centralized [test data](https://naodeng.com.cn/en/wiki/test-data) management** strategy to ensure data integrity and relevance.
+  - **Intermittent Issues**: [Flaky tests](https://naodeng.com.cn/en/wiki/flaky-test) can occur due to timing and network variability. Introduce **retries** for network calls and use **synchronization** mechanisms to handle timing issues.
   - **Resource Constraints**: Limited access to systems or data can impede testing. Utilize **service virtualization** to simulate components that are not readily available.
-  - **Change Management**: Frequent changes in integrated systems can disrupt testing. Adopt **version control** and **automated [regression testing](../R/regression-testing.md)** to manage changes effectively.
-  - **Performance Bottlenecks**: Performance issues can be hard to diagnose in a multi-system environment. Conduct **[performance testing](../P/performance-testing.md)** at the integration level and use **profiling tools** to identify bottlenecks.
-  Mitigating these challenges requires a combination of **strategic planning**, **robust tooling**, and **adaptive processes**. By addressing these issues proactively, [test automation](../T/test-automation.md) engineers can ensure a more efficient and reliable SIT process.
+  - **Change Management**: Frequent changes in integrated systems can disrupt testing. Adopt **version control** and **automated [regression testing](https://naodeng.com.cn/en/wiki/regression-testing)** to manage changes effectively.
+  - **Performance Bottlenecks**: Performance issues can be hard to diagnose in a multi-system environment. Conduct **[performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** at the integration level and use **profiling tools** to identify bottlenecks.
+  Mitigating these challenges requires a combination of **strategic planning**, **robust tooling**, and **adaptive processes**. By addressing these issues proactively, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can ensure a more efficient and reliable SIT process.
 
   - **Complex Dependencies**: SIT involves multiple systems with intricate dependencies, making it difficult to isolate issues. Mitigation involves creating a detailed **integration map** that outlines all dependencies and interactions.
   - **Environment Discrepancies**: Differences between test and production environments can lead to false test results. Use **containerization** and **infrastructure as code** to mirror production environments closely.
-  - **Data Management**: [Test data](../T/test-data.md) must be representative and consistent across systems. Implement a **centralized [test data](../T/test-data.md) management** strategy to ensure data integrity and relevance.
-  - **Intermittent Issues**: [Flaky tests](../F/flaky-test.md) can occur due to timing and network variability. Introduce **retries** for network calls and use **synchronization** mechanisms to handle timing issues.
+  - **Data Management**: [Test data](https://naodeng.com.cn/en/wiki/test-data) must be representative and consistent across systems. Implement a **centralized [test data](https://naodeng.com.cn/en/wiki/test-data) management** strategy to ensure data integrity and relevance.
+  - **Intermittent Issues**: [Flaky tests](https://naodeng.com.cn/en/wiki/flaky-test) can occur due to timing and network variability. Introduce **retries** for network calls and use **synchronization** mechanisms to handle timing issues.
   - **Resource Constraints**: Limited access to systems or data can impede testing. Utilize **service virtualization** to simulate components that are not readily available.
-  - **Change Management**: Frequent changes in integrated systems can disrupt testing. Adopt **version control** and **automated [regression testing](../R/regression-testing.md)** to manage changes effectively.
-  - **Performance Bottlenecks**: Performance issues can be hard to diagnose in a multi-system environment. Conduct **[performance testing](../P/performance-testing.md)** at the integration level and use **profiling tools** to identify bottlenecks.
+  - **Change Management**: Frequent changes in integrated systems can disrupt testing. Adopt **version control** and **automated [regression testing](https://naodeng.com.cn/en/wiki/regression-testing)** to manage changes effectively.
+  - **Performance Bottlenecks**: Performance issues can be hard to diagnose in a multi-system environment. Conduct **[performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** at the integration level and use **profiling tools** to identify bottlenecks.
 
 #### How can System Integration Testing be effectively documented?
 
-  Documenting [System Integration Testing](../S/system-integration-testing.md) (SIT) effectively involves clear, concise, and structured information that can be easily understood and acted upon. Here's a guide to documenting SIT:
-  **[Test Strategy](../T/test-strategy.md) and Plan**: Outline the overall approach, including the scope, objectives, and schedule. Specify the integration points, dependencies, and the order of component integration.
-  **[Test Cases](../T/test-case.md) and Scripts**: Develop detailed [test cases](../T/test-case.md) and scripts that cover all integration paths, data flows, and interactions between components. Use a consistent format for easy reference and execution.
-  **[Test Data](../T/test-data.md)**: Document the [test data](../T/test-data.md) requirements, ensuring it's representative of production data. Include data [setup](../S/setup.md) and cleanup procedures.
-  **Environment [Setup](../S/setup.md)**: Provide instructions for configuring the [test environment](../T/test-environment.md), including hardware, software, network configurations, and any necessary stubs or drivers.
-  **Execution Records**: Keep a log of [test executions](../T/test-execution.md), including [test script](../T/test-script.md) identifier, execution date, tester, and outcome. Use tables or spreadsheets for clarity.
+  Documenting [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) effectively involves clear, concise, and structured information that can be easily understood and acted upon. Here's a guide to documenting SIT:
+  **[Test Strategy](https://naodeng.com.cn/en/wiki/test-strategy) and Plan**: Outline the overall approach, including the scope, objectives, and schedule. Specify the integration points, dependencies, and the order of component integration.
+  **[Test Cases](https://naodeng.com.cn/en/wiki/test-case) and Scripts**: Develop detailed [test cases](https://naodeng.com.cn/en/wiki/test-case) and scripts that cover all integration paths, data flows, and interactions between components. Use a consistent format for easy reference and execution.
+  **[Test Data](https://naodeng.com.cn/en/wiki/test-data)**: Document the [test data](https://naodeng.com.cn/en/wiki/test-data) requirements, ensuring it's representative of production data. Include data [setup](https://naodeng.com.cn/en/wiki/setup) and cleanup procedures.
+  **Environment [Setup](https://naodeng.com.cn/en/wiki/setup)**: Provide instructions for configuring the [test environment](https://naodeng.com.cn/en/wiki/test-environment), including hardware, software, network configurations, and any necessary stubs or drivers.
+  **Execution Records**: Keep a log of [test executions](https://naodeng.com.cn/en/wiki/test-execution), including [test script](https://naodeng.com.cn/en/wiki/test-script) identifier, execution date, tester, and outcome. Use tables or spreadsheets for clarity.
 
   ```
   | Test ID | Execution Date | Tester | Outcome |
   |---------|----------------|--------|---------|
   | INT-001 | 2023-04-01     | J.Doe  | Pass    |
   ```
-  **Defects**: Record any defects found, with a unique identifier, description, [severity](../S/severity.md), and status. Link defects to corresponding [test cases](../T/test-case.md).
+  **Defects**: Record any defects found, with a unique identifier, description, [severity](https://naodeng.com.cn/en/wiki/severity), and status. Link defects to corresponding [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
   ```
   | Defect ID | Test ID | Description          | Severity | Status  |
@@ -523,20 +522,20 @@ is a technique to evaluate the entirety of a software application. It checks if 
 
 #### How should System Integration Testing be managed in agile development environments?
 
-  In [agile development](../A/agile-development.md) environments, managing [System Integration Testing](../S/system-integration-testing.md) (SIT) requires a **continuous and iterative approach**. SIT should be integrated into the **sprint cycles**, ensuring that integration points are tested as soon as they are developed. This aligns with the agile principle of **continuous feedback** and **incremental delivery**.
-  **Collaboration between developers, testers, and operations** is crucial. Developers should provide clear interfaces and usage documentation for their components, enabling testers to create meaningful integration tests. Operations can offer insights into the deployment environment, which can influence [test scenarios](../T/test-scenario.md).
+  In [agile development](https://naodeng.com.cn/en/wiki/agile-development) environments, managing [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) requires a **continuous and iterative approach**. SIT should be integrated into the **sprint cycles**, ensuring that integration points are tested as soon as they are developed. This aligns with the agile principle of **continuous feedback** and **incremental delivery**.
+  **Collaboration between developers, testers, and operations** is crucial. Developers should provide clear interfaces and usage documentation for their components, enabling testers to create meaningful integration tests. Operations can offer insights into the deployment environment, which can influence [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario).
   **Automated regression suites** should be maintained and executed with each build to ensure that new changes do not break existing integrations. Utilize **continuous integration (CI) pipelines** to trigger these tests automatically.
   **Feature toggles** can be used to manage the integration of components that are still under development, allowing for testing in the main branch without affecting the functionality available to users.
-  **[Test environments](../T/test-environment.md)** should closely mimic production to ensure that SIT results are representative. Use **infrastructure as code (IaC)** to provision and manage these environments reliably and efficiently.
-  **Monitoring and logging** in [test environments](../T/test-environment.md) can provide valuable insights into integration issues and should be leveraged to identify and resolve problems early.
+  **[Test environments](https://naodeng.com.cn/en/wiki/test-environment)** should closely mimic production to ensure that SIT results are representative. Use **infrastructure as code (IaC)** to provision and manage these environments reliably and efficiently.
+  **Monitoring and logging** in [test environments](https://naodeng.com.cn/en/wiki/test-environment) can provide valuable insights into integration issues and should be leveraged to identify and resolve problems early.
   Finally, **prioritize tests based on risk and impact**, focusing on critical integration points first. This ensures that the most significant potential defects are addressed promptly, optimizing the effort spent on SIT in an agile context.
 
 #### How can System Integration Testing be optimized for large and complex systems?
 
-  Optimizing [System Integration Testing](../S/system-integration-testing.md) (SIT) for large and complex systems requires a strategic approach to manage the intricacies and dependencies involved. **Prioritize [test cases](../T/test-case.md)** based on critical business functions and risk assessment to focus on the most impactful areas. Utilize **[test data](../T/test-data.md) management** tools to ensure high-quality, relevant [test data](../T/test-data.md) is available, reducing the time spent on data [setup](../S/setup.md) and maintenance.
-  **Modularize [test scripts](../T/test-script.md)** to enhance reusability and [maintainability](../M/maintainability.md). This approach allows for more efficient updates when system components change. Implement **service virtualization** to simulate unavailable or costly-to-access components, enabling parallel development and testing.
-  **Leverage parallel testing** to run multiple [test scenarios](../T/test-scenario.md) simultaneously, significantly reducing the overall testing time. This can be achieved through distributed [test execution](../T/test-execution.md) environments.
-  Incorporate **[test environment](../T/test-environment.md) management** practices to ensure environments are stable, consistent, and available when needed. This includes version control of [test environments](../T/test-environment.md) to match production as closely as possible.
-  **Optimize [test automation](../T/test-automation.md) frameworks** to support integration points and interfaces specific to the system under test. This includes customizing or extending existing frameworks to handle complex scenarios.
-  **Monitor and analyze test results** continuously using dashboards and reporting tools to quickly identify and address issues. Integrate **[performance testing](../P/performance-testing.md)** within SIT to check system behavior under load, which is crucial for complex systems.
+  Optimizing [System Integration Testing](https://naodeng.com.cn/en/wiki/system-integration-testing) (SIT) for large and complex systems requires a strategic approach to manage the intricacies and dependencies involved. **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)** based on critical business functions and risk assessment to focus on the most impactful areas. Utilize **[test data](https://naodeng.com.cn/en/wiki/test-data) management** tools to ensure high-quality, relevant [test data](https://naodeng.com.cn/en/wiki/test-data) is available, reducing the time spent on data [setup](https://naodeng.com.cn/en/wiki/setup) and maintenance.
+  **Modularize [test scripts](https://naodeng.com.cn/en/wiki/test-script)** to enhance reusability and [maintainability](https://naodeng.com.cn/en/wiki/maintainability). This approach allows for more efficient updates when system components change. Implement **service virtualization** to simulate unavailable or costly-to-access components, enabling parallel development and testing.
+  **Leverage parallel testing** to run multiple [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) simultaneously, significantly reducing the overall testing time. This can be achieved through distributed [test execution](https://naodeng.com.cn/en/wiki/test-execution) environments.
+  Incorporate **[test environment](https://naodeng.com.cn/en/wiki/test-environment) management** practices to ensure environments are stable, consistent, and available when needed. This includes version control of [test environments](https://naodeng.com.cn/en/wiki/test-environment) to match production as closely as possible.
+  **Optimize [test automation](https://naodeng.com.cn/en/wiki/test-automation) frameworks** to support integration points and interfaces specific to the system under test. This includes customizing or extending existing frameworks to handle complex scenarios.
+  **Monitor and analyze test results** continuously using dashboards and reporting tools to quickly identify and address issues. Integrate **[performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** within SIT to check system behavior under load, which is crucial for complex systems.
   Lastly, foster a **culture of collaboration** between developers, testers, and operations to ensure smooth and efficient testing processes. This includes regular communication and knowledge sharing to align on system understanding and test objectives.

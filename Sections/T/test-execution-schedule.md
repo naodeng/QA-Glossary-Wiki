@@ -1,6 +1,5 @@
 # Test Execution Schedule
 
-
 <!-- TOC START -->
 - [Questions about Test Execution Schedule ?](#questions-about-test-execution-schedule)
   - [Basics and Importance](#basics-and-importance)
@@ -33,50 +32,50 @@ This schedule orchestrates sequential test steps, either at preset times or upon
 
 #### What is a Test Execution Schedule in software testing?
 
-  A **[Test Execution Schedule](../T/test-execution-schedule.md)** is a timeline that outlines when and in what sequence [test cases](../T/test-case.md) will be executed during the testing phase. It is a critical component of the test planning process and ensures that testing activities are aligned with project deadlines and resource availability.
-  In creating a [Test Execution Schedule](../T/test-execution-schedule.md), consider the **dependencies** between [test cases](../T/test-case.md), the **availability of [test environments](../T/test-environment.md)**, and the **allocation of resources**. It's also essential to factor in **risk-based prioritization**, ensuring that high-risk areas are tested first.
-  To manage the schedule effectively, use tools like **[test management](../T/test-management.md) software** or **project management platforms** that offer scheduling features. These tools can help automate notifications and track progress against the planned timeline.
-  When optimizing the schedule for efficiency, look for opportunities to **parallelize [test execution](../T/test-execution.md)** where possible, and be prepared to **re-prioritize** as project dynamics change.
-  In the context of [test automation](../T/test-automation.md), the schedule should account for the time required for **script maintenance**, **environment [setup](../S/setup.md)**, and **result analysis**. Automated tests may run faster than manual ones, but they also require time for [setup](../S/setup.md) and maintenance.
+  A **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)** is a timeline that outlines when and in what sequence [test cases](https://naodeng.com.cn/en/wiki/test-case) will be executed during the testing phase. It is a critical component of the test planning process and ensures that testing activities are aligned with project deadlines and resource availability.
+  In creating a [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule), consider the **dependencies** between [test cases](https://naodeng.com.cn/en/wiki/test-case), the **availability of [test environments](https://naodeng.com.cn/en/wiki/test-environment)**, and the **allocation of resources**. It's also essential to factor in **risk-based prioritization**, ensuring that high-risk areas are tested first.
+  To manage the schedule effectively, use tools like **[test management](https://naodeng.com.cn/en/wiki/test-management) software** or **project management platforms** that offer scheduling features. These tools can help automate notifications and track progress against the planned timeline.
+  When optimizing the schedule for efficiency, look for opportunities to **parallelize [test execution](https://naodeng.com.cn/en/wiki/test-execution)** where possible, and be prepared to **re-prioritize** as project dynamics change.
+  In the context of [test automation](https://naodeng.com.cn/en/wiki/test-automation), the schedule should account for the time required for **script maintenance**, **environment [setup](https://naodeng.com.cn/en/wiki/setup)**, and **result analysis**. Automated tests may run faster than manual ones, but they also require time for [setup](https://naodeng.com.cn/en/wiki/setup) and maintenance.
   Advanced strategies for managing the schedule include **predictive analytics** to forecast potential delays and **dynamic rescheduling** based on real-time progress. It's also beneficial to integrate the schedule with **Continuous Integration/Continuous Deployment (CI/CD) pipelines** to trigger automated test runs at optimal times.
-  Remember, a well-managed [Test Execution Schedule](../T/test-execution-schedule.md) is a dynamic document that requires regular updates to reflect the current state of the testing effort and project needs.
+  Remember, a well-managed [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule) is a dynamic document that requires regular updates to reflect the current state of the testing effort and project needs.
 
 #### Why is a Test Execution Schedule important in a testing process?
 
-  A **[Test Execution Schedule](../T/test-execution-schedule.md)** is pivotal in the testing process as it ensures **timely delivery** and **resource optimization**. It provides a structured timeline for executing [test cases](../T/test-case.md), enabling teams to prioritize tasks and allocate resources efficiently. By defining the sequence and timing of test activities, it helps in identifying dependencies and potential bottlenecks early on.
+  A **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)** is pivotal in the testing process as it ensures **timely delivery** and **resource optimization**. It provides a structured timeline for executing [test cases](https://naodeng.com.cn/en/wiki/test-case), enabling teams to prioritize tasks and allocate resources efficiently. By defining the sequence and timing of test activities, it helps in identifying dependencies and potential bottlenecks early on.
   The schedule serves as a **communication tool** among stakeholders, offering visibility into the testing progress and facilitating coordination. It also allows for better **risk management**, as high-risk areas can be tested earlier in the cycle, providing ample time for issue resolution.
   Moreover, it supports **progress tracking** and **reporting**, aiding in the assessment of whether the testing phase is on track to meet release deadlines. This is crucial for decision-making, especially when considering the go/no-go for product launch.
-  In [dynamic testing](../D/dynamic-testing.md) environments, a well-structured schedule is essential for **managing changes** effectively. It provides a framework that can adapt to modifications in the project scope or unforeseen delays, ensuring that the testing phase remains aligned with the overall project timeline.
-  Lastly, the schedule is a key factor in **maintaining [test coverage](../T/test-coverage.md)**. It helps in ensuring that all planned [test cases](../T/test-case.md) are executed and that no critical areas are overlooked due to time constraints or oversight.
-  In essence, the [Test Execution Schedule](../T/test-execution-schedule.md) is a strategic asset that underpins the success of the testing process by fostering efficiency, clarity, and adaptability.
+  In [dynamic testing](https://naodeng.com.cn/en/wiki/dynamic-testing) environments, a well-structured schedule is essential for **managing changes** effectively. It provides a framework that can adapt to modifications in the project scope or unforeseen delays, ensuring that the testing phase remains aligned with the overall project timeline.
+  Lastly, the schedule is a key factor in **maintaining [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)**. It helps in ensuring that all planned [test cases](https://naodeng.com.cn/en/wiki/test-case) are executed and that no critical areas are overlooked due to time constraints or oversight.
+  In essence, the [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule) is a strategic asset that underpins the success of the testing process by fostering efficiency, clarity, and adaptability.
 
 #### What are the key components of a Test Execution Schedule?
 
-  Key components of a **[Test Execution Schedule](../T/test-execution-schedule.md)** include:
+  Key components of a **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)** include:
 
-  - **[Test Suite](../T/test-suite.md)** : Organized collection of test cases to be run.
-  - **[Test Environment](../T/test-environment.md) Information** : Details of the hardware, software, network configurations, and other relevant setup.
+  - **[Test Suite](https://naodeng.com.cn/en/wiki/test-suite)** : Organized collection of test cases to be run.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment) Information** : Details of the hardware, software, network configurations, and other relevant setup.
   - **Resource Allocation** : Assignment of personnel and tools for test execution.
-  - **[Test Data](../T/test-data.md)** : Specific datasets required for test execution.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data)** : Specific datasets required for test execution.
   - **Execution Timeframe** : Start and end dates, including specific times for test runs.
   - **Dependencies** : Identification of any prerequisites or interdependencies between tests.
   - **Risk Assessment** : Prioritization of tests based on potential risks.
-  - **[Test Execution](../T/test-execution.md) Order** : Sequence in which tests should be executed.
+  - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Order** : Sequence in which tests should be executed.
   - **Entry and Exit Criteria** : Conditions that must be met to start and conclude the testing phase.
   - **Test Deliverables** : Artifacts to be produced, such as reports and logs.
   - **Monitoring and Control Mechanisms** : Processes to track progress and handle deviations.
   - **Contingency Plans** : Strategies for dealing with unexpected events or delays.
   - **Communication Plan** : Protocols for updating stakeholders on test progress.
-  These components ensure a comprehensive and structured approach to executing [test cases](../T/test-case.md), allowing for efficient tracking and management of the testing process.
+  These components ensure a comprehensive and structured approach to executing [test cases](https://naodeng.com.cn/en/wiki/test-case), allowing for efficient tracking and management of the testing process.
 
-  - **[Test Suite](../T/test-suite.md)** : Organized collection of test cases to be run.
-  - **[Test Environment](../T/test-environment.md) Information** : Details of the hardware, software, network configurations, and other relevant setup.
+  - **[Test Suite](https://naodeng.com.cn/en/wiki/test-suite)** : Organized collection of test cases to be run.
+  - **[Test Environment](https://naodeng.com.cn/en/wiki/test-environment) Information** : Details of the hardware, software, network configurations, and other relevant setup.
   - **Resource Allocation** : Assignment of personnel and tools for test execution.
-  - **[Test Data](../T/test-data.md)** : Specific datasets required for test execution.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data)** : Specific datasets required for test execution.
   - **Execution Timeframe** : Start and end dates, including specific times for test runs.
   - **Dependencies** : Identification of any prerequisites or interdependencies between tests.
   - **Risk Assessment** : Prioritization of tests based on potential risks.
-  - **[Test Execution](../T/test-execution.md) Order** : Sequence in which tests should be executed.
+  - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Order** : Sequence in which tests should be executed.
   - **Entry and Exit Criteria** : Conditions that must be met to start and conclude the testing phase.
   - **Test Deliverables** : Artifacts to be produced, such as reports and logs.
   - **Monitoring and Control Mechanisms** : Processes to track progress and handle deviations.
@@ -85,28 +84,28 @@ This schedule orchestrates sequential test steps, either at preset times or upon
 
 #### How does a Test Execution Schedule contribute to the overall testing strategy?
 
-  A **[Test Execution Schedule](../T/test-execution-schedule.md)** aligns the testing activities with the project's timelines and resources, ensuring that testing is conducted systematically and efficiently. It serves as a roadmap for the testing team, detailing when and how tests should be executed to meet the project's objectives.
-  By integrating the schedule into the overall testing strategy, it helps in prioritizing [test cases](../T/test-case.md) based on risk and impact, which is crucial for effective [test coverage](../T/test-coverage.md). It also facilitates the allocation of resources, including personnel and [test environments](../T/test-environment.md), avoiding bottlenecks and ensuring that the necessary infrastructure is available when needed.
+  A **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)** aligns the testing activities with the project's timelines and resources, ensuring that testing is conducted systematically and efficiently. It serves as a roadmap for the testing team, detailing when and how tests should be executed to meet the project's objectives.
+  By integrating the schedule into the overall testing strategy, it helps in prioritizing [test cases](https://naodeng.com.cn/en/wiki/test-case) based on risk and impact, which is crucial for effective [test coverage](https://naodeng.com.cn/en/wiki/test-coverage). It also facilitates the allocation of resources, including personnel and [test environments](https://naodeng.com.cn/en/wiki/test-environment), avoiding bottlenecks and ensuring that the necessary infrastructure is available when needed.
   Moreover, the schedule provides a framework for monitoring progress and measuring test effectiveness. It allows for tracking against planned activities, enabling early detection of deviations and timely corrective actions. This proactive approach to managing the testing process enhances the ability to meet release deadlines with a high-quality product.
-  In the context of [test automation](../T/test-automation.md), the schedule must account for the time required for script development, maintenance, and execution. Automated tests need to be seamlessly integrated into the CI/CD pipeline, and the schedule should reflect this, ensuring that automated tests are executed as part of the regular build process.
-  Effective scheduling also supports [regression testing](../R/regression-testing.md) by identifying the most appropriate times to run automated regression suites, thus maintaining the integrity of the software as changes are made.
-  In summary, a well-constructed [Test Execution Schedule](../T/test-execution-schedule.md) is a strategic asset that underpins the testing effort, enabling a disciplined, transparent, and responsive testing process.
+  In the context of [test automation](https://naodeng.com.cn/en/wiki/test-automation), the schedule must account for the time required for script development, maintenance, and execution. Automated tests need to be seamlessly integrated into the CI/CD pipeline, and the schedule should reflect this, ensuring that automated tests are executed as part of the regular build process.
+  Effective scheduling also supports [regression testing](https://naodeng.com.cn/en/wiki/regression-testing) by identifying the most appropriate times to run automated regression suites, thus maintaining the integrity of the software as changes are made.
+  In summary, a well-constructed [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule) is a strategic asset that underpins the testing effort, enabling a disciplined, transparent, and responsive testing process.
 
 ### Creation and Management
 
 #### How is a Test Execution Schedule created?
 
-  Creating a **[Test Execution Schedule](../T/test-execution-schedule.md)** involves several steps:
+  Creating a **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)** involves several steps:
 
   1. **Identify Test Items** : List the features, components, or functions to be tested.
-  2. **Prioritize [Test Cases](../T/test-case.md)** : Based on risk, feature importance, and past defects, prioritize the test cases.
+  2. **Prioritize [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Based on risk, feature importance, and past defects, prioritize the test cases.
   3. **Allocate Resources** : Assign testers and ensure availability of test environments and tools.
   4. **Estimate Time** : Estimate the time required for each test case considering complexity and historical data.
-  5. **Sequence [Test Cases](../T/test-case.md)** : Order test cases for execution based on dependencies and priorities.
+  5. **Sequence [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Order test cases for execution based on dependencies and priorities.
   6. **Define Milestones** : Set key milestones and checkpoints to assess progress.
   7. **Buffer Time** : Include buffer time for unexpected delays and retesting.
   8. **Review and Adjust** : Review the schedule with stakeholders and adjust as necessary.
-  Use automation tools to schedule tests, track progress, and adjust in real-time. Implementing **Continuous Integration (CI)** can automate the triggering of [test cases](../T/test-case.md) upon code commits. Utilize **[test management](../T/test-management.md) tools** to maintain the schedule and integrate with issue tracking systems.
+  Use automation tools to schedule tests, track progress, and adjust in real-time. Implementing **Continuous Integration (CI)** can automate the triggering of [test cases](https://naodeng.com.cn/en/wiki/test-case) upon code commits. Utilize **[test management](https://naodeng.com.cn/en/wiki/test-management) tools** to maintain the schedule and integrate with issue tracking systems.
 
   ```
   // Example of a simple automated test trigger in a CI tool configuration file
@@ -122,22 +121,22 @@ This schedule orchestrates sequential test steps, either at preset times or upon
   Regularly review the schedule against actual progress and adjust as needed. Communication with the team is crucial to address any deviations promptly.
 
   1. **Identify Test Items** : List the features, components, or functions to be tested.
-  2. **Prioritize [Test Cases](../T/test-case.md)** : Based on risk, feature importance, and past defects, prioritize the test cases.
+  2. **Prioritize [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Based on risk, feature importance, and past defects, prioritize the test cases.
   3. **Allocate Resources** : Assign testers and ensure availability of test environments and tools.
   4. **Estimate Time** : Estimate the time required for each test case considering complexity and historical data.
-  5. **Sequence [Test Cases](../T/test-case.md)** : Order test cases for execution based on dependencies and priorities.
+  5. **Sequence [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Order test cases for execution based on dependencies and priorities.
   6. **Define Milestones** : Set key milestones and checkpoints to assess progress.
   7. **Buffer Time** : Include buffer time for unexpected delays and retesting.
   8. **Review and Adjust** : Review the schedule with stakeholders and adjust as necessary.
 
 #### What factors should be considered when creating a Test Execution Schedule?
 
-  When crafting a **[Test Execution Schedule](../T/test-execution-schedule.md)**, consider the following factors:
+  When crafting a **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)**, consider the following factors:
 
   - **Resource Availability** : Align the schedule with the availability of test environments, tools, and personnel.
   - **Test Dependencies** : Sequence tests based on dependencies to ensure that tests that rely on others are executed in the correct order.
   - **Risk Assessment** : Prioritize tests based on risk, ensuring high-risk areas are tested first.
-  - **[Test Coverage](../T/test-coverage.md)** : Ensure the schedule allows for adequate coverage of all features and requirements.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Ensure the schedule allows for adequate coverage of all features and requirements.
   - **Maintenance Time** : Allocate time for maintaining and updating test scripts, environments, and data.
   - **Buffer Time** : Include buffer time for unexpected delays or issues.
   - **Parallel Execution** : Plan for tests that can be run in parallel to maximize efficiency.
@@ -145,7 +144,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
   - **Historical Data** : Use past execution times to better estimate future test durations.
   - **Feedback Loops** : Schedule time for analyzing results and implementing feedback.
   - **Compliance and Regulations** : Account for any compliance or regulatory testing deadlines.
-  - **[Non-functional Testing](../N/non-functional-testing.md)** : Schedule time for performance, security, and usability testing.
+  - **[Non-functional Testing](https://naodeng.com.cn/en/wiki/non-functional-testing)** : Schedule time for performance, security, and usability testing.
   - **Continuous Integration (CI)** : Integrate with CI pipelines to trigger automated tests at appropriate stages.
   - **Monitoring and Reporting** : Include time for monitoring test executions and reporting results.
   Remember to **review and adjust** the schedule as the project evolves, ensuring it remains aligned with project needs and goals.
@@ -153,7 +152,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
   - **Resource Availability** : Align the schedule with the availability of test environments, tools, and personnel.
   - **Test Dependencies** : Sequence tests based on dependencies to ensure that tests that rely on others are executed in the correct order.
   - **Risk Assessment** : Prioritize tests based on risk, ensuring high-risk areas are tested first.
-  - **[Test Coverage](../T/test-coverage.md)** : Ensure the schedule allows for adequate coverage of all features and requirements.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Ensure the schedule allows for adequate coverage of all features and requirements.
   - **Maintenance Time** : Allocate time for maintaining and updating test scripts, environments, and data.
   - **Buffer Time** : Include buffer time for unexpected delays or issues.
   - **Parallel Execution** : Plan for tests that can be run in parallel to maximize efficiency.
@@ -161,16 +160,16 @@ This schedule orchestrates sequential test steps, either at preset times or upon
   - **Historical Data** : Use past execution times to better estimate future test durations.
   - **Feedback Loops** : Schedule time for analyzing results and implementing feedback.
   - **Compliance and Regulations** : Account for any compliance or regulatory testing deadlines.
-  - **[Non-functional Testing](../N/non-functional-testing.md)** : Schedule time for performance, security, and usability testing.
+  - **[Non-functional Testing](https://naodeng.com.cn/en/wiki/non-functional-testing)** : Schedule time for performance, security, and usability testing.
   - **Continuous Integration (CI)** : Integrate with CI pipelines to trigger automated tests at appropriate stages.
   - **Monitoring and Reporting** : Include time for monitoring test executions and reporting results.
 
 #### How can a Test Execution Schedule be effectively managed?
 
-  To effectively manage a [Test Execution Schedule](../T/test-execution-schedule.md), prioritize **[test cases](../T/test-case.md)** based on risk and impact, ensuring critical paths are tested first. Utilize **automation tools** to schedule and run tests at optimal times, such as nightly builds or during low usage periods, to maximize resource utilization.
-  Implement **continuous integration** (CI) systems to trigger [test suites](../T/test-suite.md) post-commit, ensuring immediate feedback on the latest codebase. Use **dashboards** and **reporting tools** to monitor test progress and outcomes in real-time, enabling quick identification and resolution of blockers.
-  **Allocate buffer time** for unexpected delays and re-testing after [bug](../B/bug.md) fixes. Regularly **review and adjust** the schedule based on test results, project changes, and team velocity. Encourage **communication** among team members to report progress and raise issues promptly.
-  Leverage **version control** to manage [test scripts](../T/test-script.md) and ensure alignment with the application's state. **Tag and categorize** tests to facilitate selective execution and reporting. For instance, use tags like `@smoke` or `@regression` to easily group and execute relevant suites.
+  To effectively manage a [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule), prioritize **[test cases](https://naodeng.com.cn/en/wiki/test-case)** based on risk and impact, ensuring critical paths are tested first. Utilize **automation tools** to schedule and run tests at optimal times, such as nightly builds or during low usage periods, to maximize resource utilization.
+  Implement **continuous integration** (CI) systems to trigger [test suites](https://naodeng.com.cn/en/wiki/test-suite) post-commit, ensuring immediate feedback on the latest codebase. Use **dashboards** and **reporting tools** to monitor test progress and outcomes in real-time, enabling quick identification and resolution of blockers.
+  **Allocate buffer time** for unexpected delays and re-testing after [bug](https://naodeng.com.cn/en/wiki/bug) fixes. Regularly **review and adjust** the schedule based on test results, project changes, and team velocity. Encourage **communication** among team members to report progress and raise issues promptly.
+  Leverage **version control** to manage [test scripts](https://naodeng.com.cn/en/wiki/test-script) and ensure alignment with the application's state. **Tag and categorize** tests to facilitate selective execution and reporting. For instance, use tags like `@smoke` or `@regression` to easily group and execute relevant suites.
   Incorporate **parallel execution** strategies to reduce run times, but balance it with the available infrastructure to avoid performance bottlenecks. **Analyze historical data** to predict future test durations and improve scheduling accuracy.
   Lastly, ensure **flexibility** in the schedule to accommodate changes without disrupting the overall testing process. Regularly **retrospect** on the scheduling process to identify improvements and adapt to evolving project needs.
 
@@ -188,59 +187,59 @@ This schedule orchestrates sequential test steps, either at preset times or upon
 
 #### What tools can be used to create and manage a Test Execution Schedule?
 
-  To create and manage a [Test Execution Schedule](../T/test-execution-schedule.md), various tools can be leveraged, each offering unique features to streamline the process:
+  To create and manage a [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule), various tools can be leveraged, each offering unique features to streamline the process:
 
-  - **Project Management Tools**: Tools like **[Jira](../J/jira.md)**, **Asana**, or **Trello** can be used to schedule tests, assign tasks, and track progress. They often include calendar views and integration with [test management](../T/test-management.md) plugins.
-  - **[Test Management](../T/test-management.md) Tools**: **TestRail**, **Zephyr**, or **qTest** provide comprehensive platforms for planning, executing, and reporting on tests, with scheduling features built-in.
-  - **Continuous Integration/Continuous Deployment (CI/CD) Tools**: **Jenkins**, **GitLab CI**, and **CircleCI** enable automation of [test execution](../T/test-execution.md) as part of the deployment pipeline, with scheduling capabilities for recurring test runs.
+  - **Project Management Tools**: Tools like **[Jira](https://naodeng.com.cn/en/wiki/jira)**, **Asana**, or **Trello** can be used to schedule tests, assign tasks, and track progress. They often include calendar views and integration with [test management](https://naodeng.com.cn/en/wiki/test-management) plugins.
+  - **[Test Management](https://naodeng.com.cn/en/wiki/test-management) Tools**: **TestRail**, **Zephyr**, or **qTest** provide comprehensive platforms for planning, executing, and reporting on tests, with scheduling features built-in.
+  - **Continuous Integration/Continuous Deployment (CI/CD) Tools**: **Jenkins**, **GitLab CI**, and **CircleCI** enable automation of [test execution](https://naodeng.com.cn/en/wiki/test-execution) as part of the deployment pipeline, with scheduling capabilities for recurring test runs.
   - **Spreadsheet Software**: For simplicity, tools like **Microsoft Excel** or **Google Sheets** can be used to manually create schedules, though they lack integration with other testing tools.
-  - **Custom Scripts**: Writing custom scripts using **Python**, **Bash**, or other scripting languages can automate the scheduling process, especially when integrated with [APIs](../A/api.md) from other tools.
-  - **Calendar Applications**: **Google Calendar** or **Outlook Calendar** can be used for basic scheduling needs and reminders, though they are not integrated with [test execution](../T/test-execution.md).
-  - **Dedicated Scheduling Software**: Tools like **VisualCron** or **ActiveBatch** offer advanced scheduling features, including triggers and event-based scheduling, which can be useful for complex [test environments](../T/test-environment.md).
-  Integration between these tools is key to an efficient [Test Execution Schedule](../T/test-execution-schedule.md). [APIs](../A/api.md), webhooks, and plugins can help synchronize data across platforms, ensuring that the schedule is up-to-date and actionable.
+  - **Custom Scripts**: Writing custom scripts using **Python**, **Bash**, or other scripting languages can automate the scheduling process, especially when integrated with [APIs](https://naodeng.com.cn/en/wiki/api) from other tools.
+  - **Calendar Applications**: **Google Calendar** or **Outlook Calendar** can be used for basic scheduling needs and reminders, though they are not integrated with [test execution](https://naodeng.com.cn/en/wiki/test-execution).
+  - **Dedicated Scheduling Software**: Tools like **VisualCron** or **ActiveBatch** offer advanced scheduling features, including triggers and event-based scheduling, which can be useful for complex [test environments](https://naodeng.com.cn/en/wiki/test-environment).
+  Integration between these tools is key to an efficient [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule). [APIs](https://naodeng.com.cn/en/wiki/api), webhooks, and plugins can help synchronize data across platforms, ensuring that the schedule is up-to-date and actionable.
 
-  - **Project Management Tools**: Tools like **[Jira](../J/jira.md)**, **Asana**, or **Trello** can be used to schedule tests, assign tasks, and track progress. They often include calendar views and integration with [test management](../T/test-management.md) plugins.
-  - **[Test Management](../T/test-management.md) Tools**: **TestRail**, **Zephyr**, or **qTest** provide comprehensive platforms for planning, executing, and reporting on tests, with scheduling features built-in.
-  - **Continuous Integration/Continuous Deployment (CI/CD) Tools**: **Jenkins**, **GitLab CI**, and **CircleCI** enable automation of [test execution](../T/test-execution.md) as part of the deployment pipeline, with scheduling capabilities for recurring test runs.
+  - **Project Management Tools**: Tools like **[Jira](https://naodeng.com.cn/en/wiki/jira)**, **Asana**, or **Trello** can be used to schedule tests, assign tasks, and track progress. They often include calendar views and integration with [test management](https://naodeng.com.cn/en/wiki/test-management) plugins.
+  - **[Test Management](https://naodeng.com.cn/en/wiki/test-management) Tools**: **TestRail**, **Zephyr**, or **qTest** provide comprehensive platforms for planning, executing, and reporting on tests, with scheduling features built-in.
+  - **Continuous Integration/Continuous Deployment (CI/CD) Tools**: **Jenkins**, **GitLab CI**, and **CircleCI** enable automation of [test execution](https://naodeng.com.cn/en/wiki/test-execution) as part of the deployment pipeline, with scheduling capabilities for recurring test runs.
   - **Spreadsheet Software**: For simplicity, tools like **Microsoft Excel** or **Google Sheets** can be used to manually create schedules, though they lack integration with other testing tools.
-  - **Custom Scripts**: Writing custom scripts using **Python**, **Bash**, or other scripting languages can automate the scheduling process, especially when integrated with [APIs](../A/api.md) from other tools.
-  - **Calendar Applications**: **Google Calendar** or **Outlook Calendar** can be used for basic scheduling needs and reminders, though they are not integrated with [test execution](../T/test-execution.md).
-  - **Dedicated Scheduling Software**: Tools like **VisualCron** or **ActiveBatch** offer advanced scheduling features, including triggers and event-based scheduling, which can be useful for complex [test environments](../T/test-environment.md).
+  - **Custom Scripts**: Writing custom scripts using **Python**, **Bash**, or other scripting languages can automate the scheduling process, especially when integrated with [APIs](https://naodeng.com.cn/en/wiki/api) from other tools.
+  - **Calendar Applications**: **Google Calendar** or **Outlook Calendar** can be used for basic scheduling needs and reminders, though they are not integrated with [test execution](https://naodeng.com.cn/en/wiki/test-execution).
+  - **Dedicated Scheduling Software**: Tools like **VisualCron** or **ActiveBatch** offer advanced scheduling features, including triggers and event-based scheduling, which can be useful for complex [test environments](https://naodeng.com.cn/en/wiki/test-environment).
 
 ### Challenges and Solutions
 
 #### What challenges might be encountered when creating a Test Execution Schedule?
 
-  Creating a **[Test Execution Schedule](../T/test-execution-schedule.md)** can present several challenges:
+  Creating a **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)** can present several challenges:
 
-  - **Resource Allocation**: Ensuring the availability of necessary resources, such as [test environments](../T/test-environment.md), tools, and personnel, can be difficult. Conflicts may arise due to shared environments or competing projects.
+  - **Resource Allocation**: Ensuring the availability of necessary resources, such as [test environments](https://naodeng.com.cn/en/wiki/test-environment), tools, and personnel, can be difficult. Conflicts may arise due to shared environments or competing projects.
   - **Test Dependency Management**: Tests may have dependencies on other tests, data, or components. Managing these dependencies to avoid execution delays is challenging.
-  - **Flakiness in Automated Tests**: [Flaky tests](../F/flaky-test.md) can lead to unpredictable schedules and require additional time for investigation and reruns.
-  - **Changing Requirements**: [Agile development](../A/agile-development.md) practices can lead to frequent requirement changes, impacting the schedule.
-  - **Unforeseen [Bugs](../B/bug.md)**: Encountering high-[severity](../S/severity.md) [bugs](../B/bug.md) can halt testing until the issue is resolved, causing delays.
-  - **[Test Data](../T/test-data.md) Management**: Ensuring the availability and validity of [test data](../T/test-data.md) for automated tests can be complex and time-consuming.
-  - **Environment Stability**: Unstable [test environments](../T/test-environment.md) can cause test failures unrelated to code quality, impacting the schedule.
-  - **Integration with CI/CD**: Integrating the [test execution schedule](../T/test-execution-schedule.md) with continuous integration/continuous deployment pipelines requires careful coordination.
-  - **Monitoring and Reporting**: Real-time monitoring and reporting of [test execution](../T/test-execution.md) progress can be technically challenging but is necessary for schedule adjustments.
-  - **Balancing Speed and Coverage**: Striking the right balance between rapid [test execution](../T/test-execution.md) and adequate [test coverage](../T/test-coverage.md) is a constant challenge.
-  Mitigation strategies include prioritizing tests, improving [test data](../T/test-data.md) management, stabilizing [test environments](../T/test-environment.md), and using robust [test automation](../T/test-automation.md) frameworks. Regularly revisiting and adjusting the schedule based on feedback and results is also crucial.
+  - **Flakiness in Automated Tests**: [Flaky tests](https://naodeng.com.cn/en/wiki/flaky-test) can lead to unpredictable schedules and require additional time for investigation and reruns.
+  - **Changing Requirements**: [Agile development](https://naodeng.com.cn/en/wiki/agile-development) practices can lead to frequent requirement changes, impacting the schedule.
+  - **Unforeseen [Bugs](https://naodeng.com.cn/en/wiki/bug)**: Encountering high-[severity](https://naodeng.com.cn/en/wiki/severity) [bugs](https://naodeng.com.cn/en/wiki/bug) can halt testing until the issue is resolved, causing delays.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management**: Ensuring the availability and validity of [test data](https://naodeng.com.cn/en/wiki/test-data) for automated tests can be complex and time-consuming.
+  - **Environment Stability**: Unstable [test environments](https://naodeng.com.cn/en/wiki/test-environment) can cause test failures unrelated to code quality, impacting the schedule.
+  - **Integration with CI/CD**: Integrating the [test execution schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule) with continuous integration/continuous deployment pipelines requires careful coordination.
+  - **Monitoring and Reporting**: Real-time monitoring and reporting of [test execution](https://naodeng.com.cn/en/wiki/test-execution) progress can be technically challenging but is necessary for schedule adjustments.
+  - **Balancing Speed and Coverage**: Striking the right balance between rapid [test execution](https://naodeng.com.cn/en/wiki/test-execution) and adequate [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) is a constant challenge.
+  Mitigation strategies include prioritizing tests, improving [test data](https://naodeng.com.cn/en/wiki/test-data) management, stabilizing [test environments](https://naodeng.com.cn/en/wiki/test-environment), and using robust [test automation](https://naodeng.com.cn/en/wiki/test-automation) frameworks. Regularly revisiting and adjusting the schedule based on feedback and results is also crucial.
 
-  - **Resource Allocation**: Ensuring the availability of necessary resources, such as [test environments](../T/test-environment.md), tools, and personnel, can be difficult. Conflicts may arise due to shared environments or competing projects.
+  - **Resource Allocation**: Ensuring the availability of necessary resources, such as [test environments](https://naodeng.com.cn/en/wiki/test-environment), tools, and personnel, can be difficult. Conflicts may arise due to shared environments or competing projects.
   - **Test Dependency Management**: Tests may have dependencies on other tests, data, or components. Managing these dependencies to avoid execution delays is challenging.
-  - **Flakiness in Automated Tests**: [Flaky tests](../F/flaky-test.md) can lead to unpredictable schedules and require additional time for investigation and reruns.
-  - **Changing Requirements**: [Agile development](../A/agile-development.md) practices can lead to frequent requirement changes, impacting the schedule.
-  - **Unforeseen [Bugs](../B/bug.md)**: Encountering high-[severity](../S/severity.md) [bugs](../B/bug.md) can halt testing until the issue is resolved, causing delays.
-  - **[Test Data](../T/test-data.md) Management**: Ensuring the availability and validity of [test data](../T/test-data.md) for automated tests can be complex and time-consuming.
-  - **Environment Stability**: Unstable [test environments](../T/test-environment.md) can cause test failures unrelated to code quality, impacting the schedule.
-  - **Integration with CI/CD**: Integrating the [test execution schedule](../T/test-execution-schedule.md) with continuous integration/continuous deployment pipelines requires careful coordination.
-  - **Monitoring and Reporting**: Real-time monitoring and reporting of [test execution](../T/test-execution.md) progress can be technically challenging but is necessary for schedule adjustments.
-  - **Balancing Speed and Coverage**: Striking the right balance between rapid [test execution](../T/test-execution.md) and adequate [test coverage](../T/test-coverage.md) is a constant challenge.
+  - **Flakiness in Automated Tests**: [Flaky tests](https://naodeng.com.cn/en/wiki/flaky-test) can lead to unpredictable schedules and require additional time for investigation and reruns.
+  - **Changing Requirements**: [Agile development](https://naodeng.com.cn/en/wiki/agile-development) practices can lead to frequent requirement changes, impacting the schedule.
+  - **Unforeseen [Bugs](https://naodeng.com.cn/en/wiki/bug)**: Encountering high-[severity](https://naodeng.com.cn/en/wiki/severity) [bugs](https://naodeng.com.cn/en/wiki/bug) can halt testing until the issue is resolved, causing delays.
+  - **[Test Data](https://naodeng.com.cn/en/wiki/test-data) Management**: Ensuring the availability and validity of [test data](https://naodeng.com.cn/en/wiki/test-data) for automated tests can be complex and time-consuming.
+  - **Environment Stability**: Unstable [test environments](https://naodeng.com.cn/en/wiki/test-environment) can cause test failures unrelated to code quality, impacting the schedule.
+  - **Integration with CI/CD**: Integrating the [test execution schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule) with continuous integration/continuous deployment pipelines requires careful coordination.
+  - **Monitoring and Reporting**: Real-time monitoring and reporting of [test execution](https://naodeng.com.cn/en/wiki/test-execution) progress can be technically challenging but is necessary for schedule adjustments.
+  - **Balancing Speed and Coverage**: Striking the right balance between rapid [test execution](https://naodeng.com.cn/en/wiki/test-execution) and adequate [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) is a constant challenge.
 
 #### How can these challenges be mitigated or overcome?
 
-  Mitigating challenges in creating a [Test Execution Schedule](../T/test-execution-schedule.md) involves several strategies:
+  Mitigating challenges in creating a [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule) involves several strategies:
 
-  - **Prioritize [test cases](../T/test-case.md)**
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     based on risk and impact to ensure critical features are tested first. Use a risk-based approach to manage the scope effectively.
 
   - **Allocate buffer time**
@@ -253,9 +252,9 @@ This schedule orchestrates sequential test steps, either at preset times or upon
 
     ```
     ```
-  // Example: Script to check [test case](../T/test-case.md) status
+  // Example: Script to check [test case](https://naodeng.com.cn/en/wiki/test-case) status
   const checkTestCaseStatus = (testCaseId) => {
-  // Logic to check and return the status of a [test case](../T/test-case.md)
+  // Logic to check and return the status of a [test case](https://naodeng.com.cn/en/wiki/test-case)
   };
 
   ```
@@ -267,7 +266,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
   By implementing these strategies, test automation engineers can effectively overcome the challenges associated with creating and managing a Test Execution Schedule.
   ```
 
-  - **Prioritize [test cases](../T/test-case.md)**
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     based on risk and impact to ensure critical features are tested first. Use a risk-based approach to manage the scope effectively.
 
   - **Allocate buffer time**
@@ -283,32 +282,32 @@ This schedule orchestrates sequential test steps, either at preset times or upon
 
 #### What are some common mistakes made when creating a Test Execution Schedule and how can they be avoided?
 
-  Common mistakes in creating a [Test Execution Schedule](../T/test-execution-schedule.md) can be avoided with careful planning and realistic expectations:
+  Common mistakes in creating a [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule) can be avoided with careful planning and realistic expectations:
 
   - **Underestimating Time for Tasks**: Allocate extra time for unforeseen issues. Use historical data to inform estimates and include buffers.
   - **Overlooking Dependencies**: Identify and schedule tests based on dependencies to avoid delays. Use dependency tracking tools to manage these relationships.
-  - **Ignoring Resource Availability**: Schedule tests when team members and [test environments](../T/test-environment.md) are available. Coordinate with stakeholders to ensure availability aligns with the schedule.
-  - **Failing to Prioritize**: Prioritize tests based on risk, critical functionality, and business impact. This ensures high-[priority](../P/priority.md) areas are tested first.
-  - **Not Planning for Contingencies**: Include contingency plans for when tests fail or [bugs](../B/bug.md) are found. This helps maintain momentum and avoid bottlenecks.
-  - **Neglecting Maintenance**: Allocate time for maintaining [test scripts](../T/test-script.md) and environments. Regular maintenance prevents technical debt and ensures reliability.
+  - **Ignoring Resource Availability**: Schedule tests when team members and [test environments](https://naodeng.com.cn/en/wiki/test-environment) are available. Coordinate with stakeholders to ensure availability aligns with the schedule.
+  - **Failing to Prioritize**: Prioritize tests based on risk, critical functionality, and business impact. This ensures high-[priority](https://naodeng.com.cn/en/wiki/priority) areas are tested first.
+  - **Not Planning for Contingencies**: Include contingency plans for when tests fail or [bugs](https://naodeng.com.cn/en/wiki/bug) are found. This helps maintain momentum and avoid bottlenecks.
+  - **Neglecting Maintenance**: Allocate time for maintaining [test scripts](https://naodeng.com.cn/en/wiki/test-script) and environments. Regular maintenance prevents technical debt and ensures reliability.
   - **Lack of Communication**: Keep all stakeholders informed about the schedule and any changes. Use communication tools to share updates and gather feedback.
   - **Inflexibility**: Be prepared to adjust the schedule as needed. Agile methodologies can help accommodate changes without disrupting the overall plan.
-  By addressing these areas, [test automation](../T/test-automation.md) engineers can create a more robust and effective [Test Execution Schedule](../T/test-execution-schedule.md).
+  By addressing these areas, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can create a more robust and effective [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule).
 
   - **Underestimating Time for Tasks**: Allocate extra time for unforeseen issues. Use historical data to inform estimates and include buffers.
   - **Overlooking Dependencies**: Identify and schedule tests based on dependencies to avoid delays. Use dependency tracking tools to manage these relationships.
-  - **Ignoring Resource Availability**: Schedule tests when team members and [test environments](../T/test-environment.md) are available. Coordinate with stakeholders to ensure availability aligns with the schedule.
-  - **Failing to Prioritize**: Prioritize tests based on risk, critical functionality, and business impact. This ensures high-[priority](../P/priority.md) areas are tested first.
-  - **Not Planning for Contingencies**: Include contingency plans for when tests fail or [bugs](../B/bug.md) are found. This helps maintain momentum and avoid bottlenecks.
-  - **Neglecting Maintenance**: Allocate time for maintaining [test scripts](../T/test-script.md) and environments. Regular maintenance prevents technical debt and ensures reliability.
+  - **Ignoring Resource Availability**: Schedule tests when team members and [test environments](https://naodeng.com.cn/en/wiki/test-environment) are available. Coordinate with stakeholders to ensure availability aligns with the schedule.
+  - **Failing to Prioritize**: Prioritize tests based on risk, critical functionality, and business impact. This ensures high-[priority](https://naodeng.com.cn/en/wiki/priority) areas are tested first.
+  - **Not Planning for Contingencies**: Include contingency plans for when tests fail or [bugs](https://naodeng.com.cn/en/wiki/bug) are found. This helps maintain momentum and avoid bottlenecks.
+  - **Neglecting Maintenance**: Allocate time for maintaining [test scripts](https://naodeng.com.cn/en/wiki/test-script) and environments. Regular maintenance prevents technical debt and ensures reliability.
   - **Lack of Communication**: Keep all stakeholders informed about the schedule and any changes. Use communication tools to share updates and gather feedback.
   - **Inflexibility**: Be prepared to adjust the schedule as needed. Agile methodologies can help accommodate changes without disrupting the overall plan.
 
 #### What strategies can be used to ensure that a Test Execution Schedule is adhered to?
 
-  To ensure adherence to a **[Test Execution Schedule](../T/test-execution-schedule.md)**, consider the following strategies:
+  To ensure adherence to a **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)**, consider the following strategies:
 
-  - **Prioritize [test cases](../T/test-case.md)**
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     based on risk and impact. Focus on critical functionalities first to ensure the most important aspects are tested within the schedule.
 
   - **Allocate resources efficiently**
@@ -331,9 +330,9 @@ This schedule orchestrates sequential test steps, either at preset times or upon
 
   - **Review and adjust**
     the schedule regularly based on feedback and the actual pace of testing. Continuous improvement can help refine future schedules.
-  By focusing on these strategies, [test automation](../T/test-automation.md) engineers can enhance the likelihood of adhering to a [Test Execution Schedule](../T/test-execution-schedule.md), ensuring that testing is both thorough and timely.
+  By focusing on these strategies, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can enhance the likelihood of adhering to a [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule), ensuring that testing is both thorough and timely.
 
-  - **Prioritize [test cases](../T/test-case.md)**
+  - **Prioritize [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     based on risk and impact. Focus on critical functionalities first to ensure the most important aspects are tested within the schedule.
 
   - **Allocate resources efficiently**
@@ -361,7 +360,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
 
 #### How can a Test Execution Schedule be optimized for efficiency?
 
-  To optimize a **[Test Execution Schedule](../T/test-execution-schedule.md)** for efficiency, consider the following strategies:
+  To optimize a **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)** for efficiency, consider the following strategies:
 
   - **Prioritize tests**
     based on risk and impact. Focus on critical functionalities first to catch major issues early.
@@ -379,7 +378,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     ```
 
   - Use
-    **[test data](../T/test-data.md) management**
+    **[test data](https://naodeng.com.cn/en/wiki/test-data) management**
     to ensure data is ready and available for tests without delays.
 
   - Optimize test cases for
@@ -395,14 +394,14 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     to identify flaky tests and improve their reliability, preventing false positives from consuming time.
 
   - Integrate
-    **smart [test execution](../T/test-execution.md)**
+    **smart [test execution](https://naodeng.com.cn/en/wiki/test-execution)**
     tools that can select relevant tests to run based on code changes (test impact analysis).
 
   - Regularly
     **review and update**
     the schedule to align with project changes and remove outdated or deprecated tests.
 
-  - **Automate [test environment](../T/test-environment.md) [setup](../S/setup.md) and teardown**
+  - **Automate [test environment](https://naodeng.com.cn/en/wiki/test-environment) [setup](https://naodeng.com.cn/en/wiki/setup) and teardown**
     to minimize manual intervention and ensure consistency.
 
     ```
@@ -420,7 +419,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     and
     **infrastructure as code**
     to quickly spin up test environments that match production.
-  By focusing on these areas, you can streamline the [test execution](../T/test-execution.md) process, reduce wait times, and improve the overall efficiency of your [test automation](../T/test-automation.md) efforts.
+  By focusing on these areas, you can streamline the [test execution](https://naodeng.com.cn/en/wiki/test-execution) process, reduce wait times, and improve the overall efficiency of your [test automation](https://naodeng.com.cn/en/wiki/test-automation) efforts.
 
   - **Prioritize tests**
     based on risk and impact. Focus on critical functionalities first to catch major issues early.
@@ -438,7 +437,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     ```
 
   - Use
-    **[test data](../T/test-data.md) management**
+    **[test data](https://naodeng.com.cn/en/wiki/test-data) management**
     to ensure data is ready and available for tests without delays.
 
   - Optimize test cases for
@@ -454,14 +453,14 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     to identify flaky tests and improve their reliability, preventing false positives from consuming time.
 
   - Integrate
-    **smart [test execution](../T/test-execution.md)**
+    **smart [test execution](https://naodeng.com.cn/en/wiki/test-execution)**
     tools that can select relevant tests to run based on code changes (test impact analysis).
 
   - Regularly
     **review and update**
     the schedule to align with project changes and remove outdated or deprecated tests.
 
-  - **Automate [test environment](../T/test-environment.md) [setup](../S/setup.md) and teardown**
+  - **Automate [test environment](https://naodeng.com.cn/en/wiki/test-environment) [setup](https://naodeng.com.cn/en/wiki/setup) and teardown**
     to minimize manual intervention and ensure consistency.
 
     ```
@@ -482,18 +481,18 @@ This schedule orchestrates sequential test steps, either at preset times or upon
 
 #### How does a Test Execution Schedule fit into the broader context of test automation?
 
-  In the context of [test automation](../T/test-automation.md), a **[Test Execution Schedule](../T/test-execution-schedule.md)** integrates with various aspects of the [automated testing](../A/automated-testing.md) workflow. It aligns automated test runs with development cycles, ensuring that tests are executed at the right time, such as after a build or during off-peak hours, to maximize resource utilization and minimize disruption.
+  In the context of [test automation](https://naodeng.com.cn/en/wiki/test-automation), a **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)** integrates with various aspects of the [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) workflow. It aligns automated test runs with development cycles, ensuring that tests are executed at the right time, such as after a build or during off-peak hours, to maximize resource utilization and minimize disruption.
   The schedule is a critical component of **Continuous Integration (CI)** and **Continuous Deployment (CD)** pipelines. Automated tests triggered by the schedule validate code commits, merges, and releases. This ensures that only code that passes automated checks progresses through the pipeline, maintaining code quality and reducing the risk of introducing defects.
-  Moreover, the schedule helps in managing the **[test environment](../T/test-environment.md)** availability, coordinating when tests run on shared or limited resources. It also allows for the distribution of tests across different environments and configurations, ensuring comprehensive coverage.
+  Moreover, the schedule helps in managing the **[test environment](https://naodeng.com.cn/en/wiki/test-environment)** availability, coordinating when tests run on shared or limited resources. It also allows for the distribution of tests across different environments and configurations, ensuring comprehensive coverage.
   In terms of **reporting and feedback loops**, the schedule dictates when results are generated and reviewed. Timely execution and reporting enable quick feedback to developers, which is essential for agile practices and fast-paced development environments.
-  Lastly, the schedule must be integrated with **monitoring tools** to ensure the health of the [test automation](../T/test-automation.md) system. It should trigger alerts for any failures in the execution environment or [test infrastructure](../T/test-infrastructure.md), allowing for prompt remediation.
-  By orchestrating when and how automated tests are run, the [Test Execution Schedule](../T/test-execution-schedule.md) is a linchpin in the efficient operation of an [automated testing](../A/automated-testing.md) system, contributing to the overall quality and reliability of the software delivery process.
+  Lastly, the schedule must be integrated with **monitoring tools** to ensure the health of the [test automation](https://naodeng.com.cn/en/wiki/test-automation) system. It should trigger alerts for any failures in the execution environment or [test infrastructure](https://naodeng.com.cn/en/wiki/test-infrastructure), allowing for prompt remediation.
+  By orchestrating when and how automated tests are run, the [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule) is a linchpin in the efficient operation of an [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) system, contributing to the overall quality and reliability of the software delivery process.
 
 #### How can a Test Execution Schedule be adapted for different types of testing (e.g., unit testing, integration testing, system testing, etc.)?
 
-  Adapting a **[Test Execution Schedule](../T/test-execution-schedule.md)** for different testing types involves considering the **specific requirements** and **dependencies** of each testing phase:
+  Adapting a **[Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule)** for different testing types involves considering the **specific requirements** and **dependencies** of each testing phase:
 
-  - **[Unit Testing](../U/unit-testing.md)**: Schedule to run after every commit or at least daily. Use a **Continuous Integration (CI)** system to trigger tests. Prioritize tests based on code changes and risk.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)**: Schedule to run after every commit or at least daily. Use a **Continuous Integration (CI)** system to trigger tests. Prioritize tests based on code changes and risk.
 
     ```
     CI.onCommit(() => {
@@ -501,7 +500,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     });
     ```
 
-  - **[Integration Testing](../I/integration-testing.md)**: Coordinate with the availability of external systems or modules. Schedule during off-peak hours if needed to minimize impact on other teams.
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Coordinate with the availability of external systems or modules. Schedule during off-peak hours if needed to minimize impact on other teams.
 
     ```
     nightlySchedule(() => {
@@ -509,7 +508,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     });
     ```
 
-  - **[System Testing](../S/system-testing.md)**: Align with the end of development sprints or release cycles. Ensure all components are integrated.
+  - **[System Testing](https://naodeng.com.cn/en/wiki/system-testing)**: Align with the end of development sprints or release cycles. Ensure all components are integrated.
 
     ```
     sprintEndSchedule(() => {
@@ -517,7 +516,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     });
     ```
 
-  - **[Performance Testing](../P/performance-testing.md)**: Schedule when the system is stable and can handle the load. Consider the environment's availability that mirrors production.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: Schedule when the system is stable and can handle the load. Consider the environment's availability that mirrors production.
 
     ```
     preReleaseSchedule(() => {
@@ -525,16 +524,16 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     });
     ```
 
-  - **[Regression Testing](../R/regression-testing.md)**: Integrate with CI/CD pipelines to run after significant changes or before releases.
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: Integrate with CI/CD pipelines to run after significant changes or before releases.
 
     ```
     preDeploymentSchedule(() => {
       runRegressionTests();
     });
     ```
-  Each schedule should account for the **[test suite](../T/test-suite.md)'s size**, **resource availability**, and **criticality** of the application. **Parallel execution** and **test prioritization** can optimize the schedule for efficiency. Adjust the frequency and timing based on feedback and test results to maintain a balance between rapid feedback and resource constraints.
+  Each schedule should account for the **[test suite](https://naodeng.com.cn/en/wiki/test-suite)'s size**, **resource availability**, and **criticality** of the application. **Parallel execution** and **test prioritization** can optimize the schedule for efficiency. Adjust the frequency and timing based on feedback and test results to maintain a balance between rapid feedback and resource constraints.
 
-  - **[Unit Testing](../U/unit-testing.md)**: Schedule to run after every commit or at least daily. Use a **Continuous Integration (CI)** system to trigger tests. Prioritize tests based on code changes and risk.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)**: Schedule to run after every commit or at least daily. Use a **Continuous Integration (CI)** system to trigger tests. Prioritize tests based on code changes and risk.
 
     ```
     CI.onCommit(() => {
@@ -542,7 +541,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     });
     ```
 
-  - **[Integration Testing](../I/integration-testing.md)**: Coordinate with the availability of external systems or modules. Schedule during off-peak hours if needed to minimize impact on other teams.
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Coordinate with the availability of external systems or modules. Schedule during off-peak hours if needed to minimize impact on other teams.
 
     ```
     nightlySchedule(() => {
@@ -550,7 +549,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     });
     ```
 
-  - **[System Testing](../S/system-testing.md)**: Align with the end of development sprints or release cycles. Ensure all components are integrated.
+  - **[System Testing](https://naodeng.com.cn/en/wiki/system-testing)**: Align with the end of development sprints or release cycles. Ensure all components are integrated.
 
     ```
     sprintEndSchedule(() => {
@@ -558,7 +557,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     });
     ```
 
-  - **[Performance Testing](../P/performance-testing.md)**: Schedule when the system is stable and can handle the load. Consider the environment's availability that mirrors production.
+  - **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: Schedule when the system is stable and can handle the load. Consider the environment's availability that mirrors production.
 
     ```
     preReleaseSchedule(() => {
@@ -566,7 +565,7 @@ This schedule orchestrates sequential test steps, either at preset times or upon
     });
     ```
 
-  - **[Regression Testing](../R/regression-testing.md)**: Integrate with CI/CD pipelines to run after significant changes or before releases.
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: Integrate with CI/CD pipelines to run after significant changes or before releases.
 
     ```
     preDeploymentSchedule(() => {
@@ -576,27 +575,27 @@ This schedule orchestrates sequential test steps, either at preset times or upon
 
 #### What are some advanced techniques or strategies for managing a Test Execution Schedule?
 
-  Advanced techniques and strategies for managing a [Test Execution Schedule](../T/test-execution-schedule.md) include:
+  Advanced techniques and strategies for managing a [Test Execution Schedule](https://naodeng.com.cn/en/wiki/test-execution-schedule) include:
 
-  - **[Risk-Based Testing](../R/risk-based-testing.md) (RBT)**: Prioritize tests based on the risk of failure and the impact of potential defects. Use risk assessments to allocate time to tests that cover the most critical functionalities.
-  - **Parallel Execution**: Run tests concurrently across different environments or machines to reduce execution time. Utilize cloud-based services or containerization to dynamically scale [test environments](../T/test-environment.md).
-  - **[Test Suite](../T/test-suite.md) Optimization**: Regularly review and prune [test cases](../T/test-case.md) to remove redundancies. Apply techniques like combinatorial testing to reduce the number of [test cases](../T/test-case.md) while maintaining coverage.
-  - **Predictive Analytics**: Use historical [test data](../T/test-data.md) to predict future [test execution](../T/test-execution.md) times and outcomes. Adjust schedules based on these predictions to improve accuracy and efficiency.
+  - **[Risk-Based Testing](https://naodeng.com.cn/en/wiki/risk-based-testing) (RBT)**: Prioritize tests based on the risk of failure and the impact of potential defects. Use risk assessments to allocate time to tests that cover the most critical functionalities.
+  - **Parallel Execution**: Run tests concurrently across different environments or machines to reduce execution time. Utilize cloud-based services or containerization to dynamically scale [test environments](https://naodeng.com.cn/en/wiki/test-environment).
+  - **[Test Suite](https://naodeng.com.cn/en/wiki/test-suite) Optimization**: Regularly review and prune [test cases](https://naodeng.com.cn/en/wiki/test-case) to remove redundancies. Apply techniques like combinatorial testing to reduce the number of [test cases](https://naodeng.com.cn/en/wiki/test-case) while maintaining coverage.
+  - **Predictive Analytics**: Use historical [test data](https://naodeng.com.cn/en/wiki/test-data) to predict future [test execution](https://naodeng.com.cn/en/wiki/test-execution) times and outcomes. Adjust schedules based on these predictions to improve accuracy and efficiency.
   - **Machine Learning**: Implement ML algorithms to identify patterns in test results, which can help in predicting test failures and optimizing the schedule.
-  - **[Test Execution](../T/test-execution.md) Triggers**: Integrate [test execution](../T/test-execution.md) with Continuous Integration/Continuous Deployment (CI/CD) pipelines to trigger tests automatically upon certain events, like code commits or builds.
-  - **Flaky Test Management**: Identify and isolate [flaky tests](../F/flaky-test.md) to prevent them from impacting the schedule. Use quarantine mechanisms to deal with them separately.
+  - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Triggers**: Integrate [test execution](https://naodeng.com.cn/en/wiki/test-execution) with Continuous Integration/Continuous Deployment (CI/CD) pipelines to trigger tests automatically upon certain events, like code commits or builds.
+  - **Flaky Test Management**: Identify and isolate [flaky tests](https://naodeng.com.cn/en/wiki/flaky-test) to prevent them from impacting the schedule. Use quarantine mechanisms to deal with them separately.
   - **Timeboxing**: Allocate fixed time slots for certain test activities to ensure focus and manage time effectively.
   - **Feedback Loops**: Implement real-time reporting and feedback mechanisms to quickly identify and address bottlenecks or delays in the schedule.
-  - **[Shift-Left Testing](../S/shift-left-testing.md)**: Incorporate testing earlier in the development lifecycle to identify issues sooner and reduce the testing time required later on.
-  By applying these strategies, [test automation](../T/test-automation.md) engineers can enhance the management of [Test Execution Schedules](../T/test-execution-schedule.md), leading to more efficient and effective testing processes.
+  - **[Shift-Left Testing](https://naodeng.com.cn/en/wiki/shift-left-testing)**: Incorporate testing earlier in the development lifecycle to identify issues sooner and reduce the testing time required later on.
+  By applying these strategies, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can enhance the management of [Test Execution Schedules](https://naodeng.com.cn/en/wiki/test-execution-schedule), leading to more efficient and effective testing processes.
 
-  - **[Risk-Based Testing](../R/risk-based-testing.md) (RBT)**: Prioritize tests based on the risk of failure and the impact of potential defects. Use risk assessments to allocate time to tests that cover the most critical functionalities.
-  - **Parallel Execution**: Run tests concurrently across different environments or machines to reduce execution time. Utilize cloud-based services or containerization to dynamically scale [test environments](../T/test-environment.md).
-  - **[Test Suite](../T/test-suite.md) Optimization**: Regularly review and prune [test cases](../T/test-case.md) to remove redundancies. Apply techniques like combinatorial testing to reduce the number of [test cases](../T/test-case.md) while maintaining coverage.
-  - **Predictive Analytics**: Use historical [test data](../T/test-data.md) to predict future [test execution](../T/test-execution.md) times and outcomes. Adjust schedules based on these predictions to improve accuracy and efficiency.
+  - **[Risk-Based Testing](https://naodeng.com.cn/en/wiki/risk-based-testing) (RBT)**: Prioritize tests based on the risk of failure and the impact of potential defects. Use risk assessments to allocate time to tests that cover the most critical functionalities.
+  - **Parallel Execution**: Run tests concurrently across different environments or machines to reduce execution time. Utilize cloud-based services or containerization to dynamically scale [test environments](https://naodeng.com.cn/en/wiki/test-environment).
+  - **[Test Suite](https://naodeng.com.cn/en/wiki/test-suite) Optimization**: Regularly review and prune [test cases](https://naodeng.com.cn/en/wiki/test-case) to remove redundancies. Apply techniques like combinatorial testing to reduce the number of [test cases](https://naodeng.com.cn/en/wiki/test-case) while maintaining coverage.
+  - **Predictive Analytics**: Use historical [test data](https://naodeng.com.cn/en/wiki/test-data) to predict future [test execution](https://naodeng.com.cn/en/wiki/test-execution) times and outcomes. Adjust schedules based on these predictions to improve accuracy and efficiency.
   - **Machine Learning**: Implement ML algorithms to identify patterns in test results, which can help in predicting test failures and optimizing the schedule.
-  - **[Test Execution](../T/test-execution.md) Triggers**: Integrate [test execution](../T/test-execution.md) with Continuous Integration/Continuous Deployment (CI/CD) pipelines to trigger tests automatically upon certain events, like code commits or builds.
-  - **Flaky Test Management**: Identify and isolate [flaky tests](../F/flaky-test.md) to prevent them from impacting the schedule. Use quarantine mechanisms to deal with them separately.
+  - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Triggers**: Integrate [test execution](https://naodeng.com.cn/en/wiki/test-execution) with Continuous Integration/Continuous Deployment (CI/CD) pipelines to trigger tests automatically upon certain events, like code commits or builds.
+  - **Flaky Test Management**: Identify and isolate [flaky tests](https://naodeng.com.cn/en/wiki/flaky-test) to prevent them from impacting the schedule. Use quarantine mechanisms to deal with them separately.
   - **Timeboxing**: Allocate fixed time slots for certain test activities to ensure focus and manage time effectively.
   - **Feedback Loops**: Implement real-time reporting and feedback mechanisms to quickly identify and address bottlenecks or delays in the schedule.
-  - **[Shift-Left Testing](../S/shift-left-testing.md)**: Incorporate testing earlier in the development lifecycle to identify issues sooner and reduce the testing time required later on.
+  - **[Shift-Left Testing](https://naodeng.com.cn/en/wiki/shift-left-testing)**: Incorporate testing earlier in the development lifecycle to identify issues sooner and reduce the testing time required later on.

@@ -1,6 +1,5 @@
 # WebDriver
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
   - [See also:](#see-also)
@@ -41,7 +40,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 ## Related Terms:
 
-- [Selenium](../S/selenium.md)
+- [Selenium](https://naodeng.com.cn/en/wiki/selenium)
 
 ### See also:
 
@@ -53,27 +52,27 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### What is WebDriver in Selenium?
 
-  [WebDriver](../W/webdriver.md) in [Selenium](../S/selenium.md) is an [API](../A/api.md) that provides a programming interface to control and manipulate web browsers. It allows [test scripts](../T/test-script.md) to communicate directly with the browser, enabling automation of user actions such as clicking, typing, and navigating through web pages. [WebDriver](../W/webdriver.md) is designed to provide a simpler, more concise programming interface compared to [Selenium](../S/selenium.md) RC, as it interacts directly with the browser without the need for an intermediary server.
-  To use [WebDriver](../W/webdriver.md), you instantiate a specific driver object for the browser you want to automate. For example, to automate Chrome, you would use `ChromeDriver`:
+  [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) in [Selenium](https://naodeng.com.cn/en/wiki/selenium) is an [API](https://naodeng.com.cn/en/wiki/api) that provides a programming interface to control and manipulate web browsers. It allows [test scripts](https://naodeng.com.cn/en/wiki/test-script) to communicate directly with the browser, enabling automation of user actions such as clicking, typing, and navigating through web pages. [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) is designed to provide a simpler, more concise programming interface compared to [Selenium](https://naodeng.com.cn/en/wiki/selenium) RC, as it interacts directly with the browser without the need for an intermediary server.
+  To use [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), you instantiate a specific driver object for the browser you want to automate. For example, to automate Chrome, you would use `ChromeDriver`:
 
   ```
   WebDriver driver = new ChromeDriver();
   ```
-  [WebDriver](../W/webdriver.md) provides methods to simulate browser actions, such as `get()` to navigate to a URL, `click()` to click on elements, and `sendKeys()` to enter text. It also offers ways to handle complex user interactions, manage browser windows, and execute JavaScript.
-  [WebDriver](../W/webdriver.md) supports multiple programming languages, including Java, C#, Python, and Ruby, allowing for integration into various test frameworks. It is a part of the [Selenium](../S/selenium.md) 2.0 and 3.0 suites, and with the release of [Selenium](../S/selenium.md) 4, [WebDriver](../W/webdriver.md) has been further enhanced with additional features and capabilities.
-  To ensure robust and reliable automation, [WebDriver](../W/webdriver.md) offers various strategies to locate elements (e.g., by ID, name, CSS, XPath), and it provides mechanisms to deal with asynchronous behavior, such as the different wait commands to synchronize tests with the dynamic nature of web applications.
+  [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) provides methods to simulate browser actions, such as `get()` to navigate to a URL, `click()` to click on elements, and `sendKeys()` to enter text. It also offers ways to handle complex user interactions, manage browser windows, and execute JavaScript.
+  [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) supports multiple programming languages, including Java, C#, Python, and Ruby, allowing for integration into various test frameworks. It is a part of the [Selenium](https://naodeng.com.cn/en/wiki/selenium) 2.0 and 3.0 suites, and with the release of [Selenium](https://naodeng.com.cn/en/wiki/selenium) 4, [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) has been further enhanced with additional features and capabilities.
+  To ensure robust and reliable automation, [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) offers various strategies to locate elements (e.g., by ID, name, CSS, XPath), and it provides mechanisms to deal with asynchronous behavior, such as the different wait commands to synchronize tests with the dynamic nature of web applications.
 
 #### Why is WebDriver important in automation testing?
 
-  [WebDriver](../W/webdriver.md) is crucial in automation testing because it serves as a **standardized interface** to control web browsers and simulate user interactions. It allows tests to be written in a way that is **independent of any specific browser**, enabling a **[cross-browser testing](../C/cross-browser-testing.md) strategy**. [WebDriver](../W/webdriver.md)'s importance is underscored by its ability to interact with web elements at a **low level**, which closely mimics real user actions.
-  By providing a **common platform** for browser automation, [WebDriver](../W/webdriver.md) facilitates the development of **reliable**, **repeatable**, and **maintainable** [test scripts](../T/test-script.md). It supports a wide range of programming languages, allowing teams to leverage existing coding skills and integrate with various testing frameworks.
-  [WebDriver](../W/webdriver.md)'s **direct communication** with browser [APIs](../A/api.md) ensures tests are executed **quickly** and **efficiently**, without the overhead of intermediate servers like in older tools such as [Selenium](../S/selenium.md) RC. This direct interaction also means that [WebDriver](../W/webdriver.md) can handle complex AJAX-based UI elements and dynamic content more effectively, leading to more **accurate test results**.
-  Moreover, [WebDriver](../W/webdriver.md)'s support for **advanced user interactions**, such as drag-and-drop and complex mouse movements, allows for the automation of sophisticated user scenarios. Its ability to manage browser sessions, cookies, and dialogs further extends its utility in creating comprehensive [test suites](../T/test-suite.md) that cover a wide range of user behaviors.
-  In summary, [WebDriver](../W/webdriver.md) is a cornerstone of modern [test automation](../T/test-automation.md) strategies, providing a powerful and flexible toolset for ensuring web application quality across different browsers and platforms.
+  [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) is crucial in automation testing because it serves as a **standardized interface** to control web browsers and simulate user interactions. It allows tests to be written in a way that is **independent of any specific browser**, enabling a **[cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing) strategy**. [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)'s importance is underscored by its ability to interact with web elements at a **low level**, which closely mimics real user actions.
+  By providing a **common platform** for browser automation, [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) facilitates the development of **reliable**, **repeatable**, and **maintainable** [test scripts](https://naodeng.com.cn/en/wiki/test-script). It supports a wide range of programming languages, allowing teams to leverage existing coding skills and integrate with various testing frameworks.
+  [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)'s **direct communication** with browser [APIs](https://naodeng.com.cn/en/wiki/api) ensures tests are executed **quickly** and **efficiently**, without the overhead of intermediate servers like in older tools such as [Selenium](https://naodeng.com.cn/en/wiki/selenium) RC. This direct interaction also means that [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) can handle complex AJAX-based UI elements and dynamic content more effectively, leading to more **accurate test results**.
+  Moreover, [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)'s support for **advanced user interactions**, such as drag-and-drop and complex mouse movements, allows for the automation of sophisticated user scenarios. Its ability to manage browser sessions, cookies, and dialogs further extends its utility in creating comprehensive [test suites](https://naodeng.com.cn/en/wiki/test-suite) that cover a wide range of user behaviors.
+  In summary, [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) is a cornerstone of modern [test automation](https://naodeng.com.cn/en/wiki/test-automation) strategies, providing a powerful and flexible toolset for ensuring web application quality across different browsers and platforms.
 
 #### What are the key features of WebDriver?
 
-  [WebDriver](../W/webdriver.md)'s key features include:
+  [WebDriver](https://naodeng.com.cn/en/wiki/webdriver)'s key features include:
 
   - **Cross-browser compatibility** : Supports various browsers like Chrome, Firefox, Internet Explorer, Safari, and Edge.
   - **Language support** : Works with multiple programming languages such as Java, C#, Python, Ruby, and JavaScript.
@@ -90,7 +89,7 @@ An open-source framework for browser automation, enabling automated tests for we
   - **Proxy support** : Configures WebDriver to use proxies for browser sessions.
   - **Extensibility** : Can be extended with various plugins and libraries for enhanced functionality.
   - **Speed and performance** : Generally faster and more efficient than its predecessor, Selenium RC.
-  These features enable [WebDriver](../W/webdriver.md) to provide a robust and versatile platform for automating web browsers, allowing for the creation of comprehensive [test scripts](../T/test-script.md) that simulate real user interactions.
+  These features enable [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) to provide a robust and versatile platform for automating web browsers, allowing for the creation of comprehensive [test scripts](https://naodeng.com.cn/en/wiki/test-script) that simulate real user interactions.
 
   - **Cross-browser compatibility** : Supports various browsers like Chrome, Firefox, Internet Explorer, Safari, and Edge.
   - **Language support** : Works with multiple programming languages such as Java, C#, Python, Ruby, and JavaScript.
@@ -110,40 +109,40 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How does WebDriver interact with the browser?
 
-  [WebDriver](../W/webdriver.md) interacts with the browser through a series of steps that involve communication between the [WebDriver](../W/webdriver.md) client and the browser's native support for automation. Here's a succinct explanation of the process:
+  [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) interacts with the browser through a series of steps that involve communication between the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) client and the browser's native support for automation. Here's a succinct explanation of the process:
 
-  1. **Initialization**: When a [WebDriver](../W/webdriver.md) instance is created, it establishes a connection with the browser driver (e.g., ChromeDriver for Chrome, GeckoDriver for Firefox).
-  2. **Command Execution**: The [test script](../T/test-script.md) sends commands to the [WebDriver](../W/webdriver.md), which are then formatted into a RESTful HTTP request by the client library.
+  1. **Initialization**: When a [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance is created, it establishes a connection with the browser driver (e.g., ChromeDriver for Chrome, GeckoDriver for Firefox).
+  2. **Command Execution**: The [test script](https://naodeng.com.cn/en/wiki/test-script) sends commands to the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), which are then formatted into a RESTful HTTP request by the client library.
   3. **HTTP Request**: The formatted command is sent over HTTP to the browser driver.
   4. **Browser Driver**: The browser driver receives the HTTP request and translates it into a series of actions that the browser can understand.
   5. **Actions**: The browser performs the requested actions, such as navigating to a URL, clicking an element, or entering text.
-  6. **Response**: After executing the actions, the browser driver sends back an HTTP response to the [WebDriver](../W/webdriver.md) client. This response contains the results of the command execution, such as success status, element properties, or any errors.
-  7. **Result Processing**: The [WebDriver](../W/webdriver.md) client processes the response and returns the result to the [test script](../T/test-script.md), which can then proceed with further actions or assertions.
-  Throughout this interaction, [WebDriver](../W/webdriver.md) uses the **[WebDriver](../W/webdriver.md) Protocol**, a standard for automating web browser interaction. This protocol ensures that commands and responses are consistent across different browsers and drivers, allowing for [cross-browser testing](../C/cross-browser-testing.md) with the same script.
+  6. **Response**: After executing the actions, the browser driver sends back an HTTP response to the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) client. This response contains the results of the command execution, such as success status, element properties, or any errors.
+  7. **Result Processing**: The [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) client processes the response and returns the result to the [test script](https://naodeng.com.cn/en/wiki/test-script), which can then proceed with further actions or assertions.
+  Throughout this interaction, [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) uses the **[WebDriver](https://naodeng.com.cn/en/wiki/webdriver) Protocol**, a standard for automating web browser interaction. This protocol ensures that commands and responses are consistent across different browsers and drivers, allowing for [cross-browser testing](https://naodeng.com.cn/en/wiki/cross-browser-testing) with the same script.
 
-  1. **Initialization**: When a [WebDriver](../W/webdriver.md) instance is created, it establishes a connection with the browser driver (e.g., ChromeDriver for Chrome, GeckoDriver for Firefox).
-  2. **Command Execution**: The [test script](../T/test-script.md) sends commands to the [WebDriver](../W/webdriver.md), which are then formatted into a RESTful HTTP request by the client library.
+  1. **Initialization**: When a [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance is created, it establishes a connection with the browser driver (e.g., ChromeDriver for Chrome, GeckoDriver for Firefox).
+  2. **Command Execution**: The [test script](https://naodeng.com.cn/en/wiki/test-script) sends commands to the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), which are then formatted into a RESTful HTTP request by the client library.
   3. **HTTP Request**: The formatted command is sent over HTTP to the browser driver.
   4. **Browser Driver**: The browser driver receives the HTTP request and translates it into a series of actions that the browser can understand.
   5. **Actions**: The browser performs the requested actions, such as navigating to a URL, clicking an element, or entering text.
-  6. **Response**: After executing the actions, the browser driver sends back an HTTP response to the [WebDriver](../W/webdriver.md) client. This response contains the results of the command execution, such as success status, element properties, or any errors.
-  7. **Result Processing**: The [WebDriver](../W/webdriver.md) client processes the response and returns the result to the [test script](../T/test-script.md), which can then proceed with further actions or assertions.
+  6. **Response**: After executing the actions, the browser driver sends back an HTTP response to the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) client. This response contains the results of the command execution, such as success status, element properties, or any errors.
+  7. **Result Processing**: The [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) client processes the response and returns the result to the [test script](https://naodeng.com.cn/en/wiki/test-script), which can then proceed with further actions or assertions.
 
 #### What is the difference between Selenium RC and WebDriver?
 
-  [Selenium](../S/selenium.md) RC (Remote Control) and [WebDriver](../W/webdriver.md) are both part of the [Selenium](../S/selenium.md) suite for browser automation but differ significantly in their architecture and interaction with web applications.
-  **[Selenium](../S/selenium.md) RC** is an older technology that requires an additional server to interact with the browser. It injects JavaScript code into the browser when a test is run, which then controls the application under test. This approach has inherent limitations, such as being slower due to the extra layer (the server) and having less direct control over the browser, leading to issues with modern JavaScript-heavy applications.
-  **[WebDriver](../W/webdriver.md)**, on the other hand, is a more modern and advanced tool. It directly communicates with the browser using the browser's native support for automation without the need for an intermediary server. [WebDriver](../W/webdriver.md) offers a more realistic interaction with web elements as it does not rely on JavaScript for automation. This direct control enables better simulation of user actions and can handle complex AJAX-based web elements more effectively.
+  [Selenium](https://naodeng.com.cn/en/wiki/selenium) RC (Remote Control) and [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) are both part of the [Selenium](https://naodeng.com.cn/en/wiki/selenium) suite for browser automation but differ significantly in their architecture and interaction with web applications.
+  **[Selenium](https://naodeng.com.cn/en/wiki/selenium) RC** is an older technology that requires an additional server to interact with the browser. It injects JavaScript code into the browser when a test is run, which then controls the application under test. This approach has inherent limitations, such as being slower due to the extra layer (the server) and having less direct control over the browser, leading to issues with modern JavaScript-heavy applications.
+  **[WebDriver](https://naodeng.com.cn/en/wiki/webdriver)**, on the other hand, is a more modern and advanced tool. It directly communicates with the browser using the browser's native support for automation without the need for an intermediary server. [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) offers a more realistic interaction with web elements as it does not rely on JavaScript for automation. This direct control enables better simulation of user actions and can handle complex AJAX-based web elements more effectively.
   The key differences are:
 
   - **Direct browser control** : WebDriver interacts directly with the browser, while Selenium RC goes through a server.
   - **Speed** : WebDriver is generally faster due to its direct communication with the browser.
-  - **[API](../A/api.md) design** : WebDriver's API is more concise and object-oriented, making it easier to use and maintain.
+  - **[API](https://naodeng.com.cn/en/wiki/api) design** : WebDriver's API is more concise and object-oriented, making it easier to use and maintain.
   - **Browser support** : WebDriver has better support for modern browsers and their features.
   - **JavaScript dependency** : Selenium RC relies on JavaScript for automation, which can be a limitation, whereas WebDriver does not have this dependency.
   - **Direct browser control** : WebDriver interacts directly with the browser, while Selenium RC goes through a server.
   - **Speed** : WebDriver is generally faster due to its direct communication with the browser.
-  - **[API](../A/api.md) design** : WebDriver's API is more concise and object-oriented, making it easier to use and maintain.
+  - **[API](https://naodeng.com.cn/en/wiki/api) design** : WebDriver's API is more concise and object-oriented, making it easier to use and maintain.
   - **Browser support** : WebDriver has better support for modern browsers and their features.
   - **JavaScript dependency** : Selenium RC relies on JavaScript for automation, which can be a limitation, whereas WebDriver does not have this dependency.
 
@@ -151,7 +150,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you launch a browser using WebDriver?
 
-  To launch a browser using [WebDriver](../W/webdriver.md), you need to instantiate the specific driver object for the browser you want to automate. Here's a step-by-step guide:
+  To launch a browser using [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), you need to instantiate the specific driver object for the browser you want to automate. Here's a step-by-step guide:
 
   1. **Import**
     the necessary WebDriver classes in your test script.
@@ -180,7 +179,7 @@ An open-source framework for browser automation, enabling automated tests for we
   ```
   Make sure to replace `"path/to/chromedriver"` and `"path/to/geckodriver"` with the actual paths to your ChromeDriver and GeckoDriver executables.
   **Note**: Before running the script, ensure that the driver executables are downloaded and available in the specified path. The `get()` method is used to navigate to the desired URL after launching the browser.
-  After executing the script, [WebDriver](../W/webdriver.md) will start the specified browser and load the given URL. Remember to **close** the browser after your test operations are completed using `driver.quit()` to ensure no browser instances are left running.
+  After executing the script, [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) will start the specified browser and load the given URL. Remember to **close** the browser after your test operations are completed using `driver.quit()` to ensure no browser instances are left running.
 
   1. **Import**
     the necessary WebDriver classes in your test script.
@@ -194,7 +193,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you navigate to a URL using WebDriver?
 
-  To navigate to a URL using [WebDriver](../W/webdriver.md), you'll typically use the `get` method provided by the [WebDriver](../W/webdriver.md) instance. This method takes a single argument: the URL you want to navigate to. Here's an example in Java:
+  To navigate to a URL using [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), you'll typically use the `get` method provided by the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance. This method takes a single argument: the URL you want to navigate to. Here's an example in Java:
 
   ```
   driver.get("http://www.example.com");
@@ -210,7 +209,7 @@ An open-source framework for browser automation, enabling automated tests for we
   driver.Navigate().GoToUrl("http://www.example.com");
   ```
   In each case, the `get` method (or `GoToUrl` in C#) instructs the browser to navigate to the specified URL. The method will wait until the page has fully loaded before allowing any further commands to execute. This is a blocking call, meaning that the next line of code won't execute until the page load is complete.
-  It's important to ensure that the [WebDriver](../W/webdriver.md) instance has been initialized and that a browser session is active before attempting to navigate to a URL. This is typically done by first invoking the appropriate method to launch a browser, such as `new ChromeDriver()` for Chrome or `new FirefoxDriver()` for Firefox.
+  It's important to ensure that the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance has been initialized and that a browser session is active before attempting to navigate to a URL. This is typically done by first invoking the appropriate method to launch a browser, such as `new ChromeDriver()` for Chrome or `new FirefoxDriver()` for Firefox.
   Here's a concise example of navigating to a URL in a complete context:
 
   ```
@@ -223,7 +222,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you perform form inputs using WebDriver?
 
-  To perform form inputs using [WebDriver](../W/webdriver.md), you typically interact with web elements such as text boxes, radio buttons, checkboxes, and buttons. Here's how you can achieve this:
+  To perform form inputs using [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), you typically interact with web elements such as text boxes, radio buttons, checkboxes, and buttons. Here's how you can achieve this:
   For **text fields**, use the `sendKeys()` method to simulate typing into the field:
 
   ```
@@ -264,7 +263,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you handle alerts and pop-ups using WebDriver?
 
-  Handling alerts and pop-ups in [WebDriver](../W/webdriver.md) can be achieved using the `Alert` interface, which provides methods to interact with the different types of alerts. Here's a succinct guide:
+  Handling alerts and pop-ups in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) can be achieved using the `Alert` interface, which provides methods to interact with the different types of alerts. Here's a succinct guide:
   **Accepting an alert:**
 
   ```
@@ -290,18 +289,18 @@ An open-source framework for browser automation, enabling automated tests for we
   alert.sendKeys("Text to enter");
   ```
   **Handling unexpected alerts:**
-  For unexpected alerts that appear at random times, you can use the `UnexpectedAlertBehaviour` capability to define how [WebDriver](../W/webdriver.md) should react:
+  For unexpected alerts that appear at random times, you can use the `UnexpectedAlertBehaviour` capability to define how [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) should react:
 
   ```
   FirefoxOptions options = new FirefoxOptions();
   options.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
   WebDriver driver = new FirefoxDriver(options);
   ```
-  **Note:** When dealing with alerts, ensure that the [WebDriver](../W/webdriver.md) has switched to the alert before performing any actions. Also, remember that [WebDriver](../W/webdriver.md) can only interact with JavaScript alerts, prompts, and confirmations (`window.alert`, `window.confirm`, and `window.prompt`). Native OS pop-ups cannot be handled by [WebDriver](../W/webdriver.md) directly.
+  **Note:** When dealing with alerts, ensure that the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) has switched to the alert before performing any actions. Also, remember that [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) can only interact with JavaScript alerts, prompts, and confirmations (`window.alert`, `window.confirm`, and `window.prompt`). Native OS pop-ups cannot be handled by [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) directly.
 
 #### How can you perform drag and drop operations using WebDriver?
 
-  To perform drag and drop operations using [WebDriver](../W/webdriver.md), you can utilize the `Actions` class which provides a user-friendly [API](../A/api.md) for implementing advanced user interactions with the web elements. Here's a succinct example in Java:
+  To perform drag and drop operations using [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), you can utilize the `Actions` class which provides a user-friendly [API](https://naodeng.com.cn/en/wiki/api) for implementing advanced user interactions with the web elements. Here's a succinct example in Java:
 
   ```
   import org.openqa.selenium.By;
@@ -327,13 +326,13 @@ An open-source framework for browser automation, enabling automated tests for we
          .perform();
   ```
   Replace `xOffset` and `yOffset` with the horizontal and vertical distance, respectively, you want to move the element from its current position.
-  **Note**: Ensure that the [WebDriver](../W/webdriver.md) instance is properly initialized and that the elements are interactable (visible and enabled) before performing the drag and drop action. Additionally, consider any synchronization issues, such as waiting for elements to be ready for interaction before executing these actions.
+  **Note**: Ensure that the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance is properly initialized and that the elements are interactable (visible and enabled) before performing the drag and drop action. Additionally, consider any synchronization issues, such as waiting for elements to be ready for interaction before executing these actions.
 
 ### Locators and Web Elements
 
 #### What are locators in WebDriver?
 
-  Locators in [WebDriver](../W/webdriver.md) are strategies used to **identify and locate elements** on a web page. These are essential for interacting with web elements during [test automation](../T/test-automation.md), such as clicking buttons, entering text, or reading values. [WebDriver](../W/webdriver.md) supports various locator strategies:
+  Locators in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) are strategies used to **identify and locate elements** on a web page. These are essential for interacting with web elements during [test automation](https://naodeng.com.cn/en/wiki/test-automation), such as clicking buttons, entering text, or reading values. [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) supports various locator strategies:
 
   - **ID** : Finds an element by its unique ID.
 
@@ -438,7 +437,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you locate elements using WebDriver?
 
-  To locate elements using [WebDriver](../W/webdriver.md), you can utilize various locator strategies. Each strategy targets different attributes or aspects of the HTML elements on a web page. Here are the common methods:
+  To locate elements using [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), you can utilize various locator strategies. Each strategy targets different attributes or aspects of the HTML elements on a web page. Here are the common methods:
 
   - **By.id** : Finds an element by its unique ID.
 
@@ -487,7 +486,7 @@ An open-source framework for browser automation, enabling automated tests for we
   ```
   driver.findElement(By.partialLinkText("partialLinkText"));
   ```
-  Remember to handle potential exceptions, such as `NoSuchElementException`, when an element cannot be found. Additionally, consider the performance and [maintainability](../M/maintainability.md) of your locator strategy, as some methods like XPath can be slower and more brittle compared to others like ID or CSS selectors.
+  Remember to handle potential exceptions, such as `NoSuchElementException`, when an element cannot be found. Additionally, consider the performance and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of your locator strategy, as some methods like XPath can be slower and more brittle compared to others like ID or CSS selectors.
 
   - **By.id** : Finds an element by its unique ID.
   - **By.name** : Locates elements by the NAME attribute.
@@ -500,7 +499,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### What is the difference between findElement() and findElements() methods?
 
-  In [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md), `findElement()` and `findElements()` are both methods used to locate elements on a web page, but they differ in their return types and behavior:
+  In [Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), `findElement()` and `findElements()` are both methods used to locate elements on a web page, but they differ in their return types and behavior:
 
   - `findElement()` : This method is used when you expect the locator to match a
     **single element**
@@ -543,7 +542,7 @@ An open-source framework for browser automation, enabling automated tests for we
     `findElements()`
     returns an empty list.
 
-  - **[Use Case](../U/use-case.md)** : Use
+  - **[Use Case](https://naodeng.com.cn/en/wiki/use-case)** : Use
     `findElement()`
     when you need to interact with a single element; use
     `findElements()`
@@ -582,7 +581,7 @@ An open-source framework for browser automation, enabling automated tests for we
     `findElements()`
     returns an empty list.
 
-  - **[Use Case](../U/use-case.md)** : Use
+  - **[Use Case](https://naodeng.com.cn/en/wiki/use-case)** : Use
     `findElement()`
     when you need to interact with a single element; use
     `findElements()`
@@ -590,7 +589,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you handle dynamic elements using WebDriver?
 
-  Handling dynamic elements in [WebDriver](../W/webdriver.md) can be challenging due to their changing attributes. To effectively interact with these elements, you can use several strategies:
+  Handling dynamic elements in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) can be challenging due to their changing attributes. To effectively interact with these elements, you can use several strategies:
   **1. XPath with Contains, Starts-with, or Ends-with:**
   Dynamic elements often have attributes that contain consistent substrings. XPath functions like `contains()`, `starts-with()`, and `ends-with()` can match elements based on partial attribute values.
 
@@ -621,11 +620,11 @@ An open-source framework for browser automation, enabling automated tests for we
   In cases where elements are not immediately available, a retry mechanism can be implemented to attempt locating the element multiple times before failing the test.
   **6. Custom ExpectedConditions:**
   Create custom `ExpectedConditions` to handle more complex scenarios that are not covered by the built-in conditions.
-  By combining these strategies, you can effectively handle dynamic elements in [WebDriver](../W/webdriver.md), ensuring your automation scripts are robust and less prone to failure due to changing element attributes or timing issues.
+  By combining these strategies, you can effectively handle dynamic elements in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), ensuring your automation scripts are robust and less prone to failure due to changing element attributes or timing issues.
 
 #### How can you interact with dropdowns using WebDriver?
 
-  Interacting with dropdowns in [WebDriver](../W/webdriver.md) is typically done using the `Select` class, which provides methods to select and deselect options. Here's how you can work with dropdowns:
+  Interacting with dropdowns in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) is typically done using the `Select` class, which provides methods to select and deselect options. Here's how you can work with dropdowns:
 
   1. **Identify the dropdown element**
     using any of the WebDriver locators, such as
@@ -730,9 +729,9 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### What are the different types of wait commands in WebDriver?
 
-  [WebDriver](../W/webdriver.md) offers several wait commands to handle synchronization in [test automation](../T/test-automation.md):
+  [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) offers several wait commands to handle synchronization in [test automation](https://naodeng.com.cn/en/wiki/test-automation):
 
-  - **Implicit Wait**: Automatically waits for a specified amount of time before throwing a `NoSuchElementException` if the element is not found. It's set for the entire session of the [WebDriver](../W/webdriver.md).
+  - **Implicit Wait**: Automatically waits for a specified amount of time before throwing a `NoSuchElementException` if the element is not found. It's set for the entire session of the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver).
 
     ```
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -766,7 +765,7 @@ An open-source framework for browser automation, enabling automated tests for we
     ```
   It's recommended to use explicit and fluent waits over implicit waits for better test stability and to avoid unnecessary delays. Sleep should be avoided unless absolutely necessary.
 
-  - **Implicit Wait**: Automatically waits for a specified amount of time before throwing a `NoSuchElementException` if the element is not found. It's set for the entire session of the [WebDriver](../W/webdriver.md).
+  - **Implicit Wait**: Automatically waits for a specified amount of time before throwing a `NoSuchElementException` if the element is not found. It's set for the entire session of the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver).
 
     ```
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -801,8 +800,8 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### What is the difference between implicit wait and explicit wait?
 
-  Implicit wait and explicit wait are two different strategies for synchronizing the state of the application with the actions of your [test script](../T/test-script.md).
-  **Implicit wait** sets a default waiting time throughout the [WebDriver](../W/webdriver.md) instance's lifetime. When you set an implicit wait, [WebDriver](../W/webdriver.md) polls the DOM for a certain duration when trying to find an element or elements if they are not immediately available. The default setting is 0. Once set, the implicit wait is in effect for the duration of the [WebDriver](../W/webdriver.md) session.
+  Implicit wait and explicit wait are two different strategies for synchronizing the state of the application with the actions of your [test script](https://naodeng.com.cn/en/wiki/test-script).
+  **Implicit wait** sets a default waiting time throughout the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance's lifetime. When you set an implicit wait, [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) polls the DOM for a certain duration when trying to find an element or elements if they are not immediately available. The default setting is 0. Once set, the implicit wait is in effect for the duration of the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) session.
 
   ```
   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -826,7 +825,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you implement fluent wait in WebDriver?
 
-  To implement a **fluent wait** in [WebDriver](../W/webdriver.md), you can use the `FluentWait` class which allows you to configure the maximum amount of time to wait for a condition, as well as the frequency with which to check the condition. Additionally, you can ignore specific types of exceptions while waiting, such as `NoSuchElementExceptions` when searching for an element on the page.
+  To implement a **fluent wait** in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), you can use the `FluentWait` class which allows you to configure the maximum amount of time to wait for a condition, as well as the frequency with which to check the condition. Additionally, you can ignore specific types of exceptions while waiting, such as `NoSuchElementExceptions` when searching for an element on the page.
   Here's a basic example in Java:
 
   ```
@@ -871,8 +870,8 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you handle synchronization issues using wait commands?
 
-  To handle synchronization issues in [test automation](../T/test-automation.md), **wait commands** are essential. They allow your tests to wait for certain conditions to be met before proceeding, ensuring that elements are ready for interaction.
-  **Implicit Wait** sets a default waiting time throughout the [WebDriver](../W/webdriver.md) instance's lifetime. If an element is not immediately available, [WebDriver](../W/webdriver.md) will poll the DOM for the specified duration before throwing a `NoSuchElementException`.
+  To handle synchronization issues in [test automation](https://naodeng.com.cn/en/wiki/test-automation), **wait commands** are essential. They allow your tests to wait for certain conditions to be met before proceeding, ensuring that elements are ready for interaction.
+  **Implicit Wait** sets a default waiting time throughout the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance's lifetime. If an element is not immediately available, [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) will poll the DOM for the specified duration before throwing a `NoSuchElementException`.
 
   ```
   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -896,24 +895,24 @@ An open-source framework for browser automation, enabling automated tests for we
       }
   });
   ```
-  Use these wait commands strategically to synchronize your tests with the application's state, reducing flakiness and improving reliability. Remember to avoid the `Thread.sleep()` method, as it forces an unconditional wait and can lead to unnecessarily long [test execution](../T/test-execution.md) times.
+  Use these wait commands strategically to synchronize your tests with the application's state, reducing flakiness and improving reliability. Remember to avoid the `Thread.sleep()` method, as it forces an unconditional wait and can lead to unnecessarily long [test execution](https://naodeng.com.cn/en/wiki/test-execution) times.
 
 #### What is the use of sleep() method in WebDriver?
 
-  The `sleep()` method in [WebDriver](../W/webdriver.md) is a form of **static wait** that pauses the execution of the test for a specified amount of time. It is part of the `Thread` class in Java and is often used in [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md) scripts to handle timing issues and synchronization problems.
-  Here's an example of how to use `sleep()` in a [WebDriver](../W/webdriver.md) script:
+  The `sleep()` method in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) is a form of **static wait** that pauses the execution of the test for a specified amount of time. It is part of the `Thread` class in Java and is often used in [Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) scripts to handle timing issues and synchronization problems.
+  Here's an example of how to use `sleep()` in a [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) script:
 
   ```
   Thread.sleep(5000); // Pauses execution for 5 seconds
   ```
-  This method takes an argument in milliseconds and halts the entire [test execution](../T/test-execution.md) for that duration. It is generally considered a **poor practice** to use `sleep()` because it introduces **hard-coded waits**, making the tests less reliable and increasing execution time. The main issue with `sleep()` is that it does not take into account whether the application is ready to proceed, leading to either unnecessary waiting or potential flakiness if the wait time is not sufficient.
-  Instead of `sleep()`, it is recommended to use **[WebDriver](../W/webdriver.md)'s wait mechanisms** such as **implicit waits**, **explicit waits**, or **fluent waits**. These waits are dynamic and allow the test to proceed as soon as the necessary conditions are met, such as the presence or visibility of an element, making the tests more efficient and robust.
+  This method takes an argument in milliseconds and halts the entire [test execution](https://naodeng.com.cn/en/wiki/test-execution) for that duration. It is generally considered a **poor practice** to use `sleep()` because it introduces **hard-coded waits**, making the tests less reliable and increasing execution time. The main issue with `sleep()` is that it does not take into account whether the application is ready to proceed, leading to either unnecessary waiting or potential flakiness if the wait time is not sufficient.
+  Instead of `sleep()`, it is recommended to use **[WebDriver](https://naodeng.com.cn/en/wiki/webdriver)'s wait mechanisms** such as **implicit waits**, **explicit waits**, or **fluent waits**. These waits are dynamic and allow the test to proceed as soon as the necessary conditions are met, such as the presence or visibility of an element, making the tests more efficient and robust.
 
 ### Advanced WebDriver Concepts
 
 #### How can you handle multiple windows or tabs using WebDriver?
 
-  To handle multiple windows or tabs in [WebDriver](../W/webdriver.md), use the `getWindowHandles()` and `switchTo().window()` methods. Here's a succinct approach:
+  To handle multiple windows or tabs in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), use the `getWindowHandles()` and `switchTo().window()` methods. Here's a succinct approach:
 
   1. **Identify the current window handle** before opening a new window or tab, so you can return to it later if needed.
 
@@ -922,7 +921,7 @@ An open-source framework for browser automation, enabling automated tests for we
     ```
 
   2. **Perform an action** that opens a new window or tab, such as clicking a link that opens in a new window.
-  3. **Get all window handles** currently open by the [WebDriver](../W/webdriver.md) instance.
+  3. **Get all window handles** currently open by the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance.
 
     ```
     Set<String> allWindows = driver.getWindowHandles();
@@ -946,7 +945,7 @@ An open-source framework for browser automation, enabling automated tests for we
     driver.close(); // Closes the new window or tab
     driver.switchTo().window(originalWindow); // Switch back to the original window
     ```
-  Remember to handle any potential exceptions, such as `NoSuchWindowException`, and ensure that your [test scripts](../T/test-script.md) account for the possibility that windows or tabs may not open as expected.
+  Remember to handle any potential exceptions, such as `NoSuchWindowException`, and ensure that your [test scripts](https://naodeng.com.cn/en/wiki/test-script) account for the possibility that windows or tabs may not open as expected.
 
   1. **Identify the current window handle** before opening a new window or tab, so you can return to it later if needed.
 
@@ -955,7 +954,7 @@ An open-source framework for browser automation, enabling automated tests for we
     ```
 
   2. **Perform an action** that opens a new window or tab, such as clicking a link that opens in a new window.
-  3. **Get all window handles** currently open by the [WebDriver](../W/webdriver.md) instance.
+  3. **Get all window handles** currently open by the [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) instance.
 
     ```
     Set<String> allWindows = driver.getWindowHandles();
@@ -982,7 +981,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you perform mouse and keyboard actions using WebDriver?
 
-  To perform mouse and keyboard actions in [WebDriver](../W/webdriver.md), you can use the `Actions` class, which provides a user-friendly [API](../A/api.md) for implementing complex user gestures. Here's how to use it:
+  To perform mouse and keyboard actions in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver), you can use the `Actions` class, which provides a user-friendly [API](https://naodeng.com.cn/en/wiki/api) for implementing complex user gestures. Here's how to use it:
   **Mouse Actions:**
 
   ```
@@ -1038,7 +1037,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you handle iframes using WebDriver?
 
-  Handling iframes in [WebDriver](../W/webdriver.md) involves switching the context from the main page to the iframe and then interacting with the elements within it. Use the `switchTo()` method to change focus to the iframe before performing any actions inside it.
+  Handling iframes in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) involves switching the context from the main page to the iframe and then interacting with the elements within it. Use the `switchTo()` method to change focus to the iframe before performing any actions inside it.
   Here's a succinct example in Java:
 
   ```
@@ -1095,7 +1094,7 @@ An open-source framework for browser automation, enabling automated tests for we
 
 #### How can you take screenshots using WebDriver?
 
-  Taking screenshots with [WebDriver](../W/webdriver.md) is straightforward. Use the `TakesScreenshot` interface provided by [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md). Here's a concise example in Java:
+  Taking screenshots with [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) is straightforward. Use the `TakesScreenshot` interface provided by [Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver). Here's a concise example in Java:
 
   ```
   WebDriver driver = new ChromeDriver(); // Assuming ChromeDriver is being used
@@ -1117,11 +1116,11 @@ An open-source framework for browser automation, enabling automated tests for we
   # Take screenshot and save it to the given path
   driver.save_screenshot('path/to/screenshot.png')
   ```
-  Remember to handle any exceptions, such as `IOException` in Java, which may occur when writing the screenshot to a file. This ensures your [test script](../T/test-script.md) remains robust and error-tolerant.
+  Remember to handle any exceptions, such as `IOException` in Java, which may occur when writing the screenshot to a file. This ensures your [test script](https://naodeng.com.cn/en/wiki/test-script) remains robust and error-tolerant.
 
 #### How can you handle cookies using WebDriver?
 
-  Handling cookies in [WebDriver](../W/webdriver.md) can be achieved using the `manage()` method, which provides access to the `Cookie` class. Here's how you can perform common cookie operations:
+  Handling cookies in [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) can be achieved using the `manage()` method, which provides access to the `Cookie` class. Here's how you can perform common cookie operations:
   **Add a Cookie:**
 
   ```
@@ -1162,4 +1161,4 @@ An open-source framework for browser automation, enabling automated tests for we
   Set<Cookie> cookiesAfterDeletion = driver.manage().getCookies();
   assert cookiesAfterDeletion.isEmpty();
   ```
-  Remember to **import** the `Cookie` class from the [Selenium](../S/selenium.md) [WebDriver](../W/webdriver.md) library. Also, ensure that you are on the domain of the cookie you are trying to manipulate, as [WebDriver](../W/webdriver.md) will not allow you to add or delete cookies from a different domain than the one your current page is on.
+  Remember to **import** the `Cookie` class from the [Selenium](https://naodeng.com.cn/en/wiki/selenium) [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) library. Also, ensure that you are on the domain of the cookie you are trying to manipulate, as [WebDriver](https://naodeng.com.cn/en/wiki/webdriver) will not allow you to add or delete cookies from a different domain than the one your current page is on.

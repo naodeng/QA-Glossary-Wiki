@@ -1,6 +1,5 @@
 # Chai.js
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
   - [See also:](#see-also)
@@ -56,9 +55,9 @@ Jasmine
 
 ## Related Terms:
 
-- [Assertion library](../A/assertion-library.md)
-- [Jest](../J/jest.md)
-- [Jasmine](../J/jasmine.md)
+- [Assertion library](https://naodeng.com.cn/en/wiki/assertion-library)
+- [Jest](https://naodeng.com.cn/en/wiki/jest)
+- [Jasmine](https://naodeng.com.cn/en/wiki/jasmine)
 
 ### See also:
 
@@ -70,8 +69,8 @@ Jasmine
 
 #### What is Chai.js?
 
-  [Chai.js](../C/chai-js.md) is a **behavior-driven development ([BDD](../B/bdd.md))** / **[test-driven development](../T/test-driven-development.md) (TDD)** assertion library for [Node.js](../N/node-js.md) and the browser that can be delightfully paired with any JavaScript testing framework. It provides developers with a rich set of assertions that are readable and expressive.
-  [Chai.js](../C/chai-js.md) offers three different styles of assertions: **should**, **expect**, and **assert**. Each style has its own syntax, allowing developers to choose the one that best fits their preference or the needs of their project.
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) is a **behavior-driven development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** / **[test-driven development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** assertion library for [Node.js](https://naodeng.com.cn/en/wiki/node-js) and the browser that can be delightfully paired with any JavaScript testing framework. It provides developers with a rich set of assertions that are readable and expressive.
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) offers three different styles of assertions: **should**, **expect**, and **assert**. Each style has its own syntax, allowing developers to choose the one that best fits their preference or the needs of their project.
 
   ```
   // Should style
@@ -81,73 +80,73 @@ Jasmine
   // Assert style
   assert.exists(foo);
   ```
-  [Chai.js](../C/chai-js.md) assertions can handle a variety of test conditions, including but not limited to, property values, deep equality checks, and thrown exceptions. It also supports testing asynchronous operations, both with callbacks and promises.
-  The library is extensible through plugins, which can add new assertions and test conditions to fit specific testing requirements. This extensibility allows [Chai.js](../C/chai-js.md) to adapt to a wide range of [use cases](../U/use-case.md) and integrate with other tools and libraries.
-  [Chai.js](../C/chai-js.md) is often used in combination with other testing tools such as Mocha, [Jest](../J/jest.md), or Karma, providing a complete testing solution. It is installed via npm and can be easily integrated into any JavaScript project, making it a convenient choice for developers looking to enhance their testing capabilities.
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) assertions can handle a variety of test conditions, including but not limited to, property values, deep equality checks, and thrown exceptions. It also supports testing asynchronous operations, both with callbacks and promises.
+  The library is extensible through plugins, which can add new assertions and test conditions to fit specific testing requirements. This extensibility allows [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) to adapt to a wide range of [use cases](https://naodeng.com.cn/en/wiki/use-case) and integrate with other tools and libraries.
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) is often used in combination with other testing tools such as Mocha, [Jest](https://naodeng.com.cn/en/wiki/jest), or Karma, providing a complete testing solution. It is installed via npm and can be easily integrated into any JavaScript project, making it a convenient choice for developers looking to enhance their testing capabilities.
 
 #### Why is Chai.js used in testing?
 
-  [Chai.js](../C/chai-js.md) is utilized in testing primarily for its **flexibility** and **readability** when writing assertions. It allows developers to write tests that are expressive and easy to maintain. By offering **Behavior-Driven Development ([BDD](../B/bdd.md))** and **[Test-Driven Development](../T/test-driven-development.md) (TDD)** assertion styles, it caters to different preferences and can easily integrate with various testing frameworks like Mocha or [Jest](../J/jest.md).
-  The use of [Chai.js](../C/chai-js.md) enhances the **debugging experience** due to its informative error messages, which detail the expected versus the [actual result](../A/actual-result.md) when an assertion fails. This feature significantly reduces the time spent on identifying the cause of a failed test.
-  Moreover, [Chai.js](../C/chai-js.md) supports **chainable assertions**, which enable the composition of complex conditions in a readable manner. This chaining mimics natural language, making the tests more understandable to new developers or non-technical stakeholders.
-  [Chai.js](../C/chai-js.md)'s extensibility through plugins allows for customization and extension of its core functionalities. This means that teams can adapt the library to their specific testing needs without waiting for the core package to provide those features.
-  In summary, [Chai.js](../C/chai-js.md) is chosen for its **expressive syntax**, **helpful error messages**, **compatibility with other tools**, and **extensibility**, which all contribute to a more efficient and pleasant testing experience.
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) is utilized in testing primarily for its **flexibility** and **readability** when writing assertions. It allows developers to write tests that are expressive and easy to maintain. By offering **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** and **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** assertion styles, it caters to different preferences and can easily integrate with various testing frameworks like Mocha or [Jest](https://naodeng.com.cn/en/wiki/jest).
+  The use of [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) enhances the **debugging experience** due to its informative error messages, which detail the expected versus the [actual result](https://naodeng.com.cn/en/wiki/actual-result) when an assertion fails. This feature significantly reduces the time spent on identifying the cause of a failed test.
+  Moreover, [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) supports **chainable assertions**, which enable the composition of complex conditions in a readable manner. This chaining mimics natural language, making the tests more understandable to new developers or non-technical stakeholders.
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js)'s extensibility through plugins allows for customization and extension of its core functionalities. This means that teams can adapt the library to their specific testing needs without waiting for the core package to provide those features.
+  In summary, [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) is chosen for its **expressive syntax**, **helpful error messages**, **compatibility with other tools**, and **extensibility**, which all contribute to a more efficient and pleasant testing experience.
 
 #### What are the key features of Chai.js?
 
-  [Chai.js](../C/chai-js.md) offers a range of **key features** that make it a versatile and powerful assertion library for [test automation](../T/test-automation.md):
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) offers a range of **key features** that make it a versatile and powerful assertion library for [test automation](https://naodeng.com.cn/en/wiki/test-automation):
 
-  - **[BDD](../B/bdd.md)/TDD Assertion Styles**: Chai provides two main styles of assertions: **Behavior-Driven Development ([BDD](../B/bdd.md))** with `expect` or `should`, and **[Test-Driven Development](../T/test-driven-development.md) (TDD)** with `assert`. This allows developers to choose the style that best fits their testing philosophy or to mix and match within their [test suite](../T/test-suite.md).
+  - **[BDD](https://naodeng.com.cn/en/wiki/bdd)/TDD Assertion Styles**: Chai provides two main styles of assertions: **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** with `expect` or `should`, and **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** with `assert`. This allows developers to choose the style that best fits their testing philosophy or to mix and match within their [test suite](https://naodeng.com.cn/en/wiki/test-suite).
   - **Chainable Language**: Assertions can be chained together to form readable statements using natural language constructs. This improves the readability of tests and makes writing assertions more intuitive.
   - **Type Checking**: Chai includes assertions for type checking, such as `expect(value).to.be.a('string')`, which enhances the robustness of tests by ensuring that values are of the expected type.
-  - **Property Testing**: It allows for easy checking of object properties, which is useful for testing [API](../A/api.md) responses and complex data structures.
+  - **Property Testing**: It allows for easy checking of object properties, which is useful for testing [API](https://naodeng.com.cn/en/wiki/api) responses and complex data structures.
   - **Equality and Comparisons**: Chai provides a comprehensive set of assertions for equality and comparison, including deep equality checks and assertions for greater than/less than relationships.
   - **Error Handling**: Assertions for error handling are included, allowing developers to assert that certain functions throw expected errors under specific conditions.
-  - **Plugin Architecture**: Chai's extensibility through plugins means that it can be adapted to a wide variety of [use cases](../U/use-case.md) and integrated with other libraries and tools.
+  - **Plugin Architecture**: Chai's extensibility through plugins means that it can be adapted to a wide variety of [use cases](https://naodeng.com.cn/en/wiki/use-case) and integrated with other libraries and tools.
   - **Asynchronous Support**: It has built-in support for testing asynchronous code, including promises, which is essential for modern JavaScript development.
   - **Custom Messages**: Developers can provide custom error messages for assertions, which can make debugging failed tests easier and more informative.
-  - **Cross-Platform**: [Chai.js](../C/chai-js.md) works in both [Node.js](../N/node-js.md) and browser environments, making it suitable for a wide range of JavaScript projects.
-  - **[BDD](../B/bdd.md)/TDD Assertion Styles**: Chai provides two main styles of assertions: **Behavior-Driven Development ([BDD](../B/bdd.md))** with `expect` or `should`, and **[Test-Driven Development](../T/test-driven-development.md) (TDD)** with `assert`. This allows developers to choose the style that best fits their testing philosophy or to mix and match within their [test suite](../T/test-suite.md).
+  - **Cross-Platform**: [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) works in both [Node.js](https://naodeng.com.cn/en/wiki/node-js) and browser environments, making it suitable for a wide range of JavaScript projects.
+  - **[BDD](https://naodeng.com.cn/en/wiki/bdd)/TDD Assertion Styles**: Chai provides two main styles of assertions: **Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd))** with `expect` or `should`, and **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** with `assert`. This allows developers to choose the style that best fits their testing philosophy or to mix and match within their [test suite](https://naodeng.com.cn/en/wiki/test-suite).
   - **Chainable Language**: Assertions can be chained together to form readable statements using natural language constructs. This improves the readability of tests and makes writing assertions more intuitive.
   - **Type Checking**: Chai includes assertions for type checking, such as `expect(value).to.be.a('string')`, which enhances the robustness of tests by ensuring that values are of the expected type.
-  - **Property Testing**: It allows for easy checking of object properties, which is useful for testing [API](../A/api.md) responses and complex data structures.
+  - **Property Testing**: It allows for easy checking of object properties, which is useful for testing [API](https://naodeng.com.cn/en/wiki/api) responses and complex data structures.
   - **Equality and Comparisons**: Chai provides a comprehensive set of assertions for equality and comparison, including deep equality checks and assertions for greater than/less than relationships.
   - **Error Handling**: Assertions for error handling are included, allowing developers to assert that certain functions throw expected errors under specific conditions.
-  - **Plugin Architecture**: Chai's extensibility through plugins means that it can be adapted to a wide variety of [use cases](../U/use-case.md) and integrated with other libraries and tools.
+  - **Plugin Architecture**: Chai's extensibility through plugins means that it can be adapted to a wide variety of [use cases](https://naodeng.com.cn/en/wiki/use-case) and integrated with other libraries and tools.
   - **Asynchronous Support**: It has built-in support for testing asynchronous code, including promises, which is essential for modern JavaScript development.
   - **Custom Messages**: Developers can provide custom error messages for assertions, which can make debugging failed tests easier and more informative.
-  - **Cross-Platform**: [Chai.js](../C/chai-js.md) works in both [Node.js](../N/node-js.md) and browser environments, making it suitable for a wide range of JavaScript projects.
+  - **Cross-Platform**: [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) works in both [Node.js](https://naodeng.com.cn/en/wiki/node-js) and browser environments, making it suitable for a wide range of JavaScript projects.
 
 #### How does Chai.js compare to other JavaScript testing libraries?
 
-  [Chai.js](../C/chai-js.md) stands out in the JavaScript testing landscape for its **flexible assertion styles**: [BDD](../B/bdd.md) (expect/should) and TDD (assert). This adaptability allows developers to choose a style that best fits their preferences or existing codebase.
-  Compared to **[Jest](../J/jest.md)**, which is a full-fledged testing framework providing its own assertions, Chai is more of an assertion library that can be paired with any testing framework like Mocha or [Jasmine](../J/jasmine.md). [Jest](../J/jest.md)'s assertions are built-in and cannot be separated from the framework, while Chai's assertions are standalone and can be extended with plugins.
-  **[Jasmine](../J/jasmine.md)** comes with its own assertion library, so using Chai with [Jasmine](../J/jasmine.md) would be for preference reasons rather than necessity. Chai might be chosen for its richer plugin ecosystem or specific assertion style not found in [Jasmine](../J/jasmine.md).
-  **Mocha** does not come with an assertion library, making Chai a popular choice for Mocha users. The combination of Mocha's test running capabilities and Chai's assertions provides a powerful and flexible testing [setup](../S/setup.md).
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) stands out in the JavaScript testing landscape for its **flexible assertion styles**: [BDD](https://naodeng.com.cn/en/wiki/bdd) (expect/should) and TDD (assert). This adaptability allows developers to choose a style that best fits their preferences or existing codebase.
+  Compared to **[Jest](https://naodeng.com.cn/en/wiki/jest)**, which is a full-fledged testing framework providing its own assertions, Chai is more of an assertion library that can be paired with any testing framework like Mocha or [Jasmine](https://naodeng.com.cn/en/wiki/jasmine). [Jest](https://naodeng.com.cn/en/wiki/jest)'s assertions are built-in and cannot be separated from the framework, while Chai's assertions are standalone and can be extended with plugins.
+  **[Jasmine](https://naodeng.com.cn/en/wiki/jasmine)** comes with its own assertion library, so using Chai with [Jasmine](https://naodeng.com.cn/en/wiki/jasmine) would be for preference reasons rather than necessity. Chai might be chosen for its richer plugin ecosystem or specific assertion style not found in [Jasmine](https://naodeng.com.cn/en/wiki/jasmine).
+  **Mocha** does not come with an assertion library, making Chai a popular choice for Mocha users. The combination of Mocha's test running capabilities and Chai's assertions provides a powerful and flexible testing [setup](https://naodeng.com.cn/en/wiki/setup).
   **Sinon** is often used alongside Chai for spies, mocks, and stubs. While Sinon has some assertions, they are mainly focused on these three areas, and Chai is used for more general assertions. The `sinon-chai` plugin allows for seamless integration of Sinon's capabilities with Chai's assertion syntax.
-  In summary, [Chai.js](../C/chai-js.md)'s main comparison point is its **flexible syntax** and **extensibility through plugins**, allowing it to integrate well with various testing frameworks and complement libraries like Sinon for comprehensive testing needs.
+  In summary, [Chai.js](https://naodeng.com.cn/en/wiki/chai-js)'s main comparison point is its **flexible syntax** and **extensibility through plugins**, allowing it to integrate well with various testing frameworks and complement libraries like Sinon for comprehensive testing needs.
 
 #### What are the advantages of using Chai.js for testing?
 
-  [Chai.js](../C/chai-js.md) offers several advantages for [test automation](../T/test-automation.md):
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) offers several advantages for [test automation](https://naodeng.com.cn/en/wiki/test-automation):
 
-  - **Fluent and Readable Syntax**: Chai's chainable language constructs make tests easier to read and write. Its [BDD](../B/bdd.md)/TDD style assertions provide clear language for [test cases](../T/test-case.md).
+  - **Fluent and Readable Syntax**: Chai's chainable language constructs make tests easier to read and write. Its [BDD](https://naodeng.com.cn/en/wiki/bdd)/TDD style assertions provide clear language for [test cases](https://naodeng.com.cn/en/wiki/test-case).
   - **Flexibility**: With interfaces like `expect`, `should`, and `assert`, Chai accommodates different testing styles and preferences.
   - **Extensibility**: Custom plugins can be created or existing ones used to extend Chai's functionality, allowing for more specialized assertions tailored to specific needs.
-  - **Compatibility**: Works seamlessly with various testing frameworks like Mocha, [Jest](../J/jest.md), and Karma, making it versatile for different environments.
+  - **Compatibility**: Works seamlessly with various testing frameworks like Mocha, [Jest](https://naodeng.com.cn/en/wiki/jest), and Karma, making it versatile for different environments.
   - **Rich Assertion Library**: Offers a wide range of assertions out of the box, reducing the need to write complex logic for tests.
-  - **Cross-Platform**: Can be used in both [Node.js](../N/node-js.md) and browser environments, ensuring consistent testing across platforms.
+  - **Cross-Platform**: Can be used in both [Node.js](https://naodeng.com.cn/en/wiki/node-js) and browser environments, ensuring consistent testing across platforms.
   - **Community Support**: A large community and ecosystem mean better support, continuous improvements, and a wealth of resources for troubleshooting.
   - **Error Handling**: Provides detailed error messages that can include stack traces, making debugging easier.
   - **Asynchronous Support**: Built-in support for testing asynchronous code with Promises and async/await patterns.
-  By leveraging these advantages, [Chai.js](../C/chai-js.md) enhances the efficiency, readability, and [maintainability](../M/maintainability.md) of [test suites](../T/test-suite.md), contributing to a more robust and reliable automation process.
+  By leveraging these advantages, [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) enhances the efficiency, readability, and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of [test suites](https://naodeng.com.cn/en/wiki/test-suite), contributing to a more robust and reliable automation process.
 
-  - **Fluent and Readable Syntax**: Chai's chainable language constructs make tests easier to read and write. Its [BDD](../B/bdd.md)/TDD style assertions provide clear language for [test cases](../T/test-case.md).
+  - **Fluent and Readable Syntax**: Chai's chainable language constructs make tests easier to read and write. Its [BDD](https://naodeng.com.cn/en/wiki/bdd)/TDD style assertions provide clear language for [test cases](https://naodeng.com.cn/en/wiki/test-case).
   - **Flexibility**: With interfaces like `expect`, `should`, and `assert`, Chai accommodates different testing styles and preferences.
   - **Extensibility**: Custom plugins can be created or existing ones used to extend Chai's functionality, allowing for more specialized assertions tailored to specific needs.
-  - **Compatibility**: Works seamlessly with various testing frameworks like Mocha, [Jest](../J/jest.md), and Karma, making it versatile for different environments.
+  - **Compatibility**: Works seamlessly with various testing frameworks like Mocha, [Jest](https://naodeng.com.cn/en/wiki/jest), and Karma, making it versatile for different environments.
   - **Rich Assertion Library**: Offers a wide range of assertions out of the box, reducing the need to write complex logic for tests.
-  - **Cross-Platform**: Can be used in both [Node.js](../N/node-js.md) and browser environments, ensuring consistent testing across platforms.
+  - **Cross-Platform**: Can be used in both [Node.js](https://naodeng.com.cn/en/wiki/node-js) and browser environments, ensuring consistent testing across platforms.
   - **Community Support**: A large community and ecosystem mean better support, continuous improvements, and a wealth of resources for troubleshooting.
   - **Error Handling**: Provides detailed error messages that can include stack traces, making debugging easier.
   - **Asynchronous Support**: Built-in support for testing asynchronous code with Promises and async/await patterns.
@@ -156,12 +155,12 @@ Jasmine
 
 #### How do you install Chai.js?
 
-  To install **[Chai.js](../C/chai-js.md)**, ensure you have **[Node.js](../N/node-js.md)** and **npm** (Node Package Manager) installed. Open your terminal or command prompt and navigate to your project directory. Run the following command:
+  To install **[Chai.js](https://naodeng.com.cn/en/wiki/chai-js)**, ensure you have **[Node.js](https://naodeng.com.cn/en/wiki/node-js)** and **npm** (Node Package Manager) installed. Open your terminal or command prompt and navigate to your project directory. Run the following command:
 
   ```
   npm install chai --save-dev
   ```
-  This command installs [Chai.js](../C/chai-js.md) as a development dependency, adding it to your `package.json` file. Once the installation is complete, you can import Chai in your test files using:
+  This command installs [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) as a development dependency, adding it to your `package.json` file. Once the installation is complete, you can import Chai in your test files using:
   For CommonJS modules:
 
   ```
@@ -172,16 +171,16 @@ Jasmine
   ```
   import chai from 'chai';
   ```
-  You can then use Chai's `expect`, `should`, or `assert` interfaces to write your tests. Remember to also install a [test runner](../T/test-runner.md) like **Mocha** or **[Jest](../J/jest.md)** if you haven't already, as Chai is an assertion library and does not provide a test framework itself.
+  You can then use Chai's `expect`, `should`, or `assert` interfaces to write your tests. Remember to also install a [test runner](https://naodeng.com.cn/en/wiki/test-runner) like **Mocha** or **[Jest](https://naodeng.com.cn/en/wiki/jest)** if you haven't already, as Chai is an assertion library and does not provide a test framework itself.
 
 #### What are the prerequisites for using Chai.js?
 
-  To use **[Chai.js](../C/chai-js.md)**, ensure the following prerequisites are met:
+  To use **[Chai.js](https://naodeng.com.cn/en/wiki/chai-js)**, ensure the following prerequisites are met:
 
-  - **[Node.js](../N/node-js.md)** : Chai is a Node.js library, so you need Node.js installed on your system. The version should be compatible with the version of Chai you plan to use.
+  - **[Node.js](https://naodeng.com.cn/en/wiki/node-js)** : Chai is a Node.js library, so you need Node.js installed on your system. The version should be compatible with the version of Chai you plan to use.
   - **NPM or Yarn** : These are package managers that handle the installation of Chai and its dependencies. They also manage project-specific packages.
-  - **A [test runner](../T/test-runner.md)** : Chai is an assertion library and does not include a test runner. You need a test runner like Mocha, Jest, or Karma to execute your tests.
-  - **Project [setup](../S/setup.md)** : Your project should be initialized with a
+  - **A [test runner](https://naodeng.com.cn/en/wiki/test-runner)** : Chai is an assertion library and does not include a test runner. You need a test runner like Mocha, Jest, or Karma to execute your tests.
+  - **Project [setup](https://naodeng.com.cn/en/wiki/setup)** : Your project should be initialized with a
     `package.json`
     file if you're using NPM or Yarn. This file tracks dependencies and scripts related to your project.
 
@@ -207,12 +206,12 @@ Jasmine
   ```
   import chai from 'chai';
   ```
-  Ensure your [test environment](../T/test-environment.md) is properly configured to use Chai with your chosen [test runner](../T/test-runner.md) and assertion style (`expect`, `should`, or `assert`).
+  Ensure your [test environment](https://naodeng.com.cn/en/wiki/test-environment) is properly configured to use Chai with your chosen [test runner](https://naodeng.com.cn/en/wiki/test-runner) and assertion style (`expect`, `should`, or `assert`).
 
-  - **[Node.js](../N/node-js.md)** : Chai is a Node.js library, so you need Node.js installed on your system. The version should be compatible with the version of Chai you plan to use.
+  - **[Node.js](https://naodeng.com.cn/en/wiki/node-js)** : Chai is a Node.js library, so you need Node.js installed on your system. The version should be compatible with the version of Chai you plan to use.
   - **NPM or Yarn** : These are package managers that handle the installation of Chai and its dependencies. They also manage project-specific packages.
-  - **A [test runner](../T/test-runner.md)** : Chai is an assertion library and does not include a test runner. You need a test runner like Mocha, Jest, or Karma to execute your tests.
-  - **Project [setup](../S/setup.md)** : Your project should be initialized with a
+  - **A [test runner](https://naodeng.com.cn/en/wiki/test-runner)** : Chai is an assertion library and does not include a test runner. You need a test runner like Mocha, Jest, or Karma to execute your tests.
+  - **Project [setup](https://naodeng.com.cn/en/wiki/setup)** : Your project should be initialized with a
     `package.json`
     file if you're using NPM or Yarn. This file tracks dependencies and scripts related to your project.
 
@@ -221,7 +220,7 @@ Jasmine
 
 #### How do you set up Chai.js for a project?
 
-  To set up [Chai.js](../C/chai-js.md) for your project, follow these steps:
+  To set up [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) for your project, follow these steps:
 
   1. **Install Chai** using npm or yarn if you haven't already:
     or
@@ -252,10 +251,10 @@ Jasmine
     expect(2 + 2).to.equal(4);
     ```
 
-  5. **Run your tests** using your chosen [test runner](../T/test-runner.md) (e.g., Mocha, [Jest](../J/jest.md)).
+  5. **Run your tests** using your chosen [test runner](https://naodeng.com.cn/en/wiki/test-runner) (e.g., Mocha, [Jest](https://naodeng.com.cn/en/wiki/jest)).
   6. Optionally, **configure Chai** with additional settings if needed, such as using plugins or adding custom messages to assertions.
-  7. **Integrate Chai with other tools** like [test runners](../T/test-runner.md) or mocking libraries as necessary for your testing environment.
-  Remember to **check your project's dependencies** to ensure they are compatible with the version of Chai you are using. Keep Chai and any plugins updated to benefit from the latest features and [bug](../B/bug.md) fixes.
+  7. **Integrate Chai with other tools** like [test runners](https://naodeng.com.cn/en/wiki/test-runner) or mocking libraries as necessary for your testing environment.
+  Remember to **check your project's dependencies** to ensure they are compatible with the version of Chai you are using. Keep Chai and any plugins updated to benefit from the latest features and [bug](https://naodeng.com.cn/en/wiki/bug) fixes.
 
   1. **Install Chai** using npm or yarn if you haven't already:
     or
@@ -286,15 +285,15 @@ Jasmine
     expect(2 + 2).to.equal(4);
     ```
 
-  5. **Run your tests** using your chosen [test runner](../T/test-runner.md) (e.g., Mocha, [Jest](../J/jest.md)).
+  5. **Run your tests** using your chosen [test runner](https://naodeng.com.cn/en/wiki/test-runner) (e.g., Mocha, [Jest](https://naodeng.com.cn/en/wiki/jest)).
   6. Optionally, **configure Chai** with additional settings if needed, such as using plugins or adding custom messages to assertions.
-  7. **Integrate Chai with other tools** like [test runners](../T/test-runner.md) or mocking libraries as necessary for your testing environment.
+  7. **Integrate Chai with other tools** like [test runners](https://naodeng.com.cn/en/wiki/test-runner) or mocking libraries as necessary for your testing environment.
 
 #### How do you import Chai.js into a JavaScript file?
 
-  To import [Chai.js](../C/chai-js.md) into a JavaScript file, first ensure that Chai is installed in your project. If it's not already installed, you can add it using a package manager like npm with the command `npm install chai`.
-  Once Chai is installed, you can import it into your JavaScript file using either CommonJS or ES6 module syntax, depending on your environment and project [setup](../S/setup.md).
-  For **CommonJS** (typically used in [Node.js](../N/node-js.md) environments), use the `require` function:
+  To import [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) into a JavaScript file, first ensure that Chai is installed in your project. If it's not already installed, you can add it using a package manager like npm with the command `npm install chai`.
+  Once Chai is installed, you can import it into your JavaScript file using either CommonJS or ES6 module syntax, depending on your environment and project [setup](https://naodeng.com.cn/en/wiki/setup).
+  For **CommonJS** (typically used in [Node.js](https://naodeng.com.cn/en/wiki/node-js) environments), use the `require` function:
 
   ```
   const chai = require('chai');
@@ -324,7 +323,7 @@ Jasmine
 
 #### What is an assertion in Chai.js?
 
-  An **assertion** in [Chai.js](../C/chai-js.md) is a statement that evaluates an expression or a value in your tests. It checks if that expression or value meets certain conditions, and if it doesn't, the assertion will fail, causing the test to fail. Assertions are the core component of [test suites](../T/test-suite.md), as they validate the behavior of the code under test.
+  An **assertion** in [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) is a statement that evaluates an expression or a value in your tests. It checks if that expression or value meets certain conditions, and if it doesn't, the assertion will fail, causing the test to fail. Assertions are the core component of [test suites](https://naodeng.com.cn/en/wiki/test-suite), as they validate the behavior of the code under test.
   Chai provides several assertion styles, but regardless of the style, an assertion typically has three parts:
 
   1. **Actual value** : The value you are testing, which comes from your code.
@@ -343,7 +342,7 @@ Jasmine
   expect([1, 2, 3]).to.include(2).and.to.have.lengthOf(3);
   ```
   Here, `.include(2)` checks if the array contains the number 2, and `.have.lengthOf(3)` checks if the array's length is 3. The `.and` chain is used to combine multiple assertions on the same subject.
-  Assertions are essential for verifying that your code behaves as expected and are a fundamental part of writing effective and reliable tests with [Chai.js](../C/chai-js.md).
+  Assertions are essential for verifying that your code behaves as expected and are a fundamental part of writing effective and reliable tests with [Chai.js](https://naodeng.com.cn/en/wiki/chai-js).
 
   1. **Actual value** : The value you are testing, which comes from your code.
   2. **Expected value** : The value you expect, which you define in your test.
@@ -351,7 +350,7 @@ Jasmine
 
 #### How do you write a basic assertion in Chai.js?
 
-  To write a basic assertion in [Chai.js](../C/chai-js.md), you can use any of its interfaces: `expect`, `should`, or `assert`. Here's an example using the `expect` interface:
+  To write a basic assertion in [Chai.js](https://naodeng.com.cn/en/wiki/chai-js), you can use any of its interfaces: `expect`, `should`, or `assert`. Here's an example using the `expect` interface:
 
   ```
   const expect = require('chai').expect;
@@ -363,7 +362,7 @@ Jasmine
     });
   });
   ```
-  In this example, the `expect` function is used to make an assertion about the result of `[1, 2, 3].indexOf(4)`. The `.to.equal(-1)` chain is the actual assertion, stating that the [expected result](../E/expected-result.md) should be `-1`.
+  In this example, the `expect` function is used to make an assertion about the result of `[1, 2, 3].indexOf(4)`. The `.to.equal(-1)` chain is the actual assertion, stating that the [expected result](https://naodeng.com.cn/en/wiki/expected-result) should be `-1`.
   For the `should` interface, the syntax would be slightly different:
 
   ```
@@ -392,9 +391,9 @@ Jasmine
 
 #### What are the different types of assertions available in Chai.js?
 
-  [Chai.js](../C/chai-js.md) offers three assertion styles: **should**, **expect**, and **assert**. Each style provides a variety of assertions to test different conditions:
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) offers three assertion styles: **should**, **expect**, and **assert**. Each style provides a variety of assertions to test different conditions:
   ### Should & Expect
-  These [BDD](../B/bdd.md) (Behavior-Driven Development) styles are similar in functionality but differ in syntax. They provide a chainable language to construct assertions.
+  These [BDD](https://naodeng.com.cn/en/wiki/bdd) (Behavior-Driven Development) styles are similar in functionality but differ in syntax. They provide a chainable language to construct assertions.
 
   - **.equal(value)** : Asserts strict equality (
     `===`
@@ -435,7 +434,7 @@ Jasmine
   - **.exist** : Asserts non-null and non-undefined.
   - **.empty** : Asserts empty array, string, or object.
   ### Assert
-  The TDD ([Test-Driven Development](../T/test-driven-development.md)) style uses a more traditional assertion approach without chainable language.
+  The TDD ([Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development)) style uses a more traditional assertion approach without chainable language.
 
   - **assert.equal(actual, expected)** : Asserts loose equality (
     `==`
@@ -562,7 +561,7 @@ Jasmine
 
 #### How do you assert that a function throws an error in Chai.js?
 
-  To assert that a function throws an error in [Chai.js](../C/chai-js.md), you can use the `throw` or `throws` method from the `expect` or `should` interface. Here's how you can do it with both interfaces:
+  To assert that a function throws an error in [Chai.js](https://naodeng.com.cn/en/wiki/chai-js), you can use the `throw` or `throws` method from the `expect` or `should` interface. Here's how you can do it with both interfaces:
   **Using the `expect` interface:**
 
   ```
@@ -597,7 +596,7 @@ Jasmine
 
 #### How do you assert deep equality in Chai.js?
 
-  To assert deep equality in [Chai.js](../C/chai-js.md), use the `.deep` chain followed by the `.equal` or `.eql` assertion. This will perform a deep comparison between the target and the expected objects, considering all nested properties.
+  To assert deep equality in [Chai.js](https://naodeng.com.cn/en/wiki/chai-js), use the `.deep` chain followed by the `.equal` or `.eql` assertion. This will perform a deep comparison between the target and the expected objects, considering all nested properties.
   Here's an example using the `expect` interface:
 
   ```
@@ -625,8 +624,8 @@ Jasmine
 
 #### What are Chai.js plugins?
 
-  [Chai.js](../C/chai-js.md) plugins extend the functionality of Chai's assertion library, allowing for more specialized or complex assertions tailored to specific testing needs. They integrate seamlessly with Chai's existing [API](../A/api.md), enriching it with additional methods and properties.
-  To use a [Chai.js](../C/chai-js.md) plugin, you typically require it after Chai and then use the `use` method to add it to your Chai [setup](../S/setup.md):
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) plugins extend the functionality of Chai's assertion library, allowing for more specialized or complex assertions tailored to specific testing needs. They integrate seamlessly with Chai's existing [API](https://naodeng.com.cn/en/wiki/api), enriching it with additional methods and properties.
+  To use a [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) plugin, you typically require it after Chai and then use the `use` method to add it to your Chai [setup](https://naodeng.com.cn/en/wiki/setup):
 
   ```
   const chai = require('chai');
@@ -639,7 +638,7 @@ Jasmine
   - `chai-as-promised` : Simplifies the process of working with promises in assertions.
   - `chai-dom` : Provides assertions for DOM elements, useful in browser or DOM-based testing.
   - `sinon-chai` : Offers assertions for Sinon.js spies, stubs, and mocks, integrating both libraries.
-  Creating a **custom [Chai.js](../C/chai-js.md) plugin** involves defining a module that exports a function. This function should accept the Chai instance and should use Chai's [API](../A/api.md) to add new methods or properties:
+  Creating a **custom [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) plugin** involves defining a module that exports a function. This function should accept the Chai instance and should use Chai's [API](https://naodeng.com.cn/en/wiki/api) to add new methods or properties:
 
   ```
   module.exports = function (chai, utils) {
@@ -649,7 +648,7 @@ Jasmine
     });
   };
   ```
-  Plugins can be particularly useful for adapting Chai to work with new frameworks, libraries, or specific project requirements, making them a powerful tool in a [test automation](../T/test-automation.md) engineer's arsenal.
+  Plugins can be particularly useful for adapting Chai to work with new frameworks, libraries, or specific project requirements, making them a powerful tool in a [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineer's arsenal.
 
   - `chai-http` : Enables HTTP assertions, making it easy to test web services.
   - `chai-as-promised` : Simplifies the process of working with promises in assertions.
@@ -658,7 +657,7 @@ Jasmine
 
 #### How do you use a Chai.js plugin?
 
-  To use a [Chai.js](../C/chai-js.md) plugin, follow these steps:
+  To use a [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) plugin, follow these steps:
 
   1. **Install** the plugin via npm or yarn, for example:
 
@@ -769,7 +768,7 @@ Jasmine
 
 #### What are some popular Chai.js plugins and what do they do?
 
-  [Chai.js](../C/chai-js.md) has a rich ecosystem of plugins that extend its core functionalities. Here are some popular ones:
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) has a rich ecosystem of plugins that extend its core functionalities. Here are some popular ones:
 
   - **chai-as-promised** : Simplifies working with promises. It allows you to deal with assertions on asynchronous operations in a more expressive manner.
 
@@ -874,7 +873,7 @@ Jasmine
 
 #### How do you create your own Chai.js plugin?
 
-  Creating your own [Chai.js](../C/chai-js.md) plugin involves extending Chai with new assertions or behaviors. Follow these steps:
+  Creating your own [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) plugin involves extending Chai with new assertions or behaviors. Follow these steps:
 
   1. **Initialize a new project** for your plugin with `npm init` and install Chai as a peer dependency.
   2. **Create a main file** for your plugin, e.g., `chai-myplugin.js`.
@@ -909,7 +908,7 @@ Jasmine
   });
   ```
 
-  1. **Test your plugin** thoroughly. Create [test cases](../T/test-case.md) using Mocha or another testing framework to ensure your assertions work as expected.
+  1. **Test your plugin** thoroughly. Create [test cases](https://naodeng.com.cn/en/wiki/test-case) using Mocha or another testing framework to ensure your assertions work as expected.
   2. **Document your plugin**. Clearly explain how to install and use your plugin, including examples of the assertions.
   3. **Publish your plugin** to npm to make it available for others. Update the `package.json` file with details about your plugin before publishing.
   To use your plugin, users will need to install it via npm and use `chai.use()` in their test files:
@@ -934,7 +933,7 @@ Jasmine
     `utils.addProperty`
     for new properties:
 
-  1. **Test your plugin** thoroughly. Create [test cases](../T/test-case.md) using Mocha or another testing framework to ensure your assertions work as expected.
+  1. **Test your plugin** thoroughly. Create [test cases](https://naodeng.com.cn/en/wiki/test-case) using Mocha or another testing framework to ensure your assertions work as expected.
   2. **Document your plugin**. Clearly explain how to install and use your plugin, including examples of the assertions.
   3. **Publish your plugin** to npm to make it available for others. Update the `package.json` file with details about your plugin before publishing.
 
@@ -942,8 +941,8 @@ Jasmine
 
 #### How do you use Chai.js with asynchronous code?
 
-  Using [Chai.js](../C/chai-js.md) with asynchronous code typically involves working with promises or async/await syntax. Chai provides the `chai-as-promised` plugin to handle assertions on promises seamlessly.
-  First, ensure `chai-as-promised` is installed and added to your Chai [setup](../S/setup.md):
+  Using [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) with asynchronous code typically involves working with promises or async/await syntax. Chai provides the `chai-as-promised` plugin to handle assertions on promises seamlessly.
+  First, ensure `chai-as-promised` is installed and added to your Chai [setup](https://naodeng.com.cn/en/wiki/setup):
 
   ```
   const chai = require('chai');
@@ -951,7 +950,7 @@ Jasmine
   chai.use(chaiAsPromised);
   const expect = chai.expect;
   ```
-  When dealing with promises, you can return the promise with the assertion to the [test runner](../T/test-runner.md), which will wait for the promise to resolve or reject:
+  When dealing with promises, you can return the promise with the assertion to the [test runner](https://naodeng.com.cn/en/wiki/test-runner), which will wait for the promise to resolve or reject:
 
   ```
   it('should eventually have a value of 42', function() {
@@ -980,7 +979,7 @@ Jasmine
 
 #### How do you use Chai.js with Promises?
 
-  Using **[Chai.js](../C/chai-js.md)** with promises involves leveraging the **chai-as-promised** plugin, which extends Chai for fluent promise assertions. First, ensure **chai-as-promised** is installed and then integrate it with Chai:
+  Using **[Chai.js](https://naodeng.com.cn/en/wiki/chai-js)** with promises involves leveraging the **chai-as-promised** plugin, which extends Chai for fluent promise assertions. First, ensure **chai-as-promised** is installed and then integrate it with Chai:
 
   ```
   const chai = require('chai');
@@ -1003,7 +1002,7 @@ Jasmine
   // Assertion for a promise that resolves before a timeout
   expect(asyncFunction()).to.eventually.equal('expected value').and.notify(done);
   ```
-  Remember to return the promise from your [test case](../T/test-case.md) or use the `done` callback to ensure the test waits for the promise resolution:
+  Remember to return the promise from your [test case](https://naodeng.com.cn/en/wiki/test-case) or use the `done` callback to ensure the test waits for the promise resolution:
 
   ```
   it('should resolve to the expected value', function() {
@@ -1014,11 +1013,11 @@ Jasmine
     expect(asyncFunction()).to.eventually.equal('expected value').notify(done);
   });
   ```
-  **chai-as-promised** supports chaining of additional assertions after `eventually` and integrates seamlessly with both **mocha** and other [test runners](../T/test-runner.md) that handle returned promises.
+  **chai-as-promised** supports chaining of additional assertions after `eventually` and integrates seamlessly with both **mocha** and other [test runners](https://naodeng.com.cn/en/wiki/test-runner) that handle returned promises.
 
 #### What is Chai.js's .should interface and how does it work?
 
-  [Chai.js](../C/chai-js.md)'s `.should` interface is a [BDD](../B/bdd.md) (Behavior-Driven Development) style assertion that extends each object with a `should` property to start a chain of assertions. This interface allows for more readable and expressive tests.
+  [Chai.js](https://naodeng.com.cn/en/wiki/chai-js)'s `.should` interface is a [BDD](https://naodeng.com.cn/en/wiki/bdd) (Behavior-Driven Development) style assertion that extends each object with a `should` property to start a chain of assertions. This interface allows for more readable and expressive tests.
   To use the `.should` interface, you first need to execute `chai.should()` to perform the necessary modifications to `Object.prototype`. Here's an example:
 
   ```
@@ -1029,7 +1028,7 @@ Jasmine
   number.should.equal(2);
   ```
   The `.should` interface works by adding a getter to `Object.prototype` that returns a `Should` assertion object. This object can then be used to chain further assertions to the value being tested. It's important to note that using `.should` modifies the `Object.prototype`, which might lead to unexpected behavior if your application relies on enumerating properties of objects.
-  Assertions with `.should` throw `AssertionError` when they fail, which can then be caught by the [test runner](../T/test-runner.md) to report the failure. The `.should` interface supports all the same assertions as Chai's `expect` and `assert` interfaces, providing a rich set of assertions like `.equal`, `.deep.equal`, `.have.property`, and many others.
+  Assertions with `.should` throw `AssertionError` when they fail, which can then be caught by the [test runner](https://naodeng.com.cn/en/wiki/test-runner) to report the failure. The `.should` interface supports all the same assertions as Chai's `expect` and `assert` interfaces, providing a rich set of assertions like `.equal`, `.deep.equal`, `.have.property`, and many others.
   When using `.should`, you can also take advantage of Chai's chainable language to enhance the readability of your tests:
 
   ```
@@ -1039,7 +1038,7 @@ Jasmine
 
 #### How do you customize Chai.js's assertion error messages?
 
-  Customizing [Chai.js](../C/chai-js.md) assertion error messages can enhance the readability and clarity of test results. To customize an error message, use the `.message` chainable method provided by Chai. This method allows you to specify a custom message that will be displayed if the assertion fails.
+  Customizing [Chai.js](https://naodeng.com.cn/en/wiki/chai-js) assertion error messages can enhance the readability and clarity of test results. To customize an error message, use the `.message` chainable method provided by Chai. This method allows you to specify a custom message that will be displayed if the assertion fails.
   Here's an example using the `expect` interface:
 
   ```

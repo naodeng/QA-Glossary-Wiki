@@ -1,6 +1,5 @@
 # SQL
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
   - [See also:](#see-also)
@@ -74,7 +73,7 @@ efficiently and effectively.
 
 ## Related Terms:
 
-- [Database](../D/database.md)
+- [Database](https://naodeng.com.cn/en/wiki/database)
 
 ### See also:
 
@@ -86,15 +85,15 @@ efficiently and effectively.
 
 #### What is SQL and why is it important?
 
-  [SQL](../S/sql.md), or **Structured Query Language**, is a standardized programming language used for managing and manipulating relational [databases](../D/database.md). It is important because it provides a systematic way to create, retrieve, update, and delete data from [databases](../D/database.md), which are integral to most software applications.
-  In the context of **software [test automation](../T/test-automation.md)**, [SQL](../S/sql.md) plays a crucial role in validating the state and integrity of data, which directly impacts the reliability of the application under test. [Test automation](../T/test-automation.md) engineers use [SQL](../S/sql.md) to:
+  [SQL](https://naodeng.com.cn/en/wiki/sql), or **Structured Query Language**, is a standardized programming language used for managing and manipulating relational [databases](https://naodeng.com.cn/en/wiki/database). It is important because it provides a systematic way to create, retrieve, update, and delete data from [databases](https://naodeng.com.cn/en/wiki/database), which are integral to most software applications.
+  In the context of **software [test automation](https://naodeng.com.cn/en/wiki/test-automation)**, [SQL](https://naodeng.com.cn/en/wiki/sql) plays a crucial role in validating the state and integrity of data, which directly impacts the reliability of the application under test. [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers use [SQL](https://naodeng.com.cn/en/wiki/sql) to:
 
   - Verify that data manipulation operations, such as inserts, updates, and deletions, have been performed correctly.
   - Set up and tear down test data, ensuring tests run in a known state.
   - Validate business logic that involves data retrieval and manipulation, ensuring the application behaves as expected.
   - Perform backend testing to ensure that the application interacts with the database correctly, including handling of transactions and concurrency.
   - Check data integrity and constraints to ensure that the database maintains a valid state throughout different test scenarios.
-  [SQL](../S/sql.md) is a critical skill for [test automation](../T/test-automation.md) engineers as it enables them to interact directly with the [database](../D/database.md), bypassing the user interface. This allows for more thorough testing of the application layers that interact with the [database](../D/database.md), and for the creation of more complex [test scenarios](../T/test-scenario.md) that might be difficult or time-consuming to replicate through the UI.
+  [SQL](https://naodeng.com.cn/en/wiki/sql) is a critical skill for [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers as it enables them to interact directly with the [database](https://naodeng.com.cn/en/wiki/database), bypassing the user interface. This allows for more thorough testing of the application layers that interact with the [database](https://naodeng.com.cn/en/wiki/database), and for the creation of more complex [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario) that might be difficult or time-consuming to replicate through the UI.
 
   - Verify that data manipulation operations, such as inserts, updates, and deletions, have been performed correctly.
   - Set up and tear down test data, ensuring tests run in a known state.
@@ -104,9 +103,9 @@ efficiently and effectively.
 
 #### What are the different types of SQL commands?
 
-  [SQL](../S/sql.md) commands can be broadly categorized into four types:
+  [SQL](https://naodeng.com.cn/en/wiki/sql) commands can be broadly categorized into four types:
 
-  1. **Data Definition Language (DDL)**: These commands define the structure of the [database](../D/database.md) and manipulate [database](../D/database.md) objects such as tables, indexes, and views.
+  1. **Data Definition Language (DDL)**: These commands define the structure of the [database](https://naodeng.com.cn/en/wiki/database) and manipulate [database](https://naodeng.com.cn/en/wiki/database) objects such as tables, indexes, and views.
     - `CREATE` : Creates new database objects.
     - `ALTER` : Modifies existing database objects.
     - `DROP` : Deletes database objects.
@@ -115,19 +114,19 @@ efficiently and effectively.
     - `ALTER` : Modifies existing database objects.
     - `DROP` : Deletes database objects.
     - `TRUNCATE` : Removes all records from a table, including all spaces allocated for the records.
-  2. **Data Manipulation Language (DML)**: These commands deal with the manipulation of data present in the [database](../D/database.md).
+  2. **Data Manipulation Language (DML)**: These commands deal with the manipulation of data present in the [database](https://naodeng.com.cn/en/wiki/database).
     - `INSERT` : Adds new data to a table.
     - `UPDATE` : Modifies existing data within a table.
     - `DELETE` : Removes data from a table.
     - `INSERT` : Adds new data to a table.
     - `UPDATE` : Modifies existing data within a table.
     - `DELETE` : Removes data from a table.
-  3. **Data Control Language (DCL)**: These commands are related to the rights, permissions, and other controls of the [database](../D/database.md) system.
+  3. **Data Control Language (DCL)**: These commands are related to the rights, permissions, and other controls of the [database](https://naodeng.com.cn/en/wiki/database) system.
     - `GRANT` : Gives user's access privileges to the database.
     - `REVOKE` : Withdraws user's access privileges given by using the GRANT command.
     - `GRANT` : Gives user's access privileges to the database.
     - `REVOKE` : Withdraws user's access privileges given by using the GRANT command.
-  4. **Transaction Control Language (TCL)**: These commands deal with the transaction operations within the [database](../D/database.md).
+  4. **Transaction Control Language (TCL)**: These commands deal with the transaction operations within the [database](https://naodeng.com.cn/en/wiki/database).
     - `COMMIT` : Saves all the transactions to the database.
     - `ROLLBACK` : Restores the database to the last committed state.
     - `SAVEPOINT` : Sets a savepoint within a transaction.
@@ -136,9 +135,9 @@ efficiently and effectively.
     - `ROLLBACK` : Restores the database to the last committed state.
     - `SAVEPOINT` : Sets a savepoint within a transaction.
     - `SET TRANSACTION` : Places a name on a transaction.
-  Understanding these commands is crucial for [database](../D/database.md) manipulation and management, which is often necessary in [test automation](../T/test-automation.md) to ensure the application interacts correctly with the [database](../D/database.md).
+  Understanding these commands is crucial for [database](https://naodeng.com.cn/en/wiki/database) manipulation and management, which is often necessary in [test automation](https://naodeng.com.cn/en/wiki/test-automation) to ensure the application interacts correctly with the [database](https://naodeng.com.cn/en/wiki/database).
 
-  1. **Data Definition Language (DDL)**: These commands define the structure of the [database](../D/database.md) and manipulate [database](../D/database.md) objects such as tables, indexes, and views.
+  1. **Data Definition Language (DDL)**: These commands define the structure of the [database](https://naodeng.com.cn/en/wiki/database) and manipulate [database](https://naodeng.com.cn/en/wiki/database) objects such as tables, indexes, and views.
     - `CREATE` : Creates new database objects.
     - `ALTER` : Modifies existing database objects.
     - `DROP` : Deletes database objects.
@@ -147,19 +146,19 @@ efficiently and effectively.
     - `ALTER` : Modifies existing database objects.
     - `DROP` : Deletes database objects.
     - `TRUNCATE` : Removes all records from a table, including all spaces allocated for the records.
-  2. **Data Manipulation Language (DML)**: These commands deal with the manipulation of data present in the [database](../D/database.md).
+  2. **Data Manipulation Language (DML)**: These commands deal with the manipulation of data present in the [database](https://naodeng.com.cn/en/wiki/database).
     - `INSERT` : Adds new data to a table.
     - `UPDATE` : Modifies existing data within a table.
     - `DELETE` : Removes data from a table.
     - `INSERT` : Adds new data to a table.
     - `UPDATE` : Modifies existing data within a table.
     - `DELETE` : Removes data from a table.
-  3. **Data Control Language (DCL)**: These commands are related to the rights, permissions, and other controls of the [database](../D/database.md) system.
+  3. **Data Control Language (DCL)**: These commands are related to the rights, permissions, and other controls of the [database](https://naodeng.com.cn/en/wiki/database) system.
     - `GRANT` : Gives user's access privileges to the database.
     - `REVOKE` : Withdraws user's access privileges given by using the GRANT command.
     - `GRANT` : Gives user's access privileges to the database.
     - `REVOKE` : Withdraws user's access privileges given by using the GRANT command.
-  4. **Transaction Control Language (TCL)**: These commands deal with the transaction operations within the [database](../D/database.md).
+  4. **Transaction Control Language (TCL)**: These commands deal with the transaction operations within the [database](https://naodeng.com.cn/en/wiki/database).
     - `COMMIT` : Saves all the transactions to the database.
     - `ROLLBACK` : Restores the database to the last committed state.
     - `SAVEPOINT` : Sets a savepoint within a transaction.
@@ -171,8 +170,8 @@ efficiently and effectively.
 
 #### What is the difference between SQL and NoSQL?
 
-  [SQL](../S/sql.md) (Structured Query Language) [databases](../D/database.md), also known as **relational [databases](../D/database.md)**, store data in tables with predefined schemas, using rows and columns. They excel in **ACID transactions** (Atomicity, Consistency, Isolation, Durability) and support complex queries with **JOIN operations**.
-  NoSQL (Not Only [SQL](../S/sql.md)) [databases](../D/database.md) are designed for distributed data stores with **horizontal scaling** in mind. They do not require a fixed schema and can store unstructured data like documents, key-value pairs, wide-column stores, or graphs. NoSQL [databases](../D/database.md) are often chosen for their ability to handle **large volumes of data** and **high traffic loads** with **flexible data models**.
+  [SQL](https://naodeng.com.cn/en/wiki/sql) (Structured Query Language) [databases](https://naodeng.com.cn/en/wiki/database), also known as **relational [databases](https://naodeng.com.cn/en/wiki/database)**, store data in tables with predefined schemas, using rows and columns. They excel in **ACID transactions** (Atomicity, Consistency, Isolation, Durability) and support complex queries with **JOIN operations**.
+  NoSQL (Not Only [SQL](https://naodeng.com.cn/en/wiki/sql)) [databases](https://naodeng.com.cn/en/wiki/database) are designed for distributed data stores with **horizontal scaling** in mind. They do not require a fixed schema and can store unstructured data like documents, key-value pairs, wide-column stores, or graphs. NoSQL [databases](https://naodeng.com.cn/en/wiki/database) are often chosen for their ability to handle **large volumes of data** and **high traffic loads** with **flexible data models**.
   The key differences are:
 
   - **Schema flexibility** : NoSQL databases allow for a flexible, dynamic schema, while SQL databases require a predefined schema.
@@ -188,14 +187,14 @@ efficiently and effectively.
 
 #### What is a relational database in SQL?
 
-  A **relational [database](../D/database.md)** is a collection of data items organized as a set of formally described tables from which data can be accessed or reassembled in various ways without having to reorganize the [database](../D/database.md) tables. The relational model means that the logical data structures—the data tables, views, and indexes—are separate from the physical storage structures. This model is based on **first-order predicate logic** and its core idea is to describe a [database](../D/database.md) as a collection of predicates over a finite set of predicate variables, describing constraints on the possible values and combinations of values.
-  The key element of the relational [database](../D/database.md) is the **table** (or relation), where data is stored in rows and columns. Each table has a unique primary key, which identifies the rows. Tables can relate to each other through **foreign keys**, which are fields that reference a primary key in another table.
-  Relational [databases](../D/database.md) use **Structured Query Language ([SQL](../S/sql.md))** for defining and manipulating data. This is powerful because it allows for data to be easily accessed and it is also used to maintain the integrity of the [database](../D/database.md) using constraints (e.g., UNIQUE, NOT NULL, CHECK, FOREIGN KEY).
-  In the context of [test automation](../T/test-automation.md), relational [databases](../D/database.md) are often the backend of an application, and understanding their structure is crucial for validating that the application is storing and retrieving data correctly. [Test automation](../T/test-automation.md) engineers can write [SQL](../S/sql.md) queries to extract data and use it to verify application behavior or to set up test preconditions.
+  A **relational [database](https://naodeng.com.cn/en/wiki/database)** is a collection of data items organized as a set of formally described tables from which data can be accessed or reassembled in various ways without having to reorganize the [database](https://naodeng.com.cn/en/wiki/database) tables. The relational model means that the logical data structures—the data tables, views, and indexes—are separate from the physical storage structures. This model is based on **first-order predicate logic** and its core idea is to describe a [database](https://naodeng.com.cn/en/wiki/database) as a collection of predicates over a finite set of predicate variables, describing constraints on the possible values and combinations of values.
+  The key element of the relational [database](https://naodeng.com.cn/en/wiki/database) is the **table** (or relation), where data is stored in rows and columns. Each table has a unique primary key, which identifies the rows. Tables can relate to each other through **foreign keys**, which are fields that reference a primary key in another table.
+  Relational [databases](https://naodeng.com.cn/en/wiki/database) use **Structured Query Language ([SQL](https://naodeng.com.cn/en/wiki/sql))** for defining and manipulating data. This is powerful because it allows for data to be easily accessed and it is also used to maintain the integrity of the [database](https://naodeng.com.cn/en/wiki/database) using constraints (e.g., UNIQUE, NOT NULL, CHECK, FOREIGN KEY).
+  In the context of [test automation](https://naodeng.com.cn/en/wiki/test-automation), relational [databases](https://naodeng.com.cn/en/wiki/database) are often the backend of an application, and understanding their structure is crucial for validating that the application is storing and retrieving data correctly. [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can write [SQL](https://naodeng.com.cn/en/wiki/sql) queries to extract data and use it to verify application behavior or to set up test preconditions.
 
 #### What are the basic operations that a simple SQL query does?
 
-  Basic operations performed by a simple [SQL](../S/sql.md) query include:
+  Basic operations performed by a simple [SQL](https://naodeng.com.cn/en/wiki/sql) query include:
 
   - **Selecting**
     data with
@@ -291,7 +290,7 @@ efficiently and effectively.
     ```
     DELETE FROM table_name WHERE condition;
     ```
-  These operations are foundational for interacting with and manipulating data within a [database](../D/database.md).
+  These operations are foundational for interacting with and manipulating data within a [database](https://naodeng.com.cn/en/wiki/database).
 
   - **Selecting**
     data with
@@ -392,7 +391,7 @@ efficiently and effectively.
 
 #### What is the syntax for creating a table in SQL?
 
-  To create a table in [SQL](../S/sql.md), use the `CREATE TABLE` statement followed by the table name and a list of columns with their respective data types and constraints within parentheses. Each column definition is separated by a comma. Here's the basic syntax:
+  To create a table in [SQL](https://naodeng.com.cn/en/wiki/sql), use the `CREATE TABLE` statement followed by the table name and a list of columns with their respective data types and constraints within parentheses. Each column definition is separated by a comma. Here's the basic syntax:
 
   ```
   CREATE TABLE table_name (
@@ -402,7 +401,7 @@ efficiently and effectively.
       ...
   );
   ```
-  For example, to create a table named `users` with three columns—`id`, `name`, and `email`—where `id` is an integer that auto-increments and serves as the primary key, `name` is a variable character string with a maximum length of 50 characters, and `email` is a variable character string with a maximum length of 100 characters, the [SQL](../S/sql.md) statement would be:
+  For example, to create a table named `users` with three columns—`id`, `name`, and `email`—where `id` is an integer that auto-increments and serves as the primary key, `name` is a variable character string with a maximum length of 50 characters, and `email` is a variable character string with a maximum length of 100 characters, the [SQL](https://naodeng.com.cn/en/wiki/sql) statement would be:
 
   ```
   CREATE TABLE users (
@@ -415,7 +414,7 @@ efficiently and effectively.
 
 #### How do you insert data into a table in SQL?
 
-  To insert data into a table in [SQL](../S/sql.md), use the `INSERT INTO` statement. Specify the table and then define the columns and values you want to insert. If you're inserting values for all columns in the table, you can omit the column names and only provide the values in the same order as the columns in the table schema.
+  To insert data into a table in [SQL](https://naodeng.com.cn/en/wiki/sql), use the `INSERT INTO` statement. Specify the table and then define the columns and values you want to insert. If you're inserting values for all columns in the table, you can omit the column names and only provide the values in the same order as the columns in the table schema.
   Here's the basic syntax for inserting data into a table:
 
   ```
@@ -436,11 +435,11 @@ efficiently and effectively.
   (1, 'John Doe', 'john.doe@example.com'),
   (2, 'Jane Smith', 'jane.smith@example.com');
   ```
-  Remember to use single quotes for string values and to escape any special characters to prevent [SQL](../S/sql.md) injection attacks. For numerical values, quotes are not necessary. Always validate and sanitize input when using dynamic data to protect against malicious [SQL](../S/sql.md) injection.
+  Remember to use single quotes for string values and to escape any special characters to prevent [SQL](https://naodeng.com.cn/en/wiki/sql) injection attacks. For numerical values, quotes are not necessary. Always validate and sanitize input when using dynamic data to protect against malicious [SQL](https://naodeng.com.cn/en/wiki/sql) injection.
 
 #### How do you update data in a table in SQL?
 
-  To update data in a [SQL](../S/sql.md) table, use the `UPDATE` statement. Specify the table and set the new values for one or more columns, often using a `WHERE` clause to target specific rows. Here's the basic syntax:
+  To update data in a [SQL](https://naodeng.com.cn/en/wiki/sql) table, use the `UPDATE` statement. Specify the table and set the new values for one or more columns, often using a `WHERE` clause to target specific rows. Here's the basic syntax:
 
   ```
   UPDATE table_name
@@ -476,7 +475,7 @@ efficiently and effectively.
     statement within the
     `SET`
     clause.
-  **Note**: In [test automation](../T/test-automation.md), ensure your [test data](../T/test-data.md) is backed up or can be easily restored before running update queries, as they modify the data state.
+  **Note**: In [test automation](https://naodeng.com.cn/en/wiki/test-automation), ensure your [test data](https://naodeng.com.cn/en/wiki/test-data) is backed up or can be easily restored before running update queries, as they modify the data state.
 
   - Always use a
     `WHERE`
@@ -501,25 +500,25 @@ efficiently and effectively.
 
 #### What is the purpose of the SELECT statement in SQL?
 
-  The `SELECT` statement in [SQL](../S/sql.md) is used to **retrieve data** from one or more tables in a [database](../D/database.md). It allows you to specify the exact columns you want to fetch, along with any conditions for selecting rows. The `SELECT` statement is fundamental for [test automation](../T/test-automation.md) engineers to **validate the state of the data**, ensuring that the application under test is manipulating the data correctly.
+  The `SELECT` statement in [SQL](https://naodeng.com.cn/en/wiki/sql) is used to **retrieve data** from one or more tables in a [database](https://naodeng.com.cn/en/wiki/database). It allows you to specify the exact columns you want to fetch, along with any conditions for selecting rows. The `SELECT` statement is fundamental for [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers to **validate the state of the data**, ensuring that the application under test is manipulating the data correctly.
   Here's a basic example of a `SELECT` statement:
 
   ```
   SELECT column1, column2 FROM table_name WHERE condition;
   ```
-  In [test automation](../T/test-automation.md), you might use `SELECT` to:
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), you might use `SELECT` to:
 
   - Verify the insertion of a new record.
   - Check updates to existing records.
   - Confirm the deletion of records.
   - Validate business logic by checking if the data meets certain conditions.
   - Extract data to be used as input for automated test cases.
-  For instance, after a [test case](../T/test-case.md) that inserts a record, you might use:
+  For instance, after a [test case](https://naodeng.com.cn/en/wiki/test-case) that inserts a record, you might use:
 
   ```
   SELECT * FROM users WHERE username = 'testuser';
   ```
-  This query checks if 'testuser' was successfully added to the `users` table. The `SELECT` statement is versatile and can be combined with other [SQL](../S/sql.md) clauses and functions to perform complex data validations, making it an indispensable tool for backend testing.
+  This query checks if 'testuser' was successfully added to the `users` table. The `SELECT` statement is versatile and can be combined with other [SQL](https://naodeng.com.cn/en/wiki/sql) clauses and functions to perform complex data validations, making it an indispensable tool for backend testing.
 
   - Verify the insertion of a new record.
   - Check updates to existing records.
@@ -529,7 +528,7 @@ efficiently and effectively.
 
 #### How do you delete data from a table in SQL?
 
-  To **delete data from a table** in [SQL](../S/sql.md), use the `DELETE` statement. Specify the table and the condition for which rows should be deleted using the `WHERE` clause. Without a `WHERE` clause, all rows will be removed.
+  To **delete data from a table** in [SQL](https://naodeng.com.cn/en/wiki/sql), use the `DELETE` statement. Specify the table and the condition for which rows should be deleted using the `WHERE` clause. Without a `WHERE` clause, all rows will be removed.
   Here's the basic syntax:
 
   ```
@@ -541,7 +540,7 @@ efficiently and effectively.
   DELETE FROM Employees WHERE id = 10;
   ```
   **Caution**: Omitting the `WHERE` clause will delete all records in the table, which can't be undone without a backup.
-  For [test automation](../T/test-automation.md), you might delete [test data](../T/test-data.md) after a test run:
+  For [test automation](https://naodeng.com.cn/en/wiki/test-automation), you might delete [test data](https://naodeng.com.cn/en/wiki/test-data) after a test run:
 
   ```
   DELETE FROM Test_Results WHERE test_date < '2023-01-01';
@@ -550,7 +549,7 @@ efficiently and effectively.
 
 #### What is the difference between the WHERE and HAVING clauses in SQL?
 
-  The `WHERE` and `HAVING` clauses in [SQL](../S/sql.md) are both used to filter records, but they serve different purposes and operate at different stages of the query processing.
+  The `WHERE` and `HAVING` clauses in [SQL](https://naodeng.com.cn/en/wiki/sql) are both used to filter records, but they serve different purposes and operate at different stages of the query processing.
 
   - **WHERE** : This clause is used to filter records
     **before**
@@ -606,7 +605,7 @@ efficiently and effectively.
 
 #### What are SQL Joins and what are the different types of Joins in SQL?
 
-  [SQL](../S/sql.md) joins are used to combine rows from two or more tables, based on a related column between them. There are several types of joins:
+  [SQL](https://naodeng.com.cn/en/wiki/sql) joins are used to combine rows from two or more tables, based on a related column between them. There are several types of joins:
 
   - **INNER JOIN** : Returns records that have matching values in both tables.
 
@@ -654,7 +653,7 @@ efficiently and effectively.
   INNER JOIN table1 T2
   ON T1.common_field = T2.common_field;
   ```
-  Understanding and utilizing these joins is crucial for querying complex data sets and validating data relationships during [software testing](../S/software-testing.md).
+  Understanding and utilizing these joins is crucial for querying complex data sets and validating data relationships during [software testing](https://naodeng.com.cn/en/wiki/software-testing).
 
   - **INNER JOIN** : Returns records that have matching values in both tables.
   - **LEFT (OUTER) JOIN** : Returns all records from the left table, and the matched records from the right table. If there is no match, the result is NULL on the right side.
@@ -665,7 +664,7 @@ efficiently and effectively.
 
 #### What are SQL Views and how are they used?
 
-  [SQL](../S/sql.md) Views are virtual tables representing a subset of data from one or more tables. They are created using the `CREATE VIEW` statement and can encapsulate complex queries with joins, filters, and aggregations to simplify data access.
+  [SQL](https://naodeng.com.cn/en/wiki/sql) Views are virtual tables representing a subset of data from one or more tables. They are created using the `CREATE VIEW` statement and can encapsulate complex queries with joins, filters, and aggregations to simplify data access.
   Views are used to:
 
   - **Restrict access to data** : By providing a specific view of the data, sensitive information can be hidden from certain users.
@@ -694,9 +693,9 @@ efficiently and effectively.
 
 #### What are SQL Indexes and why are they important?
 
-  [SQL](../S/sql.md) indexes are special lookup tables that the [database](../D/database.md) search engine can use to speed up data retrieval. Simply put, an index in [SQL](../S/sql.md) is used to **quickly locate and access the data** in a [database](../D/database.md) table. Indexes are particularly important for improving the performance of **SELECT** queries and are also beneficial when you have **WHERE** clauses that filter sorted data.
-  An index is created on one or more columns of a table. When an index is created, it sorts the values of the specified columns and stores them in a data structure, typically a B-tree or a hash table. This means that when a query is executed, the [database](../D/database.md) can use the index to find data quickly instead of scanning the entire table, which can be time-consuming especially with large tables.
-  For [test automation](../T/test-automation.md) engineers, understanding indexes is crucial because:
+  [SQL](https://naodeng.com.cn/en/wiki/sql) indexes are special lookup tables that the [database](https://naodeng.com.cn/en/wiki/database) search engine can use to speed up data retrieval. Simply put, an index in [SQL](https://naodeng.com.cn/en/wiki/sql) is used to **quickly locate and access the data** in a [database](https://naodeng.com.cn/en/wiki/database) table. Indexes are particularly important for improving the performance of **SELECT** queries and are also beneficial when you have **WHERE** clauses that filter sorted data.
+  An index is created on one or more columns of a table. When an index is created, it sorts the values of the specified columns and stores them in a data structure, typically a B-tree or a hash table. This means that when a query is executed, the [database](https://naodeng.com.cn/en/wiki/database) can use the index to find data quickly instead of scanning the entire table, which can be time-consuming especially with large tables.
+  For [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers, understanding indexes is crucial because:
 
   - They can significantly
     **reduce the time**
@@ -706,7 +705,7 @@ efficiently and effectively.
   - They are essential for writing efficient SQL queries in tests, which can
     **reduce the load**
     on the database and minimize the risk of timeouts or slow test execution.
-  However, it's important to note that while indexes can improve read performance, they can also **slow down write operations** (INSERT, UPDATE, DELETE) because the index has to be updated whenever the data in the indexed columns is modified. Therefore, careful consideration must be given to determine which columns to index, especially in a frequently updated [database](../D/database.md).
+  However, it's important to note that while indexes can improve read performance, they can also **slow down write operations** (INSERT, UPDATE, DELETE) because the index has to be updated whenever the data in the indexed columns is modified. Therefore, careful consideration must be given to determine which columns to index, especially in a frequently updated [database](https://naodeng.com.cn/en/wiki/database).
 
   - They can significantly
     **reduce the time**
@@ -719,7 +718,7 @@ efficiently and effectively.
 
 #### What are SQL Triggers and how are they used?
 
-  [SQL](../S/sql.md) Triggers are special types of stored procedures that automatically execute or fire when a specified event occurs in the [database](../D/database.md), such as `INSERT`, `UPDATE`, or `DELETE` operations on a table. They are used to enforce business rules, maintain data integrity, and manage changes in [database](../D/database.md) state without manual intervention.
+  [SQL](https://naodeng.com.cn/en/wiki/sql) Triggers are special types of stored procedures that automatically execute or fire when a specified event occurs in the [database](https://naodeng.com.cn/en/wiki/database), such as `INSERT`, `UPDATE`, or `DELETE` operations on a table. They are used to enforce business rules, maintain data integrity, and manage changes in [database](https://naodeng.com.cn/en/wiki/database) state without manual intervention.
   Triggers can be defined to execute before or after the triggering event. For example:
 
   - **BEFORE triggers** : Perform a task before a data row is inserted, updated, or deleted.
@@ -735,25 +734,25 @@ efficiently and effectively.
      VALUES ('UPDATE', 'Employees', CURRENT_USER(), NOW());
   END;
   ```
-  In [test automation](../T/test-automation.md), triggers can be used to:
+  In [test automation](https://naodeng.com.cn/en/wiki/test-automation), triggers can be used to:
 
   - **Verify business logic** : Ensure that business rules are enforced by the trigger during test cases.
   - **Data validation** : Check if the trigger maintains data integrity by preventing invalid data operations.
-  - **[Performance testing](../P/performance-testing.md)** : Assess the impact of triggers on database performance.
-  - **[Regression testing](../R/regression-testing.md)** : Confirm that new changes do not break existing triggers.
-  Triggers should be used judiciously as they can introduce complexity and affect performance. [Test automation](../T/test-automation.md) engineers must ensure that triggers work as expected and do not introduce unintended side effects.
+  - **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** : Assess the impact of triggers on database performance.
+  - **[Regression testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Confirm that new changes do not break existing triggers.
+  Triggers should be used judiciously as they can introduce complexity and affect performance. [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers must ensure that triggers work as expected and do not introduce unintended side effects.
 
   - **BEFORE triggers** : Perform a task before a data row is inserted, updated, or deleted.
   - **AFTER triggers** : Execute after the data modification is completed.
   - **Verify business logic** : Ensure that business rules are enforced by the trigger during test cases.
   - **Data validation** : Check if the trigger maintains data integrity by preventing invalid data operations.
-  - **[Performance testing](../P/performance-testing.md)** : Assess the impact of triggers on database performance.
-  - **[Regression testing](../R/regression-testing.md)** : Confirm that new changes do not break existing triggers.
+  - **[Performance testing](https://naodeng.com.cn/en/wiki/performance-testing)** : Assess the impact of triggers on database performance.
+  - **[Regression testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Confirm that new changes do not break existing triggers.
 
 #### What is SQL Injection and how can it be prevented?
 
-  [SQL](../S/sql.md) Injection is a type of security vulnerability where an attacker can manipulate a [SQL](../S/sql.md) query by injecting malicious [SQL](../S/sql.md) code through an application's input data. This can result in unauthorized access to or manipulation of [database](../D/database.md) data.
-  To prevent [SQL](../S/sql.md) Injection:
+  [SQL](https://naodeng.com.cn/en/wiki/sql) Injection is a type of security vulnerability where an attacker can manipulate a [SQL](https://naodeng.com.cn/en/wiki/sql) query by injecting malicious [SQL](https://naodeng.com.cn/en/wiki/sql) code through an application's input data. This can result in unauthorized access to or manipulation of [database](https://naodeng.com.cn/en/wiki/database) data.
+  To prevent [SQL](https://naodeng.com.cn/en/wiki/sql) Injection:
 
   - **Use Prepared Statements (Parameterized Queries)**: They enforce a clear separation between the code and the data. For example, in Java, you can use `PreparedStatement` objects.
 
@@ -764,14 +763,14 @@ efficiently and effectively.
     ps.setString(2, password);
     ```
 
-  - **Employ Stored Procedures**: They encapsulate the [SQL](../S/sql.md) statements and treat all input as data rather than executable code.
+  - **Employ Stored Procedures**: They encapsulate the [SQL](https://naodeng.com.cn/en/wiki/sql) statements and treat all input as data rather than executable code.
   - **Validate Input**: Rigorously validate user inputs for type, length, format, and range. Use regular expressions or validation libraries.
-  - **Escape User Input**: If you must include user input within [SQL](../S/sql.md) queries, make sure to escape special characters. However, this is less secure than prepared statements and should be avoided when possible.
-  - **Use ORM Libraries**: Object-Relational Mapping (ORM) libraries like Hibernate or Entity Framework can abstract [SQL](../S/sql.md) queries and use their own methods to prevent injection.
-  - **Implement Least Privilege**: Restrict [database](../D/database.md) user permissions so that if an injection occurs, the potential damage is minimized.
-  - **Keep Software Updated**: Ensure that your [database](../D/database.md) management system (DBMS) and any related software are up-to-date with the latest security patches.
-  - **Use Web Application Firewalls**: They can help to detect and block [SQL](../S/sql.md) Injection attacks.
-  - **[Security Testing](../S/security-testing.md)**: Regularly test your application for [SQL](../S/sql.md) Injection vulnerabilities using tools like SQLMap or by performing [penetration testing](../P/penetration-testing.md).
+  - **Escape User Input**: If you must include user input within [SQL](https://naodeng.com.cn/en/wiki/sql) queries, make sure to escape special characters. However, this is less secure than prepared statements and should be avoided when possible.
+  - **Use ORM Libraries**: Object-Relational Mapping (ORM) libraries like Hibernate or Entity Framework can abstract [SQL](https://naodeng.com.cn/en/wiki/sql) queries and use their own methods to prevent injection.
+  - **Implement Least Privilege**: Restrict [database](https://naodeng.com.cn/en/wiki/database) user permissions so that if an injection occurs, the potential damage is minimized.
+  - **Keep Software Updated**: Ensure that your [database](https://naodeng.com.cn/en/wiki/database) management system (DBMS) and any related software are up-to-date with the latest security patches.
+  - **Use Web Application Firewalls**: They can help to detect and block [SQL](https://naodeng.com.cn/en/wiki/sql) Injection attacks.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Regularly test your application for [SQL](https://naodeng.com.cn/en/wiki/sql) Injection vulnerabilities using tools like SQLMap or by performing [penetration testing](https://naodeng.com.cn/en/wiki/penetration-testing).
   - **Use Prepared Statements (Parameterized Queries)**: They enforce a clear separation between the code and the data. For example, in Java, you can use `PreparedStatement` objects.
 
     ```
@@ -781,27 +780,27 @@ efficiently and effectively.
     ps.setString(2, password);
     ```
 
-  - **Employ Stored Procedures**: They encapsulate the [SQL](../S/sql.md) statements and treat all input as data rather than executable code.
+  - **Employ Stored Procedures**: They encapsulate the [SQL](https://naodeng.com.cn/en/wiki/sql) statements and treat all input as data rather than executable code.
   - **Validate Input**: Rigorously validate user inputs for type, length, format, and range. Use regular expressions or validation libraries.
-  - **Escape User Input**: If you must include user input within [SQL](../S/sql.md) queries, make sure to escape special characters. However, this is less secure than prepared statements and should be avoided when possible.
-  - **Use ORM Libraries**: Object-Relational Mapping (ORM) libraries like Hibernate or Entity Framework can abstract [SQL](../S/sql.md) queries and use their own methods to prevent injection.
-  - **Implement Least Privilege**: Restrict [database](../D/database.md) user permissions so that if an injection occurs, the potential damage is minimized.
-  - **Keep Software Updated**: Ensure that your [database](../D/database.md) management system (DBMS) and any related software are up-to-date with the latest security patches.
-  - **Use Web Application Firewalls**: They can help to detect and block [SQL](../S/sql.md) Injection attacks.
-  - **[Security Testing](../S/security-testing.md)**: Regularly test your application for [SQL](../S/sql.md) Injection vulnerabilities using tools like SQLMap or by performing [penetration testing](../P/penetration-testing.md).
+  - **Escape User Input**: If you must include user input within [SQL](https://naodeng.com.cn/en/wiki/sql) queries, make sure to escape special characters. However, this is less secure than prepared statements and should be avoided when possible.
+  - **Use ORM Libraries**: Object-Relational Mapping (ORM) libraries like Hibernate or Entity Framework can abstract [SQL](https://naodeng.com.cn/en/wiki/sql) queries and use their own methods to prevent injection.
+  - **Implement Least Privilege**: Restrict [database](https://naodeng.com.cn/en/wiki/database) user permissions so that if an injection occurs, the potential damage is minimized.
+  - **Keep Software Updated**: Ensure that your [database](https://naodeng.com.cn/en/wiki/database) management system (DBMS) and any related software are up-to-date with the latest security patches.
+  - **Use Web Application Firewalls**: They can help to detect and block [SQL](https://naodeng.com.cn/en/wiki/sql) Injection attacks.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Regularly test your application for [SQL](https://naodeng.com.cn/en/wiki/sql) Injection vulnerabilities using tools like SQLMap or by performing [penetration testing](https://naodeng.com.cn/en/wiki/penetration-testing).
 
 ### SQL for Testing
 
 #### How is SQL used in software testing?
 
-  [SQL](../S/sql.md) is integral to **software [test automation](../T/test-automation.md)** for validating the state and integrity of data within relational [databases](../D/database.md). It enables testers to:
+  [SQL](https://naodeng.com.cn/en/wiki/sql) is integral to **software [test automation](https://naodeng.com.cn/en/wiki/test-automation)** for validating the state and integrity of data within relational [databases](https://naodeng.com.cn/en/wiki/database). It enables testers to:
 
   - **Verify outcomes**
     of test cases by executing
     `SELECT`
     queries to check if data manipulations lead to expected results.
 
-  - **Set up and tear down [test data](../T/test-data.md)**
+  - **Set up and tear down [test data](https://naodeng.com.cn/en/wiki/test-data)**
     using
     `INSERT`
     ,
@@ -810,7 +809,7 @@ efficiently and effectively.
     `DELETE`
     commands, ensuring tests run in a controlled environment.
 
-  - **Test [database](../D/database.md) functions, stored procedures, and triggers**
+  - **Test [database](https://naodeng.com.cn/en/wiki/database) functions, stored procedures, and triggers**
     by invoking them and assessing their effects on the data.
 
   - **Validate business logic**
@@ -832,14 +831,14 @@ efficiently and effectively.
 
   - **Assess performance**
     of queries and database operations, identifying potential bottlenecks or optimizations.
-  Automated [test scripts](../T/test-script.md) often include [SQL](../S/sql.md) queries to perform these tasks, and results are compared against expected outcomes to determine test pass or fail status. [SQL](../S/sql.md)'s role in [test automation](../T/test-automation.md) is therefore pivotal for backend testing, ensuring the application behaves correctly in conjunction with the [database](../D/database.md) layer.
+  Automated [test scripts](https://naodeng.com.cn/en/wiki/test-script) often include [SQL](https://naodeng.com.cn/en/wiki/sql) queries to perform these tasks, and results are compared against expected outcomes to determine test pass or fail status. [SQL](https://naodeng.com.cn/en/wiki/sql)'s role in [test automation](https://naodeng.com.cn/en/wiki/test-automation) is therefore pivotal for backend testing, ensuring the application behaves correctly in conjunction with the [database](https://naodeng.com.cn/en/wiki/database) layer.
 
   - **Verify outcomes**
     of test cases by executing
     `SELECT`
     queries to check if data manipulations lead to expected results.
 
-  - **Set up and tear down [test data](../T/test-data.md)**
+  - **Set up and tear down [test data](https://naodeng.com.cn/en/wiki/test-data)**
     using
     `INSERT`
     ,
@@ -848,7 +847,7 @@ efficiently and effectively.
     `DELETE`
     commands, ensuring tests run in a controlled environment.
 
-  - **Test [database](../D/database.md) functions, stored procedures, and triggers**
+  - **Test [database](https://naodeng.com.cn/en/wiki/database) functions, stored procedures, and triggers**
     by invoking them and assessing their effects on the data.
 
   - **Validate business logic**
@@ -873,8 +872,8 @@ efficiently and effectively.
 
 #### How can SQL queries be used to validate data?
 
-  [SQL](../S/sql.md) queries can be instrumental in **validating data** as part of software [test automation](../T/test-automation.md). By executing specific queries, testers can verify that data manipulation operations, such as inserts, updates, and deletions, have been performed correctly.
-  For **data integrity checks**, a `SELECT` statement can be used to retrieve data and ensure it matches [expected results](../E/expected-result.md). For example, after an automated [test case](../T/test-case.md) inserts a record, a query can confirm the data is present:
+  [SQL](https://naodeng.com.cn/en/wiki/sql) queries can be instrumental in **validating data** as part of software [test automation](https://naodeng.com.cn/en/wiki/test-automation). By executing specific queries, testers can verify that data manipulation operations, such as inserts, updates, and deletions, have been performed correctly.
+  For **data integrity checks**, a `SELECT` statement can be used to retrieve data and ensure it matches [expected results](https://naodeng.com.cn/en/wiki/expected-result). For example, after an automated [test case](https://naodeng.com.cn/en/wiki/test-case) inserts a record, a query can confirm the data is present:
 
   ```
   SELECT * FROM users WHERE username = 'testuser';
@@ -904,19 +903,19 @@ efficiently and effectively.
   SELECT balance FROM account_balance WHERE account_id = 1;
   ROLLBACK;
   ```
-  Automated tests can execute these queries and compare the results against expected outcomes, flagging any discrepancies for further investigation. This approach ensures that the [database](../D/database.md) behaves as intended, maintaining data quality and application reliability.
+  Automated tests can execute these queries and compare the results against expected outcomes, flagging any discrepancies for further investigation. This approach ensures that the [database](https://naodeng.com.cn/en/wiki/database) behaves as intended, maintaining data quality and application reliability.
 
 #### What is the role of SQL in backend testing?
 
-  In backend testing, [SQL](../S/sql.md) plays a crucial role in **validating** and **manipulating** data within the [database](../D/database.md). [Test automation](../T/test-automation.md) engineers use [SQL](../S/sql.md) to:
+  In backend testing, [SQL](https://naodeng.com.cn/en/wiki/sql) plays a crucial role in **validating** and **manipulating** data within the [database](https://naodeng.com.cn/en/wiki/database). [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers use [SQL](https://naodeng.com.cn/en/wiki/sql) to:
 
   - **Verify data integrity**
     by executing queries that check if data is stored, updated, or deleted correctly after various operations.
 
-  - **Set up and tear down [test data](../T/test-data.md)**
+  - **Set up and tear down [test data](https://naodeng.com.cn/en/wiki/test-data)**
     by inserting, updating, or removing data to create the necessary preconditions for tests or to clean up after tests are completed.
 
-  - **Test [database](../D/database.md) functions**
+  - **Test [database](https://naodeng.com.cn/en/wiki/database) functions**
     , stored procedures, and triggers to ensure they work as expected when they manipulate data.
 
   - **Check business logic**
@@ -927,20 +926,20 @@ efficiently and effectively.
 
   - **Assess performance**
     by executing queries that are expected to return large data sets or that are particularly complex, to ensure they run within acceptable time frames.
-  [SQL](../S/sql.md) queries are integrated into [test scripts](../T/test-script.md) or test harnesses to automate these checks. For example, after a web service call that should modify data, a subsequent [SQL](../S/sql.md) query might be run to confirm the change:
+  [SQL](https://naodeng.com.cn/en/wiki/sql) queries are integrated into [test scripts](https://naodeng.com.cn/en/wiki/test-script) or test harnesses to automate these checks. For example, after a web service call that should modify data, a subsequent [SQL](https://naodeng.com.cn/en/wiki/sql) query might be run to confirm the change:
 
   ```
   SELECT * FROM Orders WHERE OrderID = 1234;
   ```
-  This query would check if order `1234` has the expected values after the operation. By automating such [SQL](../S/sql.md) checks, testers can efficiently validate backend processes and ensure the reliability of the [database](../D/database.md) operations within the application.
+  This query would check if order `1234` has the expected values after the operation. By automating such [SQL](https://naodeng.com.cn/en/wiki/sql) checks, testers can efficiently validate backend processes and ensure the reliability of the [database](https://naodeng.com.cn/en/wiki/database) operations within the application.
 
   - **Verify data integrity**
     by executing queries that check if data is stored, updated, or deleted correctly after various operations.
 
-  - **Set up and tear down [test data](../T/test-data.md)**
+  - **Set up and tear down [test data](https://naodeng.com.cn/en/wiki/test-data)**
     by inserting, updating, or removing data to create the necessary preconditions for tests or to clean up after tests are completed.
 
-  - **Test [database](../D/database.md) functions**
+  - **Test [database](https://naodeng.com.cn/en/wiki/database) functions**
     , stored procedures, and triggers to ensure they work as expected when they manipulate data.
 
   - **Check business logic**
@@ -954,7 +953,7 @@ efficiently and effectively.
 
 #### How can SQL be used to test database connections?
 
-  [SQL](../S/sql.md) can be instrumental in testing [database](../D/database.md) connections by executing simple queries to verify the connection's integrity and responsiveness. To test a [database](../D/database.md) connection, you typically perform the following steps:
+  [SQL](https://naodeng.com.cn/en/wiki/sql) can be instrumental in testing [database](https://naodeng.com.cn/en/wiki/database) connections by executing simple queries to verify the connection's integrity and responsiveness. To test a [database](https://naodeng.com.cn/en/wiki/database) connection, you typically perform the following steps:
 
   1. **Establish a connection**
     to the database using the appropriate connection string and credentials.
@@ -973,9 +972,9 @@ efficiently and effectively.
 
   2. **Perform a cleanup**
     by closing the connection to avoid resource leaks.
-  In [automated testing](../A/automated-testing.md) frameworks, these steps are encapsulated in a [test case](../T/test-case.md), and assertions are used to validate the connection. For instance, you might assert that the query returns a single row with the value 1.
-  Additionally, you can test the connection's ability to handle more complex operations such as transactions, joins, or specific application queries to ensure the [database](../D/database.md) responds correctly under conditions that mimic the actual application use.
-  Incorporating these [SQL](../S/sql.md)-based connection tests into your [test suite](../T/test-suite.md) ensures that any issues with [database](../D/database.md) connectivity are identified early in the development cycle, reducing the risk of production outages or performance issues.
+  In [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) frameworks, these steps are encapsulated in a [test case](https://naodeng.com.cn/en/wiki/test-case), and assertions are used to validate the connection. For instance, you might assert that the query returns a single row with the value 1.
+  Additionally, you can test the connection's ability to handle more complex operations such as transactions, joins, or specific application queries to ensure the [database](https://naodeng.com.cn/en/wiki/database) responds correctly under conditions that mimic the actual application use.
+  Incorporating these [SQL](https://naodeng.com.cn/en/wiki/sql)-based connection tests into your [test suite](https://naodeng.com.cn/en/wiki/test-suite) ensures that any issues with [database](https://naodeng.com.cn/en/wiki/database) connectivity are identified early in the development cycle, reducing the risk of production outages or performance issues.
 
   1. **Establish a connection**
     to the database using the appropriate connection string and credentials.
@@ -993,7 +992,7 @@ efficiently and effectively.
 
 #### What are some common SQL queries used in software testing?
 
-  In [software testing](../S/software-testing.md), [SQL](../S/sql.md) queries are essential for verifying the integrity and accuracy of data within a [database](../D/database.md). Here are some common [SQL](../S/sql.md) queries used:
+  In [software testing](https://naodeng.com.cn/en/wiki/software-testing), [SQL](https://naodeng.com.cn/en/wiki/sql) queries are essential for verifying the integrity and accuracy of data within a [database](https://naodeng.com.cn/en/wiki/database). Here are some common [SQL](https://naodeng.com.cn/en/wiki/sql) queries used:
 
   - **SELECT** with **assertions** to validate data:
     Use the result to assert the expected number of active users.
@@ -1009,15 +1008,15 @@ efficiently and effectively.
     SELECT * FROM orders INNER JOIN customers ON orders.customer_id = customers.id;
     ```
 
-  - **Data [setup](../S/setup.md)** for test preconditions:
-    Create necessary data before [test execution](../T/test-execution.md).
+  - **Data [setup](https://naodeng.com.cn/en/wiki/setup)** for test preconditions:
+    Create necessary data before [test execution](https://naodeng.com.cn/en/wiki/test-execution).
 
     ```
     INSERT INTO products (name, price) VALUES ('Test Product', 9.99);
     ```
 
   - **Data cleanup** after tests:
-    Remove obsolete data to maintain [test environment](../T/test-environment.md).
+    Remove obsolete data to maintain [test environment](https://naodeng.com.cn/en/wiki/test-environment).
 
     ```
     DELETE FROM temporary_data WHERE created_at < CURRENT_TIMESTAMP - INTERVAL '1 hour';
@@ -1046,7 +1045,7 @@ efficiently and effectively.
     UPDATE account_balance SET balance = balance + 100 WHERE account_id = 2;
     COMMIT;
     ```
-  These queries can be integrated into automated [test scripts](../T/test-script.md) to validate various aspects of the [database](../D/database.md) as part of a comprehensive testing strategy.
+  These queries can be integrated into automated [test scripts](https://naodeng.com.cn/en/wiki/test-script) to validate various aspects of the [database](https://naodeng.com.cn/en/wiki/database) as part of a comprehensive testing strategy.
 
   - **SELECT** with **assertions** to validate data:
     Use the result to assert the expected number of active users.
@@ -1062,15 +1061,15 @@ efficiently and effectively.
     SELECT * FROM orders INNER JOIN customers ON orders.customer_id = customers.id;
     ```
 
-  - **Data [setup](../S/setup.md)** for test preconditions:
-    Create necessary data before [test execution](../T/test-execution.md).
+  - **Data [setup](https://naodeng.com.cn/en/wiki/setup)** for test preconditions:
+    Create necessary data before [test execution](https://naodeng.com.cn/en/wiki/test-execution).
 
     ```
     INSERT INTO products (name, price) VALUES ('Test Product', 9.99);
     ```
 
   - **Data cleanup** after tests:
-    Remove obsolete data to maintain [test environment](../T/test-environment.md).
+    Remove obsolete data to maintain [test environment](https://naodeng.com.cn/en/wiki/test-environment).
 
     ```
     DELETE FROM temporary_data WHERE created_at < CURRENT_TIMESTAMP - INTERVAL '1 hour';

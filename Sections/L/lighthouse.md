@@ -1,6 +1,5 @@
 # Lighthouse
 
-
 <!-- TOC START -->
 - [See also:](#see-also)
 - [Questions about Lighthouse ?](#questions-about-lighthouse)
@@ -48,70 +47,70 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### What is Lighthouse?
 
-  [Lighthouse](../L/lighthouse.md) is an **open-source**, **automated tool** for improving the quality of web pages. It can be run against any web page, public or requiring authentication. [Lighthouse](../L/lighthouse.md) audits for performance, accessibility, progressive web apps, SEO, and more, providing a well-rounded view of the quality and effectiveness of a web page.
-  To use [Lighthouse](../L/lighthouse.md) in **Chrome**, navigate to the page you want to audit, open **DevTools**, and click on the **[Lighthouse](../L/lighthouse.md)** tab. Select the audits you want to run, and then click the **Generate report** button. [Lighthouse](../L/lighthouse.md) will run the selected audits against the page, then generate a report on how well the page did.
-  For **[automated testing](../A/automated-testing.md)**, [Lighthouse](../L/lighthouse.md) can be integrated into **continuous integration** systems. It can be run as a Node module, as a command line tool, or programmatically as part of a custom build process. [Lighthouse](../L/lighthouse.md) CI is a set of commands that make it easier to use [Lighthouse](../L/lighthouse.md) for continuous integration.
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) is an **open-source**, **automated tool** for improving the quality of web pages. It can be run against any web page, public or requiring authentication. [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) audits for performance, accessibility, progressive web apps, SEO, and more, providing a well-rounded view of the quality and effectiveness of a web page.
+  To use [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) in **Chrome**, navigate to the page you want to audit, open **DevTools**, and click on the **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)** tab. Select the audits you want to run, and then click the **Generate report** button. [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) will run the selected audits against the page, then generate a report on how well the page did.
+  For **[automated testing](https://naodeng.com.cn/en/wiki/automated-testing)**, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) can be integrated into **continuous integration** systems. It can be run as a Node module, as a command line tool, or programmatically as part of a custom build process. [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI is a set of commands that make it easier to use [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) for continuous integration.
   Scores are calculated based on the performance metrics and heuristics. Each metric is scored individually, and then the scores are combined into an overall score.
-  Improving a low [Lighthouse](../L/lighthouse.md) score involves addressing the specific feedback provided in the report. This could include optimizing images, minifying CSS and JavaScript, implementing lazy loading, improving accessibility features, and more.
-  For **JavaScript execution**, [Lighthouse](../L/lighthouse.md) simulates a mid-tier device, even when run on a powerful desktop machine, to create consistent, real-world conditions.
-  Common issues when using [Lighthouse](../L/lighthouse.md) include flaky performance metrics, which can be mitigated by running the audit multiple times and considering median values.
+  Improving a low [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) score involves addressing the specific feedback provided in the report. This could include optimizing images, minifying CSS and JavaScript, implementing lazy loading, improving accessibility features, and more.
+  For **JavaScript execution**, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) simulates a mid-tier device, even when run on a powerful desktop machine, to create consistent, real-world conditions.
+  Common issues when using [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) include flaky performance metrics, which can be mitigated by running the audit multiple times and considering median values.
 
 #### Why is Lighthouse important in software automation?
 
-  [Lighthouse](../L/lighthouse.md) is crucial in software [test automation](../T/test-automation.md) for its ability to **integrate performance and quality checks** into the development and deployment pipeline. It provides **automated audits** for performance, accessibility, progressive web apps, SEO, and best practices, which are essential for maintaining high-quality web applications.
-  By incorporating [Lighthouse](../L/lighthouse.md) into [automated testing](../A/automated-testing.md), engineers can ensure that any code changes are evaluated against these metrics, catching regressions or issues early in the development cycle. This is particularly important for **continuous integration (CI)** and **continuous deployment (CD)** environments, where automated tests must provide quick feedback on the potential impact of code changes.
-  [Lighthouse](../L/lighthouse.md)'s role extends to **performance budgeting**, helping teams set and adhere to performance goals. It can be run headlessly, making it suitable for **server-side automation** and integration into CI/CD pipelines. The tool's **configurability** allows for custom audits tailored to specific needs, and its **scoring system** provides a quantifiable measure of a site's quality attributes.
-  Moreover, [Lighthouse](../L/lighthouse.md)'s **reports** offer actionable insights, which are invaluable for engineers looking to optimize their web applications. The ability to automate these audits and integrate them into the development workflow makes [Lighthouse](../L/lighthouse.md) an important tool for maintaining and improving the quality and user experience of web applications in an automated and efficient manner.
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) is crucial in software [test automation](https://naodeng.com.cn/en/wiki/test-automation) for its ability to **integrate performance and quality checks** into the development and deployment pipeline. It provides **automated audits** for performance, accessibility, progressive web apps, SEO, and best practices, which are essential for maintaining high-quality web applications.
+  By incorporating [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) into [automated testing](https://naodeng.com.cn/en/wiki/automated-testing), engineers can ensure that any code changes are evaluated against these metrics, catching regressions or issues early in the development cycle. This is particularly important for **continuous integration (CI)** and **continuous deployment (CD)** environments, where automated tests must provide quick feedback on the potential impact of code changes.
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)'s role extends to **performance budgeting**, helping teams set and adhere to performance goals. It can be run headlessly, making it suitable for **server-side automation** and integration into CI/CD pipelines. The tool's **configurability** allows for custom audits tailored to specific needs, and its **scoring system** provides a quantifiable measure of a site's quality attributes.
+  Moreover, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)'s **reports** offer actionable insights, which are invaluable for engineers looking to optimize their web applications. The ability to automate these audits and integrate them into the development workflow makes [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) an important tool for maintaining and improving the quality and user experience of web applications in an automated and efficient manner.
 
 #### What are the key features of Lighthouse?
 
-  Key features of **[Lighthouse](../L/lighthouse.md)** include:
+  Key features of **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)** include:
 
-  - **Performance Metrics**: [Lighthouse](../L/lighthouse.md) provides detailed metrics such as First Contentful Paint (FCP), Speed Index, Largest Contentful Paint (LCP), Time to Interactive (TTI), Total Blocking Time (TBT), and Cumulative Layout Shift (CLS).
+  - **Performance Metrics**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) provides detailed metrics such as First Contentful Paint (FCP), Speed Index, Largest Contentful Paint (LCP), Time to Interactive (TTI), Total Blocking Time (TBT), and Cumulative Layout Shift (CLS).
   - **Accessibility Audits**: It evaluates the accessibility of a web page against the Web Content Accessibility Guidelines (WCAG) and suggests improvements.
-  - **Best Practices**: [Lighthouse](../L/lighthouse.md) checks for adherence to best practices in web development, such as HTTPS usage, correct image aspect ratios, and avoiding deprecated [APIs](../A/api.md).
+  - **Best Practices**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) checks for adherence to best practices in web development, such as HTTPS usage, correct image aspect ratios, and avoiding deprecated [APIs](https://naodeng.com.cn/en/wiki/api).
   - **SEO Audits**: It assesses elements that affect a page's search engine ranking, including meta tags, hreflang tags, and descriptive link text.
-  - **Progressive Web App (PWA) Assessment**: [Lighthouse](../L/lighthouse.md) can validate various aspects of PWAs, ensuring they meet certain criteria for reliability, performance, and engagement.
-  - **Custom Audits**: Developers can extend [Lighthouse](../L/lighthouse.md) by writing custom audits to check for specific requirements or standards relevant to their projects.
-  - **CLI and Programmable [API](../A/api.md)**: [Lighthouse](../L/lighthouse.md) can be run via command line or programmatically through its [API](../A/api.md), allowing integration into automated workflows and CI/CD pipelines.
-  - **Configurability**: Users can configure [Lighthouse](../L/lighthouse.md) runs by specifying categories to audit, throttling settings, and other runtime options.
-  - **Reporting**: After an audit, [Lighthouse](../L/lighthouse.md) generates a report with scores in each category, detailed explanations, and actionable recommendations for improvement.
-  - **Extensibility**: [Lighthouse](../L/lighthouse.md) is open-source and can be extended or customized to fit specific testing needs, and it integrates with other tools like [Lighthouse](../L/lighthouse.md) CI for continuous testing.
-  These features make [Lighthouse](../L/lighthouse.md) a versatile tool for web developers and [test automation](../T/test-automation.md) engineers focused on improving the quality of web applications.
+  - **Progressive Web App (PWA) Assessment**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) can validate various aspects of PWAs, ensuring they meet certain criteria for reliability, performance, and engagement.
+  - **Custom Audits**: Developers can extend [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) by writing custom audits to check for specific requirements or standards relevant to their projects.
+  - **CLI and Programmable [API](https://naodeng.com.cn/en/wiki/api)**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) can be run via command line or programmatically through its [API](https://naodeng.com.cn/en/wiki/api), allowing integration into automated workflows and CI/CD pipelines.
+  - **Configurability**: Users can configure [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) runs by specifying categories to audit, throttling settings, and other runtime options.
+  - **Reporting**: After an audit, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) generates a report with scores in each category, detailed explanations, and actionable recommendations for improvement.
+  - **Extensibility**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) is open-source and can be extended or customized to fit specific testing needs, and it integrates with other tools like [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI for continuous testing.
+  These features make [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) a versatile tool for web developers and [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers focused on improving the quality of web applications.
 
-  - **Performance Metrics**: [Lighthouse](../L/lighthouse.md) provides detailed metrics such as First Contentful Paint (FCP), Speed Index, Largest Contentful Paint (LCP), Time to Interactive (TTI), Total Blocking Time (TBT), and Cumulative Layout Shift (CLS).
+  - **Performance Metrics**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) provides detailed metrics such as First Contentful Paint (FCP), Speed Index, Largest Contentful Paint (LCP), Time to Interactive (TTI), Total Blocking Time (TBT), and Cumulative Layout Shift (CLS).
   - **Accessibility Audits**: It evaluates the accessibility of a web page against the Web Content Accessibility Guidelines (WCAG) and suggests improvements.
-  - **Best Practices**: [Lighthouse](../L/lighthouse.md) checks for adherence to best practices in web development, such as HTTPS usage, correct image aspect ratios, and avoiding deprecated [APIs](../A/api.md).
+  - **Best Practices**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) checks for adherence to best practices in web development, such as HTTPS usage, correct image aspect ratios, and avoiding deprecated [APIs](https://naodeng.com.cn/en/wiki/api).
   - **SEO Audits**: It assesses elements that affect a page's search engine ranking, including meta tags, hreflang tags, and descriptive link text.
-  - **Progressive Web App (PWA) Assessment**: [Lighthouse](../L/lighthouse.md) can validate various aspects of PWAs, ensuring they meet certain criteria for reliability, performance, and engagement.
-  - **Custom Audits**: Developers can extend [Lighthouse](../L/lighthouse.md) by writing custom audits to check for specific requirements or standards relevant to their projects.
-  - **CLI and Programmable [API](../A/api.md)**: [Lighthouse](../L/lighthouse.md) can be run via command line or programmatically through its [API](../A/api.md), allowing integration into automated workflows and CI/CD pipelines.
-  - **Configurability**: Users can configure [Lighthouse](../L/lighthouse.md) runs by specifying categories to audit, throttling settings, and other runtime options.
-  - **Reporting**: After an audit, [Lighthouse](../L/lighthouse.md) generates a report with scores in each category, detailed explanations, and actionable recommendations for improvement.
-  - **Extensibility**: [Lighthouse](../L/lighthouse.md) is open-source and can be extended or customized to fit specific testing needs, and it integrates with other tools like [Lighthouse](../L/lighthouse.md) CI for continuous testing.
+  - **Progressive Web App (PWA) Assessment**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) can validate various aspects of PWAs, ensuring they meet certain criteria for reliability, performance, and engagement.
+  - **Custom Audits**: Developers can extend [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) by writing custom audits to check for specific requirements or standards relevant to their projects.
+  - **CLI and Programmable [API](https://naodeng.com.cn/en/wiki/api)**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) can be run via command line or programmatically through its [API](https://naodeng.com.cn/en/wiki/api), allowing integration into automated workflows and CI/CD pipelines.
+  - **Configurability**: Users can configure [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) runs by specifying categories to audit, throttling settings, and other runtime options.
+  - **Reporting**: After an audit, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) generates a report with scores in each category, detailed explanations, and actionable recommendations for improvement.
+  - **Extensibility**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) is open-source and can be extended or customized to fit specific testing needs, and it integrates with other tools like [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI for continuous testing.
 
 #### How does Lighthouse differ from other performance auditing tools?
 
-  [Lighthouse](../L/lighthouse.md) distinguishes itself from other performance auditing tools through its **integration with the Chrome Developer Tools** and its **emphasis on the user experience** metrics, such as the Core Web Vitals. While tools like WebPageTest provide detailed waterfalls and network information, [Lighthouse](../L/lighthouse.md) focuses on providing a **holistic view** of web performance, accessibility, best practices, SEO, and progressive web app metrics.
-  Unlike some tools that require complex [setup](../S/setup.md) or server-side integration, [Lighthouse](../L/lighthouse.md) is **easily accessible** and can be run from the command line, as a Node module, or directly in the browser, making it highly versatile for different workflows. It also offers **custom audit capabilities** through its flexible configuration options.
-  [Lighthouse](../L/lighthouse.md)'s **actionable reports** with clear scoring and recommendations stand out, guiding developers on how to improve performance and user experience. It's particularly useful for simulating a page load on a mobile network and a mid-tier device, which is a common [use case](../U/use-case.md) not always covered by other tools.
-  Moreover, [Lighthouse](../L/lighthouse.md) is **open-source** and maintained by Google, ensuring regular updates that reflect the latest web development best practices and standards. This contrasts with some proprietary tools that may not be as transparent or up-to-date with web standards.
-  Lastly, [Lighthouse](../L/lighthouse.md)'s ability to be integrated into **CI/CD pipelines** through [Lighthouse](../L/lighthouse.md) CI makes it a powerful option for automating performance checks and ensuring that performance standards are met before deployment.
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) distinguishes itself from other performance auditing tools through its **integration with the Chrome Developer Tools** and its **emphasis on the user experience** metrics, such as the Core Web Vitals. While tools like WebPageTest provide detailed waterfalls and network information, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) focuses on providing a **holistic view** of web performance, accessibility, best practices, SEO, and progressive web app metrics.
+  Unlike some tools that require complex [setup](https://naodeng.com.cn/en/wiki/setup) or server-side integration, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) is **easily accessible** and can be run from the command line, as a Node module, or directly in the browser, making it highly versatile for different workflows. It also offers **custom audit capabilities** through its flexible configuration options.
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)'s **actionable reports** with clear scoring and recommendations stand out, guiding developers on how to improve performance and user experience. It's particularly useful for simulating a page load on a mobile network and a mid-tier device, which is a common [use case](https://naodeng.com.cn/en/wiki/use-case) not always covered by other tools.
+  Moreover, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) is **open-source** and maintained by Google, ensuring regular updates that reflect the latest web development best practices and standards. This contrasts with some proprietary tools that may not be as transparent or up-to-date with web standards.
+  Lastly, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)'s ability to be integrated into **CI/CD pipelines** through [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI makes it a powerful option for automating performance checks and ensuring that performance standards are met before deployment.
 
 #### What types of audits does Lighthouse perform?
 
-  [Lighthouse](../L/lighthouse.md) performs audits across **five categories**: **Performance**, **Accessibility**, **Best Practices**, **SEO**, and **Progressive Web App (PWA)**. Each category encompasses various checks:
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) performs audits across **five categories**: **Performance**, **Accessibility**, **Best Practices**, **SEO**, and **Progressive Web App (PWA)**. Each category encompasses various checks:
 
   - **Performance**: Evaluates metrics like First Contentful Paint, Speed Index, and Time to Interactive, focusing on user-perceived loading experience and interactivity.
   - **Accessibility**: Checks for common issues that may prevent users from accessing content, such as missing alt text for images, improper ARIA attributes, and incorrect semantic HTML elements.
-  - **Best Practices**: Looks for modern web development practices, including HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](../A/api.md).
+  - **Best Practices**: Looks for modern web development practices, including HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](https://naodeng.com.cn/en/wiki/api).
   - **SEO**: Assesses elements that affect a page's visibility to search engines, like meta descriptions, hreflang links, and legible font sizes.
   - **PWA**: Verifies the presence of a service worker, a web app manifest, and other criteria that enable a web app to be installed on a device's home screen and function offline.
-  Each audit provides specific, actionable feedback and is scored individually, contributing to an overall category score. [Lighthouse](../L/lighthouse.md) also offers **opportunities** and **diagnostics** to help identify areas for improvement and understand underlying issues. These audits can be extended or customized for specific [use cases](../U/use-case.md) through [Lighthouse](../L/lighthouse.md) configuration.
+  Each audit provides specific, actionable feedback and is scored individually, contributing to an overall category score. [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) also offers **opportunities** and **diagnostics** to help identify areas for improvement and understand underlying issues. These audits can be extended or customized for specific [use cases](https://naodeng.com.cn/en/wiki/use-case) through [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) configuration.
 
   - **Performance**: Evaluates metrics like First Contentful Paint, Speed Index, and Time to Interactive, focusing on user-perceived loading experience and interactivity.
   - **Accessibility**: Checks for common issues that may prevent users from accessing content, such as missing alt text for images, improper ARIA attributes, and incorrect semantic HTML elements.
-  - **Best Practices**: Looks for modern web development practices, including HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](../A/api.md).
+  - **Best Practices**: Looks for modern web development practices, including HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](https://naodeng.com.cn/en/wiki/api).
   - **SEO**: Assesses elements that affect a page's visibility to search engines, like meta descriptions, hreflang links, and legible font sizes.
   - **PWA**: Verifies the presence of a service worker, a web app manifest, and other criteria that enable a web app to be installed on a device's home screen and function offline.
 
@@ -119,7 +118,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### How do you use Lighthouse in Chrome?
 
-  To use **[Lighthouse](../L/lighthouse.md)** in Chrome for [test automation](../T/test-automation.md), follow these steps:
+  To use **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)** in Chrome for [test automation](https://naodeng.com.cn/en/wiki/test-automation), follow these steps:
 
   1. Open Chrome Developer Tools by pressing
     `Ctrl+Shift+I`
@@ -128,7 +127,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
     on Mac).
 
   2. Navigate to the
-    **[Lighthouse](../L/lighthouse.md)**
+    **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)**
     tab.
 
   3. Choose the desired audit categories (Performance, Accessibility, Best Practices, SEO, and Progressive Web App).
@@ -136,7 +135,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
   5. Click on
     **Generate report**
     to start the audit.
-  For automation purposes, you can run [Lighthouse](../L/lighthouse.md) programmatically using the command line or as a Node module. Here's a basic example using [Node.js](../N/node-js.md):
+  For automation purposes, you can run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) programmatically using the command line or as a Node module. Here's a basic example using [Node.js](https://naodeng.com.cn/en/wiki/node-js):
 
   ```
   const lighthouse = require('lighthouse');
@@ -157,7 +156,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
     .then(results => console.log(results))
     .catch(err => console.error(err));
   ```
-  For continuous integration, you can use **[Lighthouse](../L/lighthouse.md) CI** which provides commands to run audits against a website and assert if the scores meet your requirements. It can be integrated into your CI pipeline using configuration files and CLI commands.
+  For continuous integration, you can use **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI** which provides commands to run audits against a website and assert if the scores meet your requirements. It can be integrated into your CI pipeline using configuration files and CLI commands.
   Remember to review the audit results and make necessary code or configuration changes to improve the scores. Automate the process by integrating it into your build and deployment pipeline to ensure continuous performance monitoring.
 
   1. Open Chrome Developer Tools by pressing
@@ -167,7 +166,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
     on Mac).
 
   2. Navigate to the
-    **[Lighthouse](../L/lighthouse.md)**
+    **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)**
     tab.
 
   3. Choose the desired audit categories (Performance, Accessibility, Best Practices, SEO, and Progressive Web App).
@@ -178,25 +177,25 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### How can Lighthouse be used for automated testing?
 
-  [Lighthouse](../L/lighthouse.md) can be integrated into [automated testing](../A/automated-testing.md) workflows to ensure web applications meet performance, accessibility, best practices, and SEO standards. To automate [Lighthouse](../L/lighthouse.md) tests, you can use the [Lighthouse](../L/lighthouse.md) CLI or the [Lighthouse](../L/lighthouse.md) Node module.
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) can be integrated into [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) workflows to ensure web applications meet performance, accessibility, best practices, and SEO standards. To automate [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) tests, you can use the [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CLI or the [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) Node module.
   **CLI Approach:**
-  Install [Lighthouse](../L/lighthouse.md) globally via npm:
+  Install [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) globally via npm:
 
   ```
   npm install -g lighthouse
   ```
-  Run [Lighthouse](../L/lighthouse.md) in headless mode to test a URL and output the results to a JSON file:
+  Run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) in headless mode to test a URL and output the results to a JSON file:
 
   ```
   lighthouse https://example.com --output=json --output-path=./report.json --chrome-flags="--headless"
   ```
   **Node Module Approach:**
-  Install [Lighthouse](../L/lighthouse.md) as a dev dependency:
+  Install [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) as a dev dependency:
 
   ```
   npm install --save-dev lighthouse
   ```
-  Create a script to launch Chrome and run [Lighthouse](../L/lighthouse.md) programmatically:
+  Create a script to launch Chrome and run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) programmatically:
 
   ```
   const lighthouse = require('lighthouse');
@@ -218,16 +217,16 @@ against a web page, developers and testers can obtain a set of actionable recomm
     });
   ```
   **Continuous Integration:**
-  Incorporate [Lighthouse](../L/lighthouse.md) into CI pipelines using [Lighthouse](../L/lighthouse.md) CI. Set up a `.lighthouserc.js` configuration file and add [Lighthouse](../L/lighthouse.md) CI commands to your CI configuration:
+  Incorporate [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) into CI pipelines using [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI. Set up a `.lighthouserc.js` configuration file and add [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI commands to your CI configuration:
 
   ```
   lhci autorun --config=.lighthouserc.js
   ```
-  This will run audits against the specified URLs during each commit or pull request, ensuring that code changes do not degrade the quality of the application. Use the [Lighthouse](../L/lighthouse.md) CI server for historical tracking and asserting performance budgets.
+  This will run audits against the specified URLs during each commit or pull request, ensuring that code changes do not degrade the quality of the application. Use the [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI server for historical tracking and asserting performance budgets.
 
 #### What are the steps to run a Lighthouse audit?
 
-  To run a [Lighthouse](../L/lighthouse.md) audit:
+  To run a [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) audit:
 
   1. **Open Google Chrome**
     and navigate to the page you want to audit.
@@ -240,7 +239,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
     on Mac), or right-clicking the page and selecting "Inspect".
 
   3. Click on the
-    **[Lighthouse](../L/lighthouse.md)**
+    **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)**
     tab within the Developer Tools panel. If it's not visible, you may need to click on the
     `>>`
     icon to find it.
@@ -259,8 +258,8 @@ against a web page, developers and testers can obtain a set of actionable recomm
   7. Click on the
     **"Generate report"**
     button to start the audit.
-  [Lighthouse](../L/lighthouse.md) will now run a series of tests against the page and generate a report. Once the audit is complete, you'll be presented with a detailed report outlining the performance and quality of the page. You can use this report to identify areas for improvement.
-  For [automated testing](../A/automated-testing.md) or continuous integration, you can use [Lighthouse](../L/lighthouse.md) CLI by installing it via npm:
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) will now run a series of tests against the page and generate a report. Once the audit is complete, you'll be presented with a detailed report outlining the performance and quality of the page. You can use this report to identify areas for improvement.
+  For [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) or continuous integration, you can use [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CLI by installing it via npm:
 
   ```
   npm install -g lighthouse
@@ -283,7 +282,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
     on Mac), or right-clicking the page and selecting "Inspect".
 
   3. Click on the
-    **[Lighthouse](../L/lighthouse.md)**
+    **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)**
     tab within the Developer Tools panel. If it's not visible, you may need to click on the
     `>>`
     icon to find it.
@@ -305,16 +304,16 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### How can you use Lighthouse in continuous integration processes?
 
-  Integrating **[Lighthouse](../L/lighthouse.md)** into continuous integration (CI) processes ensures that performance, accessibility, and SEO standards are upheld with each code commit. To use [Lighthouse](../L/lighthouse.md) in CI, follow these steps:
+  Integrating **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)** into continuous integration (CI) processes ensures that performance, accessibility, and SEO standards are upheld with each code commit. To use [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) in CI, follow these steps:
 
-  1. **Install [Lighthouse](../L/lighthouse.md) CI**:
+  1. **Install [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI**:
 
     ```
     npm install -g @lhci/cli
     ```
 
-  2. **Configure [Lighthouse](../L/lighthouse.md) CI** by creating a `.lighthouserc.js` or `.lighthouserc.json` file in your project root. Define the URLs to audit, the number of runs, and any other configurations.
-  3. **Add a [Lighthouse](../L/lighthouse.md) CI step** in your CI pipeline. For example, in a GitHub Actions workflow, add a job that runs [Lighthouse](../L/lighthouse.md) CI:
+  2. **Configure [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI** by creating a `.lighthouserc.js` or `.lighthouserc.json` file in your project root. Define the URLs to audit, the number of runs, and any other configurations.
+  3. **Add a [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI step** in your CI pipeline. For example, in a GitHub Actions workflow, add a job that runs [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI:
 
     ```
     - name: Run Lighthouse CI
@@ -330,18 +329,18 @@ against a web page, developers and testers can obtain a set of actionable recomm
     }
     ```
 
-  5. **Store reports** for historical comparison and tracking regressions. Use the `--upload.target` option to upload to [Lighthouse](../L/lighthouse.md) CI server or other storage solutions.
+  5. **Store reports** for historical comparison and tracking regressions. Use the `--upload.target` option to upload to [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI server or other storage solutions.
   6. **Automate the process** to run on every pull request or push to specific branches, ensuring that new code meets the defined quality standards.
-  By integrating [Lighthouse](../L/lighthouse.md) into CI, you create a **feedback loop** that alerts developers to potential issues early, maintaining a high standard for your web application's user experience.
+  By integrating [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) into CI, you create a **feedback loop** that alerts developers to potential issues early, maintaining a high standard for your web application's user experience.
 
-  1. **Install [Lighthouse](../L/lighthouse.md) CI**:
+  1. **Install [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI**:
 
     ```
     npm install -g @lhci/cli
     ```
 
-  2. **Configure [Lighthouse](../L/lighthouse.md) CI** by creating a `.lighthouserc.js` or `.lighthouserc.json` file in your project root. Define the URLs to audit, the number of runs, and any other configurations.
-  3. **Add a [Lighthouse](../L/lighthouse.md) CI step** in your CI pipeline. For example, in a GitHub Actions workflow, add a job that runs [Lighthouse](../L/lighthouse.md) CI:
+  2. **Configure [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI** by creating a `.lighthouserc.js` or `.lighthouserc.json` file in your project root. Define the URLs to audit, the number of runs, and any other configurations.
+  3. **Add a [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI step** in your CI pipeline. For example, in a GitHub Actions workflow, add a job that runs [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI:
 
     ```
     - name: Run Lighthouse CI
@@ -357,12 +356,12 @@ against a web page, developers and testers can obtain a set of actionable recomm
     }
     ```
 
-  5. **Store reports** for historical comparison and tracking regressions. Use the `--upload.target` option to upload to [Lighthouse](../L/lighthouse.md) CI server or other storage solutions.
+  5. **Store reports** for historical comparison and tracking regressions. Use the `--upload.target` option to upload to [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI server or other storage solutions.
   6. **Automate the process** to run on every pull request or push to specific branches, ensuring that new code meets the defined quality standards.
 
 #### How can you configure Lighthouse for custom audits?
 
-  To configure **[Lighthouse](../L/lighthouse.md)** for custom audits, you need to create custom audit definitions and gatherers. Here's a concise guide:
+  To configure **[Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)** for custom audits, you need to create custom audit definitions and gatherers. Here's a concise guide:
 
   1. **Create a Custom Gatherer**:
 
@@ -417,7 +416,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
       `Audit`
       class.
 
-  3. **Add to [Lighthouse](../L/lighthouse.md) Config**:
+  3. **Add to [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) Config**:
 
     ```
     module.exports = {
@@ -444,7 +443,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
     - Include your custom gatherer and audit in the Lighthouse configuration.
     - Include your custom gatherer and audit in the Lighthouse configuration.
-  4. **Run [Lighthouse](../L/lighthouse.md)** with your custom config:
+  4. **Run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)** with your custom config:
 
     ```
     lighthouse https://example.com --config-path=path/to/custom-config.js
@@ -504,7 +503,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
       `Audit`
       class.
 
-  3. **Add to [Lighthouse](../L/lighthouse.md) Config**:
+  3. **Add to [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) Config**:
 
     ```
     module.exports = {
@@ -531,7 +530,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
     - Include your custom gatherer and audit in the Lighthouse configuration.
     - Include your custom gatherer and audit in the Lighthouse configuration.
-  4. **Run [Lighthouse](../L/lighthouse.md)** with your custom config:
+  4. **Run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse)** with your custom config:
 
     ```
     lighthouse https://example.com --config-path=path/to/custom-config.js
@@ -541,40 +540,40 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### How are Lighthouse scores calculated?
 
-  [Lighthouse](../L/lighthouse.md) scores are calculated based on a series of audits that fall into five categories: **Performance**, **Accessibility**, **Best Practices**, **SEO**, and **Progressive Web App**. Each category has a set of audits with individual tests. The scores from these tests are then aggregated into a score for each category.
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) scores are calculated based on a series of audits that fall into five categories: **Performance**, **Accessibility**, **Best Practices**, **SEO**, and **Progressive Web App**. Each category has a set of audits with individual tests. The scores from these tests are then aggregated into a score for each category.
   **Performance** score is heavily weighted by speed metrics such as First Contentful Paint (FCP), Speed Index, Largest Contentful Paint (LCP), Time to Interactive (TTI), Total Blocking Time (TBT), and Cumulative Layout Shift (CLS). These metrics reflect the user's experience in terms of loading, interactivity, and visual stability.
   **Accessibility** audits check for common issues that may prevent users from accessing content due to disability. This includes proper use of HTML elements, ARIA attributes, color contrast ratios, and navigation.
-  **Best Practices** score is derived from tests that check for modern web development standards, including HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](../A/api.md).
+  **Best Practices** score is derived from tests that check for modern web development standards, including HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](https://naodeng.com.cn/en/wiki/api).
   **SEO** score evaluates elements that affect a site's visibility to search engines, like meta tags, hreflang tags, and descriptive link text.
   **Progressive Web App** score assesses the readiness of a web app to deliver app-like experiences, looking at factors like service worker registration, web app manifests, and responsiveness to different screen sizes.
-  Each category score is a weighted average of its audit scores. The overall [Lighthouse](../L/lighthouse.md) score is a weighted average of the five category scores, with **Performance** typically having the greatest weight. Scores range from 0 to 100, with higher scores indicating better adherence to web development best practices.
+  Each category score is a weighted average of its audit scores. The overall [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) score is a weighted average of the five category scores, with **Performance** typically having the greatest weight. Scores range from 0 to 100, with higher scores indicating better adherence to web development best practices.
 
 #### What do the different Lighthouse audit categories mean?
 
-  [Lighthouse](../L/lighthouse.md) audit categories are benchmarks that evaluate various aspects of web app quality. Each category represents a core area of user experience and technical performance:
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) audit categories are benchmarks that evaluate various aspects of web app quality. Each category represents a core area of user experience and technical performance:
 
   - **Performance**: Measures the speed and efficiency of the site. Metrics include First Contentful Paint, Speed Index, and Time to Interactive.
   - **Accessibility**: Assesses how well the site can be used by people with disabilities. It checks for proper use of ARIA attributes, screen reader support, and navigation accessibility.
-  - **Best Practices**: Evaluates the use of modern web development practices. This includes checks for HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](../A/api.md).
+  - **Best Practices**: Evaluates the use of modern web development practices. This includes checks for HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](https://naodeng.com.cn/en/wiki/api).
   - **SEO**: Analyzes the site's potential to be indexed by search engines. It looks at mobile-friendliness, content best practices, and metadata presence.
-  - **Progressive Web App (PWA)**: Determines the site's adherence to PWA standards. It checks for service worker registration, a valid web app manifest, and a [responsive design](../R/responsive-design.md).
+  - **Progressive Web App (PWA)**: Determines the site's adherence to PWA standards. It checks for service worker registration, a valid web app manifest, and a [responsive design](https://naodeng.com.cn/en/wiki/responsive-design).
   Each category provides specific, actionable insights. For instance, the **Performance** category can highlight opportunities to lazy-load offscreen images, while **Accessibility** might suggest improvements for screen reader users. These insights guide engineers in optimizing their web apps for better user experiences and technical robustness.
 
   - **Performance**: Measures the speed and efficiency of the site. Metrics include First Contentful Paint, Speed Index, and Time to Interactive.
   - **Accessibility**: Assesses how well the site can be used by people with disabilities. It checks for proper use of ARIA attributes, screen reader support, and navigation accessibility.
-  - **Best Practices**: Evaluates the use of modern web development practices. This includes checks for HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](../A/api.md).
+  - **Best Practices**: Evaluates the use of modern web development practices. This includes checks for HTTPS usage, correct image aspect ratios, and avoidance of deprecated [APIs](https://naodeng.com.cn/en/wiki/api).
   - **SEO**: Analyzes the site's potential to be indexed by search engines. It looks at mobile-friendliness, content best practices, and metadata presence.
-  - **Progressive Web App (PWA)**: Determines the site's adherence to PWA standards. It checks for service worker registration, a valid web app manifest, and a [responsive design](../R/responsive-design.md).
+  - **Progressive Web App (PWA)**: Determines the site's adherence to PWA standards. It checks for service worker registration, a valid web app manifest, and a [responsive design](https://naodeng.com.cn/en/wiki/responsive-design).
 
 #### How do you interpret Lighthouse reports?
 
-  Interpreting [Lighthouse](../L/lighthouse.md) reports involves analyzing the data provided in each audit category to identify areas for improvement in your web application. After running a [Lighthouse](../L/lighthouse.md) audit, you'll receive a report with scores in **Performance**, **Accessibility**, **Best Practices**, **SEO**, and **Progressive Web App**.
+  Interpreting [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) reports involves analyzing the data provided in each audit category to identify areas for improvement in your web application. After running a [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) audit, you'll receive a report with scores in **Performance**, **Accessibility**, **Best Practices**, **SEO**, and **Progressive Web App**.
   **Performance**: Look at metrics like **First Contentful Paint (FCP)**, **Speed Index**, **Largest Contentful Paint (LCP)**, **Time to Interactive (TTI)**, **Total Blocking Time (TBT)**, and **Cumulative Layout Shift (CLS)**. These metrics give insights into the user-perceived loading experience and interactivity.
   **Accessibility**: Review issues that may prevent users with disabilities from accessing content. This includes missing alt text, improper ARIA attributes, and incorrect semantic HTML usage.
-  **Best Practices**: Examine warnings and errors that could impact the application's reliability and security, such as using HTTPS, avoiding deprecated [APIs](../A/api.md), and ensuring correct image aspect ratios.
+  **Best Practices**: Examine warnings and errors that could impact the application's reliability and security, such as using HTTPS, avoiding deprecated [APIs](https://naodeng.com.cn/en/wiki/api), and ensuring correct image aspect ratios.
   **SEO**: Check for factors that could affect your site's search engine ranking, including mobile-friendliness, content best practices, and metadata presence.
-  **Progressive Web App**: Evaluate your app against PWA criteria, focusing on aspects like fast load times, a [responsive design](../R/responsive-design.md), and a working offline mode.
-  For each audit, [Lighthouse](../L/lighthouse.md) provides:
+  **Progressive Web App**: Evaluate your app against PWA criteria, focusing on aspects like fast load times, a [responsive design](https://naodeng.com.cn/en/wiki/responsive-design), and a working offline mode.
+  For each audit, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) provides:
 
   - A
     **score**
@@ -585,7 +584,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
   - **Actionable recommendations**
     for improving your score.
-  Use the detailed suggestions to prioritize fixes and enhancements. Address **red** items first as they represent the most critical issues, followed by **orange**, and then **green** to fine-tune performance. Implement changes, re-run [Lighthouse](../L/lighthouse.md), and compare reports to track progress.
+  Use the detailed suggestions to prioritize fixes and enhancements. Address **red** items first as they represent the most critical issues, followed by **orange**, and then **green** to fine-tune performance. Implement changes, re-run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse), and compare reports to track progress.
 
   - A
     **score**
@@ -599,7 +598,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### What actions can be taken based on Lighthouse audit results?
 
-  Based on [Lighthouse](../L/lighthouse.md) audit results, several actions can be taken to improve the quality and performance of a web application:
+  Based on [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) audit results, several actions can be taken to improve the quality and performance of a web application:
 
   - **Optimize images** : Compress and properly format images to reduce load times.
   - **Minify CSS, JavaScript, and HTML** : Remove unnecessary characters without changing functionality to decrease file sizes.
@@ -613,7 +612,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
   - **Prioritize above-the-fold content** : Structure HTML to load the most important content first.
   - **Accessibility enhancements** : Address issues that affect users with disabilities, like color contrast and keyboard navigation.
   - **SEO improvements** : Ensure meta tags are present and descriptive, and that content is crawlable.
-  Apply these actions iteratively, integrating them into your CI/CD pipeline for continuous improvement. Regularly re-audit with [Lighthouse](../L/lighthouse.md) to measure progress and identify new optimization opportunities.
+  Apply these actions iteratively, integrating them into your CI/CD pipeline for continuous improvement. Regularly re-audit with [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) to measure progress and identify new optimization opportunities.
 
   - **Optimize images** : Compress and properly format images to reduce load times.
   - **Minify CSS, JavaScript, and HTML** : Remove unnecessary characters without changing functionality to decrease file sizes.
@@ -630,7 +629,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### How can you improve a low Lighthouse score?
 
-  Improving a low [Lighthouse](../L/lighthouse.md) score involves optimizing various aspects of your web application. Here are some strategies:
+  Improving a low [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) score involves optimizing various aspects of your web application. Here are some strategies:
 
   - **Optimize Images** : Compress images without losing quality using tools like ImageOptim or services like TinyPNG.
   - **Minify CSS, JavaScript, and HTML** : Use tools like UglifyJS, cssnano, or HTMLMinifier to reduce file size.
@@ -663,7 +662,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
     attribute to prioritize loading of key resources.
 
   - **Audit Third-Party Code** : Remove or optimize third-party scripts that are not critical.
-  Apply these optimizations iteratively and monitor the [Lighthouse](../L/lighthouse.md) score after each change to understand their impact.
+  Apply these optimizations iteratively and monitor the [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) score after each change to understand their impact.
 
   - **Optimize Images** : Compress images without losing quality using tools like ImageOptim or services like TinyPNG.
   - **Minify CSS, JavaScript, and HTML** : Use tools like UglifyJS, cssnano, or HTMLMinifier to reduce file size.
@@ -701,10 +700,10 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### What is Lighthouse CI and how does it work?
 
-  [Lighthouse](../L/lighthouse.md) CI is an open-source, automated tool for improving the quality of web pages and apps. It integrates with continuous integration (CI) systems to run [Lighthouse](../L/lighthouse.md) audits on every commit, providing immediate feedback on potential regressions in performance, accessibility, SEO, and best practices.
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI is an open-source, automated tool for improving the quality of web pages and apps. It integrates with continuous integration (CI) systems to run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) audits on every commit, providing immediate feedback on potential regressions in performance, accessibility, SEO, and best practices.
   **How it works:**
 
-  1. **Installation**: [Lighthouse](../L/lighthouse.md) CI is installed as an npm package.
+  1. **Installation**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI is installed as an npm package.
 
     ```
     npm install -g @lhci/cli
@@ -728,18 +727,18 @@ against a web page, developers and testers can obtain a set of actionable recomm
     };
     ```
 
-  3. **Running Audits**: Use the [Lighthouse](../L/lighthouse.md) CI CLI to run audits against a built version of your app.
+  3. **Running Audits**: Use the [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI CLI to run audits against a built version of your app.
 
     ```
     lhci autorun
     ```
 
-  4. **Assertions**: Define assertions for performance metrics and other audit scores. [Lighthouse](../L/lighthouse.md) CI will fail the CI build if assertions don't meet the specified thresholds.
-  5. **Reports**: Results are displayed in the CI output, and detailed reports can be uploaded to the [Lighthouse](../L/lighthouse.md) CI server or other hosting solutions for further analysis.
-  6. **Integration**: [Lighthouse](../L/lighthouse.md) CI can be integrated into popular CI services like GitHub Actions, Travis CI, and Jenkins, ensuring that performance and quality checks are part of the development workflow.
-  [Lighthouse](../L/lighthouse.md) CI ensures that performance and quality are continuously monitored, helping to prevent regressions and maintain high standards across updates.
+  4. **Assertions**: Define assertions for performance metrics and other audit scores. [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI will fail the CI build if assertions don't meet the specified thresholds.
+  5. **Reports**: Results are displayed in the CI output, and detailed reports can be uploaded to the [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI server or other hosting solutions for further analysis.
+  6. **Integration**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI can be integrated into popular CI services like GitHub Actions, Travis CI, and Jenkins, ensuring that performance and quality checks are part of the development workflow.
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI ensures that performance and quality are continuously monitored, helping to prevent regressions and maintain high standards across updates.
 
-  1. **Installation**: [Lighthouse](../L/lighthouse.md) CI is installed as an npm package.
+  1. **Installation**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI is installed as an npm package.
 
     ```
     npm install -g @lhci/cli
@@ -763,23 +762,23 @@ against a web page, developers and testers can obtain a set of actionable recomm
     };
     ```
 
-  3. **Running Audits**: Use the [Lighthouse](../L/lighthouse.md) CI CLI to run audits against a built version of your app.
+  3. **Running Audits**: Use the [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI CLI to run audits against a built version of your app.
 
     ```
     lhci autorun
     ```
 
-  4. **Assertions**: Define assertions for performance metrics and other audit scores. [Lighthouse](../L/lighthouse.md) CI will fail the CI build if assertions don't meet the specified thresholds.
-  5. **Reports**: Results are displayed in the CI output, and detailed reports can be uploaded to the [Lighthouse](../L/lighthouse.md) CI server or other hosting solutions for further analysis.
-  6. **Integration**: [Lighthouse](../L/lighthouse.md) CI can be integrated into popular CI services like GitHub Actions, Travis CI, and Jenkins, ensuring that performance and quality checks are part of the development workflow.
+  4. **Assertions**: Define assertions for performance metrics and other audit scores. [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI will fail the CI build if assertions don't meet the specified thresholds.
+  5. **Reports**: Results are displayed in the CI output, and detailed reports can be uploaded to the [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI server or other hosting solutions for further analysis.
+  6. **Integration**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) CI can be integrated into popular CI services like GitHub Actions, Travis CI, and Jenkins, ensuring that performance and quality checks are part of the development workflow.
 
 #### How can you use Lighthouse for performance budgeting?
 
-  [Lighthouse](../L/lighthouse.md) can be instrumental in implementing and enforcing a **performance budget** for your web applications. A performance budget is a set of limits on certain metrics that affect site performance, such as the size of images, scripts, and CSS files.
-  To use [Lighthouse](../L/lighthouse.md) for performance budgeting, follow these steps:
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) can be instrumental in implementing and enforcing a **performance budget** for your web applications. A performance budget is a set of limits on certain metrics that affect site performance, such as the size of images, scripts, and CSS files.
+  To use [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) for performance budgeting, follow these steps:
 
   1. **Define your performance budget**. Decide on the metrics and thresholds you want to enforce, such as maximum page load time, total image size, or number of HTTP requests.
-  2. **Create a [Lighthouse](../L/lighthouse.md) configuration file**. In a JSON file, specify your performance budget constraints. For example:
+  2. **Create a [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) configuration file**. In a JSON file, specify your performance budget constraints. For example:
 
   ```
   {
@@ -807,7 +806,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
   }
   ```
 
-  1. **Run [Lighthouse](../L/lighthouse.md) with your config**
+  1. **Run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) with your config**
     . Use the CLI to run Lighthouse with your configuration file:
 
   ```
@@ -819,8 +818,8 @@ against a web page, developers and testers can obtain a set of actionable recomm
   By integrating this process into your **CI/CD pipeline**, you can automatically check that every build complies with your performance budget, ensuring that performance regressions are caught and addressed early in the development process.
 
   1. **Define your performance budget**. Decide on the metrics and thresholds you want to enforce, such as maximum page load time, total image size, or number of HTTP requests.
-  2. **Create a [Lighthouse](../L/lighthouse.md) configuration file**. In a JSON file, specify your performance budget constraints. For example:
-  1. **Run [Lighthouse](../L/lighthouse.md) with your config**
+  2. **Create a [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) configuration file**. In a JSON file, specify your performance budget constraints. For example:
+  1. **Run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) with your config**
     . Use the CLI to run Lighthouse with your configuration file:
 
   1. **Review the output**
@@ -828,8 +827,8 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### What is the role of Lighthouse in Progressive Web Apps (PWAs)?
 
-  [Lighthouse](../L/lighthouse.md) plays a crucial role in evaluating and improving the quality of Progressive Web Apps (PWAs) by providing a set of audits that specifically target PWA features and best practices. It assesses PWAs against a baseline of expectations for modern web applications, ensuring they are fast, reliable, and engaging.
-  For PWAs, [Lighthouse](../L/lighthouse.md) checks for:
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) plays a crucial role in evaluating and improving the quality of Progressive Web Apps (PWAs) by providing a set of audits that specifically target PWA features and best practices. It assesses PWAs against a baseline of expectations for modern web applications, ensuring they are fast, reliable, and engaging.
+  For PWAs, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) checks for:
 
   - **Service Worker** : Verifies if a service worker is registered and that it allows for offline use.
   - **Web App Manifest** : Ensures the presence of a manifest file with appropriate icons, theme colors, and display settings for a full-screen, standalone user experience.
@@ -839,7 +838,7 @@ against a web page, developers and testers can obtain a set of actionable recomm
   - **Theming** : Evaluates consistency in theming colors for the address bar and the splash screen.
   - **Viewport Configuration** : Ensures the viewport is properly set for responsive design.
   - **User Engagement** : Measures the ability to prompt users to install the web app to their home screens.
-  By integrating [Lighthouse](../L/lighthouse.md) into the [test automation](../T/test-automation.md) process, engineers can automate the evaluation of these PWA-specific criteria, identify areas for improvement, and track progress over time. This ensures that PWAs meet high standards for performance, accessibility, and user experience, which are critical for user retention and satisfaction.
+  By integrating [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) into the [test automation](https://naodeng.com.cn/en/wiki/test-automation) process, engineers can automate the evaluation of these PWA-specific criteria, identify areas for improvement, and track progress over time. This ensures that PWAs meet high standards for performance, accessibility, and user experience, which are critical for user retention and satisfaction.
 
   - **Service Worker** : Verifies if a service worker is registered and that it allows for offline use.
   - **Web App Manifest** : Ensures the presence of a manifest file with appropriate icons, theme colors, and display settings for a full-screen, standalone user experience.
@@ -852,14 +851,14 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### How does Lighthouse handle JavaScript execution?
 
-  [Lighthouse](../L/lighthouse.md) handles JavaScript execution through a **headless Chrome browser**. When a [Lighthouse](../L/lighthouse.md) audit is initiated, it launches Chrome in headless mode, which allows it to programmatically interact with the page as a user might. [Lighthouse](../L/lighthouse.md) then navigates to the target URL and waits for the page to load.
-  During the loading process, [Lighthouse](../L/lighthouse.md) **records the execution of JavaScript** on the page. This includes the parsing and execution time of scripts, as well as the time it takes for asynchronous JavaScript tasks to complete. [Lighthouse](../L/lighthouse.md) uses the Chrome DevTools Protocol to gather information about JavaScript execution, which includes:
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) handles JavaScript execution through a **headless Chrome browser**. When a [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) audit is initiated, it launches Chrome in headless mode, which allows it to programmatically interact with the page as a user might. [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) then navigates to the target URL and waits for the page to load.
+  During the loading process, [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) **records the execution of JavaScript** on the page. This includes the parsing and execution time of scripts, as well as the time it takes for asynchronous JavaScript tasks to complete. [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) uses the Chrome DevTools Protocol to gather information about JavaScript execution, which includes:
 
   - **Script evaluation** : Time spent parsing and compiling scripts.
   - **Task execution** : Time spent executing script tasks.
   - **JavaScript boot-up time** : Time taken for the page to become interactive, which is critical for understanding user experience.
-  [Lighthouse](../L/lighthouse.md) also simulates user interactions, if necessary, to trigger JavaScript execution that may be tied to user events. This ensures that the audit captures the performance impact of scripts that only execute on interaction.
-  The data collected on JavaScript execution feeds into several [Lighthouse](../L/lighthouse.md) audits, such as:
+  [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) also simulates user interactions, if necessary, to trigger JavaScript execution that may be tied to user events. This ensures that the audit captures the performance impact of scripts that only execute on interaction.
+  The data collected on JavaScript execution feeds into several [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) audits, such as:
 
   - **First Contentful Paint (FCP)**
   - **Time to Interactive (TTI)**
@@ -875,28 +874,28 @@ against a web page, developers and testers can obtain a set of actionable recomm
 
 #### What are some common issues and solutions when using Lighthouse?
 
-  Common issues with [Lighthouse](../L/lighthouse.md) and their solutions:
+  Common issues with [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) and their solutions:
 
-  - **Fluctuating Scores**: Scores can vary between runs due to network conditions, cache state, or CPU throttling. **Solution**: Run [Lighthouse](../L/lighthouse.md) multiple times and average the scores for consistency.
+  - **Fluctuating Scores**: Scores can vary between runs due to network conditions, cache state, or CPU throttling. **Solution**: Run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) multiple times and average the scores for consistency.
   - **Large Assets**: Unoptimized images or bulky scripts can negatively impact performance. **Solution**: Compress images, minify CSS/JS, and use lazy loading.
   - **Third-Party Scripts**: External scripts can slow down your site. **Solution**: Use the `rel="preconnect"` attribute for known hosts, defer non-critical scripts, or remove unnecessary third-party scripts.
   - **Cache Configuration**: Improperly configured caching can lead to redundant data fetching. **Solution**: Set appropriate `Cache-Control` headers for static assets.
-  - **Accessibility Issues**: [Lighthouse](../L/lighthouse.md) might report accessibility concerns that are not immediately obvious. **Solution**: Review each issue, consult WCAG guidelines, and make necessary HTML/ARIA adjustments.
+  - **Accessibility Issues**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) might report accessibility concerns that are not immediately obvious. **Solution**: Review each issue, consult WCAG guidelines, and make necessary HTML/ARIA adjustments.
   - **SEO Shortcomings**: Missing meta tags or improper semantics can affect SEO audits. **Solution**: Ensure proper use of semantic HTML and meta tags like `description`, `viewport`, and structured data.
-  - **Progressive Web App Criteria**: [Lighthouse](../L/lighthouse.md) may indicate PWA features are missing. **Solution**: Implement a service worker, create a web app manifest, and ensure your app is served over HTTPS.
-  - **Timeouts or Errors**: [Lighthouse](../L/lighthouse.md) might timeout or encounter errors when auditing. **Solution**: Check for server issues, ensure no browser extensions are interfering, and run the audit in incognito mode.
-  Use the following command to run [Lighthouse](../L/lighthouse.md) headlessly, which can help with consistency in automated environments:
+  - **Progressive Web App Criteria**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) may indicate PWA features are missing. **Solution**: Implement a service worker, create a web app manifest, and ensure your app is served over HTTPS.
+  - **Timeouts or Errors**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) might timeout or encounter errors when auditing. **Solution**: Check for server issues, ensure no browser extensions are interfering, and run the audit in incognito mode.
+  Use the following command to run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) headlessly, which can help with consistency in automated environments:
 
   ```
   lighthouse <url> --chrome-flags="--headless"
   ```
-  Remember to keep your [Lighthouse](../L/lighthouse.md) version updated to benefit from the latest checks and [bug](../B/bug.md) fixes.
+  Remember to keep your [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) version updated to benefit from the latest checks and [bug](https://naodeng.com.cn/en/wiki/bug) fixes.
 
-  - **Fluctuating Scores**: Scores can vary between runs due to network conditions, cache state, or CPU throttling. **Solution**: Run [Lighthouse](../L/lighthouse.md) multiple times and average the scores for consistency.
+  - **Fluctuating Scores**: Scores can vary between runs due to network conditions, cache state, or CPU throttling. **Solution**: Run [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) multiple times and average the scores for consistency.
   - **Large Assets**: Unoptimized images or bulky scripts can negatively impact performance. **Solution**: Compress images, minify CSS/JS, and use lazy loading.
   - **Third-Party Scripts**: External scripts can slow down your site. **Solution**: Use the `rel="preconnect"` attribute for known hosts, defer non-critical scripts, or remove unnecessary third-party scripts.
   - **Cache Configuration**: Improperly configured caching can lead to redundant data fetching. **Solution**: Set appropriate `Cache-Control` headers for static assets.
-  - **Accessibility Issues**: [Lighthouse](../L/lighthouse.md) might report accessibility concerns that are not immediately obvious. **Solution**: Review each issue, consult WCAG guidelines, and make necessary HTML/ARIA adjustments.
+  - **Accessibility Issues**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) might report accessibility concerns that are not immediately obvious. **Solution**: Review each issue, consult WCAG guidelines, and make necessary HTML/ARIA adjustments.
   - **SEO Shortcomings**: Missing meta tags or improper semantics can affect SEO audits. **Solution**: Ensure proper use of semantic HTML and meta tags like `description`, `viewport`, and structured data.
-  - **Progressive Web App Criteria**: [Lighthouse](../L/lighthouse.md) may indicate PWA features are missing. **Solution**: Implement a service worker, create a web app manifest, and ensure your app is served over HTTPS.
-  - **Timeouts or Errors**: [Lighthouse](../L/lighthouse.md) might timeout or encounter errors when auditing. **Solution**: Check for server issues, ensure no browser extensions are interfering, and run the audit in incognito mode.
+  - **Progressive Web App Criteria**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) may indicate PWA features are missing. **Solution**: Implement a service worker, create a web app manifest, and ensure your app is served over HTTPS.
+  - **Timeouts or Errors**: [Lighthouse](https://naodeng.com.cn/en/wiki/lighthouse) might timeout or encounter errors when auditing. **Solution**: Check for server issues, ensure no browser extensions are interfering, and run the audit in incognito mode.

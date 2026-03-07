@@ -1,6 +1,5 @@
 # Interface Testing
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
 - [Questions about Interface Testing ?](#questions-about-interface-testing)
@@ -41,7 +40,7 @@ Interface Testing
 
 ## Related Terms:
 
-- [Integration Testing](../I/integration-testing.md)
+- [Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)
 
 ## Questions about Interface Testing ?
 
@@ -49,23 +48,23 @@ Interface Testing
 
 #### What is interface testing in software testing?
 
-  [Interface testing](../I/interface-testing.md) is a critical facet of [software testing](../S/software-testing.md) that focuses on verifying the interactions between different software components or systems. It ensures that the interfaces between software modules work correctly, data is properly exchanged, and control flows are as expected. This type of testing is essential for detecting issues in communication and data handling between various parts of a system.
-  In [interface testing](../I/interface-testing.md), **stubs** and **drivers** are commonly employed to simulate the behavior of missing or incomplete modules. Stubs act as temporary replacements for called modules, providing predefined responses to the calling module. Conversely, drivers simulate calling modules to test the responses of a subordinate module.
-  Automation plays a significant role in [interface testing](../I/interface-testing.md) by enabling repetitive and extensive [test execution](../T/test-execution.md) without manual intervention. Automated tests can be written using various technologies, such as **SOAP UI** for web services or **[Postman](../P/postman.md)** for REST [APIs](../A/api.md), to validate the interfaces.
+  [Interface testing](https://naodeng.com.cn/en/wiki/interface-testing) is a critical facet of [software testing](https://naodeng.com.cn/en/wiki/software-testing) that focuses on verifying the interactions between different software components or systems. It ensures that the interfaces between software modules work correctly, data is properly exchanged, and control flows are as expected. This type of testing is essential for detecting issues in communication and data handling between various parts of a system.
+  In [interface testing](https://naodeng.com.cn/en/wiki/interface-testing), **stubs** and **drivers** are commonly employed to simulate the behavior of missing or incomplete modules. Stubs act as temporary replacements for called modules, providing predefined responses to the calling module. Conversely, drivers simulate calling modules to test the responses of a subordinate module.
+  Automation plays a significant role in [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) by enabling repetitive and extensive [test execution](https://naodeng.com.cn/en/wiki/test-execution) without manual intervention. Automated tests can be written using various technologies, such as **SOAP UI** for web services or **[Postman](https://naodeng.com.cn/en/wiki/postman)** for REST [APIs](https://naodeng.com.cn/en/wiki/api), to validate the interfaces.
   To ensure thoroughness, tests should cover all possible data variations and control paths that could occur during interaction. Effectiveness can be measured by the number of defects detected and the coverage of interface scenarios.
-  Best practices include defining clear interface contracts, maintaining a robust set of [test cases](../T/test-case.md), and ensuring that automated tests are part of the continuous integration pipeline. Common mistakes to avoid are neglecting boundary conditions, not considering negative [test scenarios](../T/test-scenario.md), and inadequate test maintenance.
+  Best practices include defining clear interface contracts, maintaining a robust set of [test cases](https://naodeng.com.cn/en/wiki/test-case), and ensuring that automated tests are part of the continuous integration pipeline. Common mistakes to avoid are neglecting boundary conditions, not considering negative [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario), and inadequate test maintenance.
 
 #### Why is interface testing important in software development?
 
-  [Interface testing](../I/interface-testing.md) is crucial in software development because it ensures that different software components interact correctly. It validates that the interfaces between modules, classes, or services adhere to their defined contracts, which is essential for the system's reliability and stability. By focusing on the points of interaction, testers can pinpoint inconsistencies, communication errors, and data exchange issues that could lead to system failures or unexpected behavior.
-  **[Interface testing](../I/interface-testing.md)** is particularly important in a microservices architecture or when integrating third-party services, where the system's functionality heavily relies on multiple, often independently developed, components working seamlessly together. It helps in identifying problems early in the development cycle, reducing the cost and effort of fixing issues later.
-  Moreover, [interface testing](../I/interface-testing.md) verifies that changes or updates in one module do not break the interaction with others, which is vital for maintaining the integrity of the system during continuous development and deployment practices.
-  Automated [interface testing](../I/interface-testing.md) allows for frequent and consistent validation of interfaces, especially beneficial in agile and DevOps environments. It enables quick feedback loops and supports continuous integration and delivery pipelines by providing assurance that new code commits do not introduce interface-related defects.
-  In summary, [interface testing](../I/interface-testing.md) is a linchpin in ensuring that the independently developed pieces of a software system work together as intended, which is fundamental to delivering a robust and functional product.
+  [Interface testing](https://naodeng.com.cn/en/wiki/interface-testing) is crucial in software development because it ensures that different software components interact correctly. It validates that the interfaces between modules, classes, or services adhere to their defined contracts, which is essential for the system's reliability and stability. By focusing on the points of interaction, testers can pinpoint inconsistencies, communication errors, and data exchange issues that could lead to system failures or unexpected behavior.
+  **[Interface testing](https://naodeng.com.cn/en/wiki/interface-testing)** is particularly important in a microservices architecture or when integrating third-party services, where the system's functionality heavily relies on multiple, often independently developed, components working seamlessly together. It helps in identifying problems early in the development cycle, reducing the cost and effort of fixing issues later.
+  Moreover, [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) verifies that changes or updates in one module do not break the interaction with others, which is vital for maintaining the integrity of the system during continuous development and deployment practices.
+  Automated [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) allows for frequent and consistent validation of interfaces, especially beneficial in agile and DevOps environments. It enables quick feedback loops and supports continuous integration and delivery pipelines by providing assurance that new code commits do not introduce interface-related defects.
+  In summary, [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) is a linchpin in ensuring that the independently developed pieces of a software system work together as intended, which is fundamental to delivering a robust and functional product.
 
 #### What are the main objectives of interface testing?
 
-  The main objectives of [interface testing](../I/interface-testing.md) are to:
+  The main objectives of [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) are to:
 
   - **Verify the correctness of data exchange**
     between different software systems or components, ensuring that data is sent and received as expected.
@@ -87,7 +86,7 @@ Interface Testing
 
   - **Guarantee security compliance**
     , by checking that the interface does not expose the system to security vulnerabilities, such as data leaks or unauthorized access.
-  By focusing on these objectives, [interface testing](../I/interface-testing.md) aims to establish a reliable, efficient, and secure interaction between different software entities, which is critical for the overall system integrity and user satisfaction.
+  By focusing on these objectives, [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) aims to establish a reliable, efficient, and secure interaction between different software entities, which is critical for the overall system integrity and user satisfaction.
 
   - **Verify the correctness of data exchange**
     between different software systems or components, ensuring that data is sent and received as expected.
@@ -112,7 +111,7 @@ Interface Testing
 
 #### How does interface testing contribute to the overall quality of a software product?
 
-  [Interface testing](../I/interface-testing.md) ensures that different software components interact correctly, contributing to the overall quality of a software product by:
+  [Interface testing](https://naodeng.com.cn/en/wiki/interface-testing) ensures that different software components interact correctly, contributing to the overall quality of a software product by:
 
   - **Detecting inconsistencies**
     and discrepancies between interconnected systems, which can prevent future defects.
@@ -128,7 +127,7 @@ Interface Testing
 
   - **Facilitating maintenance**
     by isolating issues at the interface level, making it easier to update or replace components without affecting others.
-  By focusing on the points of interaction, [interface testing](../I/interface-testing.md) helps maintain a high level of software integrity and user satisfaction, as interfaces often serve as the user's entry point to the software's functionality.
+  By focusing on the points of interaction, [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) helps maintain a high level of software integrity and user satisfaction, as interfaces often serve as the user's entry point to the software's functionality.
 
   - **Detecting inconsistencies**
     and discrepancies between interconnected systems, which can prevent future defects.
@@ -149,34 +148,34 @@ Interface Testing
 
 #### What are the common methods used in interface testing?
 
-  Common methods used in **[interface testing](../I/interface-testing.md)** include:
+  Common methods used in **[interface testing](https://naodeng.com.cn/en/wiki/interface-testing)** include:
 
-  - **[API](../A/api.md) Contract Testing**: Verifying that the interface adheres to the agreed contract, such as OpenAPI specifications. Tools like Dredd or Pact are often used.
-  - **[Functional Testing](../F/functional-testing.md)**: Ensuring that the interface behaves as expected under various conditions. This involves sending requests and checking responses for correctness.
-  - **[Load Testing](../L/load-testing.md)**: Assessing how the interface handles high volumes of traffic. Tools like [JMeter](../J/jmeter.md) or Gatling can simulate multiple users.
-  - **[Security Testing](../S/security-testing.md)**: Identifying vulnerabilities in the interface, such as injection attacks or data leaks. OWASP ZAP or Burp Suite can be employed for this purpose.
-  - **[Compatibility Testing](../C/compatibility-testing.md)**: Checking that the interface works across different environments, operating systems, and devices.
-  - **[Negative Testing](../N/negative-testing.md)**: Deliberately sending invalid, unexpected, or random data to the interface to ensure it handles errors gracefully.
-  - **Data-Driven Testing**: Using external data sources to provide input values and expected outcomes, enhancing [test coverage](../T/test-coverage.md) and reducing maintenance.
-  - **[End-to-End Testing](../E/end-to-end-testing.md)**: Validating the interface within the context of the entire system workflow, ensuring all components interact correctly.
+  - **[API](https://naodeng.com.cn/en/wiki/api) Contract Testing**: Verifying that the interface adheres to the agreed contract, such as OpenAPI specifications. Tools like Dredd or Pact are often used.
+  - **[Functional Testing](https://naodeng.com.cn/en/wiki/functional-testing)**: Ensuring that the interface behaves as expected under various conditions. This involves sending requests and checking responses for correctness.
+  - **[Load Testing](https://naodeng.com.cn/en/wiki/load-testing)**: Assessing how the interface handles high volumes of traffic. Tools like [JMeter](https://naodeng.com.cn/en/wiki/jmeter) or Gatling can simulate multiple users.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Identifying vulnerabilities in the interface, such as injection attacks or data leaks. OWASP ZAP or Burp Suite can be employed for this purpose.
+  - **[Compatibility Testing](https://naodeng.com.cn/en/wiki/compatibility-testing)**: Checking that the interface works across different environments, operating systems, and devices.
+  - **[Negative Testing](https://naodeng.com.cn/en/wiki/negative-testing)**: Deliberately sending invalid, unexpected, or random data to the interface to ensure it handles errors gracefully.
+  - **Data-Driven Testing**: Using external data sources to provide input values and expected outcomes, enhancing [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and reducing maintenance.
+  - **[End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**: Validating the interface within the context of the entire system workflow, ensuring all components interact correctly.
   - **Service Virtualization**: Mimicking the behavior of dependent services that are not available for testing using virtual services or mock servers.
   - **Performance Profiling**: Monitoring the interface's resource usage under different scenarios to identify potential performance bottlenecks.
   Automated tests can be written in various languages and frameworks, such as **Python** with **pytest**, **JavaScript** with **Mocha**, or **Java** with **TestNG**. The choice of tools and methods depends on the specific requirements and context of the interface under test.
 
-  - **[API](../A/api.md) Contract Testing**: Verifying that the interface adheres to the agreed contract, such as OpenAPI specifications. Tools like Dredd or Pact are often used.
-  - **[Functional Testing](../F/functional-testing.md)**: Ensuring that the interface behaves as expected under various conditions. This involves sending requests and checking responses for correctness.
-  - **[Load Testing](../L/load-testing.md)**: Assessing how the interface handles high volumes of traffic. Tools like [JMeter](../J/jmeter.md) or Gatling can simulate multiple users.
-  - **[Security Testing](../S/security-testing.md)**: Identifying vulnerabilities in the interface, such as injection attacks or data leaks. OWASP ZAP or Burp Suite can be employed for this purpose.
-  - **[Compatibility Testing](../C/compatibility-testing.md)**: Checking that the interface works across different environments, operating systems, and devices.
-  - **[Negative Testing](../N/negative-testing.md)**: Deliberately sending invalid, unexpected, or random data to the interface to ensure it handles errors gracefully.
-  - **Data-Driven Testing**: Using external data sources to provide input values and expected outcomes, enhancing [test coverage](../T/test-coverage.md) and reducing maintenance.
-  - **[End-to-End Testing](../E/end-to-end-testing.md)**: Validating the interface within the context of the entire system workflow, ensuring all components interact correctly.
+  - **[API](https://naodeng.com.cn/en/wiki/api) Contract Testing**: Verifying that the interface adheres to the agreed contract, such as OpenAPI specifications. Tools like Dredd or Pact are often used.
+  - **[Functional Testing](https://naodeng.com.cn/en/wiki/functional-testing)**: Ensuring that the interface behaves as expected under various conditions. This involves sending requests and checking responses for correctness.
+  - **[Load Testing](https://naodeng.com.cn/en/wiki/load-testing)**: Assessing how the interface handles high volumes of traffic. Tools like [JMeter](https://naodeng.com.cn/en/wiki/jmeter) or Gatling can simulate multiple users.
+  - **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Identifying vulnerabilities in the interface, such as injection attacks or data leaks. OWASP ZAP or Burp Suite can be employed for this purpose.
+  - **[Compatibility Testing](https://naodeng.com.cn/en/wiki/compatibility-testing)**: Checking that the interface works across different environments, operating systems, and devices.
+  - **[Negative Testing](https://naodeng.com.cn/en/wiki/negative-testing)**: Deliberately sending invalid, unexpected, or random data to the interface to ensure it handles errors gracefully.
+  - **Data-Driven Testing**: Using external data sources to provide input values and expected outcomes, enhancing [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) and reducing maintenance.
+  - **[End-to-End Testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**: Validating the interface within the context of the entire system workflow, ensuring all components interact correctly.
   - **Service Virtualization**: Mimicking the behavior of dependent services that are not available for testing using virtual services or mock servers.
   - **Performance Profiling**: Monitoring the interface's resource usage under different scenarios to identify potential performance bottlenecks.
 
 #### How is a stub used in interface testing?
 
-  In [interface testing](../I/interface-testing.md), a **stub** is a minimal implementation of a module, used to simulate the behavior of yet-to-be-developed components that an application's module interacts with. Stubs are particularly useful when testing a module that depends on another module's output or behavior. They provide predefined responses to function calls made by the module under test.
+  In [interface testing](https://naodeng.com.cn/en/wiki/interface-testing), a **stub** is a minimal implementation of a module, used to simulate the behavior of yet-to-be-developed components that an application's module interacts with. Stubs are particularly useful when testing a module that depends on another module's output or behavior. They provide predefined responses to function calls made by the module under test.
   Here's a basic example in TypeScript:
 
   ```
@@ -220,7 +219,7 @@ Interface Testing
 
 #### What is the role of a driver in interface testing?
 
-  In [interface testing](../I/interface-testing.md), a **driver** is a component or tool that simulates the behavior of a calling module or a higher-level component to test the interface of a lower-level module. It provides the necessary input to the module being tested and receives its output.
+  In [interface testing](https://naodeng.com.cn/en/wiki/interface-testing), a **driver** is a component or tool that simulates the behavior of a calling module or a higher-level component to test the interface of a lower-level module. It provides the necessary input to the module being tested and receives its output.
   Drivers are essential when the higher-level modules are not yet developed or are unavailable for testing. They are particularly useful for **top-down integration testing** where testing starts from the top modules and progresses to the lower ones.
   A driver typically:
 
@@ -241,7 +240,7 @@ Interface Testing
   }
   ```
   In this example, `moduleUnderTest.functionToTest` is the interface being tested, and `testDriver` acts as the driver by providing 'Test Input' and verifying the 'Expected Output'.
-  Drivers are often temporary and are replaced by the actual calling modules once those are developed and integrated. In [automated testing](../A/automated-testing.md), drivers can be part of the [test harness](../T/test-harness.md) and are created using the same or compatible testing frameworks and languages as the software under test.
+  Drivers are often temporary and are replaced by the actual calling modules once those are developed and integrated. In [automated testing](https://naodeng.com.cn/en/wiki/automated-testing), drivers can be part of the [test harness](https://naodeng.com.cn/en/wiki/test-harness) and are created using the same or compatible testing frameworks and languages as the software under test.
 
   - Initiates calls to the module under test.
   - Passes test data as inputs to these calls.
@@ -249,9 +248,9 @@ Interface Testing
 
 #### What are some techniques for effective interface testing?
 
-  To ensure effective [interface testing](../I/interface-testing.md), consider the following techniques:
+  To ensure effective [interface testing](https://naodeng.com.cn/en/wiki/interface-testing), consider the following techniques:
 
-  - **Design clear [test cases](../T/test-case.md)**
+  - **Design clear [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that cover all possible interactions between the interfaces. Focus on boundary conditions and error handling scenarios.
 
   - Utilize
@@ -267,7 +266,7 @@ Interface Testing
     to simulate the behavior of complex interfaces, allowing you to test without the need for the actual interface implementation.
 
   - Apply
-    **[end-to-end testing](../E/end-to-end-testing.md)**
+    **[end-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**
     to validate the flow of data through the interfaces within the entire system, ensuring that components interact correctly.
 
   - **Monitor response times**
@@ -295,7 +294,7 @@ Interface Testing
   ```
   Remember to **validate both the functional and non-functional** aspects of the interface, such as security, usability, and compliance with standards.
 
-  - **Design clear [test cases](../T/test-case.md)**
+  - **Design clear [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that cover all possible interactions between the interfaces. Focus on boundary conditions and error handling scenarios.
 
   - Utilize
@@ -311,7 +310,7 @@ Interface Testing
     to simulate the behavior of complex interfaces, allowing you to test without the need for the actual interface implementation.
 
   - Apply
-    **[end-to-end testing](../E/end-to-end-testing.md)**
+    **[end-to-end testing](https://naodeng.com.cn/en/wiki/end-to-end-testing)**
     to validate the flow of data through the interfaces within the entire system, ensuring that components interact correctly.
 
   - **Monitor response times**
@@ -332,25 +331,25 @@ Interface Testing
 
 #### How is interface testing different from integration testing?
 
-  [Interface testing](../I/interface-testing.md) focuses on verifying the interactions between different software modules or systems, ensuring that data is correctly exchanged and that the interface adheres to specified requirements. It targets the points of connection where modules or systems meet, checking for issues in communication protocols, data formats, and request and response patterns.
-  In contrast, [integration testing](../I/integration-testing.md) evaluates the combined functionality of multiple components or systems to ensure they work together as intended. It goes beyond the interface to test the behavior of integrated units as a whole, identifying defects in the interactions and data flow between integrated components.
-  While [interface testing](../I/interface-testing.md) is a subset of [integration testing](../I/integration-testing.md), it is more granular, concentrating on the correctness of the interface itself rather than the broader functionality achieved by integration. [Integration testing](../I/integration-testing.md) may use test drivers and stubs, similar to [interface testing](../I/interface-testing.md), but its scope encompasses verifying functional, performance, and reliability requirements of the software system when components are combined.
-  In summary, [interface testing](../I/interface-testing.md) is a focused examination of the points where software entities connect, while [integration testing](../I/integration-testing.md) is a comprehensive assessment of how well those entities work together when integrated.
+  [Interface testing](https://naodeng.com.cn/en/wiki/interface-testing) focuses on verifying the interactions between different software modules or systems, ensuring that data is correctly exchanged and that the interface adheres to specified requirements. It targets the points of connection where modules or systems meet, checking for issues in communication protocols, data formats, and request and response patterns.
+  In contrast, [integration testing](https://naodeng.com.cn/en/wiki/integration-testing) evaluates the combined functionality of multiple components or systems to ensure they work together as intended. It goes beyond the interface to test the behavior of integrated units as a whole, identifying defects in the interactions and data flow between integrated components.
+  While [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) is a subset of [integration testing](https://naodeng.com.cn/en/wiki/integration-testing), it is more granular, concentrating on the correctness of the interface itself rather than the broader functionality achieved by integration. [Integration testing](https://naodeng.com.cn/en/wiki/integration-testing) may use test drivers and stubs, similar to [interface testing](https://naodeng.com.cn/en/wiki/interface-testing), but its scope encompasses verifying functional, performance, and reliability requirements of the software system when components are combined.
+  In summary, [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) is a focused examination of the points where software entities connect, while [integration testing](https://naodeng.com.cn/en/wiki/integration-testing) is a comprehensive assessment of how well those entities work together when integrated.
 
 ### Tools and Technologies
 
 #### What tools are commonly used for interface testing?
 
-  Commonly used tools for [interface testing](../I/interface-testing.md) include:
+  Commonly used tools for [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) include:
 
-  - **[Selenium](../S/selenium.md)** : An open-source tool that automates web browsers, providing a single interface for testing web applications.
-  - **[Postman](../P/postman.md)** : Popular for API testing, allowing users to send HTTP requests and analyze responses.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : An open-source tool that automates web browsers, providing a single interface for testing web applications.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)** : Popular for API testing, allowing users to send HTTP requests and analyze responses.
   - **SoapUI** : Designed for SOAP and REST API testing, offering both functional and performance testing capabilities.
-  - **[JMeter](../J/jmeter.md)** : Apache JMeter is used for performance testing and can also be used for API testing.
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : Apache JMeter is used for performance testing and can also be used for API testing.
   - **Appium** : An open-source tool for automating mobile applications on iOS and Android platforms.
   - **TestComplete** : A commercial tool that supports desktop, mobile, and web interface testing.
   - **Ranorex** : Provides tools for desktop, web, and mobile testing, with a focus on user interface testing.
-  - **[Cypress](../C/cypress.md)** : A modern JavaScript-based tool for end-to-end testing of web applications.
+  - **[Cypress](https://naodeng.com.cn/en/wiki/cypress)** : A modern JavaScript-based tool for end-to-end testing of web applications.
 
   ```
   // Example of a Selenium WebDriver test in TypeScript
@@ -368,24 +367,24 @@ Interface Testing
   ```
   These tools support various scripting languages and integrate with continuous integration systems, making them suitable for automating interface tests as part of a CI/CD pipeline.
 
-  - **[Selenium](../S/selenium.md)** : An open-source tool that automates web browsers, providing a single interface for testing web applications.
-  - **[Postman](../P/postman.md)** : Popular for API testing, allowing users to send HTTP requests and analyze responses.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : An open-source tool that automates web browsers, providing a single interface for testing web applications.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)** : Popular for API testing, allowing users to send HTTP requests and analyze responses.
   - **SoapUI** : Designed for SOAP and REST API testing, offering both functional and performance testing capabilities.
-  - **[JMeter](../J/jmeter.md)** : Apache JMeter is used for performance testing and can also be used for API testing.
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : Apache JMeter is used for performance testing and can also be used for API testing.
   - **Appium** : An open-source tool for automating mobile applications on iOS and Android platforms.
   - **TestComplete** : A commercial tool that supports desktop, mobile, and web interface testing.
   - **Ranorex** : Provides tools for desktop, web, and mobile testing, with a focus on user interface testing.
-  - **[Cypress](../C/cypress.md)** : A modern JavaScript-based tool for end-to-end testing of web applications.
+  - **[Cypress](https://naodeng.com.cn/en/wiki/cypress)** : A modern JavaScript-based tool for end-to-end testing of web applications.
 
 #### How can automation be applied in interface testing?
 
-  Automation can be applied in [interface testing](../I/interface-testing.md) by creating automated [test scripts](../T/test-script.md) that interact with the software's interfaces, such as [APIs](../A/api.md), web services, or GUI components. These scripts can be written in various programming languages and are designed to validate the interface's functionality, reliability, and performance under different conditions.
-  To automate [interface testing](../I/interface-testing.md):
+  Automation can be applied in [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) by creating automated [test scripts](https://naodeng.com.cn/en/wiki/test-script) that interact with the software's interfaces, such as [APIs](https://naodeng.com.cn/en/wiki/api), web services, or GUI components. These scripts can be written in various programming languages and are designed to validate the interface's functionality, reliability, and performance under different conditions.
+  To automate [interface testing](https://naodeng.com.cn/en/wiki/interface-testing):
 
   - **Identify the interfaces**
     to test and define the expected outcomes.
 
-  - **Create [test cases](../T/test-case.md)**
+  - **Create [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that cover all possible input combinations and scenarios.
 
   - Use
@@ -400,7 +399,7 @@ Interface Testing
 
   - **Integrate with CI/CD pipelines**
     for continuous testing and feedback.
-  Example of an [API](../A/api.md) [test script](../T/test-script.md) using JavaScript and a testing library like [Jest](../J/jest.md):
+  Example of an [API](https://naodeng.com.cn/en/wiki/api) [test script](https://naodeng.com.cn/en/wiki/test-script) using JavaScript and a testing library like [Jest](https://naodeng.com.cn/en/wiki/jest):
 
   ```
   const request = require('supertest');
@@ -414,12 +413,12 @@ Interface Testing
     });
   });
   ```
-  Automated [interface testing](../I/interface-testing.md) ensures consistent execution of [test cases](../T/test-case.md), saves time, and allows for more frequent testing cycles. It's crucial to maintain and update [test scripts](../T/test-script.md) as the software evolves to ensure continued effectiveness.
+  Automated [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) ensures consistent execution of [test cases](https://naodeng.com.cn/en/wiki/test-case), saves time, and allows for more frequent testing cycles. It's crucial to maintain and update [test scripts](https://naodeng.com.cn/en/wiki/test-script) as the software evolves to ensure continued effectiveness.
 
   - **Identify the interfaces**
     to test and define the expected outcomes.
 
-  - **Create [test cases](../T/test-case.md)**
+  - **Create [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that cover all possible input combinations and scenarios.
 
   - Use
@@ -437,56 +436,56 @@ Interface Testing
 
 #### What are the benefits and drawbacks of using automated tools for interface testing?
 
-  Benefits of Automated Tools for [Interface Testing](../I/interface-testing.md):
+  Benefits of Automated Tools for [Interface Testing](https://naodeng.com.cn/en/wiki/interface-testing):
 
   - **Efficiency** : Automated tools can execute tests much faster than manual testing, allowing for frequent and comprehensive testing.
   - **Repeatability** : Tests can be run multiple times with consistent accuracy, ensuring reliability in results.
   - **Coverage** : Automation can increase the scope and depth of tests, improving the likelihood of uncovering edge cases.
   - **Cost-Effectiveness** : Over time, automation reduces the cost of testing by minimizing the manual effort required.
   - **Continuous Integration** : Automated tests can be easily integrated into CI/CD pipelines, providing immediate feedback on changes.
-  Drawbacks of Automated Tools for [Interface Testing](../I/interface-testing.md):
+  Drawbacks of Automated Tools for [Interface Testing](https://naodeng.com.cn/en/wiki/interface-testing):
 
-  - **Initial [Setup](../S/setup.md) Cost** : There is an upfront investment in setting up automated tests, including purchasing tools and training staff.
+  - **Initial [Setup](https://naodeng.com.cn/en/wiki/setup) Cost** : There is an upfront investment in setting up automated tests, including purchasing tools and training staff.
   - **Maintenance Overhead** : Test scripts require regular updates to keep pace with application changes, adding to the maintenance burden.
   - **Limited Creativity** : Automated tests are limited to predefined scenarios and may miss issues that a human tester could discover through exploratory testing.
   - **Complexity** : Some interfaces may be difficult to automate due to dynamic content or non-standard controls, requiring sophisticated and sometimes brittle automation scripts.
-  - **[False Positives](../F/false-positive.md)/Negatives** : Automated tests can produce incorrect results if not designed or maintained properly, leading to either overlooked defects or unnecessary work.
-  In summary, while automated tools for [interface testing](../I/interface-testing.md) offer significant advantages in terms of efficiency and coverage, they also come with challenges such as maintenance overhead and the potential for false results. [Test automation](../T/test-automation.md) engineers must balance these factors to effectively leverage automation in [interface testing](../I/interface-testing.md).
+  - **[False Positives](https://naodeng.com.cn/en/wiki/false-positive)/Negatives** : Automated tests can produce incorrect results if not designed or maintained properly, leading to either overlooked defects or unnecessary work.
+  In summary, while automated tools for [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) offer significant advantages in terms of efficiency and coverage, they also come with challenges such as maintenance overhead and the potential for false results. [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers must balance these factors to effectively leverage automation in [interface testing](https://naodeng.com.cn/en/wiki/interface-testing).
 
   - **Efficiency** : Automated tools can execute tests much faster than manual testing, allowing for frequent and comprehensive testing.
   - **Repeatability** : Tests can be run multiple times with consistent accuracy, ensuring reliability in results.
   - **Coverage** : Automation can increase the scope and depth of tests, improving the likelihood of uncovering edge cases.
   - **Cost-Effectiveness** : Over time, automation reduces the cost of testing by minimizing the manual effort required.
   - **Continuous Integration** : Automated tests can be easily integrated into CI/CD pipelines, providing immediate feedback on changes.
-  - **Initial [Setup](../S/setup.md) Cost** : There is an upfront investment in setting up automated tests, including purchasing tools and training staff.
+  - **Initial [Setup](https://naodeng.com.cn/en/wiki/setup) Cost** : There is an upfront investment in setting up automated tests, including purchasing tools and training staff.
   - **Maintenance Overhead** : Test scripts require regular updates to keep pace with application changes, adding to the maintenance burden.
   - **Limited Creativity** : Automated tests are limited to predefined scenarios and may miss issues that a human tester could discover through exploratory testing.
   - **Complexity** : Some interfaces may be difficult to automate due to dynamic content or non-standard controls, requiring sophisticated and sometimes brittle automation scripts.
-  - **[False Positives](../F/false-positive.md)/Negatives** : Automated tests can produce incorrect results if not designed or maintained properly, leading to either overlooked defects or unnecessary work.
+  - **[False Positives](https://naodeng.com.cn/en/wiki/false-positive)/Negatives** : Automated tests can produce incorrect results if not designed or maintained properly, leading to either overlooked defects or unnecessary work.
 
 #### What are some examples of technologies that can be used for interface testing?
 
-  Technologies for [interface testing](../I/interface-testing.md) vary based on the type of interface and the level of testing required. Here are some examples:
+  Technologies for [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) vary based on the type of interface and the level of testing required. Here are some examples:
 
-  - **[Selenium](../S/selenium.md)** : A popular tool for automating web browsers, useful for testing web interfaces.
-  - **[Postman](../P/postman.md)** : Widely used for API testing, allowing testers to send HTTP requests and analyze responses.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : A popular tool for automating web browsers, useful for testing web interfaces.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)** : Widely used for API testing, allowing testers to send HTTP requests and analyze responses.
   - **SoapUI** : Specializes in testing SOAP and REST web services.
   - **Appium** : An open-source tool for automating mobile applications on iOS and Android platforms.
-  - **[JMeter](../J/jmeter.md)** : Designed for performance testing, it can also be used for interface testing, especially for APIs and services.
-  - **[Cypress](../C/cypress.md)** : A modern web testing framework that runs in the browser, providing end-to-end testing capabilities.
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : Designed for performance testing, it can also be used for interface testing, especially for APIs and services.
+  - **[Cypress](https://naodeng.com.cn/en/wiki/cypress)** : A modern web testing framework that runs in the browser, providing end-to-end testing capabilities.
   - **RestAssured** : A Java DSL for simplifying testing of REST-based services.
   - **TestComplete** : A GUI test automation tool that supports desktop, mobile, and web applications.
   - **Robot Framework** : A keyword-driven test automation framework for acceptance testing and acceptance test-driven development (ATDD).
   - **Charles Proxy** : Useful for monitoring HTTP and HTTPS traffic between a client and server to test web service interfaces.
   - **Wireshark** : A network protocol analyzer that can be used to inspect and debug traffic at the interface level.
-  Each tool offers unique features that cater to different testing needs, such as [functional testing](../F/functional-testing.md), [performance testing](../P/performance-testing.md), or monitoring network traffic. Selecting the right technology depends on the specific requirements of the interface under test.
+  Each tool offers unique features that cater to different testing needs, such as [functional testing](https://naodeng.com.cn/en/wiki/functional-testing), [performance testing](https://naodeng.com.cn/en/wiki/performance-testing), or monitoring network traffic. Selecting the right technology depends on the specific requirements of the interface under test.
 
-  - **[Selenium](../S/selenium.md)** : A popular tool for automating web browsers, useful for testing web interfaces.
-  - **[Postman](../P/postman.md)** : Widely used for API testing, allowing testers to send HTTP requests and analyze responses.
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)** : A popular tool for automating web browsers, useful for testing web interfaces.
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)** : Widely used for API testing, allowing testers to send HTTP requests and analyze responses.
   - **SoapUI** : Specializes in testing SOAP and REST web services.
   - **Appium** : An open-source tool for automating mobile applications on iOS and Android platforms.
-  - **[JMeter](../J/jmeter.md)** : Designed for performance testing, it can also be used for interface testing, especially for APIs and services.
-  - **[Cypress](../C/cypress.md)** : A modern web testing framework that runs in the browser, providing end-to-end testing capabilities.
+  - **[JMeter](https://naodeng.com.cn/en/wiki/jmeter)** : Designed for performance testing, it can also be used for interface testing, especially for APIs and services.
+  - **[Cypress](https://naodeng.com.cn/en/wiki/cypress)** : A modern web testing framework that runs in the browser, providing end-to-end testing capabilities.
   - **RestAssured** : A Java DSL for simplifying testing of REST-based services.
   - **TestComplete** : A GUI test automation tool that supports desktop, mobile, and web applications.
   - **Robot Framework** : A keyword-driven test automation framework for acceptance testing and acceptance test-driven development (ATDD).
@@ -497,7 +496,7 @@ Interface Testing
 
 #### What are some best practices for interface testing?
 
-  Best practices for [interface testing](../I/interface-testing.md) include:
+  Best practices for [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) include:
 
   - **Define clear interface contracts** : Ensure that the interfaces have well-defined contracts that specify expected inputs, outputs, and behavior.
   - **Use version control** : Manage interface definitions using version control systems to track changes and maintain consistency.
@@ -506,7 +505,7 @@ Interface Testing
   - **Check error handling** : Verify that interfaces respond correctly to invalid inputs and system failures.
   - **Test under load** : Perform load testing to validate interface performance under high traffic conditions.
   - **Automate regression tests** : Create automated regression tests for interfaces to quickly identify breaking changes.
-  - **Monitor [backward compatibility](../B/backward-compatibility.md)** : Ensure that updates to interfaces do not break existing clients that depend on them.
+  - **Monitor [backward compatibility](https://naodeng.com.cn/en/wiki/backward-compatibility)** : Ensure that updates to interfaces do not break existing clients that depend on them.
   - **Use schema validation** : Implement schema validation for data formats like JSON or XML to ensure the data structure complies with the defined schema.
   - **Implement security tests** : Include security testing to check for vulnerabilities like SQL injection or data leaks through interfaces.
   - **Document interfaces thoroughly** : Maintain up-to-date documentation for interfaces to facilitate understanding and testing by other team members.
@@ -532,7 +531,7 @@ Interface Testing
   - **Check error handling** : Verify that interfaces respond correctly to invalid inputs and system failures.
   - **Test under load** : Perform load testing to validate interface performance under high traffic conditions.
   - **Automate regression tests** : Create automated regression tests for interfaces to quickly identify breaking changes.
-  - **Monitor [backward compatibility](../B/backward-compatibility.md)** : Ensure that updates to interfaces do not break existing clients that depend on them.
+  - **Monitor [backward compatibility](https://naodeng.com.cn/en/wiki/backward-compatibility)** : Ensure that updates to interfaces do not break existing clients that depend on them.
   - **Use schema validation** : Implement schema validation for data formats like JSON or XML to ensure the data structure complies with the defined schema.
   - **Implement security tests** : Include security testing to check for vulnerabilities like SQL injection or data leaks through interfaces.
   - **Document interfaces thoroughly** : Maintain up-to-date documentation for interfaces to facilitate understanding and testing by other team members.
@@ -540,34 +539,34 @@ Interface Testing
 
 #### How can you ensure that interface testing is thorough and effective?
 
-  To ensure **thorough and effective [interface testing](../I/interface-testing.md)**, consider the following strategies:
+  To ensure **thorough and effective [interface testing](https://naodeng.com.cn/en/wiki/interface-testing)**, consider the following strategies:
 
   - **Define clear interface contracts** : Establish the expected behaviors, data formats, and protocols to ensure consistency across tests.
   - **Use parameterized tests** : Create tests that can run with different sets of input data to cover more scenarios.
-  - **Implement [negative testing](../N/negative-testing.md)** : Test for failure cases and invalid inputs to ensure the interface can handle errors gracefully.
+  - **Implement [negative testing](https://naodeng.com.cn/en/wiki/negative-testing)** : Test for failure cases and invalid inputs to ensure the interface can handle errors gracefully.
   - **Leverage boundary value analysis** : Focus on the edge cases at the limits of input ranges to catch potential errors.
   - **Automate regression tests** : Ensure that interface functionality remains stable over time by automating repetitive checks.
   - **Mock external systems** : Use mocking frameworks to simulate the behavior of external interfaces for isolated testing.
   - **Monitor performance** : Include tests that measure response times and throughput to detect performance issues.
-  - **Conduct [security testing](../S/security-testing.md)** : Include tests that assess the interface for vulnerabilities to unauthorized access or data breaches.
+  - **Conduct [security testing](https://naodeng.com.cn/en/wiki/security-testing)** : Include tests that assess the interface for vulnerabilities to unauthorized access or data breaches.
   - **Review and update tests regularly** : Keep tests current with interface changes to maintain test relevance and effectiveness.
   - **Collaborate with stakeholders** : Work with developers, users, and other stakeholders to understand interface usage and potential problem areas.
   By integrating these strategies into your testing process, you can enhance the coverage and reliability of your interface tests, leading to more robust and dependable software integrations.
 
   - **Define clear interface contracts** : Establish the expected behaviors, data formats, and protocols to ensure consistency across tests.
   - **Use parameterized tests** : Create tests that can run with different sets of input data to cover more scenarios.
-  - **Implement [negative testing](../N/negative-testing.md)** : Test for failure cases and invalid inputs to ensure the interface can handle errors gracefully.
+  - **Implement [negative testing](https://naodeng.com.cn/en/wiki/negative-testing)** : Test for failure cases and invalid inputs to ensure the interface can handle errors gracefully.
   - **Leverage boundary value analysis** : Focus on the edge cases at the limits of input ranges to catch potential errors.
   - **Automate regression tests** : Ensure that interface functionality remains stable over time by automating repetitive checks.
   - **Mock external systems** : Use mocking frameworks to simulate the behavior of external interfaces for isolated testing.
   - **Monitor performance** : Include tests that measure response times and throughput to detect performance issues.
-  - **Conduct [security testing](../S/security-testing.md)** : Include tests that assess the interface for vulnerabilities to unauthorized access or data breaches.
+  - **Conduct [security testing](https://naodeng.com.cn/en/wiki/security-testing)** : Include tests that assess the interface for vulnerabilities to unauthorized access or data breaches.
   - **Review and update tests regularly** : Keep tests current with interface changes to maintain test relevance and effectiveness.
   - **Collaborate with stakeholders** : Work with developers, users, and other stakeholders to understand interface usage and potential problem areas.
 
 #### What are some common mistakes to avoid in interface testing?
 
-  Common mistakes to avoid in [interface testing](../I/interface-testing.md) include:
+  Common mistakes to avoid in [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) include:
 
   - **Neglecting error handling** : Ensure that the system gracefully handles all possible error conditions that may occur during interface interactions.
   - **Overlooking boundary conditions** : Test the limits of the interface, including maximum, minimum, and just beyond the boundary values.
@@ -579,8 +578,8 @@ Interface Testing
   - **Failing to automate repetitive tests** : Automate tests that are run frequently to save time and reduce human error.
   - **Not prioritizing tests** : Focus on critical interfaces first, as they likely have the highest impact on the system.
   - **Lack of documentation** : Maintain clear documentation for the interface specifications and any test cases for future reference.
-  - **Insufficient [test coverage](../T/test-coverage.md)** : Ensure that all aspects of the interface are tested, including data flow, error messages, and response times.
-  - **Relying solely on [automated testing](../A/automated-testing.md)** : Some scenarios may require manual testing to catch subtle or complex issues that automated tests might miss.
+  - **Insufficient [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Ensure that all aspects of the interface are tested, including data flow, error messages, and response times.
+  - **Relying solely on [automated testing](https://naodeng.com.cn/en/wiki/automated-testing)** : Some scenarios may require manual testing to catch subtle or complex issues that automated tests might miss.
   - **Neglecting error handling** : Ensure that the system gracefully handles all possible error conditions that may occur during interface interactions.
   - **Overlooking boundary conditions** : Test the limits of the interface, including maximum, minimum, and just beyond the boundary values.
   - **Ignoring user experience** : While not the main focus, the interface should still be tested for usability to ensure it meets user expectations.
@@ -591,38 +590,38 @@ Interface Testing
   - **Failing to automate repetitive tests** : Automate tests that are run frequently to save time and reduce human error.
   - **Not prioritizing tests** : Focus on critical interfaces first, as they likely have the highest impact on the system.
   - **Lack of documentation** : Maintain clear documentation for the interface specifications and any test cases for future reference.
-  - **Insufficient [test coverage](../T/test-coverage.md)** : Ensure that all aspects of the interface are tested, including data flow, error messages, and response times.
-  - **Relying solely on [automated testing](../A/automated-testing.md)** : Some scenarios may require manual testing to catch subtle or complex issues that automated tests might miss.
+  - **Insufficient [test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** : Ensure that all aspects of the interface are tested, including data flow, error messages, and response times.
+  - **Relying solely on [automated testing](https://naodeng.com.cn/en/wiki/automated-testing)** : Some scenarios may require manual testing to catch subtle or complex issues that automated tests might miss.
 
 #### How can you measure the effectiveness of interface testing?
 
-  Measuring the effectiveness of [interface testing](../I/interface-testing.md) can be achieved through several key indicators:
+  Measuring the effectiveness of [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) can be achieved through several key indicators:
 
-  - **Defect Detection Ratio (DDR)**: Calculate the ratio of defects found during [interface testing](../I/interface-testing.md) to the total number of defects found after release. A higher DDR indicates more effective testing.
-
-    ```
-    DDR = (Defects Detected in Interface Testing / Total Defects Detected) * 100
-    ```
-
-  - **[Test Coverage](../T/test-coverage.md)**: Ensure all interface paths and scenarios are covered. Tools can be used to track coverage metrics.
-  - **Defect Escape Rate**: Monitor the number of issues that were missed during [interface testing](../I/interface-testing.md) but caught in later stages or by end-users. Lower rates suggest more effective testing.
-  - **[Test Execution](../T/test-execution.md) Time**: Analyze the time taken to execute interface tests. Decreases in execution time without compromising quality can indicate improved efficiency.
-  - **Automated Test Pass Rate**: Track the percentage of automated tests that pass on each run. Consistently high pass rates can indicate stable interfaces.
-  - **Mean Time to Detect (MTTD)**: Measure the average time taken to detect issues during [interface testing](../I/interface-testing.md). Shorter times can indicate effective test design and execution.
-  - **Feedback from Stakeholders**: Gather qualitative feedback from developers, testers, and users about the usability and reliability of interfaces post-testing.
-  - **Reusability of Test Artifacts**: Assess how often [test cases](../T/test-case.md), data, and tools can be reused for other tests, which can be a sign of well-designed [test automation](../T/test-automation.md).
-  By focusing on these metrics, [test automation](../T/test-automation.md) engineers can gain insights into the effectiveness of their [interface testing](../I/interface-testing.md) efforts and identify areas for improvement.
-
-  - **Defect Detection Ratio (DDR)**: Calculate the ratio of defects found during [interface testing](../I/interface-testing.md) to the total number of defects found after release. A higher DDR indicates more effective testing.
+  - **Defect Detection Ratio (DDR)**: Calculate the ratio of defects found during [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) to the total number of defects found after release. A higher DDR indicates more effective testing.
 
     ```
     DDR = (Defects Detected in Interface Testing / Total Defects Detected) * 100
     ```
 
-  - **[Test Coverage](../T/test-coverage.md)**: Ensure all interface paths and scenarios are covered. Tools can be used to track coverage metrics.
-  - **Defect Escape Rate**: Monitor the number of issues that were missed during [interface testing](../I/interface-testing.md) but caught in later stages or by end-users. Lower rates suggest more effective testing.
-  - **[Test Execution](../T/test-execution.md) Time**: Analyze the time taken to execute interface tests. Decreases in execution time without compromising quality can indicate improved efficiency.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Ensure all interface paths and scenarios are covered. Tools can be used to track coverage metrics.
+  - **Defect Escape Rate**: Monitor the number of issues that were missed during [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) but caught in later stages or by end-users. Lower rates suggest more effective testing.
+  - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Time**: Analyze the time taken to execute interface tests. Decreases in execution time without compromising quality can indicate improved efficiency.
   - **Automated Test Pass Rate**: Track the percentage of automated tests that pass on each run. Consistently high pass rates can indicate stable interfaces.
-  - **Mean Time to Detect (MTTD)**: Measure the average time taken to detect issues during [interface testing](../I/interface-testing.md). Shorter times can indicate effective test design and execution.
+  - **Mean Time to Detect (MTTD)**: Measure the average time taken to detect issues during [interface testing](https://naodeng.com.cn/en/wiki/interface-testing). Shorter times can indicate effective test design and execution.
   - **Feedback from Stakeholders**: Gather qualitative feedback from developers, testers, and users about the usability and reliability of interfaces post-testing.
-  - **Reusability of Test Artifacts**: Assess how often [test cases](../T/test-case.md), data, and tools can be reused for other tests, which can be a sign of well-designed [test automation](../T/test-automation.md).
+  - **Reusability of Test Artifacts**: Assess how often [test cases](https://naodeng.com.cn/en/wiki/test-case), data, and tools can be reused for other tests, which can be a sign of well-designed [test automation](https://naodeng.com.cn/en/wiki/test-automation).
+  By focusing on these metrics, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can gain insights into the effectiveness of their [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) efforts and identify areas for improvement.
+
+  - **Defect Detection Ratio (DDR)**: Calculate the ratio of defects found during [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) to the total number of defects found after release. A higher DDR indicates more effective testing.
+
+    ```
+    DDR = (Defects Detected in Interface Testing / Total Defects Detected) * 100
+    ```
+
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Ensure all interface paths and scenarios are covered. Tools can be used to track coverage metrics.
+  - **Defect Escape Rate**: Monitor the number of issues that were missed during [interface testing](https://naodeng.com.cn/en/wiki/interface-testing) but caught in later stages or by end-users. Lower rates suggest more effective testing.
+  - **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution) Time**: Analyze the time taken to execute interface tests. Decreases in execution time without compromising quality can indicate improved efficiency.
+  - **Automated Test Pass Rate**: Track the percentage of automated tests that pass on each run. Consistently high pass rates can indicate stable interfaces.
+  - **Mean Time to Detect (MTTD)**: Measure the average time taken to detect issues during [interface testing](https://naodeng.com.cn/en/wiki/interface-testing). Shorter times can indicate effective test design and execution.
+  - **Feedback from Stakeholders**: Gather qualitative feedback from developers, testers, and users about the usability and reliability of interfaces post-testing.
+  - **Reusability of Test Artifacts**: Assess how often [test cases](https://naodeng.com.cn/en/wiki/test-case), data, and tools can be reused for other tests, which can be a sign of well-designed [test automation](https://naodeng.com.cn/en/wiki/test-automation).

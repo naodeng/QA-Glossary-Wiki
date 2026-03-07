@@ -1,6 +1,5 @@
 # Gherkin
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
 - [Questions about Gherkin ?](#questions-about-gherkin)
@@ -47,8 +46,8 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 ## Related Terms:
 
-- [BDD (Behavior Driven Development)](../B/bdd-behavior-driven-development.md)
-- [Test Scenario](../T/test-scenario.md)
+- [BDD (Behavior Driven Development)](https://naodeng.com.cn/en/wiki/bdd-behavior-driven-development)
+- [Test Scenario](https://naodeng.com.cn/en/wiki/test-scenario)
 
 ## Questions about Gherkin ?
 
@@ -56,15 +55,15 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### What is Gherkin and why is it important in software testing?
 
-  [Gherkin](../G/gherkin.md) is a **domain-specific language** designed to create clear and executable specifications for software features. Its importance in [software testing](../S/software-testing.md) lies in its ability to bridge the gap between the **technical** aspects of [test automation](../T/test-automation.md) and the **business-oriented** understanding of how features should behave.
-  By using a natural language format, [Gherkin](../G/gherkin.md) allows the creation of **[test cases](../T/test-case.md)** that are easily understood by all stakeholders, including developers, testers, and business analysts. This shared understanding ensures that the software is built with the right features and that tests are aligned with user expectations.
-  In the context of [test automation](../T/test-automation.md), [Gherkin](../G/gherkin.md) serves as a foundation for writing **automated acceptance tests**. Tools like Cucumber read [Gherkin](../G/gherkin.md) documents and execute the described behavior against the application. This helps in validating that the software behaves as intended, and it facilitates **[regression testing](../R/regression-testing.md)** by ensuring that new changes do not break existing functionality.
-  Moreover, [Gherkin](../G/gherkin.md)'s structured format enables the reuse of steps across different scenarios, making [test automation](../T/test-automation.md) more **efficient** and **maintainable**. It also supports **data-driven testing** through Scenario Outlines and Examples, allowing multiple sets of inputs to be tested without duplicating the [test scripts](../T/test-script.md).
-  In summary, [Gherkin](../G/gherkin.md)'s importance in [software testing](../S/software-testing.md) is multifaceted: it enhances communication, supports behavior-driven development, and provides a robust framework for writing and maintaining automated tests, all of which contribute to the delivery of high-quality software.
+  [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) is a **domain-specific language** designed to create clear and executable specifications for software features. Its importance in [software testing](https://naodeng.com.cn/en/wiki/software-testing) lies in its ability to bridge the gap between the **technical** aspects of [test automation](https://naodeng.com.cn/en/wiki/test-automation) and the **business-oriented** understanding of how features should behave.
+  By using a natural language format, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) allows the creation of **[test cases](https://naodeng.com.cn/en/wiki/test-case)** that are easily understood by all stakeholders, including developers, testers, and business analysts. This shared understanding ensures that the software is built with the right features and that tests are aligned with user expectations.
+  In the context of [test automation](https://naodeng.com.cn/en/wiki/test-automation), [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) serves as a foundation for writing **automated acceptance tests**. Tools like Cucumber read [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) documents and execute the described behavior against the application. This helps in validating that the software behaves as intended, and it facilitates **[regression testing](https://naodeng.com.cn/en/wiki/regression-testing)** by ensuring that new changes do not break existing functionality.
+  Moreover, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin)'s structured format enables the reuse of steps across different scenarios, making [test automation](https://naodeng.com.cn/en/wiki/test-automation) more **efficient** and **maintainable**. It also supports **data-driven testing** through Scenario Outlines and Examples, allowing multiple sets of inputs to be tested without duplicating the [test scripts](https://naodeng.com.cn/en/wiki/test-script).
+  In summary, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin)'s importance in [software testing](https://naodeng.com.cn/en/wiki/software-testing) is multifaceted: it enhances communication, supports behavior-driven development, and provides a robust framework for writing and maintaining automated tests, all of which contribute to the delivery of high-quality software.
 
 #### What are the main components of a Gherkin document?
 
-  The main components of a [Gherkin](../G/gherkin.md) document are:
+  The main components of a [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) document are:
 
   - **Feature** : Represents a single functionality or aspect of the system being tested. It provides a high-level description and acts as a container for related scenarios.
 
@@ -134,28 +133,28 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### How does Gherkin improve communication between technical and non-technical stakeholders?
 
-  [Gherkin](../G/gherkin.md) serves as a **communication bridge** between technical and non-technical stakeholders by providing a **common language** that is easy to understand for all parties involved. Its plain English (or other spoken languages) approach to defining software behavior allows business analysts, product owners, developers, and testers to collaborate effectively.
-  The use of **natural language** constructs in [Gherkin](../G/gherkin.md) means that requirements and tests can be written in a way that is **intuitive** to non-technical stakeholders. This allows them to actively participate in the creation and review of acceptance criteria without needing to understand the underlying technical implementation.
-  By expressing requirements as **executable specifications**, [Gherkin](../G/gherkin.md) ensures that there is a **single source of truth** for what the software should do. This reduces the risk of misinterpretation that can occur when requirements are communicated through traditional means, such as lengthy documents or verbal discussions.
-  Moreover, [Gherkin](../G/gherkin.md)'s **Scenario** and **Feature** descriptions provide a **high-level overview** of the software's functionality, which is valuable for stakeholders who need to understand the broader context without getting bogged down in technical details.
-  The **collaborative nature** of [Gherkin](../G/gherkin.md) and its role in [BDD](../B/bdd.md) encourages **ongoing dialogue** between business and technical team members. This ongoing conversation helps to clarify expectations, uncover hidden requirements, and ensure that the development work is closely aligned with business objectives.
-  In summary, [Gherkin](../G/gherkin.md) enhances communication by making complex software behaviors understandable and accessible to everyone involved in the project, fostering better collaboration and reducing the likelihood of misunderstandings.
+  [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) serves as a **communication bridge** between technical and non-technical stakeholders by providing a **common language** that is easy to understand for all parties involved. Its plain English (or other spoken languages) approach to defining software behavior allows business analysts, product owners, developers, and testers to collaborate effectively.
+  The use of **natural language** constructs in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) means that requirements and tests can be written in a way that is **intuitive** to non-technical stakeholders. This allows them to actively participate in the creation and review of acceptance criteria without needing to understand the underlying technical implementation.
+  By expressing requirements as **executable specifications**, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) ensures that there is a **single source of truth** for what the software should do. This reduces the risk of misinterpretation that can occur when requirements are communicated through traditional means, such as lengthy documents or verbal discussions.
+  Moreover, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin)'s **Scenario** and **Feature** descriptions provide a **high-level overview** of the software's functionality, which is valuable for stakeholders who need to understand the broader context without getting bogged down in technical details.
+  The **collaborative nature** of [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) and its role in [BDD](https://naodeng.com.cn/en/wiki/bdd) encourages **ongoing dialogue** between business and technical team members. This ongoing conversation helps to clarify expectations, uncover hidden requirements, and ensure that the development work is closely aligned with business objectives.
+  In summary, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) enhances communication by making complex software behaviors understandable and accessible to everyone involved in the project, fostering better collaboration and reducing the likelihood of misunderstandings.
 
 #### What is the role of Gherkin in Behavior Driven Development (BDD)?
 
-  [Gherkin](../G/gherkin.md) plays a pivotal role in Behavior Driven Development ([BDD](../B/bdd.md)) by serving as the **bridge between business requirements and technical implementation**. It allows the expression of software behavior without detailing how that functionality is implemented, making it an essential tool for **collaboration** and **shared understanding** among stakeholders.
-  In [BDD](../B/bdd.md), [Gherkin](../G/gherkin.md)'s primary role is to enable the **creation of executable specifications**. These specifications are written in a way that they can be directly converted into automated tests. This is achieved through the use of a **domain-specific language** that describes the software's behavior in logical and understandable terms.
-  [Gherkin](../G/gherkin.md)'s **Given-When-Then** format corresponds to the **Arrange-Act-Assert** pattern commonly used in [unit testing](../U/unit-testing.md), which ensures that tests are structured and easy to follow. This format helps in defining clear and concise **acceptance criteria** for features, ensuring that all stakeholders have a common understanding of what is to be developed.
-  Furthermore, [Gherkin](../G/gherkin.md) facilitates **living documentation**. As scenarios are updated to reflect changes in requirements, the documentation remains current and actionable. This living document serves as a **single source of truth** for the expected behavior of the system, reducing ambiguity and preventing drift between the specification and the implementation.
-  By integrating [Gherkin](../G/gherkin.md) into the [BDD](../B/bdd.md) process, teams can ensure that **automated tests are aligned with business objectives**, fostering a development process that is both efficient and effective in delivering high-quality software that meets user needs.
+  [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) plays a pivotal role in Behavior Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) by serving as the **bridge between business requirements and technical implementation**. It allows the expression of software behavior without detailing how that functionality is implemented, making it an essential tool for **collaboration** and **shared understanding** among stakeholders.
+  In [BDD](https://naodeng.com.cn/en/wiki/bdd), [Gherkin](https://naodeng.com.cn/en/wiki/gherkin)'s primary role is to enable the **creation of executable specifications**. These specifications are written in a way that they can be directly converted into automated tests. This is achieved through the use of a **domain-specific language** that describes the software's behavior in logical and understandable terms.
+  [Gherkin](https://naodeng.com.cn/en/wiki/gherkin)'s **Given-When-Then** format corresponds to the **Arrange-Act-Assert** pattern commonly used in [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), which ensures that tests are structured and easy to follow. This format helps in defining clear and concise **acceptance criteria** for features, ensuring that all stakeholders have a common understanding of what is to be developed.
+  Furthermore, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) facilitates **living documentation**. As scenarios are updated to reflect changes in requirements, the documentation remains current and actionable. This living document serves as a **single source of truth** for the expected behavior of the system, reducing ambiguity and preventing drift between the specification and the implementation.
+  By integrating [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) into the [BDD](https://naodeng.com.cn/en/wiki/bdd) process, teams can ensure that **automated tests are aligned with business objectives**, fostering a development process that is both efficient and effective in delivering high-quality software that meets user needs.
 
 ### Syntax and Structure
 
 #### What is the basic syntax of Gherkin?
 
-  The basic syntax of [Gherkin](../G/gherkin.md) is designed to be human-readable and allows for the description of software behaviors without detailing how that functionality is implemented. A [Gherkin](../G/gherkin.md) document begins with the keyword **Feature** followed by a brief description of the overall functionality being tested. Each feature contains a list of **Scenarios**, which are examples of how the feature should work under different conditions.
+  The basic syntax of [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) is designed to be human-readable and allows for the description of software behaviors without detailing how that functionality is implemented. A [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) document begins with the keyword **Feature** followed by a brief description of the overall functionality being tested. Each feature contains a list of **Scenarios**, which are examples of how the feature should work under different conditions.
   Scenarios start with the keyword **Scenario** followed by a short description. Each scenario is made up of steps that describe an action or a check. The steps use the keywords **Given**, **When**, **Then**, **And**, and **But** to describe the context, the action, and the expected outcome respectively.
-  Here's an example of a simple [Gherkin](../G/gherkin.md) syntax:
+  Here's an example of a simple [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) syntax:
 
   ```
   Feature: User login
@@ -168,11 +167,11 @@ scenarios can then be utilized as both specifications for the system's behavior 
       When the user enters invalid credentials
       Then an error message is displayed
   ```
-  Each step in the scenario should be a simple statement that can be matched to a step definition in the [test automation](../T/test-automation.md) framework, which contains the code to execute the action or [verification](../V/verification.md) described by the step. [Gherkin](../G/gherkin.md)'s syntax is designed to be easy to write and understand, bridging the gap between the technical and non-technical participants in the software development process.
+  Each step in the scenario should be a simple statement that can be matched to a step definition in the [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework, which contains the code to execute the action or [verification](https://naodeng.com.cn/en/wiki/verification) described by the step. [Gherkin](https://naodeng.com.cn/en/wiki/gherkin)'s syntax is designed to be easy to write and understand, bridging the gap between the technical and non-technical participants in the software development process.
 
 #### What are the different keywords used in Gherkin and what do they mean?
 
-  [Gherkin](../G/gherkin.md) keywords are the core building blocks of [Gherkin](../G/gherkin.md) language, each serving a specific purpose in defining and structuring behavior tests.
+  [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) keywords are the core building blocks of [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) language, each serving a specific purpose in defining and structuring behavior tests.
 
   - **Feature** : Describes a software feature and acts as a container for the scenarios.
   - **Rule**
@@ -207,7 +206,7 @@ scenarios can then be utilized as both specifications for the system's behavior 
         | user1    | pass1    | is logged in|
         | user2    | wrong    | is blocked  |
   ```
-  Each keyword initiates a step that is matched to a step definition in the [test automation](../T/test-automation.md) framework, which contains the actual executable code.
+  Each keyword initiates a step that is matched to a step definition in the [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework, which contains the actual executable code.
 
   - **Feature** : Describes a software feature and acts as a container for the scenarios.
   - **Rule**
@@ -229,9 +228,9 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### How is a Gherkin file structured?
 
-  A [Gherkin](../G/gherkin.md) file is typically structured as a plain text document with a `.feature` extension, containing a single feature specification. The file starts with a **Feature** keyword, followed by a brief description of the feature being tested. This is a high-level definition of the functionality or business rule.
-  Below the feature description, one or more **Scenarios** or **Scenario Outlines** are defined. These are the [test cases](../T/test-case.md) that specify the expected behavior of the system. Each scenario starts with the **Scenario** keyword, followed by a title that summarizes the [test case](../T/test-case.md).
-  Scenarios consist of steps that describe the actions and outcomes. Steps begin with **Given**, **When**, **Then**, **And**, or **But** keywords, which correspond to the [setup](../S/setup.md), action, and assertion phases of the test. **Given** steps are used to describe the initial context, **When** steps specify the event or action, and **Then** steps assert the expected outcome.
+  A [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) file is typically structured as a plain text document with a `.feature` extension, containing a single feature specification. The file starts with a **Feature** keyword, followed by a brief description of the feature being tested. This is a high-level definition of the functionality or business rule.
+  Below the feature description, one or more **Scenarios** or **Scenario Outlines** are defined. These are the [test cases](https://naodeng.com.cn/en/wiki/test-case) that specify the expected behavior of the system. Each scenario starts with the **Scenario** keyword, followed by a title that summarizes the [test case](https://naodeng.com.cn/en/wiki/test-case).
+  Scenarios consist of steps that describe the actions and outcomes. Steps begin with **Given**, **When**, **Then**, **And**, or **But** keywords, which correspond to the [setup](https://naodeng.com.cn/en/wiki/setup), action, and assertion phases of the test. **Given** steps are used to describe the initial context, **When** steps specify the event or action, and **Then** steps assert the expected outcome.
   **Background** can be used to define steps that are common to all scenarios in the file, eliminating repetition.
   **Scenario Outlines** are used for parameterized tests, with the **Examples** section providing the data sets.
   **Tags** can be applied above the Feature, Background, or individual Scenarios to categorize or filter tests.
@@ -259,7 +258,7 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### What are the rules for writing steps in Gherkin?
 
-  When writing steps in [Gherkin](../G/gherkin.md), adhere to the following rules to ensure clarity and functionality:
+  When writing steps in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin), adhere to the following rules to ensure clarity and functionality:
 
   - **Use imperative language** : Write steps as direct commands, e.g.,
     `Given the user is logged in`
@@ -289,7 +288,7 @@ scenarios can then be utilized as both specifications for the system's behavior 
   - **Ensure independence** : Each scenario should be independent and executable on its own.
   - **Avoid UI specifics** : Do not reference UI elements like buttons or fields; focus on the action or outcome.
   - **Use Background wisely** : Common steps should be placed in the Background section but use it sparingly to avoid hiding important information.
-  Example of a well-written [Gherkin](../G/gherkin.md) step:
+  Example of a well-written [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) step:
 
   ```
   Given the user has navigated to the login page
@@ -330,7 +329,7 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### What is the purpose of Background in Gherkin?
 
-  The **Background** in [Gherkin](../G/gherkin.md) serves as a reusable context for multiple **Scenarios** within the same **Feature**. It allows you to define steps that are common to all scenarios, avoiding repetition and keeping the scenarios concise. Steps defined in the Background are executed before each scenario, setting the stage for the specific tests to follow.
+  The **Background** in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) serves as a reusable context for multiple **Scenarios** within the same **Feature**. It allows you to define steps that are common to all scenarios, avoiding repetition and keeping the scenarios concise. Steps defined in the Background are executed before each scenario, setting the stage for the specific tests to follow.
   Here's an example of how a Background might be used:
 
   ```
@@ -345,15 +344,15 @@ scenarios can then be utilized as both specifications for the system's behavior 
       When the user attempts to log in with invalid credentials
       Then an error message is displayed
   ```
-  In this example, the steps "Given the user is on the login page" and "And the [database](../D/database.md) has the default set of users" are common prerequisites for both scenarios. By using a Background, you ensure these steps are executed for each scenario, maintaining DRY (Don't Repeat Yourself) principles and improving the readability of your [Gherkin](../G/gherkin.md) documents.
+  In this example, the steps "Given the user is on the login page" and "And the [database](https://naodeng.com.cn/en/wiki/database) has the default set of users" are common prerequisites for both scenarios. By using a Background, you ensure these steps are executed for each scenario, maintaining DRY (Don't Repeat Yourself) principles and improving the readability of your [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) documents.
 
 ### Scenarios and Features
 
 #### What is a Feature in Gherkin and how is it defined?
 
-  In [Gherkin](../G/gherkin.md), a **Feature** represents a distinct functionality or aspect of the system being tested. It provides a high-level description of a software feature, and it acts as an umbrella for a collection of related scenarios.
-  A Feature is defined at the beginning of a [Gherkin](../G/gherkin.md) file with the keyword `Feature:`, followed by a brief description of the functionality being covered. This description can span multiple lines if necessary. The Feature section may also include a background narrative that provides context, which is optional but can be helpful for understanding the feature's purpose.
-  Here's an example of how a Feature might be defined in a [Gherkin](../G/gherkin.md) file:
+  In [Gherkin](https://naodeng.com.cn/en/wiki/gherkin), a **Feature** represents a distinct functionality or aspect of the system being tested. It provides a high-level description of a software feature, and it acts as an umbrella for a collection of related scenarios.
+  A Feature is defined at the beginning of a [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) file with the keyword `Feature:`, followed by a brief description of the functionality being covered. This description can span multiple lines if necessary. The Feature section may also include a background narrative that provides context, which is optional but can be helpful for understanding the feature's purpose.
+  Here's an example of how a Feature might be defined in a [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) file:
 
   ```
   Feature: User authentication
@@ -365,8 +364,8 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### What is a Scenario in Gherkin and how is it defined?
 
-  In [Gherkin](../G/gherkin.md), a **Scenario** represents a single path or workflow through a feature. It is defined using the keyword `Scenario` followed by a colon and a title that succinctly describes the behavior being tested. A scenario consists of a series of steps that outline the given situation, the action to be taken, and the expected outcome. These steps use the keywords `Given`, `When`, and `Then`, respectively, and can also include `And` and `But` for additional context or actions.
-  Here's an example of a scenario in a [Gherkin](../G/gherkin.md) document:
+  In [Gherkin](https://naodeng.com.cn/en/wiki/gherkin), a **Scenario** represents a single path or workflow through a feature. It is defined using the keyword `Scenario` followed by a colon and a title that succinctly describes the behavior being tested. A scenario consists of a series of steps that outline the given situation, the action to be taken, and the expected outcome. These steps use the keywords `Given`, `When`, and `Then`, respectively, and can also include `And` and `But` for additional context or actions.
+  Here's an example of a scenario in a [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) document:
 
   ```
   Scenario: User logs in with valid credentials
@@ -375,11 +374,11 @@ scenarios can then be utilized as both specifications for the system's behavior 
     And the user clicks on the login button
     Then the dashboard page should be displayed
   ```
-  Each step in a scenario is mapped to a step definition in the [test automation](../T/test-automation.md) framework, which contains the code to execute the action or verify the outcome described by the step. Scenarios should be independent, meaning they can run in any order and should not rely on the state produced by another scenario. This ensures that tests are reliable and repeatable. Scenarios are the fundamental building blocks in [Gherkin](../G/gherkin.md) for describing the behavior of a system and serve as the basis for automated tests in a [BDD](../B/bdd.md) approach.
+  Each step in a scenario is mapped to a step definition in the [test automation](https://naodeng.com.cn/en/wiki/test-automation) framework, which contains the code to execute the action or verify the outcome described by the step. Scenarios should be independent, meaning they can run in any order and should not rely on the state produced by another scenario. This ensures that tests are reliable and repeatable. Scenarios are the fundamental building blocks in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) for describing the behavior of a system and serve as the basis for automated tests in a [BDD](https://naodeng.com.cn/en/wiki/bdd) approach.
 
 #### What is the difference between a Scenario and a Scenario Outline in Gherkin?
 
-  In [Gherkin](../G/gherkin.md), a **Scenario** represents a single path or example that describes a specific situation or [use case](../U/use-case.md) of the software. It is defined with the `Scenario` keyword followed by a descriptive title, and contains a sequence of steps: `Given`, `When`, `Then` (and optionally `And`, `But`).
+  In [Gherkin](https://naodeng.com.cn/en/wiki/gherkin), a **Scenario** represents a single path or example that describes a specific situation or [use case](https://naodeng.com.cn/en/wiki/use-case) of the software. It is defined with the `Scenario` keyword followed by a descriptive title, and contains a sequence of steps: `Given`, `When`, `Then` (and optionally `And`, `But`).
 
   ```
   Scenario: User logs in with valid credentials
@@ -403,7 +402,7 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### How can parameters be passed in Gherkin scenarios?
 
-  Parameters in [Gherkin](../G/gherkin.md) scenarios are passed using **Scenario Outlines** and **Examples** tables. A Scenario Outline is a template that is filled with values from the Examples table. Each row in the Examples table represents a set of parameters that will be used to run the Scenario Outline.
+  Parameters in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios are passed using **Scenario Outlines** and **Examples** tables. A Scenario Outline is a template that is filled with values from the Examples table. Each row in the Examples table represents a set of parameters that will be used to run the Scenario Outline.
   Here's the basic syntax for passing parameters:
 
   ```
@@ -421,7 +420,7 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### What is the purpose of Tags in Gherkin?
 
-  Tags in [Gherkin](../G/gherkin.md) serve as a powerful organizational tool, allowing for the categorization and filtering of scenarios. By prefixing a scenario or feature with an `@` symbol followed by a tag name, you can group related scenarios together regardless of their location within the feature files. This is particularly useful when you want to run a specific subset of tests that share a common attribute, such as a tag denoting a particular sprint, a type of test (e.g., `@smoke`, `@regression`), or a specific feature area.
+  Tags in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) serve as a powerful organizational tool, allowing for the categorization and filtering of scenarios. By prefixing a scenario or feature with an `@` symbol followed by a tag name, you can group related scenarios together regardless of their location within the feature files. This is particularly useful when you want to run a specific subset of tests that share a common attribute, such as a tag denoting a particular sprint, a type of test (e.g., `@smoke`, `@regression`), or a specific feature area.
   For example:
 
   ```
@@ -438,14 +437,14 @@ scenarios can then be utilized as both specifications for the system's behavior 
       When I attempt to issue a refund
       Then the refund should be rejected
   ```
-  In the above example, the `@billing` tag could be used to run all billing-related tests, while `@smoke` and `@regression` could be used to run specific types of tests across the entire [test suite](../T/test-suite.md). Tags also facilitate the execution of tests across different environments or configurations by allowing you to include or exclude scenarios based on the tags they carry.
-  Automation tools like Cucumber can utilize these tags to control [test execution](../T/test-execution.md), making it easier to integrate into CI/CD pipelines and to manage tests as the codebase grows. Tags enhance the flexibility and [maintainability](../M/maintainability.md) of [test suites](../T/test-suite.md) in [test automation](../T/test-automation.md).
+  In the above example, the `@billing` tag could be used to run all billing-related tests, while `@smoke` and `@regression` could be used to run specific types of tests across the entire [test suite](https://naodeng.com.cn/en/wiki/test-suite). Tags also facilitate the execution of tests across different environments or configurations by allowing you to include or exclude scenarios based on the tags they carry.
+  Automation tools like Cucumber can utilize these tags to control [test execution](https://naodeng.com.cn/en/wiki/test-execution), making it easier to integrate into CI/CD pipelines and to manage tests as the codebase grows. Tags enhance the flexibility and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of [test suites](https://naodeng.com.cn/en/wiki/test-suite) in [test automation](https://naodeng.com.cn/en/wiki/test-automation).
 
 ### Advanced Concepts
 
 #### How can Gherkin be used with automation tools like Cucumber?
 
-  [Gherkin](../G/gherkin.md) can be integrated with automation tools like **Cucumber** to drive the automation of acceptance tests. After defining the behavior of the application in [Gherkin](../G/gherkin.md), Cucumber uses these specifications to guide the automation process.
+  [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) can be integrated with automation tools like **Cucumber** to drive the automation of acceptance tests. After defining the behavior of the application in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin), Cucumber uses these specifications to guide the automation process.
   Here's how the integration typically works:
 
   1. **Feature Files** : Write Gherkin scenarios in
@@ -461,8 +460,8 @@ scenarios can then be utilized as both specifications for the system's behavior 
   }
   ```
 
-  1. **Run Tests**: Use Cucumber to execute the feature files. Cucumber reads the [Gherkin](../G/gherkin.md) steps and matches them with the corresponding step definitions to run the tests.
-  2. **Assertions**: Within the step definitions, include assertions to verify the outcomes against [expected results](../E/expected-result.md).
+  1. **Run Tests**: Use Cucumber to execute the feature files. Cucumber reads the [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) steps and matches them with the corresponding step definitions to run the tests.
+  2. **Assertions**: Within the step definitions, include assertions to verify the outcomes against [expected results](https://naodeng.com.cn/en/wiki/expected-result).
 
   ```
   @Then("^the user should be directed to the dashboard$")
@@ -471,25 +470,25 @@ scenarios can then be utilized as both specifications for the system's behavior 
   }
   ```
 
-  1. **Hooks**: Utilize hooks (`@Before`, `@After`) for [setup](../S/setup.md) and teardown processes, such as starting a web driver before a scenario and closing it afterward.
-  2. **Tags**: Execute selective tests using tags defined in the [Gherkin](../G/gherkin.md) scenarios for efficient [test management](../T/test-management.md).
-  3. **Reports**: After [test execution](../T/test-execution.md), Cucumber generates reports that provide insights into the test results, which are useful for both technical and non-technical stakeholders.
-  By following this approach, [test automation](../T/test-automation.md) engineers can create a robust, readable, and maintainable [test suite](../T/test-suite.md) that aligns with the [BDD](../B/bdd.md) approach and facilitates collaboration across teams.
+  1. **Hooks**: Utilize hooks (`@Before`, `@After`) for [setup](https://naodeng.com.cn/en/wiki/setup) and teardown processes, such as starting a web driver before a scenario and closing it afterward.
+  2. **Tags**: Execute selective tests using tags defined in the [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios for efficient [test management](https://naodeng.com.cn/en/wiki/test-management).
+  3. **Reports**: After [test execution](https://naodeng.com.cn/en/wiki/test-execution), Cucumber generates reports that provide insights into the test results, which are useful for both technical and non-technical stakeholders.
+  By following this approach, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can create a robust, readable, and maintainable [test suite](https://naodeng.com.cn/en/wiki/test-suite) that aligns with the [BDD](https://naodeng.com.cn/en/wiki/bdd) approach and facilitates collaboration across teams.
 
   1. **Feature Files** : Write Gherkin scenarios in
     `.feature`
     files.
 
   2. **Step Definitions** : Implement step definitions in a programming language supported by Cucumber (e.g., Java, Ruby, JavaScript). Each step in the Gherkin scenario is mapped to a piece of code that will execute the action.
-  1. **Run Tests**: Use Cucumber to execute the feature files. Cucumber reads the [Gherkin](../G/gherkin.md) steps and matches them with the corresponding step definitions to run the tests.
-  2. **Assertions**: Within the step definitions, include assertions to verify the outcomes against [expected results](../E/expected-result.md).
-  1. **Hooks**: Utilize hooks (`@Before`, `@After`) for [setup](../S/setup.md) and teardown processes, such as starting a web driver before a scenario and closing it afterward.
-  2. **Tags**: Execute selective tests using tags defined in the [Gherkin](../G/gherkin.md) scenarios for efficient [test management](../T/test-management.md).
-  3. **Reports**: After [test execution](../T/test-execution.md), Cucumber generates reports that provide insights into the test results, which are useful for both technical and non-technical stakeholders.
+  1. **Run Tests**: Use Cucumber to execute the feature files. Cucumber reads the [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) steps and matches them with the corresponding step definitions to run the tests.
+  2. **Assertions**: Within the step definitions, include assertions to verify the outcomes against [expected results](https://naodeng.com.cn/en/wiki/expected-result).
+  1. **Hooks**: Utilize hooks (`@Before`, `@After`) for [setup](https://naodeng.com.cn/en/wiki/setup) and teardown processes, such as starting a web driver before a scenario and closing it afterward.
+  2. **Tags**: Execute selective tests using tags defined in the [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios for efficient [test management](https://naodeng.com.cn/en/wiki/test-management).
+  3. **Reports**: After [test execution](https://naodeng.com.cn/en/wiki/test-execution), Cucumber generates reports that provide insights into the test results, which are useful for both technical and non-technical stakeholders.
 
 #### What are the best practices for writing Gherkin scripts?
 
-  Best practices for writing [Gherkin](../G/gherkin.md) scripts include:
+  Best practices for writing [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scripts include:
 
   - **Be Descriptive** : Use clear, descriptive titles for features and scenarios. Avoid technical jargon.
   - **Use Business Language** : Write scenarios in business language, focusing on the behavior rather than the implementation.
@@ -524,7 +523,7 @@ scenarios can then be utilized as both specifications for the system's behavior 
         | admin    | wrongpw  |
         | user1    |          |
   ```
-  Remember to review and align your [Gherkin](../G/gherkin.md) scripts with the team to ensure consistency and understanding across all stakeholders.
+  Remember to review and align your [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scripts with the team to ensure consistency and understanding across all stakeholders.
 
   - **Be Descriptive** : Use clear, descriptive titles for features and scenarios. Avoid technical jargon.
   - **Use Business Language** : Write scenarios in business language, focusing on the behavior rather than the implementation.
@@ -544,7 +543,7 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### How can complex test cases be handled in Gherkin?
 
-  Handling complex [test cases](../T/test-case.md) in [Gherkin](../G/gherkin.md) requires a strategic approach to maintain readability and ensure that scenarios remain understandable. Here are some tips:
+  Handling complex [test cases](https://naodeng.com.cn/en/wiki/test-case) in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) requires a strategic approach to maintain readability and ensure that scenarios remain understandable. Here are some tips:
 
   - **Decompose complex scenarios** into smaller, more manageable ones if possible. This can help to keep each scenario focused on a single behavior or outcome.
   - Use **Scenario Outlines** to handle scenarios that need to be run with different sets of data. This keeps the scenario DRY (Don't Repeat Yourself) and avoids duplicating steps.
@@ -590,7 +589,7 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
   - **Modularize step definitions**
     to create reusable code that can be used across different scenarios. This helps to manage complexity by allowing you to compose scenarios from these modular steps.
-  Remember, the goal is to keep [Gherkin](../G/gherkin.md) scenarios clear and understandable, even when they represent complex [test cases](../T/test-case.md).
+  Remember, the goal is to keep [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios clear and understandable, even when they represent complex [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
   - **Decompose complex scenarios** into smaller, more manageable ones if possible. This can help to keep each scenario focused on a single behavior or outcome.
   - Use **Scenario Outlines** to handle scenarios that need to be run with different sets of data. This keeps the scenario DRY (Don't Repeat Yourself) and avoids duplicating steps.
@@ -607,32 +606,32 @@ scenarios can then be utilized as both specifications for the system's behavior 
 
 #### What are the limitations of Gherkin in test automation?
 
-  [Gherkin](../G/gherkin.md)'s human-readable format is both a strength and a limitation. It excels in describing behavior but can struggle with **low-level technical details**. Complex logic or data manipulations are hard to express clearly, leading to verbose or ambiguous scenarios.
-  Another limitation is **[maintainability](../M/maintainability.md)**. As the number of scenarios grows, keeping them organized and avoiding duplication becomes challenging. Refactoring can be difficult without affecting readability or the intent of the tests.
-  [Gherkin](../G/gherkin.md)'s **verbosity** can also be a downside. Writing detailed scenarios for every aspect of an application is time-consuming and can lead to lengthy feature files that are hard to navigate.
-  Moreover, [Gherkin](../G/gherkin.md) is not suitable for all types of testing. It's designed for **behavioral specifications**, so it's less effective for [non-functional testing](../N/non-functional-testing.md) like performance or security.
-  The need for a **matching step definition** for each [Gherkin](../G/gherkin.md) step can lead to a large codebase of step definitions, which requires additional maintenance and can introduce redundancy.
-  Lastly, [Gherkin](../G/gherkin.md)'s reliance on **exact wording** can cause fragility in automated tests. Small changes in the wording of a feature can necessitate updates to the corresponding step definitions, even if the underlying behavior hasn't changed.
-  Despite these limitations, [Gherkin](../G/gherkin.md) remains a powerful tool for [BDD](../B/bdd.md), fostering collaboration and providing a clear framework for describing and automating software behavior.
+  [Gherkin](https://naodeng.com.cn/en/wiki/gherkin)'s human-readable format is both a strength and a limitation. It excels in describing behavior but can struggle with **low-level technical details**. Complex logic or data manipulations are hard to express clearly, leading to verbose or ambiguous scenarios.
+  Another limitation is **[maintainability](https://naodeng.com.cn/en/wiki/maintainability)**. As the number of scenarios grows, keeping them organized and avoiding duplication becomes challenging. Refactoring can be difficult without affecting readability or the intent of the tests.
+  [Gherkin](https://naodeng.com.cn/en/wiki/gherkin)'s **verbosity** can also be a downside. Writing detailed scenarios for every aspect of an application is time-consuming and can lead to lengthy feature files that are hard to navigate.
+  Moreover, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) is not suitable for all types of testing. It's designed for **behavioral specifications**, so it's less effective for [non-functional testing](https://naodeng.com.cn/en/wiki/non-functional-testing) like performance or security.
+  The need for a **matching step definition** for each [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) step can lead to a large codebase of step definitions, which requires additional maintenance and can introduce redundancy.
+  Lastly, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin)'s reliance on **exact wording** can cause fragility in automated tests. Small changes in the wording of a feature can necessitate updates to the corresponding step definitions, even if the underlying behavior hasn't changed.
+  Despite these limitations, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) remains a powerful tool for [BDD](https://naodeng.com.cn/en/wiki/bdd), fostering collaboration and providing a clear framework for describing and automating software behavior.
 
 #### How can Gherkin be used in a Continuous Integration/Continuous Deployment (CI/CD) pipeline?
 
-  [Gherkin](../G/gherkin.md) can be integrated into a CI/CD pipeline to automate [acceptance testing](../A/acceptance-testing.md) and ensure that new features adhere to specified behaviors before deployment. By writing [Gherkin](../G/gherkin.md) scenarios, which are human-readable specifications of software behavior, you create a suite of executable specifications that can be run as automated tests.
-  In a CI/CD pipeline, after code is committed to a version control system, the pipeline automatically triggers a build and runs various tests. Here's how [Gherkin](../G/gherkin.md) fits into this process:
+  [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) can be integrated into a CI/CD pipeline to automate [acceptance testing](https://naodeng.com.cn/en/wiki/acceptance-testing) and ensure that new features adhere to specified behaviors before deployment. By writing [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios, which are human-readable specifications of software behavior, you create a suite of executable specifications that can be run as automated tests.
+  In a CI/CD pipeline, after code is committed to a version control system, the pipeline automatically triggers a build and runs various tests. Here's how [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) fits into this process:
 
-  1. **[Test Execution](../T/test-execution.md)**: Tools like Cucumber read [Gherkin](../G/gherkin.md) files and execute corresponding step definitions, which are scripts that match [Gherkin](../G/gherkin.md) steps to automation code.
-  2. **Integration**: [Gherkin](../G/gherkin.md) scenarios are integrated into the pipeline by configuring the build server to run the Cucumber [test suite](../T/test-suite.md) after a successful build.
-  3. **Feedback Loop**: If [Gherkin](../G/gherkin.md) scenarios fail, the pipeline is halted, and developers are notified to fix the issue. This ensures that only code that passes all defined behaviors is deployed.
-  4. **[Regression Testing](../R/regression-testing.md)**: [Gherkin](../G/gherkin.md) scenarios are re-executed on every change to catch regressions early.
-  5. **Documentation**: [Gherkin](../G/gherkin.md) scenarios serve as living documentation that is always up-to-date with the current state of the application.
-  6. **Parallel Execution**: To speed up the pipeline, [Gherkin](../G/gherkin.md) scenarios can be executed in parallel across multiple [test environments](../T/test-environment.md).
-  7. **Tagging**: Tags in [Gherkin](../G/gherkin.md) allow for selective [test execution](../T/test-execution.md), useful for categorizing tests into smoke, regression, or feature-specific suites within the pipeline.
-  By incorporating [Gherkin](../G/gherkin.md) into the CI/CD process, teams ensure that the software behaves as expected and that any deviations are caught early, maintaining a high standard of quality with every release.
+  1. **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution)**: Tools like Cucumber read [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) files and execute corresponding step definitions, which are scripts that match [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) steps to automation code.
+  2. **Integration**: [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios are integrated into the pipeline by configuring the build server to run the Cucumber [test suite](https://naodeng.com.cn/en/wiki/test-suite) after a successful build.
+  3. **Feedback Loop**: If [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios fail, the pipeline is halted, and developers are notified to fix the issue. This ensures that only code that passes all defined behaviors is deployed.
+  4. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios are re-executed on every change to catch regressions early.
+  5. **Documentation**: [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios serve as living documentation that is always up-to-date with the current state of the application.
+  6. **Parallel Execution**: To speed up the pipeline, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios can be executed in parallel across multiple [test environments](https://naodeng.com.cn/en/wiki/test-environment).
+  7. **Tagging**: Tags in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) allow for selective [test execution](https://naodeng.com.cn/en/wiki/test-execution), useful for categorizing tests into smoke, regression, or feature-specific suites within the pipeline.
+  By incorporating [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) into the CI/CD process, teams ensure that the software behaves as expected and that any deviations are caught early, maintaining a high standard of quality with every release.
 
-  1. **[Test Execution](../T/test-execution.md)**: Tools like Cucumber read [Gherkin](../G/gherkin.md) files and execute corresponding step definitions, which are scripts that match [Gherkin](../G/gherkin.md) steps to automation code.
-  2. **Integration**: [Gherkin](../G/gherkin.md) scenarios are integrated into the pipeline by configuring the build server to run the Cucumber [test suite](../T/test-suite.md) after a successful build.
-  3. **Feedback Loop**: If [Gherkin](../G/gherkin.md) scenarios fail, the pipeline is halted, and developers are notified to fix the issue. This ensures that only code that passes all defined behaviors is deployed.
-  4. **[Regression Testing](../R/regression-testing.md)**: [Gherkin](../G/gherkin.md) scenarios are re-executed on every change to catch regressions early.
-  5. **Documentation**: [Gherkin](../G/gherkin.md) scenarios serve as living documentation that is always up-to-date with the current state of the application.
-  6. **Parallel Execution**: To speed up the pipeline, [Gherkin](../G/gherkin.md) scenarios can be executed in parallel across multiple [test environments](../T/test-environment.md).
-  7. **Tagging**: Tags in [Gherkin](../G/gherkin.md) allow for selective [test execution](../T/test-execution.md), useful for categorizing tests into smoke, regression, or feature-specific suites within the pipeline.
+  1. **[Test Execution](https://naodeng.com.cn/en/wiki/test-execution)**: Tools like Cucumber read [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) files and execute corresponding step definitions, which are scripts that match [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) steps to automation code.
+  2. **Integration**: [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios are integrated into the pipeline by configuring the build server to run the Cucumber [test suite](https://naodeng.com.cn/en/wiki/test-suite) after a successful build.
+  3. **Feedback Loop**: If [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios fail, the pipeline is halted, and developers are notified to fix the issue. This ensures that only code that passes all defined behaviors is deployed.
+  4. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios are re-executed on every change to catch regressions early.
+  5. **Documentation**: [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios serve as living documentation that is always up-to-date with the current state of the application.
+  6. **Parallel Execution**: To speed up the pipeline, [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) scenarios can be executed in parallel across multiple [test environments](https://naodeng.com.cn/en/wiki/test-environment).
+  7. **Tagging**: Tags in [Gherkin](https://naodeng.com.cn/en/wiki/gherkin) allow for selective [test execution](https://naodeng.com.cn/en/wiki/test-execution), useful for categorizing tests into smoke, regression, or feature-specific suites within the pipeline.

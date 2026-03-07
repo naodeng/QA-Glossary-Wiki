@@ -1,6 +1,5 @@
 # White Box Testing
 
-
 <!-- TOC START -->
 - [Related Terms:](#related-terms)
 - [Questions about White Box Testing ?](#questions-about-white-box-testing)
@@ -30,9 +29,9 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
 ## Related Terms:
 
-- [Black Box Testing](../B/black-box-testing.md)
-- [Grey Box Testing](../G/grey-box-testing.md)
-- [Glass Box Testing](../G/glass-box-testing.md)
+- [Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing)
+- [Grey Box Testing](https://naodeng.com.cn/en/wiki/grey-box-testing)
+- [Glass Box Testing](https://naodeng.com.cn/en/wiki/glass-box-testing)
 
 ## Questions about White Box Testing ?
 
@@ -40,11 +39,11 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
 #### What is White Box Testing?
 
-  [White Box Testing](../W/white-box-testing.md), also known as Clear, Glass Box, or [Structural Testing](../S/structural-testing.md), is a method where the tester has **full visibility** of the internal workings of the software, including code structure, algorithms, and logic. The approach involves **directly testing** the source code at various levels such as statements, branches, paths, and conditions.
-  Testers write [test cases](../T/test-case.md) that **exercise specific paths** in the codebase to ensure all paths are error-free and behave as expected. This requires a **deep understanding of the code**, as the tests are based on the coverage of code statements, branches, and paths.
-  In [White Box Testing](../W/white-box-testing.md), testers often use **debugging** to step through the code and inspect variables and data structures. They also employ **static code analysis tools** to examine and evaluate the code without executing it, which can help identify potential vulnerabilities or areas of improvement.
-  The process is typically **automated** using testing frameworks and tools designed for [unit testing](../U/unit-testing.md), such as JUnit for Java or [NUnit](../N/nunit.md) for .NET. These tools allow testers to write and execute [test cases](../T/test-case.md), and then report on the [code coverage](../C/code-coverage.md) and results.
-  To perform [White Box Testing](../W/white-box-testing.md) effectively, testers need to have **programming skills** and a thorough understanding of the software's implementation. They must be able to interpret code and identify the correct input to achieve complete [test coverage](../T/test-coverage.md).
+  [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing), also known as Clear, Glass Box, or [Structural Testing](https://naodeng.com.cn/en/wiki/structural-testing), is a method where the tester has **full visibility** of the internal workings of the software, including code structure, algorithms, and logic. The approach involves **directly testing** the source code at various levels such as statements, branches, paths, and conditions.
+  Testers write [test cases](https://naodeng.com.cn/en/wiki/test-case) that **exercise specific paths** in the codebase to ensure all paths are error-free and behave as expected. This requires a **deep understanding of the code**, as the tests are based on the coverage of code statements, branches, and paths.
+  In [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing), testers often use **debugging** to step through the code and inspect variables and data structures. They also employ **static code analysis tools** to examine and evaluate the code without executing it, which can help identify potential vulnerabilities or areas of improvement.
+  The process is typically **automated** using testing frameworks and tools designed for [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), such as JUnit for Java or [NUnit](https://naodeng.com.cn/en/wiki/nunit) for .NET. These tools allow testers to write and execute [test cases](https://naodeng.com.cn/en/wiki/test-case), and then report on the [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) and results.
+  To perform [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) effectively, testers need to have **programming skills** and a thorough understanding of the software's implementation. They must be able to interpret code and identify the correct input to achieve complete [test coverage](https://naodeng.com.cn/en/wiki/test-coverage).
 
   ```
   // Example of a simple White Box unit test in TypeScript
@@ -59,7 +58,7 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
 #### Why is White Box Testing important?
 
-  [White Box Testing](../W/white-box-testing.md) is crucial for ensuring the **internal workings** of an application are functioning as expected. It allows testers to examine the **internal logic** and **structure** of the code, which is essential for:
+  [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) is crucial for ensuring the **internal workings** of an application are functioning as expected. It allows testers to examine the **internal logic** and **structure** of the code, which is essential for:
 
   - **Identifying hidden errors**
     that may not be apparent through Black Box Testing.
@@ -81,7 +80,7 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
     of performance.
 
   - Facilitating
-    **[test-driven development](../T/test-driven-development.md) (TDD)**
+    **[test-driven development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**
     by allowing tests to be written alongside or before the code is fully developed.
 
   - Enabling
@@ -89,13 +88,13 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
     , which can reduce the cost and time required for fixing issues if they are found later in the development cycle.
 
   - Providing a means to perform
-    **[security testing](../S/security-testing.md)**
+    **[security testing](https://naodeng.com.cn/en/wiki/security-testing)**
     by examining the code for potential vulnerabilities.
 
   - Supporting
     **refactoring**
     efforts by ensuring that changes to the code do not introduce new defects.
-  [White Box Testing](../W/white-box-testing.md) is an integral part of a comprehensive testing strategy, complementing other testing methods to provide a thorough evaluation of [software quality](../S/software-quality.md). It requires a **deep understanding of the code**, which can be a challenge but also allows for more **precise and targeted testing**.
+  [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) is an integral part of a comprehensive testing strategy, complementing other testing methods to provide a thorough evaluation of [software quality](https://naodeng.com.cn/en/wiki/software-quality). It requires a **deep understanding of the code**, which can be a challenge but also allows for more **precise and targeted testing**.
 
   - **Identifying hidden errors**
     that may not be apparent through Black Box Testing.
@@ -117,7 +116,7 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
     of performance.
 
   - Facilitating
-    **[test-driven development](../T/test-driven-development.md) (TDD)**
+    **[test-driven development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)**
     by allowing tests to be written alongside or before the code is fully developed.
 
   - Enabling
@@ -125,7 +124,7 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
     , which can reduce the cost and time required for fixing issues if they are found later in the development cycle.
 
   - Providing a means to perform
-    **[security testing](../S/security-testing.md)**
+    **[security testing](https://naodeng.com.cn/en/wiki/security-testing)**
     by examining the code for potential vulnerabilities.
 
   - Supporting
@@ -134,35 +133,35 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
 #### What are the key differences between White Box Testing and Black Box Testing?
 
-  Key differences between **[White Box Testing](../W/white-box-testing.md)** and **[Black Box Testing](../B/black-box-testing.md)**:
+  Key differences between **[White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing)** and **[Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing)**:
 
-  - **Perspective**: [White Box Testing](../W/white-box-testing.md) requires knowledge of the internal structure and design of the code, while [Black Box Testing](../B/black-box-testing.md) treats the software as a closed box, focusing on inputs and outputs without regard to internal code structure.
-  - **Test Creation**: In [White Box Testing](../W/white-box-testing.md), tests are derived from code statements, branches, paths, and internal structures. [Black Box Testing](../B/black-box-testing.md) bases tests on requirements, specifications, and user stories.
+  - **Perspective**: [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) requires knowledge of the internal structure and design of the code, while [Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing) treats the software as a closed box, focusing on inputs and outputs without regard to internal code structure.
+  - **Test Creation**: In [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing), tests are derived from code statements, branches, paths, and internal structures. [Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing) bases tests on requirements, specifications, and user stories.
   - **Tester's Knowledge**: White Box testers often need programming skills and a deep understanding of the codebase. Black Box testers require an understanding of the end-user experience and software requirements, not the code.
   - **Objective**: White Box aims to verify the internal workings of an application, such as code efficiency, logic, and security. Black Box assesses functionality, usability, and overall behavior of the application.
   - **Level of Testing**: White Box is typically conducted at unit, integration, and sometimes at system levels. Black Box is usually performed at system and acceptance levels.
-  - **Automation**: [White Box Testing](../W/white-box-testing.md) can be automated with [unit testing](../U/unit-testing.md) frameworks like JUnit or [NUnit](../N/nunit.md). [Black Box Testing](../B/black-box-testing.md) automation might use tools like [Selenium](../S/selenium.md) or QTP that simulate user interactions.
-  - **Examples of Tests**: For White Box, tests include unit tests, memory leak detection, and security tests. Black Box tests include user [interface testing](../I/interface-testing.md), [functional testing](../F/functional-testing.md), and [regression testing](../R/regression-testing.md).
-  - **Feedback Loop**: [White Box Testing](../W/white-box-testing.md) provides immediate feedback on the code's correctness, while [Black Box Testing](../B/black-box-testing.md) offers feedback on the product's behavior and user experience.
-  - **Perspective**: [White Box Testing](../W/white-box-testing.md) requires knowledge of the internal structure and design of the code, while [Black Box Testing](../B/black-box-testing.md) treats the software as a closed box, focusing on inputs and outputs without regard to internal code structure.
-  - **Test Creation**: In [White Box Testing](../W/white-box-testing.md), tests are derived from code statements, branches, paths, and internal structures. [Black Box Testing](../B/black-box-testing.md) bases tests on requirements, specifications, and user stories.
+  - **Automation**: [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) can be automated with [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) frameworks like JUnit or [NUnit](https://naodeng.com.cn/en/wiki/nunit). [Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing) automation might use tools like [Selenium](https://naodeng.com.cn/en/wiki/selenium) or QTP that simulate user interactions.
+  - **Examples of Tests**: For White Box, tests include unit tests, memory leak detection, and security tests. Black Box tests include user [interface testing](https://naodeng.com.cn/en/wiki/interface-testing), [functional testing](https://naodeng.com.cn/en/wiki/functional-testing), and [regression testing](https://naodeng.com.cn/en/wiki/regression-testing).
+  - **Feedback Loop**: [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) provides immediate feedback on the code's correctness, while [Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing) offers feedback on the product's behavior and user experience.
+  - **Perspective**: [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) requires knowledge of the internal structure and design of the code, while [Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing) treats the software as a closed box, focusing on inputs and outputs without regard to internal code structure.
+  - **Test Creation**: In [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing), tests are derived from code statements, branches, paths, and internal structures. [Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing) bases tests on requirements, specifications, and user stories.
   - **Tester's Knowledge**: White Box testers often need programming skills and a deep understanding of the codebase. Black Box testers require an understanding of the end-user experience and software requirements, not the code.
   - **Objective**: White Box aims to verify the internal workings of an application, such as code efficiency, logic, and security. Black Box assesses functionality, usability, and overall behavior of the application.
   - **Level of Testing**: White Box is typically conducted at unit, integration, and sometimes at system levels. Black Box is usually performed at system and acceptance levels.
-  - **Automation**: [White Box Testing](../W/white-box-testing.md) can be automated with [unit testing](../U/unit-testing.md) frameworks like JUnit or [NUnit](../N/nunit.md). [Black Box Testing](../B/black-box-testing.md) automation might use tools like [Selenium](../S/selenium.md) or QTP that simulate user interactions.
-  - **Examples of Tests**: For White Box, tests include unit tests, memory leak detection, and security tests. Black Box tests include user [interface testing](../I/interface-testing.md), [functional testing](../F/functional-testing.md), and [regression testing](../R/regression-testing.md).
-  - **Feedback Loop**: [White Box Testing](../W/white-box-testing.md) provides immediate feedback on the code's correctness, while [Black Box Testing](../B/black-box-testing.md) offers feedback on the product's behavior and user experience.
+  - **Automation**: [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) can be automated with [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) frameworks like JUnit or [NUnit](https://naodeng.com.cn/en/wiki/nunit). [Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing) automation might use tools like [Selenium](https://naodeng.com.cn/en/wiki/selenium) or QTP that simulate user interactions.
+  - **Examples of Tests**: For White Box, tests include unit tests, memory leak detection, and security tests. Black Box tests include user [interface testing](https://naodeng.com.cn/en/wiki/interface-testing), [functional testing](https://naodeng.com.cn/en/wiki/functional-testing), and [regression testing](https://naodeng.com.cn/en/wiki/regression-testing).
+  - **Feedback Loop**: [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) provides immediate feedback on the code's correctness, while [Black Box Testing](https://naodeng.com.cn/en/wiki/black-box-testing) offers feedback on the product's behavior and user experience.
 
 #### What are the benefits and drawbacks of White Box Testing?
 
-  Benefits of [White Box Testing](../W/white-box-testing.md):
+  Benefits of [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing):
 
   - **Detailed Examination** : Allows for a thorough investigation of the internal logic and structure of the code.
-  - **Early [Bug](../B/bug.md) Detection** : Bugs can be detected at an early stage, saving time and cost in the development cycle.
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection** : Bugs can be detected at an early stage, saving time and cost in the development cycle.
   - **Optimization Opportunities** : Helps in optimizing the code by identifying redundant paths or unreachable code.
   - **Security Analysis** : Facilitates the identification of potential security vulnerabilities within the code.
-  - **[Automated Testing](../A/automated-testing.md)** : Can be automated, especially unit tests, which leads to continuous testing and integration.
-  Drawbacks of [White Box Testing](../W/white-box-testing.md):
+  - **[Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing)** : Can be automated, especially unit tests, which leads to continuous testing and integration.
+  Drawbacks of [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing):
 
   - **Time-Consuming** : Requires a deep understanding of the codebase, which can be time-consuming and resource-intensive.
   - **Complexity** : Can become complex with large codebases or systems with high levels of abstraction.
@@ -181,10 +180,10 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
   ```
 
   - **Detailed Examination** : Allows for a thorough investigation of the internal logic and structure of the code.
-  - **Early [Bug](../B/bug.md) Detection** : Bugs can be detected at an early stage, saving time and cost in the development cycle.
+  - **Early [Bug](https://naodeng.com.cn/en/wiki/bug) Detection** : Bugs can be detected at an early stage, saving time and cost in the development cycle.
   - **Optimization Opportunities** : Helps in optimizing the code by identifying redundant paths or unreachable code.
   - **Security Analysis** : Facilitates the identification of potential security vulnerabilities within the code.
-  - **[Automated Testing](../A/automated-testing.md)** : Can be automated, especially unit tests, which leads to continuous testing and integration.
+  - **[Automated Testing](https://naodeng.com.cn/en/wiki/automated-testing)** : Can be automated, especially unit tests, which leads to continuous testing and integration.
   - **Time-Consuming** : Requires a deep understanding of the codebase, which can be time-consuming and resource-intensive.
   - **Complexity** : Can become complex with large codebases or systems with high levels of abstraction.
   - **Maintenance Overhead** : Test cases may need frequent updates with every change in the code, increasing maintenance overhead.
@@ -195,32 +194,32 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
 #### What are the different techniques used in White Box Testing?
 
-  [White Box Testing](../W/white-box-testing.md) techniques focus on the internal logic and structure of the code. Here are several techniques used:
+  [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) techniques focus on the internal logic and structure of the code. Here are several techniques used:
 
-  - **[Control Flow Testing](../C/control-flow-testing.md)**: Analyzes the execution paths through the code, ensuring all control structures such as loops and conditions are evaluated both true and false.
-  - **[Data Flow Testing](../D/data-flow-testing.md)**: Focuses on the points at which variables receive values and where these values are used, ensuring that the data lifecycle is correct.
+  - **[Control Flow Testing](https://naodeng.com.cn/en/wiki/control-flow-testing)**: Analyzes the execution paths through the code, ensuring all control structures such as loops and conditions are evaluated both true and false.
+  - **[Data Flow Testing](https://naodeng.com.cn/en/wiki/data-flow-testing)**: Focuses on the points at which variables receive values and where these values are used, ensuring that the data lifecycle is correct.
   - **Branch Testing**: Ensures that each branch from every decision point is executed at least once.
   - **Condition Testing**: Evaluates the correctness of conditional expressions.
   - **Loop Testing**: Specifically targets the validity of loop constructs, ensuring that loops such as for, while, and do-while are properly entered and exited.
-  - **[Mutation Testing](../M/mutation-testing.md)**: Involves modifying the program's source code in small ways (mutants) to check if the existing [test cases](../T/test-case.md) can detect these modifications, thereby evaluating the test's ability to catch defects.
-  - **[API Testing](../A/api-testing.md)**: Validates the functionality, reliability, performance, and security of the application programming interfaces ([APIs](../A/api.md)) within the white box paradigm.
-  - **[Code Coverage](../C/code-coverage.md) Analysis**: Measures how much of the code is exercised by the [test suite](../T/test-suite.md), which can include statement, branch, and path coverage.
+  - **[Mutation Testing](https://naodeng.com.cn/en/wiki/mutation-testing)**: Involves modifying the program's source code in small ways (mutants) to check if the existing [test cases](https://naodeng.com.cn/en/wiki/test-case) can detect these modifications, thereby evaluating the test's ability to catch defects.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)**: Validates the functionality, reliability, performance, and security of the application programming interfaces ([APIs](https://naodeng.com.cn/en/wiki/api)) within the white box paradigm.
+  - **[Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Analysis**: Measures how much of the code is exercised by the [test suite](https://naodeng.com.cn/en/wiki/test-suite), which can include statement, branch, and path coverage.
   - **Static Code Analysis**: Uses tools to examine the code for potential vulnerabilities, code smells, and adherence to coding standards without executing the program.
   These techniques are often supported by tools that can automate the analysis and testing process. Effective application of these techniques requires a deep understanding of the codebase, programming skills, and attention to detail.
 
-  - **[Control Flow Testing](../C/control-flow-testing.md)**: Analyzes the execution paths through the code, ensuring all control structures such as loops and conditions are evaluated both true and false.
-  - **[Data Flow Testing](../D/data-flow-testing.md)**: Focuses on the points at which variables receive values and where these values are used, ensuring that the data lifecycle is correct.
+  - **[Control Flow Testing](https://naodeng.com.cn/en/wiki/control-flow-testing)**: Analyzes the execution paths through the code, ensuring all control structures such as loops and conditions are evaluated both true and false.
+  - **[Data Flow Testing](https://naodeng.com.cn/en/wiki/data-flow-testing)**: Focuses on the points at which variables receive values and where these values are used, ensuring that the data lifecycle is correct.
   - **Branch Testing**: Ensures that each branch from every decision point is executed at least once.
   - **Condition Testing**: Evaluates the correctness of conditional expressions.
   - **Loop Testing**: Specifically targets the validity of loop constructs, ensuring that loops such as for, while, and do-while are properly entered and exited.
-  - **[Mutation Testing](../M/mutation-testing.md)**: Involves modifying the program's source code in small ways (mutants) to check if the existing [test cases](../T/test-case.md) can detect these modifications, thereby evaluating the test's ability to catch defects.
-  - **[API Testing](../A/api-testing.md)**: Validates the functionality, reliability, performance, and security of the application programming interfaces ([APIs](../A/api.md)) within the white box paradigm.
-  - **[Code Coverage](../C/code-coverage.md) Analysis**: Measures how much of the code is exercised by the [test suite](../T/test-suite.md), which can include statement, branch, and path coverage.
+  - **[Mutation Testing](https://naodeng.com.cn/en/wiki/mutation-testing)**: Involves modifying the program's source code in small ways (mutants) to check if the existing [test cases](https://naodeng.com.cn/en/wiki/test-case) can detect these modifications, thereby evaluating the test's ability to catch defects.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)**: Validates the functionality, reliability, performance, and security of the application programming interfaces ([APIs](https://naodeng.com.cn/en/wiki/api)) within the white box paradigm.
+  - **[Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Analysis**: Measures how much of the code is exercised by the [test suite](https://naodeng.com.cn/en/wiki/test-suite), which can include statement, branch, and path coverage.
   - **Static Code Analysis**: Uses tools to examine the code for potential vulnerabilities, code smells, and adherence to coding standards without executing the program.
 
 #### What is the difference between Statement Coverage and Branch Coverage?
 
-  Statement Coverage, also known as Line Coverage, measures the percentage of executable statements in the source code that have been executed through a [test suite](../T/test-suite.md). The goal is to ensure that each line of code has been tested at least once, which helps in identifying parts of the code that have not been exercised by the [test cases](../T/test-case.md).
+  Statement Coverage, also known as Line Coverage, measures the percentage of executable statements in the source code that have been executed through a [test suite](https://naodeng.com.cn/en/wiki/test-suite). The goal is to ensure that each line of code has been tested at least once, which helps in identifying parts of the code that have not been exercised by the [test cases](https://naodeng.com.cn/en/wiki/test-case).
 
   ```
   function example(x) {
@@ -247,25 +246,25 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
 #### What is Path Testing in White Box Testing?
 
-  [Path testing](../P/path-testing.md) is a **[white box testing](../W/white-box-testing.md)** technique that involves ensuring every possible route through a given part of the code is executed at least once. This approach focuses on the execution flows within the software under test and is used to uncover errors in specific paths that might remain hidden during other types of testing.
-  In [path testing](../P/path-testing.md), the tester uses the application's **control flow graph (CFG)** to identify and define the paths. A CFG is a diagram that represents the order in which individual statements, instructions, or function calls are executed within a piece of code.
+  [Path testing](https://naodeng.com.cn/en/wiki/path-testing) is a **[white box testing](https://naodeng.com.cn/en/wiki/white-box-testing)** technique that involves ensuring every possible route through a given part of the code is executed at least once. This approach focuses on the execution flows within the software under test and is used to uncover errors in specific paths that might remain hidden during other types of testing.
+  In [path testing](https://naodeng.com.cn/en/wiki/path-testing), the tester uses the application's **control flow graph (CFG)** to identify and define the paths. A CFG is a diagram that represents the order in which individual statements, instructions, or function calls are executed within a piece of code.
   Testers will typically:
 
   1. **Analyze the CFG**
     to find all the possible paths.
 
-  2. **Define [test cases](../T/test-case.md)**
+  2. **Define [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that will execute each path.
 
   3. **Run the tests**
     and compare the actual outcome with the expected outcome.
-  [Path testing](../P/path-testing.md) is closely related to **branch coverage** but takes it further by looking at sequences of branches, which can reveal more complex [bugs](../B/bug.md). It's particularly useful for critical code where every possible scenario must be tested, such as financial transactions or life-critical systems.
-  To automate [path testing](../P/path-testing.md), testers often write unit tests that target specific paths through the code. This can be done manually or with the help of tools that generate [test cases](../T/test-case.md) from the CFG. Effective [path testing](../P/path-testing.md) requires a deep understanding of the code's logic and can be time-consuming, as the number of possible paths can grow exponentially with the complexity of the code.
+  [Path testing](https://naodeng.com.cn/en/wiki/path-testing) is closely related to **branch coverage** but takes it further by looking at sequences of branches, which can reveal more complex [bugs](https://naodeng.com.cn/en/wiki/bug). It's particularly useful for critical code where every possible scenario must be tested, such as financial transactions or life-critical systems.
+  To automate [path testing](https://naodeng.com.cn/en/wiki/path-testing), testers often write unit tests that target specific paths through the code. This can be done manually or with the help of tools that generate [test cases](https://naodeng.com.cn/en/wiki/test-case) from the CFG. Effective [path testing](https://naodeng.com.cn/en/wiki/path-testing) requires a deep understanding of the code's logic and can be time-consuming, as the number of possible paths can grow exponentially with the complexity of the code.
 
   1. **Analyze the CFG**
     to find all the possible paths.
 
-  2. **Define [test cases](../T/test-case.md)**
+  2. **Define [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     that will execute each path.
 
   3. **Run the tests**
@@ -273,42 +272,42 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
 #### What are the different types of White Box Testing?
 
-  Different types of **[White Box Testing](../W/white-box-testing.md)** include:
+  Different types of **[White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing)** include:
 
-  - **[Unit Testing](../U/unit-testing.md)** : Testing individual units or components of the software to ensure that each function works properly.
-  - **[Integration Testing](../I/integration-testing.md)** : Testing the interfaces between units and interaction with different parts of the system.
-  - **[System Testing](../S/system-testing.md)** : Verifying the complete and integrated software system to ensure that it meets the specified requirements.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)** : Testing individual units or components of the software to ensure that each function works properly.
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)** : Testing the interfaces between units and interaction with different parts of the system.
+  - **[System Testing](https://naodeng.com.cn/en/wiki/system-testing)** : Verifying the complete and integrated software system to ensure that it meets the specified requirements.
   - **Static Code Analysis** : Examining the code without executing it to find potential vulnerabilities, style issues, or bugs.
-  - **[Control Flow Testing](../C/control-flow-testing.md)** : Analyzing the control flow to identify any potential issues in the logic paths taken through the software.
-  - **[Data Flow Testing](../D/data-flow-testing.md)** : Focusing on the points at which variables receive values and where these values are used to ensure the integrity of data throughout the application.
+  - **[Control Flow Testing](https://naodeng.com.cn/en/wiki/control-flow-testing)** : Analyzing the control flow to identify any potential issues in the logic paths taken through the software.
+  - **[Data Flow Testing](https://naodeng.com.cn/en/wiki/data-flow-testing)** : Focusing on the points at which variables receive values and where these values are used to ensure the integrity of data throughout the application.
   - **Branch Testing** : Ensuring every branch of every control structure (like if-else and switch-case statements) is executed at least once.
   - **Loop Testing** : Making sure that loop constructs (for, while, do-while) are properly executed, including their initialization, termination, and incrementation.
-  - **[Mutation Testing](../M/mutation-testing.md)** : Modifying the program's source code in small ways to check if the existing test cases can detect these intentional faults.
-  - **[API Testing](../A/api-testing.md)** : Directly testing APIs to verify that they meet expectations for functionality, reliability, performance, and security.
+  - **[Mutation Testing](https://naodeng.com.cn/en/wiki/mutation-testing)** : Modifying the program's source code in small ways to check if the existing test cases can detect these intentional faults.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)** : Directly testing APIs to verify that they meet expectations for functionality, reliability, performance, and security.
   Each type targets specific aspects of the codebase and helps in identifying different kinds of issues that could affect the software's functionality, performance, or security.
 
-  - **[Unit Testing](../U/unit-testing.md)** : Testing individual units or components of the software to ensure that each function works properly.
-  - **[Integration Testing](../I/integration-testing.md)** : Testing the interfaces between units and interaction with different parts of the system.
-  - **[System Testing](../S/system-testing.md)** : Verifying the complete and integrated software system to ensure that it meets the specified requirements.
+  - **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)** : Testing individual units or components of the software to ensure that each function works properly.
+  - **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)** : Testing the interfaces between units and interaction with different parts of the system.
+  - **[System Testing](https://naodeng.com.cn/en/wiki/system-testing)** : Verifying the complete and integrated software system to ensure that it meets the specified requirements.
   - **Static Code Analysis** : Examining the code without executing it to find potential vulnerabilities, style issues, or bugs.
-  - **[Control Flow Testing](../C/control-flow-testing.md)** : Analyzing the control flow to identify any potential issues in the logic paths taken through the software.
-  - **[Data Flow Testing](../D/data-flow-testing.md)** : Focusing on the points at which variables receive values and where these values are used to ensure the integrity of data throughout the application.
+  - **[Control Flow Testing](https://naodeng.com.cn/en/wiki/control-flow-testing)** : Analyzing the control flow to identify any potential issues in the logic paths taken through the software.
+  - **[Data Flow Testing](https://naodeng.com.cn/en/wiki/data-flow-testing)** : Focusing on the points at which variables receive values and where these values are used to ensure the integrity of data throughout the application.
   - **Branch Testing** : Ensuring every branch of every control structure (like if-else and switch-case statements) is executed at least once.
   - **Loop Testing** : Making sure that loop constructs (for, while, do-while) are properly executed, including their initialization, termination, and incrementation.
-  - **[Mutation Testing](../M/mutation-testing.md)** : Modifying the program's source code in small ways to check if the existing test cases can detect these intentional faults.
-  - **[API Testing](../A/api-testing.md)** : Directly testing APIs to verify that they meet expectations for functionality, reliability, performance, and security.
+  - **[Mutation Testing](https://naodeng.com.cn/en/wiki/mutation-testing)** : Modifying the program's source code in small ways to check if the existing test cases can detect these intentional faults.
+  - **[API Testing](https://naodeng.com.cn/en/wiki/api-testing)** : Directly testing APIs to verify that they meet expectations for functionality, reliability, performance, and security.
 
 ### Tools and Implementation
 
 #### What tools are commonly used for White Box Testing?
 
-  Common tools for **[White Box Testing](../W/white-box-testing.md)** include:
+  Common tools for **[White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing)** include:
 
   - **JUnit**
     and
     **TestNG** : Frameworks for unit testing in Java, allowing for the creation and execution of test cases.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     and
     **xUnit** : Similar to JUnit but for the .NET framework.
 
@@ -317,7 +316,7 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
     **JaCoCo** : Java tools that provide code coverage metrics.
 
   - **gcov** : A test coverage program used with GCC to analyze C/C++ programs.
-  - **Visual Studio [Test Tools](../T/test-tool.md)** : Integrated in Visual Studio, these tools support testing .NET applications.
+  - **Visual Studio [Test Tools](https://naodeng.com.cn/en/wiki/test-tool)** : Integrated in Visual Studio, these tools support testing .NET applications.
   - **PyUnit**
     /
     **unittest** : The unit testing framework for Python.
@@ -325,7 +324,7 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
   - **RSpec** : A behavior-driven development (BDD) framework for Ruby.
   - **Mocha**
     and
-    **[Jest](../J/jest.md)** : JavaScript test frameworks that support Node.js applications.
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)** : JavaScript test frameworks that support Node.js applications.
 
   - **Istanbul** : A JavaScript test coverage tool.
   - **Coverity** : Offers static code analysis to identify defects in C, C++, Java, and other languages.
@@ -335,13 +334,13 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
     **IntelliJ IDEA** : IDEs that provide integrated testing and debugging tools.
 
   - **Valgrind** : An instrumentation framework for building dynamic analysis tools, useful for memory and thread error detection.
-  These tools assist in implementing various **[White Box Testing](../W/white-box-testing.md)** techniques such as statement and branch coverage, [path testing](../P/path-testing.md), and other types of code analysis. They can be integrated into continuous integration pipelines for [automated testing](../A/automated-testing.md) and are essential for ensuring code quality and reliability.
+  These tools assist in implementing various **[White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing)** techniques such as statement and branch coverage, [path testing](https://naodeng.com.cn/en/wiki/path-testing), and other types of code analysis. They can be integrated into continuous integration pipelines for [automated testing](https://naodeng.com.cn/en/wiki/automated-testing) and are essential for ensuring code quality and reliability.
 
   - **JUnit**
     and
     **TestNG** : Frameworks for unit testing in Java, allowing for the creation and execution of test cases.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     and
     **xUnit** : Similar to JUnit but for the .NET framework.
 
@@ -350,7 +349,7 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
     **JaCoCo** : Java tools that provide code coverage metrics.
 
   - **gcov** : A test coverage program used with GCC to analyze C/C++ programs.
-  - **Visual Studio [Test Tools](../T/test-tool.md)** : Integrated in Visual Studio, these tools support testing .NET applications.
+  - **Visual Studio [Test Tools](https://naodeng.com.cn/en/wiki/test-tool)** : Integrated in Visual Studio, these tools support testing .NET applications.
   - **PyUnit**
     /
     **unittest** : The unit testing framework for Python.
@@ -358,7 +357,7 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
   - **RSpec** : A behavior-driven development (BDD) framework for Ruby.
   - **Mocha**
     and
-    **[Jest](../J/jest.md)** : JavaScript test frameworks that support Node.js applications.
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)** : JavaScript test frameworks that support Node.js applications.
 
   - **Istanbul** : A JavaScript test coverage tool.
   - **Coverity** : Offers static code analysis to identify defects in C, C++, Java, and other languages.
@@ -371,62 +370,62 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
 #### How is White Box Testing implemented in a software development process?
 
-  [White Box Testing](../W/white-box-testing.md) is implemented in the software development process through a series of steps that ensure the internal workings of the application are tested thoroughly:
+  [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) is implemented in the software development process through a series of steps that ensure the internal workings of the application are tested thoroughly:
 
   1. **Gather Requirements** : Understand the application's functionality, design, and implementation details.
-  2. **Design [Test Cases](../T/test-case.md)** : Based on the understanding, design test cases that cover all possible paths, including loops, branches, and individual statements.
-  3. **Prepare [Test Environment](../T/test-environment.md)** : Set up an environment that closely mimics the production setting with debugging and code analysis tools.
-  4. **Write [Test Scripts](../T/test-script.md)** : Develop automated test scripts using appropriate tools and languages that are capable of assessing the codebase.
+  2. **Design [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Based on the understanding, design test cases that cover all possible paths, including loops, branches, and individual statements.
+  3. **Prepare [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)** : Set up an environment that closely mimics the production setting with debugging and code analysis tools.
+  4. **Write [Test Scripts](https://naodeng.com.cn/en/wiki/test-script)** : Develop automated test scripts using appropriate tools and languages that are capable of assessing the codebase.
   5. **Execute Tests** : Run the test scripts, ensuring that they execute the code and validate the logic, data flow, and error handling.
   6. **Analyze Results** : Examine the results for pass/fail status, code coverage metrics, and potential areas of code that are not exercised by the tests.
   7. **Refine Tests** : Modify tests to cover any missed paths or to improve the depth of testing based on the analysis.
-  8. **[Regression Testing](../R/regression-testing.md)** : Re-run tests after any code changes to ensure that new changes do not adversely affect existing functionality.
+  8. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Re-run tests after any code changes to ensure that new changes do not adversely affect existing functionality.
   9. **Review Code** : Perform code reviews with the testing results in mind to identify potential improvements or refactoring opportunities.
   10. **Document Findings** : Record the outcomes of the testing process, including any defects found and the coverage achieved.
   Throughout the process, continuous integration can be leveraged to automate the execution of white box tests, ensuring immediate feedback on code changes. This integration is critical for maintaining code quality throughout the development lifecycle.
 
   1. **Gather Requirements** : Understand the application's functionality, design, and implementation details.
-  2. **Design [Test Cases](../T/test-case.md)** : Based on the understanding, design test cases that cover all possible paths, including loops, branches, and individual statements.
-  3. **Prepare [Test Environment](../T/test-environment.md)** : Set up an environment that closely mimics the production setting with debugging and code analysis tools.
-  4. **Write [Test Scripts](../T/test-script.md)** : Develop automated test scripts using appropriate tools and languages that are capable of assessing the codebase.
+  2. **Design [Test Cases](https://naodeng.com.cn/en/wiki/test-case)** : Based on the understanding, design test cases that cover all possible paths, including loops, branches, and individual statements.
+  3. **Prepare [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)** : Set up an environment that closely mimics the production setting with debugging and code analysis tools.
+  4. **Write [Test Scripts](https://naodeng.com.cn/en/wiki/test-script)** : Develop automated test scripts using appropriate tools and languages that are capable of assessing the codebase.
   5. **Execute Tests** : Run the test scripts, ensuring that they execute the code and validate the logic, data flow, and error handling.
   6. **Analyze Results** : Examine the results for pass/fail status, code coverage metrics, and potential areas of code that are not exercised by the tests.
   7. **Refine Tests** : Modify tests to cover any missed paths or to improve the depth of testing based on the analysis.
-  8. **[Regression Testing](../R/regression-testing.md)** : Re-run tests after any code changes to ensure that new changes do not adversely affect existing functionality.
+  8. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Re-run tests after any code changes to ensure that new changes do not adversely affect existing functionality.
   9. **Review Code** : Perform code reviews with the testing results in mind to identify potential improvements or refactoring opportunities.
   10. **Document Findings** : Record the outcomes of the testing process, including any defects found and the coverage achieved.
 
 #### What skills are required for effective White Box Testing?
 
-  Effective [white box testing](../W/white-box-testing.md) requires a blend of technical skills and analytical abilities. Here are the key skills needed:
+  Effective [white box testing](https://naodeng.com.cn/en/wiki/white-box-testing) requires a blend of technical skills and analytical abilities. Here are the key skills needed:
 
   - **Programming Knowledge**: Proficiency in the programming language(s) used in the application under test is crucial. This allows testers to understand the source code, identify potential points of failure, and write unit tests.
   - **Understanding of Software Internals**: Familiarity with the software's internal workings, including algorithms, data structures, and logic flow, is essential for creating tests that cover different execution paths.
-  - **Analytical Skills**: The ability to analyze code to determine which [test cases](../T/test-case.md) need to be written for adequate coverage and to identify logical errors or potential problem areas.
+  - **Analytical Skills**: The ability to analyze code to determine which [test cases](https://naodeng.com.cn/en/wiki/test-case) need to be written for adequate coverage and to identify logical errors or potential problem areas.
   - **Debugging Skills**: Competence in using debugging tools to step through the code, inspect variables, and understand the state of the application at any point during execution.
-  - **Knowledge of [Code Coverage](../C/code-coverage.md) Tools**: Understanding how to use [code coverage](../C/code-coverage.md) tools to assess the effectiveness of tests and identify untested parts of the codebase.
-  - **Test Design Techniques**: Familiarity with test design techniques specific to [white box testing](../W/white-box-testing.md), such as [control flow testing](../C/control-flow-testing.md), [data flow testing](../D/data-flow-testing.md), and fault injection.
+  - **Knowledge of [Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Tools**: Understanding how to use [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools to assess the effectiveness of tests and identify untested parts of the codebase.
+  - **Test Design Techniques**: Familiarity with test design techniques specific to [white box testing](https://naodeng.com.cn/en/wiki/white-box-testing), such as [control flow testing](https://naodeng.com.cn/en/wiki/control-flow-testing), [data flow testing](https://naodeng.com.cn/en/wiki/data-flow-testing), and fault injection.
   - **Continuous Integration/Continuous Deployment (CI/CD)**: Experience with CI/CD pipelines to integrate white box tests into the build process for immediate feedback on code changes.
   - **Attention to Detail**: The ability to meticulously examine code and test outcomes to ensure thoroughness in testing.
-  - **Problem-Solving Skills**: Strong problem-solving abilities to think through complex code and [test scenarios](../T/test-scenario.md), and to devise effective test strategies.
+  - **Problem-Solving Skills**: Strong problem-solving abilities to think through complex code and [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario), and to devise effective test strategies.
   - **Communication**: Clear communication skills to document findings and collaborate with developers on issues discovered during testing.
   - **Programming Knowledge**: Proficiency in the programming language(s) used in the application under test is crucial. This allows testers to understand the source code, identify potential points of failure, and write unit tests.
   - **Understanding of Software Internals**: Familiarity with the software's internal workings, including algorithms, data structures, and logic flow, is essential for creating tests that cover different execution paths.
-  - **Analytical Skills**: The ability to analyze code to determine which [test cases](../T/test-case.md) need to be written for adequate coverage and to identify logical errors or potential problem areas.
+  - **Analytical Skills**: The ability to analyze code to determine which [test cases](https://naodeng.com.cn/en/wiki/test-case) need to be written for adequate coverage and to identify logical errors or potential problem areas.
   - **Debugging Skills**: Competence in using debugging tools to step through the code, inspect variables, and understand the state of the application at any point during execution.
-  - **Knowledge of [Code Coverage](../C/code-coverage.md) Tools**: Understanding how to use [code coverage](../C/code-coverage.md) tools to assess the effectiveness of tests and identify untested parts of the codebase.
-  - **Test Design Techniques**: Familiarity with test design techniques specific to [white box testing](../W/white-box-testing.md), such as [control flow testing](../C/control-flow-testing.md), [data flow testing](../D/data-flow-testing.md), and fault injection.
+  - **Knowledge of [Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Tools**: Understanding how to use [code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools to assess the effectiveness of tests and identify untested parts of the codebase.
+  - **Test Design Techniques**: Familiarity with test design techniques specific to [white box testing](https://naodeng.com.cn/en/wiki/white-box-testing), such as [control flow testing](https://naodeng.com.cn/en/wiki/control-flow-testing), [data flow testing](https://naodeng.com.cn/en/wiki/data-flow-testing), and fault injection.
   - **Continuous Integration/Continuous Deployment (CI/CD)**: Experience with CI/CD pipelines to integrate white box tests into the build process for immediate feedback on code changes.
   - **Attention to Detail**: The ability to meticulously examine code and test outcomes to ensure thoroughness in testing.
-  - **Problem-Solving Skills**: Strong problem-solving abilities to think through complex code and [test scenarios](../T/test-scenario.md), and to devise effective test strategies.
+  - **Problem-Solving Skills**: Strong problem-solving abilities to think through complex code and [test scenarios](https://naodeng.com.cn/en/wiki/test-scenario), and to devise effective test strategies.
   - **Communication**: Clear communication skills to document findings and collaborate with developers on issues discovered during testing.
 
 #### How can automation be applied in White Box Testing?
 
-  Automation in **[White Box Testing](../W/white-box-testing.md)** is achieved by writing scripts or using tools that directly interact with the internal structure of the application. Automated white box tests often require knowledge of the code, [APIs](../A/api.md), and internal architecture.
+  Automation in **[White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing)** is achieved by writing scripts or using tools that directly interact with the internal structure of the application. Automated white box tests often require knowledge of the code, [APIs](https://naodeng.com.cn/en/wiki/api), and internal architecture.
   To automate white box tests, engineers typically:
 
-  - Write **unit tests** that verify individual functions or methods. These are often written in the same language as the application code and run using frameworks like JUnit for Java or [NUnit](../N/nunit.md) for C#.
+  - Write **unit tests** that verify individual functions or methods. These are often written in the same language as the application code and run using frameworks like JUnit for Java or [NUnit](https://naodeng.com.cn/en/wiki/nunit) for C#.
 
     ```
     @Test
@@ -438,11 +437,11 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
   - Create **integration tests** that test the interactions between components or systems. Tools like TestNG or xUnit can be used to automate these tests.
   - Use **code analysis tools** such as SonarQube or Coverity to automatically scan for potential issues like security vulnerabilities or code smells.
-  - Implement **[test coverage](../T/test-coverage.md) tools** like JaCoCo or Istanbul to ensure that tests cover a sufficient amount of the codebase, including branches and paths.
+  - Implement **[test coverage](https://naodeng.com.cn/en/wiki/test-coverage) tools** like JaCoCo or Istanbul to ensure that tests cover a sufficient amount of the codebase, including branches and paths.
   - Develop **custom scripts** to test specific internal functions or to simulate certain conditions within the application.
-  Automating white box tests requires a deep understanding of the codebase and may involve interfacing with [APIs](../A/api.md), [databases](../D/database.md), or other internal components. It's crucial to maintain these tests as the application evolves to ensure they remain effective and relevant.
+  Automating white box tests requires a deep understanding of the codebase and may involve interfacing with [APIs](https://naodeng.com.cn/en/wiki/api), [databases](https://naodeng.com.cn/en/wiki/database), or other internal components. It's crucial to maintain these tests as the application evolves to ensure they remain effective and relevant.
 
-  - Write **unit tests** that verify individual functions or methods. These are often written in the same language as the application code and run using frameworks like JUnit for Java or [NUnit](../N/nunit.md) for C#.
+  - Write **unit tests** that verify individual functions or methods. These are often written in the same language as the application code and run using frameworks like JUnit for Java or [NUnit](https://naodeng.com.cn/en/wiki/nunit) for C#.
 
     ```
     @Test
@@ -454,17 +453,17 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
   - Create **integration tests** that test the interactions between components or systems. Tools like TestNG or xUnit can be used to automate these tests.
   - Use **code analysis tools** such as SonarQube or Coverity to automatically scan for potential issues like security vulnerabilities or code smells.
-  - Implement **[test coverage](../T/test-coverage.md) tools** like JaCoCo or Istanbul to ensure that tests cover a sufficient amount of the codebase, including branches and paths.
+  - Implement **[test coverage](https://naodeng.com.cn/en/wiki/test-coverage) tools** like JaCoCo or Istanbul to ensure that tests cover a sufficient amount of the codebase, including branches and paths.
   - Develop **custom scripts** to test specific internal functions or to simulate certain conditions within the application.
 
 ### Case Studies and Scenarios
 
 #### Can you provide an example of a scenario where White Box Testing was particularly effective?
 
-  [White Box Testing](../W/white-box-testing.md) proved highly effective in a scenario involving a financial software system responsible for real-time transaction processing. The system contained complex business logic for calculating transaction fees based on a multitude of factors, including transaction type, customer account type, and current promotional offers.
-  During development, engineers utilized **[White Box Testing](../W/white-box-testing.md)** to meticulously examine the system's internal workings. They crafted [test cases](../T/test-case.md) that covered every possible path through the calculation logic, ensuring **complete path coverage**. This approach was crucial because it allowed the detection of hidden logical errors that could have led to incorrect fee calculations, potentially costing the company significant revenue and damaging its reputation.
-  One particular success story from this scenario was the identification of a flaw in the logic that applied promotional discounts. The error would have caused certain transactions to bypass the discount application under specific conditions. Thanks to [White Box Testing](../W/white-box-testing.md), the issue was caught early, and the logic was corrected before deployment.
-  The use of **automated [unit testing](../U/unit-testing.md) frameworks** like JUnit for Java or [NUnit](../N/nunit.md) for .NET was integral in this process. Testers wrote extensive suites of automated tests that could be rerun quickly after each modification, ensuring that fixes did not introduce new issues.
+  [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) proved highly effective in a scenario involving a financial software system responsible for real-time transaction processing. The system contained complex business logic for calculating transaction fees based on a multitude of factors, including transaction type, customer account type, and current promotional offers.
+  During development, engineers utilized **[White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing)** to meticulously examine the system's internal workings. They crafted [test cases](https://naodeng.com.cn/en/wiki/test-case) that covered every possible path through the calculation logic, ensuring **complete path coverage**. This approach was crucial because it allowed the detection of hidden logical errors that could have led to incorrect fee calculations, potentially costing the company significant revenue and damaging its reputation.
+  One particular success story from this scenario was the identification of a flaw in the logic that applied promotional discounts. The error would have caused certain transactions to bypass the discount application under specific conditions. Thanks to [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing), the issue was caught early, and the logic was corrected before deployment.
+  The use of **automated [unit testing](https://naodeng.com.cn/en/wiki/unit-testing) frameworks** like JUnit for Java or [NUnit](https://naodeng.com.cn/en/wiki/nunit) for .NET was integral in this process. Testers wrote extensive suites of automated tests that could be rerun quickly after each modification, ensuring that fixes did not introduce new issues.
 
   ```
   @Test
@@ -474,13 +473,13 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
       // Assert that the discount is applied correctly
   }
   ```
-  This example underscores the effectiveness of [White Box Testing](../W/white-box-testing.md) in scenarios where business logic complexity demands thorough scrutiny to maintain system integrity and reliability.
+  This example underscores the effectiveness of [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) in scenarios where business logic complexity demands thorough scrutiny to maintain system integrity and reliability.
 
 #### What are some real-world examples of White Box Testing?
 
-  Real-world examples of **[White Box Testing](../W/white-box-testing.md)** include:
+  Real-world examples of **[White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing)** include:
 
-  1. **[Unit Testing](../U/unit-testing.md)**: Developers write unit tests for individual functions or methods. For instance, a function that calculates the area of a rectangle is tested with various input values to ensure correct output.
+  1. **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)**: Developers write unit tests for individual functions or methods. For instance, a function that calculates the area of a rectangle is tested with various input values to ensure correct output.
 
     ```
     function calculateArea(length, width) {
@@ -488,15 +487,15 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
     }
     ```
 
-  2. **[Integration Testing](../I/integration-testing.md)**: Testing the interaction between integrated units/modules. For example, testing how a data processing service interacts with a [database](../D/database.md).
-  3. **[Code Coverage](../C/code-coverage.md) Analysis**: Tools like Istanbul or JaCoCo are used to measure how much of the code is executed during testing, aiming for high coverage percentages.
+  2. **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Testing the interaction between integrated units/modules. For example, testing how a data processing service interacts with a [database](https://naodeng.com.cn/en/wiki/database).
+  3. **[Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Analysis**: Tools like Istanbul or JaCoCo are used to measure how much of the code is executed during testing, aiming for high coverage percentages.
   4. **Static Code Analysis**: Tools like SonarQube or ESLint analyze code without executing it to find potential issues such as security vulnerabilities or code smells.
-  5. **[Security Testing](../S/security-testing.md)**: Penetration testers examine the code for security flaws, such as [SQL](../S/sql.md) injection vulnerabilities in a web application's authentication module.
-  6. **[Performance Testing](../P/performance-testing.md)**: Profiling tools are used to analyze the code's execution and identify bottlenecks, such as a slow sorting algorithm in a large dataset.
-  7. **[Mutation Testing](../M/mutation-testing.md)**: The code is modified (mutated) to check if existing tests can detect the changes. This ensures the robustness of the [test suite](../T/test-suite.md).
+  5. **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Penetration testers examine the code for security flaws, such as [SQL](https://naodeng.com.cn/en/wiki/sql) injection vulnerabilities in a web application's authentication module.
+  6. **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: Profiling tools are used to analyze the code's execution and identify bottlenecks, such as a slow sorting algorithm in a large dataset.
+  7. **[Mutation Testing](https://naodeng.com.cn/en/wiki/mutation-testing)**: The code is modified (mutated) to check if existing tests can detect the changes. This ensures the robustness of the [test suite](https://naodeng.com.cn/en/wiki/test-suite).
   Each example leverages the tester's knowledge of the internal workings of the software to design and execute tests, aiming to thoroughly validate the code's logic, functionality, and performance.
 
-  1. **[Unit Testing](../U/unit-testing.md)**: Developers write unit tests for individual functions or methods. For instance, a function that calculates the area of a rectangle is tested with various input values to ensure correct output.
+  1. **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)**: Developers write unit tests for individual functions or methods. For instance, a function that calculates the area of a rectangle is tested with various input values to ensure correct output.
 
     ```
     function calculateArea(length, width) {
@@ -504,19 +503,19 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
     }
     ```
 
-  2. **[Integration Testing](../I/integration-testing.md)**: Testing the interaction between integrated units/modules. For example, testing how a data processing service interacts with a [database](../D/database.md).
-  3. **[Code Coverage](../C/code-coverage.md) Analysis**: Tools like Istanbul or JaCoCo are used to measure how much of the code is executed during testing, aiming for high coverage percentages.
+  2. **[Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Testing the interaction between integrated units/modules. For example, testing how a data processing service interacts with a [database](https://naodeng.com.cn/en/wiki/database).
+  3. **[Code Coverage](https://naodeng.com.cn/en/wiki/code-coverage) Analysis**: Tools like Istanbul or JaCoCo are used to measure how much of the code is executed during testing, aiming for high coverage percentages.
   4. **Static Code Analysis**: Tools like SonarQube or ESLint analyze code without executing it to find potential issues such as security vulnerabilities or code smells.
-  5. **[Security Testing](../S/security-testing.md)**: Penetration testers examine the code for security flaws, such as [SQL](../S/sql.md) injection vulnerabilities in a web application's authentication module.
-  6. **[Performance Testing](../P/performance-testing.md)**: Profiling tools are used to analyze the code's execution and identify bottlenecks, such as a slow sorting algorithm in a large dataset.
-  7. **[Mutation Testing](../M/mutation-testing.md)**: The code is modified (mutated) to check if existing tests can detect the changes. This ensures the robustness of the [test suite](../T/test-suite.md).
+  5. **[Security Testing](https://naodeng.com.cn/en/wiki/security-testing)**: Penetration testers examine the code for security flaws, such as [SQL](https://naodeng.com.cn/en/wiki/sql) injection vulnerabilities in a web application's authentication module.
+  6. **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: Profiling tools are used to analyze the code's execution and identify bottlenecks, such as a slow sorting algorithm in a large dataset.
+  7. **[Mutation Testing](https://naodeng.com.cn/en/wiki/mutation-testing)**: The code is modified (mutated) to check if existing tests can detect the changes. This ensures the robustness of the [test suite](https://naodeng.com.cn/en/wiki/test-suite).
 
 #### How would you apply White Box Testing in a microservices architecture?
 
-  Applying **[White Box Testing](../W/white-box-testing.md)** in a microservices architecture involves understanding the internal structure and workings of each service. Since microservices are designed to be loosely coupled and independently deployable, [white box testing](../W/white-box-testing.md) should be focused on the **unit** and **integration** levels.
-  For [unit testing](../U/unit-testing.md), scrutinize the logic of individual components within a service. Use **[code coverage](../C/code-coverage.md) tools** to ensure that all paths are tested, including edge cases that might result from unique microservice interactions.
-  [Integration testing](../I/integration-testing.md) in microservices requires a focus on the communication and data flow between services. Test the **[API](../A/api.md) endpoints**, **message queues**, or **service discovery mechanisms** to ensure they handle requests and responses correctly. Mock external service calls to isolate the service under test, ensuring that the tests are not affected by external dependencies.
-  Consider the following when implementing [white box testing](../W/white-box-testing.md) in microservices:
+  Applying **[White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing)** in a microservices architecture involves understanding the internal structure and workings of each service. Since microservices are designed to be loosely coupled and independently deployable, [white box testing](https://naodeng.com.cn/en/wiki/white-box-testing) should be focused on the **unit** and **integration** levels.
+  For [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), scrutinize the logic of individual components within a service. Use **[code coverage](https://naodeng.com.cn/en/wiki/code-coverage) tools** to ensure that all paths are tested, including edge cases that might result from unique microservice interactions.
+  [Integration testing](https://naodeng.com.cn/en/wiki/integration-testing) in microservices requires a focus on the communication and data flow between services. Test the **[API](https://naodeng.com.cn/en/wiki/api) endpoints**, **message queues**, or **service discovery mechanisms** to ensure they handle requests and responses correctly. Mock external service calls to isolate the service under test, ensuring that the tests are not affected by external dependencies.
+  Consider the following when implementing [white box testing](https://naodeng.com.cn/en/wiki/white-box-testing) in microservices:
 
   - **Service Contracts** : Ensure that the service adheres to its defined contract, including input/output formats and error handling.
   - **Data Persistence** : Test the service's data layer, including database interactions, schema migrations, and data integrity.
@@ -531,23 +530,23 @@ Evaluation of software's internal coding and architecture. It emphasizes securit
 
 #### What are some common challenges faced during White Box Testing and how can they be overcome?
 
-  Common challenges in [White Box Testing](../W/white-box-testing.md) include:
+  Common challenges in [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) include:
 
   - **Complexity**: Large codebases with complex logic can be difficult to test exhaustively. To overcome this, break down the application into smaller, manageable components and use **modular testing**.
-  - **Time-consuming**: Achieving high coverage can be time-consuming. Automate tests where possible and prioritize critical paths using **[risk-based testing](../R/risk-based-testing.md)** strategies.
+  - **Time-consuming**: Achieving high coverage can be time-consuming. Automate tests where possible and prioritize critical paths using **[risk-based testing](https://naodeng.com.cn/en/wiki/risk-based-testing)** strategies.
   - **Changing code**: Frequent code changes can invalidate tests. Implement a **continuous integration** system to run tests automatically upon code commits, ensuring tests remain up-to-date.
-  - **Resource-intensive**: [White Box Testing](../W/white-box-testing.md) can require significant resources. Optimize by using **mock objects** and **service virtualization** to simulate components and external systems.
+  - **Resource-intensive**: [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) can require significant resources. Optimize by using **mock objects** and **service virtualization** to simulate components and external systems.
   - **Skillset**: Requires knowledge of the application's internal workings. Ensure the team has or develops the necessary **programming skills** and **domain knowledge**.
   - **Tool selection**: Choosing the right tools is crucial. Evaluate tools based on the technology stack and testing needs, and ensure they integrate well with the development environment.
-  - **Code visibility**: Not all code may be accessible for testing, such as third-party libraries. Use **[interface testing](../I/interface-testing.md)** to test the interactions with these components.
+  - **Code visibility**: Not all code may be accessible for testing, such as third-party libraries. Use **[interface testing](https://naodeng.com.cn/en/wiki/interface-testing)** to test the interactions with these components.
   - **Test maintenance**: Tests need to be maintained as the code evolves. Adopt **test refactoring** practices and keep tests **decoupled** from the implementation to minimize maintenance efforts.
-  By addressing these challenges with targeted strategies, [test automation](../T/test-automation.md) engineers can enhance the effectiveness and efficiency of [White Box Testing](../W/white-box-testing.md).
+  By addressing these challenges with targeted strategies, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can enhance the effectiveness and efficiency of [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing).
 
   - **Complexity**: Large codebases with complex logic can be difficult to test exhaustively. To overcome this, break down the application into smaller, manageable components and use **modular testing**.
-  - **Time-consuming**: Achieving high coverage can be time-consuming. Automate tests where possible and prioritize critical paths using **[risk-based testing](../R/risk-based-testing.md)** strategies.
+  - **Time-consuming**: Achieving high coverage can be time-consuming. Automate tests where possible and prioritize critical paths using **[risk-based testing](https://naodeng.com.cn/en/wiki/risk-based-testing)** strategies.
   - **Changing code**: Frequent code changes can invalidate tests. Implement a **continuous integration** system to run tests automatically upon code commits, ensuring tests remain up-to-date.
-  - **Resource-intensive**: [White Box Testing](../W/white-box-testing.md) can require significant resources. Optimize by using **mock objects** and **service virtualization** to simulate components and external systems.
+  - **Resource-intensive**: [White Box Testing](https://naodeng.com.cn/en/wiki/white-box-testing) can require significant resources. Optimize by using **mock objects** and **service virtualization** to simulate components and external systems.
   - **Skillset**: Requires knowledge of the application's internal workings. Ensure the team has or develops the necessary **programming skills** and **domain knowledge**.
   - **Tool selection**: Choosing the right tools is crucial. Evaluate tools based on the technology stack and testing needs, and ensure they integrate well with the development environment.
-  - **Code visibility**: Not all code may be accessible for testing, such as third-party libraries. Use **[interface testing](../I/interface-testing.md)** to test the interactions with these components.
+  - **Code visibility**: Not all code may be accessible for testing, such as third-party libraries. Use **[interface testing](https://naodeng.com.cn/en/wiki/interface-testing)** to test the interactions with these components.
   - **Test maintenance**: Tests need to be maintained as the code evolves. Adopt **test refactoring** practices and keep tests **decoupled** from the implementation to minimize maintenance efforts.

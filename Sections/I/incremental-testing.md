@@ -1,6 +1,5 @@
 # Incremental Testing
 
-
 <!-- TOC START -->
 - [Questions about Incremental Testing ?](#questions-about-incremental-testing)
   - [Basics and Importance](#basics-and-importance)
@@ -47,8 +46,8 @@ unit testing
 
 #### What is incremental testing in software testing?
 
-  [Incremental testing](../I/incremental-testing.md) is a **[software testing](../S/software-testing.md) approach** where the system is tested in **increments** or **modules**. As each module is tested, it is then added to the previously tested modules, building up the system incrementally until all modules have been integrated and tested as a whole. This method allows for **early detection of defects** and **[verification](../V/verification.md) of module interactions** as they are combined.
-  To execute [incremental testing](../I/incremental-testing.md), you typically follow these steps:
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) is a **[software testing](https://naodeng.com.cn/en/wiki/software-testing) approach** where the system is tested in **increments** or **modules**. As each module is tested, it is then added to the previously tested modules, building up the system incrementally until all modules have been integrated and tested as a whole. This method allows for **early detection of defects** and **[verification](https://naodeng.com.cn/en/wiki/verification) of module interactions** as they are combined.
+  To execute [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing), you typically follow these steps:
 
   1. **Identify modules**
     to be tested and the order of integration.
@@ -65,8 +64,8 @@ unit testing
   5. **Repeat**
     the process until all modules are integrated and tested.
   This approach can be performed using either a **top-down** or **bottom-up** strategy, depending on the integration order of the modules. In top-down, testing starts from the main control module and integrates downwards, while in bottom-up, testing starts with the lowest-level modules and integrates upwards.
-  For automation, scripts are developed to validate new module integrations and regression tests ensure that existing functionality remains unaffected. Tools like Jenkins, JUnit, or [Selenium](../S/selenium.md) may be used to automate these tests, depending on the technology stack and project requirements.
-  [Incremental testing](../I/incremental-testing.md) fits well within **Agile** and **DevOps** practices due to its iterative nature and the emphasis on continuous integration and delivery. It's particularly effective in projects where early delivery of functional components is possible or when working with complex systems where testing the entire system at once is impractical.
+  For automation, scripts are developed to validate new module integrations and regression tests ensure that existing functionality remains unaffected. Tools like Jenkins, JUnit, or [Selenium](https://naodeng.com.cn/en/wiki/selenium) may be used to automate these tests, depending on the technology stack and project requirements.
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) fits well within **Agile** and **DevOps** practices due to its iterative nature and the emphasis on continuous integration and delivery. It's particularly effective in projects where early delivery of functional components is possible or when working with complex systems where testing the entire system at once is impractical.
 
   1. **Identify modules**
     to be tested and the order of integration.
@@ -85,22 +84,22 @@ unit testing
 
 #### Why is incremental testing important in software development?
 
-  [Incremental testing](../I/incremental-testing.md) is crucial in software development for several reasons. It allows for **early detection of defects** and **integration issues**, which can be more costly and time-consuming to fix later in the development cycle. By testing in increments, teams can focus on verifying the functionality of specific components or modules as they are developed, leading to a more **manageable and controlled testing process**.
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) is crucial in software development for several reasons. It allows for **early detection of defects** and **integration issues**, which can be more costly and time-consuming to fix later in the development cycle. By testing in increments, teams can focus on verifying the functionality of specific components or modules as they are developed, leading to a more **manageable and controlled testing process**.
   This approach supports **continuous integration** and **continuous delivery (CI/CD)** practices, enabling teams to integrate and validate changes more frequently. It also aligns well with **agile methodologies**, where software is developed in short cycles, and quality is a continuous concern.
-  Moreover, [incremental testing](../I/incremental-testing.md) facilitates **better risk management**. By identifying problems early, teams can make informed decisions about prioritizing fixes and allocating resources. It also helps maintain a **stable baseline** for the software, as each increment is tested and added to the system, ensuring that new changes do not break existing functionality.
-  In terms of **team collaboration**, [incremental testing](../I/incremental-testing.md) encourages developers, testers, and business stakeholders to work closely together, discussing and resolving issues as they arise. This collaboration can lead to a deeper understanding of the system and its components, fostering a **shared responsibility for quality**.
-  Lastly, [incremental testing](../I/incremental-testing.md) can lead to **more predictable release schedules**. With a structured approach to testing and integrating small parts of the system, teams can better estimate the time required for testing and fixing issues, leading to more reliable delivery timelines.
+  Moreover, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) facilitates **better risk management**. By identifying problems early, teams can make informed decisions about prioritizing fixes and allocating resources. It also helps maintain a **stable baseline** for the software, as each increment is tested and added to the system, ensuring that new changes do not break existing functionality.
+  In terms of **team collaboration**, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) encourages developers, testers, and business stakeholders to work closely together, discussing and resolving issues as they arise. This collaboration can lead to a deeper understanding of the system and its components, fostering a **shared responsibility for quality**.
+  Lastly, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) can lead to **more predictable release schedules**. With a structured approach to testing and integrating small parts of the system, teams can better estimate the time required for testing and fixing issues, leading to more reliable delivery timelines.
 
 #### What are the key benefits of incremental testing?
 
-  Key benefits of [incremental testing](../I/incremental-testing.md) include:
+  Key benefits of [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) include:
 
   - **Early Defect Detection** : By testing in increments, defects can be identified early in the development cycle, reducing the cost and effort of fixing them later.
   - **Risk Management** : Incremental testing allows for prioritizing and testing critical features first, managing risks more effectively.
   - **Feedback Loop** : Provides a continuous feedback loop to developers, ensuring that issues are addressed promptly and efficiently.
   - **Progressive Integration** : Supports progressive integration of components, which helps in identifying integration issues early.
   - **Manageable Test Cycles** : Breaks down the testing process into smaller, more manageable cycles, preventing overwhelm and allowing for more focused testing.
-  - **Facilitates [Regression Testing](../R/regression-testing.md)** : Makes regression testing easier as only the modified or newly added components need to be tested in each increment.
+  - **Facilitates [Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Makes regression testing easier as only the modified or newly added components need to be tested in each increment.
   - **Resource Optimization** : Allows for better allocation and utilization of testing resources as the scope of each testing cycle is well-defined.
   - **Customer Satisfaction** : Enables the delivery of a working product at the end of each increment, which can increase customer satisfaction and trust.
   - **Adaptability** : Provides flexibility to adapt to changes in requirements or scope, as each increment can be adjusted without impacting the entire system.
@@ -112,7 +111,7 @@ unit testing
   - **Feedback Loop** : Provides a continuous feedback loop to developers, ensuring that issues are addressed promptly and efficiently.
   - **Progressive Integration** : Supports progressive integration of components, which helps in identifying integration issues early.
   - **Manageable Test Cycles** : Breaks down the testing process into smaller, more manageable cycles, preventing overwhelm and allowing for more focused testing.
-  - **Facilitates [Regression Testing](../R/regression-testing.md)** : Makes regression testing easier as only the modified or newly added components need to be tested in each increment.
+  - **Facilitates [Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : Makes regression testing easier as only the modified or newly added components need to be tested in each increment.
   - **Resource Optimization** : Allows for better allocation and utilization of testing resources as the scope of each testing cycle is well-defined.
   - **Customer Satisfaction** : Enables the delivery of a working product at the end of each increment, which can increase customer satisfaction and trust.
   - **Adaptability** : Provides flexibility to adapt to changes in requirements or scope, as each increment can be adjusted without impacting the entire system.
@@ -120,44 +119,44 @@ unit testing
 
 #### How does incremental testing improve the quality of software?
 
-  [Incremental testing](../I/incremental-testing.md) enhances [software quality](../S/software-quality.md) by allowing **early detection** and **correction of defects**. As software is tested in small, manageable increments, issues can be identified and resolved before they compound into larger, more complex problems. This approach promotes a more **thorough examination** of each component's functionality and interactions, leading to a more **reliable integration** of the system as a whole.
-  Furthermore, [incremental testing](../I/incremental-testing.md) supports a **continuous feedback loop**, where developers receive prompt responses to changes, fostering a **proactive [quality assurance](../Q/quality-assurance.md)** environment. By focusing on **incremental improvements**, the software evolves with a **steady increase in stability and performance**.
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by allowing **early detection** and **correction of defects**. As software is tested in small, manageable increments, issues can be identified and resolved before they compound into larger, more complex problems. This approach promotes a more **thorough examination** of each component's functionality and interactions, leading to a more **reliable integration** of the system as a whole.
+  Furthermore, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) supports a **continuous feedback loop**, where developers receive prompt responses to changes, fostering a **proactive [quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance)** environment. By focusing on **incremental improvements**, the software evolves with a **steady increase in stability and performance**.
   This methodology also enables **risk management**, as critical features and functions can be prioritized and tested earlier in the development cycle. This strategic focus helps to ensure that the most important aspects of the software meet quality standards from the outset.
-  In essence, [incremental testing](../I/incremental-testing.md) contributes to a **higher quality product** by facilitating **early [bug](../B/bug.md) detection**, promoting **systematic validation**, and allowing for **iterative refinement** throughout the development process. This leads to a more **robust and reliable software** that aligns with user needs and expectations.
+  In essence, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) contributes to a **higher quality product** by facilitating **early [bug](https://naodeng.com.cn/en/wiki/bug) detection**, promoting **systematic validation**, and allowing for **iterative refinement** throughout the development process. This leads to a more **robust and reliable software** that aligns with user needs and expectations.
 
 #### What is the difference between incremental testing and iterative testing?
 
-  [Incremental testing](../I/incremental-testing.md) involves integrating and testing **modules** one at a time until the entire system is tested, whereas iterative testing is a broader term that refers to the **repetitive** testing process during the software development lifecycle.
-  In [incremental testing](../I/incremental-testing.md), the focus is on validating the functionality of **newly added components** in conjunction with existing ones, ensuring that they work together as expected. This approach can be either **top-down** or **bottom-up**, depending on whether high-level modules are tested first or low-level ones.
-  Iterative testing, on the other hand, is not limited to integrating modules but includes repeatedly testing the software as a whole or in parts through multiple **development cycles**. Each [iteration](../I/iteration.md) may involve refining features, fixing [bugs](../B/bug.md), and [retesting](../R/retesting.md) until the desired quality is achieved. Iterative testing is a fundamental part of **agile** and **DevOps** practices where continuous integration and continuous delivery (CI/CD) are emphasized.
-  To summarize, [incremental testing](../I/incremental-testing.md) is a **module integration strategy**, while iterative testing is a **cyclical process** that can encompass various testing strategies, including [incremental testing](../I/incremental-testing.md), to refine the software across multiple [iterations](../I/iteration.md).
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) involves integrating and testing **modules** one at a time until the entire system is tested, whereas iterative testing is a broader term that refers to the **repetitive** testing process during the software development lifecycle.
+  In [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing), the focus is on validating the functionality of **newly added components** in conjunction with existing ones, ensuring that they work together as expected. This approach can be either **top-down** or **bottom-up**, depending on whether high-level modules are tested first or low-level ones.
+  Iterative testing, on the other hand, is not limited to integrating modules but includes repeatedly testing the software as a whole or in parts through multiple **development cycles**. Each [iteration](https://naodeng.com.cn/en/wiki/iteration) may involve refining features, fixing [bugs](https://naodeng.com.cn/en/wiki/bug), and [retesting](https://naodeng.com.cn/en/wiki/retesting) until the desired quality is achieved. Iterative testing is a fundamental part of **agile** and **DevOps** practices where continuous integration and continuous delivery (CI/CD) are emphasized.
+  To summarize, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) is a **module integration strategy**, while iterative testing is a **cyclical process** that can encompass various testing strategies, including [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing), to refine the software across multiple [iterations](https://naodeng.com.cn/en/wiki/iteration).
 
 ### Types and Techniques
 
 #### What are the different types of incremental testing?
 
-  [Incremental testing](../I/incremental-testing.md) can be categorized into various types based on the approach and integration sequence of the modules. Here are the different types:
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) can be categorized into various types based on the approach and integration sequence of the modules. Here are the different types:
 
-  - **Staged [Integration Testing](../I/integration-testing.md)**: Modules are integrated and tested in stages, with each stage adding more functionality. This approach helps isolate defects in groups of related components.
+  - **Staged [Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Modules are integrated and tested in stages, with each stage adding more functionality. This approach helps isolate defects in groups of related components.
   - **Thread Testing**: A thread is a sequence of processes that can be executed independently. Thread testing focuses on integrating and testing these sequences to ensure they work as expected before integrating the full system.
   - **Top-Down Integration Testing**: Begins with high-level modules and progressively integrates lower-level modules. Stubs may be used to simulate the behavior of lower-level modules not yet integrated.
   - **Bottom-Up Integration Testing**: Starts with the integration of lower-level modules and progresses upward. Drivers are used to provide the necessary simulation of higher-level modules not yet integrated.
-  - **Functional [Incremental Testing](../I/incremental-testing.md)**: Integration and testing are based on the functionality or feature. Each increment represents a set of related functions, and testing focuses on these functional units.
-  - **Sandwich Testing (Hybrid [Integration Testing](../I/integration-testing.md))**: Combines top-down and bottom-up approaches. Middle-level modules are tested first using both stubs and drivers, then progressively integrate towards the top and bottom.
-  Each type of [incremental testing](../I/incremental-testing.md) targets different aspects of the software and can be chosen based on the specific needs of the project, such as the architecture, criticality of components, and resource availability.
+  - **Functional [Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)**: Integration and testing are based on the functionality or feature. Each increment represents a set of related functions, and testing focuses on these functional units.
+  - **Sandwich Testing (Hybrid [Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing))**: Combines top-down and bottom-up approaches. Middle-level modules are tested first using both stubs and drivers, then progressively integrate towards the top and bottom.
+  Each type of [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) targets different aspects of the software and can be chosen based on the specific needs of the project, such as the architecture, criticality of components, and resource availability.
 
-  - **Staged [Integration Testing](../I/integration-testing.md)**: Modules are integrated and tested in stages, with each stage adding more functionality. This approach helps isolate defects in groups of related components.
+  - **Staged [Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing)**: Modules are integrated and tested in stages, with each stage adding more functionality. This approach helps isolate defects in groups of related components.
   - **Thread Testing**: A thread is a sequence of processes that can be executed independently. Thread testing focuses on integrating and testing these sequences to ensure they work as expected before integrating the full system.
   - **Top-Down Integration Testing**: Begins with high-level modules and progressively integrates lower-level modules. Stubs may be used to simulate the behavior of lower-level modules not yet integrated.
   - **Bottom-Up Integration Testing**: Starts with the integration of lower-level modules and progresses upward. Drivers are used to provide the necessary simulation of higher-level modules not yet integrated.
-  - **Functional [Incremental Testing](../I/incremental-testing.md)**: Integration and testing are based on the functionality or feature. Each increment represents a set of related functions, and testing focuses on these functional units.
-  - **Sandwich Testing (Hybrid [Integration Testing](../I/integration-testing.md))**: Combines top-down and bottom-up approaches. Middle-level modules are tested first using both stubs and drivers, then progressively integrate towards the top and bottom.
+  - **Functional [Incremental Testing](https://naodeng.com.cn/en/wiki/incremental-testing)**: Integration and testing are based on the functionality or feature. Each increment represents a set of related functions, and testing focuses on these functional units.
+  - **Sandwich Testing (Hybrid [Integration Testing](https://naodeng.com.cn/en/wiki/integration-testing))**: Combines top-down and bottom-up approaches. Middle-level modules are tested first using both stubs and drivers, then progressively integrate towards the top and bottom.
 
 #### What is top-down incremental testing?
 
-  Top-down [incremental testing](../I/incremental-testing.md) is a **hierarchical approach** to [software testing](../S/software-testing.md) where testing begins from the **top level** of the system's architecture. It focuses on testing the **high-level components** first, then progressively integrates and tests the **lower-level components** that are called by the top-level modules. This method typically uses **stubs**, which are temporary implementations, to simulate the behavior of lower-level modules that have not yet been integrated or developed.
+  Top-down [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) is a **hierarchical approach** to [software testing](https://naodeng.com.cn/en/wiki/software-testing) where testing begins from the **top level** of the system's architecture. It focuses on testing the **high-level components** first, then progressively integrates and tests the **lower-level components** that are called by the top-level modules. This method typically uses **stubs**, which are temporary implementations, to simulate the behavior of lower-level modules that have not yet been integrated or developed.
   In top-down testing, the main control module of the software is tested first, and then subordinate modules are incrementally integrated and tested one by one. This allows for early validation of the system's major functionalities and can help in identifying issues with the system's architecture or high-level design early in the development process.
-  Here's a simplified example of how top-down [incremental testing](../I/incremental-testing.md) might be implemented in a software project:
+  Here's a simplified example of how top-down [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) might be implemented in a software project:
 
   ```
   function mainControlModule(subModuleA, subModuleB) {
@@ -183,40 +182,40 @@ unit testing
     expect(result).toBe(/* expected result */);
   });
   ```
-  In this approach, **[test coverage](../T/test-coverage.md)** is expanded incrementally as more components are integrated, allowing for **continuous validation** of the system's functionality and design.
+  In this approach, **[test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** is expanded incrementally as more components are integrated, allowing for **continuous validation** of the system's functionality and design.
 
 #### What is bottom-up incremental testing?
 
-  Bottom-up [incremental testing](../I/incremental-testing.md) starts at the **lowest levels** of the software system. Testers focus on the **unit tests** for individual components before moving up to higher levels of integration. This approach allows for thorough validation of the **basic building blocks** of the application, ensuring that each component functions correctly before it is integrated with others.
-  In bottom-up testing, **[test stubs](../T/test-stub.md)** are typically not required, as the actual components are available for testing from the outset. However, **test drivers** may be needed to simulate higher-level modules that are not yet developed or tested.
+  Bottom-up [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) starts at the **lowest levels** of the software system. Testers focus on the **unit tests** for individual components before moving up to higher levels of integration. This approach allows for thorough validation of the **basic building blocks** of the application, ensuring that each component functions correctly before it is integrated with others.
+  In bottom-up testing, **[test stubs](https://naodeng.com.cn/en/wiki/test-stub)** are typically not required, as the actual components are available for testing from the outset. However, **test drivers** may be needed to simulate higher-level modules that are not yet developed or tested.
   The process involves the following steps:
 
-  1. **[Unit Testing](../U/unit-testing.md)** : Individual components are tested in isolation.
+  1. **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)** : Individual components are tested in isolation.
   2. **Component Integration** : Units are combined and tested together to verify their interactions.
   3. **System Integration** : Larger sections of the system are integrated and tested to ensure they work together as expected.
   This method is particularly useful when the lower-level components of the system are stable or when the higher-level functionality is not yet clearly defined. It allows for early detection of defects at the unit level, which can be more cost-effective to fix than those found later in the development process.
-  Bottom-up [incremental testing](../I/incremental-testing.md) is often contrasted with **top-down testing**, where the process starts from the top-level modules and works downward. The choice between the two depends on the specific context of the project, such as the design of the system and the dependencies between components.
+  Bottom-up [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) is often contrasted with **top-down testing**, where the process starts from the top-level modules and works downward. The choice between the two depends on the specific context of the project, such as the design of the system and the dependencies between components.
 
-  1. **[Unit Testing](../U/unit-testing.md)** : Individual components are tested in isolation.
+  1. **[Unit Testing](https://naodeng.com.cn/en/wiki/unit-testing)** : Individual components are tested in isolation.
   2. **Component Integration** : Units are combined and tested together to verify their interactions.
   3. **System Integration** : Larger sections of the system are integrated and tested to ensure they work together as expected.
 
 #### What techniques are used in incremental testing?
 
-  [Incremental testing](../I/incremental-testing.md) techniques involve progressively integrating and testing individual modules to build a complete software system. These techniques can be categorized based on the direction of integration:
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) techniques involve progressively integrating and testing individual modules to build a complete software system. These techniques can be categorized based on the direction of integration:
   **Stubs and Drivers**: In **top-down** testing, **stubs** are used to simulate lower-level modules that have not yet been integrated. Conversely, **drivers** are used in **bottom-up** testing to simulate higher-level modules.
-  **[Test Harness](../T/test-harness.md)**: A **[test harness](../T/test-harness.md)** or a test framework is set up to execute [test cases](../T/test-case.md) against the integrated modules. This includes the [setup](../S/setup.md) of necessary [test data](../T/test-data.md) and the evaluation of test results.
-  **[Regression Testing](../R/regression-testing.md)**: After each integration step, **regression tests** are run to ensure that new changes have not adversely affected existing functionality.
-  **Continuous Integration (CI)**: In CI environments, [incremental testing](../I/incremental-testing.md) is automated, running tests upon each code commit to validate the integration of new code increments.
-  **Mock Objects**: Especially in [unit testing](../U/unit-testing.md), **mock objects** are used to mimic the behavior of real modules that are either unavailable or not yet integrated.
-  **Integration [Test Scripts](../T/test-script.md)**: Automated scripts are designed to test the interaction between integrated modules, focusing on interfaces and data flow.
-  **[Performance Testing](../P/performance-testing.md)**: Incremental load and performance tests are conducted to assess the impact of integration on system performance.
+  **[Test Harness](https://naodeng.com.cn/en/wiki/test-harness)**: A **[test harness](https://naodeng.com.cn/en/wiki/test-harness)** or a test framework is set up to execute [test cases](https://naodeng.com.cn/en/wiki/test-case) against the integrated modules. This includes the [setup](https://naodeng.com.cn/en/wiki/setup) of necessary [test data](https://naodeng.com.cn/en/wiki/test-data) and the evaluation of test results.
+  **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: After each integration step, **regression tests** are run to ensure that new changes have not adversely affected existing functionality.
+  **Continuous Integration (CI)**: In CI environments, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) is automated, running tests upon each code commit to validate the integration of new code increments.
+  **Mock Objects**: Especially in [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), **mock objects** are used to mimic the behavior of real modules that are either unavailable or not yet integrated.
+  **Integration [Test Scripts](https://naodeng.com.cn/en/wiki/test-script)**: Automated scripts are designed to test the interaction between integrated modules, focusing on interfaces and data flow.
+  **[Performance Testing](https://naodeng.com.cn/en/wiki/performance-testing)**: Incremental load and performance tests are conducted to assess the impact of integration on system performance.
   **Smoke Testing**: After each integration step, a **smoke test** is performed to quickly verify that the critical functionalities of the system are working as expected.
-  By applying these techniques, [test automation](../T/test-automation.md) engineers can systematically detect defects and verify the functionality of the software as it grows incrementally.
+  By applying these techniques, [test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers can systematically detect defects and verify the functionality of the software as it grows incrementally.
 
 #### How do you choose between top-down and bottom-up incremental testing?
 
-  Choosing between **top-down** and **bottom-up** [incremental testing](../I/incremental-testing.md) depends on several factors:
+  Choosing between **top-down** and **bottom-up** [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) depends on several factors:
 
   - **Dependencies** : If high-level modules are stable and available,
     **top-down**
@@ -230,7 +229,7 @@ unit testing
     **bottom-up**
     .
 
-  - **Availability of [Test Stubs](../T/test-stub.md) and Drivers** :
+  - **Availability of [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub) and Drivers** :
     **Top-down**
     requires stubs for lower-level modules not yet developed.
     **Bottom-up**
@@ -265,7 +264,7 @@ unit testing
     **bottom-up**
     .
 
-  - **Availability of [Test Stubs](../T/test-stub.md) and Drivers** :
+  - **Availability of [Test Stubs](https://naodeng.com.cn/en/wiki/test-stub) and Drivers** :
     **Top-down**
     requires stubs for lower-level modules not yet developed.
     **Bottom-up**
@@ -291,37 +290,37 @@ unit testing
 
 #### What is the process of incremental testing?
 
-  [Incremental testing](../I/incremental-testing.md) involves integrating and testing individual modules step by step to build a complete software system. The process starts with the integration of a module and its subsequent testing. Once the initial module passes the tests, another module is integrated, and the combined units are tested together. This cycle repeats until all modules are integrated and the entire system is tested.
-  **Key steps** in [incremental testing](../I/incremental-testing.md):
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) involves integrating and testing individual modules step by step to build a complete software system. The process starts with the integration of a module and its subsequent testing. Once the initial module passes the tests, another module is integrated, and the combined units are tested together. This cycle repeats until all modules are integrated and the entire system is tested.
+  **Key steps** in [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing):
 
   1. **Identify Modules** : Break down the software into smaller, testable modules.
   2. **Prioritize Modules** : Determine the order of integration based on dependencies or strategic importance.
-  3. **Prepare [Test Environment](../T/test-environment.md)** : Set up the necessary tools, stubs, drivers, and test data.
+  3. **Prepare [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)** : Set up the necessary tools, stubs, drivers, and test data.
   4. **Integrate First Module** : Start with a single module or a small, coherent group of modules.
   5. **Run Initial Tests** : Execute unit tests to ensure the module works as expected.
   6. **Integrate Subsequent Modules** : Add more modules incrementally, following the prioritized order.
-  7. **[Regression Testing](../R/regression-testing.md)** : After each integration, perform regression tests to check for new defects.
+  7. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : After each integration, perform regression tests to check for new defects.
   8. **Repeat** : Continue the cycle of integration and testing until the software is fully assembled.
   9. **Final Testing** : Conduct system-level tests on the complete software to validate overall functionality.
-  During the process, **continuous feedback** is crucial for identifying issues early. [Test automation](../T/test-automation.md) engineers should use **automated regression tests** to maintain efficiency. The choice between **top-down** and **bottom-up** approaches depends on the system architecture and the criticality of components. **Tools** like version control systems, continuous integration platforms, and [test automation](../T/test-automation.md) frameworks support the [incremental testing](../I/incremental-testing.md) process.
+  During the process, **continuous feedback** is crucial for identifying issues early. [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers should use **automated regression tests** to maintain efficiency. The choice between **top-down** and **bottom-up** approaches depends on the system architecture and the criticality of components. **Tools** like version control systems, continuous integration platforms, and [test automation](https://naodeng.com.cn/en/wiki/test-automation) frameworks support the [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) process.
 
   1. **Identify Modules** : Break down the software into smaller, testable modules.
   2. **Prioritize Modules** : Determine the order of integration based on dependencies or strategic importance.
-  3. **Prepare [Test Environment](../T/test-environment.md)** : Set up the necessary tools, stubs, drivers, and test data.
+  3. **Prepare [Test Environment](https://naodeng.com.cn/en/wiki/test-environment)** : Set up the necessary tools, stubs, drivers, and test data.
   4. **Integrate First Module** : Start with a single module or a small, coherent group of modules.
   5. **Run Initial Tests** : Execute unit tests to ensure the module works as expected.
   6. **Integrate Subsequent Modules** : Add more modules incrementally, following the prioritized order.
-  7. **[Regression Testing](../R/regression-testing.md)** : After each integration, perform regression tests to check for new defects.
+  7. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)** : After each integration, perform regression tests to check for new defects.
   8. **Repeat** : Continue the cycle of integration and testing until the software is fully assembled.
   9. **Final Testing** : Conduct system-level tests on the complete software to validate overall functionality.
 
 #### How is incremental testing implemented in a software development project?
 
-  Implementing [incremental testing](../I/incremental-testing.md) in a software development project involves a step-by-step approach where testing is conducted on portions of the application as they are developed and integrated. Here's a concise guide:
+  Implementing [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) in a software development project involves a step-by-step approach where testing is conducted on portions of the application as they are developed and integrated. Here's a concise guide:
 
   1. **Define Increments**: Break down the application into smaller, manageable increments or modules based on functionality or design.
   2. **Plan**: Develop a testing plan for each increment, detailing the testing strategy, scope, resources, and schedule.
-  3. **Develop and Test**: As each increment is developed, create and execute [test cases](../T/test-case.md) specific to its functionality. Use unit tests to validate individual components.
+  3. **Develop and Test**: As each increment is developed, create and execute [test cases](https://naodeng.com.cn/en/wiki/test-case) specific to its functionality. Use unit tests to validate individual components.
 
     ```
     // Example of a simple unit test in TypeScript
@@ -335,17 +334,17 @@ unit testing
     ```
 
   4. **Integrate**: After testing individual increments, integrate them with the existing system. Validate the integration with integration tests.
-  5. **[Regression Testing](../R/regression-testing.md)**: Perform regression tests to ensure new increments haven't adversely affected existing functionality.
+  5. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: Perform regression tests to ensure new increments haven't adversely affected existing functionality.
   6. **Repeat**: Continue this process incrementally, testing each new piece of functionality as it is added.
   7. **Automation**: Automate regression tests to run efficiently after each integration, ensuring quick feedback on the impact of changes.
   8. **Continuous Integration**: Implement continuous integration (CI) to automate the build and testing process, allowing for frequent validation of increments.
   9. **Feedback Loop**: Use test results to inform development, adjusting the approach as necessary based on issues found.
   10. **Documentation**: Keep test documentation updated to reflect the current state of the system and testing efforts.
-  By following these steps, [incremental testing](../I/incremental-testing.md) can be effectively implemented, ensuring each part of the application is thoroughly tested and integrated smoothly, leading to a more reliable and maintainable software product.
+  By following these steps, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) can be effectively implemented, ensuring each part of the application is thoroughly tested and integrated smoothly, leading to a more reliable and maintainable software product.
 
   1. **Define Increments**: Break down the application into smaller, manageable increments or modules based on functionality or design.
   2. **Plan**: Develop a testing plan for each increment, detailing the testing strategy, scope, resources, and schedule.
-  3. **Develop and Test**: As each increment is developed, create and execute [test cases](../T/test-case.md) specific to its functionality. Use unit tests to validate individual components.
+  3. **Develop and Test**: As each increment is developed, create and execute [test cases](https://naodeng.com.cn/en/wiki/test-case) specific to its functionality. Use unit tests to validate individual components.
 
     ```
     // Example of a simple unit test in TypeScript
@@ -359,7 +358,7 @@ unit testing
     ```
 
   4. **Integrate**: After testing individual increments, integrate them with the existing system. Validate the integration with integration tests.
-  5. **[Regression Testing](../R/regression-testing.md)**: Perform regression tests to ensure new increments haven't adversely affected existing functionality.
+  5. **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: Perform regression tests to ensure new increments haven't adversely affected existing functionality.
   6. **Repeat**: Continue this process incrementally, testing each new piece of functionality as it is added.
   7. **Automation**: Automate regression tests to run efficiently after each integration, ensuring quick feedback on the impact of changes.
   8. **Continuous Integration**: Implement continuous integration (CI) to automate the build and testing process, allowing for frequent validation of increments.
@@ -368,14 +367,14 @@ unit testing
 
 #### What tools are commonly used in incremental testing?
 
-  Common tools used in **[incremental testing](../I/incremental-testing.md)** include:
+  Common tools used in **[incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing)** include:
 
   - **JUnit**
     and
     **TestNG**
     for unit testing in Java, allowing developers to create test cases and suites incrementally.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     for .NET applications, similar to JUnit, supports incremental test development.
 
   - **RSpec**
@@ -388,7 +387,7 @@ unit testing
 
   - **Mocha**
     and
-    **[Jest](../J/jest.md)**
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     for JavaScript, which support incremental testing in both front-end and Node.js environments.
 
   - **Git**
@@ -399,22 +398,22 @@ unit testing
     **Travis CI**
     for continuous integration, allowing automated test execution with each incremental code change.
 
-  - **[Selenium](../S/selenium.md)**
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)**
     for automated web application testing, which can be integrated into incremental testing strategies for UI validation.
 
   - **Appium**
     for mobile application testing, supporting incremental automation tests on various devices and platforms.
 
-  - **[Postman](../P/postman.md)**
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)**
     for API testing, enabling incremental test creation for RESTful services.
-  These tools support various aspects of [incremental testing](../I/incremental-testing.md), from unit level to integration and [system testing](../S/system-testing.md), and can be integrated into automated pipelines for continuous testing. They help ensure that each increment of the software is tested thoroughly, maintaining quality throughout the development process.
+  These tools support various aspects of [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing), from unit level to integration and [system testing](https://naodeng.com.cn/en/wiki/system-testing), and can be integrated into automated pipelines for continuous testing. They help ensure that each increment of the software is tested thoroughly, maintaining quality throughout the development process.
 
   - **JUnit**
     and
     **TestNG**
     for unit testing in Java, allowing developers to create test cases and suites incrementally.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     for .NET applications, similar to JUnit, supports incremental test development.
 
   - **RSpec**
@@ -427,7 +426,7 @@ unit testing
 
   - **Mocha**
     and
-    **[Jest](../J/jest.md)**
+    **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     for JavaScript, which support incremental testing in both front-end and Node.js environments.
 
   - **Git**
@@ -438,23 +437,23 @@ unit testing
     **Travis CI**
     for continuous integration, allowing automated test execution with each incremental code change.
 
-  - **[Selenium](../S/selenium.md)**
+  - **[Selenium](https://naodeng.com.cn/en/wiki/selenium)**
     for automated web application testing, which can be integrated into incremental testing strategies for UI validation.
 
   - **Appium**
     for mobile application testing, supporting incremental automation tests on various devices and platforms.
 
-  - **[Postman](../P/postman.md)**
+  - **[Postman](https://naodeng.com.cn/en/wiki/postman)**
     for API testing, enabling incremental test creation for RESTful services.
 
 #### What are the challenges in implementing incremental testing?
 
-  Implementing [incremental testing](../I/incremental-testing.md) presents several challenges:
+  Implementing [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) presents several challenges:
 
   - **Integration Complexity**: As new modules are added, ensuring they integrate seamlessly with existing ones can be difficult. This requires careful planning and understanding of the system architecture.
   - **Stub and Driver Development**: For top-down or bottom-up approaches, creating stubs and drivers can be time-consuming and may require additional maintenance as the system evolves.
-  - **[Test Coverage](../T/test-coverage.md)**: Ensuring adequate [test coverage](../T/test-coverage.md) for each increment can be challenging, especially when dealing with complex features or business logic.
-  - **[Regression Testing](../R/regression-testing.md)**: With each new increment, there's a risk of introducing regressions. Maintaining an effective regression [test suite](../T/test-suite.md) that can be run quickly and reliably is essential.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Ensuring adequate [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) for each increment can be challenging, especially when dealing with complex features or business logic.
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: With each new increment, there's a risk of introducing regressions. Maintaining an effective regression [test suite](https://naodeng.com.cn/en/wiki/test-suite) that can be run quickly and reliably is essential.
   - **Configuration Management**: Keeping track of different versions and configurations of the software as it evolves through increments requires robust configuration management practices.
   - **Resource Allocation**: Balancing resources between developing new increments and testing can be challenging, especially in resource-constrained environments.
   - **Dependency Management**: Managing dependencies between increments is crucial. If not handled properly, it can lead to integration issues and delays.
@@ -464,8 +463,8 @@ unit testing
 
   - **Integration Complexity**: As new modules are added, ensuring they integrate seamlessly with existing ones can be difficult. This requires careful planning and understanding of the system architecture.
   - **Stub and Driver Development**: For top-down or bottom-up approaches, creating stubs and drivers can be time-consuming and may require additional maintenance as the system evolves.
-  - **[Test Coverage](../T/test-coverage.md)**: Ensuring adequate [test coverage](../T/test-coverage.md) for each increment can be challenging, especially when dealing with complex features or business logic.
-  - **[Regression Testing](../R/regression-testing.md)**: With each new increment, there's a risk of introducing regressions. Maintaining an effective regression [test suite](../T/test-suite.md) that can be run quickly and reliably is essential.
+  - **[Test Coverage](https://naodeng.com.cn/en/wiki/test-coverage)**: Ensuring adequate [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) for each increment can be challenging, especially when dealing with complex features or business logic.
+  - **[Regression Testing](https://naodeng.com.cn/en/wiki/regression-testing)**: With each new increment, there's a risk of introducing regressions. Maintaining an effective regression [test suite](https://naodeng.com.cn/en/wiki/test-suite) that can be run quickly and reliably is essential.
   - **Configuration Management**: Keeping track of different versions and configurations of the software as it evolves through increments requires robust configuration management practices.
   - **Resource Allocation**: Balancing resources between developing new increments and testing can be challenging, especially in resource-constrained environments.
   - **Dependency Management**: Managing dependencies between increments is crucial. If not handled properly, it can lead to integration issues and delays.
@@ -474,7 +473,7 @@ unit testing
 
 #### How do you overcome the challenges in incremental testing?
 
-  Overcoming challenges in [incremental testing](../I/incremental-testing.md) involves strategic planning and effective communication. Here are some strategies:
+  Overcoming challenges in [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) involves strategic planning and effective communication. Here are some strategies:
 
   - **Integrate Continuously**: Use Continuous Integration (CI) tools to automate the merging and testing of increments. This ensures that new code is always compatible with the existing codebase.
   - **Automate Regression Tests**: Develop a robust suite of automated regression tests to run against each increment, ensuring that new changes do not break existing functionality.
@@ -517,7 +516,7 @@ unit testing
 #### Can you provide a real-world example of incremental testing?
 
   Consider a **real-world example** where a team is developing a web application with multiple interconnected services: a user authentication service, a data processing service, and a reporting service.
-  In **[incremental testing](../I/incremental-testing.md)**, the team would first develop and test the **user authentication service**. They might create automated tests to verify login, logout, and session management functionalities. Once this service passes all tests, they proceed to the next increment.
+  In **[incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing)**, the team would first develop and test the **user authentication service**. They might create automated tests to verify login, logout, and session management functionalities. Once this service passes all tests, they proceed to the next increment.
   Next, they develop the **data processing service** which depends on the user authentication service. The existing tests for the authentication service are re-run to ensure no new changes have broken the functionality. New tests are created for the data processing service to validate data handling and business logic.
   Finally, the **reporting service** is developed. This service relies on both the authentication and data processing services. The team re-tests the previous services with their respective tests and introduces new tests for the reporting features, such as generating and exporting reports.
   Throughout this process, the team uses a **continuous integration** system to automate the running of tests after each increment is integrated. This ensures that any issues introduced by new code are detected and addressed promptly.
@@ -535,16 +534,16 @@ unit testing
 
 #### What are some case studies of successful incremental testing?
 
-  Successful [incremental testing](../I/incremental-testing.md) case studies often highlight the efficiency and effectiveness of this approach in complex software development environments. Here are a few examples:
-  **Microsoft**: Utilizing [incremental testing](../I/incremental-testing.md) in the development of Windows, Microsoft was able to isolate and test components of the operating system as they were developed. This approach allowed for early detection of defects and integration issues, leading to a more stable release.
-  **IBM**: In the development of IBM's enterprise software, [incremental testing](../I/incremental-testing.md) played a crucial role in managing the complexity of their systems. By testing incrementally, IBM could ensure that each component worked as expected before moving on to the next, reducing the risk of major integration problems later in the development cycle.
-  **Google**: Known for its rapid release cycles, Google employs [incremental testing](../I/incremental-testing.md) in the development of its web applications like Gmail and Google Docs. This allows them to continuously deploy new features and improvements while maintaining a high level of quality and reliability.
-  **Spotify**: Spotify's development teams use [incremental testing](../I/incremental-testing.md) to quickly deliver new features to their music streaming platform. By breaking down the application into smaller, testable parts, they can validate functionality and performance at each stage, ensuring a seamless user experience.
-  These case studies demonstrate that [incremental testing](../I/incremental-testing.md) can lead to **successful outcomes** in software development by enabling early defect detection, facilitating continuous integration, and supporting rapid [iteration](../I/iteration.md), which are critical factors in today's fast-paced development environments.
+  Successful [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) case studies often highlight the efficiency and effectiveness of this approach in complex software development environments. Here are a few examples:
+  **Microsoft**: Utilizing [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) in the development of Windows, Microsoft was able to isolate and test components of the operating system as they were developed. This approach allowed for early detection of defects and integration issues, leading to a more stable release.
+  **IBM**: In the development of IBM's enterprise software, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) played a crucial role in managing the complexity of their systems. By testing incrementally, IBM could ensure that each component worked as expected before moving on to the next, reducing the risk of major integration problems later in the development cycle.
+  **Google**: Known for its rapid release cycles, Google employs [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) in the development of its web applications like Gmail and Google Docs. This allows them to continuously deploy new features and improvements while maintaining a high level of quality and reliability.
+  **Spotify**: Spotify's development teams use [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) to quickly deliver new features to their music streaming platform. By breaking down the application into smaller, testable parts, they can validate functionality and performance at each stage, ensuring a seamless user experience.
+  These case studies demonstrate that [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) can lead to **successful outcomes** in software development by enabling early defect detection, facilitating continuous integration, and supporting rapid [iteration](https://naodeng.com.cn/en/wiki/iteration), which are critical factors in today's fast-paced development environments.
 
 #### In what scenarios is incremental testing most effective?
 
-  [Incremental testing](../I/incremental-testing.md) is most effective in scenarios where:
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) is most effective in scenarios where:
 
   - **Complex systems**
     are being developed, allowing for testing of individual components or subsystems as they are completed.
@@ -567,9 +566,9 @@ unit testing
   - **Risk management**
     is critical, with high-risk components being tested early to mitigate potential impacts.
 
-  - **[Regression testing](../R/regression-testing.md)**
+  - **[Regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**
     is needed for each increment, ensuring that new changes do not adversely affect existing functionality.
-  In these scenarios, [incremental testing](../I/incremental-testing.md) can be strategically applied to maximize [test coverage](../T/test-coverage.md), manage complexity, and maintain a steady pace of development and testing. It aligns well with **Agile** and **DevOps** practices, where continuous integration and delivery are emphasized. [Incremental testing](../I/incremental-testing.md) is adaptable to both **top-down** and **bottom-up** approaches, depending on the project requirements and dependencies between system components.
+  In these scenarios, [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) can be strategically applied to maximize [test coverage](https://naodeng.com.cn/en/wiki/test-coverage), manage complexity, and maintain a steady pace of development and testing. It aligns well with **Agile** and **DevOps** practices, where continuous integration and delivery are emphasized. [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) is adaptable to both **top-down** and **bottom-up** approaches, depending on the project requirements and dependencies between system components.
 
   - **Complex systems**
     are being developed, allowing for testing of individual components or subsystems as they are completed.
@@ -592,19 +591,19 @@ unit testing
   - **Risk management**
     is critical, with high-risk components being tested early to mitigate potential impacts.
 
-  - **[Regression testing](../R/regression-testing.md)**
+  - **[Regression testing](https://naodeng.com.cn/en/wiki/regression-testing)**
     is needed for each increment, ensuring that new changes do not adversely affect existing functionality.
 
 #### How does incremental testing work in agile development?
 
-  In [Agile development](../A/agile-development.md), [incremental testing](../I/incremental-testing.md) is integrated into the iterative cycle of releases. Each sprint or [iteration](../I/iteration.md) results in a potentially shippable product increment, which must be thoroughly tested before moving on to the next piece of functionality. This approach aligns with the Agile principle of delivering working software frequently.
-  During each [iteration](../I/iteration.md), new features are added to the existing codebase, and both **new and existing functionalities** are tested to ensure compatibility and stability. This is often achieved through **automated regression tests** which run alongside new [test cases](../T/test-case.md) that target recent changes.
+  In [Agile development](https://naodeng.com.cn/en/wiki/agile-development), [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) is integrated into the iterative cycle of releases. Each sprint or [iteration](https://naodeng.com.cn/en/wiki/iteration) results in a potentially shippable product increment, which must be thoroughly tested before moving on to the next piece of functionality. This approach aligns with the Agile principle of delivering working software frequently.
+  During each [iteration](https://naodeng.com.cn/en/wiki/iteration), new features are added to the existing codebase, and both **new and existing functionalities** are tested to ensure compatibility and stability. This is often achieved through **automated regression tests** which run alongside new [test cases](https://naodeng.com.cn/en/wiki/test-case) that target recent changes.
   The process typically involves:
 
-  1. **Identifying new [test cases](../T/test-case.md)**
+  1. **Identifying new [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     for the current iteration's features.
 
-  2. **Updating existing [test cases](../T/test-case.md)**
+  2. **Updating existing [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     to accommodate changes.
 
   3. **Executing a regression suite**
@@ -612,13 +611,13 @@ unit testing
 
   4. **Analyzing test results**
     and addressing any defects found.
-  [Test automation](../T/test-automation.md) engineers leverage **continuous integration (CI) tools** to automate the execution of these tests, providing rapid feedback on the health of the application. This feedback loop is crucial for maintaining quality in a fast-paced Agile environment.
-  [Incremental testing](../I/incremental-testing.md) in Agile is about **building upon a solid foundation**, where each [iteration](../I/iteration.md)'s success is dependent on the robustness of the previous increments. It's a collaborative effort, requiring developers, testers, and the entire Agile team to work closely to ensure that each increment meets the quality standards before adding more complexity to the system.
+  [Test automation](https://naodeng.com.cn/en/wiki/test-automation) engineers leverage **continuous integration (CI) tools** to automate the execution of these tests, providing rapid feedback on the health of the application. This feedback loop is crucial for maintaining quality in a fast-paced Agile environment.
+  [Incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) in Agile is about **building upon a solid foundation**, where each [iteration](https://naodeng.com.cn/en/wiki/iteration)'s success is dependent on the robustness of the previous increments. It's a collaborative effort, requiring developers, testers, and the entire Agile team to work closely to ensure that each increment meets the quality standards before adding more complexity to the system.
 
-  1. **Identifying new [test cases](../T/test-case.md)**
+  1. **Identifying new [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     for the current iteration's features.
 
-  2. **Updating existing [test cases](../T/test-case.md)**
+  2. **Updating existing [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     to accommodate changes.
 
   3. **Executing a regression suite**
@@ -629,10 +628,10 @@ unit testing
 
 #### How does incremental testing work in DevOps?
 
-  In DevOps, **[incremental testing](../I/incremental-testing.md)** integrates seamlessly with continuous integration and continuous delivery (CI/CD) pipelines. It involves testing new features or changes as they are developed and merged into the main branch incrementally. This approach aligns with the DevOps philosophy of small, frequent updates to the software.
-  To implement [incremental testing](../I/incremental-testing.md) in DevOps:
+  In DevOps, **[incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing)** integrates seamlessly with continuous integration and continuous delivery (CI/CD) pipelines. It involves testing new features or changes as they are developed and merged into the main branch incrementally. This approach aligns with the DevOps philosophy of small, frequent updates to the software.
+  To implement [incremental testing](https://naodeng.com.cn/en/wiki/incremental-testing) in DevOps:
 
-  1. **Automate [test cases](../T/test-case.md)**
+  1. **Automate [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     for new features or changes.
 
   2. **Integrate tests into the CI/CD pipeline**
@@ -656,9 +655,9 @@ unit testing
         - echo "Running incremental tests for the latest changes"
         - run_tests --incremental
   ```
-  In this script, `run_tests --incremental` would execute only the tests related to recent code changes, rather than the entire [test suite](../T/test-suite.md). This targeted approach is efficient and aligns with the rapid deployment cycles in DevOps.
+  In this script, `run_tests --incremental` would execute only the tests related to recent code changes, rather than the entire [test suite](https://naodeng.com.cn/en/wiki/test-suite). This targeted approach is efficient and aligns with the rapid deployment cycles in DevOps.
 
-  1. **Automate [test cases](../T/test-case.md)**
+  1. **Automate [test cases](https://naodeng.com.cn/en/wiki/test-case)**
     for new features or changes.
 
   2. **Integrate tests into the CI/CD pipeline**

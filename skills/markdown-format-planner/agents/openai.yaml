@@ -1,0 +1,4 @@
+interface:
+  display_name: "Markdown Format Planner"
+  short_description: "Normalize and restructure Markdown documents"
+  default_prompt: "Reformat and reorganize this Markdown file for clean structure and consistent syntax without changing meaning."

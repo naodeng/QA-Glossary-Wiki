@@ -1,6 +1,5 @@
 # Test-Driven Development
 
-
 <!-- TOC START -->
 - [Questions about Test-Driven Development ?](#questions-about-test-driven-development)
   - [Basics and Importance](#basics-and-importance)
@@ -41,7 +40,7 @@ Test-Driven Development
 
 #### What is Test-Driven Development (TDD)?
 
-  [Test-Driven Development](../T/test-driven-development.md) (TDD) is a **software development approach** where tests are written before the production code they are meant to validate. It's a cyclical process where a developer writes a test that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards.
+  [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD) is a **software development approach** where tests are written before the production code they are meant to validate. It's a cyclical process where a developer writes a test that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards.
   Here's a basic example in TypeScript:
 
   ```
@@ -67,7 +66,7 @@ Test-Driven Development
 
 #### Why is TDD important in software development?
 
-  TDD is important in software development because it **ensures that coding, testing, and design happen simultaneously**, improving **developer productivity** and **code quality**. By focusing on small, incremental changes, developers can **avoid scope creep** and ensure that each feature is properly tested before moving on. TDD encourages **simple designs** and **inspires confidence** in the software, as new features are added without breaking existing functionality. This **confidence** allows for **aggressive refactoring**, which keeps the code base clean and maintainable. Moreover, TDD creates a **comprehensive suite of unit tests** that can be run at any time to detect regressions. It also **facilitates better documentation** since the tests can serve as a specification of the system's behavior. TDD's emphasis on **testability** also leads to more **modular and flexible** code, making it easier to adapt to changes. In a team setting, TDD helps **minimize [bugs](../B/bug.md)** introduced during integration and provides a **safety net** that enables multiple developers to work on the same codebase with less risk of conflicts or regressions. Lastly, TDD fits well with **agile and iterative development practices**, aligning with the ethos of continuous improvement and adaptation.
+  TDD is important in software development because it **ensures that coding, testing, and design happen simultaneously**, improving **developer productivity** and **code quality**. By focusing on small, incremental changes, developers can **avoid scope creep** and ensure that each feature is properly tested before moving on. TDD encourages **simple designs** and **inspires confidence** in the software, as new features are added without breaking existing functionality. This **confidence** allows for **aggressive refactoring**, which keeps the code base clean and maintainable. Moreover, TDD creates a **comprehensive suite of unit tests** that can be run at any time to detect regressions. It also **facilitates better documentation** since the tests can serve as a specification of the system's behavior. TDD's emphasis on **testability** also leads to more **modular and flexible** code, making it easier to adapt to changes. In a team setting, TDD helps **minimize [bugs](https://naodeng.com.cn/en/wiki/bug)** introduced during integration and provides a **safety net** that enables multiple developers to work on the same codebase with less risk of conflicts or regressions. Lastly, TDD fits well with **agile and iterative development practices**, aligning with the ethos of continuous improvement and adaptation.
 
 #### What are the key principles of TDD?
 
@@ -82,7 +81,7 @@ Test-Driven Development
   - **Clear and Understandable Tests**: Tests should be written clearly and serve as documentation for the code. They should be easy to read and understand.
   - **One Logical Assertion per Test**: Each test should verify a single aspect of the code to keep tests focused and understandable.
   - **Avoid Testing Internals**: Focus on the behavior rather than the internal implementation. Tests should not break due to changes in the code structure that do not affect the behavior.
-  - **Keep Tests Fast**: Tests need to run quickly to not slow down the development process. Slow tests can become a bottleneck and discourage developers from running the [test suite](../T/test-suite.md) frequently.
+  - **Keep Tests Fast**: Tests need to run quickly to not slow down the development process. Slow tests can become a bottleneck and discourage developers from running the [test suite](https://naodeng.com.cn/en/wiki/test-suite) frequently.
   - **Write the Test First**: Before writing functional code, create a specific test for the new functionality. This test should initially fail, as the functionality has not yet been implemented.
   - **Small Steps**: Work in small increments, writing a single test and the corresponding code at a time. This helps in focusing on one aspect of the functionality and reduces complexity.
   - **Test for Failure**: The first run of a new test should result in a failure, validating that the test is correctly detecting the absence of the new functionality.
@@ -92,34 +91,34 @@ Test-Driven Development
   - **Clear and Understandable Tests**: Tests should be written clearly and serve as documentation for the code. They should be easy to read and understand.
   - **One Logical Assertion per Test**: Each test should verify a single aspect of the code to keep tests focused and understandable.
   - **Avoid Testing Internals**: Focus on the behavior rather than the internal implementation. Tests should not break due to changes in the code structure that do not affect the behavior.
-  - **Keep Tests Fast**: Tests need to run quickly to not slow down the development process. Slow tests can become a bottleneck and discourage developers from running the [test suite](../T/test-suite.md) frequently.
+  - **Keep Tests Fast**: Tests need to run quickly to not slow down the development process. Slow tests can become a bottleneck and discourage developers from running the [test suite](https://naodeng.com.cn/en/wiki/test-suite) frequently.
 
 #### How does TDD improve software quality?
 
-  TDD improves [software quality](../S/software-quality.md) by ensuring that **[test coverage](../T/test-coverage.md)** is high and that code is written with **testability** in mind. By writing tests before the actual code, developers are forced to consider edge cases and potential [bugs](../B/bug.md) from the outset, leading to more robust and reliable code. This approach also promotes **simpler, more modular designs**, as code that is hard to test often indicates poor structure.
+  TDD improves [software quality](https://naodeng.com.cn/en/wiki/software-quality) by ensuring that **[test coverage](https://naodeng.com.cn/en/wiki/test-coverage)** is high and that code is written with **testability** in mind. By writing tests before the actual code, developers are forced to consider edge cases and potential [bugs](https://naodeng.com.cn/en/wiki/bug) from the outset, leading to more robust and reliable code. This approach also promotes **simpler, more modular designs**, as code that is hard to test often indicates poor structure.
   Moreover, TDD's **Red-Green-Refactor cycle** encourages **continuous refactoring**, which helps in maintaining a clean codebase and reducing technical debt. Since tests are written first, developers have a safety net that allows them to refactor with confidence, knowing that any introduced regression will be caught immediately.
-  The iterative nature of TDD leads to a **detailed regression suite** that grows with the codebase, providing **immediate feedback** on the impact of changes. This suite becomes a valuable asset for maintaining long-term quality, as it can detect issues early in the development cycle, reducing the cost and effort of fixing [bugs](../B/bug.md) in later stages.
-  TDD also promotes **better documentation** through tests that act as living specifications for the system's behavior. This can improve understanding and [maintainability](../M/maintainability.md) of the code for current and future developers.
-  In summary, TDD enhances [software quality](../S/software-quality.md) by fostering a development environment that prioritizes testing, leads to cleaner and more maintainable code, and reduces the likelihood of defects making it into production.
+  The iterative nature of TDD leads to a **detailed regression suite** that grows with the codebase, providing **immediate feedback** on the impact of changes. This suite becomes a valuable asset for maintaining long-term quality, as it can detect issues early in the development cycle, reducing the cost and effort of fixing [bugs](https://naodeng.com.cn/en/wiki/bug) in later stages.
+  TDD also promotes **better documentation** through tests that act as living specifications for the system's behavior. This can improve understanding and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) of the code for current and future developers.
+  In summary, TDD enhances [software quality](https://naodeng.com.cn/en/wiki/software-quality) by fostering a development environment that prioritizes testing, leads to cleaner and more maintainable code, and reduces the likelihood of defects making it into production.
 
 #### What is the difference between traditional testing and TDD?
 
-  Traditional testing typically occurs **after** the development phase, where testers write and execute tests to verify the functionality of the code that has already been written. This approach often leads to a **test-last** cycle, where testing is a separate phase and can result in the discovery of [bugs](../B/bug.md) late in the development process.
-  In contrast, **[Test-Driven Development](../T/test-driven-development.md) (TDD)** is a **test-first** approach where tests are written **before** the actual code. The developer starts by writing a failing test that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards.
+  Traditional testing typically occurs **after** the development phase, where testers write and execute tests to verify the functionality of the code that has already been written. This approach often leads to a **test-last** cycle, where testing is a separate phase and can result in the discovery of [bugs](https://naodeng.com.cn/en/wiki/bug) late in the development process.
+  In contrast, **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** is a **test-first** approach where tests are written **before** the actual code. The developer starts by writing a failing test that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards.
   The key differences are:
 
   - **Timing** : Traditional testing is done after coding, while TDD mandates writing tests before code.
   - **Role of Tests** : In traditional testing, tests serve as a verification tool; in TDD, they guide design and development.
   - **Feedback Loop** : TDD provides a rapid feedback loop, catching issues early, whereas traditional testing may catch them later in the cycle.
   - **Design Influence** : TDD influences design to be more modular and testable, while traditional testing adapts to the existing design.
-  - **[Bug](../B/bug.md) Prevention vs. Detection** : TDD focuses on preventing bugs through test-first development, whereas traditional testing focuses on detecting bugs after implementation.
+  - **[Bug](https://naodeng.com.cn/en/wiki/bug) Prevention vs. Detection** : TDD focuses on preventing bugs through test-first development, whereas traditional testing focuses on detecting bugs after implementation.
   TDD's emphasis on test-first development fundamentally shifts the role of tests in the software development lifecycle, integrating them into the design and construction of software rather than treating them as a separate phase.
 
   - **Timing** : Traditional testing is done after coding, while TDD mandates writing tests before code.
   - **Role of Tests** : In traditional testing, tests serve as a verification tool; in TDD, they guide design and development.
   - **Feedback Loop** : TDD provides a rapid feedback loop, catching issues early, whereas traditional testing may catch them later in the cycle.
   - **Design Influence** : TDD influences design to be more modular and testable, while traditional testing adapts to the existing design.
-  - **[Bug](../B/bug.md) Prevention vs. Detection** : TDD focuses on preventing bugs through test-first development, whereas traditional testing focuses on detecting bugs after implementation.
+  - **[Bug](https://naodeng.com.cn/en/wiki/bug) Prevention vs. Detection** : TDD focuses on preventing bugs through test-first development, whereas traditional testing focuses on detecting bugs after implementation.
 
 ### TDD Process
 
@@ -130,7 +129,7 @@ Test-Driven Development
   1. **Identify a requirement**
     or feature that needs to be implemented.
 
-  2. **Write a [test case](../T/test-case.md)**
+  2. **Write a [test case](https://naodeng.com.cn/en/wiki/test-case)**
     that fails because the feature isn't implemented yet. This is the "Red" phase, where the test will fail, indicating that the new functionality is not present.
 
     ```
@@ -165,7 +164,7 @@ Test-Driven Development
   1. **Identify a requirement**
     or feature that needs to be implemented.
 
-  2. **Write a [test case](../T/test-case.md)**
+  2. **Write a [test case](https://naodeng.com.cn/en/wiki/test-case)**
     that fails because the feature isn't implemented yet. This is the "Red" phase, where the test will fail, indicating that the new functionality is not present.
 
     ```
@@ -200,7 +199,7 @@ Test-Driven Development
 
   The **Red-Green-Refactor** cycle is a fundamental rhythm of TDD that promotes a disciplined approach to development:
 
-  1. **Red**: Write a new test that describes an expected behavior or feature. Run the [test suite](../T/test-suite.md) to see this test fail (red), confirming that the feature doesn't exist or the behavior isn't met yet.
+  1. **Red**: Write a new test that describes an expected behavior or feature. Run the [test suite](https://naodeng.com.cn/en/wiki/test-suite) to see this test fail (red), confirming that the feature doesn't exist or the behavior isn't met yet.
 
     ```
     it('should add two numbers', () => {
@@ -223,7 +222,7 @@ Test-Driven Development
     ```
   Repeat this cycle for each new feature or behavior incrementally, ensuring that tests are always passing after the refactor phase. This process helps maintain a clean codebase and provides immediate feedback on the impact of changes.
 
-  1. **Red**: Write a new test that describes an expected behavior or feature. Run the [test suite](../T/test-suite.md) to see this test fail (red), confirming that the feature doesn't exist or the behavior isn't met yet.
+  1. **Red**: Write a new test that describes an expected behavior or feature. Run the [test suite](https://naodeng.com.cn/en/wiki/test-suite) to see this test fail (red), confirming that the feature doesn't exist or the behavior isn't met yet.
 
     ```
     it('should add two numbers', () => {
@@ -250,12 +249,12 @@ Test-Driven Development
   Writing a failing test in TDD involves the following steps:
 
   1. **Identify a specific requirement** or a piece of functionality that your application needs to implement.
-  2. **Write a [test case](../T/test-case.md)** that asserts the expected behavior of that functionality. This test should be designed to fail initially because the functionality has not been implemented yet.
+  2. **Write a [test case](https://naodeng.com.cn/en/wiki/test-case)** that asserts the expected behavior of that functionality. This test should be designed to fail initially because the functionality has not been implemented yet.
   3. Use **descriptive naming** for your test function to clearly state what it's testing.
-  4. In the test body, **set up any necessary [test data](../T/test-data.md)** or mock dependencies.
-  5. **Call the method** or function you intend to implement with the [test data](../T/test-data.md).
+  4. In the test body, **set up any necessary [test data](https://naodeng.com.cn/en/wiki/test-data)** or mock dependencies.
+  5. **Call the method** or function you intend to implement with the [test data](https://naodeng.com.cn/en/wiki/test-data).
   6. **Assert the expected outcome**. This could be checking the return value, state changes, or interactions with mocks.
-  Here's an example in TypeScript using [Jest](../J/jest.md):
+  Here's an example in TypeScript using [Jest](https://naodeng.com.cn/en/wiki/jest):
 
   ```
   test('should add two numbers', () => {
@@ -270,10 +269,10 @@ Test-Driven Development
   In this example, the `Calculator` class and its `add` method have not been implemented yet. Running this test will result in a failure, which is the desired outcome in the red phase of the Red-Green-Refactor cycle. After the failing test is in place, you would then write the minimal amount of code to make the test pass, moving into the green phase.
 
   1. **Identify a specific requirement** or a piece of functionality that your application needs to implement.
-  2. **Write a [test case](../T/test-case.md)** that asserts the expected behavior of that functionality. This test should be designed to fail initially because the functionality has not been implemented yet.
+  2. **Write a [test case](https://naodeng.com.cn/en/wiki/test-case)** that asserts the expected behavior of that functionality. This test should be designed to fail initially because the functionality has not been implemented yet.
   3. Use **descriptive naming** for your test function to clearly state what it's testing.
-  4. In the test body, **set up any necessary [test data](../T/test-data.md)** or mock dependencies.
-  5. **Call the method** or function you intend to implement with the [test data](../T/test-data.md).
+  4. In the test body, **set up any necessary [test data](https://naodeng.com.cn/en/wiki/test-data)** or mock dependencies.
+  5. **Call the method** or function you intend to implement with the [test data](https://naodeng.com.cn/en/wiki/test-data).
   6. **Assert the expected outcome**. This could be checking the return value, state changes, or interactions with mocks.
 
 #### How do you make a failing test pass in TDD?
@@ -282,8 +281,8 @@ Test-Driven Development
 
   1. **Analyze** the failing test to understand the expected behavior that is not currently being met by the implementation.
   2. **Write the simplest code** that can make the test pass. This code does not need to be perfect or final; it only needs to satisfy the test's assertions.
-  3. **Run the [test suite](../T/test-suite.md)** to ensure that the new code makes the previously failing test pass without causing any other tests to fail.
-  4. **Refactor** the code for clarity, performance, and [maintainability](../M/maintainability.md) while ensuring that all tests continue to pass. This may involve cleaning up the code you just wrote to make the test pass or improving other parts of the codebase affected by the change.
+  3. **Run the [test suite](https://naodeng.com.cn/en/wiki/test-suite)** to ensure that the new code makes the previously failing test pass without causing any other tests to fail.
+  4. **Refactor** the code for clarity, performance, and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) while ensuring that all tests continue to pass. This may involve cleaning up the code you just wrote to make the test pass or improving other parts of the codebase affected by the change.
   5. **Repeat** the cycle for each new test, incrementally building and improving the codebase.
   Here's a simple example in TypeScript:
 
@@ -301,13 +300,13 @@ Test-Driven Development
 
   1. **Analyze** the failing test to understand the expected behavior that is not currently being met by the implementation.
   2. **Write the simplest code** that can make the test pass. This code does not need to be perfect or final; it only needs to satisfy the test's assertions.
-  3. **Run the [test suite](../T/test-suite.md)** to ensure that the new code makes the previously failing test pass without causing any other tests to fail.
-  4. **Refactor** the code for clarity, performance, and [maintainability](../M/maintainability.md) while ensuring that all tests continue to pass. This may involve cleaning up the code you just wrote to make the test pass or improving other parts of the codebase affected by the change.
+  3. **Run the [test suite](https://naodeng.com.cn/en/wiki/test-suite)** to ensure that the new code makes the previously failing test pass without causing any other tests to fail.
+  4. **Refactor** the code for clarity, performance, and [maintainability](https://naodeng.com.cn/en/wiki/maintainability) while ensuring that all tests continue to pass. This may involve cleaning up the code you just wrote to make the test pass or improving other parts of the codebase affected by the change.
   5. **Repeat** the cycle for each new test, incrementally building and improving the codebase.
 
 #### What does it mean to refactor in TDD?
 
-  Refactoring in TDD is the process of improving the internal structure of existing code without changing its external behavior. It's a critical step in the **Red-Green-Refactor** cycle after a test passes (Green phase). The goal is to enhance code readability, reduce complexity, and improve [maintainability](../M/maintainability.md) while ensuring that the system's functionality remains intact.
+  Refactoring in TDD is the process of improving the internal structure of existing code without changing its external behavior. It's a critical step in the **Red-Green-Refactor** cycle after a test passes (Green phase). The goal is to enhance code readability, reduce complexity, and improve [maintainability](https://naodeng.com.cn/en/wiki/maintainability) while ensuring that the system's functionality remains intact.
   During refactoring, you might:
 
   - **Simplify code**
@@ -324,7 +323,7 @@ Test-Driven Development
 
   - **Optimize performance**
     by altering algorithms without affecting outcomes.
-  Refactoring is supported by the safety net of existing tests, which must continue to pass after changes. This ensures that refactoring does not introduce new [bugs](../B/bug.md). It's an iterative process that incrementally improves the codebase, making it easier to extend and maintain over time.
+  Refactoring is supported by the safety net of existing tests, which must continue to pass after changes. This ensures that refactoring does not introduce new [bugs](https://naodeng.com.cn/en/wiki/bug). It's an iterative process that incrementally improves the codebase, making it easier to extend and maintain over time.
   Here's a simple example in TypeScript:
 
   ```
@@ -365,26 +364,26 @@ Test-Driven Development
   Best practices for implementing TDD:
 
   - **Start small**: Begin with simple tests before progressing to more complex scenarios. This helps in understanding the flow and maintaining focus on solving one problem at a time.
-  - **Test one concept per test**: Ensure each [test case](../T/test-case.md) is focused on a single behavior or functionality to simplify debugging and provide clear intent.
-  - **Keep tests fast**: Optimize [test execution](../T/test-execution.md) time to encourage frequent test runs, which is essential for immediate feedback.
-  - **Use descriptive test names**: Clearly name tests to communicate their purpose and expected outcome, aiding in [maintainability](../M/maintainability.md) and readability.
+  - **Test one concept per test**: Ensure each [test case](https://naodeng.com.cn/en/wiki/test-case) is focused on a single behavior or functionality to simplify debugging and provide clear intent.
+  - **Keep tests fast**: Optimize [test execution](https://naodeng.com.cn/en/wiki/test-execution) time to encourage frequent test runs, which is essential for immediate feedback.
+  - **Use descriptive test names**: Clearly name tests to communicate their purpose and expected outcome, aiding in [maintainability](https://naodeng.com.cn/en/wiki/maintainability) and readability.
   - **Refactor with confidence**: After getting to green, refactor the code while keeping tests passing to improve code quality without changing behavior.
   - **Isolate tests**: Avoid dependencies between tests to ensure they can run independently and in any order.
   - **Test the interface, not the implementation**: Focus on the expected behavior rather than the internal workings to avoid brittle tests when refactoring.
   - **Use version control**: Commit after each passing test cycle to document the development process and facilitate rollback if necessary.
-  - **Pair programming**: Collaborate with another developer to gain different perspectives and enhance [test coverage](../T/test-coverage.md).
+  - **Pair programming**: Collaborate with another developer to gain different perspectives and enhance [test coverage](https://naodeng.com.cn/en/wiki/test-coverage).
   - **Continuous Integration (CI)**: Integrate TDD with CI systems to run tests automatically on every commit, ensuring immediate detection of integration issues.
   - **Stay disciplined**: Rigorously adhere to the red-green-refactor cycle to maintain the integrity of the TDD process.
   - **Review and adapt**: Regularly evaluate the effectiveness of your tests and TDD approach, and be open to adapting your strategy to improve outcomes.
   - **Start small**: Begin with simple tests before progressing to more complex scenarios. This helps in understanding the flow and maintaining focus on solving one problem at a time.
-  - **Test one concept per test**: Ensure each [test case](../T/test-case.md) is focused on a single behavior or functionality to simplify debugging and provide clear intent.
-  - **Keep tests fast**: Optimize [test execution](../T/test-execution.md) time to encourage frequent test runs, which is essential for immediate feedback.
-  - **Use descriptive test names**: Clearly name tests to communicate their purpose and expected outcome, aiding in [maintainability](../M/maintainability.md) and readability.
+  - **Test one concept per test**: Ensure each [test case](https://naodeng.com.cn/en/wiki/test-case) is focused on a single behavior or functionality to simplify debugging and provide clear intent.
+  - **Keep tests fast**: Optimize [test execution](https://naodeng.com.cn/en/wiki/test-execution) time to encourage frequent test runs, which is essential for immediate feedback.
+  - **Use descriptive test names**: Clearly name tests to communicate their purpose and expected outcome, aiding in [maintainability](https://naodeng.com.cn/en/wiki/maintainability) and readability.
   - **Refactor with confidence**: After getting to green, refactor the code while keeping tests passing to improve code quality without changing behavior.
   - **Isolate tests**: Avoid dependencies between tests to ensure they can run independently and in any order.
   - **Test the interface, not the implementation**: Focus on the expected behavior rather than the internal workings to avoid brittle tests when refactoring.
   - **Use version control**: Commit after each passing test cycle to document the development process and facilitate rollback if necessary.
-  - **Pair programming**: Collaborate with another developer to gain different perspectives and enhance [test coverage](../T/test-coverage.md).
+  - **Pair programming**: Collaborate with another developer to gain different perspectives and enhance [test coverage](https://naodeng.com.cn/en/wiki/test-coverage).
   - **Continuous Integration (CI)**: Integrate TDD with CI systems to run tests automatically on every commit, ensuring immediate detection of integration issues.
   - **Stay disciplined**: Rigorously adhere to the red-green-refactor cycle to maintain the integrity of the TDD process.
   - **Review and adapt**: Regularly evaluate the effectiveness of your tests and TDD approach, and be open to adapting your strategy to improve outcomes.
@@ -395,8 +394,8 @@ Test-Driven Development
   **Educate the team** on TDD practices if they are not already familiar. Ensure everyone understands the importance of writing tests first and the Red-Green-Refactor cycle. Encourage pair programming to spread TDD knowledge and practices within the team.
   **Set up a dedicated branch** for the TDD work to avoid disrupting the main codebase. This allows for experimentation and learning without affecting ongoing development.
   **Integrate continuously** by merging the TDD branch back into the main codebase regularly. This helps to catch integration issues early and reduces the risk of diverging too far from the main development efforts.
-  **Refactor legacy code** incrementally. When you need to add a feature or fix a [bug](../B/bug.md) in existing code, write tests for that specific part first, then proceed with the changes. Over time, this will increase the [test coverage](../T/test-coverage.md) of the legacy code.
-  **Automate the build and [test process](../T/test-process.md)** using CI/CD tools. This ensures that tests are run automatically and frequently, providing immediate feedback on the health of the code.
+  **Refactor legacy code** incrementally. When you need to add a feature or fix a [bug](https://naodeng.com.cn/en/wiki/bug) in existing code, write tests for that specific part first, then proceed with the changes. Over time, this will increase the [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) of the legacy code.
+  **Automate the build and [test process](https://naodeng.com.cn/en/wiki/test-process)** using CI/CD tools. This ensures that tests are run automatically and frequently, providing immediate feedback on the health of the code.
   **Monitor and adapt** the process. Use retrospectives to discuss what is working and what is not, and adjust the approach accordingly. Continuous improvement is key to successfully integrating TDD into an existing project.
 
 #### What are some common pitfalls in TDD and how can they be avoided?
@@ -407,8 +406,8 @@ Test-Driven Development
   - **Insufficient refactoring**: Skipping the refactoring step can lead to code debt and maintenance issues. Always allocate time for refactoring to maintain code quality.
   - **Writing too many tests upfront**: This can lead to rigid code that's hard to refactor. Write just enough tests to drive the development of the next piece of functionality.
   - **Testing internal implementation**: Focus on behavior rather than the internal structure to avoid brittle tests that break with any change in code structure.
-  - **Not testing edge cases**: Ensure tests cover a wide range of inputs, including edge cases, to prevent [bugs](../B/bug.md) in less common scenarios.
-  - **Ignoring test [maintainability](../M/maintainability.md)**: Tests should be as clean and maintainable as production code. Use descriptive names and structure tests for easy understanding and modification.
+  - **Not testing edge cases**: Ensure tests cover a wide range of inputs, including edge cases, to prevent [bugs](https://naodeng.com.cn/en/wiki/bug) in less common scenarios.
+  - **Ignoring test [maintainability](https://naodeng.com.cn/en/wiki/maintainability)**: Tests should be as clean and maintainable as production code. Use descriptive names and structure tests for easy understanding and modification.
   - **Lack of continuous integration**: Integrate TDD with a CI/CD pipeline to catch issues early and ensure that tests are run frequently.
   Avoid these pitfalls by:
 
@@ -421,8 +420,8 @@ Test-Driven Development
   - **Insufficient refactoring**: Skipping the refactoring step can lead to code debt and maintenance issues. Always allocate time for refactoring to maintain code quality.
   - **Writing too many tests upfront**: This can lead to rigid code that's hard to refactor. Write just enough tests to drive the development of the next piece of functionality.
   - **Testing internal implementation**: Focus on behavior rather than the internal structure to avoid brittle tests that break with any change in code structure.
-  - **Not testing edge cases**: Ensure tests cover a wide range of inputs, including edge cases, to prevent [bugs](../B/bug.md) in less common scenarios.
-  - **Ignoring test [maintainability](../M/maintainability.md)**: Tests should be as clean and maintainable as production code. Use descriptive names and structure tests for easy understanding and modification.
+  - **Not testing edge cases**: Ensure tests cover a wide range of inputs, including edge cases, to prevent [bugs](https://naodeng.com.cn/en/wiki/bug) in less common scenarios.
+  - **Ignoring test [maintainability](https://naodeng.com.cn/en/wiki/maintainability)**: Tests should be as clean and maintainable as production code. Use descriptive names and structure tests for easy understanding and modification.
   - **Lack of continuous integration**: Integrate TDD with a CI/CD pipeline to catch issues early and ensure that tests are run frequently.
   - Balancing different levels of testing (unit, integration, system).
   - Refactoring regularly and treating test code with the same respect as production code.
@@ -432,13 +431,13 @@ Test-Driven Development
 
 #### How can TDD be used in conjunction with other software development methodologies?
 
-  TDD can be seamlessly integrated with various software development methodologies to enhance their effectiveness and ensure [quality assurance](../Q/quality-assurance.md) from the outset.
-  In **Agile** environments, TDD complements iterative development by allowing tests to be written for small increments of functionality, ensuring that each [iteration](../I/iteration.md) produces a potentially shippable product that passes all tests. This synergy supports continuous integration and delivery by providing immediate feedback on code changes.
-  With **[Scrum](../S/scrum.md)**, TDD aligns with sprints by defining acceptance criteria as tests before development begins. This ensures that the sprint's goals are met and that the developed features are fully tested, contributing to the sprint review with demonstrable, working software.
-  In **[Extreme Programming](../E/extreme-programming.md) (XP)**, TDD is a core practice. It dovetails with XP's emphasis on frequent releases and simplicity by ensuring that code is thoroughly tested and refactored in short cycles, enhancing code quality and [maintainability](../M/maintainability.md).
-  For **Kanban**, TDD provides a means to maintain flow efficiency. By preventing defects from moving downstream, TDD helps reduce bottlenecks associated with [bug](../B/bug.md) fixes and rework, thus supporting Kanban's focus on continuous flow.
+  TDD can be seamlessly integrated with various software development methodologies to enhance their effectiveness and ensure [quality assurance](https://naodeng.com.cn/en/wiki/quality-assurance) from the outset.
+  In **Agile** environments, TDD complements iterative development by allowing tests to be written for small increments of functionality, ensuring that each [iteration](https://naodeng.com.cn/en/wiki/iteration) produces a potentially shippable product that passes all tests. This synergy supports continuous integration and delivery by providing immediate feedback on code changes.
+  With **[Scrum](https://naodeng.com.cn/en/wiki/scrum)**, TDD aligns with sprints by defining acceptance criteria as tests before development begins. This ensures that the sprint's goals are met and that the developed features are fully tested, contributing to the sprint review with demonstrable, working software.
+  In **[Extreme Programming](https://naodeng.com.cn/en/wiki/extreme-programming) (XP)**, TDD is a core practice. It dovetails with XP's emphasis on frequent releases and simplicity by ensuring that code is thoroughly tested and refactored in short cycles, enhancing code quality and [maintainability](https://naodeng.com.cn/en/wiki/maintainability).
+  For **Kanban**, TDD provides a means to maintain flow efficiency. By preventing defects from moving downstream, TDD helps reduce bottlenecks associated with [bug](https://naodeng.com.cn/en/wiki/bug) fixes and rework, thus supporting Kanban's focus on continuous flow.
   In **Lean Software Development**, TDD helps eliminate waste by preventing defects early in the development process. This proactive approach aligns with Lean principles by avoiding the added costs and delays of later-stage defect remediation.
-  Integrating TDD with these methodologies requires a shift in mindset to prioritize testing and a commitment to maintaining a robust suite of automated tests. By doing so, teams can leverage TDD's benefits across different development practices, enhancing overall [software quality](../S/software-quality.md) and team agility.
+  Integrating TDD with these methodologies requires a shift in mindset to prioritize testing and a commitment to maintaining a robust suite of automated tests. By doing so, teams can leverage TDD's benefits across different development practices, enhancing overall [software quality](https://naodeng.com.cn/en/wiki/software-quality) and team agility.
 
 #### What are some tools and frameworks that can be used for TDD?
 
@@ -447,7 +446,7 @@ Test-Driven Development
   - **JUnit**
     (Java): A widely-used unit testing framework.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     (C#): Similar to JUnit, but for the .NET environment.
 
   - **TestNG**
@@ -459,7 +458,7 @@ Test-Driven Development
   - **Mocha**
     (JavaScript): Flexible and supports asynchronous testing, often used with assertion libraries like Chai.
 
-  - **[Jest](../J/jest.md)**
+  - **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     (JavaScript): Popular for React applications, includes features for snapshots and interactive watch mode.
 
   - **pytest**
@@ -486,12 +485,12 @@ Test-Driven Development
       }
   }
   ```
-  These tools often integrate with CI/CD pipelines, enabling automated [test execution](../T/test-execution.md) during build and deployment processes. Selecting the right tool depends on the language, project requirements, and personal or team preferences.
+  These tools often integrate with CI/CD pipelines, enabling automated [test execution](https://naodeng.com.cn/en/wiki/test-execution) during build and deployment processes. Selecting the right tool depends on the language, project requirements, and personal or team preferences.
 
   - **JUnit**
     (Java): A widely-used unit testing framework.
 
-  - **[NUnit](../N/nunit.md)**
+  - **[NUnit](https://naodeng.com.cn/en/wiki/nunit)**
     (C#): Similar to JUnit, but for the .NET environment.
 
   - **TestNG**
@@ -503,7 +502,7 @@ Test-Driven Development
   - **Mocha**
     (JavaScript): Flexible and supports asynchronous testing, often used with assertion libraries like Chai.
 
-  - **[Jest](../J/jest.md)**
+  - **[Jest](https://naodeng.com.cn/en/wiki/jest)**
     (JavaScript): Popular for React applications, includes features for snapshots and interactive watch mode.
 
   - **pytest**
@@ -522,7 +521,7 @@ Test-Driven Development
 
 #### What is the role of mock objects in TDD?
 
-  Mock objects play a crucial role in **[Test-Driven Development](../T/test-driven-development.md) (TDD)** by simulating the behavior of real objects in a controlled way. They are used when the actual objects are impractical to incorporate into tests due to reasons such as:
+  Mock objects play a crucial role in **[Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD)** by simulating the behavior of real objects in a controlled way. They are used when the actual objects are impractical to incorporate into tests due to reasons such as:
 
   - Non-existence of the object at the time of test writing
   - High complexity or difficulty in setup
@@ -568,15 +567,15 @@ Test-Driven Development
     expect(mockDependency.dependencyMethod).toHaveBeenCalled();
   });
   ```
-  By using mocks, tests can verify interactions with dependencies without requiring the actual implementations to be present. This technique is particularly useful when dealing with external services, [databases](../D/database.md), or other systems that are not easily controlled or replicated in a [test environment](../T/test-environment.md).
-  For [integration testing](../I/integration-testing.md) within a TDD context, developers may use **contract tests** to ensure that the interactions between different parts of the system adhere to agreed-upon interfaces. This helps in catching integration issues early in the development cycle.
+  By using mocks, tests can verify interactions with dependencies without requiring the actual implementations to be present. This technique is particularly useful when dealing with external services, [databases](https://naodeng.com.cn/en/wiki/database), or other systems that are not easily controlled or replicated in a [test environment](https://naodeng.com.cn/en/wiki/test-environment).
+  For [integration testing](https://naodeng.com.cn/en/wiki/integration-testing) within a TDD context, developers may use **contract tests** to ensure that the interactions between different parts of the system adhere to agreed-upon interfaces. This helps in catching integration issues early in the development cycle.
   Overall, TDD's iterative nature, combined with the use of mocks and contract tests, allows for effective management and testing of complex systems and their dependencies.
 
 #### What is Behavior-Driven Development (BDD) and how does it relate to TDD?
 
-  Behavior-Driven Development ([BDD](../B/bdd.md)) is an extension of [Test-Driven Development](../T/test-driven-development.md) (TDD) that emphasizes collaboration between developers, QA, and non-technical or business participants in a software project. [BDD](../B/bdd.md) focuses on obtaining a clear understanding of desired software behavior through conversation and concrete examples, which are then turned into a set of automated tests, often expressed in a natural language-like format.
-  [BDD](../B/bdd.md) relates to TDD in that it also promotes writing tests before writing the code that implements the functionality. However, while TDD's tests are based on the developer's perspective and are often at the unit level, [BDD](../B/bdd.md)'s tests are derived from the user's perspective and are more about the system's behavior. These tests are often called "scenarios" or "specifications" and are written in a domain-specific language that translates to automated tests.
-  Here's an example of a [BDD](../B/bdd.md) scenario:
+  Behavior-Driven Development ([BDD](https://naodeng.com.cn/en/wiki/bdd)) is an extension of [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (TDD) that emphasizes collaboration between developers, QA, and non-technical or business participants in a software project. [BDD](https://naodeng.com.cn/en/wiki/bdd) focuses on obtaining a clear understanding of desired software behavior through conversation and concrete examples, which are then turned into a set of automated tests, often expressed in a natural language-like format.
+  [BDD](https://naodeng.com.cn/en/wiki/bdd) relates to TDD in that it also promotes writing tests before writing the code that implements the functionality. However, while TDD's tests are based on the developer's perspective and are often at the unit level, [BDD](https://naodeng.com.cn/en/wiki/bdd)'s tests are derived from the user's perspective and are more about the system's behavior. These tests are often called "scenarios" or "specifications" and are written in a domain-specific language that translates to automated tests.
+  Here's an example of a [BDD](https://naodeng.com.cn/en/wiki/bdd) scenario:
 
   ```
   Feature: User login
@@ -585,12 +584,12 @@ Test-Driven Development
       When the user enters valid credentials
       Then the user is redirected to the homepage
   ```
-  [BDD](../B/bdd.md) tools like Cucumber or SpecFlow interpret these scenarios and link them to the underlying test code. The scenarios facilitate communication between stakeholders and ensure that all parties have a shared understanding of the features and their intended behaviors. This alignment helps prevent misunderstandings and ensures that the software built aligns with the business's needs and expectations.
+  [BDD](https://naodeng.com.cn/en/wiki/bdd) tools like Cucumber or SpecFlow interpret these scenarios and link them to the underlying test code. The scenarios facilitate communication between stakeholders and ensure that all parties have a shared understanding of the features and their intended behaviors. This alignment helps prevent misunderstandings and ensures that the software built aligns with the business's needs and expectations.
 
 #### What is Acceptance Test-Driven Development (ATDD) and how does it relate to TDD?
 
-  Acceptance [Test-Driven Development](../T/test-driven-development.md) (ATDD) is an approach where the team collaboratively discusses acceptance criteria, with examples, and distills them into a set of concrete acceptance tests before development begins. It's a collaborative practice where users, testers, and developers define automated acceptance criteria. ATDD ensures that all stakeholders have a common understanding of the requirements.
-  ATDD is closely related to TDD, but while TDD focuses on the developer's perspective for [unit testing](../U/unit-testing.md), ATDD is more about the customer and the functionality of the system. In ATDD, acceptance tests are created from user stories, and these tests guide the entire development process, just as unit tests do in TDD.
+  Acceptance [Test-Driven Development](https://naodeng.com.cn/en/wiki/test-driven-development) (ATDD) is an approach where the team collaboratively discusses acceptance criteria, with examples, and distills them into a set of concrete acceptance tests before development begins. It's a collaborative practice where users, testers, and developers define automated acceptance criteria. ATDD ensures that all stakeholders have a common understanding of the requirements.
+  ATDD is closely related to TDD, but while TDD focuses on the developer's perspective for [unit testing](https://naodeng.com.cn/en/wiki/unit-testing), ATDD is more about the customer and the functionality of the system. In ATDD, acceptance tests are created from user stories, and these tests guide the entire development process, just as unit tests do in TDD.
   Here's how ATDD complements TDD:
 
   - **TDD** : Write a failing unit test, make it pass, refactor.
@@ -617,10 +616,10 @@ Test-Driven Development
   - **Use the Sprout Method** to add new functionality. Write new code in new methods, which you can test with TDD, rather than altering legacy code directly.
   - **Apply the Wrap Method** when you need to change legacy code. Create a wrapper that delegates to the old code, then gradually move functionality into the new wrapper, testing as you go.
   - **Isolate external dependencies** using mocks or stubs to test the code in isolation.
-  - **Prioritize areas with high risk or change frequency** for [test coverage](../T/test-coverage.md) to maximize the value of your efforts.
+  - **Prioritize areas with high risk or change frequency** for [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) to maximize the value of your efforts.
   - **Involve stakeholders** to understand the intended behavior of the legacy system, ensuring your tests reflect real-world usage.
   - **Educate your team** on the importance of maintaining the new tests and following TDD practices as the legacy system evolves.
-  By integrating these strategies, you can bring the benefits of TDD to legacy systems, improving their [maintainability](../M/maintainability.md) and reliability.
+  By integrating these strategies, you can bring the benefits of TDD to legacy systems, improving their [maintainability](https://naodeng.com.cn/en/wiki/maintainability) and reliability.
 
   - **Start by writing characterization tests** to capture the current behavior of the system. These tests act as a safety net for future changes.
 
@@ -635,6 +634,6 @@ Test-Driven Development
   - **Use the Sprout Method** to add new functionality. Write new code in new methods, which you can test with TDD, rather than altering legacy code directly.
   - **Apply the Wrap Method** when you need to change legacy code. Create a wrapper that delegates to the old code, then gradually move functionality into the new wrapper, testing as you go.
   - **Isolate external dependencies** using mocks or stubs to test the code in isolation.
-  - **Prioritize areas with high risk or change frequency** for [test coverage](../T/test-coverage.md) to maximize the value of your efforts.
+  - **Prioritize areas with high risk or change frequency** for [test coverage](https://naodeng.com.cn/en/wiki/test-coverage) to maximize the value of your efforts.
   - **Involve stakeholders** to understand the intended behavior of the legacy system, ensuring your tests reflect real-world usage.
   - **Educate your team** on the importance of maintaining the new tests and following TDD practices as the legacy system evolves.
